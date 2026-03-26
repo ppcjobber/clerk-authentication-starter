@@ -11,6 +11,14 @@ const MEETINGS = [
     latest: true,
   },
   {
+    slug:   "warwick-26-march-2026",
+    date:   "26 March 2026",
+    label:  "Warwick — 26 March 2026",
+    going:  "Good",
+    races:  6,
+    latest: false,
+  },
+  {
     slug:   "cheltenham-13-march-2026",
     date:   "13 March 2026",
     label:  "Cheltenham Festival — Day 4",
