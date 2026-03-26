@@ -16,12 +16,3 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Error" }, { status: 500 });
   }
 }
-```
-
-Then update the fetch in `app/meetings/[slug]/page.tsx` — change line:
-```
-fetch(`/data/${params.slug}.json`)
-```
-to:
-```
-fetch(`/api/meeting-data?slug=${params.slug}`)
