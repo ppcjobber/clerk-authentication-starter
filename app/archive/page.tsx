@@ -3,12 +3,20 @@ import Link from "next/link";
 
 const MEETINGS = [
   {
+    slug:   "warwick-26-march-2026",
+    date:   "26 March 2026",
+    label:  "Warwick — 26 March 2026",
+    going:  "Good",
+    races:  6,
+    latest: true,
+  },
+  {
     slug:   "cheltenham-13-march-2026",
     date:   "13 March 2026",
     label:  "Cheltenham Festival — Day 4",
     going:  "Good to Soft / Soft",
     races:  5,
-    latest: true,
+    latest: false,
   },
 ];
 
