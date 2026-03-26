@@ -13,7 +13,7 @@ export default function Nav() {
         <li><Link href="/archive">Archive</Link></li>
         <li><Link href="/pricing">Pricing</Link></li>
         {isSignedIn ? (
-          <li><UserButton afterSignOutUrl="/" /></li>
+          <li><UserButton  /></li>
         ) : (
           <>
             <li>
