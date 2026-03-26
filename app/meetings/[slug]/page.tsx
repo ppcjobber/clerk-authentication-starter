@@ -208,7 +208,7 @@ function RaceMap({ race, hasAccess }: { race: Race; hasAccess: boolean }) {
 
 // ── Page ──────────────────────────────────────────────────────
 
-export default function MeetingPage({ params }: { params: { slug: string } }) {
+export default function MeetingPage({ params }: { params: Promise<{ slug: string }> }) {
   const { isSignedIn } = useUser();
   const [hasAccess, setHasAccess]   = useState(false);
   const [checking, setChecking]     = useState(true);
@@ -218,11 +218,13 @@ export default function MeetingPage({ params }: { params: { slug: string } }) {
 
   // Fetch race data from JSON
   useEffect(() => {
-    fetch(`/api/meeting-data?slug=${params.slug}`)
-      .then(r => { if (!r.ok) throw new Error("Not found"); return r.json(); })
-      .then(d => { setData(d); setLoading(false); })
-      .catch(() => { setError(true); setLoading(false); });
-  }, [params.slug]);
+    params.then(p => {
+      fetch(`/api/meeting-data?slug=${p.slug}`)
+        .then(r => { if (!r.ok) throw new Error("Not found"); return r.json(); })
+        .then(d => { setData(d); setLoading(false); })
+        .catch(() => { setError(true); setLoading(false); });
+    });
+  }, [params]);
 
   // Check subscription
   useEffect(() => {
