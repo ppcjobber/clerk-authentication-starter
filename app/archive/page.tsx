@@ -3,12 +3,20 @@ import Link from "next/link";
 
 const MEETINGS: any[] = [
   {
+    slug:   "newcastle_aw_27-march-2026",
+    date:   "27 March 2026",
+    label:  "Newcastle (AW) — 27 March 2026",
+    going:  "Good",
+    races:  9,
+    latest: true,
+  },
+  {
     slug:   "lingfield_aw_27-march-2026",
     date:   "27 March 2026",
     label:  "Lingfield (AW) — 27 March 2026",
     going:  "Good",
     races:  7,
-    latest: true,
+    latest: false,
   },
   {
     slug:   "fontwell_27-march-2026",
