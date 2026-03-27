@@ -81,21 +81,22 @@ function isPastMeeting(dateStr: string): boolean {
   return meetingDate < today;
 }
 
-// ── Style constants ───────────────────────────────────────────
+// ── Colour palette ────────────────────────────────────────────
+// Brightened for legibility on dark green background
 
 const STYLE_COLORS: Record<string, { bg: string; text: string; label: string }> = {
-  L: { bg: "rgba(192,57,43,0.12)",   text: "#922b21", label: "Lead"      },
-  P: { bg: "rgba(230,126,34,0.12)",  text: "#935116", label: "Prominent" },
-  M: { bg: "rgba(41,128,185,0.12)",  text: "#1a5276", label: "Midfield"  },
-  H: { bg: "rgba(142,68,173,0.12)",  text: "#6c3483", label: "Hold Up"   },
-  U: { bg: "rgba(136,135,128,0.12)", text: "#5f5e5a", label: "Unknown"   },
+  L: { bg: "rgba(231,76,60,0.18)",   text: "#e74c3c", label: "Lead"      },
+  P: { bg: "rgba(243,156,18,0.18)",  text: "#f39c12", label: "Prominent" },
+  M: { bg: "rgba(52,152,219,0.18)",  text: "#3498db", label: "Midfield"  },
+  H: { bg: "rgba(165,105,189,0.18)", text: "#a569bd", label: "Hold Up"   },
+  U: { bg: "rgba(149,165,166,0.18)", text: "#95a5a6", label: "Unknown"   },
 };
 
 const SCENARIO_COLORS = [
-  { bg: "rgba(41,128,185,0.06)",  letter: { bg: "rgba(41,128,185,0.14)",  color: "#1a5276" }, bar: "#2980b9" },
-  { bg: "rgba(142,68,173,0.06)",  letter: { bg: "rgba(142,68,173,0.14)",  color: "#6c3483" }, bar: "#8e44ad" },
-  { bg: "rgba(39,174,96,0.06)",   letter: { bg: "rgba(39,174,96,0.14)",   color: "#1e8449" }, bar: "#27ae60" },
-  { bg: "rgba(192,57,43,0.06)",   letter: { bg: "rgba(192,57,43,0.14)",   color: "#922b21" }, bar: "#c0392b" },
+  { bg: "rgba(52,152,219,0.07)",  letter: { bg: "rgba(52,152,219,0.2)",  color: "#3498db" }, bar: "#3498db" },
+  { bg: "rgba(165,105,189,0.07)", letter: { bg: "rgba(165,105,189,0.2)", color: "#a569bd" }, bar: "#a569bd" },
+  { bg: "rgba(46,204,113,0.07)",  letter: { bg: "rgba(46,204,113,0.2)",  color: "#2ecc71" }, bar: "#2ecc71" },
+  { bg: "rgba(231,76,60,0.07)",   letter: { bg: "rgba(231,76,60,0.2)",   color: "#e74c3c" }, bar: "#e74c3c" },
 ];
 
 const WATCH_COLORS: Record<string, string> = {
@@ -105,10 +106,10 @@ const WATCH_COLORS: Record<string, string> = {
 };
 
 const LANE_STYLES = [
-  { key: "leads",     label: "Lead",      bg: "rgba(192,57,43,0.055)",  head: "#c0392b", pill: { bg: "rgba(192,57,43,0.1)",  text: "#922b21" } },
-  { key: "prominent", label: "Prominent", bg: "rgba(230,126,34,0.055)", head: "#cb6d12", pill: { bg: "rgba(230,126,34,0.1)", text: "#935116" } },
-  { key: "midfield",  label: "Midfield",  bg: "rgba(41,128,185,0.055)", head: "#1a6fa0", pill: { bg: "rgba(41,128,185,0.1)", text: "#1a5276" } },
-  { key: "holdup",    label: "Hold Up",   bg: "rgba(142,68,173,0.055)", head: "#7d3c98", pill: { bg: "rgba(142,68,173,0.1)", text: "#6c3483" } },
+  { key: "leads",     label: "Lead",      bg: "rgba(231,76,60,0.1)",   head: "#e74c3c", pill: { bg: "rgba(231,76,60,0.2)",   text: "#e74c3c" } },
+  { key: "prominent", label: "Prominent", bg: "rgba(243,156,18,0.1)",  head: "#f39c12", pill: { bg: "rgba(243,156,18,0.2)",  text: "#f39c12" } },
+  { key: "midfield",  label: "Midfield",  bg: "rgba(52,152,219,0.1)",  head: "#3498db", pill: { bg: "rgba(52,152,219,0.2)",  text: "#3498db" } },
+  { key: "holdup",    label: "Hold Up",   bg: "rgba(165,105,189,0.1)", head: "#a569bd", pill: { bg: "rgba(165,105,189,0.2)", text: "#a569bd" } },
 ];
 
 const thStyle: React.CSSProperties = {
@@ -238,7 +239,7 @@ function ScenarioCards({ scenarios }: { scenarios: Scenario[] }) {
           const col = SCENARIO_COLORS[i % SCENARIO_COLORS.length];
           return (
             <div key={sc.label} style={{ background: col.bg, borderRadius: "8px",
-              border: "0.5px solid rgba(255,255,255,0.07)", padding: "13px" }}>
+              border: "0.5px solid rgba(255,255,255,0.08)", padding: "13px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "9px", marginBottom: "8px" }}>
                 <div style={{ width: "24px", height: "24px", borderRadius: "50%", flexShrink: 0,
                   background: col.letter.bg, color: col.letter.color, display: "flex",
@@ -257,7 +258,7 @@ function ScenarioCards({ scenarios }: { scenarios: Scenario[] }) {
                 </div>
               </div>
               <div style={{ height: "3px", borderRadius: "2px",
-                background: "rgba(255,255,255,0.08)", marginBottom: "9px", overflow: "hidden" }}>
+                background: "rgba(255,255,255,0.1)", marginBottom: "9px", overflow: "hidden" }}>
                 <div style={{ height: "100%", borderRadius: "2px",
                   background: col.bar, width: `${sc.prob}%` }} />
               </div>
@@ -272,15 +273,15 @@ function ScenarioCards({ scenarios }: { scenarios: Scenario[] }) {
               <div style={{ display: "flex", flexWrap: "wrap", gap: "4px" }}>
                 {sc.winners.map(h => (
                   <span key={h} style={{ fontSize: "0.6rem", padding: "2px 6px", borderRadius: "3px",
-                    background: "rgba(39,174,96,0.18)", color: "#2ecc71",
-                    border: "0.5px solid rgba(39,174,96,0.3)", fontWeight: 500 }}>
+                    background: "rgba(46,204,113,0.2)", color: "#2ecc71",
+                    border: "0.5px solid rgba(46,204,113,0.4)", fontWeight: 500 }}>
                     {h}
                   </span>
                 ))}
                 {sc.others.map(h => (
                   <span key={h} style={{ fontSize: "0.6rem", padding: "2px 6px", borderRadius: "3px",
-                    background: "rgba(255,255,255,0.05)", color: "rgba(245,240,232,0.4)",
-                    border: "0.5px solid rgba(255,255,255,0.08)" }}>
+                    background: "rgba(255,255,255,0.06)", color: "rgba(245,240,232,0.45)",
+                    border: "0.5px solid rgba(255,255,255,0.1)" }}>
                     {h}
                   </span>
                 ))}
@@ -388,8 +389,8 @@ function RaceCard({ race, hasAccess, meetingDate }: {
           {race.free && (
             <span style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.56rem",
               padding: "3px 8px", borderRadius: "3px",
-              background: "rgba(39,174,96,0.18)", color: "#2ecc71",
-              border: "0.5px solid rgba(39,174,96,0.35)" }}>FREE</span>
+              background: "rgba(46,204,113,0.18)", color: "#2ecc71",
+              border: "0.5px solid rgba(46,204,113,0.35)" }}>FREE</span>
           )}
           {historic && (
             <span style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.56rem",
@@ -400,8 +401,8 @@ function RaceCard({ race, hasAccess, meetingDate }: {
           {isFlat && race.drawBias && (
             <span style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.56rem",
               padding: "3px 8px", borderRadius: "3px",
-              background: "rgba(41,128,185,0.14)", color: "#5dade2",
-              border: "0.5px solid rgba(41,128,185,0.3)" }}>
+              background: "rgba(52,152,219,0.14)", color: "#5dade2",
+              border: "0.5px solid rgba(52,152,219,0.3)" }}>
               Draw: {race.drawBias.favoured} · {race.drawBias.magnitude}
             </span>
           )}
