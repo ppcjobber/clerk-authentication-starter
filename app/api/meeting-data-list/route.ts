@@ -8,40 +8,40 @@ export async function GET() {
 
     const text = await r.text();
 
-    // Build today's date string manually to match archive format: "27 March 2026"
+    // Build today's date string to match archive format: "27 March 2026"
     const now = new Date();
     const months = ['January','February','March','April','May','June',
                     'July','August','September','October','November','December'];
     const today = `${now.getUTCDate()} ${months[now.getUTCMonth()]} ${now.getUTCFullYear()}`;
 
-    // Extract slug, date, label, going, races per entry — no dotall regex
-    const slugMatches   = text.match(/slug:\s*"([^"]+)"/g)   || [];
-    const dateMatches   = text.match(/date:\s*"([^"]+)"/g)   || [];
-    const labelMatches  = text.match(/label:\s*"([^"]+)"/g)  || [];
-    const goingMatches  = text.match(/going:\s*"([^"]*)"/g)  || [];
-    const racesMatches  = text.match(/races:\s*(\d+)/g)      || [];
-
-    const count = Math.min(
-      slugMatches.length, dateMatches.length,
-      labelMatches.length, racesMatches.length
-    );
-
     const results: { slug: string; date: string; course: string; going: string; races: number }[] = [];
 
-    for (let i = 0; i < count; i++) {
-      const date = dateMatches[i].replace(/date:\s*"/, '').replace(/"$/, '').trim();
+    // Extract each { ... } block from the MEETINGS array
+    const arrayMatch = text.match(/const MEETINGS[^=]*=\s*\[([\s\S]*?)\];/);
+    if (!arrayMatch) return NextResponse.json([]);
+
+    const arrayContent = arrayMatch[1];
+
+    // Split on entry boundaries
+    const entries = arrayContent.split(/\},\s*\{/);
+
+    for (const entry of entries) {
+      const slug  = (entry.match(/slug:\s*"([^"]+)"/)  || [])[1];
+      const date  = (entry.match(/date:\s*"([^"]+)"/)  || [])[1];
+      const label = (entry.match(/label:\s*"([^"]+)"/) || [])[1];
+      const going = (entry.match(/going:\s*"([^"]*)"/) || [])[1] || '';
+      const racesM = entry.match(/races:\s*(\d+)/);
+      const races = racesM ? parseInt(racesM[1]) : 0;
+
+      if (!slug || !date || !label) continue;
       if (date !== today) continue;
 
-      const slug  = slugMatches[i].replace(/slug:\s*"/, '').replace(/"$/, '').trim();
-      const label = labelMatches[i].replace(/label:\s*"/, '').replace(/"$/, '').trim();
-      const going = goingMatches[i] ? goingMatches[i].replace(/going:\s*"/, '').replace(/"$/, '').trim() : '';
-      const races = parseInt(racesMatches[i].replace(/races:\s*/, ''));
       const course = label.split(' \u2014 ')[0];
-
       results.push({ slug, date, course, going, races });
     }
 
     return NextResponse.json(results);
+
   } catch {
     return NextResponse.json([]);
   }
