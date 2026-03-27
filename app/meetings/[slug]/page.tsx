@@ -5,8 +5,6 @@ import Link from "next/link";
 import { useUser } from "@clerk/nextjs";
 import { useEffect, useState } from "react";
 
-// ── Types ─────────────────────────────────────────────────────
-
 type Runner = {
   name: string; or: number; projected: number;
   model_price: string; mkt_price: string;
@@ -28,8 +26,6 @@ type MeetingData = {
   course: string; date: string; slug: string; races: Race[];
 };
 
-// ── Helpers ───────────────────────────────────────────────────
-
 function fmtEdge(edge: number | null): string {
   if (edge === null || edge === undefined) return "—";
   return (edge >= 0 ? "+" : "") + edge + "lb";
@@ -39,8 +35,6 @@ function fmtEv(ev: number | null): string {
   if (ev === null || ev === undefined) return "—";
   return ev + "x";
 }
-
-// ── Race Map ──────────────────────────────────────────────────
 
 function RaceMap({ race, hasAccess }: { race: Race; hasAccess: boolean }) {
   const ranked = race.runners_data || [];
@@ -82,7 +76,6 @@ function RaceMap({ race, hasAccess }: { race: Race; hasAccess: boolean }) {
 
   return (
     <div style={{ background:"rgba(255,255,255,0.02)", border:"1px solid rgba(255,255,255,0.07)", borderRadius:"10px", overflow:"hidden", marginBottom:"28px" }}>
-      {/* Header */}
       <div style={{ padding:"18px 22px", background:"rgba(201,168,76,0.07)", borderBottom:"1px solid rgba(201,168,76,0.14)", display:"flex", justifyContent:"space-between", alignItems:"center", flexWrap:"wrap", gap:"8px" }}>
         <div>
           <div style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:"1.35rem", color:"var(--gold)" }}>{race.time} — {race.name}</div>
@@ -106,7 +99,6 @@ function RaceMap({ race, hasAccess }: { race: Race; hasAccess: boolean }) {
       </div>
 
       <div style={{ padding:"22px" }}>
-        {/* Pace distribution */}
         <div style={{ display:"grid", gridTemplateColumns:"repeat(4,1fr)", gap:"10px", marginBottom:"22px" }}>
           {paceGroups.map(g => {
             const horses: string[] = (race as any)[g.key] || [];
@@ -122,7 +114,6 @@ function RaceMap({ race, hasAccess }: { race: Race; hasAccess: boolean }) {
           })}
         </div>
 
-        {/* Runner table */}
         <div style={{ overflowX:"auto", borderRadius:"6px", border:"1px solid rgba(255,255,255,0.07)", marginBottom:"18px" }}>
           <table className="pm-table">
             <thead>
@@ -140,10 +131,10 @@ function RaceMap({ race, hasAccess }: { race: Race; hasAccess: boolean }) {
             </thead>
             <tbody>
               {ranked.map((r, i) => {
-                const isSel    = ["EW","BET","BASKET"].includes(r.action || "");
-                const isFancy  = r.confidence === "HIGH" && (r.kelly || 0) >= 0.5 && !isSel && r.action !== "AVOID";
-                const rowBg    = isSel ? "rgba(39,174,96,0.04)" : isFancy ? "rgba(201,168,76,0.04)" : "transparent";
-                const actColor = isSel ? "#2ecc71" : isFancy ? "var(--gold)" : "rgba(245,240,232,0.45)";
+                const isSel     = ["EW","BET","BASKET"].includes(r.action || "");
+                const isFancy   = r.confidence === "HIGH" && (r.kelly || 0) >= 0.5 && !isSel && r.action !== "AVOID";
+                const rowBg     = isSel ? "rgba(39,174,96,0.04)" : isFancy ? "rgba(201,168,76,0.04)" : "transparent";
+                const actColor  = isSel ? "#2ecc71" : isFancy ? "var(--gold)" : "rgba(245,240,232,0.45)";
                 const actPrefix = isSel ? "⭐ " : isFancy ? "👀 " : "";
                 return (
                   <tr key={i} style={{ background:rowBg }}>
@@ -172,19 +163,17 @@ function RaceMap({ race, hasAccess }: { race: Race; hasAccess: boolean }) {
           </table>
         </div>
 
-        {/* Selections */}
         {sels.length > 0 && (
           <div style={{ background:"rgba(39,174,96,0.07)", border:"1px solid rgba(39,174,96,0.2)", borderRadius:"7px", padding:"14px 18px", marginBottom:"16px" }}>
             <p style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:"0.85rem", color:"#2ecc71", marginBottom:"8px" }}>⭐ SELECTIONS</p>
             {sels.map((r, i) => (
               <p key={i} style={{ fontSize:"0.78rem", color:"var(--cream)", marginBottom:"4px" }}>
-                <strong>{r.name}</strong> · {r.mkt_price || "n/a"} · EV {fmtEv(r.ev)} · JOBY {r.kelly || 0}% · {r.action}
+                <strong>{r.name}</strong> · {r.mkt_price || "n/a"} · EV {fmtEv(r.ev)} · {r.kelly || 0}% · {r.action}
               </p>
             ))}
           </div>
         )}
 
-        {/* Narrative */}
         {race.narrative && (
           <div style={{ background:"rgba(201,168,76,0.055)", border:"1px solid rgba(201,168,76,0.18)", borderRadius:"7px", padding:"16px 20px" }}>
             <p style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:"0.88rem", color:"var(--gold)", marginBottom:"10px" }}>⚡ Pace Analysis</p>
@@ -206,19 +195,15 @@ function RaceMap({ race, hasAccess }: { race: Race; hasAccess: boolean }) {
   );
 }
 
-// ── Page ──────────────────────────────────────────────────────
-
 export default function MeetingPage({ params }: { params: Promise<{ slug: string }> }) {
   const { isSignedIn } = useUser();
-  const [hasAccess, setHasAccess]   = useState(false);
-  const [checking, setChecking]     = useState(true);
-  const [data, setData]             = useState<MeetingData | null>(null);
-  const [loading, setLoading]       = useState(true);
-  const [error, setError]           = useState(false);
+  const [hasAccess, setHasAccess] = useState(false);
+  const [checking, setChecking]   = useState(true);
+  const [data, setData]           = useState<MeetingData | null>(null);
+  const [loading, setLoading]     = useState(true);
+  const [error, setError]         = useState(false);
 
-  // Fetch race data from JSON
   useEffect(() => {
-    useEffect(() => {
     params.then(p => {
       fetch(`/api/meeting-data?slug=${p.slug}`)
         .then(r => { if (!r.ok) throw new Error("Not found"); return r.json(); })
@@ -227,7 +212,6 @@ export default function MeetingPage({ params }: { params: Promise<{ slug: string
     });
   }, [params]);
 
-  // Check subscription
   useEffect(() => {
     if (!isSignedIn) { setChecking(false); return; }
     fetch("/api/check-subscription")
