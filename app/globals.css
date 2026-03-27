@@ -5,10 +5,10 @@
   --gold:        #c9a84c;
   --gold-light:  #e8cc7a;
   --cream:       #f5f0e8;
-  --lead:        #c0392b;
-  --prominent:   #e67e22;
+  --lead:      #e74c3c;   /* brighter red, was #c0392b */
+  --prominent: #f39c12;   /* amber-gold, was #e67e22 */
   --midfield:    #2980b9;
-  --holdup:      #8e44ad;
+  --holdup:    #a569bd;   /* lighter purple, was #8e44ad */
   --strong:      #27ae60;
   --fade:        #e74c3c;
 }
