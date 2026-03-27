@@ -1,5 +1,6 @@
 import Nav from "@/components/Nav";
 import Link from "next/link";
+import Footer from "@/components/Footer";
 
 export default function ContactPage() {
   return (
@@ -83,10 +84,7 @@ export default function ContactPage() {
         </div>
 
       </div>
-      <footer>
-        <span className="footer-brand">PaceMap</span>
-        <span className="footer-note">pacemap.co.uk · A Signalweight product<br />For informational purposes only · Not financial advice</span>
-      </footer>
+      <Footer />
     </>
   );
 }
