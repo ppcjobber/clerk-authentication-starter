@@ -5,195 +5,431 @@ import Link from "next/link";
 import { useUser } from "@clerk/nextjs";
 import { useEffect, useState } from "react";
 
+// ── Types ─────────────────────────────────────────────────────
+
 type Runner = {
-  name: string; or: number; projected: number;
-  model_price: string; mkt_price: string;
-  win_pct: number; edge: number | null; ev: number | null;
-  kelly: number | null; action: string; confidence: string;
-  proxied: boolean; draw: number | null; draw_adv: string | null;
+  name: string;
+  or: number;
+  style_code: string;
+  finish_type: string;
+  dist_code: string;
+  going_flag: string;
+  note: string;
+  draw: number | null;
+  draw_adv: string | null;
+};
+
+type Scenario = {
+  label: string;
+  title: string;
+  prob: number;
+  trigger: string;
+  body: string;
+  winners: string[];
+  others: string[];
+};
+
+type WatchPoint = {
+  severity: "danger" | "warn" | "info";
+  text: string;
 };
 
 type Race = {
-  id: number; time: string; name: string; grade: string;
-  dist: string; going: string; runners: number; free: boolean;
-  type: string; pace: string; paceConf: number;
-  leads: string[]; prominent: string[]; midfield: string[]; holdup: string[];
-  runners_data: Runner[]; narrative: string;
+  id: number;
+  time: string;
+  name: string;
+  grade: string;
+  dist: string;
+  going: string;
+  runners: number;
+  free: boolean;
+  type: string;
+  pace: string;
+  paceConf: number;
+  leads: string[];
+  prominent: string[];
+  midfield: string[];
+  holdup: string[];
   drawBias?: { favoured: string; magnitude: string } | null;
+  runners_data: Runner[];
+  paceDynamic: string;
+  scenarios: Scenario[];
+  watchPoints: WatchPoint[];
 };
 
 type MeetingData = {
-  course: string; date: string; slug: string; races: Race[];
+  course: string;
+  date: string;
+  slug: string;
+  races: Race[];
 };
 
-function fmtEdge(edge: number | null): string {
-  if (edge === null || edge === undefined) return "—";
-  return (edge >= 0 ? "+" : "") + edge + "lb";
+// ── Style helpers ─────────────────────────────────────────────
+
+const STYLE_COLORS: Record<string, { bg: string; text: string; label: string }> = {
+  L: { bg: "rgba(192,57,43,0.12)",  text: "#922b21", label: "Lead"     },
+  P: { bg: "rgba(230,126,34,0.12)", text: "#935116", label: "Prominent"},
+  M: { bg: "rgba(41,128,185,0.12)", text: "#1a5276", label: "Midfield" },
+  H: { bg: "rgba(142,68,173,0.12)", text: "#6c3483", label: "Hold Up"  },
+  U: { bg: "rgba(136,135,128,0.12)",text: "#5f5e5a", label: "Unknown"  },
+};
+
+const FINISH_STYLE: Record<string, { color: string; label: string }> = {
+  S: { color: "#27ae60", label: "Strong" },
+  E: { color: "rgba(245,240,232,0.45)", label: "Even" },
+  F: { color: "#e74c3c", label: "Fades"  },
+};
+
+const GOING_STYLE: Record<string, { color: string; symbol: string }> = {
+  OK:        { color: "#27ae60",            symbol: "✓" },
+  CONCERN:   { color: "#f39c12",            symbol: "⚠" },
+  DEPENDENT: { color: "#e74c3c",            symbol: "✗" },
+  UNKNOWN:   { color: "rgba(245,240,232,0.35)", symbol: "?" },
+};
+
+const SCENARIO_COLORS = [
+  { bg: "rgba(41,128,185,0.06)",  letter: { bg: "rgba(41,128,185,0.14)",  color: "#1a5276" }, bar: "#2980b9"  },
+  { bg: "rgba(142,68,173,0.06)", letter: { bg: "rgba(142,68,173,0.14)", color: "#6c3483" }, bar: "#8e44ad" },
+  { bg: "rgba(39,174,96,0.06)",  letter: { bg: "rgba(39,174,96,0.14)",  color: "#1e8449" }, bar: "#27ae60"  },
+  { bg: "rgba(192,57,43,0.06)",  letter: { bg: "rgba(192,57,43,0.14)",  color: "#922b21" }, bar: "#c0392b"  },
+];
+
+const WATCH_COLORS: Record<string, string> = {
+  danger: "#e74c3c",
+  warn:   "#f39c12",
+  info:   "#3498db",
+};
+
+const LANE_STYLES = [
+  { key: "leads",    label: "Lead",      bg: "rgba(192,57,43,0.055)",  head: "#c0392b", pill: { bg: "rgba(192,57,43,0.1)",  text: "#922b21" } },
+  { key: "prominent",label: "Prominent", bg: "rgba(230,126,34,0.055)", head: "#cb6d12", pill: { bg: "rgba(230,126,34,0.1)", text: "#935116" } },
+  { key: "midfield", label: "Midfield",  bg: "rgba(41,128,185,0.055)", head: "#1a6fa0", pill: { bg: "rgba(41,128,185,0.1)", text: "#1a5276" } },
+  { key: "holdup",   label: "Hold Up",   bg: "rgba(142,68,173,0.055)", head: "#7d3c98", pill: { bg: "rgba(142,68,173,0.1)", text: "#6c3483" } },
+];
+
+// ── Sub-components ────────────────────────────────────────────
+
+function SectionLabel({ children }: { children: React.ReactNode }) {
+  return (
+    <p style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.6rem", textTransform:"uppercase",
+      letterSpacing:"0.1em", color:"rgba(245,240,232,0.35)", marginBottom:"8px", fontWeight:500 }}>
+      {children}
+    </p>
+  );
 }
 
-function fmtEv(ev: number | null): string {
-  if (ev === null || ev === undefined) return "—";
-  return ev + "x";
+function PaceStrip({ race }: { race: Race }) {
+  return (
+    <div style={{ display:"flex", borderRadius:"8px", overflow:"hidden",
+      border:"0.5px solid rgba(255,255,255,0.08)", marginBottom:"20px" }}>
+      {LANE_STYLES.map(lane => {
+        const horses: string[] = (race as any)[lane.key] || [];
+        return (
+          <div key={lane.key} style={{ flex:1, background:lane.bg, padding:"10px 12px",
+            borderRight:"0.5px solid rgba(255,255,255,0.07)" }}>
+            <div style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:"0.75rem",
+              color:lane.head, letterSpacing:"0.06em", marginBottom:"6px" }}>
+              {lane.label} · {horses.length}
+            </div>
+            <div style={{ display:"flex", flexWrap:"wrap", gap:"4px" }}>
+              {horses.length === 0
+                ? <span style={{ fontSize:"0.62rem", color:"rgba(245,240,232,0.25)", fontStyle:"italic" }}>None</span>
+                : horses.map(h => (
+                    <span key={h} style={{ fontSize:"0.62rem", padding:"2px 6px", borderRadius:"3px",
+                      background:lane.pill.bg, color:lane.pill.text }}>
+                      {h}
+                    </span>
+                  ))
+              }
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
 }
 
-function RaceMap({ race, hasAccess }: { race: Race; hasAccess: boolean }) {
-  const ranked = race.runners_data || [];
-  const sels   = ranked.filter(r => ["EW","BET","BASKET"].includes(r.action || ""));
+function PaceDynamic({ text }: { text: string }) {
+  if (!text) return null;
+  return (
+    <div style={{ background:"rgba(255,255,255,0.03)", borderRadius:"7px",
+      padding:"12px 16px", marginBottom:"20px",
+      borderLeft:"3px solid rgba(201,168,76,0.35)",
+      fontSize:"0.78rem", lineHeight:"1.75", color:"rgba(245,240,232,0.7)" }}>
+      {text}
+    </div>
+  );
+}
+
+function RunnerTable({ runners, isFlat }: { runners: Runner[]; isFlat: boolean }) {
+  return (
+    <div style={{ overflowX:"auto", borderRadius:"7px",
+      border:"0.5px solid rgba(255,255,255,0.08)", marginBottom:"20px" }}>
+      <table style={{ width:"100%", borderCollapse:"collapse", fontSize:"0.72rem" }}>
+        <thead>
+          <tr style={{ background:"rgba(201,168,76,0.08)",
+            borderBottom:"1px solid rgba(201,168,76,0.2)" }}>
+            {isFlat && <th style={thStyle}>#</th>}
+            <th style={thStyle}>Horse</th>
+            <th style={thStyle}>OR</th>
+            <th style={thStyle}>Style</th>
+            <th style={thStyle}>Finish</th>
+            <th style={thStyle}>Dist</th>
+            <th style={thStyle}>Going</th>
+            <th style={{ ...thStyle, width:"35%" }}>Note</th>
+          </tr>
+        </thead>
+        <tbody>
+          {runners.map((r, i) => {
+            const sc = STYLE_COLORS[r.style_code] || STYLE_COLORS["U"];
+            const fq = FINISH_STYLE[r.finish_type] || FINISH_STYLE["E"];
+            const gf = GOING_STYLE[r.going_flag]   || GOING_STYLE["UNKNOWN"];
+            return (
+              <tr key={i} style={{ borderBottom:"0.5px solid rgba(255,255,255,0.06)" }}>
+                {isFlat && (
+                  <td style={tdStyle}>
+                    <span style={{ color:"rgba(245,240,232,0.35)", fontSize:"0.65rem" }}>
+                      {r.draw || "—"}
+                    </span>
+                  </td>
+                )}
+                <td style={tdStyle}>
+                  <span style={{ fontWeight:600, color:"var(--cream)", fontSize:"0.78rem" }}>
+                    {r.name}
+                  </span>
+                </td>
+                <td style={{ ...tdStyle, color:"rgba(245,240,232,0.5)" }}>{r.or || "—"}</td>
+                <td style={tdStyle}>
+                  <span style={{ background:sc.bg, color:sc.text, fontSize:"0.65rem",
+                    padding:"2px 5px", borderRadius:"3px", fontWeight:500 }}>
+                    {r.style_code}
+                  </span>
+                </td>
+                <td style={{ ...tdStyle, color:fq.color, fontWeight:500 }}>
+                  {r.finish_type}
+                </td>
+                <td style={{ ...tdStyle, color:"rgba(245,240,232,0.45)" }}>{r.dist_code}</td>
+                <td style={{ ...tdStyle, color:gf.color, fontSize:"0.68rem" }}>
+                  {gf.symbol}
+                </td>
+                <td style={{ ...tdStyle, color:"rgba(245,240,232,0.55)",
+                  fontSize:"0.68rem", lineHeight:"1.5" }}>
+                  {r.note || "—"}
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+const thStyle: React.CSSProperties = {
+  fontFamily: "'DM Mono',monospace", fontSize:"0.58rem", textTransform:"uppercase",
+  letterSpacing:"0.07em", color:"rgba(201,168,76,0.7)", padding:"8px 10px",
+  textAlign:"left", fontWeight:500,
+};
+const tdStyle: React.CSSProperties = { padding:"8px 10px", verticalAlign:"middle" };
+
+function ScenarioCards({ scenarios }: { scenarios: Scenario[] }) {
+  if (!scenarios.length) return null;
+  return (
+    <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:"10px", marginBottom:"20px" }}>
+      {scenarios.map((sc, i) => {
+        const col = SCENARIO_COLORS[i % SCENARIO_COLORS.length];
+        return (
+          <div key={sc.label} style={{ background:col.bg, borderRadius:"8px",
+            border:"0.5px solid rgba(255,255,255,0.07)", padding:"13px" }}>
+            {/* Header */}
+            <div style={{ display:"flex", alignItems:"center", gap:"9px", marginBottom:"8px" }}>
+              <div style={{ width:"24px", height:"24px", borderRadius:"50%", flexShrink:0,
+                background:col.letter.bg, color:col.letter.color, display:"flex",
+                alignItems:"center", justifyContent:"center",
+                fontSize:"0.78rem", fontWeight:600 }}>
+                {sc.label}
+              </div>
+              <div>
+                <div style={{ fontSize:"0.75rem", fontWeight:500, color:"var(--cream)" }}>
+                  {sc.title}
+                </div>
+                <div style={{ fontSize:"0.6rem", color:"rgba(245,240,232,0.35)",
+                  fontFamily:"'DM Mono',monospace" }}>
+                  {sc.prob}% probability
+                </div>
+              </div>
+            </div>
+            {/* Prob bar */}
+            <div style={{ height:"3px", borderRadius:"2px",
+              background:"rgba(255,255,255,0.08)", marginBottom:"9px", overflow:"hidden" }}>
+              <div style={{ height:"100%", borderRadius:"2px",
+                background:col.bar, width:`${sc.prob}%` }} />
+            </div>
+            {/* Trigger */}
+            <div style={{ fontSize:"0.68rem", fontWeight:500, color:"rgba(245,240,232,0.8)",
+              marginBottom:"5px", lineHeight:"1.4" }}>
+              {sc.trigger}
+            </div>
+            {/* Body */}
+            <div style={{ fontSize:"0.68rem", color:"rgba(245,240,232,0.5)",
+              lineHeight:"1.55", marginBottom:"9px" }}>
+              {sc.body}
+            </div>
+            {/* Horses */}
+            <div style={{ display:"flex", flexWrap:"wrap", gap:"4px" }}>
+              {sc.winners.map(h => (
+                <span key={h} style={{ fontSize:"0.6rem", padding:"2px 6px", borderRadius:"3px",
+                  background:"rgba(39,174,96,0.18)", color:"#2ecc71",
+                  border:"0.5px solid rgba(39,174,96,0.3)", fontWeight:500 }}>
+                  {h}
+                </span>
+              ))}
+              {sc.others.map(h => (
+                <span key={h} style={{ fontSize:"0.6rem", padding:"2px 6px", borderRadius:"3px",
+                  background:"rgba(255,255,255,0.05)", color:"rgba(245,240,232,0.4)",
+                  border:"0.5px solid rgba(255,255,255,0.08)" }}>
+                  {h}
+                </span>
+              ))}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+function WatchPoints({ points }: { points: WatchPoint[] }) {
+  if (!points.length) return null;
+  return (
+    <div style={{ display:"flex", flexDirection:"column", gap:"7px" }}>
+      {points.map((wp, i) => (
+        <div key={i} style={{ display:"flex", gap:"10px", alignItems:"flex-start" }}>
+          <div style={{ width:"6px", height:"6px", borderRadius:"50%", flexShrink:0,
+            background:WATCH_COLORS[wp.severity] || WATCH_COLORS.info, marginTop:"5px" }} />
+          <div style={{ fontSize:"0.72rem", color:"rgba(245,240,232,0.6)", lineHeight:"1.6" }}
+            dangerouslySetInnerHTML={{ __html: wp.text.replace(
+              /\*\*(.+?)\*\*/g, '<strong style="color:var(--cream);font-weight:500">$1</strong>'
+            )}} />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+// ── Race card ─────────────────────────────────────────────────
+
+function RaceCard({ race, hasAccess }: { race: Race; hasAccess: boolean }) {
   const isFlat = race.type === "flat";
 
   if (!race.free && !hasAccess) {
     return (
       <div style={{ position:"relative", borderRadius:"10px", overflow:"hidden", marginBottom:"28px" }}>
-        <div style={{ filter:"blur(5px)", pointerEvents:"none", opacity:0.35, background:"rgba(255,255,255,0.02)", border:"1px solid rgba(255,255,255,0.07)", borderRadius:"10px", padding:"22px" }}>
-          <div style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:"1.35rem", color:"var(--gold)", marginBottom:"12px" }}>{race.time} — {race.name}</div>
+        <div style={{ filter:"blur(5px)", pointerEvents:"none", opacity:0.3,
+          background:"rgba(255,255,255,0.02)", border:"1px solid rgba(255,255,255,0.07)",
+          borderRadius:"10px", padding:"22px" }}>
+          <div style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:"1.35rem",
+            color:"var(--gold)", marginBottom:"12px" }}>{race.time} — {race.name}</div>
           <div style={{ display:"grid", gridTemplateColumns:"repeat(4,1fr)", gap:"10px" }}>
             {["Lead","Prominent","Midfield","Hold Up"].map(l => (
-              <div key={l} style={{ height:"72px", background:"rgba(255,255,255,0.04)", borderRadius:"6px" }} />
+              <div key={l} style={{ height:"60px", background:"rgba(255,255,255,0.04)", borderRadius:"6px" }} />
             ))}
           </div>
         </div>
-        <div style={{ position:"absolute", inset:0, background:"rgba(10,61,31,0.82)", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", gap:"12px", textAlign:"center", padding:"28px" }}>
+        <div style={{ position:"absolute", inset:0, background:"rgba(10,61,31,0.85)",
+          display:"flex", flexDirection:"column", alignItems:"center",
+          justifyContent:"center", gap:"12px", textAlign:"center", padding:"28px" }}>
           <div style={{ fontSize:"1.8rem" }}>🔒</div>
-          <div style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:"1.3rem", color:"var(--gold)" }}>{race.time} — {race.name}</div>
-          <p style={{ fontSize:"0.78rem", color:"rgba(245,240,232,0.55)", maxWidth:"320px", lineHeight:"1.65" }}>
-            {race.grade} · {race.dist} · {race.runners} runners
+          <div style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:"1.2rem",
+            color:"var(--gold)" }}>{race.time} — {race.name}</div>
+          <p style={{ fontSize:"0.75rem", color:"rgba(245,240,232,0.45)",
+            maxWidth:"300px", lineHeight:"1.65" }}>
+            Unlock all races with a Day Pass (£2.99) or Monthly (£9.99/mo)
           </p>
-          <p style={{ fontSize:"0.75rem", color:"rgba(245,240,232,0.45)", maxWidth:"320px", lineHeight:"1.65" }}>
-            Unlock all races with a Day Pass (£2.99) or Monthly subscription (£9.99/mo)
-          </p>
-          <Link href="/pricing" className="btn btn-gold" style={{ marginTop:"4px" }}>Unlock Full Card →</Link>
+          <Link href="/pricing" className="btn btn-gold" style={{ marginTop:"4px" }}>
+            Unlock Full Card →
+          </Link>
         </div>
       </div>
     );
   }
 
-  const paceGroups = [
-    { key:"leads",    label:"Lead",     color:"var(--lead)",      bg:"rgba(192,57,43,0.07)",  border:"rgba(192,57,43,0.3)"  },
-    { key:"prominent",label:"Prominent",color:"var(--prominent)", bg:"rgba(230,126,34,0.06)", border:"rgba(230,126,34,0.3)" },
-    { key:"midfield", label:"Midfield", color:"var(--midfield)",  bg:"rgba(41,128,185,0.06)", border:"rgba(41,128,185,0.3)" },
-    { key:"holdup",   label:"Hold Up",  color:"var(--holdup)",    bg:"rgba(142,68,173,0.06)", border:"rgba(142,68,173,0.3)" },
-  ];
-
   return (
-    <div style={{ background:"rgba(255,255,255,0.02)", border:"1px solid rgba(255,255,255,0.07)", borderRadius:"10px", overflow:"hidden", marginBottom:"28px" }}>
-      <div style={{ padding:"18px 22px", background:"rgba(201,168,76,0.07)", borderBottom:"1px solid rgba(201,168,76,0.14)", display:"flex", justifyContent:"space-between", alignItems:"center", flexWrap:"wrap", gap:"8px" }}>
+    <div style={{ background:"rgba(255,255,255,0.02)", border:"1px solid rgba(255,255,255,0.07)",
+      borderRadius:"10px", overflow:"hidden", marginBottom:"28px" }}>
+
+      {/* Race header */}
+      <div style={{ padding:"16px 20px", background:"rgba(201,168,76,0.07)",
+        borderBottom:"1px solid rgba(201,168,76,0.14)",
+        display:"flex", justifyContent:"space-between", alignItems:"center",
+        flexWrap:"wrap", gap:"8px" }}>
         <div>
-          <div style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:"1.35rem", color:"var(--gold)" }}>{race.time} — {race.name}</div>
-          <div style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.62rem", color:"rgba(245,240,232,0.42)", marginTop:"3px" }}>
+          <div style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:"1.3rem", color:"var(--gold)" }}>
+            {race.time} — {race.name}
+          </div>
+          <div style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.6rem",
+            color:"rgba(245,240,232,0.4)", marginTop:"3px" }}>
             {race.dist} · {race.going} · {race.grade} · {race.runners} runners
           </div>
         </div>
-        <div style={{ display:"flex", gap:"8px", alignItems:"center", flexWrap:"wrap" }}>
-          <span style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.6rem", padding:"3px 9px", borderRadius:"2px", background:"rgba(255,255,255,0.05)", color:"rgba(245,240,232,0.45)" }}>
-            {race.pace} · {race.paceConf}% confidence
+        <div style={{ display:"flex", gap:"7px", alignItems:"center", flexWrap:"wrap" }}>
+          <span style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.58rem",
+            padding:"3px 8px", borderRadius:"3px",
+            background:"rgba(255,255,255,0.05)", color:"rgba(245,240,232,0.4)" }}>
+            {race.pace} · {race.paceConf}% conf
           </span>
           {race.free && (
-            <span style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.58rem", padding:"3px 8px", borderRadius:"2px", background:"rgba(39,174,96,0.18)", color:"#2ecc71", border:"1px solid rgba(39,174,96,0.35)" }}>FREE</span>
+            <span style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.56rem",
+              padding:"3px 8px", borderRadius:"3px",
+              background:"rgba(39,174,96,0.18)", color:"#2ecc71",
+              border:"0.5px solid rgba(39,174,96,0.35)" }}>FREE</span>
           )}
           {isFlat && race.drawBias && (
-            <span style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.58rem", padding:"3px 8px", borderRadius:"2px", background:"rgba(41,128,185,0.18)", color:"#5dade2", border:"1px solid rgba(41,128,185,0.35)" }}>
-              Draw: {race.drawBias.favoured} favoured · {race.drawBias.magnitude}
+            <span style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.56rem",
+              padding:"3px 8px", borderRadius:"3px",
+              background:"rgba(41,128,185,0.14)", color:"#5dade2",
+              border:"0.5px solid rgba(41,128,185,0.3)" }}>
+              Draw: {race.drawBias.favoured} · {race.drawBias.magnitude}
             </span>
           )}
         </div>
       </div>
 
-      <div style={{ padding:"22px" }}>
-        <div style={{ display:"grid", gridTemplateColumns:"repeat(4,1fr)", gap:"10px", marginBottom:"22px" }}>
-          {paceGroups.map(g => {
-            const horses: string[] = (race as any)[g.key] || [];
-            return (
-              <div key={g.key} style={{ padding:"12px", borderRadius:"6px", border:"1px solid " + g.border, background:g.bg, textAlign:"center" }}>
-                <div style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:"0.82rem", color:g.color, marginBottom:"4px" }}>{g.label}</div>
-                <div style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:"1.9rem", color:g.color, lineHeight:1, marginBottom:"4px" }}>{horses.length}</div>
-                <div style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.54rem", color:"rgba(245,240,232,0.42)", lineHeight:1.65 }}>
-                  {horses.slice(0,3).join(" · ")}{horses.length > 3 ? ` +${horses.length-3}` : ""}
-                </div>
-              </div>
-            );
-          })}
-        </div>
+      <div style={{ padding:"20px" }}>
 
-        <div style={{ overflowX:"auto", borderRadius:"6px", border:"1px solid rgba(255,255,255,0.07)", marginBottom:"18px" }}>
-          <table className="pm-table">
-            <thead>
-              <tr>
-                {isFlat && <th>Draw</th>}
-                <th>Horse</th>
-                <th>OR</th>
-                <th>Model</th>
-                <th>Market</th>
-                <th>Win%</th>
-                <th>Edge</th>
-                <th>EV</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              {ranked.map((r, i) => {
-                const isSel     = ["EW","BET","BASKET"].includes(r.action || "");
-                const isFancy   = r.confidence === "HIGH" && (r.kelly || 0) >= 0.5 && !isSel && r.action !== "AVOID";
-                const rowBg     = isSel ? "rgba(39,174,96,0.04)" : isFancy ? "rgba(201,168,76,0.04)" : "transparent";
-                const actColor  = isSel ? "#2ecc71" : isFancy ? "var(--gold)" : "rgba(245,240,232,0.45)";
-                const actPrefix = isSel ? "⭐ " : isFancy ? "👀 " : "";
-                return (
-                  <tr key={i} style={{ background:rowBg }}>
-                    {isFlat && (
-                      <td style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.68rem", color:"var(--gold)" }}>
-                        {r.draw || "—"}
-                        {r.draw_adv === "FAVOURED" && <span style={{ marginLeft:"4px", fontSize:"0.55rem", color:"#2ecc71" }}>✓</span>}
-                        {r.draw_adv === "AGAINST"  && <span style={{ marginLeft:"4px", fontSize:"0.55rem", color:"#e74c3c" }}>✗</span>}
-                      </td>
-                    )}
-                    <td>
-                      <div style={{ fontWeight:600, color:"var(--cream)", fontSize:"0.84rem" }}>{r.name}</div>
-                      {r.proxied && <div style={{ fontSize:"0.56rem", color:"rgba(245,240,232,0.35)" }}>OR proxied</div>}
-                    </td>
-                    <td style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.72rem", color:"rgba(245,240,232,0.6)" }}>{r.or || "—"}</td>
-                    <td style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.72rem", color:"var(--gold)" }}>{r.model_price || "n/a"}</td>
-                    <td style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.72rem" }}>{r.mkt_price || "n/a"}</td>
-                    <td style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.72rem" }}>{r.win_pct}%</td>
-                    <td style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.72rem", color:(r.edge||0) >= 0 ? "#2ecc71" : "#e74c3c" }}>{fmtEdge(r.edge)}</td>
-                    <td style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.72rem", color:(r.ev||0) >= 1.25 ? "#2ecc71" : "rgba(245,240,232,0.5)" }}>{fmtEv(r.ev)}</td>
-                    <td style={{ fontSize:"0.7rem", fontWeight:isSel?700:400, color:actColor }}>{actPrefix}{r.action}</td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
+        {/* Pace strip */}
+        <SectionLabel>Race shape</SectionLabel>
+        <PaceStrip race={race} />
 
-        {sels.length > 0 && (
-          <div style={{ background:"rgba(39,174,96,0.07)", border:"1px solid rgba(39,174,96,0.2)", borderRadius:"7px", padding:"14px 18px", marginBottom:"16px" }}>
-            <p style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:"0.85rem", color:"#2ecc71", marginBottom:"8px" }}>⭐ SELECTIONS</p>
-            {sels.map((r, i) => (
-              <p key={i} style={{ fontSize:"0.78rem", color:"var(--cream)", marginBottom:"4px" }}>
-                <strong>{r.name}</strong> · {r.mkt_price || "n/a"} · EV {fmtEv(r.ev)} · {r.kelly || 0}% · {r.action}
-              </p>
-            ))}
-          </div>
+        {/* Pace dynamic */}
+        {race.paceDynamic && <PaceDynamic text={race.paceDynamic} />}
+
+        {/* Runner profiles */}
+        <SectionLabel>Runner profiles</SectionLabel>
+        <RunnerTable runners={race.runners_data} isFlat={isFlat} />
+
+        {/* Scenario cards */}
+        {race.scenarios?.length > 0 && (
+          <>
+            <SectionLabel>Race scenarios</SectionLabel>
+            <ScenarioCards scenarios={race.scenarios} />
+          </>
         )}
 
-        {race.narrative && (
-          <div style={{ background:"rgba(201,168,76,0.055)", border:"1px solid rgba(201,168,76,0.18)", borderRadius:"7px", padding:"16px 20px" }}>
-            <p style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:"0.88rem", color:"var(--gold)", marginBottom:"10px" }}>⚡ Pace Analysis</p>
-            {race.narrative.split("\n\n").map((para, i) => (
-              para.startsWith("## ") ? (
-                <p key={i} style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:"0.82rem", color:"var(--gold-light)", marginTop:"12px", marginBottom:"4px" }}>
-                  {para.replace("## ", "")}
-                </p>
-              ) : (
-                <p key={i} style={{ fontSize:"0.77rem", lineHeight:"1.78", color:"rgba(245,240,232,0.72)", marginBottom:"6px" }}>
-                  {para}
-                </p>
-              )
-            ))}
-          </div>
+        {/* Watch points */}
+        {race.watchPoints?.length > 0 && (
+          <>
+            <SectionLabel>Watch points</SectionLabel>
+            <WatchPoints points={race.watchPoints} />
+          </>
         )}
+
       </div>
     </div>
   );
 }
+
+// ── Page ──────────────────────────────────────────────────────
 
 export default function MeetingPage({ params }: { params: Promise<{ slug: string }> }) {
   const { isSignedIn } = useUser();
@@ -224,7 +460,8 @@ export default function MeetingPage({ params }: { params: Promise<{ slug: string
     <>
       <Nav />
       <div className="wrap" style={{ paddingTop:"140px", textAlign:"center" }}>
-        <p style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.72rem", color:"rgba(245,240,232,0.4)" }}>Loading race data…</p>
+        <p style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.72rem",
+          color:"rgba(245,240,232,0.4)" }}>Loading race data…</p>
       </div>
     </>
   );
@@ -233,8 +470,10 @@ export default function MeetingPage({ params }: { params: Promise<{ slug: string
     <>
       <Nav />
       <div className="wrap" style={{ paddingTop:"140px", textAlign:"center" }}>
-        <p style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.72rem", color:"rgba(245,240,232,0.4)" }}>Meeting not found.</p>
-        <Link href="/archive" style={{ color:"var(--gold)", fontFamily:"'DM Mono',monospace", fontSize:"0.7rem" }}>← Back to archive</Link>
+        <p style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.72rem",
+          color:"rgba(245,240,232,0.4)" }}>Meeting not found.</p>
+        <Link href="/archive" style={{ color:"var(--gold)", fontFamily:"'DM Mono',monospace",
+          fontSize:"0.7rem" }}>← Back to archive</Link>
       </div>
     </>
   );
@@ -243,31 +482,41 @@ export default function MeetingPage({ params }: { params: Promise<{ slug: string
     <>
       <Nav />
       <div className="wrap">
-        <div style={{ marginBottom:"28px", paddingBottom:"18px", borderBottom:"1px solid rgba(201,168,76,0.18)", display:"flex", justifyContent:"space-between", alignItems:"flex-end", flexWrap:"wrap", gap:"10px" }}>
+        <div style={{ marginBottom:"28px", paddingBottom:"18px",
+          borderBottom:"1px solid rgba(201,168,76,0.18)",
+          display:"flex", justifyContent:"space-between",
+          alignItems:"flex-end", flexWrap:"wrap", gap:"10px" }}>
           <div>
-            <p style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.6rem", textTransform:"uppercase", color:"rgba(245,240,232,0.35)", marginBottom:"6px" }}>
-              <Link href="/archive" style={{ color:"rgba(245,240,232,0.35)" }}>Archive</Link>
+            <p style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.58rem",
+              textTransform:"uppercase", color:"rgba(245,240,232,0.3)", marginBottom:"6px" }}>
+              <Link href="/archive" style={{ color:"rgba(245,240,232,0.3)" }}>Archive</Link>
               <span style={{ margin:"0 6px" }}>›</span>
               {data.course} · {data.date}
             </p>
-            <h1 style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:"2rem", color:"var(--cream)" }}>{data.course}</h1>
-            <p style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.64rem", color:"rgba(245,240,232,0.38)", marginTop:"3px" }}>
+            <h1 style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:"2rem",
+              color:"var(--cream)" }}>{data.course}</h1>
+            <p style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.62rem",
+              color:"rgba(245,240,232,0.35)", marginTop:"3px" }}>
               {data.date} · {data.races.length} races
             </p>
           </div>
-          <p style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.62rem", color:"rgba(245,240,232,0.3)", textAlign:"right", lineHeight:"1.7" }}>
+          <p style={{ fontFamily:"'DM Mono',monospace", fontSize:"0.6rem",
+            color:"rgba(245,240,232,0.28)", textAlign:"right", lineHeight:"1.7" }}>
             {checking ? "Checking access…" : hasAccess ? "✓ Full access" : "Race 1 free · Rest locked"}
           </p>
         </div>
 
         {data.races.map((race, i) => (
-          <RaceMap key={i} race={race} hasAccess={hasAccess} />
+          <RaceCard key={i} race={race} hasAccess={hasAccess} />
         ))}
       </div>
 
       <footer>
         <span className="footer-brand">PaceMap</span>
-        <span className="footer-note">pacemap.co.uk · A Signalweight product<br />For informational purposes only · Not financial advice</span>
+        <span className="footer-note">
+          pacemap.co.uk · A Signalweight product<br />
+          For informational purposes only · Not financial advice
+        </span>
       </footer>
     </>
   );
