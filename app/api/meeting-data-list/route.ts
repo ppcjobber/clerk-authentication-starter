@@ -11,7 +11,6 @@ export async function GET() {
     const months = ['January','February','March','April','May','June',
                     'July','August','September','October','November','December'];
 
-    // Use UK time to match the pipeline's date strings
     const ukNow      = new Date(new Date().toLocaleString('en-GB', { timeZone: 'Europe/London' }));
     const ukTomorrow = new Date(ukNow);
     ukTomorrow.setDate(ukNow.getDate() + 1);
