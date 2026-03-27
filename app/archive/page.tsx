@@ -57,7 +57,54 @@ const MEETINGS: any[] = [
     races:      7,
     courseSlug: "dundalk-aw",
     latest:     false,
-  },];
+  },
+  {
+    slug:       "wetherby_27-march-2026",
+    date:       "27 March 2026",
+    label:      "Wetherby — 27 March 2026",
+    going:      "Good",
+    races:      7,
+    courseSlug: "wetherby",
+    latest:     false,
+  },
+  {
+    slug:       "newcastle_aw_27-march-2026",
+    date:       "27 March 2026",
+    label:      "Newcastle (AW) — 27 March 2026",
+    going:      "Good",
+    races:      9,
+    courseSlug: "newcastle-aw",
+    latest:     false,
+  },
+  {
+    slug:       "lingfield_aw_27-march-2026",
+    date:       "27 March 2026",
+    label:      "Lingfield (AW) — 27 March 2026",
+    going:      "Good",
+    races:      7,
+    courseSlug: "lingfield-aw",
+    latest:     false,
+  },
+  {
+    slug:       "fontwell_27-march-2026",
+    date:       "27 March 2026",
+    label:      "Fontwell — 27 March 2026",
+    going:      "Good",
+    races:      6,
+    courseSlug: "fontwell",
+    latest:     false,
+  },
+  {
+    slug:       "dundalk_aw_27-march-2026",
+    date:       "27 March 2026",
+    label:      "Dundalk (AW) — 27 March 2026",
+    going:      "Good",
+    races:      7,
+    courseSlug: "dundalk-aw",
+    latest:     false,
+  },
+
+];
 
 function groupByDate(meetings: Meeting[]) {
   const now = new Date();
