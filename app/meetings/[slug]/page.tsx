@@ -4,6 +4,7 @@ import Nav from "@/components/Nav";
 import Link from "next/link";
 import { useUser } from "@clerk/nextjs";
 import { useEffect, useState } from "react";
+import Footer from "@/components/Footer";
 
 // ── Types ─────────────────────────────────────────────────────
 
@@ -487,13 +488,7 @@ export default function MeetingPage({ params }: { params: Promise<{ slug: string
         ))}
       </div>
 
-      <footer>
-        <span className="footer-brand">PaceMap</span>
-        <span className="footer-note">
-          pacemap.co.uk · A Signalweight product<br />
-          For informational purposes only · Not financial advice
-        </span>
-      </footer>
+     <Footer />
     </>
   );
 }
