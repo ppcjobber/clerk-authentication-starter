@@ -35,7 +35,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Natural front runner who should dictate terms unopposed but needs to prove stamina over this extended trip.",
+          "note": "Will dictate terms from the front but question marks over race fitness after limited recent competitive action",
           "draw": null,
           "draw_adv": null,
           "_projected": 106.7,
@@ -52,7 +52,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Consistent prominent racer with strong recent good ground form who should track the leader perfectly.",
+          "note": "Brings the strongest recent form profile and suits tracking the likely steady pace before challenging late",
           "draw": null,
           "draw_adv": null,
           "_projected": 85.1,
@@ -69,7 +69,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up performer whose style relies on a strong pace to be effective but form figures remain unclear.",
+          "note": "Hold-up style could be disadvantaged in small field but unknown recent form creates uncertainty about current ability",
           "draw": null,
           "draw_adv": null,
           "_projected": 80.0,
@@ -80,14 +80,14 @@
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Ka Mate Du Brivet will dictate terms as the lone front runner, likely setting a steady tempo without pressure early on. With Broomfield Aderra sitting prominent and Willshebe Court held up, the pace should be manageable through the early stages before quickening significantly from the final turn as the hold-up horse makes his challenge.",
+      "paceDynamic": "Ka Mate Du Brivet will control the tempo from the front with no other confirmed pace horses, allowing him to dictate a measured gallop over this extended trip. Broomfield Aderra will likely track in second with Willshebe Court held up at the rear, creating a three-part procession that builds into a tactical finish where positioning and jumping accuracy become crucial.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Uncontested Front Running",
-          "prob": 45,
-          "trigger": "If Ka Mate Du Brivet jumps cleanly and maintains rhythm",
-          "body": "The leader controls fractions without interference, building momentum through hurdles while the others struggle to close the gap. His sustainable galloping style proves decisive over this staying trip.",
+          "title": "Controlled Front Running Win",
+          "prob": 40,
+          "trigger": "If Ka Mate Du Brivet jumps cleanly and maintains rhythm throughout",
+          "body": "The leader uses his tactical advantage to kick clear after the last hurdle when the hold-up horse is still finding his stride. Broomfield Aderra chases hard but cannot reel in the front runner who has controlled every phase.",
           "winners": [
             "Ka Mate Du Brivet",
             "Broomfield Aderra"
@@ -98,10 +98,10 @@
         },
         {
           "label": "B",
-          "title": "Prominent Tracker Strikes",
+          "title": "Prominent Horse Strikes Late",
           "prob": 35,
-          "trigger": "If Broomfield Aderra travels strongly in behind the leader",
-          "body": "The winner sits perfectly positioned to strike turning for home, using superior recent form to overhaul a tiring Ka Mate Du Brivet. His consistent recent performances on good ground prove crucial.",
+          "trigger": "If Broomfield Aderra travels strongly and Ka Mate Du Brivet's pace becomes pedestrian",
+          "body": "The prominent runner uses superior recent form to wear down the leader in the final furlong after stalking throughout. Ka Mate Du Brivet's lack of recent competitive action tells as Broomfield Aderra's fitness advantage shows.",
           "winners": [
             "Broomfield Aderra",
             "Ka Mate Du Brivet"
@@ -112,10 +112,10 @@
         },
         {
           "label": "C",
-          "title": "Hold Up Challenge",
-          "prob": 15,
-          "trigger": "If the pace becomes genuinely strong early or Ka Mate Du Brivet goes too fast",
-          "body": "Willshebe Court benefits from a strong gallop that sets up his closing kick, sweeping past tired leaders in the final furlong. The hold-up style thrives when others have gone too hard.",
+          "title": "Hold Up Horse Times Run",
+          "prob": 20,
+          "trigger": "If the early pace becomes too slow and Willshebe Court gets the right racing room",
+          "body": "The hold-up runner benefits from a crawling gallop that plays to his patient style, sweeping past tired leaders. Both Ka Mate Du Brivet and Broomfield Aderra pay for their early efforts as the backmarker's fresh finish prevails.",
           "winners": [
             "Willshebe Court",
             "Broomfield Aderra"
@@ -126,10 +126,10 @@
         },
         {
           "label": "D",
-          "title": "Jumping Carnage",
+          "title": "Jumping Errors Change Race",
           "prob": 5,
-          "trigger": "If multiple horses make significant jumping errors at key hurdles",
-          "body": "The race falls apart tactically with mistakes disrupting rhythm and positioning, allowing an unexpected winner to emerge. Whichever horse maintains fluency through the obstacles capitalizes on others' misfortunes.",
+          "trigger": "If multiple horses make significant blunders at crucial hurdles in the home straight",
+          "body": "The race falls apart tactically with mistakes disrupting the natural running order and rhythm. The horse who jumps most fluently late on capitalizes while others lose momentum and positioning through poor jumping.",
           "winners": [
             "Broomfield Aderra",
             "Willshebe Court"
@@ -141,24 +141,20 @@
       ],
       "watchPoints": [
         {
+          "severity": "warn",
+          "text": "Watch if Ka Mate Du Brivet gets an uncontested lead and whether his jumping rhythm holds under pressure late"
+        },
+        {
+          "severity": "info",
+          "text": "Monitor how close Broomfield Aderra tracks the leader and if she travels with obvious enthusiasm turning for home"
+        },
+        {
           "severity": "danger",
-          "text": "Ka Mate Du Brivet could face stamina questions if he sets too strong a pace in the early stages"
-        },
-        {
-          "severity": "warn",
-          "text": "Broomfield Aderra's jumping fluency will be crucial when asked to quicken after the final hurdle"
+          "text": "Check if Willshebe Court gets squeezed for racing room in a small field where positioning options are limited"
         },
         {
           "severity": "info",
-          "text": "Willshebe Court needs the other two to go fast enough early to bring his finishing kick into play"
-        },
-        {
-          "severity": "warn",
-          "text": "The small field size reduces tactical options and increases the importance of clean jumping throughout"
-        },
-        {
-          "severity": "info",
-          "text": "Any significant jumping error by Ka Mate Du Brivet would completely change the complexion of the race"
+          "text": "Observe the early pace judgment as a slow gallop could completely change the tactical dynamics favoring the hold-up horse"
         }
       ]
     },
@@ -199,7 +195,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up specialist whose recent form shows consistency in soft ground conditions",
+          "note": "Hold-up performer with highest OR who needs pace collapse to be effective",
           "draw": null,
           "draw_adv": null,
           "_projected": 79.0,
@@ -216,7 +212,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Proven front-runner with course win and strong record when allowed uncontested lead",
+          "note": "Proven leader with recent win and solid record on good going conditions",
           "draw": null,
           "draw_adv": null,
           "_projected": 69.8,
@@ -233,7 +229,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Patient hold-up horse but concerning lack of recent wins despite regular placings",
+          "note": "Quality hold-up horse but poor recent win/place record raises reliability concerns",
           "draw": null,
           "draw_adv": null,
           "_projected": 67.0,
@@ -250,7 +246,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner whose style suits tracking the leader but poor recent win record",
+          "note": "Prominent racer who could press leader but lacking recent winning form",
           "draw": null,
           "draw_adv": null,
           "_projected": 63.1,
@@ -267,7 +263,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Lowest-rated but hold-up style could benefit if pace collapses",
+          "note": "Lowest-rated runner relying on hold-up style from well out of handicap",
           "draw": null,
           "draw_adv": null,
           "_projected": 42.9,
@@ -284,7 +280,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner showing recent improvement with good second last time",
+          "note": "Prominent runner with recent second who could benefit from forward position",
           "draw": null,
           "draw_adv": null,
           "_projected": 42.7,
@@ -301,7 +297,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Last-time-out winner whose prominent style and confidence could surprise",
+          "note": "Recent winner with good going form who races prominently",
           "draw": null,
           "draw_adv": null,
           "_projected": 42.6,
@@ -312,50 +308,50 @@
           "_action": "WATCH"
         }
       ],
-      "paceDynamic": "Motazzen as the sole confirmed leader will dictate terms from the front, likely setting a sustainable gallop without pressure through the early stages. With multiple hold-up horses (Geordies Betty, Godot, Wot You Wearing) and prominent runners (Peking Opera, Vendant, Kylenoe Dancer) sitting behind, this creates a classic front-runner versus closers dynamic where the pace judgement and final-furlong finishing kick will be crucial.",
+      "paceDynamic": "Motazzen will control the early pace as the sole confirmed leader, likely setting a moderate tempo over this extended trip. The prominent runners Peking Opera, Vendant, and Kylenoe Dancer will settle just behind, while hold-up horses Geordies Betty, Godot, and Wot You Wearing track further back for late challenges.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Motazzen Controls Throughout",
+          "title": "Motazzen Stays Strong",
           "prob": 35,
-          "trigger": "If Motazzen gets an uncontested lead and judges the pace perfectly",
-          "body": "The front-runner builds an unassailable advantage through controlled fractions, with the hold-up horses unable to reel him in. Peking Opera and Vendant may get closest but fall short of the winner.",
+          "trigger": "If Motazzen maintains steady gallop without pressure up front",
+          "body": "The leader gets an easy time of it and has enough left to repel late challenges. The hold-up horses find too much to do despite finishing efforts.",
           "winners": [
             "Motazzen",
             "Peking Opera"
           ],
           "others": [
             "Vendant",
-            "Kylenoe Dancer"
+            "Geordies Betty"
           ]
         },
         {
           "label": "B",
-          "title": "Hold-Up Horse Surge",
-          "prob": 30,
-          "trigger": "If the pace becomes too strong early or Motazzen weakens turning for home",
-          "body": "Geordies Betty and Godot benefit from their patient tactics as the leaders fade, with one of the higher-rated closers timing their run to perfection. The race becomes a battle between the strongest finishers.",
-          "winners": [
-            "Geordies Betty",
-            "Godot"
-          ],
-          "others": [
-            "Motazzen",
-            "Peking Opera"
-          ]
-        },
-        {
-          "label": "C",
-          "title": "Prominent Runner Strike",
+          "title": "Prominent Pressure Cooker",
           "prob": 25,
-          "trigger": "If the race develops into a true test where tracking the leader pays dividends",
-          "body": "Peking Opera or Vendant get the perfect trip tracking Motazzen before striking in the final half-mile. The hold-up horses struggle to make up sufficient ground from their patient positions.",
+          "trigger": "If Peking Opera and Vendant press Motazzen from early stages",
+          "body": "The increased pace stretches the field and favors those who can sustain their effort. Late runners struggle to make up ground on the leaders.",
           "winners": [
             "Peking Opera",
             "Vendant"
           ],
           "others": [
-            "Kylenoe Dancer",
+            "Motazzen",
+            "Kylenoe Dancer"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Hold-Up Heroes Emerge",
+          "prob": 30,
+          "trigger": "If steady pace allows closers to get into contention turning for home",
+          "body": "Geordies Betty and Godot use their superior class ratings to power past tiring leaders. The pace collapses in their favor over the final furlong.",
+          "winners": [
+            "Geordies Betty",
+            "Godot"
+          ],
+          "others": [
+            "Wot You Wearing",
             "Motazzen"
           ]
         },
@@ -363,38 +359,38 @@
           "label": "D",
           "title": "Kylenoe Dancer Surprise",
           "prob": 10,
-          "trigger": "If the race unfolds at a steady pace allowing all horses to remain competitive turning in",
-          "body": "Kylenoe Dancer's recent Fontwell win gives confidence and the horse finds improvement when others disappoint. The even pace allows this lower-rated runner to outfinish more fancied rivals.",
+          "trigger": "If recent winner maintains momentum from last victory at this trip",
+          "body": "The improving horse continues upward trajectory and benefits from good going conditions. Form boost proves decisive against higher-rated but less progressive rivals.",
           "winners": [
             "Kylenoe Dancer",
-            "Wot You Wearing"
+            "Vendant"
           ],
           "others": [
-            "Geordies Betty",
-            "Vendant"
+            "Motazzen",
+            "Peking Opera"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Watch if Motazzen gets pressured early by Peking Opera or Vendant as this will compromise his finishing kick"
+          "text": "Motazzen getting uncontested lead could prove decisive if others fail to apply pressure"
         },
         {
           "severity": "warn",
-          "text": "Monitor Godot's jumping as hold-up horses need clean rounds to make up ground in closing stages"
+          "text": "Geordies Betty needs significant pace collapse given hold-up style and trip requirements"
         },
         {
           "severity": "info",
-          "text": "Observe Kylenoe Dancer's position turning in as recent winner may have found improvement"
+          "text": "Vendant's recent second suggests return to form and forward position suits race shape"
         },
         {
           "severity": "warn",
-          "text": "Check if Geordies Betty gets clear run approaching last as hold-up horses need racing room"
+          "text": "Godot's poor strike rate on similar going raises questions despite class advantage"
         },
         {
           "severity": "info",
-          "text": "Watch for any early mistakes from Wot You Wearing as lowest-rated needs everything to go right"
+          "text": "Kylenoe Dancer's winning momentum could continue if maintaining prominent position throughout"
         }
       ]
     },
@@ -435,7 +431,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Most likely pace-setter with solid recent form on similar going and distance",
+          "note": "Consistent soft ground performer but needs to avoid getting drawn into early speed battle",
           "draw": null,
           "draw_adv": null,
           "_projected": 84.7,
@@ -452,7 +448,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Highest-rated runner whose hold-up style suits if pace is strong enough",
+          "note": "Highest-rated runner whose hold-up style needs strong pace collapse to be effective",
           "draw": null,
           "draw_adv": null,
           "_projected": 62.3,
@@ -469,7 +465,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Won last time on soft ground and handles prominent role effectively",
+          "note": "Last-time-out winner who handles these conditions and distance perfectly",
           "draw": null,
           "draw_adv": null,
           "_projected": 62.0,
@@ -486,7 +482,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Consistent prominent runner but yet to win on similar going conditions",
+          "note": "Reliable prominent runner but lacks a recent win and may struggle for pace",
           "draw": null,
           "draw_adv": null,
           "_projected": 48.2,
@@ -503,7 +499,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up specialist who needs strong pace but has limited soft ground wins",
+          "note": "Hold-up horse with limited soft ground experience compared to rivals",
           "draw": null,
           "draw_adv": null,
           "_projected": 27.0,
@@ -520,7 +516,7 @@
           "finish_type": "F",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Tends to fade in finish which is concerning over this staying trip",
+          "note": "Consistent early position but his fading pattern makes him vulnerable late",
           "draw": null,
           "draw_adv": null,
           "_projected": 0.0,
@@ -537,7 +533,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Lowest-rated but consistent on soft ground with prominent racing style",
+          "note": "Lowest-rated runner whose prominent style faces stronger pace competition",
           "draw": null,
           "draw_adv": null,
           "_projected": 0.0,
@@ -548,14 +544,14 @@
           "_action": "WATCH"
         }
       ],
-      "paceDynamic": "Ronnies Reflection, Tom Desjy, Daring Plan, Valirann Gold and Engaging Sam will all show early speed, creating a moderate to strong pace from the outset. With five prominent runners and only two hold-up horses (Kitsilano and Royal Juniper), the pace will be honest throughout but not suicidal. This should set up well for the closers if the pace-setters don't settle properly.",
+      "paceDynamic": "Ronnies Reflection leads the prominent contingent alongside Valirann Gold, Daring Plan, Tom Desjy and Engaging Sam, creating a genuine pace scenario with multiple horses wanting to be handy. The hold-up pair Kitsilano and Royal Juniper will rely on the strong pace up front setting up their finishing kicks, with the soft ground favoring stamina over speed in the closing stages.",
       "scenarios": [
         {
           "label": "A",
           "title": "Strong Pace Collapse",
           "prob": 35,
-          "trigger": "If the five prominent runners fail to settle and go too fast early",
-          "body": "The pace becomes unsustainable over this trip on soft ground, causing the leaders to weaken markedly from 3 out. Kitsilano and Royal Juniper benefit from the strong pace and pick up the pieces late.",
+          "trigger": "If the prominent quintet go too hard early and multiple horses crack",
+          "body": "The pace battle between Ronnies Reflection, Valirann Gold, Daring Plan and Tom Desjy becomes unsustainable by the second mile. Kitsilano and Royal Juniper sweep past the weakening leaders in the final half-mile.",
           "winners": [
             "Kitsilano",
             "Royal Juniper"
@@ -567,70 +563,70 @@
         },
         {
           "label": "B",
-          "title": "Tactical Moderate Pace",
+          "title": "Controlled Prominent Win",
           "prob": 40,
-          "trigger": "If Ronnies Reflection and Valirann Gold lead sensibly without pressure",
-          "body": "The pace is honest but sustainable, allowing the prominent runners to maintain their positions throughout. The race becomes a sprint from the last fence with stamina and class deciding.",
+          "trigger": "If Valirann Gold or Ronnies Reflection can dictate without serious pressure",
+          "body": "One of the classier front-runners manages the pace intelligently while Tom Desjy fades as usual. The winner holds off the late challenge from the hold-up horses who find too much to do.",
           "winners": [
-            "Kitsilano",
-            "Valirann Gold"
+            "Valirann Gold",
+            "Ronnies Reflection"
           ],
           "others": [
-            "Ronnies Reflection",
+            "Kitsilano",
             "Daring Plan"
           ]
         },
         {
           "label": "C",
-          "title": "Front Runner Dominates",
+          "title": "Hold-Up Horses Fail",
           "prob": 15,
-          "trigger": "If Ronnies Reflection gets an easy lead and dictates throughout",
-          "body": "The pace becomes too slow for the hold-up horses to be effective, with Ronnies Reflection able to quicken clear from 2 out. Tom Desjy and Valirann Gold track the leader but cannot match the kick.",
+          "trigger": "If the pace proves too moderate for effective finishing kicks",
+          "body": "The prominent horses settle into a manageable rhythm that doesn't suit the back-markers. Kitsilano and Royal Juniper find insufficient pace collapse to mount their usual late rallies.",
           "winners": [
-            "Ronnies Reflection",
-            "Valirann Gold"
+            "Daring Plan",
+            "Tom Desjy"
           ],
           "others": [
-            "Tom Desjy",
-            "Daring Plan"
+            "Valirann Gold",
+            "Engaging Sam"
           ]
         },
         {
           "label": "D",
-          "title": "Stamina Test Grind",
+          "title": "Kitsilano Class Edge",
           "prob": 10,
-          "trigger": "If the soft ground and trip create a true staying test from early",
-          "body": "The race becomes a war of attrition with several runners struggling to see out the trip on testing ground. Only the most genuine stayers survive, with fitness and stamina trumping class.",
+          "trigger": "If the pace is perfectly judged to suit the highest-rated runner",
+          "body": "The moderate early tempo allows all runners to stay in touch before a genuine test develops. Kitsilano's superior class rating of 94 proves decisive when the race becomes a staying test in heavy conditions.",
           "winners": [
-            "Daring Plan",
-            "Engaging Sam"
+            "Kitsilano",
+            "Valirann Gold"
           ],
           "others": [
-            "Valirann Gold",
-            "Tom Desjy"
+            "Royal Juniper",
+            "Ronnies Reflection"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Tom Desjy's tendency to fade in the finish could be exaggerated over this longer trip"
+          "text": "Tom Desjy showing early speed as his recent pattern of fading in the finish makes him a pace liability"
         },
         {
           "severity": "warn",
-          "text": "Royal Juniper needs the pace to be strong early to be competitive from hold-up position"
+          "text": "Kitsilano and Royal Juniper getting too far back if the pace becomes moderate as they need strong collapse"
         },
         {
           "severity": "info",
-          "text": "Kitsilano's jumping quality under pressure given the likely competitive pace scenario"
+          "text": "Valirann Gold's jumping rhythm early as winner last time needs to confirm soft ground handling"
         },
         {
           "severity": "warn",
-          "text": "Ronnies Reflection's ability to sustain pace if pressured early by multiple prominent runners"
+          "text": "Multiple prominent horses (Ronnies Reflection, Daring Plan, Engaging Sam) going too fast together in opening mile"
         },
         {
           "severity": "info",
-          "text": "Valirann Gold's stamina reserves after winning last time out over shorter distance"
+          "text": "Royal Juniper's position turning for home given his limited soft ground experience compared to field"
         }
       ]
     },
@@ -673,7 +669,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Unproven on this distance extension and lacking recent form confidence",
+          "note": "Unknown quantity with limited recent form, sits in the dangerous prominent pack",
           "draw": null,
           "draw_adv": null,
           "_projected": 96.7,
@@ -690,7 +686,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Highest official rating of the prominent runners but questionable stamina for this trip",
+          "note": "Highest-rated prominent runner but inconsistent recent efforts may reflect training issues",
           "draw": null,
           "draw_adv": null,
           "_projected": 89.4,
@@ -707,7 +703,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up style requires gaps to appear but limited experience over hurdles",
+          "note": "Hold-up style suits if prominent pack sets strong pace",
           "draw": null,
           "draw_adv": null,
           "_projected": 87.0,
@@ -724,7 +720,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Most consistent performer with excellent record on similar going conditions",
+          "note": "Most experienced soft ground performer with 5 places from 7 similar conditions starts",
           "draw": null,
           "draw_adv": null,
           "_projected": 85.6,
@@ -741,7 +737,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Classic hold-up horse who needs strong pace and clear passage late",
+          "note": "Classic hold-up profile needs pace collapse to be effective from rear",
           "draw": null,
           "draw_adv": null,
           "_projected": 81.5,
@@ -758,7 +754,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Good recent form on soft but will need luck in running from prominent position",
+          "note": "Good soft ground record with 2 places from 4 similar starts, proven at this trip",
           "draw": null,
           "draw_adv": null,
           "_projected": 81.2,
@@ -775,7 +771,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Lowest rated runner whose hold-up style faces major task from this mark",
+          "note": "Lowest-rated runner whose hold-up style needs everything to fall right",
           "draw": null,
           "draw_adv": null,
           "_projected": 77.0,
@@ -792,7 +788,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Only proven front-runner with recent victory and solid soft ground form",
+          "note": "Only proven winner in field with ideal front-running style for conditions",
           "draw": null,
           "draw_adv": null,
           "_projected": 69.7,
@@ -809,7 +805,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Most experienced hurdler with consistent placing record on this going",
+          "note": "Most soft ground experience with 4 places from 6 starts, consistent place-getter",
           "draw": null,
           "draw_adv": null,
           "_projected": 51.7,
@@ -820,44 +816,44 @@
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Last Round will lead uncontested from the start, setting a steady gallop that should suit his proven stamina. Four prominent runners (Jambon, Grizzled Squirrel, Unknown Entity, Graeme The Grey) will create traffic problems approaching the final two hurdles as they jostle for position behind the leader.",
+      "paceDynamic": "Last Round will lead uncontested from the flag, setting a sustainable gallop that suits his winning style. With Jambon, Grizzled Squirrel, Unknown Entity, and Graeme The Grey all wanting prominent positions behind him, expect congestion and shuffling turning in, creating traffic problems for the hold-up horses trying to make their moves from 2 furlongs out.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Steady Pace Suits Leaders",
+          "title": "Uncontested Leader Wins",
           "prob": 35,
-          "trigger": "If Last Round maintains an even gallop and the prominent quartet don't interfere with each other",
-          "body": "The race develops into a tactical affair where those on the pace have positional advantage. Hold-up horses struggle to make ground in the testing conditions.",
+          "trigger": "If Last Round gets an easy lead and kicks clear approaching the last",
+          "body": "The pace-setter builds an unassailable advantage as the prominent pack gets in each other's way. His proven soft ground form (1 win, 2 places from 3 runs) sees him home.",
           "winners": [
             "Last Round",
-            "Grizzled Squirrel"
+            "Unknown Entity"
           ],
           "others": [
-            "Unknown Entity",
-            "Graeme The Grey"
+            "Graeme The Grey",
+            "Grizzled Squirrel"
           ]
         },
         {
           "label": "B",
-          "title": "Traffic Chaos 2 Out",
+          "title": "Prominent Battle Royale",
           "prob": 30,
-          "trigger": "If the four prominent runners bunch up and impede each other approaching the second-last hurdle",
-          "body": "Jambon, Grizzled Squirrel, Unknown Entity and Graeme The Grey all suffer interference, allowing Last Round to pull clear. The clean hold-up horses pick up the pieces late.",
+          "trigger": "If the four prominent runners engage in a sustained battle from 3 out",
+          "body": "Unknown Entity and Graeme The Grey emerge from the pack having shown best soft ground consistency. The early pace tells on Last Round who weakens late.",
           "winners": [
-            "Last Round",
-            "The Quant"
+            "Unknown Entity",
+            "Graeme The Grey"
           ],
           "others": [
-            "Khalk'eau Spigao",
-            "I'm Wide Awake"
+            "Grizzled Squirrel",
+            "Last Round"
           ]
         },
         {
           "label": "C",
-          "title": "Hold-Up Horse Charges",
+          "title": "Hold-Up Horse Swoops",
           "prob": 25,
-          "trigger": "If Last Round goes too fast early under pressure from the prominent brigade",
-          "body": "The leader weakens entering the straight and the hold-up horses get perfect conditions to unleash late runs. The Quant and Khalk'eau Spigao time their challenges perfectly.",
+          "trigger": "If the prominent pack goes too fast chasing Last Round's early kick",
+          "body": "The Quant times his run perfectly from the rear as the early leaders fade from 2 out. Khalk'eau Spigao also benefits from the strong pace collapse.",
           "winners": [
             "The Quant",
             "Khalk'eau Spigao"
@@ -869,40 +865,40 @@
         },
         {
           "label": "D",
-          "title": "Unknown Entity Powers Through",
+          "title": "Traffic Chaos Special",
           "prob": 10,
-          "trigger": "If Unknown Entity avoids the traffic and gets a clean run through on soft ground he clearly handles",
-          "body": "His experience on similar going (7 runs, 5 places) proves decisive as he powers between horses. The consistent performer finally converts his placings into victory.",
+          "trigger": "If the prominent quartet causes a complete jam turning in",
+          "body": "I'm Wide Awake finds the clearest passage having been further back than the main hold-up trio. The experienced campaigner (6 soft ground runs, 4 places) capitalizes on others' misfortune.",
           "winners": [
-            "Unknown Entity",
-            "I'm Wide Awake"
+            "I'm Wide Awake",
+            "Trooper"
           ],
           "others": [
-            "Graeme The Grey",
-            "Last Round"
+            "The Quant",
+            "Jambon"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Traffic pile-up involving Jambon, Grizzled Squirrel, Unknown Entity and Graeme The Grey approaching second-last hurdle"
+          "text": "Unknown Entity has the most soft ground experience (7 runs) and could exploit the inevitable prominent traffic jam"
         },
         {
           "severity": "warn",
-          "text": "Last Round's jumping under pressure if the prominent runners close the gap turning in"
+          "text": "Last Round's early fractions will determine if this becomes a test of stamina or speed - watch his first half-mile splits"
+        },
+        {
+          "severity": "info",
+          "text": "Grizzled Squirrel holds the highest rating but recent poor form suggests he may not handle the pressure"
         },
         {
           "severity": "warn",
-          "text": "The Quant and Khalk'eau Spigao getting clear runs from off the pace in straight"
+          "text": "The prominent quartet (Jambon, Grizzled Squirrel, Unknown Entity, Graeme The Grey) will create bottlenecks approaching the final two hurdles"
         },
         {
           "severity": "info",
-          "text": "Unknown Entity's position turning for home given his excellent soft ground placing record"
-        },
-        {
-          "severity": "info",
-          "text": "I'm Wide Awake's finishing effort as most proven hurdler in field despite low rating"
+          "text": "I'm Wide Awake has the best strike rate on similar ground (4 places from 6) despite modest rating"
         }
       ]
     },
@@ -944,7 +940,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Highest-rated hold-up horse who thrives when allowed to build momentum from the back in testing conditions.",
+          "note": "Highest-rated runner whose hold-up style perfectly suits the likely honest gallop from The Gypsy Davey.",
           "draw": null,
           "draw_adv": null,
           "_projected": 114.6,
@@ -961,7 +957,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Natural front-runner but vulnerable to pressure given his moderate rating against this field.",
+          "note": "Only confirmed front-runner but moderate recent form suggests vulnerable if others quicken.",
           "draw": null,
           "draw_adv": null,
           "_projected": 99.2,
@@ -978,7 +974,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Likes to be handy and has strong recent soft ground form with three wins from his last 14 starts.",
+          "note": "Prominent runner with excellent soft ground record (3 wins from 14 starts) who can dictate from forward position.",
           "draw": null,
           "draw_adv": null,
           "_projected": 97.0,
@@ -995,7 +991,7 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Consistent prominent runner with excellent recent form including a win last time out on similar ground.",
+          "note": "Recent winner who races prominently and has strong soft ground statistics (9 places from 15 starts).",
           "draw": null,
           "draw_adv": null,
           "_projected": 91.9,
@@ -1012,7 +1008,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up performer who needs things to fall right but has a good strike rate on soft ground.",
+          "note": "Hold-up performer with proven ability on soft surfaces and recent winning form to draw confidence from.",
           "draw": null,
           "draw_adv": null,
           "_projected": 88.8,
@@ -1029,7 +1025,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Another hold-up type who needs a strong pace but has limited winning form on this ground.",
+          "note": "Another hold-up runner whose recent soft ground performances suggest he handles these conditions well.",
           "draw": null,
           "draw_adv": null,
           "_projected": 87.2,
@@ -1046,7 +1042,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent runner with solid place record who could benefit if the leaders go too fast early.",
+          "note": "Prominent racer with solid soft ground experience but needs to bounce back from heavy ground disappointment.",
           "draw": null,
           "draw_adv": null,
           "_projected": 80.6,
@@ -1063,7 +1059,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Handy sort who typically races prominently but lacks a recent win and may struggle for pace.",
+          "note": "Forward-going type with reasonable soft ground record but lacks a recent victory to inspire confidence.",
           "draw": null,
           "draw_adv": null,
           "_projected": 62.1,
@@ -1074,14 +1070,29 @@
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "The Gypsy Davey will lead uncontested with Mon Champion, Superstylin, Koenigsstern and Le Galli Bier forming the early prominent group behind. This creates a sustainable gallop that will set up perfectly for the hold-up horses Alien Storm, Alright Dai and Rip Wheeler to time their challenges from the back.",
+      "paceDynamic": "The Gypsy Davey will set a steady gallop from the front without serious pressure, as Mon Champion, Superstylin, Koenigsstern and Le Galli Bier settle in behind rather than challenge early. This creates a sustainable tempo that will suit the hold-up horses Alien Storm, Alright Dai and Rip Wheeler, who can track the pace and deliver late challenges over the final 3-4 furlongs.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Sustained gallop setup",
-          "prob": 45,
-          "trigger": "If The Gypsy Davey maintains an even tempo without serious early pressure from the prominent pack.",
-          "body": "The race becomes a stamina test where tactical positioning matters more than early speed. The patient hold-up horses get the perfect setup to unleash finishing kicks.",
+          "title": "Sustained Gallop Suits Leaders",
+          "prob": 40,
+          "trigger": "If The Gypsy Davey maintains an even tempo and the prominent runners don't press early.",
+          "body": "The lack of pace pressure allows front-runners to conserve energy for the climb home. Mon Champion and Superstylin can kick from their prominent positions when the pace lifts.",
+          "winners": [
+            "Mon Champion",
+            "Superstylin"
+          ],
+          "others": [
+            "The Gypsy Davey",
+            "Koenigsstern"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Hold-Up Brigade Strikes",
+          "prob": 35,
+          "trigger": "If the early pace is genuinely steady and the race becomes a sprint from 3 furlongs out.",
+          "body": "Alien Storm and Alright Dai get the perfect setup to unleash their finishing kicks. The class advantage of Alien Storm (OR 128) becomes decisive in a strongly-run finish.",
           "winners": [
             "Alien Storm",
             "Alright Dai"
@@ -1092,71 +1103,56 @@
           ]
         },
         {
-          "label": "B",
-          "title": "Prominent group pressure",
-          "prob": 30,
-          "trigger": "If Mon Champion and Superstylin take the race to The Gypsy Davey from halfway, creating genuine pace pressure.",
-          "body": "The increased tempo stretches the field and eliminates some finishers but plays into the hands of horses with tactical speed. Late runners need to be closer than usual to have any impact.",
-          "winners": [
-            "Mon Champion",
-            "Superstylin"
-          ],
-          "others": [
-            "Koenigsstern",
-            "Alien Storm"
-          ]
-        },
-        {
           "label": "C",
-          "title": "Early leader dominance",
+          "title": "Mid-Race Pace Injection",
           "prob": 15,
-          "trigger": "If The Gypsy Davey gets such an easy lead that he's still full of running turning for home.",
-          "body": "The lack of pace allows the leader to kick clear before the hold-up horses can organize their challenges. Prominent runners struggle to bridge the gap to a revitalized leader.",
-          "winners": [
-            "The Gypsy Davey",
-            "Le Galli Bier"
-          ],
-          "others": [
-            "Koenigsstern",
-            "Superstylin"
-          ]
-        },
-        {
-          "label": "D",
-          "title": "Messy pace collapse",
-          "prob": 10,
-          "trigger": "If The Gypsy Davey stops quickly or there's interference in the prominent group, creating a stop-start gallop.",
-          "body": "The race becomes scrappy with no clear rhythm, favoring horses that can quicken from any position rather than pure hold-up types. Form figures become less reliable in the chaos.",
+          "trigger": "If Mon Champion or Koenigsstern inject pace from the 6-furlong pole to string out the field.",
+          "body": "The increased gallop finds out the stamina reserves and creates gaps through the field. Horses with proven soft ground form like Superstylin can capitalize on the honest pace.",
           "winners": [
             "Superstylin",
             "Koenigsstern"
           ],
           "others": [
+            "Le Galli Bier",
+            "Mon Champion"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Messy Tactical Affair",
+          "prob": 10,
+          "trigger": "If The Gypsy Davey goes too slow and multiple horses crowd up behind looking for racing room.",
+          "body": "The race becomes scrappy with traffic problems in the straight, favoring those who can find clear runs. Rip Wheeler's recent soft ground form could prove decisive if getting a clean passage.",
+          "winners": [
+            "Rip Wheeler",
+            "Le Galli Bier"
+          ],
+          "others": [
             "Alright Dai",
-            "Rip Wheeler"
+            "Koenigsstern"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Monitor if Mon Champion or Superstylin take the race to The Gypsy Davey early as this could set up a different tactical scenario."
+          "text": "The Gypsy Davey must maintain a genuine gallop as any slowdown will play into the hands of the higher-rated closers."
         },
         {
           "severity": "warn",
-          "text": "Watch Alien Storm's position at halfway - needs to be tracking the pace within striking distance to be effective."
+          "text": "Alien Storm needs a clear run from 3 furlongs out given his hold-up style and superior official rating."
         },
         {
           "severity": "warn",
-          "text": "Check if The Gypsy Davey gets an uncontested lead as he could prove hard to peg back despite his lower rating."
+          "text": "Mon Champion's jumping must be accurate as any mistakes will compromise his prominent racing position."
         },
         {
           "severity": "info",
-          "text": "Observe how quickly the hold-up horses Alright Dai and Rip Wheeler begin their moves as both need strong finishes."
+          "text": "Superstylin's recent winning form makes him dangerous if getting first run on the held-up horses."
         },
         {
           "severity": "info",
-          "text": "Notice if any of the prominent pack drop away early as this could indicate the pace is too strong for their capabilities."
+          "text": "Track Rip Wheeler for a smooth passage through the race as traffic problems could derail his chances."
         }
       ]
     },
@@ -1198,7 +1194,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent racer who has been consistent in recent outings and handles the going conditions well",
+          "note": "Will track the leader and has solid place form but lacks a recent win to inspire confidence",
           "draw": null,
           "draw_adv": null,
           "_projected": 94.1,
@@ -1215,7 +1211,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Strong finisher who won last time on soft ground and has excellent course record at this trip",
+          "note": "Recent Fontwell winner whose hold-up style perfectly suits the expected race shape",
           "draw": null,
           "draw_adv": null,
           "_projected": 81.8,
@@ -1232,7 +1228,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Natural front runner with good recent form but limited wins on similar going conditions",
+          "note": "Confirmed front-runner who should get uncontested lead but poor recent winning record",
           "draw": null,
           "draw_adv": null,
           "_projected": 69.7,
@@ -1249,7 +1245,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Genuine stayer who won last time on soft and excels in testing ground conditions",
+          "note": "Dual heavy ground winner whose hold-up style aligns with race dynamics",
           "draw": null,
           "draw_adv": null,
           "_projected": 61.4,
@@ -1266,7 +1262,7 @@
           "finish_type": "F",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse with stamina concerns who tends to fade in the final stages of races",
+          "note": "Lowest rated runner whose tendency to fade in the finish makes her vulnerable here",
           "draw": null,
           "draw_adv": null,
           "_projected": 54.5,
@@ -1283,7 +1279,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Patient type who needs strong pace to aim at but lacks recent winning form",
+          "note": "Versatile hold-up performer who can adapt tactics if pace scenario changes",
           "draw": null,
           "draw_adv": null,
           "_projected": 53.7,
@@ -1300,7 +1296,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Versatile hold-up horse who has won twice on heavy ground and stays well",
+          "note": "Heavy ground specialist whose recent third here shows course suitability",
           "draw": null,
           "draw_adv": null,
           "_projected": 32.4,
@@ -1317,7 +1313,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse who has never won on this going despite multiple attempts",
+          "note": "Hold-up runner lacking any form of recent encouragement or standout credentials",
           "draw": null,
           "draw_adv": null,
           "_projected": 7.7,
@@ -1328,89 +1324,89 @@
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Test The Market will lead or sit close to the pace alongside Juggernaut, creating a moderate gallop that shouldn't be testing early. With six hold-up horses behind them, this sets up perfectly for the patient runners to time their challenges late, particularly over this stamina-testing trip on soft ground.",
+      "paceDynamic": "Test The Market will lead uncontested with Juggernaut potentially tracking close behind, creating a sustainable gallop that should suit the majority hold-up horses. With six runners employing hold-up tactics, the race will develop into a finishing kick contest where positioning and timing at the business end becomes crucial.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Sustained pace exposes stamina",
+          "title": "Sustainable Pace Suits Leaders",
           "prob": 35,
-          "trigger": "If Test The Market and Juggernaut maintain a solid gallop throughout",
-          "body": "The genuine stayers emerge late as others struggle with the combination of trip and ground. Bridge and Hello Cello benefit from their proven ability to finish strongly in these conditions.",
-          "winners": [
-            "Bridge",
-            "Hello Cello"
-          ],
-          "others": [
-            "Test The Market",
-            "Tommy Dillion"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "Slow pace sprint finish",
-          "prob": 25,
-          "trigger": "If the early pace is moderate allowing the field to bunch up",
-          "body": "The race becomes a sprint from the last hurdle where class tells over stamina. Test The Market and Hello Cello have the tactical speed to capitalize when the tempo lifts.",
-          "winners": [
-            "Test The Market",
-            "Hello Cello"
-          ],
-          "others": [
-            "Juggernaut",
-            "Dr Waksman"
-          ]
-        },
-        {
-          "label": "C",
-          "title": "Front runners dominate",
-          "prob": 20,
-          "trigger": "If the soft ground takes its toll on the hold-up horses",
-          "body": "Test The Market and Juggernaut gain crucial momentum that the closers cannot match in the testing conditions. Their forward positions prove decisive as the back markers struggle to make up ground.",
+          "trigger": "If Test The Market and Juggernaut get an easy lead without pressure",
+          "body": "The front pair maintain their advantage as the soft ground saps the finishing kick of the hold-up brigade. Test The Market's consistent front-running form proves decisive with Juggernaut tracking into second.",
           "winners": [
             "Test The Market",
             "Juggernaut"
           ],
           "others": [
             "Bridge",
+            "Hello Cello"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Hold-Up Brigade Delivers",
+          "prob": 40,
+          "trigger": "If the pace becomes truly steady allowing maximum finishing kick",
+          "body": "The soft ground levels the playing field as Hello Cello and Bridge time their challenges perfectly from the rear. Hello Cello's recent Fontwell win and Bridge's soft ground victories shine through.",
+          "winners": [
+            "Hello Cello",
+            "Bridge"
+          ],
+          "others": [
+            "Dr Waksman",
             "Tommy Dillion"
           ]
         },
         {
-          "label": "D",
-          "title": "Hold-up horse late surge",
-          "prob": 20,
-          "trigger": "If the pace collapses completely in the final half-mile",
-          "body": "One of the patient runners produces a devastating late run that sweeps past tiring leaders. Tommy Dillion or Dr Waksman emerge from the pack with perfectly-timed challenges.",
+          "label": "C",
+          "title": "Mid-Race Tempo Change",
+          "prob": 15,
+          "trigger": "If Juggernaut presses Test The Market earlier than expected creating stronger gallop",
+          "body": "The increased pace stretches the field and favors horses with tactical speed over pure hold-up runners. Dr Waksman's versatility allows him to adapt while Tommy Dillion's heavy ground form kicks in.",
           "winners": [
-            "Tommy Dillion",
-            "Dr Waksman"
+            "Dr Waksman",
+            "Tommy Dillion"
           ],
           "others": [
+            "Test The Market",
+            "Hello Cello"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Stamina Test Emerges",
+          "prob": 10,
+          "trigger": "If the soft ground and distance combination creates a true staying test",
+          "body": "The trip and conditions find out several runners as Bridge's heavy ground expertise and Hello Cello's proven soft ground ability dominate. The hold-up horses with genuine stamina separate from the field.",
+          "winners": [
             "Bridge",
             "Hello Cello"
+          ],
+          "others": [
+            "Juggernaut",
+            "Dr Waksman"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Bridge could be underestimated despite winning form and excellent record on testing ground"
+          "text": "Test The Market getting too easy a lead early could make him hard to peg back despite poor win record"
         },
         {
           "severity": "warn",
-          "text": "Test The Market may not sustain the gallop having failed to win in six attempts on similar going"
-        },
-        {
-          "severity": "info",
-          "text": "Jacquetta's tendency to fade late makes her vulnerable if the pace becomes searching"
+          "text": "Hello Cello's positioning turning for home as her hold-up style needs clear passage in small field"
         },
         {
           "severity": "warn",
-          "text": "The soft ground will heavily favor the proven stayers over those with stamina questions"
+          "text": "Bridge making his move too early given his hold-up preference and need for strong finish"
         },
         {
           "severity": "info",
-          "text": "Hello Cello's hold-up style could be compromised if the pace becomes too slow early"
+          "text": "Juggernaut's willingness to press Test The Market or settle behind will shape entire race tempo"
+        },
+        {
+          "severity": "info",
+          "text": "Tommy Dillion's jumping fluency as his heavy ground form needs confident hurdling to be effective"
         }
       ]
     }
