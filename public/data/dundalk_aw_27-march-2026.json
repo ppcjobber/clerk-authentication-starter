@@ -37,15 +37,15 @@
           "or": 86,
           "style_code": "P",
           "finish_type": "E",
-          "dist_code": "B",
+          "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Highest-rated and wants to be handy but must avoid getting trapped in the prominent pack early.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 71.3,
-          "_model_price": "6/4",
-          "_mkt_price": "9/8",
-          "_win_pct": 40.3,
+          "_model_price": "evens",
+          "_mkt_price": "9/10",
+          "_win_pct": 45.0,
           "_edge": 3.0,
           "_action": "WATCH"
         },
@@ -56,7 +56,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Solid prominent runner who should handle the tactical battle better than most.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 68.5,
@@ -71,15 +71,15 @@
           "or": 71,
           "style_code": "H",
           "finish_type": "E",
-          "dist_code": "B",
+          "dist_code": "B+",
           "going_flag": "DEPENDENT",
-          "note": "Hold-up horse whose chance depends entirely on today's good going suiting.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 59.2,
-          "_model_price": "12/1",
-          "_mkt_price": "10/1",
-          "_win_pct": 8.0,
+          "_model_price": "13/1",
+          "_mkt_price": "23/2",
+          "_win_pct": 7.0,
           "_edge": 5.9,
           "_action": "WATCH"
         },
@@ -88,15 +88,15 @@
           "or": 73,
           "style_code": "H",
           "finish_type": "E",
-          "dist_code": "B",
+          "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Patient hold-up style perfectly suits the likely false pace scenario.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 56.8,
-          "_model_price": "3/1",
-          "_mkt_price": "5/2",
-          "_win_pct": 24.1,
+          "_model_price": "4/1",
+          "_mkt_price": "3/1",
+          "_win_pct": 21.0,
           "_edge": 1.4,
           "_action": "WATCH"
         },
@@ -107,7 +107,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "DEPENDENT",
-          "note": "Another going-dependent hold-up horse who needs the ground in his favour.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 54.0,
@@ -121,16 +121,16 @@
           "name": "Thaloria",
           "or": 67,
           "style_code": "P",
-          "finish_type": "E",
+          "finish_type": "F",
           "dist_code": "B",
           "going_flag": "DEPENDENT",
-          "note": "Lowest-rated prominent runner who must hope for a slow pace to compete.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 49.6,
-          "_model_price": "40/1",
-          "_mkt_price": "33/1",
-          "_win_pct": 2.4,
+          "_model_price": "45/1",
+          "_mkt_price": "37/1",
+          "_win_pct": 2.2,
           "_edge": 0.3,
           "_action": "WATCH"
         },
@@ -141,7 +141,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "DEPENDENT",
-          "note": "Needs everything to fall right from her awkward style but could benefit from chaos.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 41.0,
@@ -158,102 +158,20 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse whose reliable going preferences make him less risky than some.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 28.2,
-          "_model_price": "47/1",
-          "_mkt_price": "31/1",
-          "_win_pct": 2.1,
+          "_model_price": "53/1",
+          "_mkt_price": "35/1",
+          "_win_pct": 1.9,
           "_edge": -21.1,
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "The Liffey, Dontspoilasale, Thaloria and Suerte all want prominent positions in an 8-runner field, creating inevitable traffic problems and a false pace scenario. With no genuine front-runner, these four will jostle for position early before the pace inevitably quickens, setting up the hold-up horses Una Matata, Benavente, Ruff Justice and Crest Of Light for late charges.",
-      "scenarios": [
-        {
-          "label": "A",
-          "title": "Prominent Traffic Chaos",
-          "prob": 35,
-          "trigger": "If the four prominent runners crowd each other and get shuffled back 2-3 furlongs out",
-          "body": "The pace collapses as they interfere with each other, allowing the cleaner-travelling hold-up horses to sweep past. Una Matata and Benavente benefit most from the sustained gallop.",
-          "winners": [
-            "Una Matata",
-            "Benavente"
-          ],
-          "others": [
-            "Crest Of Light",
-            "Ruff Justice"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "The Liffey Breaks Clear",
-          "prob": 30,
-          "trigger": "If The Liffey can secure an uncontested lead from the prominent pack",
-          "body": "His superior rating tells as he kicks clear of the false pace, with the hold-up horses unable to close the gap despite late efforts. Dontspoilasale stays on best of the rest.",
-          "winners": [
-            "The Liffey",
-            "Dontspoilasale"
-          ],
-          "others": [
-            "Una Matata",
-            "Thaloria"
-          ]
-        },
-        {
-          "label": "C",
-          "title": "Hold-Up Horse Blitz",
-          "prob": 25,
-          "trigger": "If the prominent quartet go too fast early and collapse collectively",
-          "body": "The sustained pace suits the patient tactics perfectly as all four hold-up runners arrive together. Crest Of Light and Una Matata have the best late kicks in this scenario.",
-          "winners": [
-            "Crest Of Light",
-            "Una Matata"
-          ],
-          "others": [
-            "Benavente",
-            "Ruff Justice"
-          ]
-        },
-        {
-          "label": "D",
-          "title": "Suerte Springs Surprise",
-          "prob": 10,
-          "trigger": "If Suerte can avoid the early scrimmaging and gets a dream run through",
-          "body": "The lowest-rated horse benefits from a perfectly-judged ride as the others cancel each other out. Thaloria provides the main danger if also avoiding trouble.",
-          "winners": [
-            "Suerte",
-            "Thaloria"
-          ],
-          "others": [
-            "The Liffey",
-            "Una Matata"
-          ]
-        }
-      ],
-      "watchPoints": [
-        {
-          "severity": "danger",
-          "text": "Watch for early interference between The Liffey, Dontspoilasale, Thaloria and Suerte as they fight for prominent positions."
-        },
-        {
-          "severity": "warn",
-          "text": "Monitor how Benavente and Ruff Justice handle today's good going as both are marked going-dependent."
-        },
-        {
-          "severity": "info",
-          "text": "Check if any jockey tries to steal a march by going forward early from the hold-up group."
-        },
-        {
-          "severity": "warn",
-          "text": "Watch for Suerte getting a clean passage through as she could outrun her rating if avoiding trouble."
-        },
-        {
-          "severity": "info",
-          "text": "Observe whether The Liffey can use his class advantage to dominate the prominent battle."
-        }
-      ]
+      "paceDynamic": "",
+      "scenarios": [],
+      "watchPoints": []
     },
     {
       "id": 2,
@@ -289,15 +207,15 @@
           "or": 84,
           "style_code": "P",
           "finish_type": "E",
-          "dist_code": "B",
+          "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Highest-rated and proven at this level, prominent style suits if pace is genuine",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 68.9,
           "_model_price": "5/1",
-          "_mkt_price": "9/2",
-          "_win_pct": 17.0,
+          "_mkt_price": "26/5",
+          "_win_pct": 16.2,
           "_edge": 3.8,
           "_action": "WATCH"
         },
@@ -308,13 +226,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Consistent prominent runner who should get a good position throughout",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 66.7,
-          "_model_price": "8/1",
+          "_model_price": "7/1",
           "_mkt_price": "8/1",
-          "_win_pct": 10.9,
+          "_win_pct": 11.8,
           "_edge": 8.7,
           "_action": "WATCH"
         },
@@ -323,15 +241,15 @@
           "or": 78,
           "style_code": "L",
           "finish_type": "E",
-          "dist_code": "B",
+          "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Only natural front runner gives tactical advantage but needs to control tempo",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 64.6,
-          "_model_price": "4/1",
-          "_mkt_price": "18/5",
-          "_win_pct": 20.2,
+          "_model_price": "7/2",
+          "_mkt_price": "26/7",
+          "_win_pct": 21.2,
           "_edge": 5.5,
           "_action": "WATCH"
         },
@@ -340,15 +258,15 @@
           "or": 77,
           "style_code": "P",
           "finish_type": "E",
-          "dist_code": "B",
+          "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Another prominent type adding to early pressure on the leader",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 61.8,
           "_model_price": "7/1",
-          "_mkt_price": "33/5",
-          "_win_pct": 12.3,
+          "_mkt_price": "7/1",
+          "_win_pct": 12.6,
           "_edge": 3.7,
           "_action": "WATCH"
         },
@@ -357,15 +275,15 @@
           "or": 71,
           "style_code": "H",
           "finish_type": "E",
-          "dist_code": "B",
+          "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Lowest-rated hold-up horse needs everything to fall right from the back",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 57.1,
-          "_model_price": "13/1",
-          "_mkt_price": "12/1",
-          "_win_pct": 7.3,
+          "_model_price": "14/1",
+          "_mkt_price": "14/1",
+          "_win_pct": 6.8,
           "_edge": 5.0,
           "_action": "WATCH"
         },
@@ -373,16 +291,16 @@
           "name": "Um Wadi",
           "or": 78,
           "style_code": "H",
-          "finish_type": "E",
+          "finish_type": "F",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Strong finisher who needs pace to aim at but capable when getting it",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 55.1,
-          "_model_price": "6/1",
-          "_mkt_price": "11/2",
-          "_win_pct": 13.5,
+          "_model_price": "8/1",
+          "_mkt_price": "38/5",
+          "_win_pct": 11.0,
           "_edge": -3.9,
           "_action": "WATCH"
         },
@@ -391,15 +309,15 @@
           "or": 78,
           "style_code": "H",
           "finish_type": "E",
-          "dist_code": "B",
+          "dist_code": "B+",
           "going_flag": "DEPENDENT",
-          "note": "Hold-up style with going concerns that could be decisive factor",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 53.0,
-          "_model_price": "9/1",
-          "_mkt_price": "15/2",
-          "_win_pct": 9.9,
+          "_model_price": "8/1",
+          "_mkt_price": "36/5",
+          "_win_pct": 11.1,
           "_edge": -6.1,
           "_action": "WATCH"
         },
@@ -407,105 +325,23 @@
           "name": "Whistling Jamesie",
           "or": 74,
           "style_code": "H",
-          "finish_type": "E",
+          "finish_type": "F",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Consistent hold-up performer but faces stiff task from rear",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 38.3,
           "_model_price": "10/1",
-          "_mkt_price": "41/5",
-          "_win_pct": 8.9,
+          "_mkt_price": "42/5",
+          "_win_pct": 9.4,
           "_edge": -16.7,
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Spinning Around looks the only natural leader with Bishopton, Musical Act, and Venetian likely to race prominently behind. This creates a modest early gallop with five hold-up horses (Blue Anthem, Um Wadi, Nikki Swango, Whistling Jamesie) all needing the race to develop, setting up a sprint finish where tactical positioning will be crucial.",
-      "scenarios": [
-        {
-          "label": "A",
-          "title": "Spinning Around Controls Tempo",
-          "prob": 35,
-          "trigger": "If Spinning Around gets an uncontested lead and dictates fractions",
-          "body": "The leader stretches the field by quickening before the turn, making it hard for the hold-up brigade to close. Bishopton and Musical Act are best placed to respond from their prominent positions.",
-          "winners": [
-            "Spinning Around",
-            "Bishopton"
-          ],
-          "others": [
-            "Musical Act",
-            "Venetian"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "Prominent Pace Duel",
-          "prob": 30,
-          "trigger": "If Bishopton, Musical Act and Venetian all press Spinning Around early",
-          "body": "The four prominent runners engage in a pace battle that sets up the race perfectly for the closers. Um Wadi and Nikki Swango get the strong pace they need to unleash their finishing kicks.",
-          "winners": [
-            "Um Wadi",
-            "Nikki Swango"
-          ],
-          "others": [
-            "Whistling Jamesie",
-            "Blue Anthem"
-          ]
-        },
-        {
-          "label": "C",
-          "title": "Tactical Crawl Sprint",
-          "prob": 25,
-          "trigger": "If the prominent horses go too steady and create a slow early pace",
-          "body": "The hold-up horses find themselves with too much to do when the sprint develops, favoring those with early speed. Bishopton's class tells in a tactical battle with Musical Act and Venetian also suited.",
-          "winners": [
-            "Bishopton",
-            "Musical Act"
-          ],
-          "others": [
-            "Venetian",
-            "Spinning Around"
-          ]
-        },
-        {
-          "label": "D",
-          "title": "Going Deteriorates Mid-Race",
-          "prob": 10,
-          "trigger": "If rain arrives during racing and affects the surface significantly",
-          "body": "Nikki Swango's going dependency becomes a major factor as others struggle with changing conditions. The hold-up horses may find improved ground to make their moves on the fresh surface.",
-          "winners": [
-            "Nikki Swango",
-            "Um Wadi"
-          ],
-          "others": [
-            "Blue Anthem",
-            "Whistling Jamesie"
-          ]
-        }
-      ],
-      "watchPoints": [
-        {
-          "severity": "danger",
-          "text": "If Spinning Around gets too easy a lead early, the hold-up horses may never get into contention"
-        },
-        {
-          "severity": "warn",
-          "text": "Watch for any signs of rain affecting going conditions given Nikki Swango's dependency warning"
-        },
-        {
-          "severity": "info",
-          "text": "Observe how aggressively Bishopton, Musical Act and Venetian press the early pace"
-        },
-        {
-          "severity": "warn",
-          "text": "Blue Anthem needs the perfect scenario from his hold-up style given lowest official rating"
-        },
-        {
-          "severity": "info",
-          "text": "Um Wadi's position turning in will be crucial given his need for something to chase"
-        }
-      ]
+      "paceDynamic": "",
+      "scenarios": [],
+      "watchPoints": []
     },
     {
       "id": 3,
@@ -551,13 +387,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up performer who needs the pace to be strong enough to set up his late run.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 52.7,
-          "_model_price": "7/1",
-          "_mkt_price": "13/2",
-          "_win_pct": 12.0,
+          "_model_price": "8/1",
+          "_mkt_price": "33/5",
+          "_win_pct": 11.8,
           "_edge": 9.0,
           "_action": "WATCH"
         },
@@ -568,12 +404,12 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "DEPENDENT",
-          "note": "The lone front runner whose chances depend entirely on how the good going suits his style.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 47.5,
           "_model_price": "50/1",
-          "_mkt_price": "41/1",
+          "_mkt_price": "40/1",
           "_win_pct": 2.0,
           "_edge": 0.8,
           "_action": "WATCH"
@@ -585,13 +421,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent racer ideally placed to capitalize if the leader weakens in the straight.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 46.0,
-          "_model_price": "8/1",
-          "_mkt_price": "34/5",
-          "_win_pct": 10.7,
+          "_model_price": "9/1",
+          "_mkt_price": "36/5",
+          "_win_pct": 10.1,
           "_edge": 2.3,
           "_action": "WATCH"
         },
@@ -602,13 +438,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Another prominent runner with similar tactical advantages to Jazzy Dancer.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 45.5,
-          "_model_price": "10/1",
-          "_mkt_price": "43/5",
-          "_win_pct": 8.5,
+          "_model_price": "9/1",
+          "_mkt_price": "7/1",
+          "_win_pct": 10.1,
           "_edge": -0.2,
           "_action": "WATCH"
         },
@@ -616,16 +452,16 @@
           "name": "Jasmine Affanalis",
           "or": 60,
           "style_code": "H",
-          "finish_type": "E",
+          "finish_type": "F",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "High-rated hold-up horse who needs gaps to appear late to show her best.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 44.7,
-          "_model_price": "13/1",
-          "_mkt_price": "21/2",
-          "_win_pct": 7.0,
+          "_model_price": "15/1",
+          "_mkt_price": "12/1",
+          "_win_pct": 6.1,
           "_edge": -2.0,
           "_action": "WATCH"
         },
@@ -636,13 +472,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Lowest-rated hold-up horse likely to struggle against this quality field.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 44.0,
           "_model_price": "7/2",
-          "_mkt_price": "16/5",
-          "_win_pct": 21.5,
+          "_mkt_price": "25/8",
+          "_win_pct": 21.7,
           "_edge": 9.2,
           "_action": "WATCH"
         },
@@ -650,16 +486,16 @@
           "name": "Roman Harry",
           "or": 59,
           "style_code": "H",
-          "finish_type": "E",
+          "finish_type": "F",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse whose style suits if Son Of Wind sets strong fractions early.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 42.1,
-          "_model_price": "13/1",
-          "_mkt_price": "10/1",
-          "_win_pct": 7.1,
+          "_model_price": "18/1",
+          "_mkt_price": "27/2",
+          "_win_pct": 5.4,
           "_edge": -3.6,
           "_action": "WATCH"
         },
@@ -670,13 +506,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Mid-range hold-up performer who needs everything to fall right tactically.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 39.5,
-          "_model_price": "44/1",
-          "_mkt_price": "35/1",
-          "_win_pct": 2.2,
+          "_model_price": "28/1",
+          "_mkt_price": "22/1",
+          "_win_pct": 3.4,
           "_edge": -2.2,
           "_action": "WATCH"
         },
@@ -687,13 +523,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse who could benefit from a messy, stop-start pace scenario.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 38.4,
-          "_model_price": "25/1",
-          "_mkt_price": "20/1",
-          "_win_pct": 3.7,
+          "_model_price": "33/1",
+          "_mkt_price": "25/1",
+          "_win_pct": 2.9,
           "_edge": -5.3,
           "_action": "WATCH"
         },
@@ -701,16 +537,16 @@
           "name": "Vibrato",
           "or": 59,
           "style_code": "H",
-          "finish_type": "E",
+          "finish_type": "F",
           "dist_code": "B",
           "going_flag": "DEPENDENT",
-          "note": "Going-dependent hold-up horse whose chances hinge on track conditions suiting.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 38.2,
-          "_model_price": "16/1",
-          "_mkt_price": "23/2",
-          "_win_pct": 6.0,
+          "_model_price": "14/1",
+          "_mkt_price": "10/1",
+          "_win_pct": 6.8,
           "_edge": -7.5,
           "_action": "WATCH"
         },
@@ -721,7 +557,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Low-rated hold-up horse facing a tough task against better-credentialed rivals.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 36.3,
@@ -738,13 +574,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner whose low rating makes victory unlikely despite decent positioning.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 34.5,
-          "_model_price": "28/1",
-          "_mkt_price": "25/1",
-          "_win_pct": 3.4,
+          "_model_price": "20/1",
+          "_mkt_price": "18/1",
+          "_win_pct": 4.6,
           "_edge": 6.8,
           "_action": "WATCH"
         },
@@ -755,13 +591,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse with modest rating who needs a miracle pace setup.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 31.1,
           "_model_price": "20/1",
-          "_mkt_price": "31/2",
-          "_win_pct": 4.8,
+          "_mkt_price": "16/1",
+          "_win_pct": 4.6,
           "_edge": -4.6,
           "_action": "WATCH"
         },
@@ -769,16 +605,16 @@
           "name": "Carrickfinn",
           "or": 40,
           "style_code": "P",
-          "finish_type": "E",
+          "finish_type": "F",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Lowest-rated prominent runner whose forward position is his only tactical asset.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 25.6,
           "_model_price": "18/1",
           "_mkt_price": null,
-          "_win_pct": 5.4,
+          "_win_pct": 5.3,
           "_edge": -1.2,
           "_action": "WATCH"
         },
@@ -786,105 +622,23 @@
           "name": "Deep Vein",
           "or": 43,
           "style_code": "H",
-          "finish_type": "E",
+          "finish_type": "F",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse with poor rating who faces an uphill battle in this company.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 24.7,
-          "_model_price": "33/1",
-          "_mkt_price": "26/1",
-          "_win_pct": 2.9,
+          "_model_price": "46/1",
+          "_mkt_price": "35/1",
+          "_win_pct": 2.1,
           "_edge": -5.0,
           "_action": "WATCH"
         }
       ],
-      "paceDynamic": "Son Of Wind will set a controlled pace from the front with minimal early pressure, as only Jazzy Dancer, Comfort Line, Manhattan Dandy and Carrickfinn are likely to race prominently. This creates a tactical battle where the large group of hold-up horses (9 runners) will need to find racing room late, making positioning crucial in the straight.",
-      "scenarios": [
-        {
-          "label": "A",
-          "title": "Uncontested Front Runner Dominates",
-          "prob": 40,
-          "trigger": "If Son Of Wind gets soft fractions and the going suits",
-          "body": "Son Of Wind dictates throughout and has enough left to resist late challenges. The prominent duo Jazzy Dancer and Comfort Line pick up the pieces as hold-up horses struggle for room.",
-          "winners": [
-            "Son Of Wind",
-            "Jazzy Dancer"
-          ],
-          "others": [
-            "Comfort Line",
-            "Jasmine Affanalis"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "Hold-Up Horse Swoops Late",
-          "prob": 35,
-          "trigger": "If the pace is genuine enough to set up back runners",
-          "body": "The large contingent of hold-up horses get the perfect setup as Son Of Wind goes too fast early. Roman Harry or Jasmine Affanalis time their run perfectly through gaps that open late.",
-          "winners": [
-            "Roman Harry",
-            "Jasmine Affanalis"
-          ],
-          "others": [
-            "Methgal",
-            "Vibrato"
-          ]
-        },
-        {
-          "label": "C",
-          "title": "Prominent Tracker Strikes",
-          "prob": 15,
-          "trigger": "If Son Of Wind falters and prominent horses get first run",
-          "body": "Comfort Line or Jazzy Dancer get the jump on the field when Son Of Wind weakens, holding off the late charge. Their prominent position proves decisive as hold-up horses leave it too late.",
-          "winners": [
-            "Comfort Line",
-            "Jazzy Dancer"
-          ],
-          "others": [
-            "Winemaker",
-            "Roman Harry"
-          ]
-        },
-        {
-          "label": "D",
-          "title": "Chaos Sprint Finish",
-          "prob": 10,
-          "trigger": "If pace collapses completely creating bunched field",
-          "body": "The lack of early pace results in a cavalry charge with 10+ horses still in contention turning for home. Any horse with a turn of foot can win in the resulting scramble.",
-          "winners": [
-            "Vibrato",
-            "Hot To Foxtrot"
-          ],
-          "others": [
-            "Winemaker",
-            "Methgal"
-          ]
-        }
-      ],
-      "watchPoints": [
-        {
-          "severity": "danger",
-          "text": "Son Of Wind's response to the good going will determine if he can sustain his front-running style effectively."
-        },
-        {
-          "severity": "warn",
-          "text": "The 9 hold-up horses create serious traffic concerns turning for home - positioning will be crucial."
-        },
-        {
-          "severity": "warn",
-          "text": "Vibrato's going dependency makes him a risky proposition if conditions don't suit perfectly."
-        },
-        {
-          "severity": "info",
-          "text": "Manhattan Dandy and Carrickfinn's prominent positions could prove valuable despite modest ratings."
-        },
-        {
-          "severity": "info",
-          "text": "How quickly the pace develops in the first two furlongs will shape the entire tactical battle."
-        }
-      ]
+      "paceDynamic": "",
+      "scenarios": [],
+      "watchPoints": []
     },
     {
       "id": 4,
@@ -924,15 +678,15 @@
           "or": 57,
           "style_code": "H",
           "finish_type": "E",
-          "dist_code": "B",
+          "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up specialist who needs a strong pace to show his best form over this stamina-testing trip.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 62.5,
           "_model_price": "8/1",
           "_mkt_price": null,
-          "_win_pct": 10.8,
+          "_win_pct": 10.5,
           "_edge": 13.3,
           "_action": "WATCH"
         },
@@ -943,13 +697,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Patient type whose even finishing style suits a truly-run race at this distance.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 54.0,
-          "_model_price": "9/1",
-          "_mkt_price": "8/1",
-          "_win_pct": 10.3,
+          "_model_price": "7/1",
+          "_mkt_price": "13/2",
+          "_win_pct": 12.0,
           "_edge": 3.8,
           "_action": "WATCH"
         },
@@ -960,13 +714,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner likely to set the early fractions but must prove stamina at this longer trip.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 51.5,
-          "_model_price": "6/1",
-          "_mkt_price": "28/5",
-          "_win_pct": 13.8,
+          "_model_price": "7/1",
+          "_mkt_price": "6/1",
+          "_win_pct": 12.8,
           "_edge": 3.3,
           "_action": "WATCH"
         },
@@ -977,13 +731,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Lowest-rated hold-up horse who needs significant pace collapse to feature.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 50.6,
-          "_model_price": "12/1",
-          "_mkt_price": "25/2",
-          "_win_pct": 8.1,
+          "_model_price": "13/1",
+          "_mkt_price": "14/1",
+          "_win_pct": 7.1,
           "_edge": 10.4,
           "_action": "WATCH"
         },
@@ -994,13 +748,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Highest-rated runner whose hold-up style requires the race to unfold in his favor.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 48.3,
-          "_model_price": "7/1",
-          "_mkt_price": "27/5",
-          "_win_pct": 12.2,
+          "_model_price": "8/1",
+          "_mkt_price": "28/5",
+          "_win_pct": 11.6,
           "_edge": -3.0,
           "_action": "WATCH"
         },
@@ -1011,13 +765,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Forward-going type who could dictate terms if allowed an easy lead.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 45.9,
           "_model_price": "16/1",
           "_mkt_price": "12/1",
-          "_win_pct": 5.8,
+          "_win_pct": 5.7,
           "_edge": -4.3,
           "_action": "WATCH"
         },
@@ -1028,13 +782,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse with moderate rating who needs maximum chaos to be competitive.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 44.6,
           "_model_price": "10/1",
-          "_mkt_price": "42/5",
-          "_win_pct": 9.2,
+          "_mkt_price": "9/1",
+          "_win_pct": 8.5,
           "_edge": 1.4,
           "_action": "WATCH"
         },
@@ -1045,13 +799,13 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Stays further than this trip suggesting stamina advantage if pace quickens late.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 44.3,
           "_model_price": "7/1",
-          "_mkt_price": "32/5",
-          "_win_pct": 12.6,
+          "_mkt_price": "6/1",
+          "_win_pct": 13.0,
           "_edge": 4.1,
           "_action": "WATCH"
         },
@@ -1062,13 +816,13 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Another stamina-laden hold-up horse who benefits from extended distances.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 42.6,
-          "_model_price": "12/1",
-          "_mkt_price": "8/1",
-          "_win_pct": 8.2,
+          "_model_price": "10/1",
+          "_mkt_price": "33/5",
+          "_win_pct": 9.5,
           "_edge": -5.7,
           "_action": "WATCH"
         },
@@ -1079,13 +833,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner who must balance early position with finishing kick demands.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 38.8,
           "_model_price": "13/1",
           "_mkt_price": "8/1",
-          "_win_pct": 7.4,
+          "_win_pct": 7.2,
           "_edge": -10.5,
           "_action": "AVOID"
         },
@@ -1096,102 +850,20 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Forward type with modest rating who needs to steal a march on better horses.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 32.6,
-          "_model_price": "64/1",
-          "_mkt_price": "40/1",
-          "_win_pct": 1.5,
+          "_model_price": "50/1",
+          "_mkt_price": "30/1",
+          "_win_pct": 2.0,
           "_edge": -12.6,
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Numidia, Jazz Forever, Hobart and Circus Act will contest the early lead, but none are natural front-runners creating a moderate pace through the first mile. With seven hold-up horses including top-rated Disco Boy and Mephisto, this sets up a cavalry charge finish where positioning and stamina become crucial over the final two furlongs.",
-      "scenarios": [
-        {
-          "label": "A",
-          "title": "Sustained gallop wins",
-          "prob": 40,
-          "trigger": "If Numidia or Jazz Forever maintain honest fractions throughout",
-          "body": "The moderate early pace quickens gradually from halfway, creating a true test of stamina. Hold-up horses struggle to make up ground as the principals kick clear in the final furlong.",
-          "winners": [
-            "Mephisto",
-            "Slowdownbarney"
-          ],
-          "others": [
-            "Numidia",
-            "Jazz Forever"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "Sprint finish chaos",
-          "prob": 35,
-          "trigger": "If the prominent quartet go too slow early and bunch the field",
-          "body": "A crawling pace to the final half-mile creates a messy sprint where draw and luck matter more than class. The best-positioned hold-up horse with the strongest finish prevails.",
-          "winners": [
-            "Disco Boy",
-            "Hobart"
-          ],
-          "others": [
-            "Sarmiento Power",
-            "Black Soul"
-          ]
-        },
-        {
-          "label": "C",
-          "title": "Prominent horse steals",
-          "prob": 15,
-          "trigger": "If one of the four prominent runners gets first run while others wait",
-          "body": "Jazz Forever or Numidia kicks clear with three furlongs left while the hold-up brigade is still organizing. They maintain the advantage to the line despite late pressure.",
-          "winners": [
-            "Jazz Forever",
-            "Numidia"
-          ],
-          "others": [
-            "Circus Act",
-            "Mephisto"
-          ]
-        },
-        {
-          "label": "D",
-          "title": "Outsider ambush",
-          "prob": 10,
-          "trigger": "If the pace collapses completely and creates maximum chaos",
-          "body": "A pedestrian gallop turns into a complete lottery where positioning trumps ability. An unfancied hold-up horse with the right trip emerges from the pack.",
-          "winners": [
-            "Deluca Chop",
-            "Desert Friend"
-          ],
-          "others": [
-            "Black Soul",
-            "Sarmiento Power"
-          ]
-        }
-      ],
-      "watchPoints": [
-        {
-          "severity": "danger",
-          "text": "If Numidia and Jazz Forever both go forward aggressively, they could set suicidal fractions that play into Mephisto's hands."
-        },
-        {
-          "severity": "warn",
-          "text": "Watch Disco Boy's position turning for home as he needs clear running room with his hold-up style."
-        },
-        {
-          "severity": "info",
-          "text": "Observe how quickly the prominent quartet establish positions in the first furlong as this determines pace strength."
-        },
-        {
-          "severity": "warn",
-          "text": "If Deluca Chop or Sarmiento Power are prominent early despite their hold-up profiles, they're going too fast."
-        },
-        {
-          "severity": "info",
-          "text": "Monitor the gap between leaders and hold-up horses at halfway to gauge whether the pace is honest enough."
-        }
-      ]
+      "paceDynamic": "",
+      "scenarios": [],
+      "watchPoints": []
     },
     {
       "id": 5,
@@ -1221,13 +893,13 @@
           "finish_type": "E",
           "dist_code": "UNKNOWN",
           "going_flag": "UNKNOWN",
-          "note": "Higher rating suggests ability but maiden debut makes pace preferences and going requirements completely unknown.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 107.7,
           "_model_price": "6/4",
-          "_mkt_price": "7/6",
-          "_win_pct": 37.8,
+          "_mkt_price": "9/10",
+          "_win_pct": 43.4,
           "_edge": -8.8,
           "_action": "WATCH"
         },
@@ -1238,7 +910,7 @@
           "finish_type": "E",
           "dist_code": "UNKNOWN",
           "going_flag": "UNKNOWN",
-          "note": "Shares the top rating but faces the uncertainty of first-time racing tactics and fitness levels.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 107.7,
@@ -1255,13 +927,13 @@
           "finish_type": "E",
           "dist_code": "UNKNOWN",
           "going_flag": "UNKNOWN",
-          "note": "Another 120-rated debutant whose running style could prove crucial in a pace-light contest.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 107.7,
-          "_model_price": "10/1",
-          "_mkt_price": "44/5",
-          "_win_pct": 8.4,
+          "_model_price": "13/1",
+          "_mkt_price": "21/2",
+          "_win_pct": 7.2,
           "_edge": -8.8,
           "_action": "WATCH"
         },
@@ -1272,13 +944,13 @@
           "finish_type": "E",
           "dist_code": "UNKNOWN",
           "going_flag": "UNKNOWN",
-          "note": "Top-rated newcomer who may need to show natural pace if field lacks early leaders.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 107.7,
-          "_model_price": "7/2",
-          "_mkt_price": "5/2",
-          "_win_pct": 23.4,
+          "_model_price": "4/1",
+          "_mkt_price": "3/1",
+          "_win_pct": 20.6,
           "_edge": -8.8,
           "_action": "WATCH"
         },
@@ -1289,13 +961,13 @@
           "finish_type": "E",
           "dist_code": "UNKNOWN",
           "going_flag": "UNKNOWN",
-          "note": "Rated alongside the leading quartet but style and stamina reserves remain complete mysteries.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 107.7,
-          "_model_price": "10/1",
-          "_mkt_price": "17/2",
-          "_win_pct": 8.6,
+          "_model_price": "12/1",
+          "_mkt_price": "9/1",
+          "_win_pct": 8.2,
           "_edge": -8.8,
           "_action": "WATCH"
         },
@@ -1306,102 +978,20 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "UNKNOWN",
-          "note": "Only runner with race experience but significantly lower rating suggests limited ability despite tactical advantages.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 86.8,
-          "_model_price": "12/1",
-          "_mkt_price": "12/1",
-          "_win_pct": 8.2,
+          "_model_price": "14/1",
+          "_mkt_price": "29/2",
+          "_win_pct": 6.9,
           "_edge": 44.2,
           "_action": "WATCH"
         }
       ],
-      "paceDynamic": "With all five higher-rated runners carrying unknown pace styles and only Lamar River showing hold-up tendencies, this maiden lacks a natural pace-setter. The debutants Maria Quiteria, Arrowstock, Whammy, Belle Island and Brazilian Diva will likely jostle for early position without sustained pressure, creating a falsely-run affair. Expect a bunched field turning for home with the sprint finish suiting whoever handles the tactical nature best.",
-      "scenarios": [
-        {
-          "label": "A",
-          "title": "Steady Pace Suits Lamar",
-          "prob": 35,
-          "trigger": "If the early pace is genuinely modest with gentle fractions",
-          "body": "Lamar River's hold-up style becomes an advantage as the field crawls along early. The sprint finish plays to experienced runners who know how to quicken when it matters.",
-          "winners": [
-            "Lamar River",
-            "Maria Quiteria"
-          ],
-          "others": [
-            "Arrowstock",
-            "Belle Island"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "Debutant Takes Command Early",
-          "prob": 30,
-          "trigger": "If one newcomer shows natural pace and takes them along",
-          "body": "Brazilian Diva or Whammy could surprise by setting honest fractions that suit their unknown stamina reserves. The sustained pace eliminates kick-reliant types and rewards the most forward-going.",
-          "winners": [
-            "Brazilian Diva",
-            "Whammy"
-          ],
-          "others": [
-            "Belle Island",
-            "Maria Quiteria"
-          ]
-        },
-        {
-          "label": "C",
-          "title": "Messy Tactical Affair",
-          "prob": 25,
-          "trigger": "If multiple debutants refuse to commit early creating stop-start fractions",
-          "body": "The race becomes a tactical nightmare with false pace throughout the opening half-mile. Raw ability trumps race-craft as the field sprints from the 2f pole in a lottery finish.",
-          "winners": [
-            "Arrowstock",
-            "Belle Island"
-          ],
-          "others": [
-            "Maria Quiteria",
-            "Brazilian Diva"
-          ]
-        },
-        {
-          "label": "D",
-          "title": "Experience Beats Youth",
-          "prob": 10,
-          "trigger": "If Lamar River's racecourse knowledge proves decisive despite lower rating",
-          "body": "The hold-up specialist times his run perfectly while the debutants make positional errors. Proven race-sense outweighs raw talent in a tightly-contested finish.",
-          "winners": [
-            "Lamar River",
-            "Maria Quiteria"
-          ],
-          "others": [
-            "Whammy",
-            "Brazilian Diva"
-          ]
-        }
-      ],
-      "watchPoints": [
-        {
-          "severity": "danger",
-          "text": "Lamar River's ability to position effectively from his hold-up style when surrounded by pace-unknown debutants could create traffic problems."
-        },
-        {
-          "severity": "warn",
-          "text": "The opening two furlongs will reveal which debutants show natural pace versus those needing a lead to follow."
-        },
-        {
-          "severity": "info",
-          "text": "Brazilian Diva and Whammy's early positioning choices will indicate their stamina reserves for the sprint finish."
-        },
-        {
-          "severity": "warn",
-          "text": "Any debutant showing reluctance to race keenly early may struggle to make up ground in a slowly-run contest."
-        },
-        {
-          "severity": "info",
-          "text": "The 2f pole acceleration will separate those with natural finishing speed from the one-paced types among the newcomers."
-        }
-      ]
+      "paceDynamic": "",
+      "scenarios": [],
+      "watchPoints": []
     },
     {
       "id": 6,
@@ -1440,15 +1030,15 @@
           "or": 82,
           "style_code": "P",
           "finish_type": "E",
-          "dist_code": "B",
+          "dist_code": "B+",
           "going_flag": "OK",
-          "note": "One of only two prominent runners, likely to get uncontested lead but vulnerable to class horses in sprint finish",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 75.4,
           "_model_price": "6/4",
-          "_mkt_price": "5/4",
-          "_win_pct": 42.6,
+          "_mkt_price": "7/6",
+          "_win_pct": 42.0,
           "_edge": 13.0,
           "_action": "WATCH"
         },
@@ -1456,14 +1046,14 @@
           "name": "Poet's Willow",
           "or": 120,
           "style_code": "H",
-          "finish_type": "E",
+          "finish_type": "F",
           "dist_code": "B-",
           "going_flag": "OK",
-          "note": "Massive class edge with 120 rating but hold-up style needs strong pace to be effective",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 65.7,
-          "_model_price": "1402/1",
+          "_model_price": "1476/1",
           "_mkt_price": "999/1",
           "_win_pct": 0.1,
           "_edge": -34.8,
@@ -1476,13 +1066,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Solid each-way chance if getting first run on the leaders from hold-up position",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 63.2,
-          "_model_price": "13/1",
+          "_model_price": "14/1",
           "_mkt_price": "23/2",
-          "_win_pct": 7.0,
+          "_win_pct": 6.7,
           "_edge": 0.8,
           "_action": "WATCH"
         },
@@ -1491,15 +1081,15 @@
           "or": 64,
           "style_code": "H",
           "finish_type": "E",
-          "dist_code": "B",
+          "dist_code": "B+",
           "going_flag": "DEPENDENT",
-          "note": "Going dependent runner whose chances hinge entirely on track conditions suiting",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 57.8,
           "_model_price": "2/1",
-          "_mkt_price": "11/6",
-          "_win_pct": 33.9,
+          "_mkt_price": "19/10",
+          "_win_pct": 31.5,
           "_edge": 13.3,
           "_action": "WATCH"
         },
@@ -1510,13 +1100,13 @@
           "finish_type": "E",
           "dist_code": "B-",
           "going_flag": "DEPENDENT",
-          "note": "Another going dependent type who needs specific conditions to show best form",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 57.1,
-          "_model_price": "28/1",
-          "_mkt_price": "24/1",
-          "_win_pct": 3.6,
+          "_model_price": "20/1",
+          "_mkt_price": "16/1",
+          "_win_pct": 5.1,
           "_edge": 5.6,
           "_action": "WATCH"
         },
@@ -1524,16 +1114,16 @@
           "name": "Bartolito",
           "or": 36,
           "style_code": "H",
-          "finish_type": "E",
+          "finish_type": "F",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Lowest rated runner whose 36 rating suggests limited winning chances even in weak field",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 52.9,
-          "_model_price": "85/1",
-          "_mkt_price": "100/1",
-          "_win_pct": 1.2,
+          "_model_price": "30/1",
+          "_mkt_price": "33/1",
+          "_win_pct": 3.3,
           "_edge": 36.5,
           "_action": "WATCH"
         },
@@ -1544,13 +1134,13 @@
           "finish_type": "E",
           "dist_code": "B-",
           "going_flag": "OK",
-          "note": "Hold-up performer whose best trip is probably shorter than this mile distance",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 50.7,
-          "_model_price": "13/1",
+          "_model_price": "14/1",
           "_mkt_price": "11/1",
-          "_win_pct": 7.2,
+          "_win_pct": 6.9,
           "_edge": -0.8,
           "_action": "WATCH"
         },
@@ -1558,16 +1148,16 @@
           "name": "Pure Valour",
           "or": 25,
           "style_code": "H",
-          "finish_type": "E",
+          "finish_type": "F",
           "dist_code": "B",
           "going_flag": "UNKNOWN",
-          "note": "Minimal rating and unknown going preference makes this very hard to assess",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 49.2,
-          "_model_price": "79/1",
-          "_mkt_price": "100/1",
-          "_win_pct": 1.2,
+          "_model_price": "58/1",
+          "_mkt_price": "70/1",
+          "_win_pct": 1.7,
           "_edge": 43.8,
           "_action": "WATCH"
         },
@@ -1575,16 +1165,16 @@
           "name": "Mystic Bella",
           "or": 80,
           "style_code": "H",
-          "finish_type": "E",
+          "finish_type": "F",
           "dist_code": "B",
           "going_flag": "DEPENDENT",
-          "note": "Decent rating but going dependent tag creates uncertainty about effectiveness today",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 31.3,
-          "_model_price": "50/1",
-          "_mkt_price": "37/1",
-          "_win_pct": 1.9,
+          "_model_price": "58/1",
+          "_mkt_price": "40/1",
+          "_win_pct": 1.7,
           "_edge": -29.1,
           "_action": "AVOID"
         },
@@ -1595,11 +1185,11 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Solid middle-distance type whose rating gives genuine each-way claims in weak contest",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 27.9,
-          "_model_price": "89/1",
+          "_model_price": "94/1",
           "_mkt_price": "66/1",
           "_win_pct": 1.1,
           "_edge": -26.5,
@@ -1609,14 +1199,14 @@
           "name": "Siofra Beag",
           "or": 48,
           "style_code": "H",
-          "finish_type": "E",
+          "finish_type": "F",
           "dist_code": "B",
           "going_flag": "DEPENDENT",
-          "note": "Going dependent runner with moderate rating facing tough task against better horses",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 20.7,
-          "_model_price": "1209/1",
+          "_model_price": "1272/1",
           "_mkt_price": "999/1",
           "_win_pct": 0.1,
           "_edge": -7.7,
@@ -1626,105 +1216,23 @@
           "name": "Nelliestar",
           "or": 35,
           "style_code": "P",
-          "finish_type": "E",
+          "finish_type": "F",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Second prominent runner who can ensure reasonable pace but lacks finishing kick",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 1.3,
-          "_model_price": "1257/1",
+          "_model_price": "1323/1",
           "_mkt_price": "999/1",
           "_win_pct": 0.1,
           "_edge": -14.1,
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "With only Wild Sapphire and Nelliestar showing prominent tendencies against ten hold-up horses, this will be a crawling pace through the early stages. The lack of genuine pace pressure means these two will set uncontested fractions, creating a bunched field turning for home where Poet's Willow's class advantage becomes decisive in a sprint finish.",
-      "scenarios": [
-        {
-          "label": "A",
-          "title": "Crawling Pace Sprint",
-          "prob": 45,
-          "trigger": "If Wild Sapphire and Nelliestar set pedestrian fractions with no pressure",
-          "body": "The field remains tightly bunched into the straight where superior class tells. Poet's Willow's 120 rating proves decisive in a frantic dash to the line.",
-          "winners": [
-            "Poet's Willow",
-            "Pedro The Poet"
-          ],
-          "others": [
-            "Mystic Bella",
-            "Wild Sapphire"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "False Pace Collapses",
-          "prob": 25,
-          "trigger": "If the early leaders go too slow and completely stop in the final furlong",
-          "body": "The prominent horses fade dramatically as the hold-up brigade storms past them. Fresh closers with stamina find extra gear when others tire.",
-          "winners": [
-            "Grecian Power",
-            "Mystic Bella"
-          ],
-          "others": [
-            "Tyraxes",
-            "Good Onya Mate"
-          ]
-        },
-        {
-          "label": "C",
-          "title": "Tactical Battle",
-          "prob": 20,
-          "trigger": "If jockeys play cat-and-mouse games in the early stages creating stop-start fractions",
-          "body": "The race becomes a tactical affair where positioning and a clean run matter more than raw ability. Experience and racecraft prove crucial in the final 200 yards.",
-          "winners": [
-            "Pedro The Poet",
-            "Wild Sapphire"
-          ],
-          "others": [
-            "Poet's Willow",
-            "Grecian Power"
-          ]
-        },
-        {
-          "label": "D",
-          "title": "Surprise Early Pace",
-          "prob": 10,
-          "trigger": "If one of the supposed hold-up horses breaks character and goes forward early",
-          "body": "The race dynamics completely change with genuine pace pressure throughout. This suits horses who can travel strongly and have a sustained finish.",
-          "winners": [
-            "Poet's Willow",
-            "Tyraxes"
-          ],
-          "others": [
-            "Good Onya Mate",
-            "Gaiety Girl"
-          ]
-        }
-      ],
-      "watchPoints": [
-        {
-          "severity": "danger",
-          "text": "If going conditions deteriorate, four runners marked as going dependent (Gaiety Girl, Tyraxes, Mystic Bella, Siofra Beag) become live outsiders"
-        },
-        {
-          "severity": "warn",
-          "text": "Watch for Poet's Willow getting boxed in behind the crawling pace as hold-up horses need room to unleash finishing kick"
-        },
-        {
-          "severity": "info",
-          "text": "Monitor early positioning of Grecian Power and Pedro The Poet as first movers from the pack will have significant advantage"
-        },
-        {
-          "severity": "warn",
-          "text": "If Wild Sapphire gets loose on the lead unchallenged, the class horses may have too much ground to make up"
-        },
-        {
-          "severity": "info",
-          "text": "Pure Valour's unknown going preference could spring surprise if conditions suit perfectly"
-        }
-      ]
+      "paceDynamic": "",
+      "scenarios": [],
+      "watchPoints": []
     },
     {
       "id": 7,
@@ -1764,13 +1272,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner faces three rivals for same tactical position early.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 52.5,
           "_model_price": "8/1",
           "_mkt_price": "8/1",
-          "_win_pct": 11.6,
+          "_win_pct": 11.7,
           "_edge": 12.6,
           "_action": "WATCH"
         },
@@ -1781,11 +1289,11 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Similar style to Rising Sky creates inevitable early pace battle.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 45.1,
-          "_model_price": "75/1",
+          "_model_price": "74/1",
           "_mkt_price": "70/1",
           "_win_pct": 1.3,
           "_edge": 6.2,
@@ -1798,13 +1306,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up style suits if prominent horses create strong gallop.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 44.9,
-          "_model_price": "5/2",
-          "_mkt_price": "5/2",
-          "_win_pct": 28.1,
+          "_model_price": "3/1",
+          "_mkt_price": "11/4",
+          "_win_pct": 26.5,
           "_edge": 8.9,
           "_action": "WATCH"
         },
@@ -1815,13 +1323,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Needs genuine pace to aim at from his patient hold-up position.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 42.0,
           "_model_price": "2/1",
-          "_mkt_price": "5/3",
-          "_win_pct": 33.5,
+          "_mkt_price": "13/7",
+          "_win_pct": 31.5,
           "_edge": 3.1,
           "_action": "WATCH"
         },
@@ -1832,13 +1340,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "DEPENDENT",
-          "note": "Going dependent runner whose chance hinges entirely on surface conditions.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 36.6,
-          "_model_price": "37/1",
-          "_mkt_price": "30/1",
-          "_win_pct": 2.6,
+          "_model_price": "28/1",
+          "_mkt_price": "22/1",
+          "_win_pct": 3.6,
           "_edge": -2.3,
           "_action": "WATCH"
         },
@@ -1846,16 +1354,16 @@
           "name": "Star Mind",
           "or": 59,
           "style_code": "H",
-          "finish_type": "E",
+          "finish_type": "F",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Highest rated hold-up horse who needs clear run through traffic.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 35.8,
           "_model_price": "16/1",
-          "_mkt_price": "12/1",
-          "_win_pct": 5.9,
+          "_mkt_price": "13/1",
+          "_win_pct": 5.5,
           "_edge": -7.1,
           "_action": "WATCH"
         },
@@ -1866,13 +1374,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Lowest-rated prominent runner may get squeezed out in early battle.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 30.0,
-          "_model_price": "7/1",
-          "_mkt_price": "26/5",
-          "_win_pct": 12.9,
+          "_model_price": "5/1",
+          "_mkt_price": "4/1",
+          "_win_pct": 16.1,
           "_edge": -3.9,
           "_action": "WATCH"
         },
@@ -1883,13 +1391,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Lowest-rated runner whose hold-up style needs everything to fall right.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 22.0,
-          "_model_price": "28/1",
-          "_mkt_price": "23/1",
-          "_win_pct": 3.4,
+          "_model_price": "30/1",
+          "_mkt_price": "26/1",
+          "_win_pct": 3.1,
           "_edge": -1.9,
           "_action": "WATCH"
         },
@@ -1897,105 +1405,23 @@
           "name": "Rushford",
           "or": 49,
           "style_code": "P",
-          "finish_type": "E",
+          "finish_type": "F",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Another prominent runner adding to early pace congestion concerns.",
+          "note": "",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 17.2,
-          "_model_price": "150/1",
+          "_model_price": "148/1",
           "_mkt_price": "100/1",
           "_win_pct": 0.7,
           "_edge": -15.7,
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Rising Sky, On The Cards, Barretstown and Rushford all want prominent positions, creating congestion and a false pace scenario. With no genuine front runner, this quartet will likely jostle for early position before the pace inevitably quickens turning for home. The five hold-up horses including Star Mind and Captain Hanley face potential traffic problems as the field bunches 2-3 furlongs out.",
-      "scenarios": [
-        {
-          "label": "A",
-          "title": "Prominent Horse Dominates",
-          "prob": 35,
-          "trigger": "If Rising Sky or On The Cards secure uncontested early lead",
-          "body": "The false pace becomes genuine as one prominent horse steals a march, building crucial lengths while others argue. Hold-up horses can't peg back the advantage despite late rallies.",
-          "winners": [
-            "Rising Sky",
-            "On The Cards"
-          ],
-          "others": [
-            "Rushford",
-            "Barretstown"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "Hold-Up Horse Strikes",
-          "prob": 40,
-          "trigger": "If Star Mind finds clean passage through congested field",
-          "body": "The prominent horses collapse after their early skirmishing creates stop-start fractions. Star Mind or Captain Hanley sweep through late with strong finishing kicks.",
-          "winners": [
-            "Star Mind",
-            "Captain Hanley"
-          ],
-          "others": [
-            "Storm Eric",
-            "Palazzo Persico"
-          ]
-        },
-        {
-          "label": "C",
-          "title": "Traffic Chaos Finish",
-          "prob": 20,
-          "trigger": "If early pace collapses into walking speed mid-race",
-          "body": "The prominent quartet goes too slow then sprints, creating a bunched finish where any horse can win. Positioning luck and jockey skill determine the outcome more than ability.",
-          "winners": [
-            "Barretstown",
-            "Rushford"
-          ],
-          "others": [
-            "Rising Sky",
-            "Harbanaker"
-          ]
-        },
-        {
-          "label": "D",
-          "title": "Going Swing Changes",
-          "prob": 5,
-          "trigger": "If Palazzo Persico gets perfect ground conditions",
-          "body": "The going-dependent runner exploits favorable conditions while others struggle with surface. Late surge carries Palazzo Persico past tiring prominent runners.",
-          "winners": [
-            "Palazzo Persico",
-            "Storm Eric"
-          ],
-          "others": [
-            "Star Mind",
-            "Captain Hanley"
-          ]
-        }
-      ],
-      "watchPoints": [
-        {
-          "severity": "danger",
-          "text": "Watch for early scrimmaging between Rising Sky, On The Cards, Barretstown and Rushford destroying their finishing kicks"
-        },
-        {
-          "severity": "warn",
-          "text": "Star Mind needs clean passage 2f out when field bunches - any traffic trouble kills his chance"
-        },
-        {
-          "severity": "warn",
-          "text": "Palazzo Persico's going dependency makes track conditions crucial to assess"
-        },
-        {
-          "severity": "info",
-          "text": "Captain Hanley requires genuine pace to be effective from hold-up position"
-        },
-        {
-          "severity": "info",
-          "text": "Storm Eric needs the prominent quartet to maintain honest gallop throughout"
-        }
-      ]
+      "paceDynamic": "",
+      "scenarios": [],
+      "watchPoints": []
     }
   ]
 }
