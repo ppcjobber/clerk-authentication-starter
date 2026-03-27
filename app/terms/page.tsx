@@ -1,4 +1,5 @@
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
 export default function TermsPage() {
   return (
@@ -100,10 +101,7 @@ export default function TermsPage() {
 
         </div>
       </div>
-      <footer>
-        <span className="footer-brand">PaceMap</span>
-        <span className="footer-note">pacemap.co.uk · A Signalweight product<br />For informational purposes only · Not financial advice</span>
-      </footer>
+      <Footer />
     </>
   );
 }
