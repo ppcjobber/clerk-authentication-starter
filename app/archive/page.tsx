@@ -10,7 +10,15 @@ type Meeting = {
   latest?: boolean;
 };
 
-const MEETINGS: any[] = [];
+const MEETINGS: any[] = [
+  {
+    slug:   "dundalk_aw_27-march-2026",
+    date:   "27 March 2026",
+    label:  "Dundalk (AW) — 27 March 2026",
+    going:  "Good",
+    races:  7,
+    latest: true,
+  },];
 
 // ── Group by date ─────────────────────────────────────────────
 
