@@ -8,24 +8,28 @@ export async function GET() {
 
     const text = await r.text();
 
-    // Today's date in the format stored in the archive e.g. "27 March 2026"
-    const today = new Date().toLocaleDateString('en-GB', {
-      day: 'numeric', month: 'long', year: 'numeric'
-    });
+    // Build today's date string manually to match archive format: "27 March 2026"
+    const now = new Date();
+    const months = ['January','February','March','April','May','June',
+                    'July','August','September','October','November','December'];
+    const today = `${now.getUTCDate()} ${months[now.getUTCMonth()]} ${now.getUTCFullYear()}`;
 
-    // Parse MEETINGS array by splitting on entry boundaries
+    // Extract slug, date, label, going, races per entry — no dotall regex
+    const slugMatches   = text.match(/slug:\s*"([^"]+)"/g)   || [];
+    const dateMatches   = text.match(/date:\s*"([^"]+)"/g)   || [];
+    const labelMatches  = text.match(/label:\s*"([^"]+)"/g)  || [];
+    const goingMatches  = text.match(/going:\s*"([^"]*)"/g)  || [];
+    const racesMatches  = text.match(/races:\s*(\d+)/g)      || [];
+
+    const count = Math.min(
+      slugMatches.length, dateMatches.length,
+      labelMatches.length, racesMatches.length
+    );
+
     const results: { slug: string; date: string; course: string; going: string; races: number }[] = [];
 
-    const slugMatches = text.match(/slug:\s*"([^"]+)"/g) || [];
-    const dateMatches = text.match(/date:\s*"([^"]+)"/g) || [];
-    const labelMatches = text.match(/label:\s*"([^"]+)"/g) || [];
-    const goingMatches = text.match(/going:\s*"([^"]*)"/g) || [];
-    const racesMatches = text.match(/races:\s*(\d+)/g) || [];
-
-    const count = Math.min(slugMatches.length, dateMatches.length, labelMatches.length, racesMatches.length);
-
     for (let i = 0; i < count; i++) {
-      const date  = dateMatches[i].replace(/date:\s*"/, '').replace(/"$/, '').trim();
+      const date = dateMatches[i].replace(/date:\s*"/, '').replace(/"$/, '').trim();
       if (date !== today) continue;
 
       const slug  = slugMatches[i].replace(/slug:\s*"/, '').replace(/"$/, '').trim();
