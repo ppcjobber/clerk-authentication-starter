@@ -1,6 +1,45 @@
 import Nav from "@/components/Nav";
 import Link from "next/link";
 
+async function TodaysMeetings() {
+  try {
+    const baseUrl = process.env.NEXT_PUBLIC_URL || 'https://pacemap.co.uk';
+    const res = await fetch(`${baseUrl}/api/meeting-data-list`, { cache: 'no-store' });
+    const meetings = res.ok ? await res.json() : [];
+
+    if (!meetings.length) {
+      return (
+        <p style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.72rem", color: "rgba(245,240,232,0.4)", lineHeight: "1.8" }}>
+          No meetings published yet today — check back once racing is underway.
+        </p>
+      );
+    }
+
+    return (
+      <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+        {meetings.map((m: any) => (
+          <Link key={m.slug} href={`/meetings/${m.slug}`}
+            style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "14px 18px", background: "rgba(255,255,255,0.025)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: "6px", flexWrap: "wrap", gap: "8px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "14px", flexWrap: "wrap" }}>
+              <span style={{ fontWeight: 600, fontSize: "0.88rem" }}>{m.course}</span>
+              <span style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.6rem", color: "rgba(245,240,232,0.38)" }}>{m.races} races</span>
+            </div>
+            <span style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.58rem", letterSpacing: "0.07em", textTransform: "uppercase", padding: "3px 9px", borderRadius: "2px", background: "rgba(39,174,96,0.18)", color: "#2ecc71", border: "1px solid rgba(39,174,96,0.35)" }}>
+              View →
+            </span>
+          </Link>
+        ))}
+      </div>
+    );
+  } catch {
+    return (
+      <p style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.72rem", color: "rgba(245,240,232,0.4)" }}>
+        No meetings available right now.
+      </p>
+    );
+  }
+}
+
 export default function Home() {
   return (
     <>
@@ -15,13 +54,13 @@ export default function Home() {
           Read the<br /><span style={{ color: "var(--gold)" }}>race before</span><br />it runs.
         </h1>
         <p className="a2" style={{ fontFamily: "'Playfair Display',serif", fontStyle: "italic", fontSize: "clamp(1rem,2.2vw,1.35rem)", color: "rgba(245,240,232,0.5)", marginBottom: "20px", maxWidth: "520px", lineHeight: "1.55" }}>
-          Pace maps for every UK & Irish meeting, every day.
+          Pace maps for every UK &amp; Irish meeting, every day.
         </p>
         <p className="a3" style={{ fontSize: "0.88rem", color: "rgba(245,240,232,0.6)", maxWidth: "460px", lineHeight: "1.85", marginBottom: "44px" }}>
           PaceMap analyses each runner&apos;s historical running style to build a picture of how a race is likely to unfold — before the off. Who leads, who&apos;s covered up, where the traffic will be, and which horses the pace scenario favours.
         </p>
         <div className="a4" style={{ display: "flex", gap: "16px", flexWrap: "wrap", alignItems: "center" }}>
-          <Link href="/meetings/cheltenham-13-march-2026" className="btn btn-gold">View Example Map →</Link>
+          <Link href="/archive" className="btn btn-gold">View All Meetings →</Link>
           <Link href="/pricing" style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.68rem", letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(245,240,232,0.45)" }}>See pricing →</Link>
         </div>
       </section>
@@ -43,38 +82,9 @@ export default function Home() {
       </section>
 
       <section style={{ position: "relative", zIndex: 1, maxWidth: "1100px", margin: "0 auto", padding: "60px 40px" }}>
-        <p style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.62rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--gold)", marginBottom: "6px" }}>Latest Meeting</p>
-        <h2 style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: "1.9rem", letterSpacing: "0.04em", color: "var(--cream)", marginBottom: "28px" }}>Cheltenham Festival · 13 March 2026</h2>
-
-        <div style={{ background: "rgba(201,168,76,0.07)", border: "1px solid rgba(201,168,76,0.2)", borderRadius: "7px", padding: "16px 20px", marginBottom: "20px", display: "flex", gap: "14px", alignItems: "flex-start" }}>
-          <span style={{ fontSize: "1.2rem", flexShrink: 0 }}>⚓</span>
-          <p style={{ fontSize: "0.8rem", color: "rgba(245,240,232,0.7)", lineHeight: "1.65" }}>
-            <strong style={{ color: "var(--gold)" }}>Example meeting —</strong> full daily meetings covering every UK & Irish race coming soon. Race 1 of each meeting is always free, no account required.
-          </p>
-        </div>
-
-        <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-          {[
-            { time: "1:20", name: "JCB Triumph Hurdle",            grade: "G1",   dist: "2m1f",  runners: 20, free: true },
-            { time: "2:00", name: "William Hill County Hurdle",     grade: "HCAP", dist: "2m1f",  runners: 24, free: false },
-            { time: "2:40", name: "Mrs Paddy Power Mares' Chase",   grade: "G2",   dist: "2m4½f", runners: 9,  free: false },
-            { time: "3:20", name: "Albert Bartlett Novices Hurdle", grade: "G1",   dist: "3m",    runners: 22, free: false },
-            { time: "4:00", name: "Cheltenham Gold Cup",            grade: "G1",   dist: "3m2½f", runners: 11, free: false },
-          ].map(r => (
-            <Link key={r.time} href={r.free ? "/meetings/cheltenham-13-march-2026" : "/pricing"}
-              style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "14px 18px", background: "rgba(255,255,255,0.025)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: "6px", flexWrap: "wrap", gap: "8px" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "14px", flexWrap: "wrap" }}>
-                <span style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.72rem", color: "var(--gold)", minWidth: "34px" }}>{r.time}</span>
-                <span style={{ fontWeight: 600, fontSize: "0.88rem" }}>{r.name}</span>
-                <span style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.6rem", color: "rgba(245,240,232,0.38)", background: "rgba(255,255,255,0.045)", padding: "2px 6px", borderRadius: "2px" }}>{r.grade}</span>
-                <span style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.6rem", color: "rgba(245,240,232,0.38)" }}>{r.dist} · {r.runners} runners</span>
-              </div>
-              <span style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.58rem", letterSpacing: "0.07em", textTransform: "uppercase", padding: "3px 9px", borderRadius: "2px", background: r.free ? "rgba(39,174,96,0.18)" : "rgba(201,168,76,0.09)", color: r.free ? "#2ecc71" : "var(--gold)", border: `1px solid ${r.free ? "rgba(39,174,96,0.35)" : "rgba(201,168,76,0.25)"}` }}>
-                {r.free ? "Free" : "🔒 Premium"}
-              </span>
-            </Link>
-          ))}
-        </div>
+        <p style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.62rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--gold)", marginBottom: "6px" }}>Today&apos;s Meetings</p>
+        <h2 style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: "1.9rem", letterSpacing: "0.04em", color: "var(--cream)", marginBottom: "28px" }}>Live Pace Maps</h2>
+        <TodaysMeetings />
       </section>
 
       <footer>
