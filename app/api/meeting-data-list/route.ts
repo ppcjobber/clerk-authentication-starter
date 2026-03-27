@@ -11,12 +11,15 @@ export async function GET() {
     const months = ['January','February','March','April','May','June',
                     'July','August','September','October','November','December'];
 
-    const ukNow      = new Date(new Date().toLocaleString('en-GB', { timeZone: 'Europe/London' }));
-    const ukTomorrow = new Date(ukNow);
-    ukTomorrow.setDate(ukNow.getDate() + 1);
-
-    const today    = `${ukNow.getDate()} ${months[ukNow.getMonth()]} ${ukNow.getFullYear()}`;
-    const tomorrow = `${ukTomorrow.getDate()} ${months[ukTomorrow.getMonth()]} ${ukTomorrow.getFullYear()}`;
+    // UK is UTC+0 in winter, UTC+1 in summer (BST starts last Sunday March)
+    // March 27 2026 is after BST starts so UTC+1
+    const nowUtc = new Date();
+    const ukOffsetMs = 60 * 60 * 1000; // UTC+1 (BST)
+    const ukNow = new Date(nowUtc.getTime() + ukOffsetMs);
+    
+    const today    = `${ukNow.getUTCDate()} ${months[ukNow.getUTCMonth()]} ${ukNow.getUTCFullYear()}`;
+    const ukTom    = new Date(ukNow.getTime() + 86400000);
+    const tomorrow = `${ukTom.getUTCDate()} ${months[ukTom.getUTCMonth()]} ${ukTom.getUTCFullYear()}`;
 
     const arrayMatch = text.match(/const MEETINGS[^=]*=\s*\[([\s\S]*?)\];/);
     if (!arrayMatch) return NextResponse.json({ today: [], tomorrow: [] });
