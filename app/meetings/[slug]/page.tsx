@@ -173,8 +173,6 @@ function RunnerTable({ runners, isFlat }: { runners: Runner[]; isFlat: boolean }
             <th style={thStyle}>Horse</th>
             <th style={thStyle}>OR</th>
             <th style={thStyle}>Style</th>
-            <th style={thStyle}>Finish</th>
-            <th style={thStyle}>Dist</th>
             <th style={thStyle}>Going</th>
             <th style={{ ...thStyle, width:"35%" }}>Note</th>
           </tr>
