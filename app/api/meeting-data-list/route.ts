@@ -8,17 +8,17 @@ export async function GET() {
 
     const text = await r.text();
 
-    const now = new Date();
     const months = ['January','February','March','April','May','June',
                     'July','August','September','October','November','December'];
 
-    const todayDate  = new Date();
-    const tomorrowDate = new Date(Date.now() + 86400000);
+    // Use UK time to match the pipeline's date strings
+    const ukNow      = new Date(new Date().toLocaleString('en-GB', { timeZone: 'Europe/London' }));
+    const ukTomorrow = new Date(ukNow);
+    ukTomorrow.setDate(ukNow.getDate() + 1);
 
-    const today    = `${todayDate.getUTCDate()} ${months[todayDate.getUTCMonth()]} ${todayDate.getUTCFullYear()}`;
-    const tomorrow = `${tomorrowDate.getUTCDate()} ${months[tomorrowDate.getUTCMonth()]} ${tomorrowDate.getUTCFullYear()}`;
+    const today    = `${ukNow.getDate()} ${months[ukNow.getMonth()]} ${ukNow.getFullYear()}`;
+    const tomorrow = `${ukTomorrow.getDate()} ${months[ukTomorrow.getMonth()]} ${ukTomorrow.getFullYear()}`;
 
-    // Extract MEETINGS array block
     const arrayMatch = text.match(/const MEETINGS[^=]*=\s*\[([\s\S]*?)\];/);
     if (!arrayMatch) return NextResponse.json({ today: [], tomorrow: [] });
 
