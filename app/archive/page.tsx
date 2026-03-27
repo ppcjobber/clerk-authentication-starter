@@ -14,13 +14,22 @@ type Meeting = {
 
 const MEETINGS: any[] = [
   {
+    slug:       "fontwell_28-march-2026",
+    date:       "28 March 2026",
+    label:      "Fontwell — 28 March 2026",
+    going:      "Good",
+    races:      6,
+    courseSlug: "fontwell",
+    latest:     true,
+  },
+  {
     slug:       "dundalk_aw_28-march-2026",
     date:       "28 March 2026",
     label:      "Dundalk (AW) — 28 March 2026",
     going:      "Good",
     races:      7,
     courseSlug: "dundalk-aw",
-    latest:     true,
+    latest:     false,
   },];
 
 function groupByDate(meetings: Meeting[]) {
