@@ -218,7 +218,7 @@ export default function MeetingPage({ params }: { params: { slug: string } }) {
 
   // Fetch race data from JSON
   useEffect(() => {
-    fetch(`/data/${params.slug}.json`)
+    fetch(`/api/meeting-data?slug=${params.slug}`)
       .then(r => { if (!r.ok) throw new Error("Not found"); return r.json(); })
       .then(d => { setData(d); setLoading(false); })
       .catch(() => { setError(true); setLoading(false); });
