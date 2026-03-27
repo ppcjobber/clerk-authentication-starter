@@ -17,20 +17,21 @@
       "pace": "CONTESTED",
       "paceConf": 50,
       "leads": [
-        "Law Supreme"
+        "Tasever"
       ],
       "prominent": [
         "Roger Henry",
-        "My Awele"
+        "Law Supreme",
+        "Bajan Bandit"
       ],
-      "midfield": [],
-      "holdup": [
-        "Tasever",
-        "Dream Illusion",
-        "Sea Legend",
-        "Bajan Bandit",
+      "midfield": [
         "Barleybrown",
         "Trais Fluors"
+      ],
+      "holdup": [
+        "Dream Illusion",
+        "Sea Legend",
+        "My Awele"
       ],
       "drawBias": null,
       "runners_data": [
@@ -41,7 +42,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Consistent prominent runner with strong similar going record (9/11 with 1W 5P) suits the likely honest pace",
+          "note": "Consistent prominent runner whose good going form shows three wins from eleven similar conditions",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 66.4,
@@ -57,8 +58,8 @@
           "style_code": "P",
           "finish_type": "E",
           "dist_code": "B",
-          "going_flag": "DEPENDENT",
-          "note": "Prominent style could exploit tactical gaps but going dependency is major concern on this surface",
+          "going_flag": "OK",
+          "note": "Solid pace-tracking type but recent form shows declining trend over shorter trips",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 64.0,
@@ -75,7 +76,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up specialist with excellent recent form (3W from last 5) perfectly suited to expected slow early pace",
+          "note": "Excellent hold-up performer with three wins from last five starts, thrives when strong pace develops",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 60.5,
@@ -91,8 +92,8 @@
           "style_code": "L",
           "finish_type": "E",
           "dist_code": "B+",
-          "going_flag": "DEPENDENT",
-          "note": "Sole confirmed front runner gives tactical advantage but going dependency could undermine stamina",
+          "going_flag": "OK",
+          "note": "Natural front runner with good record on this going, two wins from fifteen similar conditions",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 59.6,
@@ -108,8 +109,8 @@
           "style_code": "H",
           "finish_type": "E",
           "dist_code": "B+",
-          "going_flag": "DEPENDENT",
-          "note": "Hold-up style fits race shape but lowest rating and going concerns limit winning chances",
+          "going_flag": "OK",
+          "note": "Patient hold-up horse who needs everything to fall right but has winning form on good ground",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 57.9,
@@ -126,7 +127,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Strong closer with good going record should benefit from sustainable early fractions",
+          "note": "Effective closer who won recently over course and distance in similar conditions",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 55.1,
@@ -142,8 +143,8 @@
           "style_code": "H",
           "finish_type": "E",
           "dist_code": "B",
-          "going_flag": "DEPENDENT",
-          "note": "Hold-up runner with distance experience but inconsistent recent form limits reliability",
+          "going_flag": "OK",
+          "note": "Hold-up specialist who ran well when second over this trip two starts ago",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 52.7,
@@ -160,7 +161,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent racer with strong 10f form and good going record can capitalize if pace quickens",
+          "note": "Versatile prominent runner in excellent form with three wins from last five outings",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 47.7,
@@ -177,7 +178,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Lowest-rated hold-up horse whose finishing kick may lack punch at this competitive level",
+          "note": "Lowest-rated runner who needs career-best effort but has winning form on good turf",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 46.6,
@@ -188,63 +189,51 @@
           "_action": "WATCH"
         }
       ],
-      "paceDynamic": "Tasever will control the tempo from the front with minimal pressure, as Roger Henry and Law Supreme are the only prominent racers likely to track close. This sustainable pace setup heavily favors the strong contingent of hold-up horses (Dream Illusion, Sea Legend, My Awele, Barleybrown, Trais Fluors) who can deliver their finishing kicks in the final two furlongs.",
+      "paceDynamic": "Tasever is the only confirmed front runner and will dictate a sustainable gallop without early pressure from the prominent runners Roger Henry, Bajan Bandit, and Law Supreme. With five hold-up horses including in-form Dream Illusion, Sea Legend, and My Awele, this sets up a tactical affair where the pace could quicken significantly in the final three furlongs as the back markers launch their challenges.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Hold-Up Horses Dominate",
-          "prob": 45,
-          "trigger": "If Tasever sets uncontested fractions allowing closers time to wind up",
-          "body": "The pace collapses in the final furlong as multiple hold-up horses unleash simultaneous challenges. Dream Illusion and Sea Legend benefit most from their superior tactical speed.",
-          "winners": [
-            "Dream Illusion",
-            "Sea Legend"
-          ],
-          "others": [
-            "My Awele",
-            "Barleybrown"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "Prominent Trackers Strike",
-          "prob": 30,
-          "trigger": "If Roger Henry and Law Supreme apply early pressure to Tasever creating honest tempo",
-          "body": "The increased pace stretches the field and favors horses with stamina who can sustain their effort. Law Supreme's recent 10f wins and Roger Henry's consistent place record give them the edge.",
-          "winners": [
-            "Law Supreme",
-            "Roger Henry"
-          ],
+          "title": "Tasever Controls Throughout",
+          "prob": 35,
+          "trigger": "If Tasever establishes an uncontested lead and the prominent runners settle behind without applying pressure.",
+          "body": "Tasever maintains his rhythm while the hold-up horses find traffic problems in the straight. The leader's two-length advantage at the furlong pole proves decisive as closers run out of room.",
+          "winners": [],
           "others": [
             "Tasever",
-            "Dream Illusion"
-          ]
-        },
-        {
-          "label": "C",
-          "title": "Front Runner Wires Field",
-          "prob": 15,
-          "trigger": "If Tasever gets completely uncontested early splits and kicks clear turning for home",
-          "body": "The hold-up horses are caught flat-footed by the injection of pace and cannot reel in the leader. Tasever exploits the tactical advantage despite going concerns.",
-          "winners": [
-            "Tasever",
-            "Bajan Bandit"
-          ],
-          "others": [
-            "Roger Henry",
             "Law Supreme"
           ]
         },
         {
+          "label": "B",
+          "title": "Strong Pace Suits Closers",
+          "prob": 40,
+          "trigger": "If Roger Henry and Law Supreme press Tasever early, creating genuine pace pressure through the middle stages.",
+          "body": "The increased gallop stretches the field and sets up perfectly for Dream Illusion and Sea Legend to deliver their trademark late rushes. My Awele also benefits from the strong tempo to grab a place.",
+          "winners": [],
+          "others": [
+            "Dream Illusion",
+            "Sea Legend"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Prominent Runners Strike",
+          "prob": 20,
+          "trigger": "If the pace collapses completely and Tasever crawls through moderate fractions, allowing prominent runners to remain competitive.",
+          "body": "Law Supreme and Roger Henry are perfectly positioned to kick clear in the straight before the hold-up horses can organize their challenges. Bajan Bandit also profits from the steady tempo to stay involved.",
+          "winners": [],
+          "others": [
+            "Law Supreme",
+            "Roger Henry"
+          ]
+        },
+        {
           "label": "D",
-          "title": "Pace Compromise Benefits",
-          "prob": 10,
-          "trigger": "If moderate early tempo creates tactical confusion with no clear rhythm established",
-          "body": "Mid-division runners get the perfect setup as neither front runners nor hold-up horses get ideal conditions. Bajan Bandit finds the tactical sweet spot despite going worries.",
-          "winners": [
-            "Bajan Bandit",
-            "My Awele"
-          ],
+          "title": "Surprise Outsider Emerges",
+          "prob": 5,
+          "trigger": "If the pace becomes stop-start with multiple moves, creating a scrambling finish where positioning trumps ability.",
+          "body": "The race becomes a lottery where Trais Fluors or Barleybrown find the perfect split at the crucial moment. The higher-rated horses cancel each other out through poor positioning.",
+          "winners": [],
           "others": [
             "Trais Fluors",
             "Barleybrown"
@@ -254,23 +243,23 @@
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Tasever's going dependency could see the front runner weaken dramatically in the final furlong despite tactical advantage"
+          "text": "Tasever's early fractions will determine the entire race shape - if he dawdles, the hold-up horses lose their advantage"
         },
         {
           "severity": "warn",
-          "text": "Multiple hold-up horses (Dream Illusion, Sea Legend, My Awele, Barleybrown) creating traffic problems in the home straight as they all seek racing room simultaneously"
+          "text": "Dream Illusion needs a strong pace to be effective, so watch how aggressively the prominent runners track the leader"
         },
         {
           "severity": "info",
-          "text": "Roger Henry and Law Supreme's positioning behind Tasever in the early stages will determine if the pace becomes genuinely testing"
+          "text": "Law Supreme's positioning in the first half-mile is crucial given his recent front-running victories"
         },
         {
           "severity": "warn",
-          "text": "Bajan Bandit's going dependency making their prominent position either a major asset or significant liability depending on ground conditions"
+          "text": "Traffic problems likely in straight with five hold-up horses needing room simultaneously"
         },
         {
           "severity": "info",
-          "text": "The gap between leader Tasever and the pack of hold-up horses at the two-furlong pole will determine if closers have enough time to mount their challenge"
+          "text": "Roger Henry's consistent prominent style makes him the key barometer for how genuine the early pace becomes"
         }
       ]
     },
@@ -291,16 +280,18 @@
         "Eazy On The Eye",
         "West Tyrone"
       ],
-      "prominent": [],
-      "midfield": [],
+      "prominent": [
+        "Alpine Sierra"
+      ],
+      "midfield": [
+        "Jamaican Storm",
+        "Concert Boy",
+        "Book Of Life"
+      ],
       "holdup": [
         "Hachiman",
         "Chuzzlewit",
-        "Starliner",
-        "Jamaican Storm",
-        "Concert Boy",
-        "Book Of Life",
-        "Alpine Sierra"
+        "Starliner"
       ],
       "drawBias": null,
       "runners_data": [
@@ -310,8 +301,8 @@
           "style_code": "H",
           "finish_type": "E",
           "dist_code": "B+",
-          "going_flag": "DEPENDENT",
-          "note": "Hold-up performer who needs firm ground to be avoided and relies heavily on a strong early pace",
+          "going_flag": "OK",
+          "note": "Patient hold-up horse with solid going form who needs the pace to develop late",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 63.8,
@@ -328,7 +319,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Consistent hold-up horse with solid form on good ground and proven ability at this distance",
+          "note": "Reliable hold-up performer who has shown consistency on similar going but needs strong pace",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 62.4,
@@ -344,8 +335,8 @@
           "style_code": "H",
           "finish_type": "E",
           "dist_code": "B",
-          "going_flag": "DEPENDENT",
-          "note": "Hold-up runner who has never won on good ground despite 15 attempts on similar conditions",
+          "going_flag": "OK",
+          "note": "Hold-up horse with the highest rating who relies entirely on others providing the pace",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 59.5,
@@ -362,7 +353,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Natural front-runner with solid recent form who will take them along from the start",
+          "note": "Front runner with good recent form who must avoid getting into a speed duel",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 53.3,
@@ -378,8 +369,8 @@
           "style_code": "H",
           "finish_type": "E",
           "dist_code": "B",
-          "going_flag": "DEPENDENT",
-          "note": "Hold-up horse with perfect record on good ground but limited sample size of six runs",
+          "going_flag": "OK",
+          "note": "Hold-up horse in excellent form with a recent win who needs room to maneuver late",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 53.0,
@@ -396,7 +387,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent racer who lacks a win but consistently hits the frame and suits the tactical nature",
+          "note": "Prominent runner dropping significantly in grade with consistent place record",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 51.5,
@@ -413,7 +404,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Strong hold-up performer with excellent place record and proven effectiveness on good ground",
+          "note": "Hold-up horse with strong recent form who times his runs well",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 50.5,
@@ -430,7 +421,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Front-running type who showed best recent form on softer but handles good ground adequately",
+          "note": "Front runner stepping back in trip who may appreciate the more tactical nature",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 50.0,
@@ -446,8 +437,8 @@
           "style_code": "H",
           "finish_type": "E",
           "dist_code": "B",
-          "going_flag": "DEPENDENT",
-          "note": "Hold-up horse dependent on conditions with excellent place record but no wins on good ground",
+          "going_flag": "OK",
+          "note": "Hold-up horse with solid place record who needs everything to fall right",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 48.7,
@@ -458,89 +449,89 @@
           "_action": "WATCH"
         }
       ],
-      "paceDynamic": "Eazy On The Eye and West Tyrone will dispute the early lead, creating genuine pace pressure from the outset in this competitive handicap. With six hold-up horses including Concert Boy, Chuzzlewit, Hachiman, Starliner, Book Of Life and Jamaican Storm needing the leaders to go hard, the pace dynamic should produce an honest gallop that sets up a tactical finish where positioning and timing will prove crucial.",
+      "paceDynamic": "Eazy On The Eye and West Tyrone will contest the early pace as the only confirmed front runners, setting up an honest gallop over this mile trip. With six hold-up horses including the higher-rated Chuzzlewit, Hachiman, and Starliner waiting behind, the race will likely develop into a tactical affair where the early leaders' stamina will be tested by closers timing their runs.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Strong Pace Favors Closers",
+          "title": "Early Leaders Collapse",
           "prob": 35,
-          "trigger": "If Eazy On The Eye and West Tyrone engage in a sustained speed duel through the first six furlongs",
-          "body": "The pace collapse in the final two furlongs allows the hold-up brigade to sweep past the tiring leaders. Starliner and Book Of Life emerge best from the pack with their proven closing kicks on good ground.",
+          "trigger": "If Eazy On The Eye and West Tyrone go too fast early in their pace battle",
+          "body": "The front pair tire dramatically in the final two furlongs, opening the door for the patient hold-up horses. Chuzzlewit and Hachiman emerge from the pack to contest the finish with superior finishing kicks.",
           "winners": [
-            "Starliner",
-            "Book Of Life"
+            "Chuzzlewit",
+            "Hachiman"
           ],
           "others": [
-            "Hachiman",
+            "Starliner",
             "Jamaican Storm"
           ]
         },
         {
           "label": "B",
-          "title": "Tactical Pace Suits Leaders",
+          "title": "Sustained Pace Suits",
           "prob": 25,
-          "trigger": "If one of the front runners gets an uncontested lead while the other sits off the pace",
-          "body": "West Tyrone or Eazy On The Eye dictates terms and has enough left to resist the late challenge. Alpine Sierra's prominent style keeps tabs on the pace and stays on for minor honors.",
+          "trigger": "If the early gallop is honest but not overly fast between the two leaders",
+          "body": "The tempo plays into the hands of horses that can travel prominently or just off the pace. Alpine Sierra gets a perfect pitch from her prominent style while Book Of Life times his challenge perfectly.",
+          "winners": [
+            "Alpine Sierra",
+            "Book Of Life"
+          ],
+          "others": [
+            "West Tyrone",
+            "Eazy On The Eye"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Front Runner Dominates",
+          "prob": 20,
+          "trigger": "If one of the pace-setters gets an uncontested lead and controls the fractions",
+          "body": "West Tyrone or Eazy On The Eye dictates terms without serious pressure, keeping enough in reserve for the finish. The hold-up horses struggle to make up ground against the controlled tempo.",
           "winners": [
             "West Tyrone",
             "Eazy On The Eye"
           ],
           "others": [
             "Alpine Sierra",
-            "Book Of Life"
-          ]
-        },
-        {
-          "label": "C",
-          "title": "Going Dependent Horses Struggle",
-          "prob": 25,
-          "trigger": "If the good ground proves too firm for Concert Boy, Chuzzlewit, Hachiman and Jamaican Storm",
-          "body": "The quartet of going-dependent runners fail to fire, leaving a smaller effective field where Starliner's hold-up style prevails. Alpine Sierra's prominent racing gives him every chance to capitalize on the reduced opposition.",
-          "winners": [
-            "Starliner",
-            "Alpine Sierra"
-          ],
-          "others": [
-            "Book Of Life",
-            "West Tyrone"
+            "Hachiman"
           ]
         },
         {
           "label": "D",
-          "title": "Pace Compromise Benefits Mid-Division",
-          "prob": 15,
-          "trigger": "If the early pace is steady rather than strong, allowing mid-division runners to stay closer than usual",
-          "body": "Book Of Life gets the perfect setup from his hold-up style, while Alpine Sierra's prominent position keeps him in contention throughout. The pace scenario eliminates both extreme front-runners and the deep closers.",
+          "title": "Messy Tactical Affair",
+          "prob": 20,
+          "trigger": "If the pace collapses with both leaders reluctant to commit early",
+          "body": "The race becomes a stop-start sprint where positioning matters more than pure ability. Concert Boy and Jamaican Storm benefit from being in the right place when the race finally develops.",
           "winners": [
-            "Book Of Life",
-            "Alpine Sierra"
+            "Concert Boy",
+            "Jamaican Storm"
           ],
           "others": [
-            "Starliner",
-            "Eazy On The Eye"
+            "Book Of Life",
+            "Starliner"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Concert Boy, Chuzzlewit, Hachiman and Jamaican Storm all carry going concerns that could see them struggle on the good ground"
+          "text": "Watch if Eazy On The Eye and West Tyrone engage in a fierce early battle as both could collapse dramatically"
         },
         {
           "severity": "warn",
-          "text": "If Eazy On The Eye and West Tyrone go too hard early, they risk setting it up perfectly for the hold-up brigade behind"
+          "text": "Monitor Alpine Sierra's early positioning as she needs to be handy enough to capitalize on her class drop"
         },
         {
           "severity": "info",
-          "text": "Alpine Sierra's prominent style could prove key if the pace becomes tactical rather than strong"
+          "text": "Observe Hachiman's position turning for home as he has the form and style to be dangerous late"
         },
         {
           "severity": "warn",
-          "text": "Book Of Life has hit the frame six times in fifteen runs on good ground but still seeks that elusive victory"
+          "text": "Check if the pace becomes too slow as this will disadvantage all the hold-up horses significantly"
         },
         {
           "severity": "info",
-          "text": "Starliner's consistency suggests he could be the main beneficiary if the pace dynamics unfold favorably"
+          "text": "Watch Chuzzlewit's movement in the final three furlongs as the highest-rated needs a strong pace to be effective"
         }
       ]
     },
@@ -558,23 +549,24 @@
       "pace": "GENUINE_PACE",
       "paceConf": 65,
       "leads": [
-        "Lord Capulet",
-        "Travis",
-        "Penny Mountain"
+        "Lord Capulet"
       ],
       "prominent": [
-        "Bobby Joe Leg",
-        "Phoenix Of Dreams"
+        "Bobby Joe Leg"
       ],
-      "midfield": [],
+      "midfield": [
+        "Travis",
+        "Camera Shy",
+        "Brave Empire",
+        "Concert Boy",
+        "Penny Mountain",
+        "Ignac Lamar"
+      ],
       "holdup": [
         "Anthropologist",
         "Rich Rhythm",
         "Novak",
-        "Brave Empire",
-        "Camera Shy",
-        "Concert Boy",
-        "Ignac Lamar"
+        "Phoenix Of Dreams"
       ],
       "drawBias": null,
       "runners_data": [
@@ -585,7 +577,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Strong record on similar going but needs luck from rear in traffic-prone handicap",
+          "note": "Strong recent 7f form but relies heavily on getting the gaps from off the pace",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 73.1,
@@ -602,7 +594,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Consistent hold-up performer who requires genuine pace and clear running",
+          "note": "Consistent hold-up performer who needs luck in running in large fields",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 69.7,
@@ -619,7 +611,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Recent winner with good going form but must overcome crowded field position",
+          "note": "Won last time at this trip and handles good ground well",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 68.4,
@@ -636,7 +628,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Solid hold-up style but lacks recent winning form to suggest breakthrough",
+          "note": "Versatile performer but lacks a recent win on the board",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 68.2,
@@ -652,8 +644,8 @@
           "style_code": "H",
           "finish_type": "E",
           "dist_code": "B+",
-          "going_flag": "DEPENDENT",
-          "note": "Highest rating but going-dependent flag creates surface reliability concerns",
+          "going_flag": "OK",
+          "note": "Reliable each-way type who finds one too good but rarely wins",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 65.2,
@@ -670,7 +662,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Natural front-runner with recent wins who should get uncontested early lead",
+          "note": "Natural leader with three wins from four recent 7f starts",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 64.4,
@@ -686,8 +678,8 @@
           "style_code": "H",
           "finish_type": "E",
           "dist_code": "B+",
-          "going_flag": "DEPENDENT",
-          "note": "Going-dependent hold-up horse whose surface concerns outweigh good recent placed efforts",
+          "going_flag": "OK",
+          "note": "Solid hold-up horse with decent place record on similar going",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 63.8,
@@ -704,7 +696,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up runner with decent form who needs strong pace and clear passage",
+          "note": "Recent 7f winner who stays this trip strongly from off the pace",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 59.5,
@@ -721,7 +713,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Recent winner from rear but faces tougher field and potential traffic issues",
+          "note": "Last-time winner dropping back to ideal 7f distance",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 59.2,
@@ -737,8 +729,8 @@
           "style_code": "P",
           "finish_type": "E",
           "dist_code": "B",
-          "going_flag": "DEPENDENT",
-          "note": "Prominent runner with going concerns but tactical advantage sitting behind leader",
+          "going_flag": "OK",
+          "note": "Only prominent runner to support Lord Capulet early",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 55.9,
@@ -755,7 +747,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Lowest rating but hold-up style suits if pace collapses from front",
+          "note": "Inconsistent but has shown glimpses of better form at this trip",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 47.0,
@@ -772,7 +764,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse with consistent placed efforts but needs everything to fall right",
+          "note": "Recent course winner who could be overpriced at longer odds",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 42.6,
@@ -783,32 +775,32 @@
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Lord Capulet will be the sole pace-setter from the gates, allowing him to dictate terms through comfortable fractions with Bobby Joe Leg likely settling just behind in second. This creates a tactical race where the nine hold-up horses must navigate traffic from the rear, potentially setting up a strong pace collapse if Lord Capulet's gallop proves sustainable to the line.",
+      "paceDynamic": "Lord Capulet will lead uncontested with Bobby Joe Leg the only other horse likely to race prominently, creating a moderate gallop through the early stages. With 10 of 12 runners confirmed hold-up performers, this becomes a classic sit-and-sprint setup where the pace will quicken dramatically from 2f out as the field compresses.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Lord Capulet Controls",
-          "prob": 35,
-          "trigger": "If Lord Capulet gets uncontested lead and sets moderate pace",
-          "body": "Lord Capulet controls the tempo throughout and proves hard to peg back despite the field's closing kick. The patient hold-up horses struggle to make ground with limited pace assistance.",
+          "title": "Sustained Gallop Holds",
+          "prob": 45,
+          "trigger": "If Lord Capulet maintains a strong tempo and Bobby Joe Leg applies pressure from 3f out",
+          "body": "The early pace proves honest enough to blunt the finishing kick of the hold-up brigade. Lord Capulet's front-running tactics pay dividends with the prominent Bobby Joe Leg picking up the pieces.",
           "winners": [
             "Lord Capulet",
-            "Phoenix Of Dreams"
+            "Bobby Joe Leg"
           ],
           "others": [
-            "Bobby Joe Leg",
-            "Camera Shy"
+            "Phoenix Of Dreams",
+            "Anthropologist"
           ]
         },
         {
           "label": "B",
-          "title": "Traffic Chaos Finish",
-          "prob": 30,
-          "trigger": "If the nine hold-up horses get bunched up turning for home",
-          "body": "Multiple hold-up runners get trapped behind traffic as gaps prove hard to find in the straight. Lord Capulet's early advantage holds under pressure as the field spreads late.",
+          "title": "Late Dash Dominates",
+          "prob": 35,
+          "trigger": "If the pace collapses into a crawl through the middle stages creating a sprint finish",
+          "body": "The field bunches turning for home and it becomes a pure speed battle over the final 2f. The best finishers with proven 7f form get first run on the leaders.",
           "winners": [
-            "Lord Capulet",
-            "Novak"
+            "Phoenix Of Dreams",
+            "Anthropologist"
           ],
           "others": [
             "Rich Rhythm",
@@ -817,55 +809,55 @@
         },
         {
           "label": "C",
-          "title": "Late Surge Success",
-          "prob": 25,
-          "trigger": "If Lord Capulet weakens after setting the pace and gaps open up",
-          "body": "The front-runner's gallop gives way in the final furlong allowing the superior hold-up horses to unleash their finishing kicks. Phoenix Of Dreams and Rich Rhythm capitalize on the collapsing pace scenario.",
+          "title": "Traffic Chaos",
+          "prob": 15,
+          "trigger": "If the 10 hold-up horses create a wall of horses turning for home with limited racing room",
+          "body": "Several fancied runners get blocked or forced wide, allowing those with clear runs to capitalize. Jockey positioning becomes crucial as gaps appear late.",
           "winners": [
-            "Phoenix Of Dreams",
-            "Rich Rhythm"
+            "Camera Shy",
+            "Concert Boy"
           ],
           "others": [
             "Novak",
-            "Camera Shy"
+            "Travis"
           ]
         },
         {
           "label": "D",
-          "title": "Prominent Position Pays",
-          "prob": 10,
-          "trigger": "If Bobby Joe Leg tracks Lord Capulet perfectly and times his run",
-          "body": "Bobby Joe Leg uses his prominent running style to sit second throughout before striking late. The going-dependent runner gets the perfect tactical setup to overcome his surface concerns.",
+          "title": "Surprise Package",
+          "prob": 5,
+          "trigger": "If the pace collapses completely and one of the outsiders finds their ideal scenario",
+          "body": "The race sets up perfectly for a horse stepping up markedly on recent form. Either Ignac Lamar or Penny Mountain finds the tactical race they need.",
           "winners": [
-            "Bobby Joe Leg",
-            "Travis"
+            "Ignac Lamar",
+            "Penny Mountain"
           ],
           "others": [
             "Lord Capulet",
-            "Concert Boy"
+            "Bobby Joe Leg"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Lord Capulet's early fractions will determine if he controls throughout or sets up late surge"
+          "text": "Lord Capulet must handle the 7f trip as his recent wins came when controlling the pace completely"
         },
         {
           "severity": "warn",
-          "text": "Bobby Joe Leg and Concert Boy's going-dependent flags could undermine chances on good turf"
+          "text": "Phoenix Of Dreams and Anthropologist need to avoid being caught too far back if the pace quickens early"
         },
         {
           "severity": "info",
-          "text": "Phoenix Of Dreams needs clear passage from hold-up position after traffic issues last time"
+          "text": "Bobby Joe Leg's positioning behind Lord Capulet will determine if there's any early pressure"
         },
         {
           "severity": "warn",
-          "text": "Anthropologist carries top weight with going concerns despite highest official rating"
+          "text": "Rich Rhythm requires a strong pace to be effective and could struggle if it becomes a sprint"
         },
         {
           "severity": "info",
-          "text": "Rich Rhythm and Novak require genuine pace and room to unleash their proven closing kicks"
+          "text": "Camera Shy dropping back to 7f from longer trips could find this sharp enough for her speed"
         }
       ]
     },
@@ -883,20 +875,21 @@
       "pace": "CONTESTED",
       "paceConf": 50,
       "leads": [
-        "Kitaab"
+        "Yorkshire Glory"
       ],
       "prominent": [
-        "Cayman Tai",
-        "Fan Mail",
-        "Qazaq",
         "Mayo County"
       ],
-      "midfield": [],
-      "holdup": [
-        "Yorkshire Glory",
+      "midfield": [
         "Water Of Leith",
+        "Kitaab",
         "Pit Boss",
         "Invitorio"
+      ],
+      "holdup": [
+        "Fan Mail",
+        "Cayman Tai",
+        "Qazaq"
       ],
       "drawBias": null,
       "runners_data": [
@@ -907,7 +900,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up performer who needs a strong pace to be effective in his finishing kick",
+          "note": "Hold-up specialist but poor similar going record (0 wins from 14 runs) undermines chances despite suitable race shape",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 69.6,
@@ -923,8 +916,8 @@
           "style_code": "H",
           "finish_type": "E",
           "dist_code": "B+",
-          "going_flag": "DEPENDENT",
-          "note": "Going-dependent closer whose effectiveness relies heavily on specific ground conditions",
+          "going_flag": "OK",
+          "note": "Strong hold-up horse with excellent going record (2 wins, 3 places from 15 similar runs) ideally suited if pace develops",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 59.4,
@@ -941,7 +934,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "One of only two pace-makers in the field, likely to be prominent throughout",
+          "note": "Only prominent runner besides Yorkshire Glory, giving tactical options to pressure or track the leader",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 57.2,
@@ -957,8 +950,8 @@
           "style_code": "H",
           "finish_type": "E",
           "dist_code": "B+",
-          "going_flag": "DEPENDENT",
-          "note": "Hold-up horse with going concerns but recent winning form suggests current effectiveness",
+          "going_flag": "OK",
+          "note": "Recent winner from the back with solid going form, perfectly positioned for hold-up scenario",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 56.6,
@@ -974,8 +967,8 @@
           "style_code": "H",
           "finish_type": "E",
           "dist_code": "B+",
-          "going_flag": "DEPENDENT",
-          "note": "Going-dependent hold-up runner with tactical pace that could suit if gallop quickens",
+          "going_flag": "OK",
+          "note": "Another hold-up type with decent going record but needs everything to fall right from this style-disadvantaged position",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 56.4,
@@ -991,8 +984,8 @@
           "style_code": "H",
           "finish_type": "E",
           "dist_code": "B",
-          "going_flag": "DEPENDENT",
-          "note": "Pure stayer dropping back to 6f, needs strong pace to showcase his finishing kick",
+          "going_flag": "OK",
+          "note": "Hold-up horse stepping back to 6f after longer trips, may appreciate return to this distance with good going record",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 54.6,
@@ -1008,8 +1001,8 @@
           "style_code": "P",
           "finish_type": "S",
           "dist_code": "B+",
-          "going_flag": "DEPENDENT",
-          "note": "In-form pace-maker with five straight wins but relies on suitable going conditions",
+          "going_flag": "OK",
+          "note": "Dominant recent form runner who gets ideal tactical setup as lone front runner with sustainable pace likely",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 53.7,
@@ -1026,7 +1019,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Consistent hold-up horse who lacks the class edge of the main contenders",
+          "note": "Lowest-rated hold-up horse with poor going record (0 wins from 12 similar runs) facing uphill task",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 42.9,
@@ -1043,7 +1036,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up runner with mixed recent form but handles the going conditions",
+          "note": "Hold-up style but inconsistent recent form makes him an outsider despite suitable race dynamics",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 34.3,
@@ -1054,32 +1047,47 @@
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Mayo County and Yorkshire Glory are the only pace-making types in a field dominated by hold-up horses, creating a dangerously weak early gallop. With seven of nine runners preferring to come from behind, this becomes a tactical crawl followed by a frantic sprint finish where positioning and luck in running will prove decisive.",
+      "paceDynamic": "Yorkshire Glory stands out as the only confirmed front runner with exceptional recent form (five straight wins at 6f on good ground), likely to dictate terms from the front without serious pressure. With Mayo County the only other prominent runner among a field dominated by hold-up horses, Yorkshire Glory should get an uncontested lead and sustainable fractions that will test the closing kick of the hold-up brigade.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Tactical Crawl Finish",
+          "title": "Yorkshire Glory Wires Field",
           "prob": 45,
-          "trigger": "If Mayo County and Yorkshire Glory go too slowly early",
-          "body": "The pace collapses completely with hold-up horses queuing behind a crawling gallop. The sprint becomes a lottery with those getting first run from the pack holding decisive advantage.",
+          "trigger": "If Yorkshire Glory gets uncontested fractions and maintains kick resistance",
+          "body": "The in-form front runner dictates comfortable splits with Mayo County tracking, then holds off late challenges from the hold-up horses. Water Of Leith and Fan Mail rally strongly but cannot reel in the leader.",
           "winners": [
             "Yorkshire Glory",
             "Water Of Leith"
           ],
           "others": [
             "Fan Mail",
-            "Cayman Tai"
+            "Mayo County"
           ]
         },
         {
           "label": "B",
-          "title": "Moderate Pace Suits Closers",
-          "prob": 30,
-          "trigger": "If the early pace is honest but not strong",
-          "body": "Mayo County and Yorkshire Glory maintain a reasonable gallop allowing the race to develop naturally. The superior hold-up horses get their preferred scenario with time to wind up their finishing kicks.",
+          "title": "Hold-Up Horse Surge",
+          "prob": 35,
+          "trigger": "If the pace becomes too slow and Yorkshire Glory lacks finishing punch",
+          "body": "The sustainable pace sets up perfectly for the closers to unleash their kicks in the final two furlongs. Fan Mail and Water Of Leith time their runs to perfection, sweeping past a vulnerable Yorkshire Glory.",
           "winners": [
-            "Cayman Tai",
+            "Fan Mail",
+            "Water Of Leith"
+          ],
+          "others": [
+            "Pit Boss",
             "Qazaq"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Mayo County Strikes",
+          "prob": 15,
+          "trigger": "If Mayo County can pressure Yorkshire Glory early and stay on",
+          "body": "The prominent runner applies enough early pressure to soften up Yorkshire Glory while positioning for first run. Mayo County kicks clear in the final furlong before the hold-up horses can respond effectively.",
+          "winners": [
+            "Mayo County",
+            "Yorkshire Glory"
           ],
           "others": [
             "Water Of Leith",
@@ -1087,56 +1095,41 @@
           ]
         },
         {
-          "label": "C",
-          "title": "False Pace Backfires",
-          "prob": 15,
-          "trigger": "If the pace-setters go too fast trying to avoid being crawled past",
-          "body": "Mayo County and Yorkshire Glory overcompensate by setting a stronger gallop than ideal for 6f. The early pace becomes genuinely strong, playing into the hands of horses with tactical speed.",
+          "label": "D",
+          "title": "Pace Collapse Surprise",
+          "prob": 5,
+          "trigger": "If Yorkshire Glory fades dramatically and Mayo County also struggles",
+          "body": "Both pace angles fail to deliver, creating chaos in the final furlong as multiple hold-up horses converge simultaneously. Pit Boss or Qazaq benefit from the scramble with perfectly timed runs.",
           "winners": [
             "Pit Boss",
-            "Water Of Leith"
-          ],
-          "others": [
-            "Yorkshire Glory",
-            "Mayo County"
-          ]
-        },
-        {
-          "label": "D",
-          "title": "Front Two Dominate",
-          "prob": 10,
-          "trigger": "If Mayo County and Yorkshire Glory get perfect fractions uncontested",
-          "body": "The two pace-makers are allowed to dictate ideal splits with no pressure from the patient field behind. They maintain their advantage as the closers leave their run too late in the sprint finish.",
-          "winners": [
-            "Yorkshire Glory",
-            "Mayo County"
+            "Qazaq"
           ],
           "others": [
             "Water Of Leith",
-            "Cayman Tai"
+            "Kitaab"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Yorkshire Glory's going dependency could be crucial given his recent winning streak relies on specific conditions"
+          "text": "Yorkshire Glory must be watched for any signs of early pressure from Mayo County which could compromise his stamina reserves"
         },
         {
           "severity": "warn",
-          "text": "Mayo County and Yorkshire Glory setting too slow early fractions will create chaos in the sprint finish"
-        },
-        {
-          "severity": "info",
-          "text": "Water Of Leith, Fan Mail, Pit Boss and Qazaq all flagged as going-dependent in a race where conditions matter"
+          "text": "Fan Mail's positioning in the early stages will be crucial - needs to be handy enough to strike when the pace lifts"
         },
         {
           "severity": "warn",
-          "text": "Seven hold-up runners behind just two pace-makers creates high risk of traffic problems in the home straight"
+          "text": "Water Of Leith requires a genuine pace to aim at given his hold-up style, so track how genuine the early tempo becomes"
         },
         {
           "severity": "info",
-          "text": "Qazaq dropping significantly in trip from recent 7f-8f efforts to this 6f sprint assignment"
+          "text": "Mayo County's tactics will shape the race - whether he shadows Yorkshire Glory or applies meaningful pressure early"
+        },
+        {
+          "severity": "info",
+          "text": "Qazaq dropping back in trip after longer distances could be significant if he shows early pace awareness"
         }
       ]
     },
@@ -1153,19 +1146,21 @@
       "type": "flat",
       "pace": "SLOWLY_RUN",
       "paceConf": 85,
-      "leads": [],
-      "prominent": [
+      "leads": [
         "D Flawless",
+        "Sherlock",
         "Miss Rainbow"
       ],
-      "midfield": [],
-      "holdup": [
-        "Pianoforte",
-        "Velvet Skies",
+      "prominent": [],
+      "midfield": [
         "Teardrops",
-        "Sherlock",
         "Elvetham",
         "Tickets"
+      ],
+      "holdup": [
+        "Pianoforte",
+        "Kings Merchant",
+        "Velvet Skies"
       ],
       "drawBias": null,
       "runners_data": [
@@ -1175,8 +1170,8 @@
           "style_code": "L",
           "finish_type": "E",
           "dist_code": "B",
-          "going_flag": "DEPENDENT",
-          "note": "Will make the running but depends entirely on conditions staying favorable with poor record on unsuitable going",
+          "going_flag": "OK",
+          "note": "Confirmed front-runner but poor recent form with three consecutive single-figure finishes suggests vulnerability",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 59.2,
@@ -1192,8 +1187,8 @@
           "style_code": "H",
           "finish_type": "E",
           "dist_code": "B+",
-          "going_flag": "DEPENDENT",
-          "note": "Classic hold-up horse who needs strong pace to be effective, though going dependency is a significant concern",
+          "going_flag": "OK",
+          "note": "Pure hold-up performer with solid 6f record who needs strong early pace to be effective",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 59.0,
@@ -1210,7 +1205,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Reliable closer with solid 6f record and handles today's conditions well based on recent form",
+          "note": "Hold-up style suits likely pace scenario but mixed recent form raises consistency questions",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 58.4,
@@ -1227,7 +1222,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Consistent front runner with excellent record on similar going and proven at this distance",
+          "note": "Natural leader with excellent recent 6f record including a win at this distance",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 56.1,
@@ -1244,7 +1239,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up performer who needs the race to develop into a stamina test to show her best",
+          "note": "Hold-up horse who has been placed regularly but struggles to convert place form into wins",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 54.8,
@@ -1261,7 +1256,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Improved front runner coming off a 5f win who could appreciate the step back up to 6f",
+          "note": "Front-runner coming off a 5f victory who may appreciate the return to longer trip",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 53.5,
@@ -1277,8 +1272,8 @@
           "style_code": "H",
           "finish_type": "E",
           "dist_code": "B+",
-          "going_flag": "DEPENDENT",
-          "note": "Strong closer with excellent recent record but needs conditions to remain in her favor",
+          "going_flag": "OK",
+          "note": "Consistent hold-up performer with strong 6f record and proven ability on good ground",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 44.7,
@@ -1295,7 +1290,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Improved 6f winner last time who could benefit from any pace collapse scenario",
+          "note": "Recent 6f winner from hold-up style but significant class drop suggests modest ability level",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 43.8,
@@ -1311,8 +1306,8 @@
           "style_code": "H",
           "finish_type": "E",
           "dist_code": "B",
-          "going_flag": "DEPENDENT",
-          "note": "Going-dependent speedster with recent winning form who could surprise if conditions suit",
+          "going_flag": "OK",
+          "note": "Hold-up horse with solid 6f form who has won recently but faces stronger opposition here",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 41.0,
@@ -1323,89 +1318,89 @@
           "_action": "WATCH"
         }
       ],
-      "paceDynamic": "D Flawless, Miss Rainbow, and Sherlock will ensure a strong gallop from the start, with all three confirmed front runners likely to dispute the early lead. This sustained pace will test stamina over 6f and create opportunities for the strong-travelling hold-up horses to strike late.",
+      "paceDynamic": "Three confirmed front-runners (D Flawless, Miss Rainbow, Sherlock) will create a strong gallop from the outset, with likely fractions that will test stamina reserves over this 6f trip. The abundance of hold-up horses (Kings Merchant, Pianoforte, Velvet Skies, Teardrops, Elvetham, Tickets) suggests a compressed finish as closers swarm the early pace-setters in the final furlong.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Pace Collapse Finish",
+          "title": "Pace Collapses Early",
           "prob": 35,
-          "trigger": "If the three front runners go too hard early and crack in the final furlong",
-          "body": "The strong gallop will find out D Flawless, Miss Rainbow and Sherlock, leaving them vulnerable to late challengers. Kings Merchant and Pianoforte, both proven at this trip with hold-up styles, will be perfectly positioned to capitalize.",
-          "winners": [
-            "Kings Merchant",
-            "Pianoforte"
-          ],
-          "others": [
-            "Velvet Skies",
-            "Teardrops"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "Front Runner Survives",
-          "prob": 25,
-          "trigger": "If one of the leaders can dictate terms and kick clear when the others weaken",
-          "body": "Miss Rainbow or Sherlock could use their early pace advantage to build an unassailable lead in the final 2f. The strong gallop will suit whichever front runner has the most left in reserve.",
+          "trigger": "If one of the three leaders (D Flawless/Miss Rainbow/Sherlock) drops out early, reducing early tempo",
+          "body": "The remaining pace-setters get an easier lead and the hold-up brigade struggles to make up ground. Miss Rainbow or Sherlock capitalize on the reduced gallop.",
           "winners": [
             "Miss Rainbow",
             "Sherlock"
           ],
           "others": [
             "D Flawless",
-            "Elvetham"
+            "Kings Merchant"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Sustained Strong Gallop",
+          "prob": 40,
+          "trigger": "If all three leaders (D Flawless, Miss Rainbow, Sherlock) maintain honest fractions throughout",
+          "body": "The strong pace sets up perfectly for the closers to sweep past tired leaders in the final furlong. Kings Merchant and Pianoforte benefit most from their proven hold-up style.",
+          "winners": [
+            "Kings Merchant",
+            "Pianoforte"
+          ],
+          "others": [
+            "Teardrops",
+            "Velvet Skies"
           ]
         },
         {
           "label": "C",
-          "title": "Sustained Pace Battle",
-          "prob": 30,
-          "trigger": "If all three front runners maintain their challenge deep into the race creating a war of attrition",
-          "body": "The prolonged battle between D Flawless, Miss Rainbow and Sherlock will set up a genuine staying test. Hold-up horses Velvet Skies and Teardrops, both effective over middle distances, will benefit from the searching gallop.",
+          "title": "Tactical Slow Start",
+          "prob": 15,
+          "trigger": "If the three leaders go off conservatively, creating a falsely-run race",
+          "body": "The lack of early pace favors horses that can quicken from prominent positions rather than pure hold-up types. Sherlock's recent 5f win suggests he has the tactical speed to capitalize.",
           "winners": [
-            "Velvet Skies",
-            "Teardrops"
+            "Sherlock",
+            "Miss Rainbow"
           ],
           "others": [
-            "Kings Merchant",
-            "Pianoforte"
+            "Tickets",
+            "Elvetham"
           ]
         },
         {
           "label": "D",
-          "title": "Outsider Strike",
+          "title": "Messy Pace Battle",
           "prob": 10,
-          "trigger": "If the pace collapses completely and the race becomes a sprint finish from 2f out",
-          "body": "The three going-dependent horses could outrun their odds if conditions suit, with Tickets particularly dangerous given recent winning form. Elvetham's 6f win last time out shows he can capitalize when the pace falls apart.",
+          "trigger": "If the three leaders engage in an early speed duel through aggressive jockey tactics",
+          "body": "All three pace-setters compromise each other, leaving the race wide open for a closer with the best turn of foot. Teardrops' consistent 6f form makes her the prime beneficiary.",
           "winners": [
-            "Tickets",
-            "Elvetham"
+            "Teardrops",
+            "Tickets"
           ],
           "others": [
-            "Miss Rainbow",
-            "Sherlock"
+            "Elvetham",
+            "Pianoforte"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "D Flawless, Kings Merchant, Teardrops and Tickets are all going-dependent and could underperform significantly if conditions don't suit"
+          "text": "Monitor if D Flawless shows early reluctance to lead given recent poor form, which could disrupt expected pace dynamics"
         },
         {
           "severity": "warn",
-          "text": "Watch how aggressively the three front runners D Flawless, Miss Rainbow and Sherlock go in the opening 2f as this will dictate the entire race shape"
+          "text": "Watch for Sherlock to potentially dictate more conservative fractions given his recent shorter-distance success"
         },
         {
           "severity": "info",
-          "text": "Pianoforte and Velvet Skies both need a strong pace to be effective so monitor how much the leaders take out of each other"
-        },
-        {
-          "severity": "info",
-          "text": "Kings Merchant has never won without getting the run of the race so his position turning for home will be crucial"
+          "text": "Observe Kings Merchant's position turning for home as his hold-up style requires genuine pace collapse to be effective"
         },
         {
           "severity": "warn",
-          "text": "Any of the hold-up horses getting too far back early could find the strong pace has strung the field out beyond recovery"
+          "text": "Check if Miss Rainbow gets isolated on the lead without D Flawless for company, making her vulnerable to closers"
+        },
+        {
+          "severity": "info",
+          "text": "Note Teardrops' position at halfway as she needs to be within striking distance to utilize her proven finishing kick"
         }
       ]
     },
@@ -1425,23 +1420,24 @@
       "leads": [
         "Power Fizz",
         "Sergeant Wilko",
+        "Mister Bluebird",
         "Twilight Fun",
         "Hockney"
       ],
       "prominent": [
+        "Wicket Keeper",
         "Paddy's Day",
         "Venture Capital",
-        "Mister Bluebird"
+        "Roberto Caro"
       ],
-      "midfield": [],
+      "midfield": [
+        "Wheels Of Fire"
+      ],
       "holdup": [
-        "Wicket Keeper",
         "Badri",
         "Andesite",
         "Rousing Encore",
-        "Twilight Calls",
-        "Roberto Caro",
-        "Wheels Of Fire"
+        "Twilight Calls"
       ],
       "drawBias": null,
       "runners_data": [
@@ -1452,7 +1448,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent runner with good recent form who can avoid the early pace battle while staying in touch",
+          "note": "Prominent runner ideally placed to track the pace battle and strike late with solid recent 6f form on good ground",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 98.2,
@@ -1469,7 +1465,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Classic hold-up horse with excellent going record who should benefit from strong early gallop",
+          "note": "Classic hold-up performer with excellent similar conditions record (11/15 runs) who thrives when others go too fast",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 87.4,
@@ -1485,8 +1481,8 @@
           "style_code": "P",
           "finish_type": "E",
           "dist_code": "B+",
-          "going_flag": "DEPENDENT",
-          "note": "Prominent runner but form depends heavily on ground conditions making him unreliable today",
+          "going_flag": "OK",
+          "note": "Consistent prominent racer with perfect going record (15/15) and multiple wins, suits tactical positioning",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 83.0,
@@ -1503,7 +1499,7 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Habitual front-runner with best recent form who may dictate sensible fractions from the lead",
+          "note": "Natural front runner with strong 7f form stepping back to 6f, recent winner who handles good ground well",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 82.6,
@@ -1520,7 +1516,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse struggling for form recently but suited by anticipated strong pace",
+          "note": "Hold-up horse lacking recent form and place record on similar going, needs everything to fall right",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 80.9,
@@ -1537,7 +1533,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Confirmed front-runner likely to overrace in company of four other speed horses",
+          "note": "Confirmed front runner but poor recent record suggests vulnerable in a speed battle",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 80.2,
@@ -1554,7 +1550,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up specialist perfectly positioned to benefit from anticipated pace collapse scenario",
+          "note": "Hold-up specialist who improved markedly when switched to good ground, dangerous late finisher",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 78.7,
@@ -1571,7 +1567,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up runner whose best form comes when strong pace sets up late charge",
+          "note": "Hold-up type with limited similar going form but won when conditions suited last time",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 76.5,
@@ -1588,7 +1584,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Front-runner with excellent recent form but may get involved in destructive early battle",
+          "note": "Aggressive front runner with excellent recent form including 6f win, major pace threat",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 76.3,
@@ -1605,7 +1601,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner whose best form suggests he needs things to fall right tactically",
+          "note": "Prominent racer with inconsistent recent form but capable of place claims if pace suits",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 75.7,
@@ -1622,7 +1618,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Front-runner stepping back to 6f who may lack stamina for sustained pace battle",
+          "note": "Front runner stepping back from 7f with mixed recent form, likely pace casualty",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 72.6,
@@ -1639,7 +1635,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner with consistent recent form who can track the early speed",
+          "note": "Prominent runner with solid 5f form stretching back to 6f, could benefit from strong pace",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 71.9,
@@ -1656,7 +1652,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse needing everything to fall right but recent win shows ability remains",
+          "note": "Hold-up horse with decent similar going record (13/15) and multiple wins, needs pace to collapse",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 69.8,
@@ -1673,7 +1669,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Lowest-rated front-runner who recently won but likely outclassed in this company",
+          "note": "Front runner with recent 6f wins on soft/good, lowest rated but could steal it if others go too fast",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 50.0,
@@ -1684,14 +1680,14 @@
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Five confirmed front-runners (Power Fizz, Sergeant Wilko, Twilight Fun, Mister Bluebird, Hockney) will create a fierce early gallop over this 6f trip. This sustained pace pressure will severely test stamina reserves and likely set up the race for hold-up horses like Badri, Andesite, and Rousing Encore to sweep through tired leaders in the final furlong.",
+      "paceDynamic": "Five confirmed front runners (Power Fizz, Sergeant Wilko, Twilight Fun, Mister Bluebird, Hockney) will create a fierce early gallop over this sharp 6f at Newcastle. The strong pace will set up perfectly for the hold-up merchants like Badri, Andesite, and Rousing Encore to deliver late charges, while prominent racers Wicket Keeper and Paddy's Day may get the perfect tactical position just behind the speed battle.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Pace Collapse Finish",
-          "prob": 35,
-          "trigger": "If the five leaders go too fast early and crack in unison",
-          "body": "The strong gallop becomes unsustainable after 4f, causing mass capitulation from the front-runners. Hold-up horses Badri and Andestate get perfect splits to charge through exhausted pace-setters.",
+          "title": "Pace Collapses Early",
+          "prob": 25,
+          "trigger": "If the five front runners go too fast and fold turning for home",
+          "body": "The leaders will tie up badly in the final furlong, creating a cavalry charge from the back. Hold-up horses with proven finishing kicks will sweep past the spent pace-setters.",
           "winners": [
             "Badri",
             "Andesite"
@@ -1703,70 +1699,70 @@
         },
         {
           "label": "B",
-          "title": "Front Runner Survives",
-          "prob": 25,
-          "trigger": "If Power Fizz or Twilight Fun can dictate more sensible fractions",
-          "body": "One of the classier leaders manages the pace intelligently while rivals overrace alongside. Power Fizz's recent 7f form suggests stamina reserves to outlast Sergeant Wilko and Mister Bluebird.",
+          "title": "Sustained Strong Gallop",
+          "prob": 35,
+          "trigger": "If Power Fizz and Twilight Fun maintain honest fractions without going suicidal",
+          "body": "The pace will be strong enough to test stamina but allow one front runner to kick clear. Prominent horses tracking the pace will also benefit from the solid tempo.",
           "winners": [
             "Power Fizz",
             "Twilight Fun"
           ],
           "others": [
-            "Hockney",
+            "Wicket Keeper",
             "Paddy's Day"
           ]
         },
         {
           "label": "C",
-          "title": "Prominent Trackers Strike",
+          "title": "Tactical Speed Battle",
           "prob": 25,
-          "trigger": "If Wicket Keeper and Venture Capital get ideal positioning behind the speed",
-          "body": "The prominent runners avoid the early pace battle while staying close enough to pounce. Wicket Keeper's tactical speed and Venture Capital's recent consistency prove decisive when leaders falter.",
+          "trigger": "If the five front runners jostle and interfere with each other early",
+          "body": "The pace will become uneven with several leaders fighting for position, creating gaps for mid-division horses. Those who avoid the early scrimmaging will have clear runs to capitalize.",
           "winners": [
-            "Wicket Keeper",
-            "Venture Capital"
+            "Venture Capital",
+            "Roberto Caro"
           ],
           "others": [
-            "Roberto Caro",
-            "Paddy's Day"
+            "Wheels Of Fire",
+            "Mister Bluebird"
           ]
         },
         {
           "label": "D",
-          "title": "Complete Pace Meltdown",
+          "title": "Front Runner Dominance",
           "prob": 15,
-          "trigger": "If all five leaders engage in suicidal early fractions and completely collapse",
-          "body": "The pace becomes so extreme that even normally outpaced hold-up horses can make up enormous ground. Wheels Of Fire and Twilight Calls benefit from the most catastrophic pace scenario possible.",
+          "trigger": "If one of the leaders breaks clear and dictates solo fractions",
+          "body": "Hockney or Twilight Fun could steal a march and kick clear when the others are still fighting. The lone leader will have controlled the tempo and saved energy for a decisive move.",
           "winners": [
-            "Wheels Of Fire",
-            "Twilight Calls"
+            "Hockney",
+            "Twilight Fun"
           ],
           "others": [
-            "Rousing Encore",
-            "Badri"
+            "Power Fizz",
+            "Sergeant Wilko"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Paddy's Day depends entirely on ground conditions and may not handle today's good going"
+          "text": "Power Fizz, Sergeant Wilko, and Twilight Fun all breaking quickly together could create an unsustainable early pace"
         },
         {
           "severity": "warn",
-          "text": "Sergeant Wilko and Mister Bluebird risk burning out if they engage early with three other front-runners"
-        },
-        {
-          "severity": "info",
-          "text": "Badri's hold-up style makes him completely dependent on the anticipated strong early pace materializing"
+          "text": "Badri's position early will be crucial - needs to be close enough to strike when the pace collapses"
         },
         {
           "severity": "warn",
-          "text": "Twilight Calls has shown poor recent form and needs the most extreme pace scenario to be competitive"
+          "text": "Wicket Keeper must secure a prominent position without getting trapped behind the wall of front runners"
         },
         {
           "severity": "info",
-          "text": "Power Fizz drops back from 7f where he's been successful and may find 6f happening too quickly today"
+          "text": "Hockney despite lowest rating has won recently at 6f and could benefit if others go too fast"
+        },
+        {
+          "severity": "info",
+          "text": "Andestate's settling and positioning will determine if he can deliver his proven finishing kick"
         }
       ]
     },
@@ -1784,23 +1780,24 @@
       "pace": "GENUINE_PACE",
       "paceConf": 65,
       "leads": [
-        "Sir Paul Ramsey",
         "Degale",
         "Maestro Bernstein"
       ],
       "prominent": [
-        "Rogue Encore",
+        "Sir Paul Ramsey",
+        "Nyman",
         "Harry The Rogue"
       ],
-      "midfield": [],
-      "holdup": [
-        "Saytarr",
-        "Nyman",
-        "Brewing",
-        "Mr Mistoffelees",
+      "midfield": [
         "Flying Fletcher",
         "Urban Road",
         "Izzari"
+      ],
+      "holdup": [
+        "Rogue Encore",
+        "Saytarr",
+        "Mr Mistoffelees",
+        "Brewing"
       ],
       "drawBias": null,
       "runners_data": [
@@ -1811,7 +1808,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Strong recent form on good ground with excellent record from hold-up style",
+          "note": "Classic closer with excellent similar going record but needs strong pace to be effective",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 83.3,
@@ -1828,7 +1825,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Consistent prominent runner who rarely runs a bad race on similar ground",
+          "note": "Consistent prominent runner whose tactical speed suits this distance perfectly",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 76.9,
@@ -1845,7 +1842,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Recent winner who excels when strong pace develops ahead of him",
+          "note": "Hold-up horse in great form with a recent win who handles good going well",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 76.3,
@@ -1862,7 +1859,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Confirmed leader with solid recent consistency, likely to go forward from the start",
+          "note": "Natural front runner with solid recent form who could steal this if getting an easy lead",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 72.8,
@@ -1879,7 +1876,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Fellow pace-setter who could clash early with Degale, mixed recent heavy ground form",
+          "note": "Second pace angle whose heavy ground form suggests good going might not be ideal",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 71.8,
@@ -1896,7 +1893,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Reliable hold-up performer with excellent recent record on good ground",
+          "note": "Classy hold-up horse with strong recent form who thrives when races are truly run",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 71.6,
@@ -1913,7 +1910,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "In-form closer with four wins from 15 similar ground starts, suits strong pace",
+          "note": "High-class closer in peak form whose four wins from fifteen on similar going show expertise",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 71.2,
@@ -1930,7 +1927,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse with decent similar ground record but lower overall rating",
+          "note": "Hold-up horse better over longer distances but three wins from fifteen on good going shows ability",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 70.1,
@@ -1946,8 +1943,8 @@
           "style_code": "H",
           "finish_type": "E",
           "dist_code": "B+",
-          "going_flag": "DEPENDENT",
-          "note": "Going dependent runner whose effectiveness relies heavily on precise ground conditions",
+          "going_flag": "OK",
+          "note": "Versatile hold-up horse whose stamina could prove decisive if pace collapses",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 70.0,
@@ -1964,7 +1961,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Recent winner from prominent position, strong similar ground statistics",
+          "note": "Prominent runner coming off a soft ground win whose good going record is solid",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 69.1,
@@ -1981,7 +1978,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse who needs things to fall right but capable on his day",
+          "note": "Hold-up horse in good form whose recent consistency suggests readiness for a big effort",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 68.7,
@@ -1998,7 +1995,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Versatile prominent runner with solid place record on similar ground",
+          "note": "Prominent runner with excellent similar going stats including two wins from fifteen",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 64.3,
@@ -2009,14 +2006,14 @@
           "_action": "WATCH"
         }
       ],
-      "paceDynamic": "Degale and Maestro Bernstein are the only confirmed front runners in this 12-runner field, setting up a likely early duel that should create an honest gallop from the start. With eight hold-up horses in the field including in-form Saytarr and Rogue Encore, the pace scenario strongly favors those that can produce a sustained finish from off the pace.",
+      "paceDynamic": "Degale and Maestro Bernstein will ensure genuine early pace from the front, with Sir Paul Ramsey, Nyman, and Harry The Rogue sitting prominent behind them. This creates an honest gallop that will perfectly suit the eight hold-up horses in the field, setting up a cavalry charge finish where Saytarr, Flying Fletcher, and Rogue Encore can unleash their finishing kicks.",
       "scenarios": [
         {
           "label": "A",
           "title": "Hold-up horses dominate",
-          "prob": 45,
-          "trigger": "If Degale and Maestro Bernstein engage in a sustained early battle through honest fractions",
-          "body": "The pace collapse opens the door for the strong contingent of closers to sweep past tired leaders. Saytarr and Flying Fletcher can unleash their finishing kicks while Rogue Encore and Mr Mistoffelees benefit from the strong gallop.",
+          "prob": 40,
+          "trigger": "If the two leaders engage in early battle and soften each other up",
+          "body": "The strong pace allows closers to time their runs perfectly from the back. Saytarr and Flying Fletcher have the class to capitalize on the pace collapse.",
           "winners": [
             "Saytarr",
             "Flying Fletcher"
@@ -2028,10 +2025,10 @@
         },
         {
           "label": "B",
-          "title": "Prominent runners capitalize",
+          "title": "Prominent trackers prevail",
           "prob": 30,
-          "trigger": "If one front runner (likely Degale) establishes a clear lead while the other fades early",
-          "body": "The more controlled pace allows prominent runners Sir Paul Ramsey and Nyman to track closer and strike in the final two furlongs. Harry The Rogue can also benefit from the more tactical tempo with his versatile style.",
+          "trigger": "If Sir Paul Ramsey or Nyman get perfect positioning just behind the pace",
+          "body": "They avoid the early battle but stay close enough to strike when the leaders falter. Their tactical speed proves decisive in the final furlong.",
           "winners": [
             "Sir Paul Ramsey",
             "Nyman"
@@ -2043,55 +2040,55 @@
         },
         {
           "label": "C",
-          "title": "Front runner survives",
-          "prob": 15,
-          "trigger": "If Maestro Bernstein or Degale manages to steal a march and open up a decisive advantage mid-race",
-          "body": "The leader holds on grimly as the closers mount their challenge but fall just short in the final strides. Degale's recent consistency gives him the edge over Maestro Bernstein in a survival scenario.",
-          "winners": [
-            "Degale",
-            "Maestro Bernstein"
-          ],
-          "others": [
-            "Saytarr",
-            "Sir Paul Ramsey"
-          ]
-        },
-        {
-          "label": "D",
-          "title": "Going concerns emerge",
-          "prob": 10,
-          "trigger": "If the good ground rides differently than expected, particularly affecting the going-dependent runners",
-          "body": "Urban Road's ground dependency becomes a major factor while other horses struggle with the conditions. The race becomes more tactical as horses fail to handle the surface, creating opportunities for versatile performers.",
+          "title": "Pace collapses completely",
+          "prob": 20,
+          "trigger": "If both Degale and Maestro Bernstein go too fast early and tie up badly",
+          "body": "The race becomes a crawl in the middle stages before a messy sprint finish. Urban Road's stamina and Harry The Rogue's versatility become key assets.",
           "winners": [
             "Urban Road",
             "Harry The Rogue"
           ],
           "others": [
-            "Nyman",
-            "Flying Fletcher"
+            "Izzari",
+            "Mr Mistoffelees"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Front runner survives",
+          "prob": 10,
+          "trigger": "If Degale gets an uncontested lead while Maestro Bernstein settles behind",
+          "body": "The pace becomes more moderate allowing the leader to maintain a decisive advantage. Degale's recent good form and tactical speed hold off all challengers.",
+          "winners": [
+            "Degale",
+            "Maestro Bernstein"
+          ],
+          "others": [
+            "Sir Paul Ramsey",
+            "Nyman"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Urban Road's performance will immediately reveal if the good ground is riding as expected"
+          "text": "Maestro Bernstein may not handle the good going as well as his heavy ground form suggests"
         },
         {
           "severity": "warn",
-          "text": "Monitor how aggressively Degale and Maestro Bernstein engage early as it will dictate the entire race shape"
+          "text": "If Degale gets an uncontested lead, his recent consistent form makes him very dangerous"
         },
         {
           "severity": "info",
-          "text": "Saytarr's position turning for home will indicate whether the pace has been strong enough for closers"
+          "text": "Saytarr's four wins from fifteen similar going runs mark him as the specialist in these conditions"
         },
         {
           "severity": "warn",
-          "text": "Sir Paul Ramsey's ability to track the early pace will show if prominent runners can get competitive positions"
+          "text": "The eight hold-up horses could create traffic problems in the straight if pace is strong enough"
         },
         {
           "severity": "info",
-          "text": "Flying Fletcher's finishing effort will demonstrate how much the race setup favors hold-up horses"
+          "text": "Sir Paul Ramsey's prominent style could be perfect if the two leaders engage in early battle"
         }
       ]
     },
@@ -2109,23 +2106,24 @@
       "pace": "GENUINE_PACE",
       "paceConf": 65,
       "leads": [
-        "Master Richard",
-        "Mudamer"
+        "Master Richard"
       ],
       "prominent": [
-        "Best Rate",
         "Benacre",
         "City Captain",
         "Havana Prince"
       ],
-      "midfield": [],
-      "holdup": [
-        "Philanthropist",
-        "Eligible",
+      "midfield": [
         "Cargin Bhui",
         "Beale Street",
         "Flowstate",
         "Wreck It Ryley"
+      ],
+      "holdup": [
+        "Philanthropist",
+        "Eligible",
+        "Mudamer",
+        "Best Rate"
       ],
       "drawBias": null,
       "runners_data": [
@@ -2136,7 +2134,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse with solid recent 7f form but needs everything to fall right from the back",
+          "note": "Solid hold-up performer but faces significant task giving weight to in-form rivals",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 86.1,
@@ -2153,7 +2151,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Strong hold-up performer who handles good going well and has winning form at the distance",
+          "note": "Consistent hold-up type with strong recent form who handles this grade well",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 83.8,
@@ -2170,7 +2168,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "In-form hold-up horse with excellent recent 7f record who could be hard to peg back if getting cover",
+          "note": "In-form hold-up runner with multiple recent wins at this trip and grade",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 77.4,
@@ -2187,7 +2185,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up type stepping back up from 6f sprints with decent good going record",
+          "note": "Hold-up sprinter stepping up slightly in trip with strong recent Newmarket win",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 77.2,
@@ -2204,7 +2202,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent racer who can track the pace and has recent winning form over course and distance",
+          "note": "Prominent runner who can track Master Richard and provide early pace pressure",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 76.5,
@@ -2221,7 +2219,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Another prominent runner who lacks a recent win but has shown consistency in similar company",
+          "note": "Another prominent type who may challenge the leader but lacks recent winning form",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 72.8,
@@ -2237,8 +2235,8 @@
           "style_code": "H",
           "finish_type": "E",
           "dist_code": "B+",
-          "going_flag": "DEPENDENT",
-          "note": "Hold-up horse with strong recent form but flagged as going dependent which creates uncertainty",
+          "going_flag": "OK",
+          "note": "Top-rated hold-up horse with excellent recent record including multiple wins this grade",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 72.0,
@@ -2255,7 +2253,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Reliable hold-up performer who handles both good and soft ground effectively",
+          "note": "Hold-up performer who handles both good and soft conditions with proven ability",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 71.2,
@@ -2272,7 +2270,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse dropping back from recent 6f efforts to more suitable 7f trip",
+          "note": "Consistent hold-up type better over shorter trips but capable at this level",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 70.2,
@@ -2288,8 +2286,8 @@
           "style_code": "L",
           "finish_type": "E",
           "dist_code": "B",
-          "going_flag": "DEPENDENT",
-          "note": "The lone front runner but going dependent which could undermine his tactical advantage",
+          "going_flag": "OK",
+          "note": "Lone pace-setter with recent wins who should get uncontested lead",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 65.0,
@@ -2306,7 +2304,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse with limited recent form who needs significant improvement",
+          "note": "Hold-up runner lacking recent form but capable of outrunning odds in big field",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 57.7,
@@ -2323,7 +2321,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent racer stepping up from 6f with mixed recent form but good going record",
+          "note": "Prominent runner suited by step up to 7f with strong recent soft ground form",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 53.2,
@@ -2334,32 +2332,32 @@
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Master Richard will take the early lead with no other confirmed front runners to challenge him, creating a sustainable tempo through the first half of this 7f contest. With most of the field holding up (Best Rate, Philanthropist, Flowstate, Beale Street, Eligible, Mudamer, Cargin Bhui, Wreck It Ryley) and only Benacre, Havana Prince and City Captain likely to race prominently, the pace will be genuine but controlled, setting up a finishing kick from the rear divisions.",
+      "paceDynamic": "Master Richard will lead uncontested with only Benacre and Havana Prince for early company, creating a comfortable sustainable pace. The massive field of hold-up horses (Best Rate, Philanthropist, Flowstate, Beale Street, Eligible, Mudamer, Cargin Bhui, Wreck It Ryley) will create a traffic-laden sprint finish over the final 2f.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Controlled Front Running",
+          "title": "Uncontested Leader Holds",
           "prob": 35,
-          "trigger": "If Master Richard gets uncontested fractions and the hold-up brigade leaves their runs too late",
-          "body": "Master Richard will dictate terms throughout and kick clear in the final furlong when the closers are still organizing their challenges. The sustainable pace plays into his hands perfectly.",
+          "trigger": "If Master Richard gets soft fractions and kicks clear turning in",
+          "body": "The lone leader builds a decisive advantage while the pack struggles for racing room in behind. Strong travellers like Eligible and Flowstate emerge best from the chaos but fall short.",
           "winners": [
             "Master Richard",
-            "Benacre"
+            "Eligible"
           ],
           "others": [
-            "Havana Prince",
-            "City Captain"
+            "Flowstate",
+            "Philanthropist"
           ]
         },
         {
           "label": "B",
-          "title": "Late Surge Prevails",
+          "title": "Hold-Up Sprint Finish",
           "prob": 40,
-          "trigger": "If the pace becomes truly sedate and the hold-up horses get perfect cover behind the small prominent group",
-          "body": "Flowstate and Eligible will unleash devastating finishing kicks from off the pace, sweeping past a tiring Master Richard in the final 100 yards. The field compression creates a cavalry charge finish.",
+          "trigger": "If the pace stays steady and the field bunches entering the straight",
+          "body": "Multiple hold-up horses fan wide creating a cavalry charge finish where the best turn of foot prevails. Form horses Eligible and Flowstate use their proven finishing kicks to maximum effect.",
           "winners": [
-            "Flowstate",
-            "Eligible"
+            "Eligible",
+            "Flowstate"
           ],
           "others": [
             "Philanthropist",
@@ -2368,31 +2366,31 @@
         },
         {
           "label": "C",
-          "title": "Prominent Tracker Strikes",
+          "title": "Prominent Pair Strike",
           "prob": 15,
-          "trigger": "If Benacre or City Captain can stalk Master Richard closely and maintain a striking position throughout",
-          "body": "The best-placed tracker will pounce when Master Richard begins to tire, getting first run on the held-up horses who need more time to wind up. Track position proves decisive over pure finishing speed.",
+          "trigger": "If Benacre and Havana Prince press Master Richard creating genuine pace",
+          "body": "The early pace battle sets up a perfectly-timed run from the two prominent runners who avoid the traffic chaos. City Captain joins them having tracked the pace setters throughout.",
           "winners": [
             "Benacre",
             "City Captain"
           ],
           "others": [
-            "Master Richard",
+            "Havana Prince",
             "Cargin Bhui"
           ]
         },
         {
           "label": "D",
-          "title": "Going Concerns Materialize",
+          "title": "Outsider Traffic Dodge",
           "prob": 10,
-          "trigger": "If the good going doesn't suit Master Richard or Eligible as expected despite their going-dependent flags",
-          "body": "Philanthropist and Mudamer will benefit from others underperforming on the surface, with their proven good going form coming to the fore. The pace shape becomes secondary to ground conditions.",
+          "trigger": "If the favorites get caught in trouble while an unfancied runner finds a clear passage",
+          "body": "A lesser-fancied hold-up horse like Wreck It Ryley or Best Rate benefits from a perfect trip while higher-rated rivals are hampered. The winner emerges from an impossible position with a dream run.",
           "winners": [
-            "Philanthropist",
-            "Mudamer"
+            "Wreck It Ryley",
+            "Best Rate"
           ],
           "others": [
-            "Best Rate",
+            "Cargin Bhui",
             "Beale Street"
           ]
         }
@@ -2400,23 +2398,23 @@
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Master Richard's response to the good going given his going dependent flag could determine if he maintains his front-running advantage"
+          "text": "Master Richard must be monitored early - if Benacre or Havana Prince apply serious pressure the leader could fold tamely"
         },
         {
           "severity": "warn",
-          "text": "The gap between Master Richard and his closest pursuers Benacre and City Captain through the middle stages will indicate pace pressure"
-        },
-        {
-          "severity": "info",
-          "text": "How quickly the hold-up brigade including Flowstate and Eligible can organize their challenges when the pace lifts"
+          "text": "Eligible and Flowstate are the class acts but both need luck in running from their hold-up styles in this large field"
         },
         {
           "severity": "warn",
-          "text": "Eligible's adaptation to today's good ground given the going dependent warning against his usually strong finishing kick"
+          "text": "Cargin Bhui has been running over shorter trips recently and may not fully see out the 7f distance"
         },
         {
           "severity": "info",
-          "text": "Whether any of the prominent racers can get close enough to Master Richard to apply meaningful pace pressure early"
+          "text": "City Captain steps up in trip and could be overpriced if getting into contention from a prominent position"
+        },
+        {
+          "severity": "info",
+          "text": "The hold-up brigade of 8+ horses will create inevitable traffic problems turning into the straight"
         }
       ]
     },
@@ -2434,23 +2432,24 @@
       "pace": "GENUINE_PACE",
       "paceConf": 65,
       "leads": [
-        "Master Of My Fate",
         "Station X"
       ],
       "prominent": [
+        "Master Of My Fate",
+        "Sports Coach",
         "Mon Na Slieve",
-        "Tiriac"
+        "Reigning Profit",
+        "Kinetic Force"
       ],
-      "midfield": [],
+      "midfield": [
+        "Tiriac",
+        "Pixie Diva"
+      ],
       "holdup": [
         "Havana Blast",
         "Vingegaard",
         "Blinky",
-        "Sports Coach",
-        "Almarada Prince",
-        "Reigning Profit",
-        "Kinetic Force",
-        "Pixie Diva"
+        "Almarada Prince"
       ],
       "drawBias": null,
       "runners_data": [
@@ -2461,7 +2460,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up specialist with strong recent form who needs luck in running from the back in this competitive field.",
+          "note": "Hold-up specialist with strong 5f record including recent 2nd, needs clear run",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 78.7,
@@ -2478,7 +2477,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Reliable hold-up performer whose moderate strike rate suggests he needs everything to fall right.",
+          "note": "Inconsistent hold-up runner but capable when getting smooth passage",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 75.8,
@@ -2495,7 +2494,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "In-form hold-up horse with three wins from last five starts, perfectly suited to messy pace scenario.",
+          "note": "Hot hold-up type with three recent 5f wins, thrives when getting splits",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 73.7,
@@ -2511,8 +2510,8 @@
           "style_code": "H",
           "finish_type": "E",
           "dist_code": "B+",
-          "going_flag": "DEPENDENT",
-          "note": "Talented hold-up runner but going-dependent profile creates uncertainty on this good surface.",
+          "going_flag": "OK",
+          "note": "Top-rated closer with excellent 5f record, major threat if getting room",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 73.5,
@@ -2528,8 +2527,8 @@
           "style_code": "P",
           "finish_type": "E",
           "dist_code": "B+",
-          "going_flag": "DEPENDENT",
-          "note": "Prominent racer whose going-dependent tag is concerning despite excellent recent win rate.",
+          "going_flag": "OK",
+          "note": "Prominent runner in excellent form with 3 wins from last 12 starts",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 72.8,
@@ -2546,7 +2545,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Natural front runner who will dictate terms but lacks a recent win and may be vulnerable late.",
+          "note": "Only front runner but winless in 15 attempts on similar going, vulnerable late",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 71.6,
@@ -2562,8 +2561,8 @@
           "style_code": "P",
           "finish_type": "E",
           "dist_code": "B+",
-          "going_flag": "DEPENDENT",
-          "note": "Consistent prominent runner whose going dependency could be crucial tactical factor today.",
+          "going_flag": "OK",
+          "note": "Consistent prominent type with strong 5f record, form horse",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 68.2,
@@ -2579,8 +2578,8 @@
           "style_code": "H",
           "finish_type": "E",
           "dist_code": "B+",
-          "going_flag": "DEPENDENT",
-          "note": "Hold-up horse with solid place record but going-dependent nature makes him hard to assess confidently.",
+          "going_flag": "OK",
+          "note": "Hold-up runner with good recent placing record, needs luck in running",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 67.6,
@@ -2597,7 +2596,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up runner who hasn't won recently but could benefit from pace setup in competitive handicap.",
+          "note": "Hold-up type struggling for wins but capable of places when clear",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 67.3,
@@ -2614,7 +2613,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner with decent strike rate who should get good position but faces stiff competition.",
+          "note": "Prominent runner with decent recent win record over course/distance",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 66.1,
@@ -2631,7 +2630,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Another prominent type adding to the congestion problem behind the likely lone leader Station X.",
+          "note": "Prominent type with solid 5f form, likely to be in thick of traffic",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 65.4,
@@ -2647,8 +2646,8 @@
           "style_code": "P",
           "finish_type": "E",
           "dist_code": "B",
-          "going_flag": "DEPENDENT",
-          "note": "Prominent runner whose going dependency adds another layer of uncertainty to his chances.",
+          "going_flag": "OK",
+          "note": "Consistent prominent runner with strong recent placing record",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "_projected": 56.5,
@@ -2659,44 +2658,41 @@
           "_action": "WATCH"
         }
       ],
-      "paceDynamic": "Station X is the sole confirmed front runner and will likely get an uncontested lead, setting a sustainable pace in this sprint handicap. The major tactical issue is prominent congestion with Sports Coach, Master Of My Fate, Reigning Profit, Mon Na Slieve, and Kinetic Force all wanting to sit handy, creating inevitable traffic problems turning for home when the hold-up horses including Tiriac, Havana Blast, and Blinky come with late runs.",
+      "paceDynamic": "Station X is the only confirmed front runner and should get an uncontested lead with sustainable fractions over 5f. Five horses (Sports Coach, Master Of My Fate, Reigning Profit, Mon Na Slieve, Kinetic Force) all want prominent positions behind Station X, creating significant congestion and traffic concerns turning for home. The hold-up brigade (Pixie Diva, Almarada Prince, Tiriac, Havana Blast, Blinky, Vingegaard) will need clear runs in the final 2f as the prominent pack fans out.",
       "scenarios": [
         {
           "label": "A",
           "title": "Uncontested Leader Wins",
           "prob": 35,
-          "trigger": "If Station X gets easy fractions and kicks clear 1f out without serious pressure",
-          "body": "Station X faces minimal early pace pressure and quickens decisively when the prominent runners get tangled up behind. The hold-up horses can't reel him in despite late momentum.",
-          "winners": [
+          "trigger": "If Station X maintains gallop and prominent pack gets tangled",
+          "body": "Station X dictates throughout and kicks clear turning for home. The congested prominent group behind struggles for room allowing the leader to hold on.",
+          "winners": [],
+          "others": [
             "Station X",
             "Sports Coach"
-          ],
-          "others": [
-            "Master Of My Fate",
-            "Reigning Profit"
           ]
         },
         {
           "label": "B",
-          "title": "Hold-Up Horse Pounces",
-          "prob": 30,
-          "trigger": "If the prominent pack goes too hard chasing Station X and sets it up perfectly for closers",
-          "body": "The five prominent runners jostle for position and go fractionally too quick, playing into the hands of the patient hold-up brigade. Tiriac or Havana Blast sweep past tired leaders in the final furlong.",
+          "title": "Hold-Up Sprint Home",
+          "prob": 40,
+          "trigger": "If prominent traffic creates clear late runs for closers",
+          "body": "Havana Blast and Tiriac get dream splits through the struggling prominent pack. Both hit top gear simultaneously in final furlong with Havana Blast's superior rating telling.",
           "winners": [
-            "Tiriac",
-            "Havana Blast"
+            "Havana Blast",
+            "Tiriac"
           ],
           "others": [
-            "Vingegaard",
-            "Blinky"
+            "Blinky",
+            "Vingegaard"
           ]
         },
         {
           "label": "C",
-          "title": "Prominent Tactical Winner",
-          "prob": 25,
-          "trigger": "If one of the handy horses finds the perfect trip and avoids the traffic",
-          "body": "Sports Coach or Master Of My Fate secure ideal positions just behind Station X without getting caught in the pack shuffle. They time their challenge perfectly as Station X tires and before the hold-up horses arrive.",
+          "title": "Prominent Breaks Clear",
+          "prob": 20,
+          "trigger": "If one prominent runner escapes the pack congestion early",
+          "body": "Sports Coach or Master Of My Fate gets first run on Station X at 2f pole before closers arrive. Their sustained pace pressure drops Station X and they hold off late challenges.",
           "winners": [
             "Sports Coach",
             "Master Of My Fate"
@@ -2708,40 +2704,40 @@
         },
         {
           "label": "D",
-          "title": "Late Charge Chaos",
-          "prob": 10,
-          "trigger": "If extreme pace pressure creates a complete collapse up front with multiple fallers",
-          "body": "Station X gets pressured into unsustainable fractions by aggressive prominent tactics, causing a domino effect of stopping horses. The race becomes a lottery for whichever hold-up horse gets the clearest run.",
+          "title": "Closer Wide Sweep",
+          "prob": 5,
+          "trigger": "If all prominent runners get tangled leaving widest path clear",
+          "body": "Vingegaard or Almarada Prince comes widest of all with clear late run. The prominent scrimmaging allows patient tactics to pay off spectacularly.",
           "winners": [
             "Vingegaard",
-            "Pixie Diva"
+            "Almarada Prince"
           ],
           "others": [
-            "Almarada Prince",
-            "Blinky"
+            "Pixie Diva",
+            "Havana Blast"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Station X getting pressured early by Sports Coach or Master Of My Fate, which would compromise his stamina reserves for the finish."
+          "text": "Station X could steal this if the prominent pack behind gets badly tangled from 2f out"
         },
         {
           "severity": "warn",
-          "text": "Traffic problems developing 2f out when five prominent runners converge while hold-up horses need room to challenge."
+          "text": "Sports Coach and Master Of My Fate fighting for same prominent pitch could compromise both"
         },
         {
           "severity": "warn",
-          "text": "How going-dependent horses Havana Blast, Sports Coach, Master Of My Fate, Blinky, and Kinetic Force handle the good surface conditions."
+          "text": "Havana Blast is top-rated but absolutely must get a clear run from packed field"
         },
         {
           "severity": "info",
-          "text": "Tiriac's ability to get a clear run from his hold-up position given his excellent recent winning form."
+          "text": "Tiriac's hold-up style perfectly suits if pace collapses but needs the gaps to appear"
         },
         {
           "severity": "info",
-          "text": "Whether any prominent runner can break free from the pack to chase Station X without getting caught in the shuffle."
+          "text": "Five prominent runners all wanting same position behind Station X creates inevitable traffic issues"
         }
       ]
     }
