@@ -7,64 +7,27 @@ type Meeting = {
   label: string;
   going: string;
   races: number;
+  courseSlug: string;
   latest?: boolean;
 };
 
-const MEETINGS: any[] = [
-  {
-    slug:   "wetherby_27-march-2026",
-    date:   "27 March 2026",
-    label:  "Wetherby — 27 March 2026",
-    going:  "Good",
-    races:  7,
-    latest: true,
-  },
-  {
-    slug:   "newcastle_aw_27-march-2026",
-    date:   "27 March 2026",
-    label:  "Newcastle (AW) — 27 March 2026",
-    going:  "Good",
-    races:  9,
-    latest: false,
-  },
-  {
-    slug:   "lingfield_aw_27-march-2026",
-    date:   "27 March 2026",
-    label:  "Lingfield (AW) — 27 March 2026",
-    going:  "Good",
-    races:  7,
-    latest: false,
-  },
-  {
-    slug:   "fontwell_27-march-2026",
-    date:   "27 March 2026",
-    label:  "Fontwell — 27 March 2026",
-    going:  "Good",
-    races:  6,
-    latest: false,
-  },
-  {
-    slug:   "dundalk_aw_27-march-2026",
-    date:   "27 March 2026",
-    label:  "Dundalk (AW) — 27 March 2026",
-    going:  "Good",
-    races:  7,
-    latest: false,
-  },];
-
-// ── Group by date ─────────────────────────────────────────────
+const MEETINGS: any[] = [];
 
 function groupByDate(meetings: Meeting[]) {
-  const today = new Date().toLocaleDateString("en-GB", {
-    day: "numeric", month: "long", year: "numeric",
-  });
-  const yesterday = new Date(Date.now() - 86400000).toLocaleDateString("en-GB", {
-    day: "numeric", month: "long", year: "numeric",
-  });
+  const now = new Date();
+  const months = ['January','February','March','April','May','June',
+                  'July','August','September','October','November','December'];
+  const today    = `${now.getUTCDate()} ${months[now.getUTCMonth()]} ${now.getUTCFullYear()}`;
+  const yd       = new Date(Date.now() - 86400000);
+  const yesterday = `${yd.getUTCDate()} ${months[yd.getUTCMonth()]} ${yd.getUTCFullYear()}`;
+  const tm       = new Date(Date.now() + 86400000);
+  const tomorrow  = `${tm.getUTCDate()} ${months[tm.getUTCMonth()]} ${tm.getUTCFullYear()}`;
 
   const groups: Record<string, Meeting[]> = {};
   for (const m of meetings) {
-    const key = m.date === today
+    const key = m.date === tomorrow
+      ? "__tomorrow__"
+      : m.date === today
       ? "__today__"
       : m.date === yesterday
       ? "__yesterday__"
@@ -73,34 +36,35 @@ function groupByDate(meetings: Meeting[]) {
     groups[key].push(m);
   }
 
-  // Sort groups: today first, yesterday second, then reverse-chrono
   const order = Object.keys(groups).sort((a, b) => {
-    if (a === "__today__") return -1;
-    if (b === "__today__") return 1;
+    if (a === "__tomorrow__") return -1;
+    if (b === "__tomorrow__") return 1;
+    if (a === "__today__")    return -1;
+    if (b === "__today__")    return 1;
     if (a === "__yesterday__") return -1;
     if (b === "__yesterday__") return 1;
-    // Parse dates for comparison
     const da = new Date(a.split(" ").reverse().join(" "));
     const db = new Date(b.split(" ").reverse().join(" "));
     return db.getTime() - da.getTime();
   });
 
   return order.map(key => ({
-    label: key === "__today__" ? "Today" : key === "__yesterday__" ? "Yesterday" : key,
+    label: key === "__tomorrow__" ? "Tomorrow"
+         : key === "__today__"    ? "Today"
+         : key === "__yesterday__" ? "Yesterday"
+         : key,
     meetings: groups[key],
   }));
 }
 
 export default function ArchivePage() {
   const grouped = groupByDate(MEETINGS);
-  const totalMeetings = MEETINGS.length;
 
   return (
     <>
       <Nav />
       <div className="wrap">
 
-        {/* Page header */}
         <div style={{ marginBottom: "40px", paddingBottom: "24px",
           borderBottom: "1px solid rgba(201,168,76,0.18)" }}>
           <p style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.6rem",
@@ -116,15 +80,14 @@ export default function ArchivePage() {
             lineHeight: "1.7", maxWidth: "480px" }}>
             Every meeting published on PaceMap — permanently accessible for reference and research.
           </p>
-          {totalMeetings > 0 && (
+          {MEETINGS.length > 0 && (
             <p style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.6rem",
               color: "rgba(245,240,232,0.25)", marginTop: "10px" }}>
-              {totalMeetings} meeting{totalMeetings !== 1 ? "s" : ""} published
+              {MEETINGS.length} meeting{MEETINGS.length !== 1 ? "s" : ""} published
             </p>
           )}
         </div>
 
-        {/* Empty state */}
         {grouped.length === 0 && (
           <div style={{ textAlign: "center", padding: "60px 0" }}>
             <p style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.72rem",
@@ -134,20 +97,21 @@ export default function ArchivePage() {
           </div>
         )}
 
-        {/* Date groups */}
         {grouped.map(group => (
           <div key={group.label} style={{ marginBottom: "36px" }}>
 
-            {/* Date header */}
-            <div style={{ display: "flex", alignItems: "center", gap: "14px",
-              marginBottom: "14px" }}>
-              <span style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: "1.1rem",
+            <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "14px" }}>
+              <span style={{
+                fontFamily: "'Bebas Neue',sans-serif", fontSize: "1.1rem",
                 letterSpacing: "0.06em",
-                color: group.label === "Today" ? "var(--gold)" : "rgba(245,240,232,0.55)" }}>
+                color: group.label === "Today" || group.label === "Tomorrow"
+                  ? "var(--gold)"
+                  : "rgba(245,240,232,0.55)",
+              }}>
                 {group.label}
               </span>
               <div style={{ flex: 1, height: "1px",
-                background: group.label === "Today"
+                background: group.label === "Today" || group.label === "Tomorrow"
                   ? "rgba(201,168,76,0.2)"
                   : "rgba(255,255,255,0.06)" }} />
               <span style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.58rem",
@@ -156,30 +120,38 @@ export default function ArchivePage() {
               </span>
             </div>
 
-            {/* Meeting cards */}
             <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
               {group.meetings.map(m => {
                 const course = m.label.split(" \u2014 ")[0];
                 return (
-                  <Link key={m.slug} href={`/meetings/${m.slug}`}
-                    style={{ display: "flex", alignItems: "center",
-                      justifyContent: "space-between",
-                      padding: "13px 18px",
-                      background: m.latest
-                        ? "rgba(201,168,76,0.055)"
-                        : "rgba(255,255,255,0.025)",
-                      border: m.latest
-                        ? "1px solid rgba(201,168,76,0.2)"
-                        : "1px solid rgba(255,255,255,0.07)",
-                      borderRadius: "7px",
-                      flexWrap: "wrap", gap: "8px",
-                      textDecoration: "none" }}>
+                  <div key={m.slug} style={{
+                    display: "flex", alignItems: "center",
+                    justifyContent: "space-between",
+                    padding: "13px 18px",
+                    background: m.latest
+                      ? "rgba(201,168,76,0.055)"
+                      : "rgba(255,255,255,0.025)",
+                    border: m.latest
+                      ? "1px solid rgba(201,168,76,0.2)"
+                      : "1px solid rgba(255,255,255,0.07)",
+                    borderRadius: "7px",
+                    flexWrap: "wrap", gap: "8px",
+                  }}>
                     <div style={{ display: "flex", alignItems: "center",
-                      gap: "14px", flexWrap: "wrap" }}>
-                      <span style={{ fontWeight: 600, fontSize: "0.88rem",
-                        color: "var(--cream)" }}>
-                        {course}
-                      </span>
+                      gap: "14px", flexWrap: "wrap", flex: 1 }}>
+                      {/* Course name links to category page */}
+                      {m.courseSlug ? (
+                        <Link href={`/courses/${m.courseSlug}`}
+                          style={{ fontWeight: 600, fontSize: "0.88rem",
+                            color: "var(--gold)", textDecoration: "none" }}>
+                          {course}
+                        </Link>
+                      ) : (
+                        <span style={{ fontWeight: 600, fontSize: "0.88rem",
+                          color: "var(--cream)" }}>
+                          {course}
+                        </span>
+                      )}
                       <span style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.6rem",
                         color: "rgba(245,240,232,0.35)" }}>
                         {m.going}
@@ -198,15 +170,17 @@ export default function ArchivePage() {
                           Latest
                         </span>
                       )}
-                      <span style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.58rem",
-                        letterSpacing: "0.07em", textTransform: "uppercase",
-                        padding: "3px 9px", borderRadius: "3px",
-                        background: "rgba(255,255,255,0.05)",
-                        color: "rgba(245,240,232,0.45)" }}>
+                      <Link href={`/meetings/${m.slug}`}
+                        style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.58rem",
+                          letterSpacing: "0.07em", textTransform: "uppercase",
+                          padding: "3px 9px", borderRadius: "3px",
+                          background: "rgba(255,255,255,0.05)",
+                          color: "rgba(245,240,232,0.45)",
+                          textDecoration: "none" }}>
                         View →
-                      </span>
+                      </Link>
                     </div>
-                  </Link>
+                  </div>
                 );
               })}
             </div>
@@ -220,7 +194,10 @@ export default function ArchivePage() {
         <span className="footer-brand">PaceMap</span>
         <span className="footer-note">
           pacemap.co.uk · A Signalweight product<br />
-          For informational purposes only · Not financial advice
+          For informational purposes only · Not financial advice ·{" "}
+          <Link href="/responsible-gambling" style={{ color: "inherit" }}>
+            Gamble Responsibly
+          </Link>
         </span>
       </footer>
     </>
