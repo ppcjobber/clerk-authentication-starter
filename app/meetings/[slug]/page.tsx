@@ -2,9 +2,9 @@
 
 import Nav from "@/components/Nav";
 import Link from "next/link";
+import Footer from "@/components/Footer";
 import { useUser } from "@clerk/nextjs";
 import { useEffect, useState } from "react";
-import Footer from "@/components/Footer";
 
 // ── Types ─────────────────────────────────────────────────────
 
@@ -65,7 +65,23 @@ type MeetingData = {
   races: Race[];
 };
 
-// ── Style helpers ─────────────────────────────────────────────
+// ── Helpers ───────────────────────────────────────────────────
+
+function isPastMeeting(dateStr: string): boolean {
+  const months: Record<string, number> = {
+    January:0, February:1, March:2, April:3, May:4, June:5,
+    July:6, August:7, September:8, October:9, November:10, December:11,
+  };
+  const parts = dateStr.split(" ");
+  if (parts.length !== 3) return false;
+  const [day, month, year] = parts;
+  const meetingDate = new Date(parseInt(year), months[month], parseInt(day));
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  return meetingDate < today;
+}
+
+// ── Style constants ───────────────────────────────────────────
 
 const STYLE_COLORS: Record<string, { bg: string; text: string; label: string }> = {
   L: { bg: "rgba(192,57,43,0.12)",   text: "#922b21", label: "Lead"      },
@@ -75,18 +91,11 @@ const STYLE_COLORS: Record<string, { bg: string; text: string; label: string }> 
   U: { bg: "rgba(136,135,128,0.12)", text: "#5f5e5a", label: "Unknown"   },
 };
 
-const GOING_STYLE: Record<string, { color: string; symbol: string }> = {
-  OK:        { color: "#27ae60",                symbol: "✓" },
-  CONCERN:   { color: "#f39c12",                symbol: "⚠" },
-  DEPENDENT: { color: "#e74c3c",                symbol: "✗" },
-  UNKNOWN:   { color: "rgba(245,240,232,0.35)", symbol: "?" },
-};
-
 const SCENARIO_COLORS = [
-  { bg: "rgba(41,128,185,0.06)",  letter: { bg: "rgba(41,128,185,0.14)",  color: "#1a5276" }, bar: "#2980b9"  },
-  { bg: "rgba(142,68,173,0.06)",  letter: { bg: "rgba(142,68,173,0.14)",  color: "#6c3483" }, bar: "#8e44ad"  },
-  { bg: "rgba(39,174,96,0.06)",   letter: { bg: "rgba(39,174,96,0.14)",   color: "#1e8449" }, bar: "#27ae60"  },
-  { bg: "rgba(192,57,43,0.06)",   letter: { bg: "rgba(192,57,43,0.14)",   color: "#922b21" }, bar: "#c0392b"  },
+  { bg: "rgba(41,128,185,0.06)",  letter: { bg: "rgba(41,128,185,0.14)",  color: "#1a5276" }, bar: "#2980b9" },
+  { bg: "rgba(142,68,173,0.06)",  letter: { bg: "rgba(142,68,173,0.14)",  color: "#6c3483" }, bar: "#8e44ad" },
+  { bg: "rgba(39,174,96,0.06)",   letter: { bg: "rgba(39,174,96,0.14)",   color: "#1e8449" }, bar: "#27ae60" },
+  { bg: "rgba(192,57,43,0.06)",   letter: { bg: "rgba(192,57,43,0.14)",   color: "#922b21" }, bar: "#c0392b" },
 ];
 
 const WATCH_COLORS: Record<string, string> = {
@@ -113,8 +122,9 @@ const tdStyle: React.CSSProperties = { padding: "8px 10px", verticalAlign: "midd
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.6rem", textTransform: "uppercase",
-      letterSpacing: "0.1em", color: "rgba(245,240,232,0.35)", marginBottom: "8px", fontWeight: 500 }}>
+    <p style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.6rem",
+      textTransform: "uppercase", letterSpacing: "0.1em",
+      color: "rgba(245,240,232,0.35)", marginBottom: "8px", fontWeight: 500 }}>
       {children}
     </p>
   );
@@ -127,17 +137,17 @@ function PaceStrip({ race }: { race: Race }) {
       {LANE_STYLES.map(lane => {
         const horses: string[] = (race as any)[lane.key] || [];
         return (
-          <div key={lane.key} style={{ flex: 1, background: lane.bg, padding: "10px 12px",
+          <div key={lane.key} style={{ flex: 1, background: lane.bg, padding: "10px 8px",
             borderRight: "0.5px solid rgba(255,255,255,0.07)" }}>
-            <div style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: "0.75rem",
+            <div style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: "0.7rem",
               color: lane.head, letterSpacing: "0.06em", marginBottom: "6px" }}>
               {lane.label} · {horses.length}
             </div>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "4px" }}>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "3px" }}>
               {horses.length === 0
-                ? <span style={{ fontSize: "0.62rem", color: "rgba(245,240,232,0.25)", fontStyle: "italic" }}>None</span>
+                ? <span style={{ fontSize: "0.6rem", color: "rgba(245,240,232,0.25)", fontStyle: "italic" }}>None</span>
                 : horses.map(h => (
-                    <span key={h} style={{ fontSize: "0.62rem", padding: "2px 6px", borderRadius: "3px",
+                    <span key={h} style={{ fontSize: "0.58rem", padding: "2px 5px", borderRadius: "3px",
                       background: lane.pill.bg, color: lane.pill.text }}>
                       {h}
                     </span>
@@ -175,14 +185,12 @@ function RunnerTable({ runners, isFlat }: { runners: Runner[]; isFlat: boolean }
             <th style={thStyle}>Horse</th>
             <th style={thStyle}>OR</th>
             <th style={thStyle}>Style</th>
-            <th style={thStyle}>Going</th>
-            <th style={{ ...thStyle, width: "40%" }}>Note</th>
+            <th style={{ ...thStyle, width: "45%" }}>Note</th>
           </tr>
         </thead>
         <tbody>
           {runners.map((r, i) => {
             const sc = STYLE_COLORS[r.style_code] || STYLE_COLORS["U"];
-            const gf = GOING_STYLE[r.going_flag]  || GOING_STYLE["UNKNOWN"];
             return (
               <tr key={i} style={{ borderBottom: "0.5px solid rgba(255,255,255,0.06)" }}>
                 {isFlat && (
@@ -204,9 +212,6 @@ function RunnerTable({ runners, isFlat }: { runners: Runner[]; isFlat: boolean }
                     {r.style_code}
                   </span>
                 </td>
-                <td style={{ ...tdStyle, color: gf.color, fontSize: "0.68rem" }}>
-                  {gf.symbol}
-                </td>
                 <td style={{ ...tdStyle, color: "rgba(245,240,232,0.55)",
                   fontSize: "0.68rem", lineHeight: "1.5" }}>
                   {r.note || "—"}
@@ -223,62 +228,68 @@ function RunnerTable({ runners, isFlat }: { runners: Runner[]; isFlat: boolean }
 function ScenarioCards({ scenarios }: { scenarios: Scenario[] }) {
   if (!scenarios.length) return null;
   return (
-    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px", marginBottom: "20px" }}>
-      {scenarios.map((sc, i) => {
-        const col = SCENARIO_COLORS[i % SCENARIO_COLORS.length];
-        return (
-          <div key={sc.label} style={{ background: col.bg, borderRadius: "8px",
-            border: "0.5px solid rgba(255,255,255,0.07)", padding: "13px" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: "9px", marginBottom: "8px" }}>
-              <div style={{ width: "24px", height: "24px", borderRadius: "50%", flexShrink: 0,
-                background: col.letter.bg, color: col.letter.color, display: "flex",
-                alignItems: "center", justifyContent: "center",
-                fontSize: "0.78rem", fontWeight: 600 }}>
-                {sc.label}
-              </div>
-              <div>
-                <div style={{ fontSize: "0.75rem", fontWeight: 500, color: "var(--cream)" }}>
-                  {sc.title}
+    <>
+      <style>{`@media(max-width:600px){.scenario-grid{grid-template-columns:1fr!important}}`}</style>
+      <div className="scenario-grid" style={{
+        display: "grid", gridTemplateColumns: "1fr 1fr",
+        gap: "10px", marginBottom: "20px",
+      }}>
+        {scenarios.map((sc, i) => {
+          const col = SCENARIO_COLORS[i % SCENARIO_COLORS.length];
+          return (
+            <div key={sc.label} style={{ background: col.bg, borderRadius: "8px",
+              border: "0.5px solid rgba(255,255,255,0.07)", padding: "13px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "9px", marginBottom: "8px" }}>
+                <div style={{ width: "24px", height: "24px", borderRadius: "50%", flexShrink: 0,
+                  background: col.letter.bg, color: col.letter.color, display: "flex",
+                  alignItems: "center", justifyContent: "center",
+                  fontSize: "0.78rem", fontWeight: 600 }}>
+                  {sc.label}
                 </div>
-                <div style={{ fontSize: "0.6rem", color: "rgba(245,240,232,0.35)",
-                  fontFamily: "'DM Mono',monospace" }}>
-                  {sc.prob}% probability
+                <div>
+                  <div style={{ fontSize: "0.75rem", fontWeight: 500, color: "var(--cream)" }}>
+                    {sc.title}
+                  </div>
+                  <div style={{ fontSize: "0.6rem", color: "rgba(245,240,232,0.35)",
+                    fontFamily: "'DM Mono',monospace" }}>
+                    {sc.prob}% probability
+                  </div>
                 </div>
               </div>
+              <div style={{ height: "3px", borderRadius: "2px",
+                background: "rgba(255,255,255,0.08)", marginBottom: "9px", overflow: "hidden" }}>
+                <div style={{ height: "100%", borderRadius: "2px",
+                  background: col.bar, width: `${sc.prob}%` }} />
+              </div>
+              <div style={{ fontSize: "0.68rem", fontWeight: 500, color: "rgba(245,240,232,0.8)",
+                marginBottom: "5px", lineHeight: "1.4" }}>
+                {sc.trigger}
+              </div>
+              <div style={{ fontSize: "0.68rem", color: "rgba(245,240,232,0.5)",
+                lineHeight: "1.55", marginBottom: "9px" }}>
+                {sc.body}
+              </div>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "4px" }}>
+                {sc.winners.map(h => (
+                  <span key={h} style={{ fontSize: "0.6rem", padding: "2px 6px", borderRadius: "3px",
+                    background: "rgba(39,174,96,0.18)", color: "#2ecc71",
+                    border: "0.5px solid rgba(39,174,96,0.3)", fontWeight: 500 }}>
+                    {h}
+                  </span>
+                ))}
+                {sc.others.map(h => (
+                  <span key={h} style={{ fontSize: "0.6rem", padding: "2px 6px", borderRadius: "3px",
+                    background: "rgba(255,255,255,0.05)", color: "rgba(245,240,232,0.4)",
+                    border: "0.5px solid rgba(255,255,255,0.08)" }}>
+                    {h}
+                  </span>
+                ))}
+              </div>
             </div>
-            <div style={{ height: "3px", borderRadius: "2px",
-              background: "rgba(255,255,255,0.08)", marginBottom: "9px", overflow: "hidden" }}>
-              <div style={{ height: "100%", borderRadius: "2px",
-                background: col.bar, width: `${sc.prob}%` }} />
-            </div>
-            <div style={{ fontSize: "0.68rem", fontWeight: 500, color: "rgba(245,240,232,0.8)",
-              marginBottom: "5px", lineHeight: "1.4" }}>
-              {sc.trigger}
-            </div>
-            <div style={{ fontSize: "0.68rem", color: "rgba(245,240,232,0.5)",
-              lineHeight: "1.55", marginBottom: "9px" }}>
-              {sc.body}
-            </div>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "4px" }}>
-              {sc.winners.map(h => (
-                <span key={h} style={{ fontSize: "0.6rem", padding: "2px 6px", borderRadius: "3px",
-                  background: "rgba(39,174,96,0.18)", color: "#2ecc71",
-                  border: "0.5px solid rgba(39,174,96,0.3)", fontWeight: 500 }}>
-                  {h}
-                </span>
-              ))}
-              {sc.others.map(h => (
-                <span key={h} style={{ fontSize: "0.6rem", padding: "2px 6px", borderRadius: "3px",
-                  background: "rgba(255,255,255,0.05)", color: "rgba(245,240,232,0.4)",
-                  border: "0.5px solid rgba(255,255,255,0.08)" }}>
-                  {h}
-                </span>
-              ))}
-            </div>
-          </div>
-        );
-      })}
-    </div>
+          );
+        })}
+      </div>
+    </>
   );
 }
 
@@ -302,34 +313,47 @@ function WatchPoints({ points }: { points: WatchPoint[] }) {
 
 // ── Race card ─────────────────────────────────────────────────
 
-function RaceCard({ race, hasAccess }: { race: Race; hasAccess: boolean }) {
-  const isFlat = race.type === "flat";
+function RaceCard({ race, hasAccess, meetingDate }: {
+  race: Race;
+  hasAccess: boolean;
+  meetingDate: string;
+}) {
+  const isFlat   = race.type === "flat";
+  const historic = isPastMeeting(meetingDate);
 
-  if (!race.free && !hasAccess) {
+  if (!race.free && !hasAccess && !historic) {
     return (
-      <div style={{ position: "relative", borderRadius: "10px", overflow: "hidden", marginBottom: "28px" }}>
-        <div style={{ filter: "blur(5px)", pointerEvents: "none", opacity: 0.3,
-          background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.07)",
-          borderRadius: "10px", padding: "22px" }}>
-          <div style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: "1.35rem",
-            color: "var(--gold)", marginBottom: "12px" }}>{race.time} — {race.name}</div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: "10px" }}>
-            {["Lead","Prominent","Midfield","Hold Up"].map(l => (
-              <div key={l} style={{ height: "60px", background: "rgba(255,255,255,0.04)", borderRadius: "6px" }} />
-            ))}
+      <div style={{
+        background: "rgba(255,255,255,0.02)",
+        border: "1px solid rgba(255,255,255,0.07)",
+        borderRadius: "10px", marginBottom: "16px", padding: "20px",
+      }}>
+        <div style={{ marginBottom: "14px" }}>
+          <div style={{
+            fontFamily: "'Bebas Neue',sans-serif",
+            fontSize: "clamp(1rem,3vw,1.3rem)",
+            color: "var(--gold)", marginBottom: "4px",
+          }}>
+            {race.time} — {race.name}
+          </div>
+          <div style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.6rem",
+            color: "rgba(245,240,232,0.4)" }}>
+            {race.dist} · {race.going} · {race.grade} · {race.runners} runners
           </div>
         </div>
-        <div style={{ position: "absolute", inset: 0, background: "rgba(10,61,31,0.85)",
-          display: "flex", flexDirection: "column", alignItems: "center",
-          justifyContent: "center", gap: "12px", textAlign: "center", padding: "28px" }}>
-          <div style={{ fontSize: "1.8rem" }}>🔒</div>
-          <div style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: "1.2rem",
-            color: "var(--gold)" }}>{race.time} — {race.name}</div>
-          <p style={{ fontSize: "0.75rem", color: "rgba(245,240,232,0.45)",
-            maxWidth: "300px", lineHeight: "1.65" }}>
+        <div style={{
+          background: "rgba(10,61,31,0.7)",
+          border: "1px solid rgba(201,168,76,0.15)",
+          borderRadius: "8px", padding: "24px 20px",
+          display: "flex", flexDirection: "column",
+          alignItems: "center", gap: "10px", textAlign: "center",
+        }}>
+          <div style={{ fontSize: "1.4rem" }}>🔒</div>
+          <p style={{ fontSize: "0.75rem", color: "rgba(245,240,232,0.5)",
+            maxWidth: "280px", lineHeight: "1.65", margin: 0 }}>
             Unlock all races with a Day Pass (£2.99) or Monthly (£9.99/mo)
           </p>
-          <Link href="/pricing" className="btn btn-gold" style={{ marginTop: "4px" }}>
+          <Link href="/pricing" className="btn btn-gold">
             Unlock Full Card →
           </Link>
         </div>
@@ -346,7 +370,8 @@ function RaceCard({ race, hasAccess }: { race: Race; hasAccess: boolean }) {
         display: "flex", justifyContent: "space-between", alignItems: "center",
         flexWrap: "wrap", gap: "8px" }}>
         <div>
-          <div style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: "1.3rem", color: "var(--gold)" }}>
+          <div style={{ fontFamily: "'Bebas Neue',sans-serif",
+            fontSize: "clamp(1rem,3vw,1.3rem)", color: "var(--gold)" }}>
             {race.time} — {race.name}
           </div>
           <div style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.6rem",
@@ -366,6 +391,12 @@ function RaceCard({ race, hasAccess }: { race: Race; hasAccess: boolean }) {
               background: "rgba(39,174,96,0.18)", color: "#2ecc71",
               border: "0.5px solid rgba(39,174,96,0.35)" }}>FREE</span>
           )}
+          {historic && (
+            <span style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.56rem",
+              padding: "3px 8px", borderRadius: "3px",
+              background: "rgba(201,168,76,0.12)", color: "var(--gold)",
+              border: "0.5px solid rgba(201,168,76,0.3)" }}>HISTORIC</span>
+          )}
           {isFlat && race.drawBias && (
             <span style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.56rem",
               padding: "3px 8px", borderRadius: "3px",
@@ -378,29 +409,23 @@ function RaceCard({ race, hasAccess }: { race: Race; hasAccess: boolean }) {
       </div>
 
       <div style={{ padding: "20px" }}>
-
         <SectionLabel>Race shape</SectionLabel>
         <PaceStrip race={race} />
-
         {race.paceDynamic && <PaceDynamic text={race.paceDynamic} />}
-
         <SectionLabel>Runner profiles</SectionLabel>
         <RunnerTable runners={race.runners_data} isFlat={isFlat} />
-
         {race.scenarios?.length > 0 && (
           <>
             <SectionLabel>Race scenarios</SectionLabel>
             <ScenarioCards scenarios={race.scenarios} />
           </>
         )}
-
         {race.watchPoints?.length > 0 && (
           <>
             <SectionLabel>Watch points</SectionLabel>
             <WatchPoints points={race.watchPoints} />
           </>
         )}
-
       </div>
     </div>
   );
@@ -449,11 +474,15 @@ export default function MeetingPage({ params }: { params: Promise<{ slug: string
       <div className="wrap" style={{ paddingTop: "140px", textAlign: "center" }}>
         <p style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.72rem",
           color: "rgba(245,240,232,0.4)" }}>Meeting not found.</p>
-        <Link href="/archive" style={{ color: "var(--gold)", fontFamily: "'DM Mono',monospace",
-          fontSize: "0.7rem" }}>← Back to archive</Link>
+        <Link href="/archive" style={{ color: "var(--gold)",
+          fontFamily: "'DM Mono',monospace", fontSize: "0.7rem" }}>
+          ← Back to archive
+        </Link>
       </div>
     </>
   );
+
+  const historic = isPastMeeting(data.date);
 
   return (
     <>
@@ -470,8 +499,10 @@ export default function MeetingPage({ params }: { params: Promise<{ slug: string
               <span style={{ margin: "0 6px" }}>›</span>
               {data.course} · {data.date}
             </p>
-            <h1 style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: "2rem",
-              color: "var(--cream)" }}>{data.course}</h1>
+            <h1 style={{ fontFamily: "'Bebas Neue',sans-serif",
+              fontSize: "clamp(1.5rem,5vw,2rem)", color: "var(--cream)" }}>
+              {data.course}
+            </h1>
             <p style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.62rem",
               color: "rgba(245,240,232,0.35)", marginTop: "3px" }}>
               {data.date} · {data.races.length} races
@@ -479,16 +510,22 @@ export default function MeetingPage({ params }: { params: Promise<{ slug: string
           </div>
           <p style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.6rem",
             color: "rgba(245,240,232,0.28)", textAlign: "right", lineHeight: "1.7" }}>
-            {checking ? "Checking access…" : hasAccess ? "✓ Full access" : "Race 1 free · Rest locked"}
+            {historic
+              ? "✓ Historic — full access"
+              : checking
+              ? "Checking access…"
+              : hasAccess
+              ? "✓ Full access"
+              : "Race 1 free · Rest locked"
+            }
           </p>
         </div>
 
         {data.races.map((race, i) => (
-          <RaceCard key={i} race={race} hasAccess={hasAccess} />
+          <RaceCard key={i} race={race} hasAccess={hasAccess} meetingDate={data.date} />
         ))}
       </div>
-
-     <Footer />
+      <Footer />
     </>
   );
 }
