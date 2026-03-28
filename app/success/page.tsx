@@ -34,7 +34,7 @@ export default function Success() {
           Payment confirmed. You now have full access.
         </p>
         <Link href="/archive" className="btn btn-gold">
-          View Meetings →
+          View Meetings
         </Link>
       </div>
       <Footer />
