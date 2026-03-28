@@ -14,22 +14,13 @@ type Meeting = {
 
 const MEETINGS: any[] = [
   {
-    slug:       "kempton_aw_28-march-2026",
-    date:       "28 March 2026",
-    label:      "Kempton (AW) — 28 March 2026",
-    going:      "Good",
-    races:      7,
-    courseSlug: "kempton-aw",
-    latest:     true,
-  },
-  {
     slug:       "doncaster_28-march-2026",
     date:       "28 March 2026",
     label:      "Doncaster — 28 March 2026",
     going:      "Soft",
     races:      8,
     courseSlug: "doncaster",
-    latest:     false,
+    latest:     true,
   },
   {
     slug:       "curragh_28-march-2026",
@@ -38,51 +29,6 @@ const MEETINGS: any[] = [
     going:      "Heavy",
     races:      8,
     courseSlug: "curragh",
-    latest:     false,
-  },
-  {
-    slug:       "wetherby_28-march-2026",
-    date:       "28 March 2026",
-    label:      "Wetherby — 28 March 2026",
-    going:      "Good",
-    races:      7,
-    courseSlug: "wetherby",
-    latest:     false,
-  },
-  {
-    slug:       "newcastle_aw_28-march-2026",
-    date:       "28 March 2026",
-    label:      "Newcastle (AW) — 28 March 2026",
-    going:      "Good",
-    races:      9,
-    courseSlug: "newcastle-aw",
-    latest:     false,
-  },
-  {
-    slug:       "lingfield_aw_28-march-2026",
-    date:       "28 March 2026",
-    label:      "Lingfield (AW) — 28 March 2026",
-    going:      "Good",
-    races:      7,
-    courseSlug: "lingfield-aw",
-    latest:     false,
-  },
-  {
-    slug:       "fontwell_28-march-2026",
-    date:       "28 March 2026",
-    label:      "Fontwell — 28 March 2026",
-    going:      "Good",
-    races:      6,
-    courseSlug: "fontwell",
-    latest:     false,
-  },
-  {
-    slug:       "dundalk_aw_28-march-2026",
-    date:       "28 March 2026",
-    label:      "Dundalk (AW) — 28 March 2026",
-    going:      "Good",
-    races:      7,
-    courseSlug: "dundalk-aw",
     latest:     false,
   },
   {
@@ -130,14 +76,12 @@ const MEETINGS: any[] = [
     courseSlug: "dundalk-aw",
     latest:     false,
   },
-
 ];
 
 function groupByDate(meetings: Meeting[]) {
-  function groupByDate(meetings: Meeting[]) {
-  const now       = new Date();
-  const months    = ['January','February','March','April','May','June',
-                    'July','August','September','October','November','December'];
+  const now = new Date();
+  const months = ['January','February','March','April','May','June',
+                  'July','August','September','October','November','December'];
   const today     = `${now.getDate()} ${months[now.getMonth()]} ${now.getFullYear()}`;
   const yd        = new Date(now); yd.setDate(now.getDate() - 1);
   const yesterday = `${yd.getDate()} ${months[yd.getMonth()]} ${yd.getFullYear()}`;
@@ -260,7 +204,6 @@ export default function ArchivePage() {
                   }}>
                     <div style={{ display: "flex", alignItems: "center",
                       gap: "14px", flexWrap: "wrap", flex: 1 }}>
-                      {/* Course name links to category page */}
                       {m.courseSlug ? (
                         <Link href={`/courses/${m.courseSlug}`}
                           style={{ fontWeight: 600, fontSize: "0.88rem",
@@ -310,7 +253,6 @@ export default function ArchivePage() {
         ))}
 
       </div>
-
       <Footer />
     </>
   );
