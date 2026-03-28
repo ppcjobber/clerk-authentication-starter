@@ -128,10 +128,11 @@ function groupByDate(meetings: Meeting[]) {
   const now = new Date();
   const months = ['January','February','March','April','May','June',
                   'July','August','September','October','November','December'];
-  const today    = `${now.getUTCDate()} ${months[now.getUTCMonth()]} ${now.getUTCFullYear()}`;
-  const yd       = new Date(Date.now() - 86400000);
+  const ukNow     = new Date(Date.now() + 60 * 60 * 1000); // BST = UTC+1
+  const today     = `${ukNow.getUTCDate()} ${months[ukNow.getUTCMonth()]} ${ukNow.getUTCFullYear()}`;
+  const yd        = new Date(ukNow.getTime() - 86400000);
   const yesterday = `${yd.getUTCDate()} ${months[yd.getUTCMonth()]} ${yd.getUTCFullYear()}`;
-  const tm       = new Date(Date.now() + 86400000);
+  const tm        = new Date(ukNow.getTime() + 86400000);
   const tomorrow  = `${tm.getUTCDate()} ${months[tm.getUTCMonth()]} ${tm.getUTCFullYear()}`;
 
   const groups: Record<string, Meeting[]> = {};
