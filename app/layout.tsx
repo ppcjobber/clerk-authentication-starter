@@ -3,6 +3,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { ui } from "@clerk/ui";
 import Script from "next/script";
 import "./globals.css";
+import CookieBanner from "@/components/CookieBanner";
 
 export const metadata: Metadata = {
   title: "PaceMap — Race Shape Analysis",
@@ -36,6 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           `}</Script>
         </head>
         <body>
+          <CookieBanner />
           <noscript>
             <iframe
               src="https://www.googletagmanager.com/ns.html?id=GTM-NNXCSGPJ"
