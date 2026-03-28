@@ -4,19 +4,23 @@ import Nav from "@/components/Nav";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import { useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 
 export default function Success() {
+  const searchParams = useSearchParams();
+
   useEffect(() => {
+    const sessionId = searchParams.get("session_id");
     if (typeof window !== "undefined") {
       (window as any).dataLayer = (window as any).dataLayer || [];
       (window as any).dataLayer.push({
         event: "purchase",
         currency: "GBP",
-        value: 9.99,
-        transaction_id: Date.now().toString(),
+        value: 9.99, // hardcoded for now — upgrade later via API lookup
+        transaction_id: sessionId || Date.now().toString(),
       });
     }
-  }, []);
+  }, [searchParams]);
 
   return (
     <>
@@ -29,9 +33,4 @@ export default function Success() {
           lineHeight: "1.8", marginBottom: "32px" }}>
           Payment confirmed. You now have full access.
         </p>
-        <Link href="/archive" className="btn btn-gold">View Meetings →</Link>
-      </div>
-      <Footer />
-    </>
-  );
-}
+        <Link href="/archive" className="btn btn-gold">View Meetings →
