@@ -1,0 +1,1331 @@
+{
+  "course": "Ludlow",
+  "date": "30 March 2026",
+  "slug": "ludlow_30-march-2026",
+  "races": [
+    {
+      "id": 1,
+      "time": "2:27",
+      "name": "Weatherbys nhstallions.co.uk Novices' Hurdle (GBB Race)",
+      "grade": "NOV",
+      "dist": "2m",
+      "dist_f": 16.0,
+      "going": "Good",
+      "runners": 8,
+      "free": true,
+      "type": "jumps",
+      "pace": "CONTESTED",
+      "paceConf": 50,
+      "leads": [
+        "Jimbo Sport"
+      ],
+      "prominent": [
+        "Kenobi",
+        "Current Edition",
+        "Scarlet Moon"
+      ],
+      "midfield": [
+        "Josh Central",
+        "Golden Garden"
+      ],
+      "holdup": [
+        "King's Scholar",
+        "Snatch A Glance"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Snatch A Glance",
+          "or": 116,
+          "style_code": "H",
+          "finish_type": "S",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Excellent recent form on good ground with strong hold-up style perfectly suited to tracking the pace",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 99.7,
+          "_model_price": "7/2",
+          "_mkt_price": "19/5",
+          "_win_pct": 22.1,
+          "_edge": 11.2,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Current Edition",
+          "or": 120,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Prominent runner who could press the leader but limited recent form to assess",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 97.5,
+          "_model_price": "13/1",
+          "_mkt_price": "12/1",
+          "_win_pct": 7.4,
+          "_edge": 5.0,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Jimbo Sport",
+          "or": 116,
+          "style_code": "L",
+          "finish_type": "S",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Confirmed front runner with good form including course win, will dictate the race tempo",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 95.3,
+          "_model_price": "2/1",
+          "_mkt_price": "13/7",
+          "_win_pct": 34.6,
+          "_edge": 6.8,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Kenobi",
+          "or": 120,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Prominent style but question marks over recent poor runs and lack of winning form",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 93.7,
+          "_model_price": "88/1",
+          "_mkt_price": "80/1",
+          "_win_pct": 1.1,
+          "_edge": 1.1,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Scarlet Moon",
+          "or": 118,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Consistent prominent runner with solid recent form who handles the ground conditions well",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 82.5,
+          "_model_price": "3/1",
+          "_mkt_price": "2/1",
+          "_win_pct": 24.7,
+          "_edge": -8.1,
+          "_action": "WATCH"
+        },
+        {
+          "name": "King's Scholar",
+          "or": 120,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Class hold-up performer whose style depends entirely on a strong early gallop being set",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 70.4,
+          "_model_price": "13/1",
+          "_mkt_price": "7/1",
+          "_win_pct": 7.0,
+          "_edge": -22.2,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Josh Central",
+          "or": 78,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Prominent style but significantly lower grade than these rivals based on official ratings",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 57.4,
+          "_model_price": "1010/1",
+          "_mkt_price": "999/1",
+          "_win_pct": 0.1,
+          "_edge": 6.8,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Golden Garden",
+          "or": 76,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Hold-up horse with solid going record including recent course win at lower level",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 47.8,
+          "_model_price": "33/1",
+          "_mkt_price": "28/1",
+          "_win_pct": 3.0,
+          "_edge": -0.7,
+          "_action": "WATCH"
+        }
+      ],
+      "paceDynamic": "Jimbo Sport will dictate terms from the front with no other confirmed pace-setters, creating a controlled tempo that suits his style. Current Edition, Kenobi, Scarlet Moon and Josh Central will likely race prominently behind the leader, while Snatch A Glance, King's Scholar and Golden Garden are expected to be held up for late challenges.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Jimbo Wires Field",
+          "prob": 35,
+          "trigger": "If Jimbo Sport gets soft fractions and sees out the trip strongly",
+          "body": "The leader controls the race unchallenged and kicks clear turning for home. The hold-up horses struggle to make up ground against solid pace.",
+          "winners": [
+            "Jimbo Sport",
+            "Scarlet Moon"
+          ],
+          "others": [
+            "Current Edition",
+            "Snatch A Glance"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Prominent Dual Unfolds",
+          "prob": 30,
+          "trigger": "If Current Edition and Scarlet Moon press Jimbo Sport from early stages",
+          "body": "The increased pace stretches the field and creates a battle between the prominent runners. King's Scholar emerges from the pack to capitalize on the strong gallop.",
+          "winners": [
+            "Scarlet Moon",
+            "King's Scholar"
+          ],
+          "others": [
+            "Current Edition",
+            "Jimbo Sport"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Late Closer Strikes",
+          "prob": 25,
+          "trigger": "If the pace collapses in the final furlong with Jimbo Sport weakening",
+          "body": "Snatch A Glance and King's Scholar benefit from their patient rides as the early pace fades. The class horses with hold-up styles dominate the finish despite giving ground away.",
+          "winners": [
+            "Snatch A Glance",
+            "King's Scholar"
+          ],
+          "others": [
+            "Scarlet Moon",
+            "Current Edition"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Pace Collapse Scramble",
+          "prob": 10,
+          "trigger": "If Jimbo Sport sets very slow fractions and the race becomes a sprint",
+          "body": "The lack of early pace turns this into a tactical affair decided by who quickens best. Golden Garden's recent win suggests improved form that could surprise at bigger odds.",
+          "winners": [
+            "Golden Garden",
+            "Current Edition"
+          ],
+          "others": [
+            "Josh Central",
+            "Kenobi"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Jimbo Sport getting uncontested lead could prove decisive given his front-running style and course form"
+        },
+        {
+          "severity": "warn",
+          "text": "King's Scholar and Snatch A Glance need strong early pace to be effective from their hold-up positions"
+        },
+        {
+          "severity": "warn",
+          "text": "Current Edition's fitness after limited recent runs could be exposed if forced to chase hard early"
+        },
+        {
+          "severity": "info",
+          "text": "Josh Central and Golden Garden are significantly outclassed on ratings but both handle the ground"
+        },
+        {
+          "severity": "info",
+          "text": "Kenobi's recent poor form suggests confidence issues that may not be easily resolved today"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "time": "2:57",
+      "name": "G.C.Rickards Mares' Handicap Chase (Queen Boudicca Mares' Chase Series Qualifier)",
+      "grade": "HCAP",
+      "dist": "2m4f",
+      "dist_f": 20.0,
+      "going": "Good",
+      "runners": 6,
+      "free": false,
+      "type": "jumps",
+      "pace": "CONTESTED",
+      "paceConf": 50,
+      "leads": [
+        "Annie Express"
+      ],
+      "prominent": [
+        "Kit's Coty"
+      ],
+      "midfield": [
+        "Lynsey Larue",
+        "Wishful Wings"
+      ],
+      "holdup": [
+        "Moonlightinthepark",
+        "A Little Something"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Annie Express",
+          "or": 100,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Natural front runner but poor recent form suggests vulnerability when pressured by classier opposition.",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 76.2,
+          "_model_price": "5/2",
+          "_mkt_price": "10/3",
+          "_win_pct": 27.0,
+          "_edge": 11.1,
+          "_action": "WATCH"
+        },
+        {
+          "name": "A Little Something",
+          "or": 89,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Hold-up specialist with strong good going record but needs others to set genuine pace to be effective.",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 73.0,
+          "_model_price": "3/1",
+          "_mkt_price": "11/2",
+          "_win_pct": 23.6,
+          "_edge": 18.8,
+          "_action": "WIN"
+        },
+        {
+          "name": "Kit's Coty",
+          "or": 96,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Consistent prominent runner with best recent form and rating advantage suited to controlling race from forward position.",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 59.2,
+          "_model_price": "5/1",
+          "_mkt_price": "15/4",
+          "_win_pct": 16.2,
+          "_edge": -2.0,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Moonlightinthepark",
+          "or": 91,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Hold-up mare with limited good going experience but distance specialist who needs strong early tempo.",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 49.2,
+          "_model_price": "13/1",
+          "_mkt_price": "9/1",
+          "_win_pct": 7.3,
+          "_edge": -7.0,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Wishful Wings",
+          "or": 76,
+          "style_code": "H",
+          "finish_type": "F",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Confirmed hold-up runner who typically fades in finish but could benefit if pace completely collapses.",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 30.4,
+          "_model_price": "8/1",
+          "_mkt_price": "5/1",
+          "_win_pct": 11.6,
+          "_edge": -10.8,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Lynsey Larue",
+          "or": 75,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Prominent runner coming off good second place who can bridge gap between leaders and hold-up horses.",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 30.1,
+          "_model_price": "6/1",
+          "_mkt_price": "23/7",
+          "_win_pct": 14.3,
+          "_edge": -10.1,
+          "_action": "AVOID"
+        }
+      ],
+      "paceDynamic": "Annie Express and Kit's Coty will likely share early pace-setting duties from the front, with Lynsey Larue also positioned prominently early. This creates a genuine pace scenario where the three hold-up horses (A Little Something, Moonlightinthepark, Wishful Wings) must overcome positioning disadvantages. The sustained tempo should set up tactical battles in the final half-mile as the prominent runners either consolidate or crack under pressure from behind.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Front Runners Dominate",
+          "prob": 35,
+          "trigger": "If Annie Express and Kit's Coty maintain sensible fractions without over-racing each other",
+          "body": "The pace becomes sustainable allowing the early leaders to kick clear approaching the final fence. Kit's Coty's superior rating and solid good going record proves decisive over Annie Express's recent inconsistency.",
+          "winners": [
+            "Kit's Coty",
+            "Annie Express"
+          ],
+          "others": [
+            "Lynsey Larue",
+            "A Little Something"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Hold-Up Horse Strikes",
+          "prob": 30,
+          "trigger": "If the early pace becomes genuinely strong with Annie Express and Kit's Coty engaging too eagerly",
+          "body": "A Little Something gets the perfect setup to unleash her finishing kick from the rear. Her proven good going form and tactical speed overwhelms tiring pace-setters in the final furlong.",
+          "winners": [
+            "A Little Something",
+            "Moonlightinthepark"
+          ],
+          "others": [
+            "Kit's Coty",
+            "Annie Express"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Tactical Speed Prevails",
+          "prob": 25,
+          "trigger": "If Lynsey Larue positions perfectly in third tracking the two leaders without committing early",
+          "body": "Her prominent style allows first run on the leaders while avoiding the traffic problems facing the hold-up horses. Recent second place form suggests she can capitalize on ideal positioning despite her lower rating.",
+          "winners": [
+            "Lynsey Larue",
+            "Kit's Coty"
+          ],
+          "others": [
+            "Annie Express",
+            "A Little Something"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Pace Collapses Completely",
+          "prob": 10,
+          "trigger": "If Annie Express leads unopposed with Kit's Coty and others sitting too far back",
+          "body": "The pace becomes crawling allowing even Wishful Wings to get competitive from her hold-up position. The race becomes a pure sprint finish where ratings matter less than who finds the best ground.",
+          "winners": [
+            "Wishful Wings",
+            "Moonlightinthepark"
+          ],
+          "others": [
+            "Kit's Coty",
+            "Lynsey Larue"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Annie Express could set uncontested lead if Kit's Coty drops back leaving no pace pressure early."
+        },
+        {
+          "severity": "warn",
+          "text": "A Little Something needs others to go fast early or her hold-up style becomes ineffective from poor positioning."
+        },
+        {
+          "severity": "warn",
+          "text": "Wishful Wings has established pattern of fading in finish so any early prominence would signal different tactics."
+        },
+        {
+          "severity": "info",
+          "text": "Kit's Coty versus Annie Express early positioning battle will determine if genuine pace materializes."
+        },
+        {
+          "severity": "info",
+          "text": "Moonlightinthepark making ground from rear in straight would indicate strong pace setup favoring closers."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "time": "3:27",
+      "name": "Ben Chambers Memorial Handicap Hurdle",
+      "grade": "HCAP",
+      "dist": "2m5½f",
+      "dist_f": 21.5,
+      "going": "Good",
+      "runners": 6,
+      "free": false,
+      "type": "jumps",
+      "pace": "SLOWLY_RUN",
+      "paceConf": 85,
+      "leads": [
+        "Oakley's Way"
+      ],
+      "prominent": [],
+      "midfield": [
+        "Kates Choice",
+        "Little Pi",
+        "Triple Haych"
+      ],
+      "holdup": [
+        "Jackomy",
+        "D'Jo Dela Barriere"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Oakley's Way",
+          "or": 105,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Only confirmed pace-maker in the field, will dictate terms from the front",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 95.9,
+          "_model_price": "evens",
+          "_mkt_price": "19/5",
+          "_win_pct": 51.9,
+          "_edge": 33.9,
+          "_action": "WIN"
+        },
+        {
+          "name": "D'Jo Dela Barriere",
+          "or": 101,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Highest-rated hold-up horse with strong recent record on good ground",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 79.0,
+          "_model_price": "9/1",
+          "_mkt_price": "14/1",
+          "_win_pct": 9.7,
+          "_edge": 20.9,
+          "_action": "CONSIDER"
+        },
+        {
+          "name": "Kates Choice",
+          "or": 96,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Hold-up style but poor recent form suggests vulnerability despite decent rating",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 56.6,
+          "_model_price": "53/1",
+          "_mkt_price": "40/1",
+          "_win_pct": 1.9,
+          "_edge": 3.6,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Jackomy",
+          "or": 104,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Recent Ludlow winner who handles good ground well, key contender from off the pace",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 48.1,
+          "_model_price": "5/2",
+          "_mkt_price": "4/6",
+          "_win_pct": 27.6,
+          "_edge": -13.0,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Little Pi",
+          "or": 91,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Lowest rated but in good recent form with soft ground preference less relevant today",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 39.3,
+          "_model_price": "12/1",
+          "_mkt_price": "29/5",
+          "_win_pct": 7.6,
+          "_edge": -8.8,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Triple Haych",
+          "or": 87,
+          "style_code": "H",
+          "finish_type": "F",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Warning flags for fading in the finish, likely to be found wanting when pace lifts",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 7.5,
+          "_model_price": "74/1",
+          "_mkt_price": "33/1",
+          "_win_pct": 1.3,
+          "_edge": -36.6,
+          "_action": "AVOID"
+        }
+      ],
+      "paceDynamic": "Oakley's Way will take them along at a sustainable gallop with no obvious pace pressure in this small field. The five hold-up horses (D'Jo Dela Barriere, Kates Choice, Jackomy, Little Pi, Triple Haych) will need Oakley's Way to maintain a true pace to avoid a sprint finish that could expose the weaker finishers.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Sustainable Pace Suits Class",
+          "prob": 35,
+          "trigger": "If Oakley's Way maintains an even gallop throughout allowing the race to develop naturally",
+          "body": "The higher-rated hold-up horses get the perfect setup to unleash their finishing kicks. D'Jo Dela Barriere and Jackomy benefit most from this patient tactical battle.",
+          "winners": [
+            "D'Jo Dela Barriere",
+            "Jackomy"
+          ],
+          "others": [
+            "Oakley's Way",
+            "Kates Choice"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Pace Collapse Sprint Finish",
+          "prob": 25,
+          "trigger": "If Oakley's Way goes too slowly early creating a bunched field turning for home",
+          "body": "The race becomes a dash from the last hurdle heavily favoring the freshest finishers. Little Pi's recent winning form and Jackomy's class could prove decisive in a driving finish.",
+          "winners": [
+            "Jackomy",
+            "Little Pi"
+          ],
+          "others": [
+            "D'Jo Dela Barriere",
+            "Oakley's Way"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Front Runner Dominates",
+          "prob": 25,
+          "trigger": "If Oakley's Way gets an uncontested lead and the hold-up brigade leave their runs too late",
+          "body": "The pace-setter builds an unassailable advantage as the closers struggle to make up ground. Oakley's Way proves too strong while the hold-up horses finish in his slipstream.",
+          "winners": [
+            "Oakley's Way",
+            "D'Jo Dela Barriere"
+          ],
+          "others": [
+            "Jackomy",
+            "Kates Choice"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Weak Pace Exposes Faders",
+          "prob": 15,
+          "trigger": "If the early pace is pedestrian and multiple horses hit the front simultaneously in the straight",
+          "body": "Triple Haych's known finishing weakness becomes crucial as stronger stayers prevail. The race develops into a war of attrition favoring the most resolute battlers.",
+          "winners": [
+            "D'Jo Dela Barriere",
+            "Little Pi"
+          ],
+          "others": [
+            "Jackomy",
+            "Oakley's Way"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Triple Haych's known tendency to fade in the finish makes him vulnerable if the pace quickens from the last hurdle"
+        },
+        {
+          "severity": "warn",
+          "text": "Oakley's Way needs to judge the early fractions correctly as going too fast or too slow could compromise his chances"
+        },
+        {
+          "severity": "info",
+          "text": "Little Pi carries bottom weight and recent winning form but faces a significant class rise against these opponents"
+        },
+        {
+          "severity": "warn",
+          "text": "The small field size could create tactical complications if Oakley's Way goes too slowly early"
+        },
+        {
+          "severity": "info",
+          "text": "D'Jo Dela Barriere's hold-up style requires Oakley's Way to maintain honest gallop throughout"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "time": "3:57",
+      "name": "Weatherbys Racing Bank Handicap Chase (GBB Race)",
+      "grade": "HCAP",
+      "dist": "3m",
+      "dist_f": 24.0,
+      "going": "Good",
+      "runners": 6,
+      "free": false,
+      "type": "jumps",
+      "pace": "CONTESTED",
+      "paceConf": 50,
+      "leads": [
+        "Your Darling"
+      ],
+      "prominent": [
+        "Destroytheevidence"
+      ],
+      "midfield": [
+        "Annsam",
+        "Lounge Lizard",
+        "Beachcomber"
+      ],
+      "holdup": [
+        "The Kalooki Kid"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Your Darling",
+          "or": 139,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Class advantage but recent form patchy and needs to prove stamina over this extended trip",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 121.9,
+          "_model_price": "5/2",
+          "_mkt_price": "3/1",
+          "_win_pct": 27.2,
+          "_edge": 8.3,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Beachcomber",
+          "or": 128,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Consistent recent efforts in similar company and handles good ground well from prominent position",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 116.5,
+          "_model_price": "4/1",
+          "_mkt_price": "6/1",
+          "_win_pct": 19.6,
+          "_edge": 13.8,
+          "_action": "CONSIDER"
+        },
+        {
+          "name": "The Kalooki Kid",
+          "or": 136,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Proven hold-up specialist whose style perfectly suits if others go too hard too early",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 116.4,
+          "_model_price": "3/1",
+          "_mkt_price": "25/8",
+          "_win_pct": 25.8,
+          "_edge": 5.7,
+          "_action": "CONSIDER"
+        },
+        {
+          "name": "Destroytheevidence",
+          "or": 134,
+          "style_code": "P",
+          "finish_type": "S",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Strong recent win last time and dangerous if getting first run on rivals from forward position",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 108.2,
+          "_model_price": "6/1",
+          "_mkt_price": "9/2",
+          "_win_pct": 14.1,
+          "_edge": -0.4,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Annsam",
+          "or": 132,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Inconsistent strike rate despite prominent racing style but has shown ability in this grade",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 96.7,
+          "_model_price": "9/1",
+          "_mkt_price": "33/7",
+          "_win_pct": 9.9,
+          "_edge": -9.9,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Lounge Lizard",
+          "or": 131,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Recent winner with tactical speed who can adapt if pace develops differently than expected",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 88.0,
+          "_model_price": "28/1",
+          "_mkt_price": "12/1",
+          "_win_pct": 3.5,
+          "_edge": -17.6,
+          "_action": "AVOID"
+        }
+      ],
+      "paceDynamic": "Your Darling will likely lead or share early duties with the predominantly prominent-racing field of Beachcomber, Destroytheevidence, Annsam, and Lounge Lizard all seeking forward positions. This creates a moderate pace that should suit The Kalooki Kid's hold-up style, allowing the patient ride to pick off tired leaders in the straight.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Sustained Pace Battle",
+          "prob": 35,
+          "trigger": "If the prominent runners engage early and maintain strong gallop throughout",
+          "body": "Your Darling and Beachcomber press each other from the off, with Destroytheevidence and Annsam close up. The relentless tempo sets up The Kalooki Kid perfectly for his trademark late surge.",
+          "winners": [
+            "The Kalooki Kid",
+            "Your Darling"
+          ],
+          "others": [
+            "Destroytheevidence",
+            "Lounge Lizard"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Tactical Early Going",
+          "prob": 25,
+          "trigger": "If the prominent runners are more patient early, creating a steadier rhythm",
+          "body": "The pace becomes more sedate with Your Darling allowed an easier lead while others bide their time. This favors the class horse Your Darling who can dictate terms and kick when ready.",
+          "winners": [
+            "Your Darling",
+            "Destroytheevidence"
+          ],
+          "others": [
+            "Beachcomber",
+            "The Kalooki Kid"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Mid-Race Acceleration",
+          "prob": 25,
+          "trigger": "If someone pushes the pace from halfway, disrupting the natural rhythm",
+          "body": "Annsam or Destroytheevidence forces the issue approaching the business end, stretching the field. Those with tactical speed like Lounge Lizard benefit from the honest gallop that develops.",
+          "winners": [
+            "Lounge Lizard",
+            "Annsam"
+          ],
+          "others": [
+            "Your Darling",
+            "The Kalooki Kid"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Messy Jumping Drama",
+          "prob": 15,
+          "trigger": "If jumping errors or interference disrupts the leading group significantly",
+          "body": "Early leaders get hampered by mistakes, creating gaps and changing the complexion entirely. The patient Kalooki Kid avoids trouble while others regroup, but chaos can throw up surprise results.",
+          "winners": [
+            "Beachcomber",
+            "The Kalooki Kid"
+          ],
+          "others": [
+            "Lounge Lizard",
+            "Annsam"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Your Darling must prove the 3-mile trip as previous efforts suggest stamina limitations"
+        },
+        {
+          "severity": "warn",
+          "text": "The Kalooki Kid needs sufficient pace up front to set up his finishing kick effectively"
+        },
+        {
+          "severity": "info",
+          "text": "Destroytheevidence carries confidence from recent success and could dictate from prominent position"
+        },
+        {
+          "severity": "warn",
+          "text": "Multiple prominent runners may create scrimmaging for position in early stages"
+        },
+        {
+          "severity": "info",
+          "text": "Lounge Lizard's versatility allows tactical adaptation if pace scenario changes mid-race"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "time": "4:27",
+      "name": "Parkinsons Awareness Handicap Hurdle",
+      "grade": "HCAP",
+      "dist": "2m",
+      "dist_f": 16.0,
+      "going": "Good",
+      "runners": 6,
+      "free": false,
+      "type": "jumps",
+      "pace": "GENUINE_PACE",
+      "paceConf": 65,
+      "leads": [
+        "Crest Of Stars"
+      ],
+      "prominent": [
+        "Jack Hyde",
+        "D Day Arvalenreeva"
+      ],
+      "midfield": [
+        "High Fibre"
+      ],
+      "holdup": [
+        "Filibustering",
+        "Roysse"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "High Fibre",
+          "or": 107,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Hold-up performer who needs a strong pace to be effective, recent form solid on good ground",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 104.5,
+          "_model_price": "evens",
+          "_mkt_price": "8/5",
+          "_win_pct": 51.6,
+          "_edge": 24.5,
+          "_action": "CONSIDER"
+        },
+        {
+          "name": "Jack Hyde",
+          "or": 122,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Prominent racer with excellent recent form, particularly strong on testing ground but handles good",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 101.1,
+          "_model_price": "7/2",
+          "_mkt_price": "8/3",
+          "_win_pct": 23.4,
+          "_edge": 6.2,
+          "_action": "CONSIDER"
+        },
+        {
+          "name": "Roysse",
+          "or": 115,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Consistent hold-up horse who needs others to go fast early, underwhelming strike rate despite placing",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 90.4,
+          "_model_price": "10/1",
+          "_mkt_price": "7/1",
+          "_win_pct": 9.2,
+          "_edge": 2.5,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Crest Of Stars",
+          "or": 114,
+          "style_code": "L",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Natural front runner coming off a win, should get ideal tactical scenario as lone pace-setter",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 79.3,
+          "_model_price": "12/1",
+          "_mkt_price": "32/5",
+          "_win_pct": 7.8,
+          "_edge": -7.6,
+          "_action": "AVOID"
+        },
+        {
+          "name": "D Day Arvalenreeva",
+          "or": 115,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Versatile prominent runner with strong record on good ground, three wins from recent form",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 79.2,
+          "_model_price": "20/1",
+          "_mkt_price": "11/1",
+          "_win_pct": 4.7,
+          "_edge": -8.7,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Filibustering",
+          "or": 116,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Hold-up specialist who has been running well without winning, needs strong tempo to be competitive",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 72.1,
+          "_model_price": "30/1",
+          "_mkt_price": "14/1",
+          "_win_pct": 3.2,
+          "_edge": -16.8,
+          "_action": "AVOID"
+        }
+      ],
+      "paceDynamic": "Crest Of Stars is the lone confirmed front runner and will dictate terms from the start, likely setting a sustainable gallop without early pressure from this field composition. With Jack Hyde and D Day Arvalenreeva likely to race prominently but not aggressively early, and three hold-up horses (High Fibre, Roysse, Filibustering) needing the pace to develop, Crest Of Stars should get an easy lead into the straight before the closers mount their challenges.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Crest Of Stars Controls",
+          "prob": 35,
+          "trigger": "If Crest Of Stars gets uncontested early fractions and jumps cleanly throughout",
+          "body": "The leader builds a soft advantage that proves hard to peg back when the hold-up horses make their moves. Jack Hyde and D Day Arvalenreeva track but can't sustain their challenges up the hill.",
+          "winners": [
+            "Crest Of Stars",
+            "D Day Arvalenreeva"
+          ],
+          "others": [
+            "Jack Hyde",
+            "Filibustering"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Prominent Pair Pressure",
+          "prob": 30,
+          "trigger": "If Jack Hyde and D Day Arvalenreeva both race closer to the pace than usual",
+          "body": "The increased early tempo suits the hold-up trio who get the strong gallop they need to unleash finishing kicks. Crest Of Stars gets softened up by the faster pace and fades late.",
+          "winners": [
+            "Filibustering",
+            "High Fibre"
+          ],
+          "others": [
+            "Roysse",
+            "D Day Arvalenreeva"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Hold-Up Horse Surprise",
+          "prob": 25,
+          "trigger": "If the pace collapses completely and becomes a sprint from the last hurdle",
+          "body": "One of the three closers produces a devastating late burst that catches the prominent racers napping. The lack of early pace becomes a tactical nightmare for those tracking the leader.",
+          "winners": [
+            "High Fibre",
+            "Roysse"
+          ],
+          "others": [
+            "Filibustering",
+            "Jack Hyde"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Tactical Scramble",
+          "prob": 10,
+          "trigger": "If jumping errors or interference disrupt the natural running order early",
+          "body": "The race becomes a messy affair where natural running styles get compromised and form goes out the window. The most adaptable horse on the day capitalizes on others' misfortunes.",
+          "winners": [
+            "Jack Hyde",
+            "Crest Of Stars"
+          ],
+          "others": [
+            "D Day Arvalenreeva",
+            "High Fibre"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Crest Of Stars must be watched for jumping fluency as any mistake will hand initiative to prominent pair"
+        },
+        {
+          "severity": "warn",
+          "text": "Jack Hyde's positioning early will be crucial - if he races too keen it changes the entire complexion"
+        },
+        {
+          "severity": "info",
+          "text": "High Fibre needs to be produced with perfectly timed run as he has no tactical speed if caught flat-footed"
+        },
+        {
+          "severity": "warn",
+          "text": "D Day Arvalenreeva's consistency on good ground makes him dangerous if others fail to capitalize on conditions"
+        },
+        {
+          "severity": "info",
+          "text": "Filibustering requires strong tempo throughout - watch for signs of pace collapse favoring front runners"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "time": "4:57",
+      "name": "Bob Cashmore & Michael Davies Open Hunters' Chase",
+      "grade": "CLS4",
+      "dist": "2m4f",
+      "dist_f": 20.0,
+      "going": "Good",
+      "runners": 5,
+      "free": false,
+      "type": "jumps",
+      "pace": "SLOWLY_RUN",
+      "paceConf": 85,
+      "leads": [
+        "Jet Plane"
+      ],
+      "prominent": [
+        "Fix At All",
+        "Great Valley"
+      ],
+      "midfield": [],
+      "holdup": [
+        "Northern Bound",
+        "Missed Tee"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Jet Plane",
+          "or": 136,
+          "style_code": "L",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Lone pace angle gives tactical advantage but recent form shows vulnerability when challenged",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 122.3,
+          "_model_price": "6/4",
+          "_mkt_price": "6/4",
+          "_win_pct": 44.3,
+          "_edge": 5.8,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Northern Bound",
+          "or": 121,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Highest class rating and strong recent form but hold-up style may not suit shorter trip",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 100.8,
+          "_model_price": "6/1",
+          "_mkt_price": "27/5",
+          "_win_pct": 14.1,
+          "_edge": -0.8,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Fix At All",
+          "or": 107,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Best placed to track and challenge the leader with solid recent form on good ground",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 86.7,
+          "_model_price": "20/1",
+          "_mkt_price": "18/1",
+          "_win_pct": 4.7,
+          "_edge": -0.9,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Great Valley",
+          "or": 91,
+          "style_code": "P",
+          "finish_type": "S",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Limited recent experience but prominent style suits, though class looks insufficient",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 75.0,
+          "_model_price": "5/2",
+          "_mkt_price": "5/2",
+          "_win_pct": 28.1,
+          "_edge": 3.5,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Missed Tee",
+          "or": 98,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Hold-up style handicapped by likely lack of early pace and shorter distance",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 71.1,
+          "_model_price": "10/1",
+          "_mkt_price": "15/2",
+          "_win_pct": 8.8,
+          "_edge": -7.5,
+          "_action": "WATCH"
+        }
+      ],
+      "paceDynamic": "Jet Plane is the sole confirmed front runner and will dictate terms from the start, likely setting a manageable gallop without pressure from similar types. The prominent runners Fix At All and Great Valley will track closely behind, while hold-up horses Northern Bound and Missed Tee will need the pace to collapse or tactical speed to be effective over this shorter trip.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Jet Plane Wires Field",
+          "prob": 45,
+          "trigger": "If Jet Plane gets an uncontested lead and maintains rhythm",
+          "body": "The class horse controls from pillar to post with Fix At All and Great Valley unable to mount serious pressure. Northern Bound's finishing kick comes too late over the shorter distance.",
+          "winners": [
+            "Jet Plane",
+            "Fix At All"
+          ],
+          "others": [
+            "Great Valley",
+            "Northern Bound"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Prominent Pair Strike",
+          "prob": 25,
+          "trigger": "If Fix At All or Great Valley can pressure Jet Plane early",
+          "body": "The pace quickens enough to set up the race for the prominent runners who can stay closer and kick. Jet Plane's stamina gets tested while the hold-up horses still lack tactical speed.",
+          "winners": [
+            "Fix At All",
+            "Great Valley"
+          ],
+          "others": [
+            "Jet Plane",
+            "Northern Bound"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Northern Bound's Class",
+          "prob": 20,
+          "trigger": "If the pace becomes truly searching or collapses completely",
+          "body": "Northern Bound's superior class rating and proven finishing kick becomes decisive as front runners tire. The former point-to-point winner shows his quality when the race develops to suit.",
+          "winners": [
+            "Northern Bound",
+            "Jet Plane"
+          ],
+          "others": [
+            "Fix At All",
+            "Missed Tee"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Pace Collapse Scramble",
+          "prob": 10,
+          "trigger": "If Jet Plane goes too slow early then multiple horses challenge",
+          "body": "A messy finish develops with several horses in contention turning in, favoring whoever has the best turn of foot. The race becomes a lottery with any of the five capable of winning.",
+          "winners": [
+            "Missed Tee",
+            "Northern Bound"
+          ],
+          "others": [
+            "Great Valley",
+            "Fix At All"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Watch if Jet Plane gets a soft lead early - could prove unbeatable if allowed easy fractions"
+        },
+        {
+          "severity": "warn",
+          "text": "Monitor how quickly Northern Bound can get into contention given the shorter trip and likely steady pace"
+        },
+        {
+          "severity": "info",
+          "text": "Observe Fix At All's jumping early - needs to stay close to capitalize on prominent position"
+        },
+        {
+          "severity": "warn",
+          "text": "Check Great Valley's fitness levels given limited recent racing compared to more experienced rivals"
+        },
+        {
+          "severity": "info",
+          "text": "Watch for any early pace pressure between Fix At All and Great Valley that could set up back runners"
+        }
+      ]
+    }
+  ]
+}
