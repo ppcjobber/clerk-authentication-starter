@@ -1,0 +1,1383 @@
+{
+  "course": "Sedgefield",
+  "date": "1 April 2026",
+  "slug": "sedgefield_1-april-2026",
+  "races": [
+    {
+      "id": 1,
+      "time": "2:40",
+      "name": "Sedgefield Racecourse Supports Autism In Racing Handicap Hurdle",
+      "grade": "HCAP",
+      "dist": "2m1f",
+      "dist_f": 17.0,
+      "going": "Soft",
+      "runners": 7,
+      "free": true,
+      "type": "jumps",
+      "pace": "GENUINE_PACE",
+      "paceConf": 65,
+      "leads": [
+        "Captain Cool"
+      ],
+      "prominent": [
+        "Diamond Jim",
+        "Fine Point",
+        "Ambassador"
+      ],
+      "midfield": [
+        "Blackwater Lilly"
+      ],
+      "holdup": [
+        "Belaya River",
+        "Maple"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Captain Cool",
+          "or": 106,
+          "style_code": "L",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Only confirmed front-runner with sustainable style but soft ground stamina untested at this trip",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 98.5,
+          "_model_price": "2/1",
+          "_mkt_price": "7/2",
+          "_win_pct": 33.4,
+          "_edge": 23.8,
+          "_action": "WIN"
+        },
+        {
+          "name": "Maple",
+          "or": 102,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Classic hold-up horse whose recent placings suggest readiness for a breakthrough performance",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 78.3,
+          "_model_price": "6/1",
+          "_mkt_price": "29/5",
+          "_win_pct": 13.7,
+          "_edge": 7.7,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Belaya River",
+          "or": 107,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Highest-rated hold-up horse with proven soft ground winning form at similar distances",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 71.0,
+          "_model_price": "7/2",
+          "_mkt_price": "15/7",
+          "_win_pct": 21.5,
+          "_edge": -4.6,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Diamond Jim",
+          "or": 110,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Highest OR in field but needs to position perfectly behind Captain Cool to maximize class advantage",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 66.7,
+          "_model_price": "7/1",
+          "_mkt_price": "4/1",
+          "_win_pct": 13.0,
+          "_edge": -12.0,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Fine Point",
+          "or": 94,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Most consistent recent form but lowest OR suggests he needs everything to fall right",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 62.7,
+          "_model_price": "10/1",
+          "_mkt_price": "7/1",
+          "_win_pct": 9.5,
+          "_edge": 0.0,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Blackwater Lilly",
+          "or": 100,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Hold-up style suits but poor recent form suggests she's not firing on all cylinders",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 59.9,
+          "_model_price": "12/1",
+          "_mkt_price": "7/1",
+          "_win_pct": 7.7,
+          "_edge": -8.7,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Ambassador",
+          "or": 89,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Prominent style compromised by significantly lower OR and patchy recent efforts",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 51.5,
+          "_model_price": "77/1",
+          "_mkt_price": "50/1",
+          "_win_pct": 1.3,
+          "_edge": -6.2,
+          "_action": "AVOID"
+        }
+      ],
+      "paceDynamic": "Captain Cool will lead from the front with minimal pressure, as Diamond Jim and Fine Point (the only other forward-going horses) are more prominent than pace-pressing types. This sets up a moderate, sustainable gallop that will favor the strong-finishing hold-up horses like Belaya River and Maple, who can time their challenges late over this stamina-testing trip on testing ground.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Uncontested Leader Dominates",
+          "prob": 35,
+          "trigger": "If Captain Cool gets an easy lead and finds enough stamina reserves for the finish",
+          "body": "The confirmed front-runner builds an unassailable advantage through controlled fractions and has enough left to repel late challenges. His recent Soft going form shows he can handle these conditions when allowed to dictate.",
+          "winners": [
+            "Captain Cool",
+            "Fine Point"
+          ],
+          "others": [
+            "Diamond Jim",
+            "Belaya River"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Hold-Up Horse Surge",
+          "prob": 40,
+          "trigger": "If the pace becomes truly pedestrian and favors patient tactics",
+          "body": "Belaya River and Maple get the perfect setup to unleash devastating late runs, with Belaya River's superior class (OR 107) and recent Soft ground win giving the edge. The testing conditions will find out Captain Cool's stamina limitations.",
+          "winners": [
+            "Belaya River",
+            "Maple"
+          ],
+          "others": [
+            "Blackwater Lilly",
+            "Diamond Jim"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Prominent Tracker Strikes",
+          "prob": 20,
+          "trigger": "If Diamond Jim can press Captain Cool just enough to soften him up",
+          "body": "Diamond Jim's higher OR of 110 tells when positioned perfectly behind the leader, timing his challenge at the second-last hurdle. His recent win at Goodwood shows he has the tactical speed to capitalize when the pace quickens.",
+          "winners": [
+            "Diamond Jim",
+            "Captain Cool"
+          ],
+          "others": [
+            "Fine Point",
+            "Belaya River"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Pace Collapse Chaos",
+          "prob": 5,
+          "trigger": "If Captain Cool stops suddenly and the race becomes a sprint finish",
+          "body": "The lack of early pace means multiple horses arrive together at the last hurdle, creating a scramble where Fine Point's recent consistency gives him the edge. This becomes a lottery finish where OR ratings matter less than who stays strongest.",
+          "winners": [
+            "Fine Point",
+            "Ambassador"
+          ],
+          "others": [
+            "Maple",
+            "Blackwater Lilly"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Captain Cool must show early fluency over hurdles as any jumping errors will compromise his front-running tactics"
+        },
+        {
+          "severity": "warn",
+          "text": "Diamond Jim's positioning in first half-mile is crucial - too close pressures Captain Cool, too far back negates his class edge"
+        },
+        {
+          "severity": "info",
+          "text": "Belaya River needs the pace to be honest enough to set up her late run but not so strong it becomes a stamina test"
+        },
+        {
+          "severity": "warn",
+          "text": "Fine Point requires the race to develop into a sprint finish to overcome his significant OR disadvantage"
+        },
+        {
+          "severity": "info",
+          "text": "Watch for any market moves on Maple as connections may know she's ready to show her true ability"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "time": "3:10",
+      "name": "Sign Lead Your Horse To Water Handicap Chase (GBB Race)",
+      "grade": "HCAP",
+      "dist": "3m2½f",
+      "dist_f": 26.5,
+      "going": "Soft",
+      "runners": 5,
+      "free": false,
+      "type": "jumps",
+      "pace": "SLOWLY_RUN",
+      "paceConf": 85,
+      "leads": [
+        "Ailt An Chorrain",
+        "Mary Stanford"
+      ],
+      "prominent": [
+        "Mountain Mike",
+        "Stratagem"
+      ],
+      "midfield": [],
+      "holdup": [
+        "Realisation"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Mountain Mike",
+          "or": 117,
+          "style_code": "P",
+          "finish_type": "S",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Highest-rated runner who should appreciate the prominent position behind two confirmed leaders",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 107.2,
+          "_model_price": "5/2",
+          "_mkt_price": "3/1",
+          "_win_pct": 30.7,
+          "_edge": 13.7,
+          "_action": "CONSIDER"
+        },
+        {
+          "name": "Realisation",
+          "or": 111,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Hold-up specialist needs others to go hard early to set up his customary late rally",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 93.6,
+          "_model_price": "6/4",
+          "_mkt_price": "8/5",
+          "_win_pct": 41.3,
+          "_edge": 6.1,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Stratagem",
+          "or": 107,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Most consistent performer on soft ground recently but needs tactical race to offset class deficit",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 82.1,
+          "_model_price": "7/1",
+          "_mkt_price": "28/5",
+          "_win_pct": 11.9,
+          "_edge": -1.4,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Mary Stanford",
+          "or": 105,
+          "style_code": "L",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Natural front runner who may benefit if Ailt An Chorrain takes her on too aggressively early",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 81.1,
+          "_model_price": "9/1",
+          "_mkt_price": "15/2",
+          "_win_pct": 9.7,
+          "_edge": -0.4,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Ailt An Chorrain",
+          "or": 106,
+          "style_code": "L",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Another confirmed leader whose recent soft ground form shows three places from seven attempts",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 64.4,
+          "_model_price": "14/1",
+          "_mkt_price": "6/1",
+          "_win_pct": 6.5,
+          "_edge": -18.1,
+          "_action": "AVOID"
+        }
+      ],
+      "paceDynamic": "Ailt An Chorrain and Mary Stanford will dispute the early lead, with both habitual front runners likely to set honest fractions from the start. Mountain Mike and Stratagem should track prominently behind the leaders, while Realisation settles last as usual, relying on his trademark late charge to get competitive.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Sustained Gallop Suits",
+          "prob": 35,
+          "trigger": "If the two leaders maintain a strong gallop throughout without killing each other off",
+          "body": "Mountain Mike can capitalize from his prominent position when the front pair weaken, having the class edge over Stratagem. Realisation may find the sustained pace stretches his finishing kick too thin.",
+          "winners": [
+            "Mountain Mike",
+            "Stratagem"
+          ],
+          "others": [
+            "Realisation",
+            "Mary Stanford"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Front Runners Collapse",
+          "prob": 30,
+          "trigger": "If Ailt An Chorrain and Mary Stanford go too hard early and both fade dramatically",
+          "body": "Realisation gets the perfect setup for his hold-up style, sweeping past tired leaders in the closing stages. Mountain Mike benefits but may lack Realisation's finishing power.",
+          "winners": [
+            "Realisation",
+            "Mountain Mike"
+          ],
+          "others": [
+            "Stratagem",
+            "Ailt An Chorrain"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Tactical Battle Develops",
+          "prob": 25,
+          "trigger": "If the pace becomes stop-start with neither leader committing fully",
+          "body": "Mary Stanford can use her race fitness edge to outstay rivals in a sprint finish, while Ailt An Chorrain benefits from the easier tempo. The prominent runners get caught in no-man's land.",
+          "winners": [
+            "Mary Stanford",
+            "Ailt An Chorrain"
+          ],
+          "others": [
+            "Mountain Mike",
+            "Realisation"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Moderate Pace Throughout",
+          "prob": 10,
+          "trigger": "If both leaders settle into a comfortable rhythm without serious pressure",
+          "body": "Stratagem's recent consistency on similar ground allows him to stay with the pace and grind out a surprise victory. Mountain Mike's class tells but he may not get the strong gallop he needs.",
+          "winners": [
+            "Stratagem",
+            "Mountain Mike"
+          ],
+          "others": [
+            "Realisation",
+            "Mary Stanford"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Watch if both Mary Stanford and Ailt An Chorrain refuse to give way early, creating unsustainable fractions"
+        },
+        {
+          "severity": "warn",
+          "text": "Monitor Mountain Mike's jumping rhythm as he may need to travel keenly to stay in touch with the leaders"
+        },
+        {
+          "severity": "info",
+          "text": "Observe Realisation's position turning for home as his late kick relies entirely on others setting strong pace"
+        },
+        {
+          "severity": "warn",
+          "text": "Check if Stratagem can maintain his prominent position when the tempo inevitably increases after the second last"
+        },
+        {
+          "severity": "info",
+          "text": "Watch for any early mistakes from the leaders as this small field offers limited recovery options"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "time": "3:40",
+      "name": "Jayne And Greg Complete All The Racecourses Handicap Chase",
+      "grade": "HCAP",
+      "dist": "2m½f",
+      "dist_f": 16.5,
+      "going": "Soft",
+      "runners": 8,
+      "free": false,
+      "type": "jumps",
+      "pace": "CONTESTED",
+      "paceConf": 50,
+      "leads": [
+        "Dixie Cowboy"
+      ],
+      "prominent": [
+        "Nonbinding",
+        "Clean Getaway",
+        "Restandbethankful"
+      ],
+      "midfield": [
+        "Elusive Warrior",
+        "Myfavouritesister"
+      ],
+      "holdup": [
+        "Beep Beep Becky",
+        "Natural Ability"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Clean Getaway",
+          "or": 86,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Prominent racer who handles soft going adequately but lacks a recent win to inspire confidence",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 75.2,
+          "_model_price": "4/1",
+          "_mkt_price": "7/1",
+          "_win_pct": 20.3,
+          "_edge": 29.1,
+          "_action": "WIN"
+        },
+        {
+          "name": "Dixie Cowboy",
+          "or": 92,
+          "style_code": "L",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Uncontested leader with excellent soft ground form and tactical advantage but stamina questions at this trip",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 69.8,
+          "_model_price": "6/4",
+          "_mkt_price": "2/1",
+          "_win_pct": 38.4,
+          "_edge": 17.7,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Nonbinding",
+          "or": 90,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Consistent prominent performer with solid soft ground record who could benefit from tracking the leader",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 51.9,
+          "_model_price": "66/1",
+          "_mkt_price": "50/1",
+          "_win_pct": 1.5,
+          "_edge": 1.8,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Restandbethankful",
+          "or": 81,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Prominent style but poor soft going record raises serious doubts about effectiveness today",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 51.9,
+          "_model_price": "12/1",
+          "_mkt_price": "11/1",
+          "_win_pct": 7.9,
+          "_edge": 10.8,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Beep Beep Becky",
+          "or": 88,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Hold-up specialist with good recent third but untested over this specific trip combination",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 37.8,
+          "_model_price": "10/1",
+          "_mkt_price": "29/5",
+          "_win_pct": 9.2,
+          "_edge": -10.3,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Natural Ability",
+          "or": 86,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Patient type with decent soft form but hasn't won in 15 attempts despite regular placings",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 32.9,
+          "_model_price": "12/1",
+          "_mkt_price": "6/1",
+          "_win_pct": 7.5,
+          "_edge": -13.2,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Myfavouritesister",
+          "or": 76,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Lowest rated but recent third suggests some form, though completely unproven on soft going",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 24.8,
+          "_model_price": "6/1",
+          "_mkt_price": "3/1",
+          "_win_pct": 13.7,
+          "_edge": -11.3,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Elusive Warrior",
+          "or": 80,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Hold-up horse who handles soft conditions but lacks any recent winning form to build confidence",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 15.6,
+          "_model_price": "61/1",
+          "_mkt_price": "25/1",
+          "_win_pct": 1.6,
+          "_edge": -24.4,
+          "_action": "AVOID"
+        }
+      ],
+      "paceDynamic": "Dixie Cowboy will dictate a steady, sustainable gallop as the sole confirmed front-runner, with Clean Getaway, Nonbinding and Restandbethankful settling prominently behind. The four hold-up horses create a significant back division that will need the pace to collapse or strong staying power to make their challenge count over this trip.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Dixie Cowboy Wire-to-Wire",
+          "prob": 35,
+          "trigger": "If Dixie Cowboy gets an uncontested lead and maintains stamina",
+          "body": "The front-runner controls throughout while prominent runners fail to quicken sufficiently. His strong soft ground record (1W 4P from 12) and tactical advantage prove decisive.",
+          "winners": [
+            "Dixie Cowboy",
+            "Clean Getaway"
+          ],
+          "others": [
+            "Nonbinding",
+            "Restandbethankful"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Prominent Battle Prevails",
+          "prob": 30,
+          "trigger": "If the prominent trio engage Dixie Cowboy from halfway and sustain pressure",
+          "body": "Clean Getaway or Nonbinding wear down the leader through sustained pressure up the straight. The hold-up horses arrive too late having given the leaders too much rope.",
+          "winners": [
+            "Clean Getaway",
+            "Nonbinding"
+          ],
+          "others": [
+            "Dixie Cowboy",
+            "Restandbethankful"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Hold-Up Horse Swoops",
+          "prob": 25,
+          "trigger": "If the pace becomes unsustainably strong or the prominent horses tie up",
+          "body": "Natural Ability or Beep Beep Becky benefit from a collapse ahead to deliver their trademark late challenge. The early leaders pay for their exertions as fresher horses arrive with winning runs.",
+          "winners": [
+            "Natural Ability",
+            "Beep Beep Becky"
+          ],
+          "others": [
+            "Elusive Warrior",
+            "Myfavouritesister"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Outsider Emerges Late",
+          "prob": 10,
+          "trigger": "If the race fragments completely with pace collapse and traffic problems",
+          "body": "Myfavouritesister or Elusive Warrior capitalize on chaos ahead, finding gaps when others are stopped. Multiple fallers or mistakes create opportunities for patient outsiders with decent recent form.",
+          "winners": [
+            "Myfavouritesister",
+            "Elusive Warrior"
+          ],
+          "others": [
+            "Natural Ability",
+            "Restandbethankful"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Dixie Cowboy could steal this if allowed uncontested fractions and maintains stamina over the extended trip"
+        },
+        {
+          "severity": "warn",
+          "text": "Clean Getaway and Nonbinding must position aggressively early to avoid giving Dixie Cowboy too much rope"
+        },
+        {
+          "severity": "info",
+          "text": "Natural Ability needs a strong pace collapse to deliver his hold-up style effectively from the back"
+        },
+        {
+          "severity": "warn",
+          "text": "Restandbethankful's poor soft ground record makes backing risky despite consistent prominent racing style"
+        },
+        {
+          "severity": "info",
+          "text": "Multiple hold-up horses could create traffic problems in the straight if they all arrive together"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "time": "4:10",
+      "name": "Fairlight Studios Maiden Hurdle (GBB Race)",
+      "grade": "CLS4",
+      "dist": "2m4f",
+      "dist_f": 20.0,
+      "going": "Soft",
+      "runners": 6,
+      "free": false,
+      "type": "jumps",
+      "pace": "CONTESTED",
+      "paceConf": 50,
+      "leads": [
+        "Phantom Gold"
+      ],
+      "prominent": [
+        "Bright Legend"
+      ],
+      "midfield": [
+        "Fearless Dragon",
+        "Monark Wood"
+      ],
+      "holdup": [
+        "Hay Max",
+        "Who's Glen"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Phantom Gold",
+          "or": 120,
+          "style_code": "L",
+          "finish_type": "S",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Uncontested front runner whose sustainable pace style perfectly suits having five hold-up horses behind him",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 107.5,
+          "_model_price": "4/1",
+          "_mkt_price": "9/2",
+          "_win_pct": 20.0,
+          "_edge": 9.5,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Monark Wood",
+          "or": 97,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Hold-up horse with modest rating who needs others to go too fast early to have any chance",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 95.9,
+          "_model_price": "16/1",
+          "_mkt_price": "25/1",
+          "_win_pct": 5.6,
+          "_edge": 20.9,
+          "_action": "CONSIDER"
+        },
+        {
+          "name": "Bright Legend",
+          "or": 113,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Only prominent runner who could track Phantom Gold closer than the pure hold-up horses",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 93.7,
+          "_model_price": "6/4",
+          "_mkt_price": "5/4",
+          "_win_pct": 44.2,
+          "_edge": 2.7,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Fearless Dragon",
+          "or": 98,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Hold-up style with decent soft ground record but modest rating limits winning chances",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 87.9,
+          "_model_price": "16/1",
+          "_mkt_price": "20/1",
+          "_win_pct": 5.5,
+          "_edge": 11.9,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Hay Max",
+          "or": 120,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Joint top-rated hold-up horse whose class could tell if he gets the right tactical scenario",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 70.8,
+          "_model_price": "10/1",
+          "_mkt_price": "6/1",
+          "_win_pct": 9.5,
+          "_edge": -27.1,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Who's Glen",
+          "or": 106,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Best soft ground record of the hold-up horses with good recent form in similar conditions",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 65.9,
+          "_model_price": "6/1",
+          "_mkt_price": "11/4",
+          "_win_pct": 15.1,
+          "_edge": -18.1,
+          "_action": "AVOID"
+        }
+      ],
+      "paceDynamic": "Phantom Gold will lead uncontested with five hold-up horses behind him, creating a slow, tactical affair early. The large contingent of hold-up runners (Monark Wood, Fearless Dragon, Hay Max, Who's Glen) will bunch up behind the leader with only Bright Legend likely to track closer, setting up a sprint finish where positioning and timing will be crucial.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Phantom Gold Controls Throughout",
+          "prob": 35,
+          "trigger": "If Phantom Gold sets sensible fractions and isn't pressured early",
+          "body": "The leader builds a soft lead before quickening approaching the last, holding off late challengers who leave their runs too late. His uncontested lead and proven front-running style proves decisive in this tactical contest.",
+          "winners": [
+            "Phantom Gold",
+            "Hay Max"
+          ],
+          "others": [
+            "Bright Legend",
+            "Who's Glen"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Late Charge Prevails",
+          "prob": 30,
+          "trigger": "If the pace becomes too slow and bunched turning for home",
+          "body": "The hold-up horses get perfectly positioned in the pack before unleashing late runs, with superior acceleration overwhelming the tiring leader. Who's Glen's soft ground form and tactical speed proves ideal for this scenario.",
+          "winners": [
+            "Who's Glen",
+            "Hay Max"
+          ],
+          "others": [
+            "Fearless Dragon",
+            "Phantom Gold"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Bright Legend Tracks Smart",
+          "prob": 25,
+          "trigger": "If Bright Legend positions closer to the pace than the other hold-up horses",
+          "body": "The prominent runner shadows Phantom Gold before taking over after the last hurdle, benefiting from a perfect stalking position while others are trapped behind. His superior rating and tactical advantage from tracking the pace proves decisive.",
+          "winners": [
+            "Bright Legend",
+            "Phantom Gold"
+          ],
+          "others": [
+            "Who's Glen",
+            "Hay Max"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Complete Pace Collapse",
+          "prob": 10,
+          "trigger": "If Phantom Gold goes too slow early allowing all rivals perfect positioning",
+          "body": "The race becomes a cavalry charge from the last hurdle with the highest-rated horses prevailing in a blanket finish. Hay Max's class tells in a messy sprint finish where pure ability matters most.",
+          "winners": [
+            "Hay Max",
+            "Bright Legend"
+          ],
+          "others": [
+            "Who's Glen",
+            "Phantom Gold"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Phantom Gold building too big a lead early - if uncontested he could be gone before others react"
+        },
+        {
+          "severity": "warn",
+          "text": "Who's Glen getting a clean run from the back - his soft ground form makes him dangerous if positioned well"
+        },
+        {
+          "severity": "warn",
+          "text": "Bright Legend's positioning turning in - if he's closer than the other hold-up horses he has a major advantage"
+        },
+        {
+          "severity": "info",
+          "text": "How bunched the hold-up horses become mid-race - too tight and they'll struggle for racing room"
+        },
+        {
+          "severity": "info",
+          "text": "The pace after the second last hurdle - this race will be won or lost on who quickens best from there"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "time": "4:40",
+      "name": "MW Civils & Groundworks Handicap Hurdle",
+      "grade": "HCAP",
+      "dist": "2m4f",
+      "dist_f": 20.0,
+      "going": "Soft",
+      "runners": 11,
+      "free": false,
+      "type": "jumps",
+      "pace": "CONTESTED",
+      "paceConf": 50,
+      "leads": [
+        "Achnamara"
+      ],
+      "prominent": [
+        "Cosmic Soul",
+        "Byron Hill",
+        "Mr Globalist"
+      ],
+      "midfield": [
+        "Knacker Trapper",
+        "Kopa Kilana",
+        "Laddie Cooper Mia",
+        "Deauville Lady"
+      ],
+      "holdup": [
+        "Swingforthefence",
+        "Top Flight Century",
+        "Seeyainthesuninn"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Byron Hill",
+          "or": 98,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Consistent prominent runner who handles soft ground well and stays this trip strongly",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 86.3,
+          "_model_price": "5/1",
+          "_mkt_price": "10/1",
+          "_win_pct": 16.5,
+          "_edge": 26.8,
+          "_action": "EW"
+        },
+        {
+          "name": "Achnamara",
+          "or": 100,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Natural front runner but recent form suggests vulnerability when pressed for pace",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 68.5,
+          "_model_price": "13/1",
+          "_mkt_price": "23/2",
+          "_win_pct": 7.2,
+          "_edge": 7.0,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Kopa Kilana",
+          "or": 83,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Hold-up horse needing significant pace collapse to be competitive from current ratings",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 61.8,
+          "_model_price": "22/1",
+          "_mkt_price": "28/1",
+          "_win_pct": 4.4,
+          "_edge": 17.2,
+          "_action": "CONSIDER"
+        },
+        {
+          "name": "Top Flight Century",
+          "or": 92,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Recent winner who excels when getting patient ride from off the pace",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 59.5,
+          "_model_price": "13/1",
+          "_mkt_price": "11/1",
+          "_win_pct": 7.2,
+          "_edge": 5.9,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Cosmic Soul",
+          "or": 98,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "In excellent current form with three straight wins, thrives racing prominently",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 57.5,
+          "_model_price": "5/2",
+          "_mkt_price": "7/5",
+          "_win_pct": 28.1,
+          "_edge": -2.0,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Swingforthefence",
+          "or": 93,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 51.3,
+          "_model_price": "20/1",
+          "_mkt_price": "14/1",
+          "_win_pct": 4.5,
+          "_edge": -3.3,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Knacker Trapper",
+          "or": 84,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Solid each-way type who needs everything to fall right from rear of field",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 46.9,
+          "_model_price": "10/1",
+          "_mkt_price": "7/1",
+          "_win_pct": 9.3,
+          "_edge": 1.3,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Laddie Cooper Mia",
+          "or": 76,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Proven in testing ground conditions but needs career-best effort to win",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 41.0,
+          "_model_price": "5/1",
+          "_mkt_price": "4/1",
+          "_win_pct": 16.0,
+          "_edge": 3.4,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Mr Globalist",
+          "or": 74,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Consistent prominent runner but lacks recent winning form to be confident",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 33.9,
+          "_model_price": "33/1",
+          "_mkt_price": "22/1",
+          "_win_pct": 3.0,
+          "_edge": -1.7,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Seeyainthesuninn",
+          "or": 85,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Hold-up horse whose soft ground record is patchy across limited attempts",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 20.6,
+          "_model_price": "134/1",
+          "_mkt_price": "50/1",
+          "_win_pct": 0.7,
+          "_edge": -26.0,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Deauville Lady",
+          "or": 76,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Proven soft ground performer but needs significant improvement on recent efforts",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 9.0,
+          "_model_price": "33/1",
+          "_mkt_price": "16/1",
+          "_win_pct": 3.0,
+          "_edge": -28.6,
+          "_action": "AVOID"
+        }
+      ],
+      "paceDynamic": "Achnamara will likely lead with Byron Hill and Cosmic Soul pressing close behind, creating a steady but not overly strong gallop in the soft conditions. With several hold-up horses including Top Flight Century, Kopa Kilana, and Swingforthefence needing to be produced late, the pace should be sustainable allowing closers to get competitive.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Sustained Gallop Suits Leaders",
+          "prob": 35,
+          "trigger": "If Achnamara, Byron Hill and Cosmic Soul maintain strong pace without folding",
+          "body": "The prominent runners get first run on the field and soft ground prevents late closers from making significant inroads. Byron Hill's consistency at this trip and Cosmic Soul's current winning form tell.",
+          "winners": [
+            "Byron Hill",
+            "Cosmic Soul"
+          ],
+          "others": [
+            "Achnamara",
+            "Mr Globalist"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Late Surge from Closers",
+          "prob": 30,
+          "trigger": "If the early pace becomes moderate allowing hold-up horses time and room",
+          "body": "Top Flight Century and Kopa Kilana get the patient ride they need and produce late kicks when leaders tire. The soft ground aids their stamina reserves over this staying trip.",
+          "winners": [
+            "Top Flight Century",
+            "Kopa Kilana"
+          ],
+          "others": [
+            "Swingforthefences",
+            "Knacker Trapper"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Tactical Speed Battle",
+          "prob": 25,
+          "trigger": "If Byron Hill and Cosmic Soul engage Achnamara in prolonged pace pressure",
+          "body": "The three prominent runners go too fast too early, setting up the race for mid-division horses with more tactical speed. Swingforthefences and Seeyainthesuninn benefit from the collapse ahead.",
+          "winners": [
+            "Swingforthefences",
+            "Seeyainthesuninn"
+          ],
+          "others": [
+            "Knacker Trapper",
+            "Laddie Cooper Mia"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Soft Ground Specialist",
+          "prob": 10,
+          "trigger": "If conditions deteriorate further during racing favoring proven heavy ground performers",
+          "body": "Laddie Cooper Mia's recent heavy ground run and Deauville Lady's soft ground experience become crucial factors. The testing surface finds out those uncomfortable with the underfoot conditions.",
+          "winners": [
+            "Laddie Cooper Mia",
+            "Deauville Lady"
+          ],
+          "others": [
+            "Top Flight Century",
+            "Kopa Kilana"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Achnamara could fold quickly if Byron Hill and Cosmic Soul apply sustained pressure from the outset"
+        },
+        {
+          "severity": "warn",
+          "text": "Top Flight Century needs clear running room in straight as hold-up horses often get boxed in here"
+        },
+        {
+          "severity": "info",
+          "text": "Cosmic Soul's jumping under pressure will be crucial given three-race winning sequence"
+        },
+        {
+          "severity": "info",
+          "text": "Weather deterioration during racing would significantly favor Laddie Cooper Mia's chances"
+        },
+        {
+          "severity": "warn",
+          "text": "Swingforthefences needs patient ride but jockey may panic if pace becomes pedestrian early"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "time": "5:10",
+      "name": "Paul Richardson Visiting Sedgefield Today Open National Hunt Flat Race (Cat 1 Elimination) (GBB)",
+      "grade": "CLS5",
+      "dist": "2m1f",
+      "dist_f": 17.0,
+      "going": "Soft",
+      "runners": 8,
+      "free": false,
+      "type": "jumps",
+      "pace": "UNKNOWN",
+      "paceConf": 0,
+      "leads": [],
+      "prominent": [],
+      "midfield": [],
+      "holdup": [],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Hillsteels Blue",
+          "or": 120,
+          "style_code": "U",
+          "finish_type": "E",
+          "dist_code": "UNKNOWN",
+          "going_flag": "UNKNOWN",
+          "note": "",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 116.8,
+          "_model_price": "40/1",
+          "_mkt_price": "33/1",
+          "_win_pct": 2.5,
+          "_edge": -0.7,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Scopic",
+          "or": 120,
+          "style_code": "U",
+          "finish_type": "E",
+          "dist_code": "UNKNOWN",
+          "going_flag": "UNKNOWN",
+          "note": "",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 116.8,
+          "_model_price": "30/1",
+          "_mkt_price": "25/1",
+          "_win_pct": 3.2,
+          "_edge": -0.7,
+          "_action": "WATCH"
+        },
+        {
+          "name": "The Gem State",
+          "or": 120,
+          "style_code": "U",
+          "finish_type": "E",
+          "dist_code": "UNKNOWN",
+          "going_flag": "UNKNOWN",
+          "note": "",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 116.8,
+          "_model_price": "evens",
+          "_mkt_price": "4/5",
+          "_win_pct": 47.0,
+          "_edge": -0.7,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Dolly Dior",
+          "or": 120,
+          "style_code": "U",
+          "finish_type": "E",
+          "dist_code": "UNKNOWN",
+          "going_flag": "UNKNOWN",
+          "note": "",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 116.8,
+          "_model_price": "30/1",
+          "_mkt_price": "25/1",
+          "_win_pct": 3.2,
+          "_edge": -0.7,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Mords Lavie Spigao",
+          "or": 120,
+          "style_code": "U",
+          "finish_type": "E",
+          "dist_code": "UNKNOWN",
+          "going_flag": "UNKNOWN",
+          "note": "",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 116.8,
+          "_model_price": "8/1",
+          "_mkt_price": "7/1",
+          "_win_pct": 10.6,
+          "_edge": -0.7,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Smart Order",
+          "or": 120,
+          "style_code": "U",
+          "finish_type": "E",
+          "dist_code": "UNKNOWN",
+          "going_flag": "UNKNOWN",
+          "note": "",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 116.8,
+          "_model_price": "25/1",
+          "_mkt_price": "20/1",
+          "_win_pct": 4.0,
+          "_edge": -0.7,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Datstheholyallofit",
+          "or": 107,
+          "style_code": "U",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 110.1,
+          "_model_price": "16/1",
+          "_mkt_price": "16/1",
+          "_win_pct": 5.5,
+          "_edge": 5.6,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Connells Cross",
+          "or": 107,
+          "style_code": "L",
+          "finish_type": "S",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 103.2,
+          "_model_price": "3/1",
+          "_mkt_price": "5/2",
+          "_win_pct": 23.9,
+          "_edge": -1.3,
+          "_action": "WATCH"
+        }
+      ],
+      "paceDynamic": "",
+      "scenarios": [],
+      "watchPoints": [],
+      "skipped": true
+    }
+  ]
+}
