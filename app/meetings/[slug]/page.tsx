@@ -5,6 +5,7 @@ import Link from "next/link";
 import Footer from "@/components/Footer";
 import { useUser } from "@clerk/nextjs";
 import { useEffect, useState } from "react";
+import RacePositionMap from "@/components/RacePositionMap";
 
 // ── Types ─────────────────────────────────────────────────────
 
