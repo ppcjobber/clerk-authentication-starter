@@ -1,0 +1,41 @@
+name: PaceMap Daily Pipeline
+
+on:
+  schedule:
+    # 6:30pm UK time (BST = UTC+1, so 17:30 UTC in summer)
+    # During GMT (winter) this would be 18:30 UTC — adjust as needed
+    - cron: '30 17 * * *'
+  workflow_dispatch:
+    # Also allows manual trigger from GitHub Actions tab
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests pytz openpyxl python-docx
+
+      - name: Run PaceMap pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.PIPELINE_GITHUB_TOKEN }}
+          RACING_API_USER: ${{ secrets.RACING_API_USER }}
+          RACING_API_PASS: ${{ secrets.RACING_API_PASS }}
+        run: |
+          python pipeline.py
+
+      - name: Log completion
+        if: always()
+        run: |
+          echo "Pipeline completed at $(date -u)"
