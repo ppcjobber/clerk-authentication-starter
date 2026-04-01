@@ -18,6 +18,17 @@ type Runner = {
   note: string;
   draw: number | null;
   draw_adv: string | null;
+  jockey: string;
+  trainer: string;
+  trainer_rtf: string;
+  trainer_14: string;
+  last_run: number | null;
+  age: string;
+  form: string;
+  lbs: string;
+  headgear: string;
+  rpr: number | null;
+  ts: number | null;
 };
 
 type Scenario = {
@@ -184,9 +195,15 @@ function RunnerTable({ runners, isFlat }: { runners: Runner[]; isFlat: boolean }
             borderBottom: "1px solid rgba(201,168,76,0.2)" }}>
             {isFlat && <th style={thStyle}>#</th>}
             <th style={thStyle}>Horse</th>
+            <th style={thStyle}>Age</th>
             <th style={thStyle}>OR</th>
+            <th style={thStyle}>RPR</th>
+            <th style={thStyle}>Form</th>
             <th style={thStyle}>Style</th>
-            <th style={{ ...thStyle, width: "45%" }}>Note</th>
+            <th style={thStyle}>Jockey</th>
+            <th style={thStyle}>Trainer</th>
+            <th style={thStyle}>Last Run</th>
+            <th style={{ ...thStyle, width: "30%" }}>Note</th>
           </tr>
         </thead>
         <tbody>
@@ -202,16 +219,49 @@ function RunnerTable({ runners, isFlat }: { runners: Runner[]; isFlat: boolean }
                   </td>
                 )}
                 <td style={tdStyle}>
-                  <span style={{ fontWeight: 600, color: "var(--cream)", fontSize: "0.78rem" }}>
+                  <div style={{ fontWeight: 600, color: "var(--cream)", fontSize: "0.78rem" }}>
                     {r.name}
-                  </span>
+                  </div>
+                  {r.headgear && (
+                    <div style={{ fontSize: "0.6rem", color: "#f39c12", marginTop: "1px" }}>
+                      {r.headgear}
+                    </div>
+                  )}
                 </td>
-                <td style={{ ...tdStyle, color: "rgba(245,240,232,0.5)" }}>{r.or || "—"}</td>
+                <td style={{ ...tdStyle, color: "rgba(245,240,232,0.5)", fontSize: "0.68rem" }}>
+                  {r.age || "—"}
+                </td>
+                <td style={{ ...tdStyle, color: "rgba(245,240,232,0.5)" }}>
+                  {r.or || "—"}
+                </td>
+                <td style={{ ...tdStyle, color: "rgba(245,240,232,0.5)" }}>
+                  {r.rpr || "—"}
+                </td>
+                <td style={{ ...tdStyle, color: "rgba(245,240,232,0.5)", fontSize: "0.68rem",
+                  fontFamily: "'DM Mono',monospace", letterSpacing: "0.05em" }}>
+                  {r.form || "—"}
+                </td>
                 <td style={tdStyle}>
                   <span style={{ background: sc.bg, color: sc.text, fontSize: "0.65rem",
                     padding: "2px 5px", borderRadius: "3px", fontWeight: 500 }}>
                     {r.style_code}
                   </span>
+                </td>
+                <td style={{ ...tdStyle, color: "rgba(245,240,232,0.7)", fontSize: "0.68rem" }}>
+                  {r.jockey || "—"}
+                </td>
+                <td style={{ ...tdStyle, fontSize: "0.65rem", lineHeight: "1.4" }}>
+                  <div style={{ color: "rgba(245,240,232,0.6)" }}>{r.trainer || "—"}</div>
+                  {r.trainer_14 && (
+                    <div style={{ color: "rgba(201,168,76,0.7)", fontSize: "0.6rem",
+                      fontFamily: "'DM Mono',monospace" }}>
+                      {r.trainer_14} 14d
+                    </div>
+                  )}
+                </td>
+                <td style={{ ...tdStyle, color: "rgba(245,240,232,0.45)",
+                  fontSize: "0.65rem", fontFamily: "'DM Mono',monospace" }}>
+                  {r.last_run != null ? `${r.last_run}d` : "—"}
                 </td>
                 <td style={{ ...tdStyle, color: "rgba(245,240,232,0.55)",
                   fontSize: "0.68rem", lineHeight: "1.5" }}>
