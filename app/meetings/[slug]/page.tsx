@@ -3,9 +3,9 @@
 import Nav from "@/components/Nav";
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import RacePositionMap from "@/components/RacePositionMap";
 import { useUser } from "@clerk/nextjs";
 import { useEffect, useState } from "react";
-import RacePositionMap from "@/components/RacePositionMap";
 
 // ── Types ─────────────────────────────────────────────────────
 
@@ -25,11 +25,14 @@ type Runner = {
   trainer_14: string;
   last_run: number | null;
   age: string;
+  sex: string;
   form: string;
   lbs: string;
   headgear: string;
   rpr: number | null;
   ts: number | null;
+  comment: string;
+  spotlight: string;
 };
 
 type Scenario = {
@@ -68,6 +71,7 @@ type Race = {
   paceDynamic: string;
   scenarios: Scenario[];
   watchPoints: WatchPoint[];
+  skipped?: boolean;
 };
 
 type MeetingData = {
@@ -94,7 +98,6 @@ function isPastMeeting(dateStr: string): boolean {
 }
 
 // ── Colour palette ────────────────────────────────────────────
-// Brightened for legibility on dark green background
 
 const STYLE_COLORS: Record<string, { bg: string; text: string; label: string }> = {
   L: { bg: "rgba(231,76,60,0.18)",   text: "#e74c3c", label: "Lead"      },
@@ -363,63 +366,6 @@ function WatchPoints({ points }: { points: WatchPoint[] }) {
   );
 }
 
-// ── Updated Race type — add to existing type definition ───────
-// Replace the existing Race type with this:
-
-type Race = {
-  id: number;
-  time: string;
-  name: string;
-  grade: string;
-  dist: string;
-  going: string;
-  runners: number;
-  free: boolean;
-  type: string;
-  pace: string;
-  paceConf: number;
-  leads: string[];
-  prominent: string[];
-  midfield: string[];
-  holdup: string[];
-  drawBias?: { favoured: string; magnitude: string } | null;
-  runners_data: Runner[];
-  paceDynamic: string;
-  scenarios: Scenario[];
-  watchPoints: WatchPoint[];
-  skipped?: boolean;
-};
-
-// ── Updated Runner type — add to existing type definition ─────
-// Replace the existing Runner type with this:
-
-type Runner = {
-  name: string;
-  or: number;
-  style_code: string;
-  finish_type: string;
-  dist_code: string;
-  going_flag: string;
-  note: string;
-  draw: number | null;
-  draw_adv: string | null;
-  jockey: string;
-  trainer: string;
-  trainer_rtf: string;
-  trainer_14: string;
-  last_run: number | null;
-  age: string;
-  sex: string;
-  form: string;
-  lbs: string;
-  headgear: string;
-  rpr: number | null;
-  ts: number | null;
-  comment: string;
-  spotlight: string;
-};
-
-
 // ── Race card ─────────────────────────────────────────────────
 
 function RaceCard({ race, hasAccess, meetingDate }: {
@@ -508,7 +454,6 @@ function RaceCard({ race, hasAccess, meetingDate }: {
     <div style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.07)",
       borderRadius: "10px", overflow: "hidden", marginBottom: "28px" }}>
 
-      {/* Header */}
       <div style={{ padding: "16px 20px", background: "rgba(201,168,76,0.07)",
         borderBottom: "1px solid rgba(201,168,76,0.14)",
         display: "flex", justifyContent: "space-between", alignItems: "center",
@@ -552,17 +497,11 @@ function RaceCard({ race, hasAccess, meetingDate }: {
         </div>
       </div>
 
-      {/* Body */}
       <div style={{ padding: "20px" }}>
-
-        {/* Race shape strip */}
         <SectionLabel>Race shape</SectionLabel>
         <PaceStrip race={race} />
-
-        {/* Pace dynamic narrative */}
         {race.paceDynamic && <PaceDynamic text={race.paceDynamic} />}
 
-        {/* Position map */}
         {race.scenarios?.length > 0 && (
           <>
             <SectionLabel>Race position map</SectionLabel>
@@ -578,11 +517,9 @@ function RaceCard({ race, hasAccess, meetingDate }: {
           </>
         )}
 
-        {/* Runner profiles table */}
         <SectionLabel>Runner profiles</SectionLabel>
         <RunnerTable runners={race.runners_data} isFlat={isFlat} />
 
-        {/* Scenarios */}
         {race.scenarios?.length > 0 && (
           <>
             <SectionLabel>Race scenarios</SectionLabel>
@@ -590,14 +527,12 @@ function RaceCard({ race, hasAccess, meetingDate }: {
           </>
         )}
 
-        {/* Watch points */}
         {race.watchPoints?.length > 0 && (
           <>
             <SectionLabel>Watch points</SectionLabel>
             <WatchPoints points={race.watchPoints} />
           </>
         )}
-
       </div>
     </div>
   );
