@@ -1,0 +1,1382 @@
+{
+  "course": "Southwell",
+  "date": "1 April 2026",
+  "slug": "southwell_1-april-2026",
+  "races": [
+    {
+      "id": 1,
+      "time": "2:30",
+      "name": "Book The Bistro At Southwell Racecourse Handicap Chase (GBB Race)",
+      "grade": "HCAP",
+      "dist": "3m½f",
+      "dist_f": 24.5,
+      "going": "Good",
+      "runners": 6,
+      "free": true,
+      "type": "jumps",
+      "pace": "GENUINE_PACE",
+      "paceConf": 65,
+      "leads": [
+        "Noche Negra"
+      ],
+      "prominent": [
+        "Always Busy"
+      ],
+      "midfield": [
+        "Hell Hound",
+        "Queens Wish"
+      ],
+      "holdup": [
+        "Fern Hill",
+        "Le Beau Gosse"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Fern Hill",
+          "or": 110,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Highest-rated but needs significant pace collapse to utilize hold-up style effectively over this trip",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 95.5,
+          "_model_price": "7/2",
+          "_mkt_price": "33/7",
+          "_win_pct": 22.4,
+          "_edge": 18.8,
+          "_action": "CONSIDER"
+        },
+        {
+          "name": "Hell Hound",
+          "or": 102,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Most progressive recent form with two wins, handles good ground well and suits prominent racing",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 91.6,
+          "_model_price": "6/4",
+          "_mkt_price": "5/3",
+          "_win_pct": 42.6,
+          "_edge": 23.0,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Queens Wish",
+          "or": 98,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Consistent placer at this level but lacks a recent win to suggest breakthrough performance",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 73.6,
+          "_model_price": "5/1",
+          "_mkt_price": "4/1",
+          "_win_pct": 16.6,
+          "_edge": 8.9,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Always Busy",
+          "or": 103,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Tactically versatile prominent runner whose inconsistent recent form creates uncertainty",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 64.5,
+          "_model_price": "10/1",
+          "_mkt_price": "23/5",
+          "_win_pct": 8.6,
+          "_edge": -5.2,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Le Beau Gosse",
+          "or": 86,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Lowest-rated hold-up horse who needs everything to fall right including strong pace and luck in running",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 41.9,
+          "_model_price": "12/1",
+          "_mkt_price": null,
+          "_win_pct": 8.0,
+          "_edge": -10.7,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Noche Negra",
+          "or": 106,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Natural leader whose poor recent form suggests vulnerability despite likely uncontested early advantage",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 37.8,
+          "_model_price": "54/1",
+          "_mkt_price": "12/1",
+          "_win_pct": 1.8,
+          "_edge": -34.9,
+          "_action": "AVOID"
+        }
+      ],
+      "paceDynamic": "Noche Negra will likely lead uncontested early, with Hell Hound, Queens Wish, and Always Busy settling just off the pace in a prominent cluster. This sets up a tactical battle from the 2f pole onwards, with hold-up horses Fern Hill and Le Beau Gosse needing the pace to collapse to be competitive over this stamina-sapping trip.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Sustained pace holds up",
+          "prob": 45,
+          "trigger": "If the prominent trio (Hell Hound, Queens Wish, Always Busy) maintain pressure on Noche Negra throughout",
+          "body": "The pace stays honest, preventing a sprint finish and suiting horses with proven stamina reserves. Hell Hound's recent Goodwood form and Queens Wish's consistency at this level give them the edge.",
+          "winners": [
+            "Hell Hound",
+            "Queens Wish"
+          ],
+          "others": [
+            "Always Busy",
+            "Noche Negra"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Leader kicks clear early",
+          "prob": 25,
+          "trigger": "If Noche Negra establishes a commanding lead by halfway with minimal pressure from behind",
+          "body": "The prominent horses fail to engage early, allowing the leader to dictate completely before the hold-up horses can mount a challenge. Noche Negra's front-running style becomes decisive despite moderate recent form.",
+          "winners": [
+            "Noche Negra",
+            "Always Busy"
+          ],
+          "others": [
+            "Hell Hound",
+            "Fern Hill"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Pace collapses completely",
+          "prob": 20,
+          "trigger": "If the early pace becomes pedestrian with all prominent horses content to wait",
+          "body": "The race becomes a sprint finish from 3f out, heavily favoring Fern Hill's proven hold-up tactics. The OR 110 horse gets the perfect setup to unleash a telling late burst over lesser-rated rivals.",
+          "winners": [
+            "Fern Hill",
+            "Hell Hound"
+          ],
+          "others": [
+            "Queens Wish",
+            "Always Busy"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Messy tactical affair",
+          "prob": 10,
+          "trigger": "If multiple horses refuse to commit early, creating stop-start fractions and bunching",
+          "body": "The race fragments with false dawns and multiple lead changes, creating chaos that could suit an opportunistic ride. Always Busy's tactical versatility or Le Beau Gosse finding gaps becomes crucial in the scramble.",
+          "winners": [
+            "Always Busy",
+            "Le Beau Gosse"
+          ],
+          "others": [
+            "Hell Hound",
+            "Queens Wish"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "If Hell Hound travels strongly 4f out after his two recent wins, the consistent form horse becomes very dangerous"
+        },
+        {
+          "severity": "warn",
+          "text": "Watch if Queens Wish gets a soft lead-up position behind Noche Negra, as her stamina reserves could prove telling"
+        },
+        {
+          "severity": "info",
+          "text": "Monitor Always Busy's early positioning - if settling kindly prominent, his tactical flexibility becomes an asset"
+        },
+        {
+          "severity": "warn",
+          "text": "If the pace is genuinely strong early, Fern Hill's hold-up style and superior OR rating make him the primary beneficiary"
+        },
+        {
+          "severity": "info",
+          "text": "Watch for Le Beau Gosse getting a clear run 3f out, as traffic problems could easily end his chances"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "time": "3:00",
+      "name": "Easter Family Fun Day 5th April Novices' Handicap Chase (GBB Race)",
+      "grade": "HCAP",
+      "dist": "2m4½f",
+      "dist_f": 20.5,
+      "going": "Good",
+      "runners": 6,
+      "free": false,
+      "type": "jumps",
+      "pace": "SLOWLY_RUN",
+      "paceConf": 85,
+      "leads": [
+        "Intenzo"
+      ],
+      "prominent": [
+        "Gilbertina"
+      ],
+      "midfield": [
+        "Big Boy Barney",
+        "Boston Boy"
+      ],
+      "holdup": [
+        "Ukantango",
+        "Kayce Dutton"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Ukantango",
+          "or": 109,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Recent form is poor with jumping errors, but retains class advantage if finding old rhythm",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 92.2,
+          "_model_price": "2/1",
+          "_mkt_price": "3/1",
+          "_win_pct": 35.4,
+          "_edge": 16.6,
+          "_action": "CONSIDER"
+        },
+        {
+          "name": "Big Boy Barney",
+          "or": 109,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Won last time out at this trip on good going, hold-up style suits race shape perfectly",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 80.4,
+          "_model_price": "4/1",
+          "_mkt_price": "18/5",
+          "_win_pct": 20.3,
+          "_edge": 4.7,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Kayce Dutton",
+          "or": 109,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Has winning form at longer trips and won recently, though moving from soft to good going",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 79.8,
+          "_model_price": "9/1",
+          "_mkt_price": "17/2",
+          "_win_pct": 9.6,
+          "_edge": 4.1,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Gilbertina",
+          "or": 97,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Lowest rated but consistent, prominent style could see her involved if pace collapses",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 78.0,
+          "_model_price": "6/1",
+          "_mkt_price": "42/5",
+          "_win_pct": 13.9,
+          "_edge": 14.4,
+          "_action": "CONSIDER"
+        },
+        {
+          "name": "Intenzo",
+          "or": 101,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Natural front runner in this field, recent good going form gives him tactical advantage",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 58.4,
+          "_model_price": "5/1",
+          "_mkt_price": "16/5",
+          "_win_pct": 16.5,
+          "_edge": -9.3,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Boston Boy",
+          "or": 101,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Inconsistent recent form but won over 18f last year, needs everything to fall right",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 37.2,
+          "_model_price": "22/1",
+          "_mkt_price": "8/1",
+          "_win_pct": 4.3,
+          "_edge": -30.4,
+          "_action": "AVOID"
+        }
+      ],
+      "paceDynamic": "Intenzo will likely lead or sit prominent early with Gilbertina potentially tracking, creating a moderate pace that should suit the quartet of hold-up horses. With four runners (Ukantango, Big Boy Barney, Kayce Dutton, Boston Boy) all preferring to come from behind, the race sets up for a sustained finish where positioning and jumping accuracy will be crucial.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Intenzo Controls Throughout",
+          "prob": 30,
+          "trigger": "If Intenzo gets an uncontested lead and maintains strong jumping",
+          "body": "Intenzo dictates fractions without pressure and has enough left to resist the late charge. The hold-up horses leave their runs too late on this trip.",
+          "winners": [
+            "Intenzo",
+            "Gilbertina"
+          ],
+          "others": [
+            "Big Boy Barney",
+            "Kayce Dutton"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Big Boy Barney Powers Home",
+          "prob": 25,
+          "trigger": "If the pace becomes steady and Big Boy Barney gets the perfect hold-up trip",
+          "body": "Big Boy Barney's superior recent winning form tells as he times his challenge perfectly in the straight. His good going record gives him the edge over his hold-up rivals.",
+          "winners": [
+            "Big Boy Barney",
+            "Kayce Dutton"
+          ],
+          "others": [
+            "Ukantango",
+            "Intenzo"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Kayce Dutton Stays Strongest",
+          "prob": 25,
+          "trigger": "If the race becomes a true test of stamina over this longer trip",
+          "body": "Kayce Dutton's experience at 24f trips proves decisive as others weaken in the final furlong. His recent Southwell win shows he's in form despite the going switch.",
+          "winners": [
+            "Kayce Dutton",
+            "Ukantango"
+          ],
+          "others": [
+            "Big Boy Barney",
+            "Boston Boy"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Ukantango Times Run Perfectly",
+          "prob": 20,
+          "trigger": "If Ukantango gets luck in running and avoids his recent jumping errors",
+          "body": "Despite recent poor form, Ukantango's class advantage shows when getting a clean passage through. His hold-up style works if he can jump cleanly and find his old rhythm.",
+          "winners": [
+            "Ukantango",
+            "Boston Boy"
+          ],
+          "others": [
+            "Big Boy Barney",
+            "Intenzo"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Ukantango's jumping - recent falls and errors could end his chances early despite class edge"
+        },
+        {
+          "severity": "warn",
+          "text": "Intenzo's stamina reserves - if he goes too fast early he may not last home over this extended trip"
+        },
+        {
+          "severity": "info",
+          "text": "Big Boy Barney's position turning in - needs to be handy enough to mount his challenge"
+        },
+        {
+          "severity": "warn",
+          "text": "How Kayce Dutton handles the going change from recent soft ground runs to today's good surface"
+        },
+        {
+          "severity": "info",
+          "text": "Whether Gilbertina can maintain her prominent position when the pace inevitably quickens"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "time": "3:30",
+      "name": "Download The Racecourse App Raceday Ready Mares' Standard NH Flat Race (Cond'/Am') (Cat 1) (GBB)",
+      "grade": "CLS5",
+      "dist": "2m",
+      "dist_f": 16.0,
+      "going": "Good",
+      "runners": 10,
+      "free": false,
+      "type": "jumps",
+      "pace": "UNKNOWN",
+      "paceConf": 0,
+      "leads": [],
+      "prominent": [],
+      "midfield": [],
+      "holdup": [],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Aunt Gallie",
+          "or": 120,
+          "style_code": "U",
+          "finish_type": "E",
+          "dist_code": "UNKNOWN",
+          "going_flag": "UNKNOWN",
+          "note": "",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 116.7,
+          "_model_price": "20/1",
+          "_mkt_price": "33/2",
+          "_win_pct": 4.9,
+          "_edge": -1.8,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Briery Bluebelle",
+          "or": 120,
+          "style_code": "U",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 116.7,
+          "_model_price": "58/1",
+          "_mkt_price": "50/1",
+          "_win_pct": 1.7,
+          "_edge": -1.8,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Greyse",
+          "or": 120,
+          "style_code": "H",
+          "finish_type": "F",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 116.7,
+          "_model_price": "291/1",
+          "_mkt_price": "250/1",
+          "_win_pct": 0.3,
+          "_edge": -1.8,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Queens Charm",
+          "or": 120,
+          "style_code": "U",
+          "finish_type": "E",
+          "dist_code": "UNKNOWN",
+          "going_flag": "UNKNOWN",
+          "note": "",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 116.7,
+          "_model_price": "6/4",
+          "_mkt_price": "5/4",
+          "_win_pct": 38.2,
+          "_edge": -1.8,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Rose Of Knocknamoe",
+          "or": 120,
+          "style_code": "U",
+          "finish_type": "E",
+          "dist_code": "UNKNOWN",
+          "going_flag": "UNKNOWN",
+          "note": "",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 116.7,
+          "_model_price": "7/1",
+          "_mkt_price": "11/2",
+          "_win_pct": 13.2,
+          "_edge": -1.8,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Rosie's Honour",
+          "or": 120,
+          "style_code": "U",
+          "finish_type": "E",
+          "dist_code": "UNKNOWN",
+          "going_flag": "UNKNOWN",
+          "note": "",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 116.7,
+          "_model_price": "13/1",
+          "_mkt_price": "11/1",
+          "_win_pct": 7.1,
+          "_edge": -1.8,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Frandefo",
+          "or": 120,
+          "style_code": "U",
+          "finish_type": "E",
+          "dist_code": "UNKNOWN",
+          "going_flag": "UNKNOWN",
+          "note": "",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 116.7,
+          "_model_price": "93/1",
+          "_mkt_price": "80/1",
+          "_win_pct": 1.1,
+          "_edge": -1.8,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Just Rizzo",
+          "or": 120,
+          "style_code": "U",
+          "finish_type": "E",
+          "dist_code": "UNKNOWN",
+          "going_flag": "UNKNOWN",
+          "note": "",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 116.7,
+          "_model_price": "93/1",
+          "_mkt_price": "80/1",
+          "_win_pct": 1.1,
+          "_edge": -1.8,
+          "_action": "WATCH"
+        },
+        {
+          "name": "No More Teardrops",
+          "or": 120,
+          "style_code": "U",
+          "finish_type": "E",
+          "dist_code": "UNKNOWN",
+          "going_flag": "UNKNOWN",
+          "note": "",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 116.7,
+          "_model_price": "13/1",
+          "_mkt_price": "11/1",
+          "_win_pct": 7.1,
+          "_edge": -1.8,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Frost Moon",
+          "or": 87,
+          "style_code": "H",
+          "finish_type": "F",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 101.3,
+          "_model_price": "3/1",
+          "_mkt_price": "7/2",
+          "_win_pct": 25.3,
+          "_edge": 15.9,
+          "_action": "WATCH"
+        }
+      ],
+      "paceDynamic": "",
+      "scenarios": [],
+      "watchPoints": [],
+      "skipped": true
+    },
+    {
+      "id": 4,
+      "time": "4:00",
+      "name": "Country And Western Night 25th April Maiden Hurdle (Novices' Championship Hurdle Qualifier) (GBB)",
+      "grade": "NOV",
+      "dist": "2m",
+      "dist_f": 16.0,
+      "going": "Good",
+      "runners": 8,
+      "free": false,
+      "type": "jumps",
+      "pace": "SLOWLY_RUN",
+      "paceConf": 85,
+      "leads": [
+        "Road To Wembley"
+      ],
+      "prominent": [
+        "Paragon"
+      ],
+      "midfield": [
+        "Papillondelumiere",
+        "Lou Des Bordes",
+        "Novelista",
+        "Promethean"
+      ],
+      "holdup": [
+        "Top Coeur",
+        "Corsican Caper"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Papillondelumiere",
+          "or": 120,
+          "style_code": "U",
+          "finish_type": "E",
+          "dist_code": "UNKNOWN",
+          "going_flag": "UNKNOWN",
+          "note": "High rating but unknown pace style and going preference creates significant tactical uncertainty",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 105.1,
+          "_model_price": "66/1",
+          "_mkt_price": "70/1",
+          "_win_pct": 1.5,
+          "_edge": 26.0,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Novelista",
+          "or": 97,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Strong recent heavy ground form but inconsistent record on similar good going conditions",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 88.0,
+          "_model_price": "6/4",
+          "_mkt_price": "3/1",
+          "_win_pct": 39.6,
+          "_edge": 31.8,
+          "_action": "WIN"
+        },
+        {
+          "name": "Road To Wembley",
+          "or": 116,
+          "style_code": "L",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Proven front-runner with excellent good going record who should get uncontested lead",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 77.0,
+          "_model_price": "evens",
+          "_mkt_price": "1/2",
+          "_win_pct": 45.9,
+          "_edge": 1.9,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Top Coeur",
+          "or": 116,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Hold-up horse with limited experience but solid recent form on good ground",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 66.9,
+          "_model_price": "16/1",
+          "_mkt_price": "9/1",
+          "_win_pct": 5.9,
+          "_edge": -8.2,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Lou Des Bordes",
+          "or": 120,
+          "style_code": "U",
+          "finish_type": "F",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Lightly raced with tendency to fade in finish despite high rating",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 58.1,
+          "_model_price": "385/1",
+          "_mkt_price": "200/1",
+          "_win_pct": 0.3,
+          "_edge": -21.1,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Paragon",
+          "or": 93,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Only prominent runner behind the leader, giving him ideal tactical position",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 50.3,
+          "_model_price": "69/1",
+          "_mkt_price": "43/1",
+          "_win_pct": 1.4,
+          "_edge": -1.9,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Promethean",
+          "or": 67,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Lowest-rated but hold-up style suits if pace collapses into sprint finish",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 37.3,
+          "_model_price": "62/1",
+          "_mkt_price": "54/1",
+          "_win_pct": 1.6,
+          "_edge": 11.1,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Corsican Caper",
+          "or": 112,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Consistent hold-up performer but poor record on similar going conditions",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 31.5,
+          "_model_price": "25/1",
+          "_mkt_price": null,
+          "_win_pct": 3.9,
+          "_edge": -39.6,
+          "_action": "WATCH"
+        }
+      ],
+      "paceDynamic": "Road To Wembley will take them along from the front without pressure, setting a sustainable gallop that should suit the strong contingent of hold-up horses. With only Paragon likely to race prominently behind the leader, this creates an ideal scenario for closers like Novelista, Top Coeur, Corsican Caper and Promethean to get into the race late.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Closers Dominate Field",
+          "prob": 45,
+          "trigger": "If Road To Wembley sets steady fractions and the hold-up horses get clear runs",
+          "body": "The lack of early pace pressure allows multiple closers to wind up together turning for home. Novelista and Top Coeur benefit most from the tactical setup with their proven finishing kicks.",
+          "winners": [
+            "Top Coeur",
+            "Novelista"
+          ],
+          "others": [
+            "Corsican Caper",
+            "Papillondelumiere"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Front Runner Kicks Clear",
+          "prob": 25,
+          "trigger": "If Road To Wembley quickens turning for home before the closers organize",
+          "body": "His good going record and front-running style catch the hold-up brigade napping in a slowly-run race. Paragon's prominent position gives him the best chance of the chasers.",
+          "winners": [
+            "Road To Wembley",
+            "Paragon"
+          ],
+          "others": [
+            "Top Coeur",
+            "Lou Des Bordes"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Stamina Test Develops",
+          "prob": 20,
+          "trigger": "If the pace quickens significantly after halfway on this testing track",
+          "body": "The sustained gallop finds out the lightly-raced types and favors proven stayers. Novelista's recent heavy ground form and Corsican Caper's consistency come to the fore.",
+          "winners": [
+            "Novelista",
+            "Corsican Caper"
+          ],
+          "others": [
+            "Road To Wembley",
+            "Top Coeur"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Upset from Outsider",
+          "prob": 10,
+          "trigger": "If the pace collapses completely and becomes a sprint finish",
+          "body": "Promethean's hold-up style works perfectly in a bunched finish where class matters less. His low rating becomes irrelevant in a cavalry charge to the line.",
+          "winners": [
+            "Promethean",
+            "Paragon"
+          ],
+          "others": [
+            "Corsican Caper",
+            "Novelista"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Road To Wembley could steal this if he quickens before the closers get organized"
+        },
+        {
+          "severity": "warn",
+          "text": "Lou Des Bordes has shown a pattern of fading late despite his high rating"
+        },
+        {
+          "severity": "warn",
+          "text": "Novelista's inconsistent good going record is a concern despite recent heavy ground success"
+        },
+        {
+          "severity": "info",
+          "text": "Papillondelumiere's pace style at the start will reveal tactical intentions"
+        },
+        {
+          "severity": "info",
+          "text": "How quickly the field bunches turning for home will determine if closers get clear runs"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "time": "4:30",
+      "name": "Southwell Racecourse Conference And Events Handicap Hurdle",
+      "grade": "HCAP",
+      "dist": "3m½f",
+      "dist_f": 24.5,
+      "going": "Good",
+      "runners": 8,
+      "free": false,
+      "type": "jumps",
+      "pace": "SLOWLY_RUN",
+      "paceConf": 85,
+      "leads": [
+        "Immortal Fame"
+      ],
+      "prominent": [
+        "Passing Pleasure",
+        "Ocean Conquest"
+      ],
+      "midfield": [
+        "Campaign Trail",
+        "Diamond Geezer",
+        "Moon Hunter"
+      ],
+      "holdup": [
+        "El Galactico",
+        "Jubilant"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Immortal Fame",
+          "or": 119,
+          "style_code": "P",
+          "finish_type": "S",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Natural front runner who will set the standard but needs to prove stamina over this extended trip",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 115.9,
+          "_model_price": "6/1",
+          "_mkt_price": "20/1",
+          "_win_pct": 13.6,
+          "_edge": 23.1,
+          "_action": "EW"
+        },
+        {
+          "name": "El Galactico",
+          "or": 120,
+          "style_code": "H",
+          "finish_type": "S",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Highest-rated horse with excellent going record who excels when getting strong pace to aim at",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 101.6,
+          "_model_price": "7/1",
+          "_mkt_price": "9/1",
+          "_win_pct": 12.8,
+          "_edge": 7.8,
+          "_action": "CONSIDER"
+        },
+        {
+          "name": "Jubilant",
+          "or": 118,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Consistent hold-up performer whose course win came from similar position in competitive handicap",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 101.6,
+          "_model_price": "10/1",
+          "_mkt_price": "16/1",
+          "_win_pct": 9.2,
+          "_edge": 9.8,
+          "_action": "EW"
+        },
+        {
+          "name": "Moon Hunter",
+          "or": 106,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Reliable each-way type who finds his level in handicaps and handles good ground well",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 91.8,
+          "_model_price": "20/1",
+          "_mkt_price": "33/1",
+          "_win_pct": 5.1,
+          "_edge": 12.0,
+          "_action": "EW"
+        },
+        {
+          "name": "Passing Pleasure",
+          "or": 115,
+          "style_code": "P",
+          "finish_type": "S",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "In-form prominent racer whose recent soft ground wins suggest he's found his form",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 79.2,
+          "_model_price": "5/2",
+          "_mkt_price": "8/5",
+          "_win_pct": 29.4,
+          "_edge": -9.6,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Ocean Conquest",
+          "or": 113,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Front-running type whose best course form came over shorter trips but has winning form on good ground",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 76.2,
+          "_model_price": "9/1",
+          "_mkt_price": "31/5",
+          "_win_pct": 10.3,
+          "_edge": -10.5,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Campaign Trail",
+          "or": 110,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Versatile prominent runner whose good ground record includes course-and-distance placings",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 69.8,
+          "_model_price": "9/1",
+          "_mkt_price": "6/1",
+          "_win_pct": 9.6,
+          "_edge": -14.0,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Diamond Geezer",
+          "or": 113,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Course winner last time who specializes in hold-up tactics and has strong Southwell record",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 68.2,
+          "_model_price": "9/1",
+          "_mkt_price": "5/1",
+          "_win_pct": 9.9,
+          "_edge": -18.6,
+          "_action": "AVOID"
+        }
+      ],
+      "paceDynamic": "Immortal Fame will lead from the front with Passing Pleasure, Ocean Conquest and Campaign Trail tracking prominently, creating a sustainable gallop over this staying trip. The large contingent of hold-up horses (El Galactico, Jubilant, Moon Hunter, Diamond Geezer) will rely on the pace being strong enough to set up their finishing kicks in the final half-mile.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Sustained gallop suits closers",
+          "prob": 35,
+          "trigger": "If the prominent horses maintain honest pace throughout",
+          "body": "The hold-up brigade get the strong gallop they need with El Galactico and Jubilant best positioned to capitalize. Diamond Geezer's recent Southwell win gives him claims if getting the right setup from the back.",
+          "winners": [
+            "El Galactico",
+            "Jubilant"
+          ],
+          "others": [
+            "Diamond Geezer",
+            "Moon Hunter"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Front runners steal march",
+          "prob": 30,
+          "trigger": "If Immortal Fame and Passing Pleasure dictate with controlled pace",
+          "body": "The leaders get soft sectionals and kick clear before the closers can respond effectively. Ocean Conquest and Campaign Trail are best placed to track and challenge the pace-setters.",
+          "winners": [
+            "Passing Pleasure",
+            "Immortal Fame"
+          ],
+          "others": [
+            "Ocean Conquest",
+            "Campaign Trail"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Pace collapses early",
+          "prob": 20,
+          "trigger": "If the prominent horses go too fast early and tie up",
+          "body": "The race becomes a sprint finish where Diamond Geezer's recent course form and El Galactico's class tell. Jubilant has shown he can quicken when getting the right setup from off the pace.",
+          "winners": [
+            "Diamond Geezer",
+            "El Galactico"
+          ],
+          "others": [
+            "Jubilant",
+            "Moon Hunter"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Mid-race battle fragments field",
+          "prob": 15,
+          "trigger": "If Ocean Conquest and Campaign Trail engage the leaders turning for home",
+          "body": "The early pace battle leaves gaps for the hold-up horses but also sets up a war of attrition. Jubilant's stamina and Moon Hunter's consistency could prove decisive in a messy finish.",
+          "winners": [
+            "Jubilant",
+            "Moon Hunter"
+          ],
+          "others": [
+            "Campaign Trail",
+            "Ocean Conquest"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Watch if Immortal Fame gets an uncontested lead as his stamina over this trip remains questionable"
+        },
+        {
+          "severity": "warn",
+          "text": "Monitor how quickly El Galactico and Jubilant can get into contention from their hold-up positions"
+        },
+        {
+          "severity": "info",
+          "text": "Check if Passing Pleasure can maintain his recent soft ground form on this better surface"
+        },
+        {
+          "severity": "warn",
+          "text": "Observe whether the pace is strong enough early to set up Diamond Geezer's preferred finishing kick"
+        },
+        {
+          "severity": "info",
+          "text": "Note if Ocean Conquest settles better than usual rather than forcing the pace from the start"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "time": "5:02",
+      "name": "Join Southwell Golf Club Mares' Handicap Hurdle",
+      "grade": "HCAP",
+      "dist": "3m½f",
+      "dist_f": 24.5,
+      "going": "Good",
+      "runners": 7,
+      "free": false,
+      "type": "jumps",
+      "pace": "CONTESTED",
+      "paceConf": 50,
+      "leads": [
+        "Briery Butterfly"
+      ],
+      "prominent": [
+        "Shorten Sassy"
+      ],
+      "midfield": [
+        "Mya Du Clos",
+        "Venturevango",
+        "Belladinotte"
+      ],
+      "holdup": [
+        "Rosa Diaz",
+        "Princesse Milania"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Briery Butterfly",
+          "or": 95,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "One of only two forward runners, recent prominent form gives her tactical advantage",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 84.3,
+          "_model_price": "6/4",
+          "_mkt_price": "10/3",
+          "_win_pct": 41.2,
+          "_edge": 29.8,
+          "_action": "WIN"
+        },
+        {
+          "name": "Rosa Diaz",
+          "or": 97,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Highest-rated hold-up horse with consistent recent form, suits patient tactics",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 58.7,
+          "_model_price": "80/1",
+          "_mkt_price": "40/1",
+          "_win_pct": 1.2,
+          "_edge": 2.2,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Princesse Milania",
+          "or": 94,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Strong recent hurdles form including wins, proven at this trip length",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 58.1,
+          "_model_price": "6/1",
+          "_mkt_price": "17/6",
+          "_win_pct": 14.9,
+          "_edge": 4.5,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Belladinotte",
+          "or": 81,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Best going record in field with solid course form, each-way appeal despite rating",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 57.0,
+          "_model_price": "9/2",
+          "_mkt_price": "4/1",
+          "_win_pct": 19.0,
+          "_edge": 16.5,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Shorten Sassy",
+          "or": 79,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Only other pace angle, recent form shows she handles this distance well",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 56.0,
+          "_model_price": "9/2",
+          "_mkt_price": "9/2",
+          "_win_pct": 18.1,
+          "_edge": 17.5,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Mya Du Clos",
+          "or": 89,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Stepping up in trip from 16f efforts, hold-up style suits small field dynamics",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 41.9,
+          "_model_price": "20/1",
+          "_mkt_price": "39/5",
+          "_win_pct": 4.8,
+          "_edge": -6.6,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Venturevango",
+          "or": 86,
+          "style_code": "H",
+          "finish_type": "F",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Consistent fade pattern in recent runs limits finishing threat despite rating",
+          "draw": null,
+          "draw_adv": null,
+          "_projected": 0.0,
+          "_model_price": "138/1",
+          "_mkt_price": "40/1",
+          "_win_pct": 0.7,
+          "_edge": -63.9,
+          "_action": "AVOID"
+        }
+      ],
+      "paceDynamic": "Briery Butterfly and Shorten Sassy will likely set a measured pace early with only two forward-running types in this small field. The race sets up perfectly for the five hold-up horses (Rosa Diaz, Princesse Milania, Belladinotte, Mya Du Clos, Venturevango) to get their preferred patient tactics, creating a tactical affair with plenty left for the finish.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Patient Hold-Up Winner",
+          "prob": 40,
+          "trigger": "If the pace is truly steady and the race becomes a sprint from 2f out",
+          "body": "Rosa Diaz and Princesse Milania have the class edge and finishing kick to capitalize. The patient tactics suit their proven ability to find late gears when the race opens up.",
+          "winners": [
+            "Rosa Diaz",
+            "Princesse Milania"
+          ],
+          "others": [
+            "Belladinotte",
+            "Briery Butterfly"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Front Runner Capitalizes",
+          "prob": 25,
+          "trigger": "If Briery Butterfly gets easy fractions and kicks clear 3f out",
+          "body": "With limited pace pressure, she can dictate terms and use her prominent style effectively. Shorten Sassy could also benefit from tracking the leader in this scenario.",
+          "winners": [
+            "Briery Butterfly",
+            "Shorten Sassy"
+          ],
+          "others": [
+            "Rosa Diaz",
+            "Belladinotte"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Belladinotte Value Strike",
+          "prob": 20,
+          "trigger": "If the pace quickens enough to stretch the field but not collapse it completely",
+          "body": "Her superior going form (1W 4P in 13 similar going starts) and hold-up style could exploit a moderate pace scenario. The tactical nature plays to her patient running style despite lower rating.",
+          "winners": [
+            "Belladinotte",
+            "Mya Du Clos"
+          ],
+          "others": [
+            "Princesse Milania",
+            "Rosa Diaz"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Pace Collapses Completely",
+          "prob": 15,
+          "trigger": "If both Briery Butterfly and Shorten Sassy fade dramatically from 3f out",
+          "body": "The race becomes a messy sprint where any of the hold-up horses could prevail. Venturevango's known finishing weakness becomes less relevant in a truly-run race.",
+          "winners": [
+            "Mya Du Clos",
+            "Venturevango"
+          ],
+          "others": [
+            "Rosa Diaz",
+            "Belladinotte"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Venturevango repeatedly fades in the final stages based on recent form pattern"
+        },
+        {
+          "severity": "warn",
+          "text": "Briery Butterfly needs to establish early position without being pressured by Shorten Sassy"
+        },
+        {
+          "severity": "info",
+          "text": "Rosa Diaz requires clear room in final 2f given her hold-up style in small field"
+        },
+        {
+          "severity": "warn",
+          "text": "Mya Du Clos stepping up significantly in trip from recent 16f efforts"
+        },
+        {
+          "severity": "info",
+          "text": "Field composition heavily favors patient tactics with limited early pace"
+        }
+      ]
+    }
+  ]
+}
