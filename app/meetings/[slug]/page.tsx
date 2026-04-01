@@ -114,10 +114,10 @@ const SCENARIO_COLORS = [
   { bg: "rgba(231,76,60,0.07)",   letter: { bg: "rgba(231,76,60,0.2)",   color: "#e74c3c" }, bar: "#e74c3c" },
 ];
 
-const WATCH_COLORS: Record<string, string> = {
-  danger: "#e74c3c",
-  warn:   "#f39c12",
-  info:   "#3498db",
+const WATCH_SEVERITY: Record<string, { bg: string; border: string; dot: string; label: string }> = {
+  danger: { bg: "rgba(231,76,60,0.08)",   border: "rgba(231,76,60,0.35)",   dot: "#e74c3c", label: "KEY"   },
+  warn:   { bg: "rgba(243,156,18,0.08)",  border: "rgba(243,156,18,0.35)",  dot: "#f39c12", label: "WATCH" },
+  info:   { bg: "rgba(52,152,219,0.06)",  border: "rgba(52,152,219,0.2)",   dot: "#3498db", label: "NOTE"  },
 };
 
 const LANE_STYLES = [
@@ -351,17 +351,43 @@ function ScenarioCards({ scenarios }: { scenarios: Scenario[] }) {
 function WatchPoints({ points }: { points: WatchPoint[] }) {
   if (!points.length) return null;
   return (
-    <div style={{ display: "flex", flexDirection: "column", gap: "7px" }}>
-      {points.map((wp, i) => (
-        <div key={i} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-          <div style={{ width: "6px", height: "6px", borderRadius: "50%", flexShrink: 0,
-            background: WATCH_COLORS[wp.severity] || WATCH_COLORS.info, marginTop: "5px" }} />
-          <div style={{ fontSize: "0.72rem", color: "rgba(245,240,232,0.6)", lineHeight: "1.6" }}
-            dangerouslySetInnerHTML={{ __html: wp.text.replace(
-              /\*\*(.+?)\*\*/g, '<strong style="color:var(--cream);font-weight:500">$1</strong>'
-            )}} />
-        </div>
-      ))}
+    <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+      {points.map((wp, i) => {
+        const sev = WATCH_SEVERITY[wp.severity] || WATCH_SEVERITY.info;
+        return (
+          <div key={i} style={{
+            display: "flex", gap: "12px", alignItems: "flex-start",
+            background: sev.bg,
+            border: `1px solid ${sev.border}`,
+            borderRadius: "7px",
+            padding: "10px 14px",
+          }}>
+            <div style={{ flexShrink: 0, marginTop: "1px" }}>
+              <span style={{
+                fontFamily: "'DM Mono',monospace",
+                fontSize: "0.55rem",
+                fontWeight: 600,
+                letterSpacing: "0.08em",
+                color: sev.dot,
+                background: `${sev.dot}22`,
+                border: `1px solid ${sev.dot}55`,
+                borderRadius: "3px",
+                padding: "1px 5px",
+              }}>
+                {sev.label}
+              </span>
+            </div>
+            <div
+              style={{ fontSize: "0.75rem", color: "rgba(245,240,232,0.75)",
+                lineHeight: "1.65", flex: 1 }}
+              dangerouslySetInnerHTML={{ __html: wp.text.replace(
+                /\*\*(.+?)\*\*/g,
+                '<strong style="color:var(--cream);font-weight:600">$1</strong>'
+              )}}
+            />
+          </div>
+        );
+      })}
     </div>
   );
 }
@@ -376,7 +402,7 @@ function RaceCard({ race, hasAccess, meetingDate }: {
   const isFlat   = race.type === "flat";
   const historic = isPastMeeting(meetingDate);
 
-  // Skipped race — no pace data available
+  // Skipped race
   if (race.skipped) {
     return (
       <div style={{
@@ -454,6 +480,7 @@ function RaceCard({ race, hasAccess, meetingDate }: {
     <div style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.07)",
       borderRadius: "10px", overflow: "hidden", marginBottom: "28px" }}>
 
+      {/* Header */}
       <div style={{ padding: "16px 20px", background: "rgba(201,168,76,0.07)",
         borderBottom: "1px solid rgba(201,168,76,0.14)",
         display: "flex", justifyContent: "space-between", alignItems: "center",
@@ -497,11 +524,29 @@ function RaceCard({ race, hasAccess, meetingDate }: {
         </div>
       </div>
 
+      {/* Body — ordered for analytical flow */}
       <div style={{ padding: "20px" }}>
+
+        {/* 1. Race shape — who's where at the start */}
         <SectionLabel>Race shape</SectionLabel>
         <PaceStrip race={race} />
+
+        {/* 2. Pace dynamic — what the shape means */}
         {race.paceDynamic && <PaceDynamic text={race.paceDynamic} />}
 
+        {/* 3. Runner profiles — individual data */}
+        <SectionLabel>Runner profiles</SectionLabel>
+        <RunnerTable runners={race.runners_data} isFlat={isFlat} />
+
+        {/* 4. Scenarios — the four outcomes */}
+        {race.scenarios?.length > 0 && (
+          <>
+            <SectionLabel>Race scenarios</SectionLabel>
+            <ScenarioCards scenarios={race.scenarios} />
+          </>
+        )}
+
+        {/* 5. Position map — visual of dominant scenario */}
         {race.scenarios?.length > 0 && (
           <>
             <SectionLabel>Race position map</SectionLabel>
@@ -517,22 +562,14 @@ function RaceCard({ race, hasAccess, meetingDate }: {
           </>
         )}
 
-        <SectionLabel>Runner profiles</SectionLabel>
-        <RunnerTable runners={race.runners_data} isFlat={isFlat} />
-
-        {race.scenarios?.length > 0 && (
-          <>
-            <SectionLabel>Race scenarios</SectionLabel>
-            <ScenarioCards scenarios={race.scenarios} />
-          </>
-        )}
-
+        {/* 6. Watch points — what to monitor in-running */}
         {race.watchPoints?.length > 0 && (
           <>
             <SectionLabel>Watch points</SectionLabel>
             <WatchPoints points={race.watchPoints} />
           </>
         )}
+
       </div>
     </div>
   );
