@@ -363,6 +363,63 @@ function WatchPoints({ points }: { points: WatchPoint[] }) {
   );
 }
 
+// ── Updated Race type — add to existing type definition ───────
+// Replace the existing Race type with this:
+
+type Race = {
+  id: number;
+  time: string;
+  name: string;
+  grade: string;
+  dist: string;
+  going: string;
+  runners: number;
+  free: boolean;
+  type: string;
+  pace: string;
+  paceConf: number;
+  leads: string[];
+  prominent: string[];
+  midfield: string[];
+  holdup: string[];
+  drawBias?: { favoured: string; magnitude: string } | null;
+  runners_data: Runner[];
+  paceDynamic: string;
+  scenarios: Scenario[];
+  watchPoints: WatchPoint[];
+  skipped?: boolean;
+};
+
+// ── Updated Runner type — add to existing type definition ─────
+// Replace the existing Runner type with this:
+
+type Runner = {
+  name: string;
+  or: number;
+  style_code: string;
+  finish_type: string;
+  dist_code: string;
+  going_flag: string;
+  note: string;
+  draw: number | null;
+  draw_adv: string | null;
+  jockey: string;
+  trainer: string;
+  trainer_rtf: string;
+  trainer_14: string;
+  last_run: number | null;
+  age: string;
+  sex: string;
+  form: string;
+  lbs: string;
+  headgear: string;
+  rpr: number | null;
+  ts: number | null;
+  comment: string;
+  spotlight: string;
+};
+
+
 // ── Race card ─────────────────────────────────────────────────
 
 function RaceCard({ race, hasAccess, meetingDate }: {
@@ -373,6 +430,39 @@ function RaceCard({ race, hasAccess, meetingDate }: {
   const isFlat   = race.type === "flat";
   const historic = isPastMeeting(meetingDate);
 
+  // Skipped race — no pace data available
+  if (race.skipped) {
+    return (
+      <div style={{
+        background: "rgba(255,255,255,0.02)",
+        border: "1px solid rgba(255,255,255,0.07)",
+        borderRadius: "10px", marginBottom: "16px", padding: "20px",
+      }}>
+        <div style={{
+          fontFamily: "'Bebas Neue',sans-serif",
+          fontSize: "clamp(1rem,3vw,1.3rem)",
+          color: "var(--gold)", marginBottom: "6px",
+        }}>
+          {race.time} — {race.name}
+        </div>
+        <div style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.6rem",
+          color: "rgba(245,240,232,0.4)", marginBottom: "14px" }}>
+          {race.dist} · {race.going} · {race.grade} · {race.runners} runners
+        </div>
+        <div style={{
+          background: "rgba(255,255,255,0.03)",
+          border: "1px solid rgba(255,255,255,0.07)",
+          borderRadius: "7px", padding: "16px 18px",
+          fontFamily: "'DM Mono',monospace", fontSize: "0.68rem",
+          color: "rgba(245,240,232,0.35)", lineHeight: "1.7",
+        }}>
+          Pace map not available — insufficient prior race data for this field.
+        </div>
+      </div>
+    );
+  }
+
+  // Locked race
   if (!race.free && !hasAccess && !historic) {
     return (
       <div style={{
@@ -406,17 +496,19 @@ function RaceCard({ race, hasAccess, meetingDate }: {
             Unlock all races with a Day Pass (£2.99) or Monthly (£9.99/mo)
           </p>
           <Link href="/pricing" className="btn btn-gold">
-            Unlock Full Card →
+            Unlock Full Card
           </Link>
         </div>
       </div>
     );
   }
 
+  // Full race card
   return (
     <div style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.07)",
       borderRadius: "10px", overflow: "hidden", marginBottom: "28px" }}>
 
+      {/* Header */}
       <div style={{ padding: "16px 20px", background: "rgba(201,168,76,0.07)",
         borderBottom: "1px solid rgba(201,168,76,0.14)",
         display: "flex", justifyContent: "space-between", alignItems: "center",
@@ -460,24 +552,52 @@ function RaceCard({ race, hasAccess, meetingDate }: {
         </div>
       </div>
 
+      {/* Body */}
       <div style={{ padding: "20px" }}>
+
+        {/* Race shape strip */}
         <SectionLabel>Race shape</SectionLabel>
         <PaceStrip race={race} />
+
+        {/* Pace dynamic narrative */}
         {race.paceDynamic && <PaceDynamic text={race.paceDynamic} />}
+
+        {/* Position map */}
+        {race.scenarios?.length > 0 && (
+          <>
+            <SectionLabel>Race position map</SectionLabel>
+            <RacePositionMap
+              leads={race.leads}
+              prominent={race.prominent}
+              midfield={race.midfield}
+              holdup={race.holdup}
+              runners_data={race.runners_data}
+              scenarios={race.scenarios}
+              paceDynamic={race.paceDynamic}
+            />
+          </>
+        )}
+
+        {/* Runner profiles table */}
         <SectionLabel>Runner profiles</SectionLabel>
         <RunnerTable runners={race.runners_data} isFlat={isFlat} />
+
+        {/* Scenarios */}
         {race.scenarios?.length > 0 && (
           <>
             <SectionLabel>Race scenarios</SectionLabel>
             <ScenarioCards scenarios={race.scenarios} />
           </>
         )}
+
+        {/* Watch points */}
         {race.watchPoints?.length > 0 && (
           <>
             <SectionLabel>Watch points</SectionLabel>
             <WatchPoints points={race.watchPoints} />
           </>
         )}
+
       </div>
     </div>
   );
