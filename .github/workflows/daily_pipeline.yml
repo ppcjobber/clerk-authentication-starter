@@ -3,8 +3,9 @@ name: PaceMap Daily Pipeline
 on:
   schedule:
     # 6:30pm UK time (BST = UTC+1, so 17:30 UTC in summer)
-    # During GMT (winter) this would be 18:30 UTC — adjust as needed
     - cron: '30 17 * * *'
+    # 12:05am UK time (23:05 UTC in BST)
+    - cron: '5 23 * * *'
   workflow_dispatch:
     # Also allows manual trigger from GitHub Actions tab
 
