@@ -30,14 +30,14 @@ type RacePositionMapProps = {
   paceDynamic: string;
 };
 
-const STYLE_COLORS: Record<string, { stroke: string; fill: string; text: string }> = {
-  lead:     { stroke: "#e74c3c", fill: "#e74c3c", text: "#922b21" },
-  prominent:{ stroke: "#f39c12", fill: "#f39c12", text: "#935116" },
-  midfield: { stroke: "#3498db", fill: "#3498db", text: "#1a5276" },
-  holdup:   { stroke: "#a569bd", fill: "#a569bd", text: "#6c3483" },
+const STYLE_COLORS: Record<string, { stroke: string; fill: string }> = {
+  lead:      { stroke: "#e74c3c", fill: "#e74c3c" },
+  prominent: { stroke: "#f39c12", fill: "#f39c12" },
+  midfield:  { stroke: "#3498db", fill: "#3498db" },
+  holdup:    { stroke: "#a569bd", fill: "#a569bd" },
 };
 
-const SCENARIO_COLORS = ["#2980b9","#8e44ad","#27ae60","#c0392b"];
+const SCENARIO_COLORS = ["#2980b9", "#8e44ad", "#27ae60", "#c0392b"];
 
 function truncate(str: string, n: number) {
   return str.length > n ? str.slice(0, n - 1) + "…" : str;
@@ -45,10 +45,9 @@ function truncate(str: string, n: number) {
 
 export default function RacePositionMap({
   leads, prominent, midfield, holdup,
-  runners_data, scenarios, paceDynamic,
+  runners_data, scenarios,
 }: RacePositionMapProps) {
 
-  // Build ordered list of all horses with their group
   const allHorses = useMemo(() => {
     const list: { name: string; group: string; color: typeof STYLE_COLORS[string] }[] = [];
     leads.forEach(n =>     list.push({ name: n, group: "lead",      color: STYLE_COLORS.lead }));
@@ -59,71 +58,103 @@ export default function RacePositionMap({
   }, [leads, prominent, midfield, holdup]);
 
   const dominantScenario = scenarios[0] || null;
-
-  // Compute finish positions based on dominant scenario
-  // Winners move up, others stay or drop
-  const finishPositions = useMemo(() => {
-    if (!dominantScenario) return allHorses.map((h, i) => i);
-    const winnerNames = dominantScenario.winners;
-    const finishOrder: string[] = [];
-    // Push winners first
-    winnerNames.forEach(w => {
-      if (allHorses.find(h => h.name === w)) finishOrder.push(w);
-    });
-    // Then rest in original order
-    allHorses.forEach(h => {
-      if (!finishOrder.includes(h.name)) finishOrder.push(h.name);
-    });
-    return allHorses.map(h => finishOrder.indexOf(h.name));
-  }, [allHorses, dominantScenario]);
-
   const n = allHorses.length;
+
+  // Build complete finish order from scenario winners + others + rest
+  const finishOrder = useMemo(() => {
+    if (!dominantScenario || n === 0) return allHorses.map((_, i) => i);
+
+    const ordered: string[] = [];
+    dominantScenario.winners.forEach(w => {
+      if (allHorses.find(h => h.name === w)) ordered.push(w);
+    });
+    dominantScenario.others.forEach(o => {
+      if (allHorses.find(h => h.name === o) && !ordered.includes(o)) ordered.push(o);
+    });
+    allHorses.forEach(h => {
+      if (!ordered.includes(h.name)) ordered.push(h.name);
+    });
+
+    return allHorses.map(h => ordered.indexOf(h.name));
+  }, [allHorses, dominantScenario, n]);
+
   if (n === 0) return null;
 
-  // SVG dimensions
-  const W = 660;
-  const TOP = 50;
-  const BOTTOM = 40;
-  const rowH = Math.min(52, Math.max(36, Math.floor((480 - TOP - BOTTOM) / n)));
-  const H = TOP + n * rowH + BOTTOM + 80; // extra for scenario bar
+  // Layout constants
+  const W        = 660;
+  const X_LABEL  = 125;
+  const X_START  = 140;
+  const X_MID    = 300;
+  const X_3OUT   = 460;
+  const X_FINISH = 580;
+  const X_RLABEL = 595;
+  const TOP      = 44;
+  const rowH     = Math.min(48, Math.max(32, Math.floor(380 / n)));
+  const trackH   = n * rowH;
+  const BAR_Y    = TOP + trackH + 20;
+  const BAR_H    = 38;
+  const svgH     = BAR_Y + BAR_H + 16;
 
-  // X positions for each phase
-  const X_START  = 130;
-  const X_MID    = 320;
-  const X_3OUT   = 490;
-  const X_FINISH = 600;
+  const startY  = (i: number) => TOP + i * rowH + rowH / 2;
+  const finishY = (i: number) => TOP + finishOrder[i] * rowH + rowH / 2;
 
-  // Y position for horse i at start
-  const startY = (i: number) => TOP + i * rowH + rowH / 2;
+  // Key function: realistic mid and 3-out positions per running style
+  const getPathY = (i: number): { mid: number; threeOut: number } => {
+    const sy     = startY(i);
+    const fy     = finishY(i);
+    const group  = allHorses[i].group;
+    const isWin  = dominantScenario?.winners.includes(allHorses[i].name) ?? false;
+    const moveDist = fy - sy; // negative = moving up (finishing higher), positive = dropping back
 
-  // Y position for horse i at finish (based on finishPositions)
-  const finishY = (i: number) => {
-    const finishRank = finishPositions[i];
-    return TOP + finishRank * rowH + rowH / 2;
+    switch (group) {
+      case "lead":
+        // Leaders stay on the pace throughout — only shift happens at 3 out
+        // If fading: stays flat until 3 out then drops sharply
+        // If holding: barely moves all race
+        return {
+          mid:      sy,                                    // locked on lead mid-race
+          threeOut: sy + moveDist * 0.50,                 // challenge point
+        };
+
+      case "prominent":
+        // Prominent horses track close to leader, begin pressing from mid-race
+        return {
+          mid:      sy + moveDist * 0.35,                 // tracking move building
+          threeOut: sy + moveDist * 0.75,                 // pressing hard
+        };
+
+      case "midfield":
+        // Midfield hold steady then make their move from 3 out
+        return {
+          mid:      sy + moveDist * 0.12,                 // barely moving
+          threeOut: sy + moveDist * 0.62,                 // starting to motor
+        };
+
+      case "holdup":
+        if (isWin) {
+          // Winning hold-up: deliberate hold, sweeping run from 3 out
+          return {
+            mid:      sy + rowH * 0.12,                  // anchored at rear
+            threeOut: sy + moveDist * 0.52,              // big move launching
+          };
+        } else {
+          // Losing hold-up: stays back, never gets competitive
+          return {
+            mid:      sy + rowH * 0.05,                  // barely moves
+            threeOut: sy + moveDist * 0.30,              // half-hearted move
+          };
+        }
+
+      default:
+        return {
+          mid:      sy + moveDist * 0.20,
+          threeOut: sy + moveDist * 0.60,
+        };
+    }
   };
 
-  // Mid and 3out Y — interpolate with some realistic drift
-  const midY = (i: number) => {
-    const sy = startY(i);
-    const fy = finishY(i);
-    // Hold-up horses stay back mid-race, make move at 3out
-    if (allHorses[i].group === "holdup") return sy + rowH * 0.1;
-    return sy + (fy - sy) * 0.15;
-  };
-
-  const threeOutY = (i: number) => {
-    const sy = startY(i);
-    const fy = finishY(i);
-    if (allHorses[i].group === "holdup") return sy + (fy - sy) * 0.6;
-    return sy + (fy - sy) * 0.7;
-  };
-
-  // Is this horse in the dominant scenario winners?
-  const isWinner = (name: string) =>
-    dominantScenario?.winners.includes(name) ?? false;
-
-  const scenarioBarH = 44;
-  const svgH = H + scenarioBarH;
+  const isWinner = (name: string) => dominantScenario?.winners.includes(name) ?? false;
+  const isOther  = (name: string) => dominantScenario?.others.includes(name) ?? false;
 
   return (
     <div style={{ marginBottom: "20px" }}>
@@ -133,42 +164,24 @@ export default function RacePositionMap({
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>
-          <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5"
-            markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+          <marker id="rpmArr" viewBox="0 0 10 10" refX="8" refY="5"
+            markerWidth="4" markerHeight="4" orient="auto-start-reverse">
             <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke"
               strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
           </marker>
         </defs>
 
-        {/* Background row bands */}
-        {allHorses.map((h, i) => (
-          <rect key={i}
-            x={X_START - 10} y={TOP + i * rowH}
-            width={X_FINISH - X_START + 20} height={rowH}
-            fill={h.color.fill} fillOpacity={0.04} rx={0}
-          />
-        ))}
-
-        {/* Gridlines */}
-        {allHorses.map((_, i) => (
-          <line key={i}
-            x1={X_START - 10} y1={TOP + i * rowH}
-            x2={X_FINISH + 10} y2={TOP + i * rowH}
-            stroke="rgba(255,255,255,0.06)" strokeWidth={0.5}
-          />
-        ))}
-
-        {/* Phase column headers */}
-        {[
-          { x: X_START,  label: "START" },
+        {/* Phase headers */}
+        {([
+          { x: X_START,  label: "START"    },
           { x: X_MID,    label: "MID-RACE" },
-          { x: X_3OUT,   label: "3 OUT" },
-          { x: X_FINISH, label: "FINISH" },
-        ].map(({ x, label }) => (
-          <text key={label} x={x} y={TOP - 10}
-            textAnchor="middle" fontSize={9}
-            fill="rgba(245,240,232,0.35)"
-            fontFamily="'DM Mono',monospace" letterSpacing={1}>
+          { x: X_3OUT,   label: "3 OUT"    },
+          { x: X_FINISH, label: "FINISH"   },
+        ] as { x: number; label: string }[]).map(({ x, label }) => (
+          <text key={label} x={x} y={TOP - 12}
+            textAnchor="middle" fontSize={8}
+            fill="rgba(245,240,232,0.3)"
+            fontFamily="'DM Mono',monospace" letterSpacing="0.08em">
             {label}
           </text>
         ))}
@@ -176,8 +189,8 @@ export default function RacePositionMap({
         {/* Phase dividers */}
         {[X_MID, X_3OUT].map(x => (
           <line key={x}
-            x1={x} y1={TOP - 4} x2={x} y2={TOP + n * rowH + 4}
-            stroke="rgba(255,255,255,0.08)" strokeWidth={0.5}
+            x1={x} y1={TOP - 4} x2={x} y2={TOP + trackH + 4}
+            stroke="rgba(255,255,255,0.07)" strokeWidth={0.5}
             strokeDasharray="3,4"
           />
         ))}
@@ -185,106 +198,139 @@ export default function RacePositionMap({
         {/* Finish line */}
         <line
           x1={X_FINISH} y1={TOP - 4}
-          x2={X_FINISH} y2={TOP + n * rowH + 4}
-          stroke="#27ae60" strokeWidth={1.5}
+          x2={X_FINISH} y2={TOP + trackH + 4}
+          stroke="rgba(46,204,113,0.6)" strokeWidth={1.5}
         />
+
+        {/* Background row bands */}
+        {allHorses.map((h, i) => (
+          <rect key={i}
+            x={X_START - 8} y={TOP + i * rowH}
+            width={X_FINISH - X_START + 16} height={rowH}
+            fill={h.color.fill} fillOpacity={0.03}
+          />
+        ))}
 
         {/* Horse name labels — left side */}
         {allHorses.map((h, i) => {
+          const winner = isWinner(h.name);
+          const other  = isOther(h.name);
           const runner = runners_data.find(r => r.name === h.name);
-          const extras = [
-            runner?.rpr   ? `RPR${runner.rpr}` : null,
-            runner?.headgear ? runner.headgear : null,
-            runner?.last_run != null ? `${runner.last_run}d` : null,
-          ].filter(Boolean).join(" · ");
+          const rpr    = runner?.rpr;
+          const hg     = runner?.headgear;
+          const hasExtra = !!(hg || rpr);
 
           return (
-            <g key={i}>
-              <text x={X_START - 14} y={startY(i) - 3}
-                textAnchor="end" fontSize={9.5}
-                fill={isWinner(h.name) ? h.color.fill : "rgba(245,240,232,0.7)"}
+            <g key={`label-${i}`}>
+              <text
+                x={X_LABEL} y={startY(i) + (hasExtra ? -4 : 3)}
+                textAnchor="end"
+                fontSize={winner ? 9.5 : 8.5}
+                fill={
+                  winner ? h.color.fill :
+                  other  ? "rgba(245,240,232,0.65)" :
+                           "rgba(245,240,232,0.4)"
+                }
                 fontFamily="'DM Mono',monospace"
-                fontWeight={isWinner(h.name) ? "600" : "400"}>
-                {truncate(h.name, 18)}
+                fontWeight={winner ? "600" : "400"}>
+                {truncate(h.name, 17)}
               </text>
-              {extras && (
-                <text x={X_START - 14} y={startY(i) + 8}
-                  textAnchor="end" fontSize={7.5}
-                  fill={h.color.text} fillOpacity={0.7}
+              {hasExtra && (
+                <text
+                  x={X_LABEL} y={startY(i) + 8}
+                  textAnchor="end" fontSize={7}
+                  fill={h.color.fill} fillOpacity={0.55}
                   fontFamily="'DM Mono',monospace">
-                  {extras}
+                  {[hg, rpr ? `RPR${rpr}` : null].filter(Boolean).join(" · ")}
                 </text>
               )}
             </g>
           );
         })}
 
-        {/* Horse paths */}
-        {allHorses.map((h, i) => {
-          const sy = startY(i);
-          const my = midY(i);
-          const ty = threeOutY(i);
-          const fy = finishY(i);
+        {/* Horse paths — drawn back-to-front so winners render on top */}
+        {[...allHorses].reverse().map((h, ri) => {
+          const i      = n - 1 - ri;
+          const sy     = startY(i);
+          const fy     = finishY(i);
+          const { mid: my, threeOut: ty } = getPathY(i);
           const winner = isWinner(h.name);
-          const isHoldup = h.group === "holdup";
-          const isMid = h.group === "midfield";
+          const other  = isOther(h.name);
+          const isMid  = h.group === "midfield";
+
+          const opacity   = winner ? 1 : other ? 0.65 : 0.30;
+          const sw        = winner ? 2.2 : other ? 1.5 : 1.0;
+          const dashArray = isMid && !winner ? "4,3" : "none";
 
           return (
-            <g key={i}>
+            <g key={`path-${i}`}>
               <polyline
-                points={`${X_START},${sy} ${X_MID},${my} ${X_3OUT},${ty} ${X_FINISH - 8},${fy}`}
+                points={`${X_START},${sy} ${X_MID},${my} ${X_3OUT},${ty} ${X_FINISH},${fy}`}
                 fill="none"
                 stroke={h.color.stroke}
-                strokeWidth={winner ? 2.5 : isMid || isHoldup ? 1.5 : 1.8}
-                strokeDasharray={isMid ? "4,4" : isHoldup ? "none" : "none"}
-                strokeOpacity={winner ? 1 : 0.55}
-                markerEnd="url(#arr)"
+                strokeWidth={sw}
+                strokeOpacity={opacity}
+                strokeDasharray={dashArray}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                markerEnd="url(#rpmArr)"
               />
-              {/* Start dot */}
-              <circle cx={X_START} cy={sy} r={winner ? 5 : 3.5}
-                fill={h.color.fill} fillOpacity={winner ? 1 : 0.6}/>
+              <circle
+                cx={X_START} cy={sy}
+                r={winner ? 5 : other ? 3.5 : 2.5}
+                fill={h.color.fill}
+                fillOpacity={winner ? 1 : other ? 0.65 : 0.35}
+              />
             </g>
           );
         })}
 
         {/* Finish position labels — right side */}
         {allHorses.map((h, i) => {
-          const fy = finishY(i);
+          const fy     = finishY(i);
+          const rank   = finishOrder[i];
           const winner = isWinner(h.name);
-          const finishRank = finishPositions[i];
+          const other  = isOther(h.name);
+
           return (
-            <text key={i}
-              x={X_FINISH + 8} y={fy + 3}
-              fontSize={winner ? 9 : 8}
-              fill={winner ? h.color.fill : "rgba(245,240,232,0.4)"}
+            <text key={`rlabel-${i}`}
+              x={X_RLABEL} y={fy + 3}
+              fontSize={winner ? 9 : 7.5}
+              fill={
+                winner ? h.color.fill :
+                other  ? "rgba(245,240,232,0.5)" :
+                         "rgba(245,240,232,0.22)"
+              }
               fontFamily="'DM Mono',monospace"
               fontWeight={winner ? "600" : "400"}>
-              {finishRank + 1}. {truncate(h.name, 14)}
+              {rank + 1}. {truncate(h.name, 13)}
             </text>
           );
         })}
 
         {/* Legend */}
-        {[
+        {([
           { label: "Lead",      col: STYLE_COLORS.lead },
           { label: "Prominent", col: STYLE_COLORS.prominent },
           { label: "Midfield",  col: STYLE_COLORS.midfield },
           { label: "Hold Up",   col: STYLE_COLORS.holdup },
-        ].map(({ label, col }, i) => (
-          <g key={i} transform={`translate(${X_START + i * 110}, ${TOP + n * rowH + 16})`}>
-            <circle cx={0} cy={0} r={4} fill={col.fill} fillOpacity={0.8}/>
-            <text x={8} y={4} fontSize={8} fill="rgba(245,240,232,0.4)"
-              fontFamily="'DM Mono',monospace">{label}</text>
+        ] as { label: string; col: typeof STYLE_COLORS[string] }[]).map(({ label, col }, i) => (
+          <g key={`leg-${i}`}
+            transform={`translate(${X_START + i * 115}, ${TOP + trackH + 6})`}>
+            <circle cx={0} cy={0} r={3.5} fill={col.fill} fillOpacity={0.75}/>
+            <text x={7} y={4} fontSize={7.5}
+              fill="rgba(245,240,232,0.35)"
+              fontFamily="'DM Mono',monospace">
+              {label}
+            </text>
           </g>
         ))}
 
         {/* Scenario probability bar */}
         {scenarios.length > 0 && (() => {
-          const barY = TOP + n * rowH + 36;
-          const barW = X_FINISH - X_START + 20;
-          const barX = X_START - 10;
-          const barH = 36;
-          let cumW = 0;
+          const barW = X_FINISH - X_START + 16;
+          const barX = X_START - 8;
+          let cumW   = 0;
           return (
             <g>
               {scenarios.map((sc, i) => {
@@ -293,34 +339,40 @@ export default function RacePositionMap({
                 cumW += sw;
                 return (
                   <g key={sc.label}>
-                    <rect x={sx} y={barY} width={sw} height={barH}
-                      fill={SCENARIO_COLORS[i]} fillOpacity={i === 0 ? 0.25 : 0.12} rx={i === 0 ? 3 : 0}/>
-                    {sw > 60 && (
+                    <rect x={sx} y={BAR_Y} width={sw} height={BAR_H}
+                      fill={SCENARIO_COLORS[i]}
+                      fillOpacity={i === 0 ? 0.22 : 0.10}
+                      rx={i === 0 ? 3 : 0}
+                    />
+                    {sw > 70 && (
                       <>
-                        <text x={sx + 6} y={barY + 13} fontSize={8.5}
-                          fill={SCENARIO_COLORS[i]} fontFamily="'DM Mono',monospace"
-                          fontWeight="600">
+                        <text x={sx + 6} y={BAR_Y + 14} fontSize={8.5}
+                          fill={SCENARIO_COLORS[i]}
+                          fontFamily="'DM Mono',monospace" fontWeight="600">
                           {sc.label}: {sc.prob}%
                         </text>
-                        <text x={sx + 6} y={barY + 26} fontSize={7.5}
-                          fill="rgba(245,240,232,0.45)" fontFamily="'DM Mono',monospace">
-                          {truncate(sc.title, 20)}
+                        <text x={sx + 6} y={BAR_Y + 27} fontSize={7.5}
+                          fill="rgba(245,240,232,0.4)"
+                          fontFamily="'DM Mono',monospace">
+                          {truncate(sc.title, 22)}
                         </text>
                       </>
                     )}
-                    {sw <= 60 && sw > 25 && (
-                      <text x={sx + 4} y={barY + 13} fontSize={8}
-                        fill={SCENARIO_COLORS[i]} fontFamily="'DM Mono',monospace"
-                        fontWeight="600">
+                    {sw <= 70 && sw > 28 && (
+                      <text x={sx + 5} y={BAR_Y + 14} fontSize={8}
+                        fill={SCENARIO_COLORS[i]}
+                        fontFamily="'DM Mono',monospace" fontWeight="600">
                         {sc.label} {sc.prob}%
                       </text>
                     )}
                   </g>
                 );
               })}
-              {/* Bar border */}
-              <rect x={barX} y={barY} width={barW} height={barH}
-                fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth={0.5} rx={3}/>
+              <rect x={barX} y={BAR_Y} width={barW} height={BAR_H}
+                fill="none"
+                stroke="rgba(255,255,255,0.08)"
+                strokeWidth={0.5} rx={3}
+              />
             </g>
           );
         })()}
