@@ -4824,7 +4824,97 @@ def _update_archive(slug, course, date_str, going, n_races):
     return r.status_code in (200, 201)
 
 
+# ── Tweet queue helpers ───────────────────────────────────────
+
+import json as _json
+import os as _os
+import pytz as _pytz
+from datetime import datetime as _datetime, timedelta as _timedelta
+
+_UK_TZ = _pytz.timezone('Europe/London')
+TWEET_QUEUE_FILE = 'tweets_queue.json'
+
+def _json_exists(path):
+    return _os.path.exists(path)
+
+def _parse_race_time(time_str, race_date_str):
+    for fmt in ['%-d %B %Y %H:%M', '%d %B %Y %H:%M']:
+        try:
+            dt = _datetime.strptime('{} {}'.format(race_date_str, time_str), fmt)
+            return _UK_TZ.localize(dt)
+        except Exception:
+            continue
+    return None
+
+def _write_tweet_queue(slug, course, race_date_str, races_data):
+    queue = []
+    if _json_exists(TWEET_QUEUE_FILE):
+        with open(TWEET_QUEUE_FILE) as f:
+            try:
+                queue = _json.load(f)
+            except Exception:
+                queue = []
+
+    url = 'pacemap.co.uk/meetings/{}'.format(slug)
+
+    for race in races_data:
+        if race.get('skipped'):
+            continue
+
+        race_time = race.get('time', '')
+        dist      = race.get('dist', '')
+        going     = race.get('going', '')
+        n_runners = race.get('runners', 0)
+        dynamic   = race.get('paceDynamic', '')
+        scenarios = race.get('scenarios', [])
+
+        if not dynamic or not scenarios:
+            continue
+
+        off_dt = _parse_race_time(race_time, race_date_str)
+        if not off_dt:
+            continue
+
+        # Tweet 1 — pace dynamic, 30 mins before off
+        short_dynamic = (dynamic[:240] + '...') if len(dynamic) > 240 else dynamic
+        tweet1_text = '{} {} · {} · {} · {} runners\n\n{}\n\n{}'.format(
+            course, race_time, dist, going, n_runners, short_dynamic, url
+        )
+        queue.append({
+            'scheduled_time': (off_dt - _timedelta(minutes=30)).isoformat(),
+            'text':           tweet1_text,
+            'type':           'race_dynamic',
+            'course':         course,
+            'race_time':      race_time,
+        })
+
+        # Tweet 2 — scenarios, 20 mins before off
+        sc_lines = '\n'.join(
+            '{}) {} ({}%) — {} benefit'.format(
+                s['label'], s['title'], s['prob'],
+                ', '.join(s['winners'][:2])
+            )
+            for s in scenarios[:4]
+        )
+        tweet2_text = 'How this {} {} race could unfold:\n\n{}\n\n{}'.format(
+            course, race_time, sc_lines, url
+        )
+        queue.append({
+            'scheduled_time': (off_dt - _timedelta(minutes=20)).isoformat(),
+            'text':           tweet2_text,
+            'type':           'race_scenarios',
+            'course':         course,
+            'race_time':      race_time,
+        })
+
+    with open(TWEET_QUEUE_FILE, 'w') as f:
+        _json.dump(queue, f, indent=2)
+
+    print('  Tweet queue updated — {} tweets queued'.format(len(queue)))
+
+
 # ── Main publish ──────────────────────────────────────────────
+
 def publish_meeting(meeting_results, course, race_date_str,
                     going_report=None, generate_narratives=True):
     if not meeting_results:
@@ -4983,7 +5073,7 @@ def publish_meeting(meeting_results, course, race_date_str,
     print('  Archive {}'.format('updated OK' if ok else 'update FAILED'))
     print(('\n'+'='*60+'\n  LIVE: pacemap.co.uk/meetings/{}\n  (Vercel ~60s)\n'+'='*60+'\n').format(slug))
 
-    # ── Tweet copy from first valid race ──────────────────────
+    # ── Console tweet copy (for manual reference) ─────────────
     first_valid = next((r for r in races_data if not r.get('skipped')), None)
     if first_valid:
         time_str  = first_valid['time']
@@ -4993,16 +5083,13 @@ def publish_meeting(meeting_results, course, race_date_str,
         dynamic   = first_valid.get('paceDynamic','')
         scens     = first_valid.get('scenarios',[])
         url       = 'pacemap.co.uk/meetings/{}'.format(slug)
-
         short_dynamic = (dynamic[:180] + '...') if len(dynamic) > 180 else dynamic
-
         sc_lines = '\n'.join(
             '{}) {} ({}%) — {} benefit'.format(
                 s['label'], s['title'], s['prob'],
                 ', '.join(s['winners'][:2])
             ) for s in scens[:4]
         )
-
         print('\n' + '━'*50)
         print('📋 TWEET COPY — {} {}'.format(course, time_str))
         print('━'*50)
@@ -5013,10 +5100,14 @@ def publish_meeting(meeting_results, course, race_date_str,
         print('How this race could unfold:\n\n{}'.format(sc_lines))
         print('━'*50 + '\n')
 
+    # ── Write tweet queue for automation ─────────────────────
+    _write_tweet_queue(slug, course, race_date_str, races_data)
+
     return slug
 
 
 # ── Publish all ───────────────────────────────────────────────
+
 def publish_all(all_results=None, race_date_str=None,
                 going_report=None, generate_narratives=True):
     if all_results is None:
@@ -5034,6 +5125,11 @@ def publish_all(all_results=None, race_date_str=None,
         else:
             target = uk_now.date()
         race_date_str = target.strftime('%-d %B %Y')
+
+    # Clear tweet queue at start of each daily run
+    if _os.path.exists(TWEET_QUEUE_FILE):
+        _os.remove(TWEET_QUEUE_FILE)
+
     slugs = []
     for course, results in all_results.items():
         slug = publish_meeting(results, course, race_date_str,
@@ -5046,6 +5142,7 @@ def publish_all(all_results=None, race_date_str=None,
 
 
 # ── Run ───────────────────────────────────────────────────────
+
 _active = {k:v for k,v in ALL_RESULTS.items() if v} if 'ALL_RESULTS' in dir() else {}
 if _active:
     publish_all(all_results=_active, generate_narratives=True)
