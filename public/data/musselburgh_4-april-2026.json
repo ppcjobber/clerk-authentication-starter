@@ -39,7 +39,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Returns from 191-day break for in-form Jardine, prominent style could position him perfectly behind the pace battle",
+          "note": "Prominent runner returning after 191 days off but trainer Iain Jardine at poor 1/17 strike rate in last 14 days suggests lack of current stable form.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Cam Hardie",
@@ -70,7 +70,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Front runner returning from 249-day layoff with poor recent trainer form, needs to lead but may lack peak fitness",
+          "note": "Confirmed front runner but 249 days since last outing is a major concern, especially with trainer Charlie Johnston also struggling at 1/22 recently.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Rowan Scott",
@@ -101,7 +101,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse with headgear change after recent Redcar fourth, quick turnaround suggests connections are happy with his condition",
+          "note": "Hold-up horse perfectly suited to this pace setup with first-time cheekpieces applied, though trainer Brian Ellison winless in last 16 runners.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Harry Davies",
@@ -132,7 +132,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up specialist ridden by Murphy for top trainer Balding, won last time out and thrives when allowed to come from behind",
+          "note": "Oisin Murphy booking significant for hold-up horse Comic Hero, with Andrew Balding stable in good form at 8/29 and recent 1st over 7f on good ground.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Oisin Murphy",
@@ -163,7 +163,7 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Another hold-up horse off 254-day break, strong recent form before the layoff and Burke stable in decent form",
+          "note": "Another hold-up runner returning after 254 days but strong recent form sequence of 5121 suggests ability remains intact for this tactical scenario.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Sam James",
@@ -194,7 +194,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Front runner with first-time headgear and solid recent form, needs to lead but headgear suggests improvement expected",
+          "note": "Front runner with headgear fitted and recent race fitness advantage, plus George Boughey's yard showing signs of life with 1W1P from 3 soft ground runs.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Hector Crouch",
@@ -219,17 +219,17 @@
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Vincenzo Peruggia and Utmost Good Faith will clash for the early lead, with both horses showing prominent tendencies and needing to be on the pace. This creates an honest gallop over the mile trip, particularly on testing ground that will sap energy from the front pair. The remaining quartet all possess hold-up styles, meaning they can sit off the pace battle and conserve energy for a finishing effort. This setup strongly favours hold-up horses — the pace is genuine and the field will be strung out, allowing closers to pick up the pieces.",
+      "paceDynamic": "Vincenzo Peruggia and Utmost Good Faith will clash from the off, with both confirmed front runners likely to dispute the early lead over this testing 1m at Musselburgh. Their dual ensures an honest gallop from the start, with the pace maintained throughout as neither will want to concede the initiative. The remaining four runners all prefer to settle behind, meaning the leaders will get an uncontested run once the initial duel is resolved. This setup strongly favours hold-up horses — the genuine pace will stretch the field and create opportunities for closers to pick off tired leaders in the final two furlongs.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Hold-up horses dominate",
+          "title": "Hold-Up Horses Prevail",
           "prob": 55,
-          "trigger": "If Vincenzo Peruggia and Utmost Good Faith engage in a pace duel early.",
-          "body": "The front pair weaken in the final furlong on testing ground, allowing the closers to surge past with fresher legs. Comic Hero and Kanishka benefit most from this strong gallop.",
+          "trigger": "If the early pace between the two leaders is fierce and unsustainable",
+          "body": "The leaders will weaken in the final quarter-mile as Vincenzo Peruggia and Utmost Good Faith pay for their early exertions. The hold-up horses with fresh finishing kicks will sweep past the tiring pace-setters in the final furlong.",
           "winners": [
-            "Comic Hero",
-            "Kanishka"
+            "Kanishka",
+            "Comic Hero"
           ],
           "others": [
             "Strength Of Spirit",
@@ -238,25 +238,25 @@
         },
         {
           "label": "B",
-          "title": "Front runner survives duel",
+          "title": "Front Runner Survives",
           "prob": 25,
-          "trigger": "If one of the leaders gets a slight edge and kicks clear approaching the final furlong.",
-          "body": "Utmost Good Faith's recent form edge allows him to see off Vincenzo Peruggia and hold on despite the testing conditions. The pace wasn't quite strong enough to fully collapse.",
+          "trigger": "If one leader gains a clear advantage early and the other folds",
+          "body": "The surviving front runner gets an easier lead once their rival drops away, allowing them to control the pace and kick clear. Utmost Good Faith's recent form edge gives him the better chance of outlasting Vincenzo Peruggia.",
           "winners": [
             "Utmost Good Faith",
             "Vincenzo Peruggia"
           ],
           "others": [
             "Comic Hero",
-            "Monoceros"
+            "Kanishka"
           ]
         },
         {
           "label": "C",
-          "title": "Prominent horse splits difference",
-          "prob": 15,
-          "trigger": "If Monoceros can position just behind the leaders without getting embroiled in the pace battle.",
-          "body": "The Jardine runner gets the perfect trip tracking the pace battle before striking in the final two furlongs. His recent third at Ripon suggests he's ready to strike.",
+          "title": "Prominent Runner Strikes",
+          "prob": 12,
+          "trigger": "If the pace collapses completely with both leaders going too fast too early",
+          "body": "Monoceros can track the early pace without getting involved in the battle, then strike when the leaders falter. His prominent style allows him to avoid the carnage while staying close enough to pounce.",
           "winners": [
             "Monoceros",
             "Strength Of Spirit"
@@ -268,13 +268,13 @@
         },
         {
           "label": "D",
-          "title": "Pace collapses completely",
-          "prob": 5,
-          "trigger": "If both leaders go too fast early and tie up badly in the testing conditions.",
-          "body": "The front pair stop dramatically, creating a muddling pace scenario where tactical speed wins over pure stamina. This unlikely scenario could suit any runner with finishing pace.",
+          "title": "Late Rally Falls Short",
+          "prob": 8,
+          "trigger": "If the hold-up horses get too far back on the testing ground",
+          "body": "The soft going makes it harder for the closers to make up significant ground in the straight. One of the pace-setters hangs on grimly despite the honest gallop throughout.",
           "winners": [
-            "Kanishka",
-            "Comic Hero"
+            "Utmost Good Faith",
+            "Vincenzo Peruggia"
           ],
           "others": [
             "Monoceros",
@@ -285,23 +285,23 @@
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Vincenzo Peruggia could set fractions too fast after a long break, compromising both leaders' chances"
+          "text": "Vincenzo Peruggia's 249-day layoff is a major red flag for a front runner who needs to be sharp from the gate in a contested early pace."
         },
         {
           "severity": "warn",
-          "text": "Monoceros faces fitness questions after 191 days off despite Jardine's solid recent record"
+          "text": "Watch for Kanishka's jump from the stalls as first-time cheekpieces can cause initial settling issues for hold-up horses."
+        },
+        {
+          "severity": "info",
+          "text": "Monitor how aggressively Utmost Good Faith goes early as his recent race fitness could tempt Hector Crouch into a more forcing ride."
         },
         {
           "severity": "warn",
-          "text": "Kanishka's quick seven-day turnaround could indicate either sharp form or desperation from connections"
+          "text": "Comic Hero's draw and early positioning crucial as Oisin Murphy needs to avoid getting too far back on testing ground."
         },
         {
           "severity": "info",
-          "text": "Comic Hero's booking of Oisin Murphy suggests serious stable confidence in the hold-up horse's chances"
-        },
-        {
-          "severity": "info",
-          "text": "Utmost Good Faith's first-time headgear application could provide the edge needed to survive the pace battle"
+          "text": "Observe Monoceros's early pace positioning as his 191-day break means fitness levels are unknown despite his prominent running style."
         }
       ],
       "skipped": false
@@ -346,7 +346,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent runner with James Doyle up, returning after 146 days off which raises fitness concerns despite the quality partnership",
+          "note": "Prominent runner returning after 146 days off with James Doyle booked, suggesting stable confidence despite poor recent form",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "James Doyle",
@@ -377,7 +377,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent racer who won last time at Naas, first-time tongue-tie suggests connections trying something new to improve performance",
+          "note": "Prominent type in excellent form with a recent win, but stable running poorly with 0/17 in last 14 days",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Barry McHugh",
@@ -408,7 +408,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Well-handicapped prominent runner for in-form Richard Hannon yard, Sean Levey booking and recent course experience are positives",
+          "note": "Consistent prominent runner from in-form Richard Hannon yard (4/24 lately) dropping in grade",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Sean Levey",
@@ -439,7 +439,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Nine-year-old front runner/prominent racer who won over course and distance on soft ground, proven at this level despite the age",
+          "note": "Veteran prominent runner returning after 150 days with good soft ground record (8/15 on similar going)",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Jason Hart",
@@ -470,7 +470,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse who needs things to fall right from the back, strong recent form but relies on a strong pace to be effective",
+          "note": "Hold-up specialist perfectly positioned to benefit if prominent pack goes too hard early",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Saffie Osborne",
@@ -501,7 +501,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Class prominent runner from Michael Appleby, Kevin Stott takes over and the yard is ticking over nicely this season",
+          "note": "Class prominent runner whose last win came from the front, making him dangerous if securing good early position",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Kevin Stott",
@@ -532,7 +532,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent runner returning from 193-day break with 7lb claimer up, the long absence is a major concern despite decent form",
+          "note": "Prominent runner returning after long break with good recent form when last seen",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Shay Farmer(7)",
@@ -563,7 +563,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up performer for Jim Goldie, needs the pace to collapse but has solid soft ground form and stays strongly",
+          "note": "Hold-up horse from Jim Goldie stable with excellent soft ground record (6/15 runs)",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Cam Hardie",
@@ -594,7 +594,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner in good form for Grant Tuer, recent runs suggest he's found his level in this grade",
+          "note": "Prominent runner in poor form but represents stable that knows when their horses are ready",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Andrew Mullen",
@@ -625,7 +625,7 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Front runner on excellent recent form with four wins from last five starts, Cieren Fallon booking suggests stable confidence is high",
+          "note": "Confirmed leader in brilliant form with four wins recently, but low TopSpeed suggests pace-dependent",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Cieren Fallon",
@@ -650,89 +650,89 @@
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Goldmoyne will dictate from the front as the only confirmed leader, with five prominent runners (Midnight Gun, Golden Mind, Al Arbeed, Gweedore, Royal Zabeel, A War Eagle, Bellarchi) creating significant congestion behind him. This setup creates a moderate pace early before intensifying when the prominent pack jostle for position turning for home. The lack of genuine early pace pressure on Goldmoyne, combined with soft ground that can blunt finishing kicks, strongly favours front runners and prominent racers who can secure good positions early.",
+      "paceDynamic": "Goldmoyne will lead this from the outset but faces immediate pressure from five prominent runners (Midnight Gun, Golden Mind, Al Arbeed, Royal Zabeel, A War Eagle) all wanting forward positions in a small 10-runner field. The pace will be genuine as these horses jostle for position through the early stages, with particular congestion likely 2-3 furlongs out when the prominent brigade try to kick. Only two true hold-up horses (Persuasion, Jannas Journey) will benefit from the inevitable pace collapse. This setup strongly favours hold-up horses — the genuine early pace and prominent congestion will stretch the field and create opportunities for closers.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Front Runner Dominates",
-          "prob": 45,
-          "trigger": "If Goldmoyne gets an uncontested lead and the prominent pack gets caught up in traffic",
-          "body": "The leader builds an unassailable advantage while the quality horses behind struggle to get clear runs in the congested pack. Soft ground makes it harder for hold-up horses to pick up the pieces.",
-          "winners": [
-            "Goldmoyne",
-            "Gweedore"
-          ],
-          "others": [
-            "Al Arbeed",
-            "Golden Mind"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "Prominent Pack Prevails",
-          "prob": 35,
-          "trigger": "If one of the quality prominent runners secures the ideal pitch just behind Goldmoyne",
-          "body": "The winner tracks the leader before moving smoothly to challenge, with class telling as the well-positioned runner has enough left to repel late challengers. Traffic victims emerge behind.",
-          "winners": [
-            "Royal Zabeel",
-            "Al Arbeed"
-          ],
-          "others": [
-            "Midnight Gun",
-            "Bellarchi"
-          ]
-        },
-        {
-          "label": "C",
-          "title": "Hold-Up Horses Swoop",
-          "prob": 15,
-          "trigger": "If the prominent pack goes too hard trying to get positioned and compromises each other",
-          "body": "The early pace becomes unsustainable as seven horses fight for forward positions, setting it up perfectly for Persuasion and Jannas Journey to deliver late challenges. The pace collapses in the final furlong.",
+          "title": "Hold-up horses profit",
+          "prob": 60,
+          "trigger": "If the prominent pack goes too hard early chasing Goldmoyne",
+          "body": "The genuine pace will string out the field and leave the front-runners vulnerable to late challengers. Persuasion and Jannas Journey can pick off tired leaders in the final furlong.",
           "winners": [
             "Persuasion",
             "Jannas Journey"
           ],
           "others": [
+            "Gweedore",
+            "Golden Mind"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Goldmoyne leads throughout",
+          "prob": 25,
+          "trigger": "If Goldmoyne gets an easy lead without serious pressure",
+          "body": "The 6-year-old's excellent recent form (four wins in five starts) allows him to dictate terms and kick clear when it matters. His low TopSpeed rating of 53 suggests he's more effective when controlling the tempo.",
+          "winners": [
+            "Goldmoyne",
+            "Royal Zabeel"
+          ],
+          "others": [
             "A War Eagle",
+            "Al Arbeed"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Prominent battle succeeds",
+          "prob": 10,
+          "trigger": "If one of the forward horses can secure the perfect pitch behind Goldmoyne",
+          "body": "Golden Mind or Midnight Gun can use their class advantage to strike from the ideal tracking position. The winner emerges from the prominent pack that avoids the early scrimmaging.",
+          "winners": [
+            "Golden Mind",
+            "Midnight Gun"
+          ],
+          "others": [
+            "Royal Zabeel",
             "Gweedore"
           ]
         },
         {
           "label": "D",
-          "title": "Chaos and Outsider",
+          "title": "Pace collapse chaos",
           "prob": 5,
-          "trigger": "If multiple fallers or severe interference create an unusual race shape",
-          "body": "A messy race where the expected protagonists are compromised by the pace or traffic, allowing a horse like A War Eagle or Bellarchi to benefit from the chaos. Unlikely but possible with this much early congestion.",
+          "trigger": "If the early pace is even stronger than expected with multiple horses going forward",
+          "body": "Complete pace meltdown allows a closer to come from further back than usual. The entire prominent pack ties up simultaneously in the final two furlongs.",
           "winners": [
-            "A War Eagle",
-            "Bellarchi"
+            "Jannas Journey",
+            "Persuasion"
           ],
           "others": [
-            "Goldmoyne",
-            "Jannas Journey"
+            "Bellarchi",
+            "A War Eagle"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Watch for severe traffic problems 2-3 furlongs out when Midnight Gun, Golden Mind, Al Arbeed, Royal Zabeel and Bellarchi all try to improve position simultaneously"
+          "text": "Watch for traffic problems 2-3 furlongs out when five prominent runners (Midnight Gun, Golden Mind, Al Arbeed, Royal Zabeel, A War Eagle) all try to improve position simultaneously"
         },
         {
           "severity": "warn",
-          "text": "Monitor Goldmoyne's early fractions - if he goes too fast trying to shake off the prominent pack he could set it up for the hold-up horses"
+          "text": "Monitor Goldmoyne's early fractions - if he gets an easy lead the hold-up horses lose their advantage"
         },
         {
           "severity": "info",
-          "text": "Check if A War Eagle shows any signs of needing the run after 193 days off, particularly in the closing stages"
+          "text": "James Doyle riding Midnight Gun after 146 days off suggests stable expects big run despite poor recent form"
         },
         {
           "severity": "warn",
-          "text": "Watch for Persuasion and Jannas Journey to be niggled along early if the pace is too slow, as they need to be handy to have any chance"
+          "text": "Golden Mind's trainer running at 0/17 in last fortnight despite horse's good recent form"
         },
         {
           "severity": "info",
-          "text": "Observe Golden Mind's reaction to the first-time tongue-tie, particularly when asked to quicken"
+          "text": "Both hold-up horses (Persuasion and Jannas Journey) have strong soft ground records and will be finishing fast if pace is genuine"
         }
       ],
       "skipped": false
@@ -773,7 +773,7 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent runner with excellent soft going record (3W6P from 15 runs) and Burke's stable in decent form recently",
+          "note": "Prominent runner returning from 168-day break but Burke stable hitting form with 2/13 winners in past fortnight, class advantage with OR 114",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Clifford Lee",
@@ -804,7 +804,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Natural hold-up horse with strong recent form on similar ground, Murphy's 28% strike rate this season adds confidence",
+          "note": "Hold-up specialist perfectly suited to pace shape, Oisin Murphy booking suggests stable confidence despite 161-day absence",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Oisin Murphy",
@@ -835,7 +835,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Sole front-runner wearing first-time tongue-tie, Hart booking suggests connections expect improvement from 36-day break",
+          "note": "Lone front runner with topspeed headgear applied, 36 days since last run keeps him sharp for sustained gallop",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Jason Hart",
@@ -866,7 +866,7 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent style suits but returning after 185 days off, though Ralph Beckett excels with horses back from breaks",
+          "note": "Prominent style suits tactical setup but Beckett stable struggling with 0/7 record recently, 185-day layoff a concern",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Rossa Ryan",
@@ -897,7 +897,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up performer carrying minimum weight, recent second at Haydock shows she's in good form for James Owen",
+          "note": "Hold-up horse with significant weight advantage at 123lbs, Owen stable in decent nick with 5/39 winners lately",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Cieren Fallon",
@@ -928,7 +928,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Natural closer returning after 183-day absence, but Jim Boyle's 25% strike rate with horses back from breaks is encouraging",
+          "note": "Hold-up runner who benefits from uncontested pace, Pat Cosgrave's presence suggests confidence after 183-day break",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Pat Cosgrave",
@@ -953,14 +953,14 @@
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Roaring Legend will take the field along as the sole dedicated front-runner, with Al Qareem and Lady Vivian likely to track him in second and third through the early stages. The pace should be genuine but sustainable over this 1m6f trip, with Mount Atlas, Kate O'Riley and Many Men settling towards the rear as natural hold-up performers. With three horses committed to racing prominently and three sitting back, the race will likely develop into a tactical affair where the front three may go too fast for their own good. This setup moderately favours hold-up horses — the genuine pace will stretch the field and create opportunities for those with finishing kicks.",
+      "paceDynamic": "Roaring Legend will dictate terms from the front with no obvious pressure, likely setting a steady tempo over this extended trip on testing ground. The prominent runners Al Qareem and Lady Vivian may track within striking distance, but with three hold-up horses (Mount Atlas, Kate O'Riley, Many Men) positioned to pounce late, the early gallop should be manageable. This tactical setup strongly favours hold-up horses — the uncontested pace will leave plenty in reserve for those who can unleash late kicks, particularly on ground that rewards stamina over pure speed.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Hold-up horses dominate",
-          "prob": 45,
-          "trigger": "If the front three go too hard early and compromise each other's finishing kicks",
-          "body": "The pace will be strong enough to set up the race perfectly for the closers, with Mount Atlas and Many Men best placed to capitalize with their superior class and finishing ability. Kate O'Riley could also benefit despite her lower rating if the pace collapses.",
+          "title": "Hold-Up Horses Dominate",
+          "prob": 55,
+          "trigger": "If the early pace is modest and the hold-up trio get their favoured strong finish.",
+          "body": "Mount Atlas and Many Men benefit most from Oisin Murphy and Pat Cosgrave's patient rides, sweeping past tiring leaders in the final two furlongs. The extended distance and soft ground play perfectly into their stamina-laden profiles.",
           "winners": [
             "Mount Atlas",
             "Many Men"
@@ -972,70 +972,70 @@
         },
         {
           "label": "B",
-          "title": "Front runner prevails",
-          "prob": 30,
-          "trigger": "If Roaring Legend dictates a more measured tempo and kicks clear turning for home",
-          "body": "Jason Hart can use his front-running position to control the race tempo, and with recent solid form at this distance, Roaring Legend can hold off the closers. Al Qareem's prominent position gives him the best chance to chase home the leader.",
-          "winners": [
-            "Roaring Legend",
-            "Al Qareem"
-          ],
-          "others": [
-            "Lady Vivian",
-            "Mount Atlas"
-          ]
-        },
-        {
-          "label": "C",
-          "title": "Prominent tracker strikes",
-          "prob": 15,
-          "trigger": "If Al Qareem or Lady Vivian can secure the perfect stalking position behind a strong pace",
-          "body": "The Burke-trained Al Qareem has the class advantage and excellent soft going form, while Lady Vivian showed smart form earlier in her career and could be primed after a break. Both can strike from prominent positions without doing too much early work.",
+          "title": "Prominent Tactics Prevail",
+          "prob": 25,
+          "trigger": "If Al Qareem or Lady Vivian can position perfectly behind Roaring Legend and time their challenge.",
+          "body": "Al Qareem's class edge (OR 114) tells under Clifford Lee's positive ride, while Lady Vivian could spring a surprise given her two wins from good positions earlier this year. Both avoid the traffic issues that may plague the hold-up horses.",
           "winners": [
             "Al Qareem",
             "Lady Vivian"
           ],
           "others": [
+            "Mount Atlas",
+            "Roaring Legend"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Front Runner Stays Strong",
+          "prob": 12,
+          "trigger": "If Roaring Legend sets a conservative tempo and finds extra reserves when challenged.",
+          "body": "Jason Hart capitalises on the uncontested lead, gradually winding up the pace from the three-furlong pole to stretch the field. Roaring Legend's recent consistent efforts suggest he can sustain his kick despite carrying the early burden.",
+          "winners": [
             "Roaring Legend",
-            "Mount Atlas"
+            "Al Qareem"
+          ],
+          "others": [
+            "Mount Atlas",
+            "Lady Vivian"
           ]
         },
         {
           "label": "D",
-          "title": "Pace collapses completely",
-          "prob": 10,
-          "trigger": "If Roaring Legend goes too slowly early and the race becomes a sprint finish",
-          "body": "The lack of pace pressure could see all six runners still in contention turning for home, creating a messy finish where any horse could prevail. This chaotic scenario would particularly suit Kate O'Riley who has shown battling qualities and carries the lightest weight.",
+          "title": "Outsider Kate O'Riley Strikes",
+          "prob": 8,
+          "trigger": "If the pace collapses completely and the lowest-weighted runner gets a dream run.",
+          "body": "Kate O'Riley benefits from her 123lbs burden and Cieren Fallon's opportunistic riding, finding gaps as higher-rated rivals tire on the testing surface. Her recent second over similar conditions at this trip suggests untapped potential.",
           "winners": [
             "Kate O'Riley",
-            "Lady Vivian"
+            "Many Men"
           ],
           "others": [
-            "Many Men",
-            "Roaring Legend"
+            "Mount Atlas",
+            "Lady Vivian"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Roaring Legend dictating an uncontested lead could prove decisive if allowed to control the tempo throughout"
+          "text": "Al Qareem's market support given the lengthy break - if well-backed, suggests Burke believes the class horse is ready to fire fresh"
         },
         {
           "severity": "warn",
-          "text": "Mount Atlas and Many Men both returning from long breaks - watch for any signs of rustiness in the preliminaries"
+          "text": "Roaring Legend's early tempo setting - if he goes too fast early, it opens the door for all the hold-up horses behind"
         },
         {
           "severity": "info",
-          "text": "Al Qareem's early position will be crucial - needs to settle close enough to Roaring Legend without doing too much work"
+          "text": "Mount Atlas and Many Men both returning from breaks over 160 days - which one handles the comeback better will determine the finish"
         },
         {
           "severity": "warn",
-          "text": "Lady Vivian's fitness after 185 days off the track, though Beckett's record with returning horses is solid"
+          "text": "Kate O'Riley's finishing kick from the back - at odds she could outrun her OR 84 rating if getting a clean passage through"
         },
         {
           "severity": "info",
-          "text": "Watch for Kate O'Riley being produced with a late run from the back - her light weight could prove telling in soft conditions"
+          "text": "Lady Vivian's position tracking Roaring Legend - needs to be within two lengths turning for home to have any chance from prominent berth"
         }
       ],
       "skipped": false
@@ -1083,7 +1083,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse returning from 6-week break, Rebecca Menzies struggling for winners but RPR 107 suggests ability intact",
+          "note": "Hold-up horse returning from 42-day break for Rebecca Menzies who has struggled for winners lately, needs everything to fall right",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Kaiya Fraser",
@@ -1114,7 +1114,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent runner in excellent form for in-form Dan Skelton yard, Rossa Ryan booking and first-time headgear suggests confidence",
+          "note": "Prominent runner in excellent form with two recent wins, Dan Skelton's 21% strike rate adds confidence, soft ground proven",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Rossa Ryan",
@@ -1145,7 +1145,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse returning from long 358-day absence, strong course record but needs to prove fitness first time back",
+          "note": "Hold-up horse returning from lengthy 358-day absence, but Ralph Beckett runners often come back ready and has won fresh before",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Hector Crouch",
@@ -1176,7 +1176,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up veteran with solid recent form, Billy Garritty retains the ride after decent third last time out",
+          "note": "Experienced hold-up horse with strong soft ground record, 9 from 15 on similar conditions with Billy Garritty's 3lb claim helping",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Billy Garritty",
@@ -1207,7 +1207,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent runner off 161-day break, Cieren Fallon booking for James Owen who is hitting 13% strike-rate recently",
+          "note": "Prominent runner who handles soft conditions well, Cieren Fallon booking suggests stable confidence after 161-day break",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Cieren Fallon",
@@ -1238,7 +1238,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse off long break but Michael Bell's 67% strike-rate with runners returning suggests preparation sound",
+          "note": "Hold-up horse with excellent soft ground form including two wins, Oisin Murphy's presence indicates serious intentions from Michael Bell",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Oisin Murphy",
@@ -1269,7 +1269,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse with 5lb claimer Lauren Young taking off valuable weight, consistent recent form without winning",
+          "note": "Hold-up horse getting 5lb from inexperienced Lauren Young, low weight of 118lbs could be significant in handicap",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Lauren Young(5)",
@@ -1300,7 +1300,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent runner returning after 618-day absence, previous course winner but major fitness question",
+          "note": "Prominent runner returning after massive 618-day layoff, previous soft ground winner but lengthy absence a major concern",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Jason Hart",
@@ -1331,7 +1331,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse wearing visor for first time, Saffie Osborne rides for in-form Kevin Ryan Burke stable",
+          "note": "Hold-up horse with visor fitted for first time, K R Burke's 15% strike rate modest but soft ground form encourages",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Saffie Osborne",
@@ -1362,7 +1362,7 @@
           "finish_type": "E",
           "dist_code": "B-",
           "going_flag": "OK",
-          "note": "Sole front runner wearing tongue-strap, returning from break but Faye Bramley targets these staying handicaps",
+          "note": "Confirmed front runner who sets the pace, returning from 196-day break but has won fresh before, top and side pieces added",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Sean Levey",
@@ -1393,7 +1393,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse in excellent current form, won last start and Greg Fairley retains the ride with confidence",
+          "note": "Hold-up horse in excellent current form with recent win, Ewan Whillans has limited runners but Team Player clearly the stable star",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Greg Fairley",
@@ -1424,7 +1424,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse returning from very long break, Andrew Mullen booking but 610 days off track is significant concern",
+          "note": "Hold-up horse with decent soft ground record returning after long break, Andrew Mullen retains the ride which suggests stable confidence",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Andrew Mullen",
@@ -1455,7 +1455,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse with 3lb claimer reducing weight burden, wearing cheekpieces and has won at this distance before",
+          "note": "Hold-up horse getting 3lb claim from Amie Waugh, cheek pieces applied and low weight of 116lbs makes him interesting outsider",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Amie Waugh(3)",
@@ -1480,89 +1480,89 @@
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Almuhit is the sole confirmed front runner and will set a sustainable pace without early pressure, with prominent runners Gambino and Sportingsilvermine tracking closely behind. The bulk of the field consists of hold-up horses who will settle towards the rear and rely on finishing kicks. With soft ground favouring stamina and one uncontested leader, the pace will be steady early before quickening from the home turn. This setup strongly favours hold-up horses — the pace will be genuine but not breakneck, allowing closers to time their runs perfectly in the straight.",
+      "paceDynamic": "Almuhit will lead from the gate with no sustained pressure, as the next-closest pace horses Gambino, Sportingsilvermine and Baileys Khelstar prefer to sit just off the pace rather than challenge early. This creates a controlled tempo through the middle sections, allowing the large contingent of hold-up horses to be nursed along before the real racing begins. The combination of soft ground conditions and the sustainable early pace will see the field bunched turning for home, creating a sprint finish over the final 3-4 furlongs. This setup strongly favours hold-up horses — they get the ideal scenario of a steady pace followed by a cavalry charge finish that suits their closing kick.",
       "scenarios": [
         {
           "label": "A",
           "title": "Hold-Up Horses Dominate",
           "prob": 65,
-          "trigger": "If Almuhit sets moderate fractions and the pace builds gradually from 3f out.",
-          "body": "The patient hold-up horses will have perfect positioning to unleash finishing kicks, with the soft ground aiding their late surge. Almuhit's uncontested lead creates ideal conditions for closers to pick him off in the final furlong.",
+          "trigger": "If Almuhit maintains an uncontested lead through halfway, creating the perfect stalking scenario",
+          "body": "The soft ground amplifies stamina demands in the closing stages, perfectly suiting the patient tactics of the hold-up brigade. Horses like Moon Over Miami, Wise Eagle and Team Player can time their runs to perfection in what becomes a pure staying test.",
           "winners": [
-            "Shadow Dance",
-            "Wise Eagle"
+            "Moon Over Miami",
+            "Team Player"
           ],
           "others": [
-            "Moon Over Miami",
+            "Wise Eagle",
             "Dancingwithmyself"
           ]
         },
         {
           "label": "B",
-          "title": "Prominent Tracker Strikes",
+          "title": "Prominent Runners Strike",
           "prob": 20,
-          "trigger": "If Gambino or Sportingsilvermine can sit perfectly behind Almuhit and quicken decisively.",
-          "body": "The tracking horses avoid the early pace battle while staying close enough to strike, benefiting from following the leader without doing the donkey work. Their prominent position gives them first jump on the hold-up brigade.",
+          "trigger": "If Gambino or Sportingsilvermine apply early pressure to Almuhit, creating a more genuine pace",
+          "body": "The increased tempo stretches the field and favours horses positioned handy who can kick when others are feeling the pinch. Gambino's recent winning form and Sportingsilvermine's proven soft ground ability become decisive factors.",
           "winners": [
             "Gambino",
             "Sportingsilvermine"
           ],
           "others": [
-            "Team Player",
-            "Baileys Khelstar"
+            "Baileys Khelstar",
+            "Gentle Warrior"
           ]
         },
         {
           "label": "C",
           "title": "Front Runner Holds On",
           "prob": 10,
-          "trigger": "If Almuhit gets very soft fractions early and has enough left for the finish.",
-          "body": "The lack of early pace pressure allows Almuhit to conserve energy, and the soft ground may blunt the finishing kicks of his pursuers. His recent form suggests he can stay this trip when getting an easy lead.",
+          "trigger": "If Almuhit gets completely uncontested fractions and the hold-up horses leave their runs too late",
+          "body": "The leader builds an unassailable advantage on the testing ground, with the chasing pack's finishing kicks blunted by the conditions. Almuhit's stamina reserves and Sean Levey's tactical ride prove decisive.",
           "winners": [
             "Almuhit",
-            "Team Player"
+            "Gambino"
           ],
           "others": [
-            "Humble Spark",
-            "Gentle Warrior"
+            "Team Player",
+            "Moon Over Miami"
           ]
         },
         {
           "label": "D",
-          "title": "Outsider Surprise Package",
+          "title": "Pace Collapse Sprint",
           "prob": 5,
-          "trigger": "If the pace collapses completely or favourite contenders underperform.",
-          "body": "The even pace and stamina test of 1m6f on soft ground could suit a lightly-raced improver or horse returning from a break. Form horses may not handle the conditions or distance as expected.",
+          "trigger": "If the early pace becomes pedestrian with multiple horses still in contention at the furlong pole",
+          "body": "The race develops into a messy sprint finish where positioning and a clear run matter more than running style. The highest-rated horses with tactical speed can capitalise on the bunched finish.",
           "winners": [
-            "Trojan Sun",
-            "Humble Spark"
+            "Wise Eagle",
+            "Dancingwithmyself"
           ],
           "others": [
-            "Mr Lincoln",
-            "Baileys Khelstar"
+            "Shadow Dance",
+            "Moon Over Miami"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Almuhit may get uncontested fractions that are too easy, allowing him to steal the race if pace judgement is wrong"
+          "text": "Almuhit must be monitored early - if pressured for the lead by Gambino or Sportingsilvermine, the entire pace dynamic changes dramatically"
         },
         {
           "severity": "warn",
-          "text": "Moon Over Miami returning from 358-day break for Ralph Beckett who targets these big handicaps but fitness unknown"
+          "text": "Moon Over Miami's 358-day absence is substantial, watch market moves and paddock behaviour for clues about fitness levels"
         },
         {
           "severity": "info",
-          "text": "Gambino wearing first-time headgear for Dan Skelton who is operating at 21% strike-rate, suggesting stable expects improvement"
+          "text": "Gentle Warrior's first-time visor could spark improvement, particularly significant given K R Burke's 67% strike rate with headgear changes"
+        },
+        {
+          "severity": "info",
+          "text": "Team Player arrives in peak form with a recent win, any market support would be highly significant given stable's limited firepower"
         },
         {
           "severity": "warn",
-          "text": "Several horses returning from long breaks including Baileys Khelstar (618 days) and Mr Lincoln (610 days) are major fitness risks"
-        },
-        {
-          "severity": "info",
-          "text": "Watch for Dancingwithmyself settling closer than usual given the lack of pace, Oisin Murphy may adapt tactics accordingly"
+          "text": "The large hold-up contingent means positioning will be crucial - watch for traffic problems developing in the home straight"
         }
       ],
       "skipped": false
@@ -1611,7 +1611,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner returning after 175 days off with Cieren Fallon booked, trainer Jim Goldie struggling at 1/7 in past 14 days",
+          "note": "Prominent runner returning from 175-day break for in-form Jim Goldie but poor recent form and 10-year-old legs are concerns",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Cieren Fallon",
@@ -1642,7 +1642,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up specialist with consistent placed form, Saffie Osborne's booking suggests stable confidence despite trainer's poor recent record",
+          "note": "Hold-up specialist perfectly suited to this pace setup, Saffie Osborne's 5lb claim valuable in competitive handicap",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Saffie Osborne",
@@ -1673,7 +1673,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Lone pace-setter with visor first time, consistent at this level but carries top weight of 138lbs",
+          "note": "Only confirmed leader with uncontested early advantage, visor first time suggests Cowell expects improvement",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Rossa Ryan",
@@ -1704,7 +1704,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner for in-form stable connection, William Pyle's 3lb claim valuable but inexperienced jockey in big handicap",
+          "note": "Prominent style but 3lb claimer William Pyle lacks experience for this level of traffic problems",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "William Pyle(3)",
@@ -1735,7 +1735,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Robert Cowell runner with good recent form, recent 14-day gap ideal and prominent style suits if avoiding early traffic",
+          "note": "Cowell runner with tactical speed, headgear retained suggests confidence and Hart knows Musselburgh well",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Jason Hart",
@@ -1766,7 +1766,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Highest RPR of 114 returning after 203 days, Oisin Murphy booking significant with Andrew Balding hitting 8/29 recently",
+          "note": "203-day absence but Balding's 8/29 recent strike rate and Murphy's booking are significant positives",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Oisin Murphy",
@@ -1797,7 +1797,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Jim Goldie prominent runner off long break, consistent place record but stable struggling for winners lately",
+          "note": "Another Goldie runner off long break, prominent style will hit traffic in this congested field",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Lauren Young(5)",
@@ -1828,7 +1828,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Recent winner with back-to-back scores, prominent style dangerous if securing good early position behind leader",
+          "note": "Consistent prominent performer but Tracy Waggott's poor trainer form (0/2) is concerning",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Barry McHugh",
@@ -1859,7 +1859,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse from struggling Richard & Peter Fahey yard, patient tactics ideal for this pace setup",
+          "note": "Hold-up horse ideally placed for this pace scenario but Fahey stable is cold (0/17)",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Cam Hardie",
@@ -1890,7 +1890,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Robert Cowell prominent runner returning after 161 days, good record at this level but needs to overcome the lay-off",
+          "note": "Another Cowell runner with handy style, 161-day break but stable hitting form makes him interesting",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Callum Shepherd",
@@ -1921,7 +1921,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent runner off 231-day break with 7lb claimer, minimal recent stable activity suggests unfancied return",
+          "note": "Prominent runner off 231-day layoff, headgear retained but Spencer stable lacks recent winners",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Shay Farmer(7)",
@@ -1952,7 +1952,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "High-class performer from Kevin Ryan but trainer winless in 13 recent runners, prominent style faces traffic issues",
+          "note": "Consistent prominent type but Kevin Ryan's 0/13 recent record suggests stable out of form",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Kevin Stott",
@@ -1983,7 +1983,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Michael Easterby runner off 182-day break, trainers hitting 2/17 recently and hold-up style suits pace scenario",
+          "note": "Proven 5f winner with handy style, Easterby's 2/17 record shows some life in the yard",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Billy Garritty",
@@ -2014,7 +2014,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Versatile performer with blinkers first time, last winning run came over longer trip in soft conditions",
+          "note": "Bred for longer but has 5f win, blinkers first time for Goldie suggests they want him sharper",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Harry Davies",
@@ -2039,89 +2039,89 @@
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Democracy Dilemma will take the field along as the sole confirmed leader, but with six horses wanting prominent positions - Jordan Electrics, Pilgrim, Rhythm N Hooves, Tropical Storm, Eternal Sunshine, and Heavenly Heather - there will be severe early congestion behind the leader. This crowding will create an uneven pace with positional scrimmaging likely to compromise several prominent runners, while the tempo may not be strong enough to fully test the field. The hold-up horses Jer Batt and Vintage Clarets can avoid the early chaos and benefit from the likely moderate gallop, making this setup favour patient tactics over prominent positioning.",
+      "paceDynamic": "Democracy Dilemma will face no pressure on the lead with just one other confirmed front runner in this field. Six horses want prominent positions (Pilgrim, Rhythm N Hooves, Tropical Storm, Eternal Sunshine, Heavenly Heather, Lexington Blitz, Archduke Ferdinand, Against The Wind, Canon's House, Gangsta Man) creating significant congestion behind the leader. This packed prominent group will create traffic problems turning for home on Musselburgh's tight track, with several horses getting shuffled back. This setup strongly favours the leader Democracy Dilemma and the two hold-up horses (Jer Batt, Vintage Clarets) who can avoid the early scramble and find clear runs.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Hold-up horses capitalise",
+          "title": "Uncontested Leader Dominates",
           "prob": 45,
-          "trigger": "If the prominent brigade get tangled up early and Democracy Dilemma sets a moderate pace",
-          "body": "The early scrimmaging compromises half the field while Jer Batt and Vintage Clarets get clean runs from the back. Their patient positioning proves decisive as they sweep past tiring front-runners.",
+          "trigger": "If Democracy Dilemma gets an easy lead without pressure from the prominent pack",
+          "body": "The Cowell-trained leader can dictate fractions and kick clear when the packed field behind gets into traffic trouble. His recent third places show he's hitting form and Rossa Ryan's booking suggests stable confidence.",
+          "winners": [
+            "Democracy Dilemma",
+            "Jer Batt"
+          ],
+          "others": [
+            "Rhythm N Hooves",
+            "Vintage Clarets"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Prominent Pack Collapses",
+          "prob": 30,
+          "trigger": "If the ten prominent runners create a cavalry charge that sets up the race for closers",
+          "body": "The pace becomes unsustainably strong with so many wanting to be handy, allowing Jer Batt and Vintage Clarets to sweep up late. Saffie Osborne's 5lb claim becomes crucial in a tight finish.",
           "winners": [
             "Jer Batt",
             "Vintage Clarets"
           ],
           "others": [
-            "Gangsta Man",
-            "Democracy Dilemma"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "Prominent runner breaks clear",
-          "prob": 30,
-          "trigger": "If one of the prominent horses secures an ideal early position without interference",
-          "body": "Rhythm N Hooves or Heavenly Heather avoid the congestion and track Democracy Dilemma perfectly before striking. Their tactical advantage combined with recent form proves decisive.",
-          "winners": [
-            "Rhythm N Hooves",
-            "Heavenly Heather"
-          ],
-          "others": [
-            "Against The Wind",
-            "Tropical Storm"
+            "Democracy Dilemma",
+            "Gangsta Man"
           ]
         },
         {
           "label": "C",
-          "title": "Democracy Dilemma wire-to-wire",
+          "title": "Cowell Treble Strikes",
           "prob": 15,
-          "trigger": "If the pace becomes truly searching and eliminates the prominent brigade",
-          "body": "The leader gets an easy time up front while the chasing pack gets strung out by a genuine gallop. Democracy Dilemma's stamina and lack of pressure proves decisive in this handicap company.",
+          "trigger": "If Rhythm N Hooves finds the gap that others miss in the prominent pack scramble",
+          "body": "Robert Cowell's 1/5 recent record and Jason Hart's tactical nous sees this one thread through traffic when others get stopped. Recent fourth at this trip shows he's ready to strike.",
           "winners": [
-            "Democracy Dilemma",
-            "Canon's House"
+            "Rhythm N Hooves",
+            "Lexington Blitz"
           ],
           "others": [
-            "Jer Batt",
-            "Lexington Blitz"
+            "Democracy Dilemma",
+            "Against The Wind"
           ]
         },
         {
           "label": "D",
-          "title": "Pace collapses completely",
+          "title": "Balding Raider Surprises",
           "prob": 10,
-          "trigger": "If the early positioning battle slows the overall tempo to walking pace",
-          "body": "The race becomes a sprint finish where class and acceleration matter most over tactical positioning. The highest-rated horses benefit regardless of their usual running style.",
+          "trigger": "If Tropical Storm's 203-day break has him primed and Oisin Murphy finds a dream run",
+          "body": "Andrew Balding's 8/29 strike rate this fortnight and Murphy's booking despite the long layoff suggests something is expected. The winner's form from last year makes him dangerous fresh.",
           "winners": [
             "Tropical Storm",
-            "Against The Wind"
+            "Heavenly Heather"
           ],
           "others": [
             "Democracy Dilemma",
-            "Gangsta Man"
+            "Jer Batt"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Democracy Dilemma could get an uncontested lead if the prominent brigade neutralise each other early - becomes very dangerous"
+          "text": "Democracy Dilemma breaking cleanly is crucial - if he misses the start the whole pace dynamic changes"
         },
         {
           "severity": "warn",
-          "text": "Watch for traffic problems 2f out when six prominent runners converge behind the leader - several will get stopped"
+          "text": "Traffic congestion 2f out when ten prominent runners try to find racing room on Musselburgh's tight bend"
         },
         {
           "severity": "warn",
-          "text": "Jer Batt needs the pace to be genuine to be effective - if it becomes pedestrian his hold-up style loses its advantage"
+          "text": "Jer Batt and Vintage Clarets getting clear runs from the back - if they're blocked they can't win"
         },
         {
           "severity": "info",
-          "text": "First-time headgear on Democracy Dilemma (visor) and Gangsta Man (blinkers) could spark improvement"
+          "text": "Robert Cowell's runners (Democracy Dilemma, Rhythm N Hooves, Lexington Blitz) all looking for bounce back to form"
         },
         {
           "severity": "info",
-          "text": "Robert Cowell has three runners with different tactical profiles - suggests he's confident about the race setup"
+          "text": "First-time headgear on Democracy Dilemma and Gangsta Man suggesting trainers expect improved efforts"
         }
       ],
       "skipped": false
@@ -2535,7 +2535,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse with Sean Levey back on board, last win came at this 6f trip and trainer Hannon's strike rate demands respect despite recent poor form",
+          "note": "Hold-up specialist with Sean Levey booked by in-form Richard Hannon stable, recent Goodwood win shows he handles testing ground well",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Sean Levey",
@@ -2566,7 +2566,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner with first-time headgear suggesting Ivan Furtado expects improvement, though trainer's poor recent record is concerning",
+          "note": "Prominent runner struggling for form but Barry McHugh maintains the ride, first-time cheekpieces applied suggest stable trying something new",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Barry McHugh",
@@ -2597,7 +2597,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner returning after 155 days with decent soft ground form, Grant Tuer's small stable suggests this is a planned target",
+          "note": "Versatile prominent runner returning from 155-day break for Grant Tuer who strikes at 17% with his small string, previous course winner",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Sam James",
@@ -2628,7 +2628,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent type from an in-form Iain Jardine stable but recent form is moderate, though topspeed figure of 96 shows ability",
+          "note": "Front-rank racer who has been struggling lately for Iain Jardine, needs to bounce back from disappointing recent efforts",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Andrew Mullen",
@@ -2659,7 +2659,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner returning after nearly five months off, Katie Scott's small yard makes this booking with Jason Hart interesting",
+          "note": "Usually prominent but returning from 149-day absence for Katie Scott whose runners need watching closely after a break",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Jason Hart",
@@ -2690,7 +2690,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse with 5lb claimer Lauren Young taking off useful weight, Jim Goldie runner with solid soft ground form",
+          "note": "Hold-up performer with 5lb claimer Lauren Young taking off valuable weight, Jim Goldie runner returning from long break",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Lauren Young(5)",
@@ -2721,7 +2721,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up type wearing headgear again, veteran with a win at this trip but trainer David Barron's recent form is poor",
+          "note": "Veteran hold-up horse wearing cheekpieces who showed winning form last time at this trip, hard to dismiss entirely",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "William Pyle(3)",
@@ -2752,7 +2752,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent runner from David O'Meara's in-form yard with Daniel Tudhope a positive jockey booking despite poor topspeed",
+          "note": "Front-rank racer in excellent form for David O'Meara with Daniel Tudhope aboard, cheekpieces retained after recent good runs",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Daniel Tudhope",
@@ -2783,7 +2783,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse from Jim Goldie's yard with solid recent placed form, 10-year-old veteran who handles conditions well",
+          "note": "Consistent hold-up horse for Jim Goldie who has been running well lately, veteran who knows his job at this level",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Harry Davies",
@@ -2814,7 +2814,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up type with excellent recent form including a win last time, lightest weight in field and Jim Goldie knows how to place his horses",
+          "note": "Hold-up specialist in excellent current form with recent course win, lightly weighted and represents strong Jim Goldie team",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Cam Hardie",
@@ -2845,7 +2845,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Only front runner in field will get uncontested lead, Hannon's 5/30 strike rate and jockey Voikhansky's headgear booking suggests confidence",
+          "note": "Sole front-runner with first-time cheekpieces applied, Richard Hannon stable in good form and Voikhansky takes the ride",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Alec Voikhansky",
@@ -2876,7 +2876,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse returning after six months with 7lb claimer Shay Farmer, former winner but long absence is concerning",
+          "note": "Hold-up horse returning after 186-day break with 7lb claimer Shay Farmer aboard, double course winner but needs to prove fitness",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Shay Farmer(7)",
@@ -2907,7 +2907,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse with lightest weight and 3lb claimer Amie Waugh, longest absence of field at 227 days makes this hard to fancy",
+          "note": "Hold-up runner returning from 227-day absence for Jim Goldie, 3lb claimer Amie Waugh takes off weight but fitness a major question",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Amie Waugh(3)",
@@ -2932,14 +2932,14 @@
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Thecoffeepoddotco is the only confirmed front runner and will lead uncontested from the gates. The prominent runners The Bell Conductor, Al Hussar, Pop Star, Curious Rover and Ziggy's Triton will settle just behind but won't pressure the leader early over this sprint trip. With such a large field of hold-up horses including Wheels Of Fire, Montezuma, Zarzyni, Arnhem, Water Of Leith, Classy Al and Woohoo tracking from the rear, the pace will be steady early before quickening dramatically in the final two furlongs. This setup strongly favours hold-up horses — the uncontested leader will set a manageable gallop allowing the closers to unleash their finishing kicks.",
+      "paceDynamic": "Thecoffeepoddotco will take them along as the sole confirmed front-runner, setting an honest but manageable gallop on the soft ground. The prominent brigade of The Bell Conductor, Al Hussar, Pop Star, Curious Rover and Ziggy's Triton will track just behind, creating a decent pace but nothing frenetic over this minimum trip. The large contingent of hold-up horses including Wheels Of Fire, Montezuma, Zarzyni, Arnhem, Water Of Leith, Classy Al and Woohoo will get their preferred strong pace to aim at. This setup strongly favours hold-up horses — the pace is genuine with one leader and multiple prominent runners ensuring no crawl, allowing the closers to unleash their finishing kicks.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Hold-up horses dominate",
-          "prob": 55,
-          "trigger": "If Thecoffeepoddotco sets a steady pace and the field bunches up turning for home",
-          "body": "The large group of hold-up horses will have plenty left in the tank for their finishing kicks. Wheels Of Fire returns to form after his recent win, while Water Of Leith's excellent recent form makes him dangerous from the rear.",
+          "title": "Hold-Up Heroes Prevail",
+          "prob": 65,
+          "trigger": "If Thecoffeepoddotco maintains a solid gallop and the prominent runners track keenly",
+          "body": "The genuine pace will string out the field and create the perfect scenario for the closing brigade to pick off tired leaders. Wheels Of Fire and Water Of Leith are perfectly positioned to benefit from this tactical setup.",
           "winners": [
             "Wheels Of Fire",
             "Water Of Leith"
@@ -2951,70 +2951,70 @@
         },
         {
           "label": "B",
-          "title": "Prominent runners strike",
-          "prob": 25,
-          "trigger": "If the prominent group can get first run on the leaders without expending too much early energy",
-          "body": "Al Hussar's strong soft ground form and freshness after 155 days off makes him hard to peg back. The Bell Conductor's headgear change suggests connections expect improvement from his prominent position.",
+          "title": "Prominent Runners Dominate",
+          "prob": 20,
+          "trigger": "If the pace becomes more sedate than expected with Thecoffeepoddotco backing off",
+          "body": "The prominent trackers will find themselves in the ideal position to kick clear without having their speed blunted by over-racing. Al Hussar and The Bell Conductor can capitalise on their tactical positioning.",
           "winners": [
             "Al Hussar",
             "The Bell Conductor"
           ],
           "others": [
-            "Curious Rover",
-            "Pop Star"
+            "Ziggy's Triton",
+            "Curious Rover"
           ]
         },
         {
           "label": "C",
-          "title": "Front runner holds on",
-          "prob": 12,
-          "trigger": "If Thecoffeepoddotco can dictate terms and the hold-up horses leave their runs too late",
-          "body": "The leader gets an uncontested lead and kicks again when the field closes, making it difficult for the closers to reel him in. His recent consistent form at this trip gives him every chance.",
+          "title": "Front-Runner Survives",
+          "prob": 10,
+          "trigger": "If Thecoffeepoddotco gets soft splits and the field fails to apply sufficient pressure",
+          "body": "The leader can steal a march turning for home and hold on grimly despite the large chasing pack. Thecoffeepoddotco's recent form suggests he has the stamina to see out the trip under these conditions.",
           "winners": [
             "Thecoffeepoddotco",
-            "Ziggy's Triton"
+            "Al Hussar"
           ],
           "others": [
-            "Al Hussar",
-            "The Bell Conductor"
+            "The Bell Conductor",
+            "Wheels Of Fire"
           ]
         },
         {
           "label": "D",
-          "title": "Pace collapses sprint",
-          "prob": 8,
-          "trigger": "If the early pace is crawling and it becomes a mad dash from the two-furlong pole",
-          "body": "The race becomes a lottery where any horse with a clear run can win regardless of running style. The lightweights Woohoo and Water Of Leith could benefit from the lack of early pace.",
+          "title": "Pace Collapses Chaos",
+          "prob": 5,
+          "trigger": "If the soft going causes the early pace to become crawling and the race becomes a cavalry charge",
+          "body": "A messy sprint finish develops where positioning at the furlong pole becomes crucial rather than running style. Any horse with a turn of foot can capitalise regardless of their usual tactical approach.",
           "winners": [
-            "Woohoo",
+            "Ziggy's Triton",
             "Pop Star"
           ],
           "others": [
-            "Water Of Leith",
-            "Classy Al"
+            "Wheels Of Fire",
+            "Al Hussar"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Thecoffeepoddotco will lead uncontested and if he sets a steady gallop the hold-up horses will have too much finishing speed"
+          "text": "Watch if Thecoffeepoddotco gets an easy lead as the sole front-runner — could steal a decisive advantage if not pressured early"
         },
         {
           "severity": "warn",
-          "text": "Watch for Al Hussar to be produced with a strong run from off the pace given his fresh condition and soft ground form"
+          "text": "Monitor Al Hussar and Curious Rover closely despite long breaks as both have shown they can return to form fresh"
         },
         {
           "severity": "info",
-          "text": "The Bell Conductor's first-time headgear application suggests connections expect a better performance from his prominent position"
+          "text": "Jim Goldie has five runners here which suggests confidence in the race conditions suiting his string"
         },
         {
           "severity": "warn",
-          "text": "Water Of Leith carries the lowest weight and showed excellent form when winning last time for in-form Jim Goldie yard"
+          "text": "Several horses sport first-time or retained headgear including The Bell Conductor and Thecoffeepoddotco indicating stable experiments"
         },
         {
           "severity": "info",
-          "text": "Several 155+ day absences including Al Hussar, Montezuma, Classy Al and Woohoo make fitness a key factor in a competitive handicap"
+          "text": "The going has been consistent as Good To Soft all day so no significant track bias should develop for this contest"
         }
       ],
       "skipped": false
