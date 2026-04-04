@@ -35,7 +35,7 @@
           "finish_type": "E",
           "dist_code": "UNKNOWN",
           "going_flag": "UNKNOWN",
-          "note": "Lightly raced Appleby runner with huge OR120 rating advantage and Billy Loughnane booking suggests stable confidence despite unknown running style and debut over trip.",
+          "note": "Lightly-raced type with strong OR 120 rating represents in-form Charlie Appleby stable (1/9 last 14 days), but unknown running style creates tactical uncertainty.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Billy Loughnane",
@@ -54,8 +54,8 @@
           "spotlight": "",
           "_projected": 87.0,
           "_model_price": "evens",
-          "_mkt_price": "4/6",
-          "_win_pct": 50.0,
+          "_mkt_price": "4/5",
+          "_win_pct": 48.0,
           "_edge": -23.4,
           "_action": "AVOID"
         },
@@ -66,7 +66,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse who showed promise when fourth last time but faces much stronger opposition and the likely steady pace won't suit his come-from-behind style.",
+          "note": "Hold-up performer returning after 24-day break needs pace to aim at, but David Simcock's 0/4 recent record suggests stable not firing.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Luke Morris",
@@ -86,7 +86,7 @@
           "_projected": 75.7,
           "_model_price": "3/1",
           "_mkt_price": "4/1",
-          "_win_pct": 24.7,
+          "_win_pct": 25.6,
           "_edge": 16.3,
           "_action": "CONSIDER"
         },
@@ -97,7 +97,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent runner returning from 115-day break but handles similar going well and Rob Hornby booking for in-form Andrew Balding stable suggests readiness.",
+          "note": "Natural front runner returning from 115-day break with Andrew Balding (8/29 strike rate) and proven on similar going, ideal to control this small field.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Rob Hornby",
@@ -117,61 +117,58 @@
           "_projected": 69.5,
           "_model_price": "3/1",
           "_mkt_price": "10/3",
-          "_win_pct": 25.4,
+          "_win_pct": 26.4,
           "_edge": 7.1,
           "_action": "WATCH"
         }
       ],
-      "paceDynamic": "Killer Whale is the only confirmed front-runner in this small field and will dictate proceedings from the start, likely setting a measured gallop over the extended 1m4f trip. With no pace pressure from Sinocentric (hold-up) or the unknown quantity Chasing Time, Killer Whale can control the tempo and kick for home when ready. The lack of early pace means the field will stay bunched longer than usual, creating a sprint finish from the home turn. This setup strongly favours prominent runners who can track the pace and kick - the tempo will be too steady for hold-up horses to make dramatic late moves.",
+      "paceDynamic": "Killer Whale is the only natural front runner in this three-horse field and will dictate terms from the front without pressure. Rob Hornby can set a controlled, measured gallop over this stamina-testing 1m4f trip, with Sinocentric tracking from midfield and the lightly-raced Chasing Time yet to show his preferred position. The lack of pace pressure means the leader won't soften up, while the small field reduces the usual advantage hold-up horses gain from cover and splits. This setup strongly favours prominent runners and the pace-setter — there's insufficient pace to string out the field and create the scenario hold-up horses need.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Killer Whale Controls",
-          "prob": 45,
-          "trigger": "If Killer Whale sets an uncontested lead and maintains control throughout",
-          "body": "The Balding runner can dictate ideal fractions and has the class edge with Rob Hornby knowing the track well. His 0W1P record on similar going shows he handles conditions and the long absence becomes irrelevant with an easy lead.",
+          "title": "Controlled Front Running",
+          "prob": 55,
+          "trigger": "If Killer Whale gets an uncontested lead and dictates the gallop.",
+          "body": "Rob Hornby can dictate fractions without pressure, saving energy for a sustained finish that the 115-day break will have freshened him for. The prominent position proves decisive when there's no genuine pace to expose him.",
           "winners": [
             "Killer Whale"
           ],
           "others": [
-            "Chasing Time",
             "Sinocentric"
           ]
         },
         {
           "label": "B",
-          "title": "Chasing Time Class Tells",
-          "prob": 35,
-          "trigger": "If the Appleby newcomer shows the quality expected from this powerful stable",
-          "body": "Charlie Appleby's 1/9 recent strike rate and Billy Loughnane booking suggests significant ability, and the OR120 rating towers above rivals. The unknown running style could be prominent enough to track Killer Whale and outstay him.",
+          "title": "Charlie Appleby Quality",
+          "prob": 30,
+          "trigger": "If Chasing Time shows the class that his OR 120 rating suggests despite limited experience.",
+          "body": "The Godolphin runner's superior official rating reflects genuine ability, and Billy Loughnane's booking suggests stable confidence in this lightly-raced type. Charlie Appleby's 1/9 record in the last 14 days indicates the stable is in form.",
           "winners": [
             "Chasing Time"
           ],
           "others": [
-            "Killer Whale",
-            "Sinocentric"
+            "Killer Whale"
           ]
         },
         {
           "label": "C",
-          "title": "Sinocentric Late Surge",
-          "prob": 12,
-          "trigger": "If the pace becomes stronger than expected and sets up his hold-up style",
-          "body": "The David Simcock runner showed promise when fourth last time and Luke Morris knows him well. However, the likely steady gallop makes a dramatic late charge difficult against classier opponents.",
+          "title": "Tactical Battle Unfolds",
+          "prob": 10,
+          "trigger": "If Sinocentric and Chasing Time both track Killer Whale closely, creating more pressure.",
+          "body": "The increased pace favours Luke Morris on Sinocentric, whose hold-up style benefits from a stronger gallop to aim at. David Simcock's runner gets the run of the race from off the pace.",
           "winners": [
             "Sinocentric"
           ],
           "others": [
-            "Chasing Time",
-            "Killer Whale"
+            "Chasing Time"
           ]
         },
         {
           "label": "D",
           "title": "Pace Collapse Finish",
-          "prob": 8,
-          "trigger": "If all three runners converge in the final furlong creating a blanket finish",
-          "body": "The small field and potential tactical race could see them finish in a heap. This would favour the most in-form connections, but the class differential makes this outcome unlikely.",
+          "prob": 5,
+          "trigger": "If all three runners go steady early and it becomes a sprint finish.",
+          "body": "The lack of genuine pace throughout means stamina becomes less important and speed takes over in the final furlong. This neutralizes the distance advantage and makes it a lottery finish.",
           "winners": [
             "Killer Whale",
             "Chasing Time"
@@ -184,23 +181,19 @@
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Watch if Chasing Time shows early pace - this would create genuine speed and change the entire race dynamic"
+          "text": "Watch for any early move from Chasing Time - if Billy Loughnane sends him forward early, it suggests they want to use his class advantage."
         },
         {
           "severity": "warn",
-          "text": "Monitor Killer Whale's fitness after 115 days off - any signs of rustiness early could open the door"
+          "text": "Monitor Killer Whale's jump from the stalls after the long break - any sluggish start could compromise his front-running tactics."
         },
         {
           "severity": "info",
-          "text": "Observe Sinocentric's positioning - if he's closer than usual it suggests connections expect a stronger pace"
-        },
-        {
-          "severity": "info",
-          "text": "Check market moves on Chasing Time - significant support would confirm the stable's confidence in this newcomer"
+          "text": "Observe if Sinocentric gets cover in the small field - Luke Morris needs to find a position to launch from in the straight."
         },
         {
           "severity": "warn",
-          "text": "Watch for any late scratching due to the small field size - losing one runner dramatically changes tactics"
+          "text": "Track the early fractions - if they go too steady, it becomes a sprint finish that could upset the form book."
         }
       ],
       "skipped": false
@@ -242,7 +235,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up performer with solid RPR 71 but 12-year-old veteran carrying top weight, Tony Carroll's yard has been out of form recently",
+          "note": "Hold-up horse who has been in good form lately with a recent win, but 12-year-old veteran may lack pace for sprint finish",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Myla Coppins(3)",
@@ -262,7 +255,7 @@
           "_projected": 59.8,
           "_model_price": "8/1",
           "_mkt_price": "15/2",
-          "_win_pct": 11.2,
+          "_win_pct": 11.6,
           "_edge": 7.7,
           "_action": "WATCH"
         },
@@ -273,7 +266,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent runner likely to lead, Hope Regan's 7lb claim valuable but Mark Loughnane's stable winless in past 14 days suggests confidence may be low",
+          "note": "Only front-runner in field gives him tactical advantage, but inexperienced 7lb claimer Hope Regan may not maximize this edge",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Hope Regan(7)",
@@ -291,9 +284,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 55.5,
-          "_model_price": "9/2",
+          "_model_price": "4/1",
           "_mkt_price": "4/1",
-          "_win_pct": 18.7,
+          "_win_pct": 19.3,
           "_edge": 6.4,
           "_action": "WATCH"
         },
@@ -304,13 +297,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse with headgear change (visor) suggesting connections seeking improvement, James Owen yard in decent form recently",
+          "note": "Hold-up type who caught stewards' attention last time, suggesting trainer James Owen struggling to get tune right",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Harry Vigors(3)",
           "trainer": "James Owen",
           "trainer_rtf": "58",
-          "trainer_14": "5/41",
+          "trainer_14": "4/37",
           "last_run": "9",
           "age": "6",
           "sex": "gelding",
@@ -319,12 +312,12 @@
           "headgear": "v",
           "rpr": "70",
           "ts": "52",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Unplaced in two 7f runs for new yard; down in weights; first run over further than 7f",
+          "spotlight": "Two wins over 6f for previous trainers; unplaced in two runs for new stable (7f), catching the attention of the stewards on the first occasion, and hopes appear to rest on this first attempt at further than 7f having a positive effect.",
           "_projected": 49.6,
           "_model_price": "4/1",
           "_mkt_price": "7/2",
-          "_win_pct": 19.4,
+          "_win_pct": 20.1,
           "_edge": 1.5,
           "_action": "WATCH"
         },
@@ -335,7 +328,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up type with strong RPR 74 and proven over course and distance, Conor Whiteley's 3lb claim helps but Roger Fell's yard currently without winners",
+          "note": "Showed promising return from 108-day break last time, valuable 3lb claimer Whiteley can help her competitive weight",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Conor Whiteley(3)",
@@ -350,12 +343,12 @@
           "headgear": "",
           "rpr": "74",
           "ts": "56",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Promising run after a break here two weeks ago; shouldn't be too far away",
+          "spotlight": "Infrequent winner but she made a promising return from a 108-day break here two weeks ago; talented claimer takes off a valuable 3lb; shortlisted.",
           "_projected": 46.8,
-          "_model_price": "4/1",
-          "_mkt_price": "7/2",
-          "_win_pct": 19.2,
+          "_model_price": "5/1",
+          "_mkt_price": "22/5",
+          "_win_pct": 16.6,
           "_edge": 0.7,
           "_action": "WATCH"
         },
@@ -366,7 +359,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up runner with hood first time suggesting stepped-up effort expected, recent course winner with good speed figures",
+          "note": "Another hold-up horse who hung badly when winning chance arose in February, raising questions about his resolution",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Ethan Tindall",
@@ -381,12 +374,12 @@
           "headgear": "p",
           "rpr": "72",
           "ts": "49",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Second over C&D in February, when rather throwing the race away; not so good twice since",
+          "spotlight": "Hung away a winning opportunity over C&D in February and neither run since has been as good; more minor money perhaps his best hope.",
           "_projected": 46.2,
-          "_model_price": "9/1",
+          "_model_price": "8/1",
           "_mkt_price": "15/2",
-          "_win_pct": 10.4,
+          "_win_pct": 10.7,
           "_edge": 2.1,
           "_action": "WATCH"
         },
@@ -397,7 +390,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up performer from in-form Richard Hannon yard, recent course winner with strong RPR 73 despite carrying penalty weight",
+          "note": "Veteran hold-up horse in good form with recent win, proven at this trip and effective in sprint finishes",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Tyrese Cameron",
@@ -417,7 +410,7 @@
           "_projected": 41.2,
           "_model_price": "16/1",
           "_mkt_price": "14/1",
-          "_win_pct": 5.4,
+          "_win_pct": 5.6,
           "_edge": -3.9,
           "_action": "WATCH"
         },
@@ -428,7 +421,7 @@
           "finish_type": "E",
           "dist_code": "B-",
           "going_flag": "OK",
-          "note": "Hold-up type returning from 37-day break which could be significant positive or negative, proven over longer distances",
+          "note": "Hold-up style but 37 days since last run may have dulled his edge, better over longer distances",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Olivia Tubb",
@@ -448,7 +441,7 @@
           "_projected": 40.0,
           "_model_price": "6/1",
           "_mkt_price": "9/2",
-          "_win_pct": 14.1,
+          "_win_pct": 14.5,
           "_edge": -8.1,
           "_action": "WATCH"
         },
@@ -459,7 +452,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Weakest on ratings with low RPR 64 and minimal recent form, likely to struggle against this level despite minimum weight",
+          "note": "Lowest-rated hold-up horse in field, 25 days off and poor recent form makes her hard to fancy",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Donagh Murphy",
@@ -477,51 +470,36 @@
           "comment": "",
           "spotlight": "",
           "_projected": 34.7,
-          "_model_price": "63/1",
+          "_model_price": "61/1",
           "_mkt_price": "50/1",
           "_win_pct": 1.6,
           "_edge": -6.4,
           "_action": "WATCH"
         }
       ],
-      "paceDynamic": "With only one confirmed front runner in Yehudi, this will develop into a sustainable pace scenario rather than a speed duel. Yehudi will be allowed to dictate terms from the front without serious pressure, likely setting steady fractions over the 1m½f trip. The large contingent of hold-up horses (Poetic Force, Orbital Chime, Coloane, Book Of Life, Always Fearless, Not So Sobers, Nala The Lioness) will be content to settle behind and rely on late kicks. This setup strongly favours hold-up horses — the controlled pace will keep the field compact and create opportunities for strong finishers to strike late.",
+      "paceDynamic": "Yehudi is the sole confirmed front-runner and will set a sustainable gallop without pressure from the start. The entire field behind him consists of hold-up horses who will be content to settle in the back half of the field. This creates a slow early pace that will build into a sprint finish over the final 3f as the hold-up brigade all try to unleash their finishing kicks simultaneously. This setup strongly favours horses with the best turn of foot — those who can produce the most devastating late surge when the pace lifts.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Sustainable Pace Favours Finishers",
-          "prob": 60,
-          "trigger": "If Yehudi sets an uncontested lead and moderate fractions",
-          "body": "The hold-up brigade gets the perfect setup with a true gallop developing only in the final 3f. Strong finishers with the highest RPR ratings capitalise on the tactical advantage.",
+          "title": "Slow Pace Sprint Finish",
+          "prob": 65,
+          "trigger": "If Yehudi sets an uncontested lead and the hold-up horses all come late together.",
+          "body": "The pace will be pedestrian for 6f before exploding into a cavalry charge home. Horses with the best finishing speed like Always Fearless and Coloane can unleash their strongest asset.",
           "winners": [
             "Always Fearless",
             "Coloane"
           ],
           "others": [
-            "Book Of Life",
-            "Poetic Force"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "Front Runner Escapes",
-          "prob": 20,
-          "trigger": "If Yehudi kicks clear turning for home before the field responds",
-          "body": "The pace becomes genuine enough to string out the field but not fast enough early to stop Yehudi. Hold-up horses with tactical speed can still get competitive.",
-          "winners": [
-            "Yehudi",
-            "Always Fearless"
-          ],
-          "others": [
-            "Coloane",
+            "Poetic Force",
             "Book Of Life"
           ]
         },
         {
-          "label": "C",
-          "title": "Messy Slow Pace",
-          "prob": 12,
-          "trigger": "If the pace becomes crawling with no pressure on Yehudi until very late",
-          "body": "The race turns into a sprint finish where horses with natural speed have the edge. Those prominently placed or with good turn of foot benefit most.",
+          "label": "B",
+          "title": "Yehudi Steals It",
+          "prob": 20,
+          "trigger": "If Yehudi gets such a soft lead that he can quicken clear before the closers get organized.",
+          "body": "The favourite's prominent style pays dividends if he can build an unassailable advantage. Hold-up horses left with too much to do in a tactical affair.",
           "winners": [
             "Yehudi",
             "Orbital Chime"
@@ -532,41 +510,56 @@
           ]
         },
         {
-          "label": "D",
-          "title": "Early Pace Pressure",
-          "prob": 8,
-          "trigger": "If one of the prominent runners decides to take on Yehudi from the start",
-          "body": "A genuine gallop develops throughout, suiting horses that stay strongly and can handle a true test. The best stayers with proven form over the distance thrive.",
+          "label": "C",
+          "title": "Traffic Chaos Finish",
+          "prob": 10,
+          "trigger": "If the hold-up horses all converge at once and create interference in the straight.",
+          "body": "Several horses will get stopped in their tracks or forced to switch wide. The clearest passage determines the winner more than pure ability.",
           "winners": [
-            "Coloane",
-            "Not So Sobers"
-          ],
-          "others": [
             "Book Of Life",
             "Poetic Force"
+          ],
+          "others": [
+            "Orbital Chime",
+            "Always Fearless"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Early Leader Folds",
+          "prob": 5,
+          "trigger": "If Yehudi fails to handle the step up in trip and fades from halfway.",
+          "body": "An even more pedestrian pace as the field concertinas together. The horse who can quicken latest wins in a blanket finish.",
+          "winners": [
+            "Coloane",
+            "Always Fearless"
+          ],
+          "others": [
+            "Not So Sobers",
+            "Book Of Life"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Yehudi could get an easy lead if no other horse shows early pace - monitor for any rival willing to press early"
+          "text": "Yehudi must be watched closely early - if 7lb claimer Hope Regan lets him bowl along too fast he'll empty out"
         },
         {
           "severity": "warn",
-          "text": "Always Fearless carries a penalty but comes from the most in-form stable and won here recently - key market mover"
-        },
-        {
-          "severity": "info",
-          "text": "Book Of Life wears a hood for the first time which often signals stable expects improved performance"
+          "text": "Traffic problems are inevitable with seven hold-up horses converging in the straight - watch for interference"
         },
         {
           "severity": "warn",
-          "text": "Orbital Chime's visor change could spark improvement after disappointing recent efforts"
+          "text": "Always Fearless has won recently but check if the 9-year-old veteran can reproduce that effort again so soon"
         },
         {
           "severity": "info",
-          "text": "Both Coloane and Not So Sobers have been absent from winning recently despite decent efforts - either could be overpriced"
+          "text": "Coloane's return to form last time was eye-catching - monitor if 3lb claimer Whiteley can enhance her chances"
+        },
+        {
+          "severity": "info",
+          "text": "Orbital Chime caught stewards' attention last time for not trying - watch for any similar riding tactics"
         }
       ],
       "skipped": false
@@ -608,7 +601,7 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Only confirmed front runner returning from 30-day break, will control the race but Luke Morris has moderate strike rate",
+          "note": "Likely pace-setter returning from 30-day break with solid second last time, Morris booking suggests confidence despite Clover's poor recent record",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Luke Morris",
@@ -627,8 +620,8 @@
           "spotlight": "",
           "_projected": 63.6,
           "_model_price": "6/4",
-          "_mkt_price": "4/3",
-          "_win_pct": 38.3,
+          "_mkt_price": "6/4",
+          "_win_pct": 36.7,
           "_edge": 4.7,
           "_action": "WATCH"
         },
@@ -639,7 +632,7 @@
           "finish_type": "E",
           "dist_code": "UNKNOWN",
           "going_flag": "UNKNOWN",
-          "note": "Lightly raced David Loughnane runner making debut with experienced Lewis Edmunds, unknown quantity but stable targets these races",
+          "note": "Unknown quantity for in-form Loughnane stable with Lewis Edmunds taking the ride, dangerous wildcard given her unraced status",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Lewis Edmunds",
@@ -657,7 +650,7 @@
           "comment": "",
           "spotlight": "",
           "_projected": 60.8,
-          "_model_price": "45/1",
+          "_model_price": "44/1",
           "_mkt_price": "30/1",
           "_win_pct": 2.2,
           "_edge": -54.1,
@@ -670,7 +663,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up type but David Probert booking suggests connections want her more prominent, ran respectably on debut",
+          "note": "Hold-up type from powerful Balding yard with Probert booked, disappointed on debut but breeding suggests improvement likely",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "David Probert",
@@ -690,7 +683,7 @@
           "_projected": 57.8,
           "_model_price": "10/1",
           "_mkt_price": "9/1",
-          "_win_pct": 9.2,
+          "_win_pct": 9.4,
           "_edge": 8.9,
           "_action": "WATCH"
         },
@@ -701,7 +694,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse returning after 233-day absence, showed ability when third last time but fitness question",
+          "note": "Hold-up horse returning after 233-day absence, showed promise in defeat at this track and distance on similar going",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Kieran Shoemark",
@@ -719,9 +712,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 56.3,
-          "_model_price": "7/2",
+          "_model_price": "3/1",
           "_mkt_price": "11/4",
-          "_win_pct": 23.4,
+          "_win_pct": 24.0,
           "_edge": 1.4,
           "_action": "WATCH"
         },
@@ -732,7 +725,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up runner from small stable, Georgia Dobie's 7lb claim useful but trainer Edward Smyth-Osbourne has limited runners",
+          "note": "Held-up runner with consistent style, 45 days since last run but showed glimpses of ability in maidens at this level",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Georgia Dobie",
@@ -752,7 +745,7 @@
           "_projected": 55.0,
           "_model_price": "9/1",
           "_mkt_price": "8/1",
-          "_win_pct": 9.8,
+          "_win_pct": 10.1,
           "_edge": 3.1,
           "_action": "WATCH"
         },
@@ -763,7 +756,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up type with poor recent form but George Boughey stable in reasonable form, Billy Loughnane booking positive",
+          "note": "Back-of-field runner with poor recent form for Boughey, quick return suggests connections seeking easier opportunity",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Billy Loughnane",
@@ -783,7 +776,7 @@
           "_projected": 53.6,
           "_model_price": "16/1",
           "_mkt_price": "14/1",
-          "_win_pct": 5.9,
+          "_win_pct": 6.0,
           "_edge": 1.7,
           "_action": "WATCH"
         },
@@ -794,7 +787,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse with consistent form figures, Jack Mitchell jockey booking suggests stable confidence after 40-day break",
+          "note": "Hold-up type with solid RPR figures, 40-day break with Mitchell booking indicates stable confidence in this grade",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Jack Mitchell",
@@ -814,7 +807,7 @@
           "_projected": 52.9,
           "_model_price": "9/1",
           "_mkt_price": "15/2",
-          "_win_pct": 10.2,
+          "_win_pct": 10.4,
           "_edge": -0.9,
           "_action": "WATCH"
         },
@@ -825,7 +818,7 @@
           "finish_type": "E",
           "dist_code": "B-",
           "going_flag": "OK",
-          "note": "Veteran hold-up horse with modest ability rating, carries big weight penalty and looks outclassed",
+          "note": "Veteran hold-up horse carrying significant weight penalty, low OR suggests she's outclassed but track-and-trip proven",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Finley Marsh",
@@ -843,21 +836,21 @@
           "comment": "",
           "spotlight": "",
           "_projected": 45.0,
-          "_model_price": "90/1",
+          "_model_price": "87/1",
           "_mkt_price": "100/1",
           "_win_pct": 1.1,
           "_edge": 35.1,
           "_action": "WATCH"
         }
       ],
-      "paceDynamic": "Constant Star stands alone as the only genuine front runner and will dictate proceedings from the start without pressure. With six hold-up horses packed behind, this creates a stop-start scenario where the early pace may be moderate before quickening. Thai Princess and potentially Imelda could track prominently if connections are aggressive, but the bulk of the field will be held up. This setup strongly favours hold-up horses — the pace will be genuine enough in the closing stages and the field will bunch up for a sprint finish.",
+      "paceDynamic": "Constant Star will likely set the pace from stall rise with no other confirmed front runners in this field of eight fillies. The modest early gallop should be sustainable given the lack of pace pressure, creating a steady rhythm through the first half of this 7f contest. The hold-up horses — Rogue Desire, Thimble, Action Reaction, Safe Zone, and Difford Girl — will be content to track behind in the early stages. This setup strongly favours hold-up horses — the modest pace will compress the field and create a tactical finish where those with late speed can strike.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Hold-Up Horses Dominate",
-          "prob": 65,
-          "trigger": "If Constant Star sets a steady pace and the field bunches for a sprint finish",
-          "body": "The moderate early gallop allows the hold-up brigade to close strongly in the final two furlongs. Higher-rated horses like Rogue Desire and Safe Zone can unleash their finishing kicks when it matters most.",
+          "title": "Hold-up horses dominate",
+          "prob": 55,
+          "trigger": "If Constant Star sets a steady, uncontested pace as expected",
+          "body": "The field stays bunched and the finish becomes a sprint where the fresher hold-up horses can unleash their turn of foot. Rogue Desire and Safe Zone are best positioned to capitalize with their proven ability to finish strongly.",
           "winners": [
             "Rogue Desire",
             "Safe Zone"
@@ -869,13 +862,28 @@
         },
         {
           "label": "B",
-          "title": "Prominent Trackers Strike",
-          "prob": 20,
-          "trigger": "If Thai Princess or Imelda track Constant Star prominently and kick on approaching the final furlong",
-          "body": "The tracking horses get first run on the field and hold off the late challengers. Their tactical positioning proves decisive in a race where the hold-up horses leave too much to do.",
+          "title": "Prominent runners prevail",
+          "prob": 25,
+          "trigger": "If the pace becomes more genuinely run than expected with early pressure",
+          "body": "Constant Star's stamina comes into play and those tracking close behind can kick clear before the hold-up horses get into gear. Thai Princess could benefit from her Balding training and Probert booking despite modest debut form.",
           "winners": [
-            "Thai Princess",
-            "Imelda"
+            "Constant Star",
+            "Thai Princess"
+          ],
+          "others": [
+            "Imelda",
+            "Safe Zone"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Lightly raced improver strikes",
+          "prob": 12,
+          "trigger": "If Imelda shows significant improvement from her unraced status under Loughnane",
+          "body": "The David Loughnane-trained filly could have natural ability that hasn't been exposed yet, capitalizing on the modest pace to spring a surprise. Her unknown running style provides tactical flexibility that experienced rivals lack.",
+          "winners": [
+            "Imelda",
+            "Thai Princess"
           ],
           "others": [
             "Constant Star",
@@ -883,56 +891,41 @@
           ]
         },
         {
-          "label": "C",
-          "title": "Front Runner Steals It",
-          "prob": 10,
-          "trigger": "If Constant Star gets uncontested fractions and kicks clear turning for home",
-          "body": "The lack of early pace pressure allows the leader to dictate completely and find extra when challenged. The hold-up horses struggle to peg back the advantage built up through tactical superiority.",
-          "winners": [
-            "Constant Star",
-            "Thai Princess"
-          ],
-          "others": [
-            "Safe Zone",
-            "Rogue Desire"
-          ]
-        },
-        {
           "label": "D",
-          "title": "Pace Collapses Completely",
-          "prob": 5,
-          "trigger": "If the early pace becomes crawling and it turns into a messy sprint from halfway",
-          "body": "The lack of any genuine gallop turns this into a lottery where positioning at the furlong pole matters more than ability. Any horse getting a clear run can capitalize on the tactical mess.",
+          "title": "Longshot gets competitive",
+          "prob": 8,
+          "trigger": "If the modest pace allows weaker horses to stay closer than usual",
+          "body": "Difford Girl or Action Reaction could outrun their recent poor form in this restricted company, though their ceiling remains limited. The tactical nature of the race might mask class differences temporarily.",
           "winners": [
             "Action Reaction",
-            "Thimble"
+            "Difford Girl"
           ],
           "others": [
-            "Safe Zone",
-            "Thai Princess"
+            "Thimble",
+            "Safe Zone"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Imelda is the complete unknown making her debut for David Loughnane who targets these maiden races effectively"
+          "text": "Watch for any early pace pressure on Constant Star which could change the entire complexion and favor those tracking closer"
         },
         {
           "severity": "warn",
-          "text": "Constant Star could get uncontested fractions if no other horse shows early speed, making her very dangerous"
+          "text": "Monitor Imelda's market moves as any strong support would suggest Loughnane expects significant improvement from debut"
         },
         {
           "severity": "info",
-          "text": "Thai Princess with David Probert booking suggests stable wants her ridden more aggressively than debut running style"
-        },
-        {
-          "severity": "info",
-          "text": "Safe Zone returning after 40-day break with Jack Mitchell riding suggests stable confidence in her fitness"
+          "text": "Check if Thai Princess settles better than on debut as Probert's booking suggests Balding expects a step forward"
         },
         {
           "severity": "warn",
-          "text": "The pace scenario could collapse completely with only one natural leader, turning this into a tactical mess"
+          "text": "Watch Action Reaction's early position as her poor recent form suggests she needs everything to fall right tactically"
+        },
+        {
+          "severity": "info",
+          "text": "Observe Safe Zone's finishing kick as her consistent RPR suggests she could be competitive if getting the right pace setup"
         }
       ],
       "skipped": false
@@ -975,7 +968,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up specialist from in-form Hannon yard with strong recent 6f form, quick return after decent effort suggests confidence",
+          "note": "Hold-up runner with strong recent form for in-form Richard Hannon stable, Joe Leavy booking suggests confidence after just 8 days break",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Joe Leavy",
@@ -995,7 +988,7 @@
           "_projected": 64.8,
           "_model_price": "3/1",
           "_mkt_price": "5/2",
-          "_win_pct": 23.5,
+          "_win_pct": 23.6,
           "_edge": 3.2,
           "_action": "WATCH"
         },
@@ -1006,7 +999,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Consistent hold-up performer wearing first-time blinkers after 78-day break, Bethell strike rate concerning but horse has ability",
+          "note": "Hold-up type returning from 78-day break for Edward Bethell, consistent at this trip but freshness question remains",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Callum Rodriguez",
@@ -1037,7 +1030,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Veteran hold-up runner with excellent course record, Carson booking and quick return indicates stable confidence despite age",
+          "note": "Veteran hold-up horse with excellent course record, 3 wins from similar going conditions for Tony Carroll",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "William Carson",
@@ -1068,7 +1061,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up type wearing cheekpieces, poor trainer form recently but has shown glimpses of ability at this level",
+          "note": "Hold-up runner wearing cheekpieces, Julie Camacho's 0/5 recent record is concerning despite horse's solid RPR",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Luke Morris",
@@ -1099,7 +1092,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Confirmed leader wearing blinkers, recent form solid but 18-day gap may indicate needing run",
+          "note": "Confirmed front-runner with tactical speed, key pace angle for John O'Shea after 18-day freshen-up",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Charles Bishop",
@@ -1130,7 +1123,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "12-year-old hold-up horse wearing cheekpieces, has place claims despite age if pace unfolds to suit",
+          "note": "12-year-old hold-up specialist with solid course form, wearing cheekpieces for Patrick Morris",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "James Sullivan",
@@ -1161,7 +1154,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up runner with tongue-tie applied, Appleby runner back quickly after improved effort suggests plotting",
+          "note": "Hold-up runner with first-time tongue-tie for Michael Appleby, low weight advantage but inconsistent recent form",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Jason Watson",
@@ -1180,8 +1173,8 @@
           "spotlight": "",
           "_projected": 51.1,
           "_model_price": "5/1",
-          "_mkt_price": "15/4",
-          "_win_pct": 17.2,
+          "_mkt_price": "19/5",
+          "_win_pct": 17.1,
           "_edge": 2.5,
           "_action": "WATCH"
         },
@@ -1192,7 +1185,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Front-runner back quickly after poor effort, Hornby booking suggests stable retains faith in this course specialist",
+          "note": "Natural front-runner with course-and-distance win, Charlie Wallis 0/3 recent record but Rob Hornby booking is positive",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Rob Hornby",
@@ -1223,13 +1216,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse with headgear applied, recent form moderate but has shown better when conditions suit",
+          "note": "Hold-up horse carrying first-time hood, ear-plugs and blinkers for Scott Dixon, Spotlight flags concerns about revival",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Kieran O'Neill",
           "trainer": "Scott Dixon",
           "trainer_rtf": "43",
-          "trainer_14": "2/25",
+          "trainer_14": "2/24",
           "last_run": "15",
           "age": "4",
           "sex": "gelding",
@@ -1238,8 +1231,8 @@
           "headgear": "heb",
           "rpr": "81",
           "ts": "65",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Tumbling down the weights but showing no sign of taking advantage",
+          "spotlight": "Went the wrong way for George Boughey last year and no sign of a revival for new yard this winter.",
           "_projected": 45.6,
           "_model_price": "66/1",
           "_mkt_price": "50/1",
@@ -1248,89 +1241,89 @@
           "_action": "WATCH"
         }
       ],
-      "paceDynamic": "Due Date and Punchbowl Flyer will contest the early lead in this modest handicap, with both having confirmed front-running tendencies and likely to set a solid gallop over this sharp 6f trip. The remaining seven runners all have hold-up tendencies, creating a clear pace division that should see the field string out behind the two leaders. With genuine pace assured and the bulk of the field needing to come from behind, this setup strongly favours hold-up horses — the pace will be honest and those with finishing kicks will find plenty to aim at.",
+      "paceDynamic": "Due Date and Punchbowl Flyer will clash for the early lead in this competitive handicap, with both confirmed front-runners likely to engage from the off. Their battle should create an honest gallop over this sharp 6f trip, stretching the field and setting up a genuine pace. The remaining seven runners all adopt hold-up tactics, meaning they'll be relying on the two leaders to do the donkey work before swooping late. This setup strongly favours hold-up horses — the pace is genuine and the field will be strung out, allowing closers to pick up the pieces.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Hold-up horses dominate",
-          "prob": 65,
-          "trigger": "If Due Date and Punchbowl Flyer duel early as expected",
-          "body": "The pace will be strong enough to set up the race perfectly for the closers, with the leaders potentially weakening in the final furlong. The seven hold-up horses will have ideal conditions to unleash their finishing kicks.",
+          "title": "Strong pace benefits closers",
+          "prob": 55,
+          "trigger": "If Due Date and Punchbowl Flyer engage in a sustained battle from the gates",
+          "body": "The two leaders will set a fierce gallop that plays into the hands of the seven hold-up horses behind. The pace will be unsustainable and allow the strongest finishers to sweep past in the final furlong.",
           "winners": [
             "Cayman Tai",
             "Lequinto"
           ],
           "others": [
-            "Valsharah",
-            "Kirkdale"
+            "Kirkdale",
+            "Valsharah"
           ]
         },
         {
           "label": "B",
-          "title": "Front runner survives duel",
-          "prob": 20,
-          "trigger": "If one of the pace-setters can break clear of their rival",
-          "body": "Due Date or Punchbowl Flyer could steal a march and have enough left to hold off the closers if they can eliminate their main pace rival. The winner would need to show improved stamina at this trip.",
+          "title": "One leader dominates uncontested",
+          "prob": 25,
+          "trigger": "If either Due Date or Punchbowl Flyer gets an uncontested lead while the other fails to fire",
+          "body": "The lone leader will dictate terms and potentially steal a march on the hold-up brigade. This tactical advantage could prove decisive if they can maintain their kick to the line.",
           "winners": [
             "Due Date",
             "Punchbowl Flyer"
           ],
           "others": [
             "Brian The Snail",
-            "Megaphone"
+            "Cayman Tai"
           ]
         },
         {
           "label": "C",
-          "title": "Pace collapses early",
-          "prob": 10,
-          "trigger": "If both leaders go too fast and tie up badly",
-          "body": "The race becomes a sprint finish between hold-up horses, favouring those with the best turn of foot over this minimum trip. This would create a bunched finish with little between several runners.",
+          "title": "Closers fail to quicken",
+          "prob": 12,
+          "trigger": "If the hold-up horses are caught flat-footed by a moderate early pace or fail to find gaps",
+          "body": "The seven runners tracking behind may find themselves in trouble if the pace isn't strong enough or if traffic problems emerge. A tactical race could favour those who race closer to the pace.",
           "winners": [
-            "Kirkdale",
-            "Cayman Tai"
+            "Due Date",
+            "Punchbowl Flyer"
           ],
           "others": [
-            "Lequinto",
-            "Valsharah"
+            "Megaphone",
+            "Pianoforte"
           ]
         },
         {
           "label": "D",
-          "title": "Tactical nightmare unfolds",
-          "prob": 5,
-          "trigger": "If the pace-setters are more restrained than expected",
-          "body": "A slow early pace could negate the advantage of the closers and create a messy tactical affair where positioning becomes crucial. This scenario would favour horses that can be more versatile in their running.",
+          "title": "Surprise prominent runner emerges",
+          "prob": 8,
+          "trigger": "If one of the supposed hold-up horses breaks character and races more prominently than expected",
+          "body": "A change of tactics from the likes of Valsharah or Kirkdale could catch the field off-guard. This would further complicate the pace dynamics and create new race flow.",
           "winners": [
-            "Brian The Snail",
-            "Pianoforte"
+            "Valsharah",
+            "Kirkdale"
           ],
           "others": [
-            "Megaphone",
-            "Kirkdale"
+            "Lequinto",
+            "Brian The Snail"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Due Date and Punchbowl Flyer early - if they don't go fast enough the race loses its shape completely"
+          "text": "Due Date and Punchbowl Flyer must both break alertly — if one misses the start the entire pace dynamic collapses"
         },
         {
           "severity": "warn",
-          "text": "Kirkdale first run back in blinkers - could be much sharper than 78-day absence suggests"
+          "text": "Valsharah applies tongue-tie for first time which could spark improvement for Michael Appleby"
         },
         {
           "severity": "info",
-          "text": "Cayman Tai for market support - Hannon team in good form and horse racing consistently at this level"
-        },
-        {
-          "severity": "info",
-          "text": "Valsharah early position - tongue-tie suggests respiratory issues but could help if applied successfully"
+          "text": "Cayman Tai represents the strongest recent form with Richard Hannon's 4/24 strike-rate backing up the selection"
         },
         {
           "severity": "warn",
-          "text": "Weather conditions pre-race - any change to going could affect the pace scenario significantly"
+          "text": "Brian The Snail's 12-year-old legs may struggle to quicken from his hold-up position despite consistent course form"
+        },
+        {
+          "severity": "info",
+          "text": "Kirkdale returns from 78-day absence — watch market confidence as Edward Bethell has been selective with runners recently"
         }
       ],
       "skipped": false
@@ -1372,13 +1365,13 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse returning from 195-day break under in-form Daniel Muscutt for James Fanshawe who excels with returning runners.",
+          "note": "Hold-up horse returning from six-month break under Daniel Muscutt, but James Fanshawe is in good form and her previous win came after a similar layoff.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Daniel Muscutt",
           "trainer": "James Fanshawe",
           "trainer_rtf": "63",
-          "trainer_14": "4/22",
+          "trainer_14": "4/24",
           "last_run": "195",
           "age": "5",
           "sex": "mare",
@@ -1387,12 +1380,12 @@
           "headgear": "",
           "rpr": "96",
           "ts": "71",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Looked to find this mark beyond her after two wins last spring but this less competitive",
+          "spotlight": "Novice win as a 3yo came after four months off, which is a positive as she returns from a six-month absence; looked to find this sort of mark just beyond her after two victories last spring (Tapeta, Polytrack) but this is less competitive.",
           "_projected": 75.1,
-          "_model_price": "7/2",
-          "_mkt_price": "11/4",
-          "_win_pct": 22.9,
+          "_model_price": "3/1",
+          "_mkt_price": "5/2",
+          "_win_pct": 26.0,
           "_edge": -1.1,
           "_action": "WATCH"
         },
@@ -1403,7 +1396,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up type having first run for new trainer John O'Shea after 595 days off, making this a speculative fitness test.",
+          "note": "Hold-up type for in-form John O'Shea but has been disappointing in recent starts and faces a significant step back up in distance.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "William Carson",
@@ -1421,9 +1414,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 75.1,
-          "_model_price": "35/1",
-          "_mkt_price": "35/1",
-          "_win_pct": 2.8,
+          "_model_price": "38/1",
+          "_mkt_price": "40/1",
+          "_win_pct": 2.6,
           "_edge": 6.8,
           "_action": "WATCH"
         },
@@ -1434,7 +1427,7 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up runner in excellent form with two recent wins, Edward Bethell's yard in good nick and well-suited to this tactical setup.",
+          "note": "Hold-up horse in excellent form with two recent wins, Edward Bethell's strike-rate is modest but Callum Rodriguez takes over from the claimer.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Callum Rodriguez",
@@ -1452,9 +1445,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 74.8,
-          "_model_price": "5/2",
-          "_mkt_price": "9/4",
-          "_win_pct": 27.3,
+          "_model_price": "2/1",
+          "_mkt_price": "2/1",
+          "_win_pct": 31.3,
           "_edge": 0.6,
           "_action": "WATCH"
         },
@@ -1465,7 +1458,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse returning after 203 days for Bernard Llewellyn's out-of-form stable, making this a tough task despite David Probert's booking.",
+          "note": "Hold-up veteran returning from seven-month break for Bernard Llewellyn whose yard is struggling, though David Probert's booking suggests some confidence.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "David Probert",
@@ -1484,8 +1477,8 @@
           "spotlight": "",
           "_projected": 72.1,
           "_model_price": "16/1",
-          "_mkt_price": "16/1",
-          "_win_pct": 5.8,
+          "_mkt_price": "18/1",
+          "_win_pct": 5.5,
           "_edge": 5.9,
           "_action": "WATCH"
         },
@@ -1496,7 +1489,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Front runner with tactical speed who can dictate the pace, Billy Loughnane's 36-day gap suggests freshness for Charlie Johnston.",
+          "note": "The only confirmed leader with good recent form, Billy Loughnane will look to steal a march but Charlie Johnston's strike-rate is concerning.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Billy Loughnane",
@@ -1514,9 +1507,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 72.1,
-          "_model_price": "5/2",
-          "_mkt_price": "2/1",
-          "_win_pct": 28.1,
+          "_model_price": "7/2",
+          "_mkt_price": "17/6",
+          "_win_pct": 23.3,
           "_edge": -2.1,
           "_action": "WATCH"
         },
@@ -1527,7 +1520,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner returning after 210 days for struggling Bernard Llewellyn yard, Sean D Bowen's booking suggests some confidence remains.",
+          "note": "Prominent racer returning from long break carrying bottom weight but Bernard Llewellyn's poor recent record is a significant negative.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Sean D Bowen",
@@ -1546,8 +1539,8 @@
           "spotlight": "",
           "_projected": 64.1,
           "_model_price": "33/1",
-          "_mkt_price": "30/1",
-          "_win_pct": 2.9,
+          "_mkt_price": "33/1",
+          "_win_pct": 2.8,
           "_edge": 1.8,
           "_action": "WATCH"
         },
@@ -1558,7 +1551,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse in good form for in-form Richard Hannon stable, recent 32-day break ideal and strong record on similar going.",
+          "note": "Hold-up horse in good form for Richard Hannon whose yard is flying, Joe Leavy rides and the recent Lingfield win suggests he handles this trip well.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Joe Leavy",
@@ -1576,36 +1569,36 @@
           "comment": "",
           "spotlight": "",
           "_projected": 54.3,
-          "_model_price": "9/1",
-          "_mkt_price": "6/1",
-          "_win_pct": 10.2,
+          "_model_price": "10/1",
+          "_mkt_price": "39/5",
+          "_win_pct": 8.6,
           "_edge": -11.9,
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Pride Of Donegal will take the field along as the sole confirmed front runner, with Bulldog Spirit likely to press or track in second. With no pace pressure, Pride Of Donegal can dictate a measured tempo through the early stages before quickening. The lack of early speed means the field will bunch up rather than string out, creating a tactical affair where positioning will be crucial. This setup strongly favours hold-up horses who can produce a late kick — the sustainable pace will leave plenty in the tank for those coming from behind.",
+      "paceDynamic": "Pride Of Donegal will lead from the start with only Bulldog Spirit likely to race prominently, creating a very soft early pace in this small field of seven. The hold-up horses - Charmaine, Maasai Mara, Codiak, Polling Day and Gemmari - will be bunched together in behind, meaning the pace will be pedestrian for most of the journey. With such a modest gallop likely, this race will become a sprint finish where tactical positioning and a strong turn of foot will be crucial. This setup strongly favours hold-up horses with proven finishing kicks - the lack of early pace means the field will finish in a bunch and those with the best acceleration will prevail.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Hold-up horses dominate",
-          "prob": 55,
-          "trigger": "If Pride Of Donegal sets a steady pace without pressure from Bulldog Spirit",
-          "body": "The field stays bunched allowing closers to position perfectly before unleashing their finishing kicks. Horses like Charmaine, Codiak and Gemmari can time their runs to perfection.",
+          "title": "Hold-up horses dominate finish",
+          "prob": 65,
+          "trigger": "If Pride Of Donegal sets a steady pace without pressure from Bulldog Spirit.",
+          "body": "The field arrives at the home turn in a tight group, setting up a furious sprint finish where horses with proven finishing kicks and good recent form can strike. Form horses like Codiak and Gemmari, who both have strong closing sectionals, will thrive in this tactical battle.",
           "winners": [
             "Codiak",
-            "Charmaine"
+            "Gemmari"
           ],
           "others": [
-            "Gemmari",
-            "Maasai Mara"
+            "Charmaine",
+            "Polling Day"
           ]
         },
         {
           "label": "B",
-          "title": "Front runner kicks clear",
-          "prob": 25,
-          "trigger": "If Pride Of Donegal gets soft fractions and finds another gear turning for home",
-          "body": "Billy Loughnane times the acceleration perfectly and the hold-up horses are caught flat-footed by the sudden injection of pace. Pride Of Donegal's recent good form and tactical speed prove decisive.",
+          "title": "Front-runner steals march",
+          "prob": 20,
+          "trigger": "If Pride Of Donegal quickens turning for home while the hold-up horses are still organising.",
+          "body": "Billy Loughnane times his move perfectly on the leader, getting first run on rivals who are caught flat-footed by the change of pace. The held-up brigade launch their challenges too late as Pride Of Donegal has stolen a decisive advantage.",
           "winners": [
             "Pride Of Donegal",
             "Bulldog Spirit"
@@ -1617,55 +1610,55 @@
         },
         {
           "label": "C",
-          "title": "Prominent tracker pounces",
-          "prob": 15,
-          "trigger": "If Bulldog Spirit travels strongly in second and kicks when Pride Of Donegal begins to tire",
-          "body": "Sean D Bowen produces Bulldog Spirit with a perfectly-timed challenge that catches both the leader and the hold-up horses by surprise. The prominent position proves ideal for this distance.",
+          "title": "Outsider strikes from rear",
+          "prob": 10,
+          "trigger": "If the pace becomes stop-start and allows a horse returning from a break to produce a telling late burst.",
+          "body": "The modest early gallop suits a fresh horse who can unleash one powerful finishing effort when others have used their energy in position. Charmaine, despite her long absence, could benefit from James Fanshawe's patient approach and Daniel Muscutt's timing.",
           "winners": [
-            "Bulldog Spirit",
-            "Pride Of Donegal"
+            "Charmaine",
+            "Maasai Mara"
           ],
           "others": [
-            "Codiak",
-            "Polling Day"
+            "Gemmari",
+            "Pride Of Donegal"
           ]
         },
         {
           "label": "D",
           "title": "Pace collapses completely",
           "prob": 5,
-          "trigger": "If both Pride Of Donegal and Bulldog Spirit go too slowly early and kick too late",
-          "body": "The race becomes a sprint finish where any horse can win regardless of running style. Form and class become the deciding factors rather than tactics.",
+          "trigger": "If both Pride Of Donegal and Bulldog Spirit go too slowly and create a messy, stop-start gallop.",
+          "body": "The race becomes a complete lottery with horses getting in each other's way and jockeyship becoming paramount. Any horse getting a clear run at the right moment could capitalise on the chaos.",
           "winners": [
-            "Gemmari",
-            "Charmaine"
+            "Polling Day",
+            "Bulldog Spirit"
           ],
           "others": [
-            "Codiak",
-            "Pride Of Donegal"
+            "Maasai Mara",
+            "Codiak"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Pride Of Donegal setting unsustainably slow fractions early could set up a sprint finish that negates tactical advantages."
+          "text": "Pride Of Donegal sets too strong a pace early - if Billy Loughnane gets competitive with Bulldog Spirit, the leader could empty out."
         },
         {
           "severity": "warn",
-          "text": "Bulldog Spirit's fitness after 210 days off for out-of-form Bernard Llewellyn stable makes his prominent role uncertain."
+          "text": "Codiak's jumping from the handicapper after two wins - the 4lb rise may have found his limit despite his excellent current form."
         },
         {
           "severity": "info",
-          "text": "Charmaine's 195-day break means her fitness is unknown despite James Fanshawe's good record with returners."
+          "text": "Charmaine's market support - any confidence in the betting suggests James Fanshawe expects her to reproduce her best form fresh."
         },
         {
           "severity": "warn",
-          "text": "Maasai Mara having first run for new trainer John O'Shea after nearly two years off makes this purely speculative."
+          "text": "Bulldog Spirit's fitness after 210 days off - Sean Bowen will need to judge the pace perfectly as the stable is badly out of form."
         },
         {
           "severity": "info",
-          "text": "Codiak's recent winning form and hold-up style make him perfectly suited to this pace scenario."
+          "text": "Gemmari's tactical position - Joe Leavy must avoid getting trapped behind horses in the straight given the likely bunched finish."
         }
       ],
       "skipped": false
@@ -1708,7 +1701,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse with solid recent form but may find this competitive field tough from wide draw",
+          "note": "Hold-up horse who needs strong pace over this minimum trip, returning from just 10 days with David Loughnane's stable in poor recent form",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Lewis Edmunds",
@@ -1728,7 +1721,7 @@
           "_projected": 59.7,
           "_model_price": "16/1",
           "_mkt_price": "14/1",
-          "_win_pct": 5.8,
+          "_win_pct": 6.0,
           "_edge": 5.7,
           "_action": "WATCH"
         },
@@ -1739,7 +1732,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner with excellent 5f record on good going, Sean Bowen booking adds tactical value",
+          "note": "Prominent racer with solid 5f record, Sean Bowen booking suggests confidence despite Antony Brittain's modest strike rate",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Sean D Bowen",
@@ -1757,9 +1750,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 56.9,
-          "_model_price": "10/1",
-          "_mkt_price": "9/1",
-          "_win_pct": 8.5,
+          "_model_price": "8/1",
+          "_mkt_price": "7/1",
+          "_win_pct": 10.9,
           "_edge": 1.9,
           "_action": "WATCH"
         },
@@ -1770,7 +1763,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Returns after 177-day break for Ruth Carr who has poor recent strike-rate, needs to be sharp",
+          "note": "Returns after 177-day absence but has shown good course form previously, prominent style could work if race sets up right",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "James Sullivan",
@@ -1788,9 +1781,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 55.5,
-          "_model_price": "15/1",
+          "_model_price": "14/1",
           "_mkt_price": "12/1",
-          "_win_pct": 6.4,
+          "_win_pct": 6.6,
           "_edge": -0.6,
           "_action": "WATCH"
         },
@@ -1801,7 +1794,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Sole pace-setter with recent consistent form, Scott Dixon stable in decent form with 2 from 24",
+          "note": "Lone front-runner carrying just 128lbs, Scott Dixon stable in decent form with 2/24 recent record and reliable over course and distance",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Kieran O'Neill",
@@ -1821,7 +1814,7 @@
           "_projected": 53.5,
           "_model_price": "8/1",
           "_mkt_price": "13/2",
-          "_win_pct": 11.5,
+          "_win_pct": 11.8,
           "_edge": 3.5,
           "_action": "WATCH"
         },
@@ -1832,7 +1825,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse from same stable as leader, consistent recent record and well-positioned tactically",
+          "note": "Hold-up horse from in-form Scott Dixon yard, second string but could benefit if stablemate Candy Warhol sets it up perfectly",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Tyler Heard",
@@ -1850,9 +1843,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 52.4,
-          "_model_price": "5/1",
-          "_mkt_price": "9/2",
-          "_win_pct": 15.8,
+          "_model_price": "6/1",
+          "_mkt_price": "5/1",
+          "_win_pct": 14.8,
           "_edge": 4.4,
           "_action": "WATCH"
         },
@@ -1863,7 +1856,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse with excellent recent form including two wins, Rob Hornby booking suggests confidence",
+          "note": "Reliable course winner who excels over 5f, Rob Hornby booking and Charlie Wallis stable confidence evident from recent wins here",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Rob Hornby",
@@ -1881,9 +1874,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 50.4,
-          "_model_price": "9/2",
-          "_mkt_price": "7/2",
-          "_win_pct": 17.7,
+          "_model_price": "5/1",
+          "_mkt_price": "26/7",
+          "_win_pct": 17.3,
           "_edge": -6.7,
           "_action": "WATCH"
         },
@@ -1894,7 +1887,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Bottom weight hold-up horse, Hollie Doyle's presence indicates stable expects competitive run",
+          "note": "Drops back to preferred 5f trip with Hollie Doyle aboard, best form has come at this distance despite 0/4 course record",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Hollie Doyle",
@@ -1912,9 +1905,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 47.8,
-          "_model_price": "5/1",
+          "_model_price": "9/2",
           "_mkt_price": "4/1",
-          "_win_pct": 17.1,
+          "_win_pct": 17.5,
           "_edge": 2.7,
           "_action": "WATCH"
         },
@@ -1925,7 +1918,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner off recent win, Alex Jary's 3lb claim valuable but inexperienced rider concern",
+          "note": "Bounced back with visor fitted last time, gets 3lb apprentice allowance and Antony Brittain double-handed suggests confidence",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Alex Jary(3)",
@@ -1940,99 +1933,99 @@
           "headgear": "tv",
           "rpr": "80",
           "ts": "64",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Revived by visor on last two starts, beating Shalaa Asker at Southwell last month; solid",
+          "spotlight": "Revived by a visor of late, third at Newcastle in February and then getting the better of Shalaa Asker at Southwell 25 days ago; 3lb higher today and the stable also runs Blue Force.",
           "_projected": 46.0,
-          "_model_price": "5/1",
-          "_mkt_price": "7/2",
-          "_win_pct": 17.2,
+          "_model_price": "6/1",
+          "_mkt_price": "21/5",
+          "_win_pct": 15.2,
           "_edge": -11.0,
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Candy Warhol is the sole confirmed pace-setter and will face no early pressure, allowing him to dictate terms from the front. Blue Force, Betweenthesticks and Toomuchforme can race prominently but are more likely to settle just behind rather than challenge for the early lead. With five hold-up horses in the field including Shalaa Asker, Beaming Light, Phoenix Beach and Amerjeet, there's a strong closing contingent that will rely on the pace. This setup strongly favours hold-up horses — Candy Warhol can control the gallop without pressure, creating a tactical race where closers can time their runs perfectly.",
+      "paceDynamic": "Candy Warhol will take this field along from the front with Blue Force, Betweenthesticks and Toomuchforme settling prominently behind. The pace should be honest but not breakneck over this minimum trip, with the front-running Candy Warhol able to dictate terms without severe pressure from the prominent racers. The large contingent of hold-up horses (Beaming Light, Shalaa Asker, Phoenix Beach, Amerjeet) will be relying on the pace being strong enough to come from off the speed. This setup moderately favours prominent racers and strong finishers — the pace will be genuine enough to create opportunities but not so fierce as to guarantee a closer's race.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Controlled Front Running",
-          "prob": 45,
-          "trigger": "If Candy Warhol dictates a steady pace without early pressure from the prominent runners.",
-          "body": "The leader can save energy early and kick clear when the hold-up horses are still organising their challenges. Prominent runners like Blue Force and Toomuchforme can also benefit from the controlled tempo by positioning ideally.",
+          "title": "Front Runner Dominates",
+          "prob": 35,
+          "trigger": "If Candy Warhol gets soft fractions and kicks clear turning for home",
+          "body": "The 7-year-old can use his 5lb weight advantage and front-running style to steal a march on closers who need stronger pace. Phoenix Beach from the same stable could pick up the pieces if the leader falters late.",
           "winners": [
             "Candy Warhol",
-            "Toomuchforme"
+            "Phoenix Beach"
           ],
           "others": [
             "Blue Force",
-            "Betweenthesticks"
+            "Toomuchforme"
           ]
         },
         {
           "label": "B",
-          "title": "Hold-Up Horse Finish",
-          "prob": 35,
-          "trigger": "If the pace becomes genuine enough in the middle stages to set up the closers.",
-          "body": "The strong contingent of hold-up horses led by in-form Shalaa Asker and consistent Phoenix Beach can time their runs to perfection. Hollie Doyle's booking on Amerjeet also suggests stable confidence in a closing effort.",
+          "title": "Hold-Up Horse Strikes",
+          "prob": 30,
+          "trigger": "If the early pace is honest enough to set up the race for closers",
+          "body": "Shalaa Asker's recent course wins and Rob Hornby booking suggest stable confidence, while Amerjeet drops back to 5f where she's shown her best form. The pace should be sufficient to bring these into play.",
           "winners": [
             "Shalaa Asker",
-            "Phoenix Beach"
+            "Amerjeet"
           ],
           "others": [
-            "Amerjeet",
-            "Beaming Light"
+            "Beaming Light",
+            "Phoenix Beach"
           ]
         },
         {
           "label": "C",
-          "title": "Prominent Tracker Success",
-          "prob": 12,
-          "trigger": "If Blue Force or Betweenthesticks can secure the ideal stalking position behind Candy Warhol.",
-          "body": "These experienced 5f specialists can use their tactical speed to bridge the gap between the leader and the hold-up horses. Their similar profiles make this a tight finish between the prominent runners.",
+          "title": "Prominent Racer Prevails",
+          "prob": 25,
+          "trigger": "If Blue Force or Toomuchforme can track the leader and pounce late",
+          "body": "Blue Force has solid 5f form and Sean Bowen's booking adds confidence, while Toomuchforme bounced back to form with visor fitted last time. Both can sit handy and strike when the pace tells.",
           "winners": [
             "Blue Force",
-            "Betweenthesticks"
+            "Toomuchforme"
           ],
           "others": [
-            "Toomuchforme",
+            "Betweenthesticks",
             "Candy Warhol"
           ]
         },
         {
           "label": "D",
-          "title": "Pace Collapse",
-          "prob": 8,
-          "trigger": "If Candy Warhol goes too slowly early and the field bunches up turning for home.",
-          "body": "The lack of early pace allows every horse to get competitive, creating a messy sprint finish where any profile can prevail. The best-handicapped horses like Amerjeet off bottom weight could capitalise on the chaos.",
+          "title": "Outsider Emerges",
+          "prob": 10,
+          "trigger": "If the pace collapses or the market leaders underperform",
+          "body": "Betweenthesticks returns after 177 days but has course form and could outrun odds if the break has freshened her up. Phoenix Beach at bigger odds could benefit from stable confidence with Scott Dixon running two.",
           "winners": [
-            "Amerjeet",
+            "Betweenthesticks",
             "Phoenix Beach"
           ],
           "others": [
-            "Shalaa Asker",
-            "Blue Force"
+            "Beaming Light",
+            "Amerjeet"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Candy Warhol must be monitored early - if he goes too slowly the whole race shape changes"
+          "text": "Candy Warhol if getting soft early fractions - the lone leader could steal a march with his 7lb weight advantage over main rivals"
         },
         {
           "severity": "warn",
-          "text": "Betweenthesticks returning from 177-day layoff for struggling Ruth Carr stable needs to show immediate sharpness"
+          "text": "Toomuchforme's visor impact - fitted for first time at Southwell when winning, could be the key to another improved effort"
         },
         {
           "severity": "info",
-          "text": "Shalaa Asker's recent wins suggest he's the main danger to the pace scenario"
+          "text": "Scott Dixon's double-handed approach with Candy Warhol and Phoenix Beach - suggests stable expects one to run well"
         },
         {
           "severity": "warn",
-          "text": "Alex Jary's inexperience on Toomuchforme could prove costly in tactical 5f sprint"
+          "text": "Shalaa Asker's Rob Hornby booking - top jockey rarely rides for Charlie Wallis, suggests stable confidence in 8-year-old's chances"
         },
         {
           "severity": "info",
-          "text": "Scott Dixon running two horses suggests stable confidence, watch for any market moves"
+          "text": "Blue Force and Betweenthesticks both representing Antony Brittain stable - 1/12 recent record suggests low confidence despite double entry"
         }
       ],
       "skipped": false
@@ -2072,7 +2065,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up runner who has found form lately with a third last time, though returning from a 31-day break could blunt her edge slightly.",
+          "note": "Hold-up horse returning from 31-day break under Fanshawe, whose yard is ticking over at modest strike rate but horse showed promise when third last time",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Jack Doughty",
@@ -2090,9 +2083,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 47.9,
-          "_model_price": "5/1",
-          "_mkt_price": "4/1",
-          "_win_pct": 16.2,
+          "_model_price": "9/2",
+          "_mkt_price": "18/5",
+          "_win_pct": 17.7,
           "_edge": 5.7,
           "_action": "WATCH"
         },
@@ -2103,7 +2096,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Classic closer with excellent recent form including a win two starts back, trained by in-form James Ferguson whose 1/5 strike rate in past 14 days is notable.",
+          "note": "Natural hold-up performer with excellent recent form (2-1-1-2-3) and strong going record on similar conditions, representing in-form Ferguson stable",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Daniel Muscutt",
@@ -2123,7 +2116,7 @@
           "_projected": 43.9,
           "_model_price": "5/2",
           "_mkt_price": "7/4",
-          "_win_pct": 29.3,
+          "_win_pct": 29.5,
           "_edge": 2.8,
           "_action": "WATCH"
         },
@@ -2134,7 +2127,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse claiming 5lb through Ashley Lewis which reduces her to just 128lbs, the lowest weight in the field.",
+          "note": "Hold-up horse getting 10lbs weight relief with inexperienced 5lb claimer, trained by Russell/Scudamore partnership whose recent form is patchy",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Ashley Lewis(5)",
@@ -2152,9 +2145,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 43.5,
-          "_model_price": "20/1",
-          "_mkt_price": "18/1",
-          "_win_pct": 4.6,
+          "_model_price": "18/1",
+          "_mkt_price": "16/1",
+          "_win_pct": 5.1,
           "_edge": 8.4,
           "_action": "WATCH"
         },
@@ -2165,7 +2158,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "The key pace angle as the only prominent runner, recent winner at this distance with Luke Catton's 3lb claim helping offset his top weight.",
+          "note": "Natural front runner who won last time and gets tactical advantage with uncontested lead, though carries top weight for Botti who has decent strike rate",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Luke Catton(3)",
@@ -2185,7 +2178,7 @@
           "_projected": 42.8,
           "_model_price": "9/2",
           "_mkt_price": "3/1",
-          "_win_pct": 18.8,
+          "_win_pct": 18.9,
           "_edge": -2.4,
           "_action": "WATCH"
         },
@@ -2196,7 +2189,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Struggling hold-up horse but Billy Loughnane booking for George Boughey suggests stable confidence despite poor recent efforts.",
+          "note": "Hold-up horse stepping back up in trip for in-form Boughey, showed improved effort when fourth last time but needs to find more",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Billy Loughnane",
@@ -2214,9 +2207,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 38.0,
-          "_model_price": "4/1",
-          "_mkt_price": "3/1",
-          "_win_pct": 19.3,
+          "_model_price": "5/1",
+          "_mkt_price": "18/5",
+          "_win_pct": 16.8,
           "_edge": -1.1,
           "_action": "WATCH"
         },
@@ -2247,94 +2240,93 @@
           "_projected": 28.6,
           "_model_price": "7/1",
           "_mkt_price": null,
-          "_win_pct": 11.8,
+          "_win_pct": 11.9,
           "_edge": -13.5,
           "_action": "WATCH"
         }
       ],
-      "paceDynamic": "Lexington Express stands alone as the only prominent runner in this field, which should allow him to dictate terms from the front without pressure. With five hold-up horses behind him including the improving Karakula Dancer and Amazing Anita, the pace is likely to be moderate through the middle sections before quickening in the final three furlongs. The lack of early pace will create a stop-start rhythm that could catch out horses needing a strong gallop. This setup moderately favours the pace-setter Lexington Express, as he can control the tempo and has the tactical advantage of not relying on others for the pace.",
+      "paceDynamic": "Lexington Express is the sole confirmed front runner and will face no early pressure, allowing him to dictate terms from the front at his own tempo. The remaining five runners are all hold-up horses who will settle behind and look to finish strongly. This creates a perfect scenario for the pace-setter to steal a march, as the hold-up brigade may leave themselves too much to do if they don't position early enough. This setup strongly favours prominent/leading horses — with no pace pressure, Lexington Express can control the race and kick clear when the hold-up horses are still organising their challenges.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Lexington Controls Throughout",
-          "prob": 45,
-          "trigger": "If Lexington Express gets an uncontested lead and maintains his recent good form.",
-          "body": "He can dictate a pace that suits his finishing kick, with the hold-up horses struggling to close the gap if the tempo is too steady. His recent win at this distance and proven course form give him a significant tactical edge.",
+          "title": "Lexington Express Controls",
+          "prob": 65,
+          "trigger": "If Lexington Express gets an uncontested lead and maintains a steady gallop",
+          "body": "He can dictate ideal fractions and have enough left to resist the late charge from the hold-up horses. The lack of early pace pressure allows him to conserve energy for the finish.",
           "winners": [
-            "Lexington Express",
-            "Karakula Dancer"
+            "Lexington Express"
           ],
           "others": [
-            "Amazing Anita",
+            "Karakula Dancer",
             "Zoustellar"
           ]
         },
         {
           "label": "B",
-          "title": "Hold-Up Horse Strikes",
-          "prob": 30,
-          "trigger": "If the pace becomes genuinely testing in the final half-mile despite the lack of early speed.",
-          "body": "Karakula Dancer or Amazing Anita can use their superior finishing speed to reel in Lexington Express if he goes too hard too early. The in-form Ferguson stable and Karakula Dancer's recent consistency make this viable.",
+          "title": "Hold-Up Horses Coordinate",
+          "prob": 20,
+          "trigger": "If multiple hold-up horses position closer and launch coordinated challenges",
+          "body": "The sustained late pressure could overwhelm Lexington Express despite his tactical advantage. Karakula Dancer's recent winning form and strong going record make him the likely beneficiary.",
           "winners": [
             "Karakula Dancer",
-            "Amazing Anita"
+            "Zoustellar"
           ],
           "others": [
             "Lexington Express",
-            "Panthere Noir"
+            "Amazing Anita"
           ]
         },
         {
           "label": "C",
-          "title": "Pace Collapses Late",
-          "prob": 15,
-          "trigger": "If Lexington Express sets fractions that are too slow and gets swamped by the field in the final furlong.",
-          "body": "The race becomes a sprint from the two-furlong pole, favouring horses with a sharp turn of foot rather than sustained galloping ability. Zoustellar's trainer George Boughey booking Billy Loughnane suggests confidence despite poor recent form.",
+          "title": "Slow Early Pace Backfires",
+          "prob": 10,
+          "trigger": "If Lexington Express goes too slow early and the field bunches up",
+          "body": "The race becomes a sprint finish where the hold-up horses' natural finishing kick gives them the edge. Amazing Anita could benefit from the strongest late surge.",
           "winners": [
-            "Zoustellar",
-            "Panthere Noir"
-          ],
-          "others": [
             "Amazing Anita",
             "Karakula Dancer"
+          ],
+          "others": [
+            "Lexington Express",
+            "Panthere Noir"
           ]
         },
         {
           "label": "D",
-          "title": "Tactical Mess Benefits Outsider",
-          "prob": 10,
-          "trigger": "If jockeys misjudge the lack of pace and the race becomes a muddling affair with multiple moves.",
-          "body": "The stop-start nature catches out the fancied runners, allowing a horse like Panthere Noir to benefit from the 5lb claim and lighter weight. The Scottish-trained runner has shown glimpses of ability and could exploit the tactical chaos.",
+          "title": "Pace Collapses Completely",
+          "prob": 5,
+          "trigger": "If Lexington Express struggles with the distance or weight and fades early",
+          "body": "The race becomes a messy affair with no clear pace, potentially suiting an improver like Panthere Noir who gets significant weight relief. The field would come home in a bunch.",
           "winners": [
             "Panthere Noir",
-            "Amazing Anita"
+            "Zoustellar"
           ],
           "others": [
-            "Lexington Express",
-            "Zoustellar"
+            "Karakula Dancer",
+            "Amazing Anita"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Lexington Express's early fractions are crucial - if he goes too slow he'll get swamped, too fast and he'll stop."
+          "text": "Lexington Express must be watched for any signs of struggling with the sustained gallop - if he shortens his stride approaching the furlong pole, the hold-up horses will pounce"
         },
         {
           "severity": "warn",
-          "text": "Karakula Dancer's closing speed has been impressive lately and the Ferguson stable is firing at a high strike rate."
+          "text": "Monitor how quickly the hold-up horses position themselves turning for home - if they're all still last with two furlongs to run, they may have left too much to do"
         },
         {
           "severity": "info",
-          "text": "Amazing Anita showed improved form last time but the 31-day break since that effort could be significant."
-        },
-        {
-          "severity": "info",
-          "text": "Panthere Noir carries just 128lbs with the claim and could benefit if the pace becomes messy."
+          "text": "Watch Karakula Dancer's position at halfway - his recent form suggests he needs to be handy to deliver his finishing kick effectively"
         },
         {
           "severity": "warn",
-          "text": "Any market moves for Zoustellar would be significant given Billy Loughnane retains the ride despite poor form."
+          "text": "Check if Amazing Anita looks rusty early after her month off - any tardiness leaving the stalls could prove costly in a small field"
+        },
+        {
+          "severity": "info",
+          "text": "Observe whether Panthere Noir's inexperienced rider can get her into a rhythm early - the 5lb claimer needs to avoid getting caught wide"
         }
       ],
       "skipped": false
