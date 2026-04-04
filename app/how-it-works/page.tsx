@@ -1,0 +1,136 @@
+import Nav from "@/components/Nav";
+import Link from "next/link";
+import Footer from "@/components/Footer";
+
+const steps = [
+  {
+    number: "01",
+    title: "Running style classification",
+    body: [
+      "For every declared runner, we pull their recent form and analyse how they've raced. Not what the form book says in text — the actual positional data. Were they making the running, tracking the pace, sitting midfield, or held up?",
+      "Every horse is classified into one of four running style groups: front runner, prominent, midfield, or hold-up. This classification is built from historical race data, not assumption. A horse described as a hold-up horse that's actually been racing prominently for the last six runs gets classified accordingly.",
+    ],
+  },
+  {
+    number: "02",
+    title: "Pace scenario modelling",
+    body: [
+      "Once the field is classified, we model the likely pace shape of the race. How many front runners are there? Is there likely to be genuine early pressure, or will the race crawl? Is there prominent congestion that creates a traffic problem two out?",
+      "From this we build four scenarios — A through D — each with a probability weighting based on the evidence. Each scenario describes how the race is likely to unfold and which running style profiles it favours.",
+    ],
+  },
+  {
+    number: "03",
+    title: "Watch points and runner notes",
+    body: [
+      "Every race includes specific watch points — concrete things to look for that could change how the race plays out. Horses that jump poorly drawn wide. Pace collapse risk if the sole front runner has a history of stopping. Prominent congestion that could cause problems in running.",
+      "Each runner gets a one-line tactical note covering the factors most relevant to how they fit into the race shape.",
+    ],
+  },
+  {
+    number: "04",
+    title: "Published the evening before",
+    body: [
+      "Everything is live by 6pm the evening before racing. You get the full picture before the market opens in the morning.",
+    ],
+  },
+];
+
+export default function HowItWorksPage() {
+  return (
+    <>
+      <Nav />
+      <div className="wrap" style={{ maxWidth: "720px" }}>
+
+        {/* Header */}
+        <div style={{ marginBottom: "40px", paddingBottom: "24px",
+          borderBottom: "1px solid rgba(201,168,76,0.18)" }}>
+          <p style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.6rem",
+            textTransform: "uppercase", letterSpacing: "0.12em",
+            color: "rgba(245,240,232,0.35)", marginBottom: "8px" }}>
+            The Method
+          </p>
+          <h1 style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: "2.2rem",
+            color: "var(--cream)", marginBottom: "8px" }}>
+            How It Works
+          </h1>
+          <p style={{ fontSize: "0.82rem", color: "rgba(245,240,232,0.5)",
+            lineHeight: "1.7", maxWidth: "540px" }}>
+            Every race published on PaceMap goes through the same process. Here&apos;s
+            what happens between declarations closing and the analysis landing in
+            your browser.
+          </p>
+        </div>
+
+        {/* Steps */}
+        <div style={{ display: "flex", flexDirection: "column", gap: "36px",
+          marginBottom: "48px" }}>
+          {steps.map((step, i) => (
+            <div key={step.number}
+              style={{ paddingBottom: "36px",
+                borderBottom: i < steps.length - 1
+                  ? "1px solid rgba(255,255,255,0.06)" : "none" }}>
+              <div style={{ display: "flex", alignItems: "baseline", gap: "14px",
+                marginBottom: "14px" }}>
+                <span style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: "1.4rem",
+                  color: "var(--gold)", opacity: 0.5, letterSpacing: "0.04em",
+                  lineHeight: 1 }}>
+                  {step.number}
+                </span>
+                <h2 style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: "1.1rem",
+                  color: "var(--gold)", letterSpacing: "0.06em", margin: 0 }}>
+                  {step.title}
+                </h2>
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                {step.body.map((para, j) => (
+                  <p key={j} style={{ fontSize: "0.82rem",
+                    color: "rgba(245,240,232,0.55)", lineHeight: "1.85", margin: 0 }}>
+                    {para}
+                  </p>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* What it isn't */}
+        <div style={{ padding: "22px", background: "rgba(201,168,76,0.06)",
+          border: "1px solid rgba(201,168,76,0.2)", borderRadius: "8px",
+          marginBottom: "48px" }}>
+          <h2 style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: "1.1rem",
+            color: "var(--gold)", letterSpacing: "0.06em", marginBottom: "12px" }}>
+            What it isn&apos;t
+          </h2>
+          <p style={{ fontSize: "0.82rem", color: "rgba(245,240,232,0.55)",
+            lineHeight: "1.85", margin: 0 }}>
+            PaceMap doesn&apos;t tell you who to back. There&apos;s no ratings system,
+            no nap of the day, no tipster angle. It tells you where the traffic will be,
+            which horses have a structural advantage given the likely pace, and which face
+            an uphill task. What you do with that is entirely up to you.
+          </p>
+        </div>
+
+        {/* Footer links */}
+        <div style={{ marginTop: "40px", paddingTop: "24px",
+          borderTop: "1px solid rgba(255,255,255,0.06)",
+          display: "flex", gap: "24px", flexWrap: "wrap" }}>
+          {[
+            { label: "About", href: "/about" },
+            { label: "Pricing", href: "/pricing" },
+            { label: "Contact", href: "/contact" },
+          ].map(l => (
+            <Link key={l.href} href={l.href}
+              style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.65rem",
+                color: "rgba(245,240,232,0.35)", textTransform: "uppercase",
+                letterSpacing: "0.08em" }}>
+              {l.label}
+            </Link>
+          ))}
+        </div>
+
+      </div>
+      <Footer />
+    </>
+  );
+}
