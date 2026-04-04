@@ -188,6 +188,20 @@ export default async function Home() {
             </div>
           ))}
         </div>
+
+        {/* How It Works link */}
+        <div style={{
+          maxWidth: "1100px", margin: "32px auto 0",
+          textAlign: "center",
+        }}>
+          <Link href="/how-it-works" style={{
+            fontFamily: "'DM Mono',monospace", fontSize: "0.68rem",
+            letterSpacing: "0.08em", textTransform: "uppercase",
+            color: "rgba(245,240,232,0.45)",
+          }}>
+            How it works in detail →
+          </Link>
+        </div>
       </section>
 
       {/* Meetings section */}
@@ -218,7 +232,7 @@ export default async function Home() {
         />
       </section>
 
-     <Footer />
+      <Footer />
     </>
   );
 }
