@@ -193,7 +193,7 @@ export default async function Home() {
             {
               n: "04",
               title: "AI-Written. Data-Grounded.",
-              body: "The analysis is written by Claude (Anthropic's AI), based entirely on the structured output of the data engine. The language is generated — the analysis behind it is not.",
+              body: "The analysis is written by AI, based entirely on the structured output of the data engine. The language is generated — the analysis behind it is not.",
             },
           ].map(i => (
             <div key={i.n} style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
