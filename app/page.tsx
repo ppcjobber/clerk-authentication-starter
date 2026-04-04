@@ -146,7 +146,9 @@ export default async function Home() {
           fontSize: "0.88rem", color: "rgba(245,240,232,0.6)",
           maxWidth: "460px", lineHeight: "1.85", marginBottom: "44px",
         }}>
-          PaceMap models how each race will be run before it happens. Field composition, running styles, pace scenarios and tactical watch points — built from historical form data and published every evening for the following day&apos;s racing.
+          PaceMap models how each race will be run before it happens. Field composition,
+          running styles, pace scenarios and tactical watch points — built from historical
+          form data and published every evening for the following day&apos;s racing.
         </p>
         <div className="a4" style={{ display: "flex", gap: "16px", flexWrap: "wrap", alignItems: "center" }}>
           <Link href="/archive" className="btn btn-gold">View All Meetings →</Link>
@@ -169,13 +171,30 @@ export default async function Home() {
         <div style={{
           maxWidth: "1100px", margin: "0 auto",
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+          gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
           gap: "44px",
         }}>
           {[
-            { n: "01", title: "Running Style Analysis", body: "Every declared runner's recent form is analysed to classify their typical race position — front-runner, prominent, midfield or hold-up. Classification is derived from actual race data, not assumed." },
-            { n: "02", title: "Four Scenario Modelling", body: "Each race is modelled into four scenarios — A through D — with probability weightings, named triggers, and the horses each scenario suits. Structured analysis of how the race could unfold, not a tip." },
-            { n: "03", title: "No Tips. Just Context.", body: "PaceMap tells you where the traffic will be, which horses have a soft lead, where the pace will collapse, and which runners face an uphill task. What you do with that is up to you." },
+            {
+              n: "01",
+              title: "Running Style Analysis",
+              body: "Every declared runner's recent form is analysed to classify their typical race position — front-runner, prominent, midfield or hold-up. Classification is derived from actual race data, not assumed.",
+            },
+            {
+              n: "02",
+              title: "Four Scenario Modelling",
+              body: "Each race is modelled into four scenarios — A through D — with probability weightings, named triggers, and the horses each scenario suits. Structured analysis of how the race could unfold, not a tip.",
+            },
+            {
+              n: "03",
+              title: "No Tips. Just Context.",
+              body: "PaceMap tells you where the traffic will be, which horses have a soft lead, where the pace will collapse, and which runners face an uphill task. What you do with that is up to you.",
+            },
+            {
+              n: "04",
+              title: "AI-Written. Data-Grounded.",
+              body: "The analysis is written by Claude (Anthropic's AI), based entirely on the structured output of the data engine. The language is generated — the analysis behind it is not.",
+            },
           ].map(i => (
             <div key={i.n} style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
               <div style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: "2.8rem",
