@@ -15,7 +15,9 @@ export default function Nav() {
         {/* Desktop links */}
         <ul className="nav-links">
           <li><Link href="/archive">Archive</Link></li>
+          <li><Link href="/how-it-works">How It Works</Link></li>
           <li><Link href="/pricing">Pricing</Link></li>
+          <li><Link href="/contact">Contact</Link></li>
           {isSignedIn ? (
             <li><UserButton /></li>
           ) : (
@@ -71,7 +73,9 @@ export default function Nav() {
         }}>
           {[
             { href: "/archive", label: "Archive" },
+            { href: "/how-it-works", label: "How It Works" },
             { href: "/pricing", label: "Pricing" },
+            { href: "/contact", label: "Contact" },
             { href: "/responsible-gambling", label: "Responsible Gambling" },
           ].map(item => (
             <Link key={item.href} href={item.href}
