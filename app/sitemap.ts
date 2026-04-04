@@ -10,6 +10,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     'https://pacemap.co.uk/privacy',
     'https://pacemap.co.uk/terms',
     'https://pacemap.co.uk/responsible-gambling',
+    'https://pacemap.co.uk/about',
+    'https://pacemap.co.uk/how-it-works',
   ].map(url => ({ url, lastModified: new Date() }))
 
   // Dynamic meeting pages — pull from your archive list
