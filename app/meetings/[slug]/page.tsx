@@ -5,7 +5,7 @@ import Link from "next/link";
 import Footer from "@/components/Footer";
 import RacePositionMap from "@/components/RacePositionMap";
 import { useUser } from "@clerk/nextjs";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 // ── Types ─────────────────────────────────────────────────────
 
@@ -95,6 +95,111 @@ function isPastMeeting(dateStr: string): boolean {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
   return meetingDate < today;
+}
+
+function raceId(time: string): string {
+  return "race-" + time.replace(":", "");
+}
+
+// ── Race nav ──────────────────────────────────────────────────
+
+function RaceNav({ races }: { races: Race[] }) {
+  const [activeId, setActiveId] = useState<string>("");
+
+  useEffect(() => {
+    const ids = races.map(r => raceId(r.time));
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        // Find the topmost visible section
+        const visible = entries
+          .filter(e => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+        if (visible.length > 0) {
+          setActiveId(visible[0].target.id);
+        }
+      },
+      { rootMargin: "-20% 0px -60% 0px", threshold: 0 }
+    );
+
+    ids.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, [races]);
+
+  const scrollTo = (id: string) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const offset = 110; // nav height + race nav height
+    const top = el.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top, behavior: "smooth" });
+  };
+
+  return (
+    <>
+      <style>{`
+        .race-nav-bar {
+          position: sticky;
+          top: 56px;
+          z-index: 90;
+          background: rgba(10, 30, 15, 0.92);
+          backdrop-filter: blur(8px);
+          border-bottom: 1px solid rgba(201,168,76,0.15);
+          padding: 0 clamp(16px, 4vw, 40px);
+          overflow-x: auto;
+          scrollbar-width: none;
+        }
+        .race-nav-bar::-webkit-scrollbar { display: none; }
+        .race-nav-inner {
+          display: flex;
+          gap: 2px;
+          max-width: 1100px;
+          margin: 0 auto;
+        }
+        .race-nav-btn {
+          flex-shrink: 0;
+          padding: 10px 12px;
+          background: none;
+          border: none;
+          cursor: pointer;
+          font-family: 'DM Mono', monospace;
+          font-size: 0.65rem;
+          letter-spacing: 0.06em;
+          color: rgba(245,240,232,0.4);
+          border-bottom: 2px solid transparent;
+          transition: color 0.15s, border-color 0.15s;
+          white-space: nowrap;
+        }
+        .race-nav-btn:hover {
+          color: rgba(245,240,232,0.75);
+        }
+        .race-nav-btn.active {
+          color: var(--gold);
+          border-bottom-color: var(--gold);
+          font-weight: 600;
+        }
+      `}</style>
+      <div className="race-nav-bar">
+        <div className="race-nav-inner">
+          {races.map(race => {
+            const id = raceId(race.time);
+            return (
+              <button
+                key={id}
+                className={`race-nav-btn${activeId === id ? " active" : ""}`}
+                onClick={() => scrollTo(id)}
+              >
+                {race.time}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    </>
+  );
 }
 
 // ── Colour palette ────────────────────────────────────────────
@@ -401,14 +506,16 @@ function RaceCard({ race, hasAccess, meetingDate }: {
 }) {
   const isFlat   = race.type === "flat";
   const historic = isPastMeeting(meetingDate);
+  const id       = raceId(race.time);
 
   // Skipped race
   if (race.skipped) {
     return (
-      <div style={{
+      <div id={id} style={{
         background: "rgba(255,255,255,0.02)",
         border: "1px solid rgba(255,255,255,0.07)",
         borderRadius: "10px", marginBottom: "16px", padding: "20px",
+        scrollMarginTop: "110px",
       }}>
         <div style={{
           fontFamily: "'Bebas Neue',sans-serif",
@@ -437,10 +544,11 @@ function RaceCard({ race, hasAccess, meetingDate }: {
   // Locked race
   if (!race.free && !hasAccess && !historic) {
     return (
-      <div style={{
+      <div id={id} style={{
         background: "rgba(255,255,255,0.02)",
         border: "1px solid rgba(255,255,255,0.07)",
         borderRadius: "10px", marginBottom: "16px", padding: "20px",
+        scrollMarginTop: "110px",
       }}>
         <div style={{ marginBottom: "14px" }}>
           <div style={{
@@ -477,8 +585,11 @@ function RaceCard({ race, hasAccess, meetingDate }: {
 
   // Full race card
   return (
-    <div style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.07)",
-      borderRadius: "10px", overflow: "hidden", marginBottom: "28px" }}>
+    <div id={id} style={{
+      background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.07)",
+      borderRadius: "10px", overflow: "hidden", marginBottom: "28px",
+      scrollMarginTop: "110px",
+    }}>
 
       {/* Header */}
       <div style={{ padding: "16px 20px", background: "rgba(201,168,76,0.07)",
@@ -524,21 +635,16 @@ function RaceCard({ race, hasAccess, meetingDate }: {
         </div>
       </div>
 
-      {/* Body — ordered for analytical flow */}
+      {/* Body */}
       <div style={{ padding: "20px" }}>
-
-        {/* 1. Race shape — who's where at the start */}
         <SectionLabel>Race shape</SectionLabel>
         <PaceStrip race={race} />
 
-        {/* 2. Pace dynamic — what the shape means */}
         {race.paceDynamic && <PaceDynamic text={race.paceDynamic} />}
 
-        {/* 3. Runner profiles — individual data */}
         <SectionLabel>Runner profiles</SectionLabel>
         <RunnerTable runners={race.runners_data} isFlat={isFlat} />
 
-        {/* 4. Scenarios — the four outcomes */}
         {race.scenarios?.length > 0 && (
           <>
             <SectionLabel>Race scenarios</SectionLabel>
@@ -546,7 +652,6 @@ function RaceCard({ race, hasAccess, meetingDate }: {
           </>
         )}
 
-        {/* 5. Position map — visual of dominant scenario */}
         {race.scenarios?.length > 0 && (
           <>
             <SectionLabel>Race position map</SectionLabel>
@@ -562,14 +667,12 @@ function RaceCard({ race, hasAccess, meetingDate }: {
           </>
         )}
 
-        {/* 6. Watch points — what to monitor in-running */}
         {race.watchPoints?.length > 0 && (
           <>
             <SectionLabel>Watch points</SectionLabel>
             <WatchPoints points={race.watchPoints} />
           </>
         )}
-
       </div>
     </div>
   );
@@ -631,6 +734,7 @@ export default function MeetingPage({ params }: { params: Promise<{ slug: string
   return (
     <>
       <Nav />
+      <RaceNav races={data.races} />
       <div className="wrap">
         <div style={{ marginBottom: "28px", paddingBottom: "18px",
           borderBottom: "1px solid rgba(201,168,76,0.18)",
