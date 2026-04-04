@@ -42,8 +42,10 @@ export default function Footer() {
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
             {[
-              { href: "/archive",  label: "Meeting Archive" },
-              { href: "/pricing",  label: "Pricing"         },
+              { href: "/archive",      label: "Meeting Archive" },
+              { href: "/pricing",      label: "Pricing"         },
+              { href: "/how-it-works", label: "How It Works"    },
+              { href: "/about",        label: "About"           },
             ].map(l => (
               <Link key={l.href} href={l.href} style={{
                 fontSize: "0.8rem", color: "rgba(245,240,232,0.55)",
@@ -66,10 +68,10 @@ export default function Footer() {
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
             {[
-              { href: "/privacy",               label: "Privacy Policy"       },
-              { href: "/terms",                 label: "Terms of Service"     },
-              { href: "/responsible-gambling",  label: "Responsible Gambling" },
-              { href: "/contact",               label: "Contact"              },
+              { href: "/privacy",              label: "Privacy Policy"       },
+              { href: "/terms",                label: "Terms of Service"     },
+              { href: "/responsible-gambling", label: "Responsible Gambling" },
+              { href: "/contact",              label: "Contact"              },
             ].map(l => (
               <Link key={l.href} href={l.href} style={{
                 fontSize: "0.8rem", color: "rgba(245,240,232,0.55)",
@@ -92,9 +94,9 @@ export default function Footer() {
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
             {[
-              { href: "https://www.gamcare.org.uk",    label: "GamCare"        },
-              { href: "https://www.begambleaware.org", label: "BeGambleAware"  },
-              { href: "https://www.gamstop.co.uk",     label: "GamStop"        },
+              { href: "https://www.gamcare.org.uk",    label: "GamCare"       },
+              { href: "https://www.begambleaware.org", label: "BeGambleAware" },
+              { href: "https://www.gamstop.co.uk",     label: "GamStop"       },
             ].map(l => (
               <a key={l.href} href={l.href} target="_blank" rel="noopener noreferrer"
                 style={{
@@ -120,7 +122,7 @@ export default function Footer() {
           fontFamily: "'DM Mono',monospace", fontSize: "0.62rem",
           color: "rgba(245,240,232,0.25)",
         }}>
-          pacemap.co.uk · A Signalweight product
+          pacemap.co.uk
         </span>
         <span style={{
           fontFamily: "'DM Mono',monospace", fontSize: "0.62rem",
