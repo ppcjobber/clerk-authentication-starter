@@ -17,7 +17,7 @@ const MEETINGS: any[] = [
     slug:       "wolverhampton_aw_4-april-2026",
     date:       "4 April 2026",
     label:      "Wolverhampton (AW) — 4 April 2026",
-    going:      "Standardd",
+    going:      "Standard",
     races:      7,
     courseSlug: "wolverhampton-aw",
     latest:     true,
