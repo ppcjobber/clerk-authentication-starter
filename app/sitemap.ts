@@ -17,10 +17,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const res = await fetch('https://pacemap.co.uk/api/meeting-data-list', {
       next: { revalidate: 3600 } // refresh hourly
     })
-    const meetings = await res.json()
-    const meeting_pages = meetings.map((m: { slug: string, date: string }) => ({
+    const data = await res.json()
+    const meetings = [...(data.today || []), ...(data.tomorrow || [])]
+    const meeting_pages = meetings.map((m: { slug: string }) => ({
       url: `https://pacemap.co.uk/meetings/${m.slug}`,
-      lastModified: new Date(m.date),
+      lastModified: new Date(),
     }))
     return [...static_pages, ...meeting_pages]
   } catch {
