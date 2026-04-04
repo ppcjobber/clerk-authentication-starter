@@ -17,6 +17,8 @@ const isPublicRoute = createRouteMatcher([
   "/terms",
   "/responsible-gambling",
   "/contact",
+  "/about",
+  "/how-it-works",
 ]);
 
 export default clerkMiddleware(async (auth, req) => {
