@@ -43,7 +43,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up specialist with consistent placed efforts who should relish the likely steady pace for a well-timed challenge",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Philip Byrnes",
@@ -74,7 +74,7 @@
           "finish_type": "E",
           "dist_code": "UNKNOWN",
           "going_flag": "UNKNOWN",
-          "note": "Completely unexposed and unknown quantity making hurdles debut after 101-day break for struggling trainer",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Cian Quirke",
@@ -92,9 +92,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 108.5,
-          "_model_price": "120/1",
-          "_mkt_price": "100/1",
-          "_win_pct": 0.8,
+          "_model_price": "96/1",
+          "_mkt_price": "80/1",
+          "_win_pct": 1.0,
           "_edge": 5.6,
           "_action": "WATCH"
         },
@@ -105,7 +105,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Lightly-raced five-year-old returning after 116 days off with minimal hurdles experience for inconsistent stable",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Eoin Staples(5)",
@@ -136,7 +136,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner with strong recent form who gets perfect pilot in Jack Kennedy for in-form Elliott yard",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Jack Kennedy",
@@ -167,7 +167,7 @@
           "finish_type": "F",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent type but showed concerning tendency to fade in the finish on recent evidence",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Richard Deegan",
@@ -198,7 +198,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Consistent hold-up performer who has been knocking on the door with series of placed efforts",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Tiernan Power Roche",
@@ -229,7 +229,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Likely lone pace-setter with course winning form who can control the race from the front",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Phillip Enright",
@@ -260,7 +260,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up runner with solid recent third who should benefit from patient tactics in steady-run race",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Keith Donoghue",
@@ -291,7 +291,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up type with patchy recent form ridden by inexperienced claiming jockey for unfancied connections",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Mr L M Kelleher(7)",
@@ -309,9 +309,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 73.7,
-          "_model_price": "22/1",
+          "_model_price": "23/1",
           "_mkt_price": "14/1",
-          "_win_pct": 4.3,
+          "_win_pct": 4.2,
           "_edge": -11.2,
           "_action": "AVOID"
         },
@@ -322,7 +322,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Patient runner returning after 183-day break carrying lightweight but facing stiff task off long absence",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Dylan Whelan(7)",
@@ -347,91 +347,9 @@
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "The First Turn sits as the lone confirmed front runner and should get an uncontested lead in this maiden hurdle field. With Dunleer Crystal and The First Turn likely to set a steady gallop, the pace will be manageable rather than searching, creating conditions where horses can finish from off the pace. The lack of genuine early pace pressure means hold-up horses like Ifallgoeswell, All Night Revival and De Jour En Jour can conserve energy for sustained late runs. This race shape strongly favours hold-up performers who can time their challenges perfectly against an honest but not punishing early gallop.",
-      "scenarios": [
-        {
-          "label": "A",
-          "title": "Hold-up horses dominate",
-          "prob": 55,
-          "trigger": "If The First Turn sets uncontested fractions and the pace stays honest throughout",
-          "body": "The measured gallop allows patient rides to build sustained challenges from the back, with finishing kicks proving decisive over tiring leaders. Hold-up specialists with tactical speed can time their runs to perfection.",
-          "winners": [
-            "Ifallgoeswell",
-            "All Night Revival"
-          ],
-          "others": [
-            "De Jour En Jour",
-            "Miss Donna"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "Prominent tracker strikes",
-          "prob": 25,
-          "trigger": "If Dunleer Crystal or another prominent runner gets the perfect trip tracking the leader",
-          "body": "Elliott's charge can utilise Jack Kennedy's tactical nous to position ideally behind The First Turn before striking at the right moment. The prominent position provides the perfect launching pad without doing too much early work.",
-          "winners": [
-            "Dunleer Crystal",
-            "Nameyourgame"
-          ],
-          "others": [
-            "The First Turn",
-            "All Night Revival"
-          ]
-        },
-        {
-          "label": "C",
-          "title": "Front runner dominates",
-          "prob": 12,
-          "trigger": "If The First Turn's class advantage tells and the gallop stays within comfortable limits",
-          "body": "Curling's five-year-old can dictate throughout and kick clear when the pressure comes, using superior ability to maintain the advantage to the line. Previous course winner credentials become crucial in a tactical finish.",
-          "winners": [
-            "The First Turn",
-            "Dunleer Crystal"
-          ],
-          "others": [
-            "Ifallgoeswell",
-            "All Night Revival"
-          ]
-        },
-        {
-          "label": "D",
-          "title": "Maiden surprise emerges",
-          "prob": 8,
-          "trigger": "If the lightly-raced newcomers Great Entirely or Poet's Duke show significant improvement",
-          "body": "Hidden ability surfaces from horses making their hurdles debuts or returning from long breaks, catching the exposed runners off guard. Unexposed potential trumps proven form in a weak maiden contest.",
-          "winners": [
-            "Great Entirely",
-            "Poet's Duke"
-          ],
-          "others": [
-            "The First Turn",
-            "Ifallgoeswell"
-          ]
-        }
-      ],
-      "watchPoints": [
-        {
-          "severity": "danger",
-          "text": "The First Turn could get too soft a lead if no other horse goes forward early and dictate the race completely"
-        },
-        {
-          "severity": "warn",
-          "text": "Great Entirely is a complete unknown making hurdles debut and any market support would be significant"
-        },
-        {
-          "severity": "info",
-          "text": "Dunleer Crystal needs to settle better than recent runs to utilise Jack Kennedy's tactical skills effectively"
-        },
-        {
-          "severity": "warn",
-          "text": "Ifallgoeswell has been consistent in defeat but must prove he can find that extra gear when it matters"
-        },
-        {
-          "severity": "info",
-          "text": "All Night Revival's recent placed efforts suggest he's close to breaking his maiden tag in the right race"
-        }
-      ],
+      "paceDynamic": "",
+      "scenarios": [],
+      "watchPoints": [],
       "skipped": false
     },
     {
@@ -481,7 +399,7 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent runner with strong recent form including a win, proven on good ground with effective tactics for this scenario",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Mike O'Connor",
@@ -500,8 +418,8 @@
           "spotlight": "",
           "_projected": 109.7,
           "_model_price": "2/1",
-          "_mkt_price": "9/8",
-          "_win_pct": 33.6,
+          "_mkt_price": "5/4",
+          "_win_pct": 32.1,
           "_edge": 11.8,
           "_action": "WATCH"
         },
@@ -512,7 +430,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse with solid placed efforts on similar ground, benefits from apprentice claim and longer absence freshening effect",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Eoin Staples(5)",
@@ -532,7 +450,7 @@
           "_projected": 106.5,
           "_model_price": "3/1",
           "_mkt_price": "8/5",
-          "_win_pct": 25.6,
+          "_win_pct": 25.9,
           "_edge": 8.6,
           "_action": "AVOID"
         },
@@ -543,7 +461,7 @@
           "finish_type": "F",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up runner but concerning fade pattern suggests stamina limitations over this extended trip",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "John Shinnick",
@@ -561,7 +479,7 @@
           "comment": "",
           "spotlight": "",
           "_projected": 105.8,
-          "_model_price": "306/1",
+          "_model_price": "302/1",
           "_mkt_price": "200/1",
           "_win_pct": 0.3,
           "_edge": 7.8,
@@ -574,7 +492,7 @@
           "finish_type": "E",
           "dist_code": "UNKNOWN",
           "going_flag": "UNKNOWN",
-          "note": "Lightly raced unknown quantity makes assessment difficult, running style unclear from limited evidence",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Phillip Enright",
@@ -592,9 +510,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 105.8,
-          "_model_price": "43/1",
-          "_mkt_price": "28/1",
-          "_win_pct": 2.3,
+          "_model_price": "38/1",
+          "_mkt_price": "25/1",
+          "_win_pct": 2.5,
           "_edge": 7.8,
           "_action": "AVOID"
         },
@@ -605,7 +523,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse returning from 153-day absence raises serious fitness concerns for this demanding distance",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Ricky Doyle",
@@ -623,9 +541,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 105.8,
-          "_model_price": "306/1",
-          "_mkt_price": "200/1",
-          "_win_pct": 0.3,
+          "_model_price": "227/1",
+          "_mkt_price": "150/1",
+          "_win_pct": 0.4,
           "_edge": 7.8,
           "_action": "AVOID"
         },
@@ -636,7 +554,7 @@
           "finish_type": "E",
           "dist_code": "UNKNOWN",
           "going_flag": "UNKNOWN",
-          "note": "Four-year-old debutant over hurdles with unknown credentials and unclear tactical approach",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Dylan Robinson",
@@ -654,7 +572,7 @@
           "comment": "",
           "spotlight": "",
           "_projected": 105.8,
-          "_model_price": "123/1",
+          "_model_price": "121/1",
           "_mkt_price": "80/1",
           "_win_pct": 0.8,
           "_edge": 7.8,
@@ -667,7 +585,7 @@
           "finish_type": "E",
           "dist_code": "UNKNOWN",
           "going_flag": "UNKNOWN",
-          "note": "Lightly raced older horse with mixed flat form but uncertain jumping ability and running style",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "",
@@ -685,9 +603,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 105.8,
-          "_model_price": "16/1",
-          "_mkt_price": "10/1",
-          "_win_pct": 5.9,
+          "_model_price": "14/1",
+          "_mkt_price": "9/1",
+          "_win_pct": 6.6,
           "_edge": 7.8,
           "_action": "AVOID"
         },
@@ -698,7 +616,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse with consistent efforts but moderate ratings suggest limited winning ability in this company",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Keith Donoghue",
@@ -718,7 +636,7 @@
           "_projected": 101.0,
           "_model_price": "7/1",
           "_mkt_price": "5/1",
-          "_win_pct": 12.9,
+          "_win_pct": 13.0,
           "_edge": 15.1,
           "_action": "WATCH"
         },
@@ -729,7 +647,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Lone front runner crucial to pace dynamics, has struggled recently but ideal tactical position today",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Danny Mullins",
@@ -748,8 +666,8 @@
           "spotlight": "",
           "_projected": 96.8,
           "_model_price": "10/1",
-          "_mkt_price": "13/2",
-          "_win_pct": 9.1,
+          "_mkt_price": "7/1",
+          "_win_pct": 8.7,
           "_edge": 9.9,
           "_action": "AVOID"
         },
@@ -760,7 +678,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse with experience on similar ground but lacks any winning form to inspire confidence",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "",
@@ -791,7 +709,7 @@
           "finish_type": "F",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up runner with concerning fade pattern and extremely low rating makes winning prospects minimal",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Alex Harvey",
@@ -822,7 +740,7 @@
           "finish_type": "F",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse with fade concerns returning from long absence under struggling trainer connection",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Adam Leahy(7)",
@@ -840,7 +758,7 @@
           "comment": "",
           "spotlight": "",
           "_projected": 74.3,
-          "_model_price": "479/1",
+          "_model_price": "472/1",
           "_mkt_price": "200/1",
           "_win_pct": 0.2,
           "_edge": -23.7,
@@ -853,7 +771,7 @@
           "finish_type": "F",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up four-year-old with fade pattern suggests stamina questions over this extended distance",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "",
@@ -871,9 +789,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 65.2,
-          "_model_price": "428/1",
-          "_mkt_price": "200/1",
-          "_win_pct": 0.2,
+          "_model_price": "317/1",
+          "_mkt_price": "150/1",
+          "_win_pct": 0.3,
           "_edge": -12.7,
           "_action": "AVOID"
         },
@@ -884,7 +802,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up runner returning from 249-day layoff creates significant fitness doubts despite previous course experience",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Simon Torrens",
@@ -902,7 +820,7 @@
           "comment": "",
           "spotlight": "",
           "_projected": 62.7,
-          "_model_price": "131/1",
+          "_model_price": "129/1",
           "_mkt_price": "50/1",
           "_win_pct": 0.8,
           "_edge": -35.2,
@@ -915,7 +833,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse with decent placed form on good ground and strongest credentials among the outsiders",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Paddy Cody(7)",
@@ -935,7 +853,7 @@
           "_projected": 60.9,
           "_model_price": "40/1",
           "_mkt_price": "18/1",
-          "_win_pct": 2.4,
+          "_win_pct": 2.5,
           "_edge": -7.1,
           "_action": "AVOID"
         },
@@ -946,7 +864,7 @@
           "finish_type": "F",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up four-year-old with fade pattern and poor recent efforts suggests limited competitive ability",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Richard Deegan",
@@ -964,7 +882,7 @@
           "comment": "",
           "spotlight": "",
           "_projected": 44.4,
-          "_model_price": "442/1",
+          "_model_price": "436/1",
           "_mkt_price": "200/1",
           "_win_pct": 0.2,
           "_edge": -15.5,
@@ -977,7 +895,7 @@
           "finish_type": "F",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up runner with concerning fade pattern and weak recent form makes winning prospects negligible",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Miss P Elvin(7)",
@@ -995,98 +913,16 @@
           "comment": "",
           "spotlight": "",
           "_projected": 13.7,
-          "_model_price": "526/1",
+          "_model_price": "519/1",
           "_mkt_price": "200/1",
           "_win_pct": 0.2,
           "_edge": -38.3,
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Green Angel is the sole confirmed front runner and will dictate proceedings from the start, likely facing minimal early pressure in this 17-runner maiden field. With most runners preferring hold-up tactics, Green Angel can control the tempo and potentially steal a march if allowed an easy lead over the 2m4f trip. The lack of pace pressure should create a tactical affair with plenty of horses held up for late runs, but this could play into the hands of those who can track the pace or get prominent positions early. This race shape strongly favors prominent runners and the lone leader, as hold-up horses may find themselves with too much ground to make up in the closing stages.",
-      "scenarios": [
-        {
-          "label": "A",
-          "title": "Green Angel Wires Field",
-          "prob": 45,
-          "trigger": "If Green Angel gets an uncontested lead and maintains sustainable fractions throughout",
-          "body": "The lone pace-setter can dictate terms without pressure and prove hard to peg back over this stamina-testing distance. Hold-up horses will struggle to close the gap having given the leader too much rope.",
-          "winners": [
-            "Green Angel",
-            "Captains Speech"
-          ],
-          "others": [
-            "Le Moulin Rouge",
-            "Imarajan"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "Late Surge Prevails",
-          "prob": 30,
-          "trigger": "If the pace becomes too slow and bunches up the field for a cavalry charge finish",
-          "body": "The lack of early pace allows hold-up horses to get closer than ideal, setting up a sprint finish that favors those with tactical speed. Quality will rise to the top in a sustained drive.",
-          "winners": [
-            "Captains Speech",
-            "Le Moulin Rouge"
-          ],
-          "others": [
-            "The Rebel Fox",
-            "Imarajan"
-          ]
-        },
-        {
-          "label": "C",
-          "title": "Prominent Tracker Wins",
-          "prob": 15,
-          "trigger": "If a prominent runner can track Green Angel without over-racing and strike at the right moment",
-          "body": "Positioning just off the leader provides the perfect stalking trip, avoiding the early pace battle while staying close enough to pounce. This tactical approach often proves optimal in maidens.",
-          "winners": [
-            "Captains Speech",
-            "Tinto De Verano"
-          ],
-          "others": [
-            "Green Angel",
-            "Silly Mongoose"
-          ]
-        },
-        {
-          "label": "D",
-          "title": "Complete Pace Collapse",
-          "prob": 10,
-          "trigger": "If Green Angel stops quickly after setting the pace and the race falls apart tactically",
-          "body": "The leader's effort tells late and creates a messy finish where stamina and class become decisive factors. Horses finishing strongest from midfield can capitalize on the chaos.",
-          "winners": [
-            "Le Moulin Rouge",
-            "Imarajan"
-          ],
-          "others": [
-            "The Rebel Fox",
-            "Silly Mongoose"
-          ]
-        }
-      ],
-      "watchPoints": [
-        {
-          "severity": "danger",
-          "text": "Green Angel's jumping under pressure - any mistake could end the front-running advantage and completely change race dynamics"
-        },
-        {
-          "severity": "warn",
-          "text": "Captains Speech's early positioning - needs to avoid getting too far back given the likely lack of pace"
-        },
-        {
-          "severity": "warn",
-          "text": "Le Moulin Rouge and other hold-up horses getting outpaced - if Green Angel quickens mid-race, back markers could be in trouble"
-        },
-        {
-          "severity": "info",
-          "text": "First-time hurdle runners King Maxios and Seekthisfairland - their jumping inexperience could cause interference or eliminate them early"
-        },
-        {
-          "severity": "info",
-          "text": "Long-absent horses Rattledelatch and Silly Mongoose showing any early pace - would indicate surprising fitness levels"
-        }
-      ],
+      "paceDynamic": "",
+      "scenarios": [],
+      "watchPoints": [],
       "skipped": false
     },
     {
@@ -1136,7 +972,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Recent front-running style but inconsistent form suggests vulnerability when pressed",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Cian Quirke",
@@ -1167,7 +1003,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent runner with useful 7lb claimer, solid record on similar going conditions",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Anna McGuinness(7)",
@@ -1198,7 +1034,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up specialist with highest topspeed rating, 71-day absence a slight concern",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Keith Donoghue",
@@ -1218,7 +1054,7 @@
           "_projected": 71.5,
           "_model_price": "10/1",
           "_mkt_price": "6/1",
-          "_win_pct": 8.7,
+          "_win_pct": 8.8,
           "_edge": 0.1,
           "_action": "AVOID"
         },
@@ -1229,7 +1065,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse with 5lb claimer, strong recent form including a second at 19f",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Charlie O'Dwyer(5)",
@@ -1249,7 +1085,7 @@
           "_projected": 71.1,
           "_model_price": "6/1",
           "_mkt_price": "5/1",
-          "_win_pct": 14.3,
+          "_win_pct": 14.4,
           "_edge": 10.8,
           "_action": "WATCH"
         },
@@ -1260,7 +1096,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner but 80-day layoff and age concerns against this field",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "P J O'Hanlon",
@@ -1291,7 +1127,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse with excellent topspeed figure of 105, consistent recent efforts",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Simon Torrens",
@@ -1311,7 +1147,7 @@
           "_projected": 67.2,
           "_model_price": "12/1",
           "_mkt_price": "15/2",
-          "_win_pct": 7.8,
+          "_win_pct": 7.9,
           "_edge": 2.8,
           "_action": "AVOID"
         },
@@ -1322,7 +1158,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner with Jack Kennedy booking, good recent second over course and distance",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Jack Kennedy",
@@ -1342,7 +1178,7 @@
           "_projected": 66.1,
           "_model_price": "5/1",
           "_mkt_price": "7/2",
-          "_win_pct": 15.7,
+          "_win_pct": 15.8,
           "_edge": 4.8,
           "_action": "WATCH"
         },
@@ -1353,7 +1189,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Front-runner with three wins this season, 5lb claimer offsets 61-day break",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Josh Williamson(5)",
@@ -1384,7 +1220,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse but 162-day absence and poor recent topspeed figures are major negatives",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Millie Barcoe(7)",
@@ -1415,7 +1251,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse with 5lb claimer, Paul Nolan stable in form with recent seconds",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Eoin Staples(5)",
@@ -1446,7 +1282,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse with good topspeed of 102, but 99-day layoff raises fitness questions",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Richard Deegan",
@@ -1477,7 +1313,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner but 239-day absence makes him hard to assess despite course form",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "",
@@ -1508,7 +1344,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse with decent topspeed but 238-day break and no jockey declared",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "",
@@ -1526,7 +1362,7 @@
           "comment": "",
           "spotlight": "",
           "_projected": 48.5,
-          "_model_price": "38/1",
+          "_model_price": "37/1",
           "_mkt_price": "20/1",
           "_win_pct": 2.6,
           "_edge": -3.8,
@@ -1539,7 +1375,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse for in-form trainer but limited experience and low topspeed rating",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Alex Harvey",
@@ -1570,7 +1406,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse but poor recent form and no wins in similar conditions",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Ricky Doyle",
@@ -1588,7 +1424,7 @@
           "comment": "",
           "spotlight": "",
           "_projected": 42.4,
-          "_model_price": "45/1",
+          "_model_price": "44/1",
           "_mkt_price": "22/1",
           "_win_pct": 2.2,
           "_edge": -13.0,
@@ -1601,7 +1437,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner but inconsistent form and moderate topspeed figures",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Phillip Enright",
@@ -1619,9 +1455,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 40.9,
-          "_model_price": "10/1",
-          "_mkt_price": "5/1",
-          "_win_pct": 8.3,
+          "_model_price": "12/1",
+          "_mkt_price": "11/2",
+          "_win_pct": 7.8,
           "_edge": -13.4,
           "_action": "AVOID"
         },
@@ -1632,7 +1468,7 @@
           "finish_type": "F",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse with tendency to fade in finish, poor recent form pattern",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "",
@@ -1650,98 +1486,16 @@
           "comment": "",
           "spotlight": "",
           "_projected": 17.5,
-          "_model_price": "75/1",
+          "_model_price": "74/1",
           "_mkt_price": "20/1",
           "_win_pct": 1.3,
           "_edge": -34.8,
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Ceroc and Hitthehayson will contest the early pace, with Ceroc's recent front-running style clashing against Hitthehayson's three wins from the front this season. Noble Talent, Accustomed, and Bocelli's Voice will track prominently behind the leaders, creating a solid gallop over the 2m4f trip. The large field of 17 runners includes numerous hold-up horses like Cowper Hall, Miss Mini Bee, and Teenage Kiss who will rely on staying power. This honest pace favours prominent runners and patient hold-up horses with proven stamina, disadvantaging those needing to make their move early.",
-      "scenarios": [
-        {
-          "label": "A",
-          "title": "Sustained Gallop Benefits Closers",
-          "prob": 45,
-          "trigger": "If Ceroc and Hitthehayson maintain a genuine gallop throughout",
-          "body": "The honest pace will set up perfectly for hold-up horses with stamina to finish strongly in the final furlong. Cowper Hall's class and Teenage Kiss's recent form make them prime beneficiaries of this tactical setup.",
-          "winners": [
-            "Cowper Hall",
-            "Teenage Kiss"
-          ],
-          "others": [
-            "Miss Mini Bee",
-            "Great Bird"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "Front Runners Collapse Late",
-          "prob": 30,
-          "trigger": "If the early leaders go too fast and tie up",
-          "body": "Prominent runners like Noble Talent and Accustomed will inherit the lead as Ceroc and Hitthehayson fade. Their tactical positioning allows them to capitalize without overexerting early.",
-          "winners": [
-            "Noble Talent",
-            "Accustomed"
-          ],
-          "others": [
-            "Bocelli's Voice",
-            "Sean Mc"
-          ]
-        },
-        {
-          "label": "C",
-          "title": "Hitthehayson Dominates Again",
-          "prob": 15,
-          "trigger": "If Hitthehayson can dictate fractions from the front",
-          "body": "His three wins this season show he excels when controlling the tempo, and the 5lb claimer reduces his burden. Ceroc's inconsistency suggests he may not sustain the challenge.",
-          "winners": [
-            "Hitthehayson",
-            "Ceroc"
-          ],
-          "others": [
-            "Glendine Billy",
-            "Humble Brag"
-          ]
-        },
-        {
-          "label": "D",
-          "title": "Pace Collapses Completely",
-          "prob": 10,
-          "trigger": "If both leaders go steady and kill the gallop",
-          "body": "A slowly-run race would favour horses with a turn of foot rather than stamina. Miss Mini Bee's topspeed of 105 and Accustomed's 109 rating give them tactical speed.",
-          "winners": [
-            "Miss Mini Bee",
-            "Accustomed"
-          ],
-          "others": [
-            "Cowper Hall",
-            "Great Bird"
-          ]
-        }
-      ],
-      "watchPoints": [
-        {
-          "severity": "danger",
-          "text": "Ceroc and Hitthehayson could go too fast early and set up the race for closers"
-        },
-        {
-          "severity": "warn",
-          "text": "Cowper Hall's 71-day break may leave him short of peak fitness despite his class advantage"
-        },
-        {
-          "severity": "warn",
-          "text": "Several horses including Glendine Billy and Stumblin In face significant layoff concerns after 230+ day breaks"
-        },
-        {
-          "severity": "info",
-          "text": "Jack Kennedy's booking of Accustomed suggests stable confidence in prominent tactics"
-        },
-        {
-          "severity": "info",
-          "text": "Multiple 5lb and 7lb claimers could benefit significantly from their weight allowances in this competitive handicap"
-        }
-      ],
+      "paceDynamic": "",
+      "scenarios": [],
+      "watchPoints": [],
       "skipped": false
     },
     {
@@ -1779,7 +1533,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Lone leader with 55-day break, handles good to soft conditions well but must prove stamina over extended 3-mile trip",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Alex Harvey",
@@ -1810,7 +1564,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent runner in excellent form with strong trainer strike rate, ideally positioned to track pace and strike late",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Tiernan Power Roche",
@@ -1841,7 +1595,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Jack Kennedy booking significant for Gordon Elliott, 65-day absence suggests specific targeting of this contest",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Jack Kennedy",
@@ -1872,7 +1626,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "10-year-old veteran wearing visor for first time, recent hat-trick winner but age concerns over this extended distance",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Michael Kenneally(5)",
@@ -1903,7 +1657,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Only hold-up runner with 7lb weight advantage, needs strong pace to close from rear but lacks recent winning form",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Danny Mullins",
@@ -1928,88 +1682,9 @@
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Walks The Talk will take the field along as the only natural leader, setting an uncontested pace over the 3-mile trip. Long Branch, Rocky's Howya and Agameoftwohalves will settle in behind the leader in prominent positions, while only Jisco Du Brem represents the hold-up contingent from the rear. With no pace pressure on Walks The Talk early, the race sets up as a tactical affair that will likely develop into a staying test from the final mile. This shape strongly favours the prominent runners who can track the pace and stay on strongly, rather than those needing to make up ground from behind.",
-      "scenarios": [
-        {
-          "label": "A",
-          "title": "Uncontested Leader Dominates",
-          "prob": 45,
-          "trigger": "If Walks The Talk maintains a sustainable gallop and stays strongly",
-          "body": "The lack of early pressure allows the leader to dictate terms and kick clear when the pace lifts. His proven stamina over trip becomes decisive in a staying finish.",
-          "winners": [
-            "Walks The Talk"
-          ],
-          "others": [
-            "Long Branch",
-            "Rocky's Howya"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "Prominent Pair Strike Late",
-          "prob": 35,
-          "trigger": "If Long Branch or Rocky's Howya outbattle the leader in final furlong",
-          "body": "The prominent runners get the perfect tow from Walks The Talk before unleashing superior finishing speed. Their tactical positioning proves ideal for this 3-mile test.",
-          "winners": [
-            "Long Branch",
-            "Rocky's Howya"
-          ],
-          "others": [
-            "Walks The Talk",
-            "Agameoftwohalves"
-          ]
-        },
-        {
-          "label": "C",
-          "title": "Elliott Runner Times Run",
-          "prob": 12,
-          "trigger": "If Agameoftwohalves produces career-best under Jack Kennedy",
-          "body": "The lightly-raced 5-year-old benefits from the prominent position and strong jockey booking to deliver improvement. Gordon Elliott's 65-day break suggests targeting this specific contest.",
-          "winners": [
-            "Agameoftwohalves"
-          ],
-          "others": [
-            "Long Branch",
-            "Walks The Talk"
-          ]
-        },
-        {
-          "label": "D",
-          "title": "Mullins Swoops From Rear",
-          "prob": 8,
-          "trigger": "If Jisco Du Brem gets strong pace to aim at throughout",
-          "body": "The hold-up runner capitalizes on increased tempo in final mile to close from last to first. Danny Mullins times his challenge perfectly as others weaken.",
-          "winners": [
-            "Jisco Du Brem"
-          ],
-          "others": [
-            "Rocky's Howya",
-            "Long Branch"
-          ]
-        }
-      ],
-      "watchPoints": [
-        {
-          "severity": "danger",
-          "text": "Watch if Walks The Talk goes too fast early - 55 days off and needs to last the full 3-mile trip as lone leader"
-        },
-        {
-          "severity": "warn",
-          "text": "Monitor Rocky's Howya's jumping - at 10 years old with new visor, any jumping errors could prove costly over this distance"
-        },
-        {
-          "severity": "info",
-          "text": "Check Long Branch's position turning in - if close enough to leader will be dangerous with Tiernan Power Roche's 20% strike rate for Neville"
-        },
-        {
-          "severity": "warn",
-          "text": "Observe if Jisco Du Brem gets into contention 2 out - needs to be within striking distance or 7lb advantage becomes meaningless"
-        },
-        {
-          "severity": "info",
-          "text": "Watch Agameoftwohalves for any market confidence given Jack Kennedy's booking and 65-day freshening break"
-        }
-      ],
+      "paceDynamic": "",
+      "scenarios": [],
+      "watchPoints": [],
       "skipped": false
     },
     {
@@ -2054,7 +1729,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up specialist who benefits from pace pressure up front, 102 days off suggests freshness but rustiness risk",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Peter Smithers(7)",
@@ -2074,7 +1749,7 @@
           "_projected": 114.4,
           "_model_price": "10/1",
           "_mkt_price": "16/1",
-          "_win_pct": 9.0,
+          "_win_pct": 9.3,
           "_edge": 22.3,
           "_action": "EW"
         },
@@ -2085,7 +1760,7 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent runner in congested group, recent second gives confidence but style puts him in traffic danger zone",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Josh Williamson(5)",
@@ -2105,7 +1780,7 @@
           "_projected": 111.4,
           "_model_price": "13/1",
           "_mkt_price": "28/1",
-          "_win_pct": 7.1,
+          "_win_pct": 7.2,
           "_edge": 24.3,
           "_action": "EW"
         },
@@ -2116,7 +1791,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Another prominent type facing same traffic issues, trainer struggling at 0/19 in last 14 days hurts chances",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Dylan Kidd(7)",
@@ -2136,7 +1811,7 @@
           "_projected": 97.3,
           "_model_price": "10/1",
           "_mkt_price": "9/1",
-          "_win_pct": 9.2,
+          "_win_pct": 9.4,
           "_edge": 7.2,
           "_action": "WATCH"
         },
@@ -2147,7 +1822,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Well-rated prominent runner who could time run right, 50 days off means fresh legs for finish",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Jack Kennedy",
@@ -2167,7 +1842,7 @@
           "_projected": 95.5,
           "_model_price": "10/1",
           "_mkt_price": "13/2",
-          "_win_pct": 8.6,
+          "_win_pct": 8.8,
           "_edge": -4.6,
           "_action": "AVOID"
         },
@@ -2178,7 +1853,7 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse perfectly placed if pace melts, recent win shows form and gets 24lbs from topweight",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Tiernan Power Roche",
@@ -2196,9 +1871,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 92.8,
-          "_model_price": "5/2",
-          "_mkt_price": "7/2",
-          "_win_pct": 27.1,
+          "_model_price": "3/1",
+          "_mkt_price": "4/1",
+          "_win_pct": 25.1,
           "_edge": 15.7,
           "_action": "CONSIDER"
         },
@@ -2209,7 +1884,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent type in the danger zone, inconsistent form makes him unreliable in this tactical minefield",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Gavin Brouder",
@@ -2227,9 +1902,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 92.5,
-          "_model_price": "22/1",
+          "_model_price": "20/1",
           "_mkt_price": "22/1",
-          "_win_pct": 4.4,
+          "_win_pct": 4.5,
           "_edge": 15.4,
           "_action": "WATCH"
         },
@@ -2240,7 +1915,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Henry De Bromhead name adds interest but 283 days absence and poor recent form major concerns",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Mike O'Connor",
@@ -2258,9 +1933,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 90.1,
-          "_model_price": "23/1",
+          "_model_price": "22/1",
           "_mkt_price": "11/1",
-          "_win_pct": 4.2,
+          "_win_pct": 4.3,
           "_edge": -9.0,
           "_action": "AVOID"
         },
@@ -2271,7 +1946,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent runner who hasn't run for 305 days, far too long absent to trust in this competitive field",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Dylan Robinson",
@@ -2289,9 +1964,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 84.0,
-          "_model_price": "23/1",
+          "_model_price": "22/1",
           "_mkt_price": "18/1",
-          "_win_pct": 4.2,
+          "_win_pct": 4.3,
           "_edge": 2.9,
           "_action": "WATCH"
         },
@@ -2302,7 +1977,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse suited by anticipated pace scenario but poor recent form and 5lb claimer reduces confidence",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Eoin Staples(5)",
@@ -2322,7 +1997,7 @@
           "_projected": 83.1,
           "_model_price": "13/1",
           "_mkt_price": "6/1",
-          "_win_pct": 7.0,
+          "_win_pct": 7.2,
           "_edge": -15.0,
           "_action": "AVOID"
         },
@@ -2333,7 +2008,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Patient type who could benefit from early scrimmaging, solid recent form gives him each-way appeal",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Ricky Doyle",
@@ -2353,7 +2028,7 @@
           "_projected": 78.4,
           "_model_price": "12/1",
           "_mkt_price": "15/2",
-          "_win_pct": 7.5,
+          "_win_pct": 7.8,
           "_edge": -4.7,
           "_action": "AVOID"
         },
@@ -2364,7 +2039,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Versatile prominent runner with good recent form, could find gaps others can't if racing smartly",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Michael Kenneally(5)",
@@ -2384,7 +2059,7 @@
           "_projected": 55.4,
           "_model_price": "12/1",
           "_mkt_price": "9/2",
-          "_win_pct": 7.6,
+          "_win_pct": 7.8,
           "_edge": -22.7,
           "_action": "AVOID"
         },
@@ -2395,7 +2070,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Uncontested leader holds major tactical advantage, low weight compensates for modest ability ratings",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Simon Torrens",
@@ -2413,98 +2088,16 @@
           "comment": "",
           "spotlight": "",
           "_projected": 42.4,
-          "_model_price": "23/1",
+          "_model_price": "22/1",
           "_mkt_price": "15/2",
-          "_win_pct": 4.2,
+          "_win_pct": 4.3,
           "_edge": -31.7,
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Harty Cup will lead unopposed early with five horses (Choccabloc, Cloonainra, The Great Nudie, Tequila Talkin', Mahon's Way) all wanting prominent positions behind. This creates dangerous congestion 2-3 out when the pace lifts, with multiple horses fighting for racing room simultaneously. The lone leader gets first run while the prominent brigade gets shuffled and bumped. This race shape strongly favours either the uncontested leader or hold-up horses who can sweep past the carnage late.",
-      "scenarios": [
-        {
-          "label": "A",
-          "title": "Leader Gets Away",
-          "prob": 45,
-          "trigger": "If Harty Cup maintains a strong gallop and the prominent pack gets tangled up turning for home",
-          "body": "The 5-year-old gets first run while behind him it's a demolition derby, allowing him to build an unassailable lead. Pure front-runners and patient hold-up horses prosper most.",
-          "winners": [
-            "Harty Cup",
-            "Duffys Hodey"
-          ],
-          "others": [
-            "Ho My Lord",
-            "Park Of Kings"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "Prominent Traffic Jam",
-          "prob": 30,
-          "trigger": "If the five prominent runners create a wall of horses that blocks each other's racing room",
-          "body": "The pace becomes stop-start as they jostle for position, setting it up perfectly for hold-up horses to come from the back with clear runs. Late runners get dream scenarios.",
-          "winners": [
-            "Three In A Row",
-            "Ho My Lord"
-          ],
-          "others": [
-            "Park Of Kings",
-            "Duffys Hodey"
-          ]
-        },
-        {
-          "label": "C",
-          "title": "Early Pace Collapse",
-          "prob": 15,
-          "trigger": "If Harty Cup goes too slow early and the prominent runners close up into a cavalry charge",
-          "body": "The race becomes a sprint from 3 out with every horse still in contention, favouring those with natural speed over stamina. The best horses on ratings shine through.",
-          "winners": [
-            "The Great Nudie",
-            "James The Brave"
-          ],
-          "others": [
-            "Choccabloc",
-            "Cloonainra"
-          ]
-        },
-        {
-          "label": "D",
-          "title": "Perfect Prominent Run",
-          "prob": 10,
-          "trigger": "If one of the prominent runners times their move perfectly between horses and avoids all traffic",
-          "body": "They get the ideal trip tracking the leader before finding a clean split at the crucial moment. Only works if racing luck goes their way completely.",
-          "winners": [
-            "Choccabloc",
-            "The Great Nudie"
-          ],
-          "others": [
-            "James The Brave",
-            "Cloonainra"
-          ]
-        }
-      ],
-      "watchPoints": [
-        {
-          "severity": "danger",
-          "text": "Watch Choccabloc, Cloonainra, Tequila Talkin', Mahon's Way and The Great Nudie bunch up 2-3 out creating a five-horse traffic jam"
-        },
-        {
-          "severity": "warn",
-          "text": "Watch if Harty Cup goes too steady early allowing the prominent pack to close up and negate his tactical advantage"
-        },
-        {
-          "severity": "info",
-          "text": "Watch Three In A Row and Ho My Lord getting clear runs from the back while the prominent runners get shuffled"
-        },
-        {
-          "severity": "warn",
-          "text": "Watch for jockey inexperience with Peter Smithers, Josh Williamson and Dylan Kidd all carrying 5-7lb claims in tactical race"
-        },
-        {
-          "severity": "danger",
-          "text": "Watch the turn for home where five prominent runners will simultaneously look for racing room that doesn't exist"
-        }
-      ],
+      "paceDynamic": "",
+      "scenarios": [],
+      "watchPoints": [],
       "skipped": false
     },
     {
@@ -2554,7 +2147,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Highest-rated prominent runner but faces severe traffic problems with six others wanting similar position",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Charlie O'Dwyer(5)",
@@ -2574,7 +2167,7 @@
           "_projected": 135.4,
           "_model_price": "7/1",
           "_mkt_price": "10/1",
-          "_win_pct": 13.3,
+          "_win_pct": 13.2,
           "_edge": 20.8,
           "_action": "CONSIDER"
         },
@@ -2585,7 +2178,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Perfect hold-up style for this pace scenario, recent form excellent and can avoid early trouble",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "John Shinnick",
@@ -2603,9 +2196,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 112.4,
-          "_model_price": "12/1",
-          "_mkt_price": "14/1",
-          "_win_pct": 7.8,
+          "_model_price": "14/1",
+          "_mkt_price": "16/1",
+          "_win_pct": 6.8,
           "_edge": 19.8,
           "_action": "WATCH"
         },
@@ -2616,7 +2209,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Long layoff concern at 354 days but prominent style faces congestion issues",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Mr Finian Maguire",
@@ -2634,9 +2227,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 104.2,
-          "_model_price": "8/1",
-          "_mkt_price": "11/2",
-          "_win_pct": 11.4,
+          "_model_price": "9/1",
+          "_mkt_price": "32/5",
+          "_win_pct": 10.0,
           "_edge": 6.5,
           "_action": "WATCH"
         },
@@ -2647,7 +2240,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner with solid going record but will meet traffic from 3 out",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "James Smith(5)",
@@ -2678,7 +2271,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse ideally positioned for late challenge, 173-day break adds freshness angle",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Jack Kennedy",
@@ -2698,7 +2291,7 @@
           "_projected": 102.8,
           "_model_price": "16/1",
           "_mkt_price": "11/1",
-          "_win_pct": 5.6,
+          "_win_pct": 5.5,
           "_edge": 3.1,
           "_action": "AVOID"
         },
@@ -2709,7 +2302,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up style suits but trainer's 4/40 recent record raises execution concerns",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Mike O'Connor",
@@ -2729,7 +2322,7 @@
           "_projected": 102.7,
           "_model_price": "18/1",
           "_mkt_price": "12/1",
-          "_win_pct": 5.3,
+          "_win_pct": 5.2,
           "_edge": 4.0,
           "_action": "AVOID"
         },
@@ -2740,7 +2333,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up runner with light weight advantage but course form questions remain",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Tiernan Power Roche",
@@ -2771,7 +2364,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Only confirmed leader gives him tactical edge despite lower rating",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Phillip Enright",
@@ -2791,7 +2384,7 @@
           "_projected": 99.7,
           "_model_price": "7/1",
           "_mkt_price": "6/1",
-          "_win_pct": 12.3,
+          "_win_pct": 12.2,
           "_edge": 11.0,
           "_action": "WATCH"
         },
@@ -2802,7 +2395,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse with strong recent fourth, 68-day break ideal for this distance",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Simon Torrens",
@@ -2833,7 +2426,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent style with good recent win but faces crowded position battle",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Philip Donovan(3)",
@@ -2851,9 +2444,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 97.7,
-          "_model_price": "14/1",
-          "_mkt_price": "11/1",
-          "_win_pct": 6.7,
+          "_model_price": "10/1",
+          "_mkt_price": "15/2",
+          "_win_pct": 9.4,
           "_edge": 9.1,
           "_action": "WATCH"
         },
@@ -2864,7 +2457,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse but inconsistent recent form and highest weight of 158lbs",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Carl Millar(5)",
@@ -2895,7 +2488,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent runner with excellent recent form including two wins from last five starts",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Cian Quirke",
@@ -2915,7 +2508,7 @@
           "_projected": 87.6,
           "_model_price": "9/1",
           "_mkt_price": "9/2",
-          "_win_pct": 9.6,
+          "_win_pct": 9.5,
           "_edge": -5.0,
           "_action": "AVOID"
         },
@@ -2926,7 +2519,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent style faces traffic but 173-day break and light weight could surprise",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "",
@@ -2957,7 +2550,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent runner with solid recent second, 19-day turnaround keeps him sharp",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Josh Williamson(5)",
@@ -2975,9 +2568,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 82.9,
-          "_model_price": "15/1",
+          "_model_price": "16/1",
           "_mkt_price": "15/2",
-          "_win_pct": 6.1,
+          "_win_pct": 6.0,
           "_edge": -5.8,
           "_action": "AVOID"
         },
@@ -2988,7 +2581,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse suits pace but 71-day layoff and poor recent form concerning",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Gavin Brouder",
@@ -3008,7 +2601,7 @@
           "_projected": 81.9,
           "_model_price": "79/1",
           "_mkt_price": "20/1",
-          "_win_pct": 1.3,
+          "_win_pct": 1.2,
           "_edge": -19.8,
           "_action": "AVOID"
         },
@@ -3019,7 +2612,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up style benefits from chaos but recent pulled-up run raises fitness questions",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Liam Quinlan",
@@ -3037,7 +2630,7 @@
           "comment": "",
           "spotlight": "",
           "_projected": 77.7,
-          "_model_price": "58/1",
+          "_model_price": "59/1",
           "_mkt_price": "25/1",
           "_win_pct": 1.7,
           "_edge": -12.0,
@@ -3050,7 +2643,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent runner with 12-day quick turnaround, recent form mixed but stays trip well",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Michael Kenneally(5)",
@@ -3075,91 +2668,9 @@
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Supreme Jet will lead from the outset with no genuine pace pressure early, setting a controlled gallop that suits his style. The danger emerges from circuit 2-3 out where seven prominent runners (Fakir d'Oudairies, Flash De Touzaine, Farmers Lodge, Dont Go Yet, Krabat, Caesar Rock, Brideswell Lad) will all be looking to challenge simultaneously, creating severe traffic problems. With so much congestion inevitable in the business end, this race strongly favours hold-up horses who can stay wide and deliver late kicks when the prominent brigade gets tangled up. The tactical verdict is clear: hold-up horses have a significant advantage due to the pace setup creating ideal stalking conditions followed by predictable traffic chaos.",
-      "scenarios": [
-        {
-          "label": "A",
-          "title": "Hold-Up Heroes Dominate",
-          "prob": 55,
-          "trigger": "If the prominent pack creates expected traffic problems from 3 out",
-          "body": "Bythesametoken and Watch The Weather can pick their way through or go wide while the prominent runners impede each other. The controlled early pace plays perfectly into their patient tactics.",
-          "winners": [
-            "Bythesametoken",
-            "Watch The Weather"
-          ],
-          "others": [
-            "The Folkes Tiara",
-            "A Wave Of The Sea"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "Front Pair Steal It",
-          "prob": 25,
-          "trigger": "If Supreme Jet maintains his lead and one prominent runner breaks clear of the pack",
-          "body": "Supreme Jet's uncontested lead gives him first run while Flash De Touzaine or Dont Go Yet might emerge cleanest from the prominent scrum. The lack of early pressure becomes decisive.",
-          "winners": [
-            "Supreme Jet",
-            "Flash De Touzaine"
-          ],
-          "others": [
-            "Dont Go Yet",
-            "Fakir d'Oudairies"
-          ]
-        },
-        {
-          "label": "C",
-          "title": "Traffic Chaos Benefits Outsider",
-          "prob": 12,
-          "trigger": "If the entire field gets severely bunched approaching the last two fences",
-          "body": "A longshot like General Clermont or Caesar Rock finds racing room while higher-rated horses get stopped in their tracks. Complete mayhem favours any horse getting a clear run.",
-          "winners": [
-            "General Clermont",
-            "Caesar Rock"
-          ],
-          "others": [
-            "Union Park",
-            "Digby"
-          ]
-        },
-        {
-          "label": "D",
-          "title": "Prominent Power Prevails",
-          "prob": 8,
-          "trigger": "If one of the prominent runners gets an early break and avoids the congestion",
-          "body": "Fakir d'Oudairies uses his class advantage to kick clear before the pack converges, or Krabat's recent form carries him through. Superior quality overcomes tactical disadvantage.",
-          "winners": [
-            "Fakir d'Oudairies",
-            "Krabat"
-          ],
-          "others": [
-            "Farmers Lodge",
-            "Brideswell Lad"
-          ]
-        }
-      ],
-      "watchPoints": [
-        {
-          "severity": "danger",
-          "text": "Watch for severe bunching and interference from 3 out when Fakir d'Oudairies, Flash De Touzaine, Krabat, Dont Go Yet, Caesar Rock, General Clermont and Brideswell Lad all converge"
-        },
-        {
-          "severity": "warn",
-          "text": "Monitor Bythesametoken and Watch The Weather staying wide to avoid the prominent pack's traffic problems"
-        },
-        {
-          "severity": "info",
-          "text": "Supreme Jet's jumping under pressure - he's been front-running but never truly tested for sustained periods"
-        },
-        {
-          "severity": "warn",
-          "text": "Check Caesar Rock and Krabat for any signs of their 19-day quick turnarounds taking effect in the closing stages"
-        },
-        {
-          "severity": "info",
-          "text": "Farmers Lodge returning from 354-day layoff in amateur hands could be rusty or dangerously fresh"
-        }
-      ],
+      "paceDynamic": "",
+      "scenarios": [],
+      "watchPoints": [],
       "skipped": false
     },
     {
@@ -3211,7 +2722,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent racer with strong recent form who should track the leader nicely for Hanlon",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Harry Sexton(7)",
@@ -3242,7 +2753,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Reliable prominent runner whose best form comes on similar ground conditions",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Niall Moore(5)",
@@ -3273,7 +2784,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent type but 117 days off and poor recent Heavy track form is concerning",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Shane Fitzgerald",
@@ -3304,7 +2815,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse who stays well and has excellent record on good to yielding going",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Simon Torrens",
@@ -3335,7 +2846,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Patient type who won last time out over 2m5f suggesting this trip suits perfectly",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "",
@@ -3366,7 +2877,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner but 99 days absent and carrying bottom weight with claiming jockey",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Carl Millar(5)",
@@ -3397,7 +2908,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse with amateur jockey but trainer Cromwell in good form recently",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Mr B M Coonan(7)",
@@ -3428,7 +2939,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "The leader who gets an easy time up front and has stamina for this extended trip",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "E Walsh",
@@ -3459,7 +2970,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up type but 105 days off and generally needs things to fall right",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Liam Quinlan",
@@ -3490,7 +3001,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent runner getting significant weight relief but inconsistent recent efforts",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Tiernan Power Roche",
@@ -3521,7 +3032,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse with no recent experience on softer ground which is a question mark",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Michael Kenneally(5)",
@@ -3552,7 +3063,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Top-rated hold-up horse who won last time and handles these conditions perfectly",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "James Smith(5)",
@@ -3583,7 +3094,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Patient type who has been consistent without winning but handles the ground",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Keith Donoghue",
@@ -3614,7 +3125,7 @@
           "finish_type": "F",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse but fading finish pattern suggests stamina limitations over this trip",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Alex Harvey",
@@ -3645,7 +3156,7 @@
           "finish_type": "F",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up type but long absence and fading finish tendency are major concerns",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "",
@@ -3676,7 +3187,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse but 12 years old and very inconsistent recent form",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Cian Quirke",
@@ -3707,7 +3218,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up type but massive 1100-day absence makes him impossible to recommend",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Mike O'Connor",
@@ -3738,7 +3249,7 @@
           "finish_type": "F",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse who won recently but fading finish pattern is worrying",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Phillip Enright",
@@ -3769,7 +3280,7 @@
           "finish_type": "F",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Patient type but fading finish tendency suggests he may not get this longer trip",
+          "note": "",
           "draw": null,
           "draw_adv": null,
           "jockey": "Josh Williamson(5)",
@@ -3794,91 +3305,9 @@
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Butty O Brien is the sole confirmed pace-setter in this 19-runner handicap chase and should get an easy lead with Person Of Interest, Finnians Row and Elusive Prince the only prominent racers likely to track him early. The sustainable gallop will create a stamina test over this extended 2m3½f trip on good to yielding ground, with the majority of the field sitting off the pace including top-rated Rockstown Girl, Warm In Gorey and North Of Nashville. This race shape strongly favours hold-up horses who can stay well and finish strongly, as the honest gallop will stretch out the field and expose those without genuine stamina.",
-      "scenarios": [
-        {
-          "label": "A",
-          "title": "Hold-up horses dominate",
-          "prob": 55,
-          "trigger": "If Butty O Brien sets a steady gallop and the hold-up brigade get the splits they need",
-          "body": "The sustainable pace perfectly suits the patient tactics of Rockstown Girl, Warm In Gorey and North Of Nashville who can all unleash late runs. The extended trip and testing ground will find out any pace-setters lacking stamina.",
-          "winners": [
-            "Rockstown Girl",
-            "Warm In Gorey"
-          ],
-          "others": [
-            "North Of Nashville",
-            "My Good Pal"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "Prominent racers prevail",
-          "prob": 25,
-          "trigger": "If the early pace is slightly stronger and the prominent horses get first run",
-          "body": "Person Of Interest and Finnians Row can capitalize on their forward positions to get away from the pack before the hold-up horses can respond. Their class advantage tells when they're not swamped late.",
-          "winners": [
-            "Person Of Interest",
-            "Finnians Row"
-          ],
-          "others": [
-            "Elusive Prince",
-            "Baltinglass Hill"
-          ]
-        },
-        {
-          "label": "C",
-          "title": "Butty O Brien stays on",
-          "prob": 12,
-          "trigger": "If the leader maintains his gallop and the field comes too late",
-          "body": "The 10-year-old's stamina reserves prove superior on this testing ground and he holds off all challengers. His recent third at similar conditions gives him the edge when others tire.",
-          "winners": [
-            "Butty O Brien",
-            "Malton Groove"
-          ],
-          "others": [
-            "Nolans Rocco",
-            "Driveonwill"
-          ]
-        },
-        {
-          "label": "D",
-          "title": "Chaos helps outsider",
-          "prob": 8,
-          "trigger": "If there are multiple fallers or the pace collapses completely",
-          "body": "The race becomes a lottery where positioning and luck matter more than ability, allowing a horse like Baltinglass Hill or Oogum Boogum to capitalize. The disrupted rhythm suits those who can adapt quickly.",
-          "winners": [
-            "Baltinglass Hill",
-            "Oogum Boogum"
-          ],
-          "others": [
-            "Connemara Shore",
-            "Rajjnatin"
-          ]
-        }
-      ],
-      "watchPoints": [
-        {
-          "severity": "danger",
-          "text": "Butty O Brien if he gets too keen early - his front-running style only works with a controlled gallop"
-        },
-        {
-          "severity": "warn",
-          "text": "Rockstown Girl needs a clear passage in the straight as she'll be coming from well back in this big field"
-        },
-        {
-          "severity": "info",
-          "text": "Person Of Interest's jumping under pressure as he'll need to be accurate when the pace lifts"
-        },
-        {
-          "severity": "warn",
-          "text": "North Of Nashville's stamina reserves as this is a step up in trip from recent efforts"
-        },
-        {
-          "severity": "info",
-          "text": "The amateur rider on My Good Pal in such a competitive handicap with 19 runners"
-        }
-      ],
+      "paceDynamic": "",
+      "scenarios": [],
+      "watchPoints": [],
       "skipped": false
     }
   ]
