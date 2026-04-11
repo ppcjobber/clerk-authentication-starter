@@ -14,13 +14,22 @@ type Meeting = {
 
 const MEETINGS: any[] = [
   {
+    slug:       "wincanton_12-april-2026",
+    date:       "12 April 2026",
+    label:      "Wincanton — 12 April 2026",
+    going:      "Good",
+    races:      8,
+    courseSlug: "wincanton",
+    latest:     true,
+  },
+  {
     slug:       "musselburgh_12-april-2026",
     date:       "12 April 2026",
     label:      "Musselburgh — 12 April 2026",
     going:      "Good",
     races:      7,
     courseSlug: "musselburgh",
-    latest:     true,
+    latest:     false,
   },
   {
     slug:       "leopardstown_12-april-2026",
