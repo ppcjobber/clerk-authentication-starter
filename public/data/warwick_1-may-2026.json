@@ -1,0 +1,1894 @@
+{
+  "course": "Warwick",
+  "date": "1 May 2026",
+  "slug": "warwick_1-may-2026",
+  "races": [
+    {
+      "id": 1,
+      "time": "4:30",
+      "name": "Connolly's Red Mills Open Hunters' Chase",
+      "grade": "CLS5",
+      "dist": "2m",
+      "dist_f": 16.0,
+      "going": "Good",
+      "runners": 3,
+      "free": true,
+      "type": "jumps",
+      "pace": "SLOWLY_RUN",
+      "paceConf": 85,
+      "leads": [
+        "Franigane"
+      ],
+      "prominent": [
+        "Great Valley",
+        "On Lovers Walk"
+      ],
+      "midfield": [],
+      "holdup": [],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Franigane",
+          "or": 116,
+          "style_code": "L",
+          "finish_type": "S",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Front runner returning after 364 days but faces no pace pressure and can dictate terms with amateur jockey Edgedale on board",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr George Edgedale(7)",
+          "trainer": "S Loxton",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "364",
+          "age": "11",
+          "sex": "gelding",
+          "form": "333/2-",
+          "lbs": "166",
+          "headgear": "b",
+          "rpr": "125",
+          "ts": "100",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 101.8,
+          "_model_price": "6/4",
+          "_mkt_price": "5/2",
+          "_win_pct": 40.6,
+          "_edge": 16.7,
+          "_action": "CONSIDER"
+        },
+        {
+          "name": "On Lovers Walk",
+          "or": 112,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Prominent runner in good recent form with strong going record (10/15 on similar) and benefits from trainer Morgan's perfect recent strike rate",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Miss Meisha Micklewright(7)",
+          "trainer": "Kelly Morgan",
+          "trainer_rtf": "100",
+          "trainer_14": "1/1",
+          "last_run": "18",
+          "age": "9",
+          "sex": "gelding",
+          "form": "34P11-",
+          "lbs": "169",
+          "headgear": "tp",
+          "rpr": "113",
+          "ts": "96",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 83.6,
+          "_model_price": "6/1",
+          "_mkt_price": "11/2",
+          "_win_pct": 15.0,
+          "_edge": 2.5,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Great Valley",
+          "or": 127,
+          "style_code": "P",
+          "finish_type": "S",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Highest-rated runner (OR 127) who runs prominently and showed winning form last time, but amateur rider Sankey needs to time challenge perfectly",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr Guy Sankey(7)",
+          "trainer": "N Gittins",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "32",
+          "age": "6",
+          "sex": "gelding",
+          "form": "1/111-",
+          "lbs": "169",
+          "headgear": "",
+          "rpr": "130",
+          "ts": "94",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 76.8,
+          "_model_price": "6/4",
+          "_mkt_price": "4/6",
+          "_win_pct": 44.4,
+          "_edge": -19.2,
+          "_action": "AVOID"
+        }
+      ],
+      "paceDynamic": "Franigane will take them along from the front unopposed, with On Lovers Walk and Great Valley both likely to track him in second and third positions through the early stages. With no other pace pressure, Franigane can dictate comfortable fractions and potentially steal a march on his higher-rated rivals who need to hunt him down. The lack of early pace pressure and small field size creates a tactical race where positioning and timing matter more than sustained pressure. This race shape strongly favours the front runner and those who can travel kindly in behind before producing a telling burst.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Franigane Gets Away",
+          "prob": 45,
+          "trigger": "If Franigane can maintain a decent gallop without being pressured early",
+          "body": "He can use his intimate knowledge of front running to kick clear at the right moment while his rivals are still organizing their challenges. The 364-day break becomes irrelevant if he's allowed to control the tempo completely.",
+          "winners": [
+            "Franigane"
+          ],
+          "others": [
+            "On Lovers Walk"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Great Valley Class Tells",
+          "prob": 35,
+          "trigger": "If Great Valley's superior rating and recent good form allow him to time his run perfectly",
+          "body": "His OR 127 and winning form give him the tactical speed to overcome the pace scenario when Sankey asks the question. The prominent style suits this setup where he can track and pounce.",
+          "winners": [
+            "Great Valley"
+          ],
+          "others": [
+            "On Lovers Walk"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "On Lovers Walk Strikes",
+          "prob": 15,
+          "trigger": "If On Lovers Walk can use her trainer's excellent recent form (1/1 in last 14 days) and good going record",
+          "body": "Her 10/15 record on similar going and recent race fitness could prove decisive in a tactical finish. The prominent running style allows her to cover any move from Great Valley.",
+          "winners": [
+            "On Lovers Walk"
+          ],
+          "others": [
+            "Great Valley"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Pace Collapse Finish",
+          "prob": 5,
+          "trigger": "If the early pace becomes too slow and turns into a sprint finish",
+          "body": "All three converge in the final furlong with jockey error or jumping mistakes determining the outcome. The least likely scenario given Franigane's confirmed front running style.",
+          "winners": [
+            "Great Valley",
+            "On Lovers Walk"
+          ],
+          "others": [
+            "Franigane"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Franigane's jumping after such a long layoff - any mistake hands initiative to his higher-rated rivals"
+        },
+        {
+          "severity": "warn",
+          "text": "Great Valley's amateur jockey Mr Sankey and whether he can judge the pace from prominent position against a wily front runner"
+        },
+        {
+          "severity": "info",
+          "text": "On Lovers Walk for signs of confidence from the Morgan yard given their 100% recent strike rate"
+        },
+        {
+          "severity": "warn",
+          "text": "The early pace development - if it becomes pedestrian all three could converge dangerously late"
+        },
+        {
+          "severity": "info",
+          "text": "Franigane's fitness levels showing after 364 days off, particularly from the home turn onwards"
+        }
+      ],
+      "skipped": false
+    },
+    {
+      "id": 2,
+      "time": "5:05",
+      "name": "Pertemps Network Intermediate Point-To-Point Hunters' Chase",
+      "grade": "CLS4",
+      "dist": "3m1½f",
+      "dist_f": 25.5,
+      "going": "Good",
+      "runners": 6,
+      "free": false,
+      "type": "jumps",
+      "pace": "SLOWLY_RUN",
+      "paceConf": 85,
+      "leads": [
+        "The Dancing Tree"
+      ],
+      "prominent": [
+        "Fame And Concrete"
+      ],
+      "midfield": [
+        "Ultimate Survivor",
+        "Tellmesomethingood"
+      ],
+      "holdup": [
+        "Practice Run",
+        "Mister Splash"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Ultimate Survivor",
+          "or": 120,
+          "style_code": "U",
+          "finish_type": "E",
+          "dist_code": "UNKNOWN",
+          "going_flag": "UNKNOWN",
+          "note": "Lightly raced unknown quantity with highest official rating (120) but concerning lack of recent form data and amateur jockey booking creates significant uncertainty.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr Darren Andrews(3)",
+          "trainer": "Miss B Coward",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "(54P)",
+          "age": "6",
+          "sex": "gelding",
+          "form": "/2132-",
+          "lbs": "166",
+          "headgear": "",
+          "rpr": "-",
+          "ts": "-",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 109.0,
+          "_model_price": "5/2",
+          "_mkt_price": "11/2",
+          "_win_pct": 30.2,
+          "_edge": 22.2,
+          "_action": "WIN"
+        },
+        {
+          "name": "Mister Splash",
+          "or": 105,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Proven hold-up performer with solid RPR of 110 and decent recent Warwick form, but faces tactical disadvantage against likely uncontested leader.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr Paddy Barlow(3)",
+          "trainer": "E Turner",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "18",
+          "age": "9",
+          "sex": "gelding",
+          "form": "/3112-",
+          "lbs": "166",
+          "headgear": "t",
+          "rpr": "110",
+          "ts": "29",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 83.3,
+          "_model_price": "7/2",
+          "_mkt_price": "5/1",
+          "_win_pct": 22.6,
+          "_edge": 11.5,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Fame And Concrete",
+          "or": 99,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Prominent racer with good Warwick experience but long absence since last run (1136 days) raises serious fitness concerns despite trainer having him ready.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr Cian Murphy(7)",
+          "trainer": "N R W Wright",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "1136 (54P)",
+          "age": "10",
+          "sex": "gelding",
+          "form": "21/42-",
+          "lbs": "166",
+          "headgear": "",
+          "rpr": "-",
+          "ts": "-",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 76.9,
+          "_model_price": "8/1",
+          "_mkt_price": "14/1",
+          "_win_pct": 10.6,
+          "_edge": 11.1,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Practice Run",
+          "or": 120,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Hold-up horse with consistent recent form (41221-) and trainer-jockey combination suggests confidence, but needs strong pace to be effective.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr Bradley Gibbs",
+          "trainer": "Bradley Gibbs",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "616 (34P)",
+          "age": "7",
+          "sex": "gelding",
+          "form": "41221-",
+          "lbs": "166",
+          "headgear": "t",
+          "rpr": "-",
+          "ts": "-",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 69.7,
+          "_model_price": "10/1",
+          "_mkt_price": "8/1",
+          "_win_pct": 8.4,
+          "_edge": -17.1,
+          "_action": "AVOID"
+        },
+        {
+          "name": "The Dancing Tree",
+          "or": 118,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Natural front-runner with exceptional current form (11111-) perfectly positioned to exploit weak pace scenario with no genuine early rivals.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr James King",
+          "trainer": "Alan Hill",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "386 (12P)",
+          "age": "7",
+          "sex": "gelding",
+          "form": "11111-",
+          "lbs": "166",
+          "headgear": "ht",
+          "rpr": "-",
+          "ts": "-",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 58.6,
+          "_model_price": "3/1",
+          "_mkt_price": "4/5",
+          "_win_pct": 25.8,
+          "_edge": -26.2,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Tellmesomethingood",
+          "or": 92,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Hold-up horse from same stable as likely leader but poor recent form (35452-) and lowest official rating (92) makes him hard to recommend.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr Huw Edwards(3)",
+          "trainer": "Alan Hill",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "717 (25P)",
+          "age": "8",
+          "sex": "gelding",
+          "form": "35452-",
+          "lbs": "166",
+          "headgear": "t",
+          "rpr": "-",
+          "ts": "-",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 57.2,
+          "_model_price": "42/1",
+          "_mkt_price": "40/1",
+          "_win_pct": 2.3,
+          "_edge": -1.5,
+          "_action": "WATCH"
+        }
+      ],
+      "paceDynamic": "The Dancing Tree emerges as the clear pace angle with proven front-running credentials and excellent recent form (11111-), likely to dictate terms from the front without serious early pressure. Fame And Concrete may try to track prominently but lacks the consistent pace-pressing ability to trouble The Dancing Tree early. The hold-up brigade of Mister Splash, Practice Run, and Tellmesomethingood will be relying on a strong finish, but the lack of genuine pace pressure means The Dancing Tree can control fractions and kick clear when ready. This race shape heavily favours the front-runner and prominent racers who can secure good positions early, as the hold-up horses face a tactical disadvantage against a controlled tempo.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Dancing Tree Dominates",
+          "prob": 55,
+          "trigger": "If The Dancing Tree gets an uncontested lead and dictates moderate fractions.",
+          "body": "The front-runner can measure out his effort perfectly and kick clear turning for home when the hold-up horses are still trying to get into the race. His excellent current form (11111-) and tactical advantage combine to make him very hard to catch.",
+          "winners": [
+            "The Dancing Tree",
+            "Fame And Concrete"
+          ],
+          "others": [
+            "Ultimate Survivor",
+            "Practice Run"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Hold-Up Horse Strikes",
+          "prob": 25,
+          "trigger": "If the pace becomes genuinely strong or The Dancing Tree weakens in the closing stages.",
+          "body": "Practice Run or Mister Splash can use their finishing kick to maximum effect, with Practice Run's solid form (41221-) and Mister Splash's proven ability at this level giving them the edge. The patient tactics pay off if they get the right setup.",
+          "winners": [
+            "Practice Run",
+            "Mister Splash"
+          ],
+          "others": [
+            "The Dancing Tree",
+            "Ultimate Survivor"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Prominent Tracker Prevails",
+          "prob": 12,
+          "trigger": "If Fame And Concrete can track The Dancing Tree closely and outbattle him in the straight.",
+          "body": "The 10-year-old's experience tells as he sits in the perfect stalking position and has enough left to forge clear when The Dancing Tree's effort flattens. His recent third at Warwick shows he retains ability at this level.",
+          "winners": [
+            "Fame And Concrete",
+            "The Dancing Tree"
+          ],
+          "others": [
+            "Practice Run",
+            "Ultimate Survivor"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Ultimate Survivor Surprise",
+          "prob": 8,
+          "trigger": "If the lightly-raced Ultimate Survivor has significant improvement to come and gets the right ride.",
+          "body": "His minimal exposure (only recent form /2132-) could be hiding untapped potential, and if he settles better than expected he might have the class edge with his higher OR of 120. The unknown quantity factor works in his favour if others underperform.",
+          "winners": [
+            "Ultimate Survivor",
+            "Practice Run"
+          ],
+          "others": [
+            "The Dancing Tree",
+            "Mister Splash"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "The Dancing Tree getting an easy lead through the early stages as this would give him a decisive tactical advantage over the hold-up horses"
+        },
+        {
+          "severity": "warn",
+          "text": "Ultimate Survivor's market movements given his lightly-raced profile and highest official rating could indicate stable confidence in hidden ability"
+        },
+        {
+          "severity": "warn",
+          "text": "Fame And Concrete's fitness levels after 1136 days off, though connections clearly think he's ready to perform fresh"
+        },
+        {
+          "severity": "info",
+          "text": "Practice Run and Mister Splash positioning in the early stages as they'll need to be close enough to strike if the pace collapses"
+        },
+        {
+          "severity": "info",
+          "text": "Any jockey changes or significant market support for Tellmesomethingood given his poor recent form but stable connection to likely favourite"
+        }
+      ],
+      "skipped": false
+    },
+    {
+      "id": 3,
+      "time": "5:40",
+      "name": "GB Pointing Open Hunters' Chase",
+      "grade": "CLS4",
+      "dist": "3m1½f",
+      "dist_f": 25.5,
+      "going": "Good",
+      "runners": 5,
+      "free": false,
+      "type": "jumps",
+      "pace": "SLOWLY_RUN",
+      "paceConf": 85,
+      "leads": [
+        "Alaphilippe"
+      ],
+      "prominent": [
+        "High Game Royal"
+      ],
+      "midfield": [
+        "Laurel Girl"
+      ],
+      "holdup": [
+        "What A Glance",
+        "Mister Coffey"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "What A Glance",
+          "or": 134,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Hold-up horse with solid recent form who should relish this patient tactical setup and the return to good going after soft ground efforts.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr Frederick Philipson-Stow(7)",
+          "trainer": "Tom Britten",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "49",
+          "age": "11",
+          "sex": "gelding",
+          "form": "/5F2P-",
+          "lbs": "168",
+          "headgear": "t",
+          "rpr": "132",
+          "ts": "87",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 107.4,
+          "_model_price": "3/1",
+          "_mkt_price": "9/4",
+          "_win_pct": 26.7,
+          "_edge": -6.0,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Alaphilippe",
+          "or": 118,
+          "style_code": "P",
+          "finish_type": "S",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Prominent runner returning from 364-day absence but has shown enough in pointing to suggest he retains ability despite the lengthy break.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr James King",
+          "trainer": "Mrs A Slatter",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "364 (25P)",
+          "age": "12",
+          "sex": "gelding",
+          "form": "/P311-",
+          "lbs": "168",
+          "headgear": "tp",
+          "rpr": "120",
+          "ts": "-",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 104.6,
+          "_model_price": "2/1",
+          "_mkt_price": "4/1",
+          "_win_pct": 32.2,
+          "_edge": 7.3,
+          "_action": "WIN"
+        },
+        {
+          "name": "Laurel Girl",
+          "or": 120,
+          "style_code": "U",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Lightly-raced mare having first run in over three years with minimal recent evidence but could benefit from the lack of early pace pressure.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr Henry Main(5)",
+          "trainer": "Miss Madeline Plumb",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "1353 (12P)",
+          "age": "10",
+          "sex": "mare",
+          "form": "PPPP3-",
+          "lbs": "161",
+          "headgear": "b",
+          "rpr": "-",
+          "ts": "-",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 104.6,
+          "_model_price": "82/1",
+          "_mkt_price": "100/1",
+          "_win_pct": 1.2,
+          "_edge": 5.3,
+          "_action": "CONSIDER"
+        },
+        {
+          "name": "Mister Coffey",
+          "or": 132,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Henderson-trained hold-up performer who fits the race shape perfectly but needs to bounce back from disappointing recent efforts over shorter.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr Daniel Williams(7)",
+          "trainer": "Nicky Henderson",
+          "trainer_rtf": "43",
+          "trainer_14": "6/21",
+          "last_run": "42",
+          "age": "11",
+          "sex": "gelding",
+          "form": "/2054-",
+          "lbs": "168",
+          "headgear": "",
+          "rpr": "144",
+          "ts": "117",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 98.3,
+          "_model_price": "2/1",
+          "_mkt_price": "EVS",
+          "_win_pct": 34.5,
+          "_edge": -13.0,
+          "_action": "AVOID"
+        },
+        {
+          "name": "High Game Royal",
+          "or": 108,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Prominent runner in good current form who could capitalize if the hold-up horses fail to generate sufficient late momentum.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr Nicholas Romain(7)",
+          "trainer": "Mrs R A Romain",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "24",
+          "age": "9",
+          "sex": "gelding",
+          "form": "22543-",
+          "lbs": "168",
+          "headgear": "p",
+          "rpr": "119",
+          "ts": "71",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 93.8,
+          "_model_price": "18/1",
+          "_mkt_price": "25/1",
+          "_win_pct": 5.4,
+          "_edge": 6.4,
+          "_action": "CONSIDER"
+        }
+      ],
+      "paceDynamic": "Alaphilippe will set the early pace from his prominent position, with High Game Royal likely tracking close behind as the only other forward runner in this small field. The sustained galloping test over 3m1½f means Alaphilippe can dictate terms without serious pressure, creating a genuine staying test rather than a sprint finish. With limited early pace and the majority being hold-up horses, this sets up perfectly for the patient types who can produce their best effort late. This race shape strongly favours hold-up horses who can unleash a finishing kick after the pace-setters have done the donkey work.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Hold-Up Heroes Prevail",
+          "prob": 55,
+          "trigger": "If Alaphilippe sets honest fractions without burning out the field completely",
+          "body": "The patient hold-up horses get the perfect setup to wind up from the back and overwhelm the leaders in the final half-mile. What A Glance and Mister Coffey can time their runs to perfection when others have shot their bolt.",
+          "winners": [
+            "What A Glance",
+            "Mister Coffey"
+          ],
+          "others": [
+            "Alaphilippe",
+            "High Game Royal"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Front Runners Stay Strong",
+          "prob": 25,
+          "trigger": "If the early pace is too slow and the hold-up horses fail to generate enough momentum",
+          "body": "Alaphilippe and High Game Royal maintain their advantage as the back markers struggle to make up ground on forgiving going. The prominent runners have enough left in the tank to resist the late challenges over this stamina test.",
+          "winners": [
+            "Alaphilippe",
+            "High Game Royal"
+          ],
+          "others": [
+            "What A Glance",
+            "Mister Coffey"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Surprise Package Emerges",
+          "prob": 12,
+          "trigger": "If Laurel Girl's long absence masks improved form and she benefits from the lack of pace",
+          "body": "The lightly-raced mare finds another gear after her break and capitalizes on soft fractions to spring a surprise. Her fresher legs prove decisive as others tire from recent exertions.",
+          "winners": [
+            "Laurel Girl",
+            "What A Glance"
+          ],
+          "others": [
+            "Alaphilippe",
+            "Mister Coffey"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Complete Collapse Up Front",
+          "prob": 8,
+          "trigger": "If Alaphilippe's 364-day break tells and he folds tamely when challenged",
+          "body": "The long-absent pace-setter capitulates early leaving High Game Royal isolated in front and vulnerable. This creates a messy race where any of the hold-up horses can profit from the chaos.",
+          "winners": [
+            "Mister Coffey",
+            "What A Glance"
+          ],
+          "others": [
+            "High Game Royal",
+            "Laurel Girl"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Alaphilippe's jumping under pressure after 364 days off - any early mistakes could derail the pace scenario completely."
+        },
+        {
+          "severity": "warn",
+          "text": "What A Glance's ability to handle the step up in trip from his recent shorter efforts where he showed good speed."
+        },
+        {
+          "severity": "warn",
+          "text": "Mister Coffey's tactical positioning early - Henderson's runner needs to be patient despite his class advantage on paper."
+        },
+        {
+          "severity": "info",
+          "text": "Laurel Girl's fitness levels after 1353 days away - any market support would be highly significant given the massive break."
+        },
+        {
+          "severity": "info",
+          "text": "High Game Royal's jumping rhythm if asked to go forward earlier than usual to fill any pace void left by Alaphilippe."
+        }
+      ],
+      "skipped": false
+    },
+    {
+      "id": 4,
+      "time": "6:15",
+      "name": "Jonathan Neesom Memorial Open Hunters' Chase",
+      "grade": "CLS4",
+      "dist": "3m1½f",
+      "dist_f": 25.5,
+      "going": "Good",
+      "runners": 4,
+      "free": false,
+      "type": "jumps",
+      "pace": "GENUINE_PACE",
+      "paceConf": 65,
+      "leads": [
+        "Imperial Esprit"
+      ],
+      "prominent": [
+        "Crawter"
+      ],
+      "midfield": [
+        "Corporal Jackjones",
+        "Kilfilum Woods"
+      ],
+      "holdup": [],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Crawter",
+          "or": 114,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Highest-rated runner returning from a mid-length break with proven form on good ground but faces stamina questions over this extended trip.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr Joshua Newman",
+          "trainer": "Mrs Harriet Waight",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "45 (34P)",
+          "age": "7",
+          "sex": "gelding",
+          "form": "3P281-",
+          "lbs": "169",
+          "headgear": "p",
+          "rpr": "119",
+          "ts": "102",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 100.0,
+          "_model_price": "5/2",
+          "_mkt_price": "11/4",
+          "_win_pct": 30.0,
+          "_edge": 8.9,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Imperial Esprit",
+          "or": 116,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Confirmed front-runner returning from a long layoff but brings solid course experience and consistent placing record on similar ground.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr Sean O'Connor(3)",
+          "trainer": "R W Varnham",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "336 (6P)",
+          "age": "12",
+          "sex": "gelding",
+          "form": "21121-",
+          "lbs": "169",
+          "headgear": "",
+          "rpr": "118",
+          "ts": "46",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 91.5,
+          "_model_price": "3/1",
+          "_mkt_price": "9/4",
+          "_win_pct": 25.9,
+          "_edge": -1.6,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Kilfilum Woods",
+          "or": 97,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Solid recent form including a course win but lowest official rating creates significant weight-adjusted disadvantage against classier opposition.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr Huw Edwards(3)",
+          "trainer": "Francesca Poste",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "336 (13P)",
+          "age": "10",
+          "sex": "gelding",
+          "form": "22112-",
+          "lbs": "169",
+          "headgear": "p",
+          "rpr": "111",
+          "ts": "52",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 83.4,
+          "_model_price": "5/2",
+          "_mkt_price": "7/2",
+          "_win_pct": 29.2,
+          "_edge": 9.3,
+          "_action": "CONSIDER"
+        },
+        {
+          "name": "Corporal Jackjones",
+          "or": 111,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Freshest horse with recent winning form but amateur rider's inexperience could prove costly in tactical situations over this demanding trip.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr Darren Andrews(3)",
+          "trainer": "Miss Poppy Skipper",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "53 (12P)",
+          "age": "7",
+          "sex": "gelding",
+          "form": "11212-",
+          "lbs": "169",
+          "headgear": "p",
+          "rpr": "113",
+          "ts": "88",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 71.6,
+          "_model_price": "6/1",
+          "_mkt_price": "5/2",
+          "_win_pct": 14.9,
+          "_edge": -16.5,
+          "_action": "AVOID"
+        }
+      ],
+      "paceDynamic": "Imperial Esprit will set a methodical early pace in this small field, with all four runners likely to race prominently given their running styles. The lack of genuine hold-up horses means no tactical pressure from behind, allowing the leader to dictate comfortable fractions through the first half of the race. Crawter and Kilfilum Woods will track closely with Corporal Jackjones also positioned handily, creating a compact group that should remain together until the business end. This sustained, honest gallop over an extended trip clearly favours horses with proven stamina reserves and tactical speed to quicken when the tempo inevitably lifts approaching the final few fences.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Sustained Gallop Grind",
+          "prob": 45,
+          "trigger": "If Imperial Esprit maintains steady fractions and the pace doesn't quicken dramatically until late",
+          "body": "The even tempo plays to the strengths of horses who can sustain their effort over this marathon trip without emptying their tanks early. Imperial Esprit's front-running style combined with Crawter's proven class gives them the edge in a staying test.",
+          "winners": [
+            "Imperial Esprit",
+            "Crawter"
+          ],
+          "others": [
+            "Kilfilum Woods",
+            "Corporal Jackjones"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Mid-Race Tactical Battle",
+          "prob": 30,
+          "trigger": "If multiple horses challenge Imperial Esprit from the back straight onwards",
+          "body": "The earlier injection of pace will test stamina reserves and expose any fitness doubts after lengthy layoffs. Crawter's superior class rating and Corporal Jackjones' recent race fitness become decisive factors in a more demanding examination.",
+          "winners": [
+            "Crawter",
+            "Corporal Jackjones"
+          ],
+          "others": [
+            "Imperial Esprit",
+            "Kilfilum Woods"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Late Dash Favours Fresh",
+          "prob": 15,
+          "trigger": "If the pace collapses early and becomes a sprint finish over the final half-mile",
+          "body": "Horses with tactical speed rather than pure stamina gain the advantage in a finish that resembles a shorter race. Corporal Jackjones' recent run and Kilfilum Woods' lighter build could prove more effective than the bigger, more laboured types.",
+          "winners": [
+            "Corporal Jackjones",
+            "Kilfilum Woods"
+          ],
+          "others": [
+            "Crawter",
+            "Imperial Esprit"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Front Runner Wires Field",
+          "prob": 10,
+          "trigger": "If Imperial Esprit faces no serious challenge and is allowed uncontested fractions throughout",
+          "body": "The lack of pressure allows the leader to conserve energy for a sustained finish that opponents cannot match. Imperial Esprit's experience and proven front-running ability becomes impossible to overcome when gifted soft sectionals.",
+          "winners": [
+            "Imperial Esprit",
+            "Kilfilum Woods"
+          ],
+          "others": [
+            "Crawter",
+            "Corporal Jackjones"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "warn",
+          "text": "Imperial Esprit's jumping rhythm early doors after 336 days off - any hesitation suggests ring-rustiness will cost him later"
+        },
+        {
+          "severity": "info",
+          "text": "How aggressively Crawter's connections position him given the extended trip may test his stamina limits for the first time"
+        },
+        {
+          "severity": "danger",
+          "text": "Mr Sean O'Connor's tactical decisions on Imperial Esprit with only 3 rides under Rules - positioning errors could prove fatal"
+        },
+        {
+          "severity": "warn",
+          "text": "Whether Kilfilum Woods can overcome the class gap through superior fitness after his more recent racecourse appearance"
+        },
+        {
+          "severity": "info",
+          "text": "The pace through the first mile sets up everything else - if too steady it becomes a sprint finish that changes all calculations"
+        }
+      ],
+      "skipped": false
+    },
+    {
+      "id": 5,
+      "time": "6:50",
+      "name": "Natural Green Creative Spaces Mares' Open Hunters' Chase",
+      "grade": "CLS4",
+      "dist": "3m1½f",
+      "dist_f": 25.5,
+      "going": "Good",
+      "runners": 7,
+      "free": false,
+      "type": "jumps",
+      "pace": "CONTESTED",
+      "paceConf": 50,
+      "leads": [
+        "Loud And Proud"
+      ],
+      "prominent": [
+        "Hollywood Harmon",
+        "All Loved Up"
+      ],
+      "midfield": [
+        "Police Academy",
+        "Missed Tee"
+      ],
+      "holdup": [
+        "For Rita",
+        "Walk Of No Shame"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Police Academy",
+          "or": 100,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Hold-up specialist with strong recent form who benefits from the likely controlled early pace and carries Kelly Morgan's excellent 14-day strike rate",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Miss Ellie Callwood(7)",
+          "trainer": "Kelly Morgan",
+          "trainer_rtf": "100",
+          "trainer_14": "1/1",
+          "last_run": "140 (20P)",
+          "age": "9",
+          "sex": "mare",
+          "form": "P4211-",
+          "lbs": "162",
+          "headgear": "h",
+          "rpr": "115",
+          "ts": "66",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 80.1,
+          "_model_price": "evens",
+          "_mkt_price": "7/4",
+          "_win_pct": 51.5,
+          "_edge": 19.1,
+          "_action": "CONSIDER"
+        },
+        {
+          "name": "Hollywood Harmon",
+          "or": 110,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Prominent runner with tactical pace who could inherit the lead if Loud And Proud falters but hasn't won over similar going recently",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Miss Pippa Brown(5)",
+          "trainer": "A C Wilson",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "22",
+          "age": "9",
+          "sex": "mare",
+          "form": "31250-",
+          "lbs": "165",
+          "headgear": "",
+          "rpr": "103",
+          "ts": "91",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 76.6,
+          "_model_price": "4/1",
+          "_mkt_price": "11/4",
+          "_win_pct": 20.5,
+          "_edge": 5.5,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Missed Tee",
+          "or": 98,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Hold-up mare with solid recent placings who should get the right race shape but headgear changes suggest connections seeking improvement",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr Harry O'Dwyer(7)",
+          "trainer": "Miss V Collins",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "32",
+          "age": "9",
+          "sex": "mare",
+          "form": "PP224-",
+          "lbs": "162",
+          "headgear": "p",
+          "rpr": "107",
+          "ts": "102",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 66.1,
+          "_model_price": "14/1",
+          "_mkt_price": "11/1",
+          "_win_pct": 6.8,
+          "_edge": 7.0,
+          "_action": "WATCH"
+        },
+        {
+          "name": "For Rita",
+          "or": 120,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Experienced hold-up performer at 13 years old whose recent form shows she retains ability and suits the likely tactical scenario",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Miss Abigail Henry(7)",
+          "trainer": "Miss A Henry",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "45 (12P)",
+          "age": "13",
+          "sex": "mare",
+          "form": "1UPP1-",
+          "lbs": "162",
+          "headgear": "",
+          "rpr": "-",
+          "ts": "-",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 61.7,
+          "_model_price": "20/1",
+          "_mkt_price": "9/1",
+          "_win_pct": 4.5,
+          "_edge": -19.3,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Loud And Proud",
+          "or": 95,
+          "style_code": "L",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Lone front runner returning from 153-day break whose uncontested lead could prove decisive despite long absence",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr Huw Edwards(3)",
+          "trainer": "Miss Laura Richardson",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "153 (27P)",
+          "age": "7",
+          "sex": "mare",
+          "form": "P2F2P-",
+          "lbs": "165",
+          "headgear": "",
+          "rpr": "105",
+          "ts": "99",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 57.3,
+          "_model_price": "40/1",
+          "_mkt_price": "25/1",
+          "_win_pct": 2.5,
+          "_edge": 1.2,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Walk Of No Shame",
+          "or": 106,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Hold-up runner with strong going record who returns from a 243-day layoff with solid historical form over similar conditions",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr Joshua Newman",
+          "trainer": "S Loxton",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "243 (19P)",
+          "age": "9",
+          "sex": "mare",
+          "form": "3O2O3-",
+          "lbs": "162",
+          "headgear": "",
+          "rpr": "-",
+          "ts": "-",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 54.7,
+          "_model_price": "20/1",
+          "_mkt_price": "7/1",
+          "_win_pct": 5.0,
+          "_edge": -12.4,
+          "_action": "AVOID"
+        },
+        {
+          "name": "All Loved Up",
+          "or": 86,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Prominent runner with lowest rating who faces a significant class challenge despite consistent recent efforts over shorter distances",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr Hugh Lillingston(7)",
+          "trainer": "H Brown",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "364 (27P)",
+          "age": "11",
+          "sex": "mare",
+          "form": "41121-",
+          "lbs": "162",
+          "headgear": "",
+          "rpr": "94",
+          "ts": "55",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 46.0,
+          "_model_price": "10/1",
+          "_mkt_price": "11/2",
+          "_win_pct": 9.2,
+          "_edge": -1.1,
+          "_action": "AVOID"
+        }
+      ],
+      "paceDynamic": "Loud And Proud is the sole confirmed front runner and will dictate terms from the start without pressure. Hollywood Harmon and All Loved Up as prominent runners may track the leader but are unlikely to challenge early pace. This creates a controlled gallop that will gradually increase through the middle stages before the hold-up horses Police Academy, Missed Tee, For Rita, and Walk Of No Shame make their moves. The sustainable early pace and lack of pace pressure strongly favours hold-up horses who can time their challenges late.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Hold-up horses dominate",
+          "prob": 60,
+          "trigger": "If Loud And Proud sets uncontested fractions through halfway",
+          "body": "The patient hold-up brigade gets the perfect setup to unleash finishing kicks from off the pace. Police Academy and For Rita benefit most from this tactical scenario with their proven ability to close strongly.",
+          "winners": [
+            "Police Academy",
+            "For Rita"
+          ],
+          "others": [
+            "Missed Tee",
+            "Walk Of No Shame"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Front end collapses early",
+          "prob": 25,
+          "trigger": "If Loud And Proud stops quickly or Hollywood Harmon pushes the pace earlier than expected",
+          "body": "Hollywood Harmon inherits the lead with All Loved Up tracking, creating a more genuine pace that still suits closers but gives prominent runners a chance. The collapse opens up opportunities for those positioned just behind the leaders.",
+          "winners": [
+            "Hollywood Harmon",
+            "All Loved Up"
+          ],
+          "others": [
+            "Police Academy",
+            "For Rita"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Sustained gallop throughout",
+          "prob": 10,
+          "trigger": "If the pace stays even from start to finish without significant changes",
+          "body": "Loud And Proud maintains his advantage while the hold-up horses struggle to make up ground on the consistent tempo. This suits horses with tactical speed who can maintain position without using too much energy early.",
+          "winners": [
+            "Loud And Proud",
+            "Hollywood Harmon"
+          ],
+          "others": [
+            "All Loved Up",
+            "Police Academy"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Late pace collapse",
+          "prob": 5,
+          "trigger": "If multiple horses hit the front simultaneously in the final quarter mile",
+          "body": "The race becomes a test of stamina rather than tactical positioning as several runners challenge together. Walk Of No Shame's recent form and For Rita's experience could prove decisive in a grinding finish.",
+          "winners": [
+            "Walk Of No Shame",
+            "For Rita"
+          ],
+          "others": [
+            "Police Academy",
+            "Missed Tee"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Police Academy's jumping under pressure - 7lb claimer Ellie Callwood needs to keep this hold-up specialist balanced when making his move"
+        },
+        {
+          "severity": "warn",
+          "text": "Loud And Proud's fitness after 153 days off - any signs of rustiness early could see Hollywood Harmon or All Loved Up challenge for the lead"
+        },
+        {
+          "severity": "warn",
+          "text": "For Rita's stamina at 13 years old - watch for any signs of fatigue in the final half mile as the pace increases"
+        },
+        {
+          "severity": "info",
+          "text": "Walk Of No Shame's early positioning after the long break - Joshua Newman needs to get this hold-up horse into contention before the final turn"
+        },
+        {
+          "severity": "info",
+          "text": "Hollywood Harmon's jumping rhythm - any mistakes could compromise Pippa Brown's chances of capitalizing if the front runner weakens"
+        }
+      ],
+      "skipped": false
+    },
+    {
+      "id": 6,
+      "time": "7:25",
+      "name": "Foran Equine Open Hunters' Chase",
+      "grade": "CLS4",
+      "dist": "4m1f",
+      "dist_f": 33.0,
+      "going": "Good",
+      "runners": 5,
+      "free": false,
+      "type": "jumps",
+      "pace": "GENUINE_PACE",
+      "paceConf": 65,
+      "leads": [
+        "Myth Buster"
+      ],
+      "prominent": [
+        "Jeffery's Cross",
+        "Slipway"
+      ],
+      "midfield": [
+        "My Gift To You"
+      ],
+      "holdup": [
+        "Peaches And Cream"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Jeffery's Cross",
+          "or": 126,
+          "style_code": "P",
+          "finish_type": "S",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Prominent runner with excellent recent form and Dan Skelton stable in good form, ideally positioned to track the leader and strike late.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr Sean O'Connor(3)",
+          "trainer": "Dan Skelton",
+          "trainer_rtf": "58",
+          "trainer_14": "10/27",
+          "last_run": "42",
+          "age": "10",
+          "sex": "gelding",
+          "form": "32211-",
+          "lbs": "172",
+          "headgear": "p",
+          "rpr": "125",
+          "ts": "119",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 104.6,
+          "_model_price": "4/5",
+          "_mkt_price": "4/5",
+          "_win_pct": 55.0,
+          "_edge": 3.3,
+          "_action": "WATCH"
+        },
+        {
+          "name": "My Gift To You",
+          "or": 115,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Prominent style suits but 189-day layoff is a concern despite previous good record after breaks under James Owen's patient handling.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Miss Gina Andrews",
+          "trainer": "James Owen",
+          "trainer_rtf": "62",
+          "trainer_14": "10/44",
+          "last_run": "189 (28P)",
+          "age": "8",
+          "sex": "gelding",
+          "form": "16942-",
+          "lbs": "169",
+          "headgear": "tv",
+          "rpr": "118",
+          "ts": "104",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 99.1,
+          "_model_price": "8/1",
+          "_mkt_price": "11/1",
+          "_win_pct": 11.3,
+          "_edge": 8.8,
+          "_action": "CONSIDER"
+        },
+        {
+          "name": "Slipway",
+          "or": 125,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Another prominent runner but 98-day break and 0 from 15 on similar going is worrying, though Molly Armytage's 7lb claim helps.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Miss Molly Armytage(7)",
+          "trainer": "James Luck",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "98 (41P)",
+          "age": "11",
+          "sex": "gelding",
+          "form": "/5521-",
+          "lbs": "166",
+          "headgear": "b",
+          "rpr": "130",
+          "ts": "125",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 95.3,
+          "_model_price": "7/1",
+          "_mkt_price": "4/1",
+          "_win_pct": 13.2,
+          "_edge": -5.0,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Myth Buster",
+          "or": 113,
+          "style_code": "L",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "The lone leader returning after 364 days off, but veteran's class and course experience could see him dictate throughout if fitness holds.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Miss Lily Bradstock(5)",
+          "trainer": "Miss L A N Bradstock",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "364 (97P)",
+          "age": "13",
+          "sex": "gelding",
+          "form": "/P511-",
+          "lbs": "166",
+          "headgear": "tp",
+          "rpr": "121",
+          "ts": "-",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 90.5,
+          "_model_price": "9/1",
+          "_mkt_price": "8/1",
+          "_win_pct": 10.4,
+          "_edge": 2.2,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Peaches And Cream",
+          "or": 119,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Hold-up style faces tactical disadvantage in small field but tongue-tie first time suggests connections seeking improvement.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr Huw Edwards(3)",
+          "trainer": "Miss Laura Richardson",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "97 (27P)",
+          "age": "11",
+          "sex": "gelding",
+          "form": "06712-",
+          "lbs": "166",
+          "headgear": "t",
+          "rpr": "122",
+          "ts": "99",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 85.0,
+          "_model_price": "9/1",
+          "_mkt_price": "9/2",
+          "_win_pct": 10.0,
+          "_edge": -9.3,
+          "_action": "AVOID"
+        }
+      ],
+      "paceDynamic": "Myth Buster will lead from the start with no other confirmed front-runners in this small field of five. The 13-year-old veteran should set a steady, manageable gallop over the extended trip without pressure from fellow prominent runners Jeffery's Cross, My Gift To You, and Slipway who are likely to track rather than challenge early. With only hold-up horse Peaches And Cream sitting back, the pace will be honest but not frantic. This tactical setup strongly favors the prominent runners who can position handily behind Myth Buster and have first strike on the leader, rather than Peaches And Cream who faces a difficult task coming from the back in such a small field.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Prominent Runners Dominate",
+          "prob": 65,
+          "trigger": "If the three prominent runners (Jeffery's Cross, My Gift To You, Slipway) track Myth Buster in an ideal position behind the leader",
+          "body": "They can time their challenges perfectly turning for home while Myth Buster's stamina wanes and Peaches And Cream finds too few to come through. The tactical advantage of racing handy in a small field proves decisive with superior horses able to pick off the leader.",
+          "winners": [
+            "Jeffery's Cross",
+            "Slipway"
+          ],
+          "others": [
+            "My Gift To You",
+            "Myth Buster"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Leader Lasts Home",
+          "prob": 20,
+          "trigger": "If Myth Buster's 364-day break has freshened him up and the steady pace suits his stamina",
+          "body": "The veteran's class tells as he maintains his advantage to the line with the prominent trio unable to find the extra gear needed. His previous course form and the lack of early pressure allows him to dictate throughout.",
+          "winners": [
+            "Myth Buster",
+            "Jeffery's Cross"
+          ],
+          "others": [
+            "Slipway",
+            "My Gift To You"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Hold-Up Horse Strikes",
+          "prob": 10,
+          "trigger": "If the pace collapses completely and becomes a sprint from the last fence",
+          "body": "Peaches And Cream's natural finishing kick comes to the fore as the prominent runners find themselves flat-footed after tracking a slow pace. The 11-year-old's hold-up style finally pays dividends in the closing stages.",
+          "winners": [
+            "Peaches And Cream",
+            "Jeffery's Cross"
+          ],
+          "others": [
+            "My Gift To You",
+            "Slipway"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Pace Collapse Chaos",
+          "prob": 5,
+          "trigger": "If Myth Buster stops quickly and the prominent trio are caught napping by the sudden change of pace",
+          "body": "The race becomes a tactical mess with horses changing positions rapidly in the straight. Form goes out the window as it becomes about who adapts quickest to the unfolding drama.",
+          "winners": [
+            "My Gift To You",
+            "Peaches And Cream"
+          ],
+          "others": [
+            "Slipway",
+            "Jeffery's Cross"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Myth Buster's fitness after 364 days off - if he shows early signs of rustiness or breathing issues, the complexion changes completely"
+        },
+        {
+          "severity": "warn",
+          "text": "My Gift To You's jumping under pressure - recent fall when prominent suggests confidence issues that could resurface if challenged hard"
+        },
+        {
+          "severity": "warn",
+          "text": "Slipway's response to Molly Armytage's urgings - the 7lb claimer needs the horse to travel kindly given poor recent going record"
+        },
+        {
+          "severity": "info",
+          "text": "Early pace development - if Jeffery's Cross or others decide to press Myth Buster early, it opens the door for Peaches And Cream"
+        },
+        {
+          "severity": "info",
+          "text": "Peaches And Cream's position turning in - needs to be closer than usual in this small field to have any realistic winning chance"
+        }
+      ],
+      "skipped": false
+    },
+    {
+      "id": 7,
+      "time": "8:00",
+      "name": "Carr & Day & Martin Open Hunters' Chase",
+      "grade": "CLS5",
+      "dist": "2m4f",
+      "dist_f": 20.0,
+      "going": "Good",
+      "runners": 5,
+      "free": false,
+      "type": "jumps",
+      "pace": "SLOWLY_RUN",
+      "paceConf": 85,
+      "leads": [
+        "Arthur's Sixpence"
+      ],
+      "prominent": [
+        "Unexpected Party"
+      ],
+      "midfield": [
+        "Hystery Bere"
+      ],
+      "holdup": [
+        "Fan De Blues",
+        "Empire De Maulde"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Unexpected Party",
+          "or": 145,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Prominent runner with highest rating and strong recent form who should track Arthur's Sixpence perfectly.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Miss Heidi Palin",
+          "trainer": "Dan Skelton",
+          "trainer_rtf": "58",
+          "trainer_14": "10/27",
+          "last_run": "22",
+          "age": "11",
+          "sex": "gelding",
+          "form": "2P114-",
+          "lbs": "172",
+          "headgear": "t",
+          "rpr": "143",
+          "ts": "139",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 130.0,
+          "_model_price": "4/6",
+          "_mkt_price": "1/2",
+          "_win_pct": 61.7,
+          "_edge": -2.0,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Hystery Bere",
+          "or": 114,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Hold-up horse returning after 159 days with amateur jockey, faces significant fitness concerns.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr Joe Neal(7)",
+          "trainer": "J Neal",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "159 (12P)",
+          "age": "9",
+          "sex": "gelding",
+          "form": "/4312-",
+          "lbs": "166",
+          "headgear": "",
+          "rpr": "127",
+          "ts": "98",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 116.0,
+          "_model_price": "12/1",
+          "_mkt_price": "20/1",
+          "_win_pct": 7.9,
+          "_edge": 15.0,
+          "_action": "EW"
+        },
+        {
+          "name": "Fan De Blues",
+          "or": 125,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Hold-up horse with decent going form but modest rating faces positioning challenge in slowly-run race.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr Daniel Williams(7)",
+          "trainer": "Miss Nikki Henton",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "22",
+          "age": "11",
+          "sex": "gelding",
+          "form": "4/248-",
+          "lbs": "166",
+          "headgear": "t",
+          "rpr": "130",
+          "ts": "119",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 110.0,
+          "_model_price": "7/1",
+          "_mkt_price": "13/2",
+          "_win_pct": 12.6,
+          "_edge": -2.0,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Empire De Maulde",
+          "or": 117,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Hold-up horse with good going record but returning after 42 days, needs strong pace to be effective.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr Sean O'Connor(3)",
+          "trainer": "R W Varnham",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "42 (6P)",
+          "age": "12",
+          "sex": "gelding",
+          "form": "41P71-",
+          "lbs": "166",
+          "headgear": "t",
+          "rpr": "121",
+          "ts": "88",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 107.5,
+          "_model_price": "10/1",
+          "_mkt_price": "11/1",
+          "_win_pct": 9.4,
+          "_edge": 3.5,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Arthur's Sixpence",
+          "or": 115,
+          "style_code": "L",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Natural front-runner returning after 42 days who can dictate pace without pressure from fellow leaders.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr Harry Brown(7)",
+          "trainer": "Georgina Nicholls",
+          "trainer_rtf": "40",
+          "trainer_14": "0/5",
+          "last_run": "42 (25P)",
+          "age": "12",
+          "sex": "gelding",
+          "form": "/1P3F-",
+          "lbs": "166",
+          "headgear": "t",
+          "rpr": "122",
+          "ts": "81",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 87.4,
+          "_model_price": "10/1",
+          "_mkt_price": "7/1",
+          "_win_pct": 8.5,
+          "_edge": -14.6,
+          "_action": "AVOID"
+        }
+      ],
+      "paceDynamic": "Arthur's Sixpence will dictate from the front with no other natural leaders in this small field. The three hold-up horses (Hystery Bere, Fan De Blues, Empire De Maulde) will track behind Unexpected Party, who typically races prominently. Arthur's Sixpence can set his own tempo without pressure, creating a controlled pace that may not provide enough pace bias for the hold-up brigade. This measured gallop strongly favours prominent runners and front-runners who can position well early without having to make ground late.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Arthur's Sixpence Wire Job",
+          "prob": 40,
+          "trigger": "If Arthur's Sixpence gets an uncontested lead and stays on strongly",
+          "body": "Arthur's Sixpence dictates throughout and the hold-up horses find insufficient pace to close effectively. The front-runner benefits from the tactical advantage and superior positioning in a slowly-run affair.",
+          "winners": [
+            "Arthur's Sixpence",
+            "Unexpected Party"
+          ],
+          "others": [
+            "Fan De Blues",
+            "Empire De Maulde"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Unexpected Party Strikes",
+          "prob": 35,
+          "trigger": "If Unexpected Party can track Arthur's Sixpence and outbattle him late",
+          "body": "The prominent runner gets the perfect trip behind the leader and has enough class edge over the field. Dan Skelton's charge exploits superior form and rating with tactical positioning.",
+          "winners": [
+            "Unexpected Party",
+            "Arthur's Sixpence"
+          ],
+          "others": [
+            "Fan De Blues",
+            "Hystery Bere"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Hold-Up Horse Charges",
+          "prob": 15,
+          "trigger": "If Arthur's Sixpence goes too fast early or fades dramatically",
+          "body": "One of the three hold-up horses benefits from increased early pace or a collapsing leader. Fan De Blues or Empire De Maulde could profit from their good going form if the race develops differently.",
+          "winners": [
+            "Fan De Blues",
+            "Empire De Maulde"
+          ],
+          "others": [
+            "Unexpected Party",
+            "Hystery Bere"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Pace Collapse Scramble",
+          "prob": 10,
+          "trigger": "If Arthur's Sixpence stops suddenly and Unexpected Party doesn't fire",
+          "body": "The race becomes a messy affair with no strong pace and tactical positioning breaks down. Any of the hold-up horses could steal it in a weak finish if the front two disappoint.",
+          "winners": [
+            "Hystery Bere",
+            "Fan De Blues"
+          ],
+          "others": [
+            "Empire De Maulde",
+            "Arthur's Sixpence"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Arthur's Sixpence fitness after 42 days - any early signs of rustiness could change the complexion completely"
+        },
+        {
+          "severity": "warn",
+          "text": "Unexpected Party's jumping rhythm early - needs to settle behind Arthur's Sixpence without getting keen"
+        },
+        {
+          "severity": "warn",
+          "text": "How fast Arthur's Sixpence goes in the first mile - if too generous it opens the door for hold-up horses"
+        },
+        {
+          "severity": "info",
+          "text": "Fan De Blues and Empire De Maulde positioning turning in - need to be handy if pace stays steady"
+        },
+        {
+          "severity": "info",
+          "text": "Amateur jockeys on three runners may struggle with tactical positioning in slowly-run hunter chase"
+        }
+      ],
+      "skipped": false
+    }
+  ]
+}
