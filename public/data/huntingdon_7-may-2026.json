@@ -33,13 +33,13 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up performer with superior class rating who must overcome 31 days absence and adapt to likely tactical complications with Harry Skelton's guidance",
+          "note": "Hold-up horse with class advantage but disappointing recent form, 31 days off and needs to bounce back from below-par efforts",
           "draw": null,
           "draw_adv": null,
           "jockey": "Harry Skelton",
           "trainer": "Dan Skelton",
           "trainer_rtf": "64",
-          "trainer_14": "9/26",
+          "trainer_14": "11/28",
           "last_run": "31",
           "age": "5",
           "sex": "gelding",
@@ -48,12 +48,12 @@
           "headgear": "",
           "rpr": "130",
           "ts": "117",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Showed some fairly useful form in the autumn but comes here with a point to prove",
+          "spotlight": "Showed some fairly useful form last autumn but his handicap debut in December was disappointing and he was again below par when a short-odds second in Plumpton maiden (2m, good) last month; should be fine over this longer trip but has a point to prove.",
           "_projected": 108.2,
-          "_model_price": "4/5",
-          "_mkt_price": "4/6",
-          "_win_pct": 53.9,
+          "_model_price": "evens",
+          "_mkt_price": "EVS",
+          "_win_pct": 49.3,
           "_edge": -3.0,
           "_action": "WATCH"
         },
@@ -64,13 +64,13 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up runner showing improved form trend but faces significant class deficit, though small field may help inexperienced Jack Hogan's tactical options",
+          "note": "Course winner over shorter trip with fresher profile, only two rules starts but showed promise on hurdle debut here",
           "draw": null,
           "draw_adv": null,
           "jockey": "Jack Hogan",
           "trainer": "Fergal O'Brien",
           "trainer_rtf": "48",
-          "trainer_14": "5/27",
+          "trainer_14": "4/25",
           "last_run": "33",
           "age": "6",
           "sex": "gelding",
@@ -79,24 +79,24 @@
           "headgear": "t",
           "rpr": "120",
           "ts": "96",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Second over 2m here on last month's hurdling debut and this longer trip ought to suit",
+          "spotlight": "Placed in two Irish points last spring and on both rules starts in March and April, latterly when second here (2m, good) on hurdle debut; ought to be suited by this longer trip and has less to prove than his rival.",
           "_projected": 107.1,
           "_model_price": "evens",
           "_mkt_price": "5/4",
-          "_win_pct": 46.1,
+          "_win_pct": 50.7,
           "_edge": 3.0,
           "_action": "WATCH"
         }
       ],
-      "paceDynamic": "With only two runners, both showing hold-up tendencies, this becomes a tactical battle rather than a pace contest. Neither Loriko nor Katarcice has shown front-running inclinations, creating an unusual dynamic where someone must lead by default. The lack of natural pace-setters means a crawling early gallop is likely, with the real race beginning late in the straight. This setup heavily favours the horse with superior finishing speed and class, as tactical positioning becomes secondary to raw ability over the final two furlongs.",
+      "paceDynamic": "With only two runners, this becomes a tactical match between two hold-up horses who both prefer to race from off the pace. Neither Loriko nor Katarcice has natural pace-setting instincts, creating an unusual dynamic where someone must reluctantly lead. The absence of genuine front-runners means whoever goes forward will likely dictate a moderate tempo throughout the 2m4½f journey. This scenario strongly favours the horse with superior acceleration and finishing kick, as the restrained early pace will set up a sprint finish between two relatively fresh horses.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Loriko Class Shows",
-          "prob": 55,
-          "trigger": "If neither horse wants the lead early, creating a tactical crawl",
-          "body": "The superior OR 121 rating of Loriko becomes decisive in a slowly-run affair that turns into a sprint finish. Harry Skelton's tactical awareness helps navigate the unusual pace scenario better than the less experienced Jack Hogan.",
+          "title": "Reluctant Leader Wins",
+          "prob": 45,
+          "trigger": "If Loriko takes up the running early and dictates terms",
+          "body": "The higher-rated horse can control the tempo to suit his finishing kick and prove too strong in the straight. His superior class rating (OR 121 vs 114) becomes decisive when both horses arrive relatively fresh at the business end.",
           "winners": [
             "Loriko"
           ],
@@ -106,10 +106,10 @@
         },
         {
           "label": "B",
-          "title": "Katarcice Surprises",
-          "prob": 25,
-          "trigger": "If the younger horse benefits from the tactical nature and improving form trend",
-          "body": "Katarcice's recent second at this trip suggests progression, and the small field negates Loriko's class advantage. The 6-year-old's fresher profile over 33 days could prove telling in a sprint finish.",
+          "title": "Patient Tracker Prevails",
+          "prob": 35,
+          "trigger": "If Katarcice forces Loriko to lead and tracks him patiently",
+          "body": "The less experienced horse can use his recent course form advantage and fresher profile to outfinish the favourite. His second place here over 2m on good ground in April gives him a tactical edge at this venue.",
           "winners": [
             "Katarcice"
           ],
@@ -119,41 +119,43 @@
         },
         {
           "label": "C",
-          "title": "Early Leader Advantage",
+          "title": "Slow Early Kick",
           "prob": 15,
-          "trigger": "If one horse breaks tactical tradition and goes forward from the start",
-          "body": "The front-runner gains a crucial advantage in a two-horse race, as the trailer faces an impossible task over the extended trip. Whoever leads controls the gallop completely and kicks clear when ready.",
+          "trigger": "If both horses refuse to lead early creating a crawling pace",
+          "body": "The race becomes a pure test of acceleration from the final hurdle, where Loriko's higher TopSpeed rating (117 vs 96) proves decisive. The lack of early pace exaggerates the importance of raw finishing speed over stamina.",
           "winners": [
-            "Loriko",
-            "Katarcice"
+            "Loriko"
           ],
-          "others": []
+          "others": [
+            "Katarcice"
+          ]
         },
         {
           "label": "D",
-          "title": "Pace Collapses Completely",
+          "title": "Early Duel Backfires",
           "prob": 5,
-          "trigger": "If both horses refuse to lead, creating a crawling pace throughout",
-          "body": "The race becomes a bizarre tactical stalemate until very late, potentially suiting whichever horse has more natural speed rather than stamina. This scenario creates lottery conditions where form becomes irrelevant.",
+          "trigger": "If both horses are pushed along from early to establish position",
+          "body": "The unexpectedly strong early pace compromises both finishers, creating a war of attrition that neither truly wants. Katarcice's lighter recent racing schedule gives him a marginal fitness advantage in a slog.",
           "winners": [
-            "Katarcice",
-            "Loriko"
+            "Katarcice"
           ],
-          "others": []
+          "others": [
+            "Loriko"
+          ]
         }
       ],
       "watchPoints": [
         {
-          "severity": "danger",
-          "text": "Watch for which horse breaks first from the tactical standoff, as early positioning will be crucial in this unusual two-runner scenario"
-        },
-        {
           "severity": "warn",
-          "text": "Monitor Loriko's sharpness after 31 days off, as fitness could be critical in what may become a sprint finish"
+          "text": "Watch the early pace - if both horses are reluctant to lead it could create an unusually slow tempo that turns this into a sprint"
         },
         {
           "severity": "info",
-          "text": "Observe Jack Hogan's tactical decisions on Katarcice, as the conditional jockey faces a complex ride against Harry Skelton's experience"
+          "text": "Monitor Loriko's jumping rhythm early as his confidence needs rebuilding after recent disappointing efforts"
+        },
+        {
+          "severity": "danger",
+          "text": "If Katarcice gets first run in the straight his course advantage could prove decisive despite the class differential"
         }
       ],
       "skipped": false
@@ -193,13 +195,13 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent runner with strong recent form who should get ideal position tracking the early pace",
+          "note": "Prominent racer with promising chase debut form but three non-completions since October win, returns after 26 days off",
           "draw": null,
           "draw_adv": null,
           "jockey": "Sean Bowen",
           "trainer": "Warren Greatrex",
           "trainer_rtf": "38",
-          "trainer_14": "2/14",
+          "trainer_14": "2/17",
           "last_run": "26",
           "age": "6",
           "sex": "gelding",
@@ -208,12 +210,12 @@
           "headgear": "",
           "rpr": "125",
           "ts": "113",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Three non-completions have followed his promising chase debut; can still get back on track",
+          "spotlight": "Low-mileage 6yo; three non-completions have followed last October's promising chase/handicap debut but he was running fairly well before penultimate-fence fall in 2m Chepstow race won by Pep Talking last month; moves up in trip with Sean Bowen enlisted here; still has plenty of time to get career back on track.",
           "_projected": 109.9,
           "_model_price": "6/1",
-          "_mkt_price": "9/1",
-          "_win_pct": 13.4,
+          "_mkt_price": "8/1",
+          "_win_pct": 15.1,
           "_edge": 15.7,
           "_action": "CONSIDER"
         },
@@ -224,13 +226,13 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Consistent prominent type whose style suits this pace setup, though carrying top weight",
+          "note": "Course specialist with three C&D wins, ran well in final two starts last season over similar distances, 51 days since last run",
           "draw": null,
           "draw_adv": null,
           "jockey": "Paul O'Brien",
           "trainer": "Pam Sly",
           "trainer_rtf": "50",
-          "trainer_14": "1/5",
+          "trainer_14": "1/4",
           "last_run": "51",
           "age": "9",
           "sex": "gelding",
@@ -239,12 +241,12 @@
           "headgear": "",
           "rpr": "123",
           "ts": "107",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Three-time C&D winner; returns here after going close on last two outings; obvious claims",
+          "spotlight": "Gained three of four chase wins over C&D and returns here after going close on final two starts last season (2m4f/2m3f; wore cheekpieces last time); holds no secrets from the handicapper but will be fine on the forecast good ground and has obvious claims.",
           "_projected": 102.2,
-          "_model_price": "3/1",
-          "_mkt_price": "3/1",
-          "_win_pct": 26.5,
+          "_model_price": "7/2",
+          "_mkt_price": "18/5",
+          "_win_pct": 23.4,
           "_edge": 3.0,
           "_action": "WATCH"
         },
@@ -255,7 +257,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up horse needing the pace to collapse, benefits from headgear change and lowest weight",
+          "note": "Hold-up performer who won comfortably at C&D in March, wears tongue-tie and comes from inform Fergal O'Brien yard",
           "draw": null,
           "draw_adv": null,
           "jockey": "Jack Hogan",
@@ -270,12 +272,12 @@
           "headgear": "t",
           "rpr": "129",
           "ts": "104",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Won very comfortably over C&D in March and again ran well at Southwell last month",
+          "spotlight": "Off the mark over fences at second attempt, with very comfortable win in four-runner C&D (good) contest in March; again ran well when third at Southwell (2m4f, good; albeit finished tired) last month and is sure to be suited by the return to this track.",
           "_projected": 99.7,
-          "_model_price": "4/1",
-          "_mkt_price": "6/1",
-          "_win_pct": 19.3,
+          "_model_price": "9/2",
+          "_mkt_price": "13/2",
+          "_win_pct": 18.3,
           "_edge": 10.5,
           "_action": "CONSIDER"
         },
@@ -286,7 +288,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Confirmed front-runner who could get easy lead if Pep Talking doesn't go with him early",
+          "note": "Front-runner who needs cheekpieces to show his best, has been below form recently despite good handicap mark",
           "draw": null,
           "draw_adv": null,
           "jockey": "Tom Cannon",
@@ -301,12 +303,12 @@
           "headgear": "tp",
           "rpr": "126",
           "ts": "115",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Ran well for a long way over 3m last time but has been well below his best for a while now",
+          "spotlight": "Well handicapped if judged on his two good-ground wins in cheekpieces last spring (2m7f/2m5f) but has been well below best (in various headgear) in recent months; ran well for a long way before weakening quickly at Market Rasen (3m, good) last time and might benefit from this drop back in trip but others have much less to prove.",
           "_projected": 88.2,
-          "_model_price": "15/1",
-          "_mkt_price": "21/2",
-          "_win_pct": 6.3,
+          "_model_price": "16/1",
+          "_mkt_price": "23/2",
+          "_win_pct": 5.9,
           "_edge": -10.0,
           "_action": "WATCH"
         },
@@ -317,13 +319,13 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Class hold-up performer for in-form Skelton team, needs genuine pace to be effective",
+          "note": "Chase debutant who raced too freely in hurdle finale, hold-up style under Harry Skelton from good mark",
           "draw": null,
           "draw_adv": null,
           "jockey": "Harry Skelton",
           "trainer": "Dan Skelton",
           "trainer_rtf": "64",
-          "trainer_14": "9/26",
+          "trainer_14": "11/28",
           "last_run": "33",
           "age": "6",
           "sex": "gelding",
@@ -332,12 +334,12 @@
           "headgear": "h",
           "rpr": "-",
           "ts": "-",
-          "comment": "",
-          "spotlight": "",
+          "comment": "2-7 over hurdles last season; makes chasing debut from a good mark; interesting",
+          "spotlight": "2-7 over hurdles last season; raced too freely and disappointed when favourite for a valuable series final last month but makes chasing debut from a good mark; big player if he gets into a good jumping rhythm.",
           "_projected": 86.7,
-          "_model_price": "5/1",
-          "_mkt_price": "10/3",
-          "_win_pct": 17.0,
+          "_model_price": "9/2",
+          "_mkt_price": "3/1",
+          "_win_pct": 18.7,
           "_edge": -9.6,
           "_action": "WATCH"
         },
@@ -348,7 +350,7 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Natural leader with excellent recent record who should ensure honest gallop throughout",
+          "note": "In-form front-runner coming off 10-length Chepstow win, wears prism cheekpieces and has excellent 7-17 chase record",
           "draw": null,
           "draw_adv": null,
           "jockey": "Gavin Sheehan",
@@ -363,42 +365,42 @@
           "headgear": "p",
           "rpr": "124",
           "ts": "113",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Career-best form when winning by 10l at Chepstow last month; now 7-17 over fences",
+          "spotlight": "Took form to another new level when winning by 10l from the front at Chepstow (2m, good to soft) last month and is now 7-17 over fences (includes course win); today's trip-and-ground combination will also suit; respected.",
           "_projected": 85.5,
           "_model_price": "9/2",
-          "_mkt_price": "16/5",
-          "_win_pct": 17.5,
+          "_mkt_price": "3/1",
+          "_win_pct": 18.6,
           "_edge": -9.7,
           "_action": "WATCH"
         }
       ],
-      "paceDynamic": "Hurricane Bay and Pep Talking will ensure a genuine gallop from the start, with both confirmed front-runners likely to dispute the early lead. William Cody and Koapey sitting prominent will keep the pressure on throughout, preventing any slowdown in the middle stages. The hold-up horses Big Boy Barney and Ice In The Veins will need the pace to collapse or find significant traffic problems to get competitive. This honest pace scenario strongly favours the prominent racers who can track the leaders without getting embroiled in the early battle.",
+      "paceDynamic": "Hurricane Bay and Pep Talking are both confirmed front-runners who will contest the early lead, creating an honest gallop from the start. Pep Talking comes off a dominant 10-length front-running win at Chepstow and will want to dictate, while Hurricane Bay has shown his best form leading in cheekpieces. With two keen pace-setters and a small field, the gallop will be solid throughout but not breakneck pace. This race shape favours the prominent racers like Koapey and William Cody who can track the leaders without getting involved in the early battle, then strike when the front-runners tire.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Sustained Gallop Throughout",
+          "title": "Prominent Tracker Prevails",
           "prob": 45,
-          "trigger": "If Hurricane Bay and Pep Talking maintain a solid tempo without one dominating early",
-          "body": "The genuine pace will stretch the field and favour those tracking just behind the leaders. William Cody and Koapey are perfectly positioned to strike when the front pair weaken.",
+          "trigger": "If the two leaders Hurricane Bay and Pep Talking engage in a pace duel from the start",
+          "body": "The sustained gallop will suit horses like William Cody and Koapey who can sit just behind and pounce when the leaders weaken. William Cody has three C&D wins and ran well in his last two starts, while Koapey showed promise before recent falls.",
           "winners": [
             "William Cody",
             "Koapey"
           ],
           "others": [
-            "Pep Talking",
-            "Hurricane Bay"
+            "Big Boy Barney",
+            "Ice In The Veins"
           ]
         },
         {
           "label": "B",
-          "title": "Front Pair Go Too Fast",
+          "title": "Front Runner Dominates",
           "prob": 30,
-          "trigger": "If Hurricane Bay and Pep Talking engage in a speed duel through the early stages",
-          "body": "Both leaders will pay for their exertions, allowing the hold-up horses to pick up the pieces late. Big Boy Barney's class and Ice In The Veins' finishing kick become major assets.",
+          "trigger": "If Pep Talking gets an uncontested lead while Hurricane Bay struggles early",
+          "body": "Pep Talking can dictate at his own pace and repeat his dominant Chepstow performance from the front. His recent 10-length win and 7-17 chase record shows he can control races when allowed to lead freely.",
           "winners": [
-            "Big Boy Barney",
-            "Ice In The Veins"
+            "Pep Talking",
+            "Hurricane Bay"
           ],
           "others": [
             "William Cody",
@@ -407,55 +409,55 @@
         },
         {
           "label": "C",
-          "title": "Hurricane Bay Dominates Early",
+          "title": "Hold-Up Horse Strikes",
           "prob": 15,
-          "trigger": "If Hurricane Bay gets an easy lead with Pep Talking settled behind",
-          "body": "The veteran's experience shows as he controls the tempo and proves hard to peg back. Pep Talking benefits from the perfect stalking position to mount a late challenge.",
+          "trigger": "If the early pace is genuine and the leaders come back significantly in the final furlong",
+          "body": "Big Boy Barney's hold-up style could prove effective if he gets the right setup from his C&D win. Ice In The Veins making his chase debut might also benefit from a strong pace to aim at.",
           "winners": [
-            "Hurricane Bay",
-            "Pep Talking"
+            "Big Boy Barney",
+            "Ice In The Veins"
           ],
           "others": [
-            "William Cody",
-            "Koapey"
+            "Koapey",
+            "William Cody"
           ]
         },
         {
           "label": "D",
-          "title": "Tactical Pace Battle",
+          "title": "Pace Collapses Early",
           "prob": 10,
-          "trigger": "If both front-runners hesitate early and the pace becomes stop-start",
-          "body": "The prominent runners get caught in no-man's land while the hold-up horses get an ideal setup. Ice In The Veins' class tells with a perfectly-timed Skelton finish.",
+          "trigger": "If both Hurricane Bay and Pep Talking fail to establish a rhythm or make errors",
+          "body": "The race could become a tactical affair where any runner with tactical speed could capitalize. This scenario would likely favor the more experienced chasers who can adapt to a messy pace.",
           "winners": [
-            "Ice In The Veins",
-            "Big Boy Barney"
+            "William Cody",
+            "Koapey"
           ],
           "others": [
-            "Hurricane Bay",
-            "Pep Talking"
+            "Pep Talking",
+            "Big Boy Barney"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Hurricane Bay could get an uncontested lead if Pep Talking doesn't engage early enough"
+          "text": "Hurricane Bay could set unsustainable fractions if he tries to match Pep Talking's early pace given his recent poor form"
         },
         {
           "severity": "warn",
-          "text": "Big Boy Barney needs the front pair to go too fast or he'll struggle from too far back"
+          "text": "Ice In The Veins showed free-running tendencies in his last hurdle start which could be problematic on chase debut"
         },
         {
           "severity": "info",
-          "text": "William Cody carrying top weight but his prominent style perfectly suits this race shape"
+          "text": "Koapey's jumping after three recent falls including a penultimate fence tumble when going well"
+        },
+        {
+          "severity": "info",
+          "text": "William Cody's fitness after 51-day break despite strong course record"
         },
         {
           "severity": "warn",
-          "text": "Ice In The Veins returns from 33-day break for the Skelton team who are 9/26 in the last fortnight"
-        },
-        {
-          "severity": "info",
-          "text": "Koapey drops back to 2m4f after longer trips and should appreciate the return to this distance"
+          "text": "Big Boy Barney needs the front-runners to go a strong pace to set up his hold-up style in this small field"
         }
       ],
       "skipped": false
@@ -493,13 +495,13 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Front-runner returning after 50 days off but brings recent winning form and Sean Bowen's tactical experience.",
+          "note": "Strong stayer returning to chasing after recent hurdle win, 50 days off suitable for seasoned front-runner",
           "draw": null,
           "draw_adv": null,
           "jockey": "Sean Bowen",
           "trainer": "Martin Keighley",
           "trainer_rtf": "40",
-          "trainer_14": "1/6",
+          "trainer_14": "0/5",
           "last_run": "50",
           "age": "8",
           "sex": "mare",
@@ -508,12 +510,12 @@
           "headgear": "p",
           "rpr": "115",
           "ts": "111",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Battled well for course hurdle win in March and returns to chasing on a good mark",
+          "spotlight": "Three-time chase winner (once over C&D); lost her way over fences during the winter but battled well for narrow hurdle win here (3m1f, good; front pair well clear) in March and reverts to this code on a good mark.",
           "_projected": 83.8,
           "_model_price": "evens",
           "_mkt_price": "5/4",
-          "_win_pct": 50.2,
+          "_win_pct": 50.6,
           "_edge": 8.5,
           "_action": "WATCH"
         },
@@ -524,7 +526,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Fellow front-runner with freshness advantage but amateur jockey faces pace pressure from Another Day Out.",
+          "note": "Inexperienced amateur-ridden leader facing step up in class, recent fall shows jumping remains question mark",
           "draw": null,
           "draw_adv": null,
           "jockey": "Mr James King(3)",
@@ -539,12 +541,12 @@
           "headgear": "",
           "rpr": "-",
           "ts": "-",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Point winner; fell mid-race on recent handicap hurdle debut; still unexposed under rules",
+          "spotlight": "Won small-field maiden point last spring and showed some promise in maiden/novice hurdles this year; fell mid-race on recent handicap hurdle debut but remains unexposed under rules and Max Comley is evidently keen to switch her to chasing.",
           "_projected": 81.4,
           "_model_price": "9/2",
-          "_mkt_price": "10/3",
-          "_win_pct": 18.9,
+          "_mkt_price": "7/2",
+          "_win_pct": 18.3,
           "_edge": 0.1,
           "_action": "WATCH"
         },
@@ -555,13 +557,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up runner ideally positioned to benefit from the expected early pace battle between the two leaders.",
+          "note": "Hold-up mare struggling since stable switch, needs pace collapse to be effective from rear",
           "draw": null,
           "draw_adv": null,
           "jockey": "Theo Gillard",
           "trainer": "Donald McCain",
           "trainer_rtf": "25",
-          "trainer_14": "1/11",
+          "trainer_14": "1/12",
           "last_run": "19",
           "age": "7",
           "sex": "mare",
@@ -570,12 +572,12 @@
           "headgear": "",
           "rpr": "112",
           "ts": "107",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Generally disappointing for current stable but now too well handicapped to rule out",
+          "spotlight": "Three-time chase winner (2m4f-3m1f) on good ground for Dan Skelton in spring 2025; generally very disappointing for current stable since the autumn, including when back on a sound surface for last two starts, but has become too well handicapped to rule out.",
           "_projected": 79.2,
           "_model_price": "5/1",
           "_mkt_price": "9/2",
-          "_win_pct": 17.2,
+          "_win_pct": 17.3,
           "_edge": 3.9,
           "_action": "WATCH"
         },
@@ -586,13 +588,13 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent runner who can track the leaders and avoid the worst of the early pace pressure.",
+          "note": "Prominent runner with best recent form and Ludlow win over Another Day Out provides confidence",
           "draw": null,
           "draw_adv": null,
           "jockey": "Jonathan Burke",
           "trainer": "Emma Lavelle",
           "trainer_rtf": "61",
-          "trainer_14": "1/19",
+          "trainer_14": "1/21",
           "last_run": "38",
           "age": "8",
           "sex": "mare",
@@ -601,72 +603,72 @@
           "headgear": "p",
           "rpr": "115",
           "ts": "109",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Rather disappointing since October's Ludlow win but might be boosted by cheepieces",
+          "spotlight": "1-10 over fences, the win gained on last season's reappearance at Ludlow (3m, good; Another Day Out second) in October; not in same form again since but now 2lb below that mark, and might be boosted by new cheekpieces.",
           "_projected": 58.9,
           "_model_price": "6/1",
           "_mkt_price": "3/1",
-          "_win_pct": 13.7,
+          "_win_pct": 13.8,
           "_edge": -12.4,
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Another Day Out and Catwalk Girl will both contest the early lead, creating a genuine pace battle from the start. With only four runners, this duel between the two front-runners will set up an honest gallop throughout the 2m7½f trip over Huntingdon's testing fences. Kit's Coty can track the leaders prominently while Lady Jago will be held up at the back looking for a late challenge. This pace scenario strongly favours the hold-up runner Lady Jago, who can benefit from the early speed and time her challenge late.",
+      "paceDynamic": "Catwalk Girl and Another Day Out are both confirmed front-runners who will contest the early lead, creating an honest gallop from the outset with no restraint likely from either. Kit's Coty will sit prominently behind this pace, while Lady Jago as the sole hold-up horse will track from the rear in this small field. The dual pace angle up front should create a strong tempo over this stamina-testing trip, setting up the race for those who can sustain their effort rather than rely on a finishing kick. This honest pace scenario strongly favours prominent runners and front-runners with stamina, as Lady Jago's hold-up style will struggle to make up ground against horses who have been closer to a solid tempo throughout.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Front Runners Collapse Late",
+          "title": "Front Runners Duel Hard",
           "prob": 45,
-          "trigger": "If Another Day Out and Catwalk Girl go too fast early in their pace battle",
-          "body": "The honest gallop will find both leaders out in the final half-mile, setting up a perfect scenario for Lady Jago to sweep past tired rivals. Her hold-up style becomes a decisive advantage when the pace setters weaken.",
+          "trigger": "If Catwalk Girl and Another Day Out go at it hammer and tongs from flag-fall",
+          "body": "The pace becomes very strong early with both leaders committed, creating maximum stamina test that plays to Another Day Out's proven staying power. Kit's Coty picks up the pieces late as the early leaders tire, while Lady Jago finds too much to do from the back.",
           "winners": [
-            "Lady Jago",
+            "Another Day Out",
             "Kit's Coty"
           ],
           "others": [
-            "Another Day Out",
-            "Catwalk Girl"
+            "Catwalk Girl",
+            "Lady Jago"
           ]
         },
         {
           "label": "B",
-          "title": "Another Day Out Survives",
+          "title": "Controlled Front Running",
           "prob": 30,
-          "trigger": "If Another Day Out can assert early dominance over Catwalk Girl and dictate terms",
-          "body": "The experienced front-runner can use his fitness edge after 50 days off to control the pace and see off challenges. His recent win and Sean Bowen's tactical nous help him resist late closers.",
+          "trigger": "If one of the leaders (likely Another Day Out) gets an easy lead with Catwalk Girl settling",
+          "body": "The pace becomes more measured allowing the leader to control fractions and kick clear, with inexperienced Catwalk Girl unable to match the acceleration. Lady Jago gets into contention but the winner has already flown.",
           "winners": [
             "Another Day Out",
-            "Kit's Coty"
+            "Catwalk Girl"
           ],
           "others": [
-            "Lady Jago",
-            "Catwalk Girl"
+            "Kit's Coty",
+            "Lady Jago"
           ]
         },
         {
           "label": "C",
-          "title": "Catwalk Girl Springs Surprise",
+          "title": "Late Prominent Challenge",
           "prob": 15,
-          "trigger": "If Catwalk Girl's 15-day freshness advantage tells against longer-absent rivals",
-          "body": "The six-year-old can use her recent outing to outbattle Another Day Out early then hold on grimly. Her amateur rider's 3lb claim becomes crucial in a tight finish.",
+          "trigger": "If Kit's Coty travels sweetly behind the pace and both leaders go too hard early",
+          "body": "The early gallop takes its toll on Catwalk Girl and Another Day Out, allowing Kit's Coty to strike late with her class advantage. Her Ludlow win over Another Day Out gives confidence she can repeat the dose.",
           "winners": [
-            "Catwalk Girl",
-            "Another Day Out"
-          ],
-          "others": [
             "Kit's Coty",
             "Lady Jago"
+          ],
+          "others": [
+            "Another Day Out",
+            "Catwalk Girl"
           ]
         },
         {
           "label": "D",
-          "title": "Kit's Coty Times Run",
+          "title": "Hold-Up Success",
           "prob": 10,
-          "trigger": "If Kit's Coty can secure the ideal tracking position behind the pace battle",
-          "body": "The prominent runner can benefit from the early speed while avoiding the worst of the pace duel. Her consistent form and lighter weight help her pick up the pieces late.",
+          "trigger": "If the early pace is surprisingly moderate and Lady Jago gets the race run to suit",
+          "body": "The tempo lacks bite allowing Lady Jago to stay closer than usual and her three chase wins suggest she has the class when conditions align. Her hold-up style works when the pace collapses.",
           "winners": [
-            "Kit's Coty",
-            "Lady Jago"
+            "Lady Jago",
+            "Kit's Coty"
           ],
           "others": [
             "Another Day Out",
@@ -677,23 +679,19 @@
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Another Day Out and Catwalk Girl could go too fast early in their pace battle, playing into Lady Jago's hands."
+          "text": "Another Day Out's jumping under pressure if Catwalk Girl forces a strong early pace"
         },
         {
           "severity": "warn",
-          "text": "Lady Jago needs the front-runners to set up the race properly as she relies entirely on their pace."
-        },
-        {
-          "severity": "info",
-          "text": "Kit's Coty's jumping must be clean to maintain her tracking position behind the leaders."
+          "text": "Catwalk Girl's inexperience with amateur pilot Mr James King when racing gets serious"
         },
         {
           "severity": "warn",
-          "text": "Catwalk Girl's amateur jockey may struggle with pace judgement against experienced Sean Bowen."
+          "text": "Lady Jago's ability to get competitive from hold-up position given poor recent efforts"
         },
         {
           "severity": "info",
-          "text": "The 2m7½f trip at Huntingdon will test stamina if the early pace is genuine between the leaders."
+          "text": "Kit's Coty's fitness after 38-day break having shown best form fresh last season"
         }
       ],
       "skipped": false
@@ -732,13 +730,13 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up style faces tactical disadvantage in small field with lone leader, but highest class rating could tell if pace develops",
+          "note": "Hold-up style faces difficult task with likely controlled pace, wearing cheekpieces again after moderate recent efforts",
           "draw": null,
           "draw_adv": null,
           "jockey": "Jonathan Burke",
           "trainer": "James Owen",
           "trainer_rtf": "65",
-          "trainer_14": "14/51",
+          "trainer_14": "14/50",
           "last_run": "31",
           "age": "7",
           "sex": "mare",
@@ -747,12 +745,12 @@
           "headgear": "p",
           "rpr": "125",
           "ts": "126",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Not beaten far when fifth at Fakenham last month and continues to slip down the weights",
+          "spotlight": "7-27 over hurdles, including a good-ground C&D win; not firing on all cylinders since last autumn but wasn't beaten far when fifth of seven in refitted cheekpieces at Fakenham (2m4f, good) last month and continues to slip down the weights.",
           "_projected": 90.5,
           "_model_price": "3/1",
-          "_mkt_price": "4/1",
-          "_win_pct": 23.6,
+          "_mkt_price": "7/2",
+          "_win_pct": 25.6,
           "_edge": 9.1,
           "_action": "WATCH"
         },
@@ -763,13 +761,13 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Natural leader gets dream scenario with no pace pressure, recent Huntingdon experience valuable",
+          "note": "Front-runner should dictate terms unchallenged early, good recent Warwick win suggests she's back in form at this trip",
           "draw": null,
           "draw_adv": null,
           "jockey": "Charlie Todd",
           "trainer": "Ian Williams",
           "trainer_rtf": "35",
-          "trainer_14": "2/22",
+          "trainer_14": "4/24",
           "last_run": "18",
           "age": "7",
           "sex": "mare",
@@ -778,12 +776,12 @@
           "headgear": "t",
           "rpr": "119",
           "ts": "106",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Won from the front in September and returned from break with encouraging run last month",
+          "spotlight": "Returned to form with front-running win at Warwick (2m3f, good) in September and caught the eye at Stratford (2m, good) last month, after a break, making good headway from a long way off the pace before fading into fifth on the run-in; back up in trip here and it will be interesting to see whether she reverts to much more positive tactics.",
           "_projected": 86.6,
           "_model_price": "5/1",
           "_mkt_price": "5/1",
-          "_win_pct": 17.3,
+          "_win_pct": 16.9,
           "_edge": 5.2,
           "_action": "WATCH"
         },
@@ -794,13 +792,13 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Needs strong pace to showcase finishing kick, patient Skelton ride essential from rear",
+          "note": "Hold-up horse needing strong pace to be effective, cheekpieces helped at Uttoxeter but still below peak form",
           "draw": null,
           "draw_adv": null,
           "jockey": "Harry Skelton",
           "trainer": "Dan Skelton",
           "trainer_rtf": "64",
-          "trainer_14": "9/26",
+          "trainer_14": "11/28",
           "last_run": "40",
           "age": "9",
           "sex": "mare",
@@ -809,12 +807,12 @@
           "headgear": "p",
           "rpr": "123",
           "ts": "118",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Ran well when third in first-time cheekpieces in March and good ground will suit",
+          "spotlight": "Yet to match peak form since returning from long absence in the autumn but her third in first-time cheekpieces at Uttoxeter (2m4f, good to soft) in late March was a pretty good effort, and she'll be fine on the forecast good ground here.",
           "_projected": 85.1,
           "_model_price": "2/1",
           "_mkt_price": "13/7",
-          "_win_pct": 33.7,
+          "_win_pct": 32.9,
           "_edge": 2.7,
           "_action": "WATCH"
         },
@@ -825,13 +823,13 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent style suits race shape well, claiming jockey takes off useful weight",
+          "note": "Prominent style suits race shape perfectly, course winner in March but trainer blamed ground for poor Uttoxeter run",
           "draw": null,
           "draw_adv": null,
           "jockey": "Tom Broughton(5)",
           "trainer": "Fergal O'Brien",
           "trainer_rtf": "48",
-          "trainer_14": "5/27",
+          "trainer_14": "4/25",
           "last_run": "40",
           "age": "8",
           "sex": "mare",
@@ -840,12 +838,12 @@
           "headgear": "",
           "rpr": "117",
           "ts": "104",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Back in good nick when scoring over C&D in March but pulled up since; hard to predict",
+          "spotlight": "Looked back in good nick when scoring over C&D (good) in March but ran poorly and was pulled up at Uttoxeter last month (trainer blamed the good to soft ground); has become hard to predict.",
           "_projected": 80.0,
           "_model_price": "8/1",
           "_mkt_price": "7/1",
-          "_win_pct": 11.3,
+          "_win_pct": 11.0,
           "_edge": 0.6,
           "_action": "WATCH"
         },
@@ -856,13 +854,13 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Class performer returning from long break, prominent style matches race flow but fitness query",
+          "note": "Promising prominent runner returning from 208-day break, three good-ground wins suggest conditions ideal if fit enough",
           "draw": null,
           "draw_adv": null,
           "jockey": "Gavin Sheehan",
           "trainer": "Jamie Snowden",
           "trainer_rtf": "64",
-          "trainer_14": "3/9",
+          "trainer_14": "5/14",
           "last_run": "208",
           "age": "5",
           "sex": "mare",
@@ -871,99 +869,99 @@
           "headgear": "",
           "rpr": "117",
           "ts": "109",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Three wins in early part of last season; off since refusing to race in October; new trip",
+          "spotlight": "Progressive over hurdles in early part of last season, winning three times on good ground (2m-2m1f); absent since blotting copybook in the autumn (whipped round at start and refused to race) and not bred to benefit from this step up in trip.",
           "_projected": 70.8,
           "_model_price": "6/1",
           "_mkt_price": "3/1",
-          "_win_pct": 14.0,
+          "_win_pct": 13.7,
           "_edge": -17.6,
           "_action": "AVOID"
         }
       ],
-      "paceDynamic": "Mary will lead uncontested from the start with No No Fizz and Hope Rising tracking her in second and third positions respectively. With only one natural front runner in a small field, Mary can dictate a steady gallop that suits her stamina-focused style without being pressured early. The two prominent runners will shadow the pace but neither has the tactical speed to apply serious pressure until late, while hold-up horses Mermaids Cave and Notnowlinda will be anchored at the rear. This setup heavily favours front runners and prominent racers who can stay close to the pace without being forced to make testing early moves.",
+      "paceDynamic": "Mary will take the field along as the sole confirmed front-runner, with No No Fizz and Hope Rising likely tracking her in prominent positions early. The presence of three hold-up horses (Mermaids Cave, Notnowlinda) and only one natural leader suggests Mary can dictate terms without serious early pressure. With good ground conditions and a moderate 2m3½f distance, this setup creates a controlled tempo that builds gradually, allowing horses to stay in contention longer. This race shape strongly favours the prominent runners who can sit close to Mary and kick from a good position, as the hold-up horses may struggle to make up ground against the likely solid pace.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Mary Controls Throughout",
-          "prob": 55,
-          "trigger": "If Mary gets an uncontested lead and maintains her rhythm.",
-          "body": "She dictates ideal fractions and kicks clear turning for home, with the hold-up horses trapped behind a slow pace. Her stamina advantage becomes decisive when others struggle to quicken from the steady gallop.",
+          "title": "Controlled Front-Running Display",
+          "prob": 45,
+          "trigger": "If Mary gets away with soft fractions early and builds a decisive lead",
+          "body": "She can use her recent Warwick form to control from the front while the hold-up brigade struggle to close the gap. The prominent duo of No No Fizz and Hope Rising would be best placed to chase but may lack the finishing kick needed.",
           "winners": [
             "Mary",
             "No No Fizz"
           ],
           "others": [
             "Hope Rising",
-            "Notnowlinda"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "Prominent Challengers Strike",
-          "prob": 25,
-          "trigger": "If No No Fizz or Hope Rising apply sustained pressure from the home turn.",
-          "body": "The pace quickens sufficiently to expose Mary's lack of finishing speed while allowing the prominent runners to use their tactical positioning. Hope Rising's class edge or No No Fizz's recent form could prove decisive.",
-          "winners": [
-            "Hope Rising",
-            "No No Fizz"
-          ],
-          "others": [
-            "Mary",
             "Mermaids Cave"
           ]
         },
         {
+          "label": "B",
+          "title": "Prominent Tracker Strikes",
+          "prob": 30,
+          "trigger": "If Mary sets reasonable fractions but gets caught close home",
+          "body": "No No Fizz or Hope Rising can use their tactical speed to sit handy and pounce when Mary's stamina wanes in the final furlong. The good ground suits both their profiles perfectly for this distance.",
+          "winners": [
+            "No No Fizz",
+            "Hope Rising"
+          ],
+          "others": [
+            "Mary",
+            "Notnowlinda"
+          ]
+        },
+        {
           "label": "C",
-          "title": "Hold-Up Revival",
-          "prob": 12,
-          "trigger": "If Mary sets a truly pedestrian pace that allows closers to wind up.",
-          "body": "Mermaids Cave finds racing room and uses her superior class to outfinish tired leaders in a sprint finish. The slow pace negates the front runners' positional advantage and favours raw ability.",
+          "title": "Hold-Up Horse Charges Late",
+          "prob": 15,
+          "trigger": "If the early pace becomes genuinely strong and the field gets strung out",
+          "body": "Mermaids Cave or Notnowlinda could benefit from a truly-run race that sets up for their late finishing style. However, they need significant help from the pace scenario to be effective.",
           "winners": [
             "Mermaids Cave",
             "Notnowlinda"
           ],
           "others": [
             "Mary",
-            "Hope Rising"
+            "No No Fizz"
           ]
         },
         {
           "label": "D",
-          "title": "Pace Collapse",
-          "prob": 8,
-          "trigger": "If the early leaders go too fast trying to avoid the hold-up horses.",
-          "body": "Mary and the prominent runners burn out their stamina reserves in a tactical battle. Notnowlinda stays on strongly from her patient ride to collect the pieces late.",
+          "title": "Complete Pace Collapse",
+          "prob": 10,
+          "trigger": "If Mary goes too slow and the race becomes a sprint finish",
+          "body": "The tactical speed of the prominent runners becomes crucial in a bunched finish where positioning matters most. Hope Rising's class could tell in a messy finale despite the long absence.",
           "winners": [
-            "Notnowlinda",
-            "Mermaids Cave"
+            "Hope Rising",
+            "No No Fizz"
           ],
           "others": [
-            "No No Fizz",
-            "Hope Rising"
+            "Mary",
+            "Mermaids Cave"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Mary's jumping rhythm early - any mistakes will invite pressure she rarely faces when leading"
+          "text": "Hope Rising's fitness after 208 days off - any market confidence would be significant given the long layoff"
         },
         {
           "severity": "warn",
-          "text": "Hope Rising's fitness after 208-day layoff - watch for signs of rustiness in first circuit"
+          "text": "Mary's jumping rhythm early - needs to settle into a smooth rhythm to utilize her front-running advantage effectively"
         },
         {
           "severity": "info",
-          "text": "Mermaids Cave's early positioning - needs to be handy enough to strike when pace lifts"
+          "text": "Notnowlinda and Mermaids Cave positioning turning in - both need to be within striking distance to have any chance"
         },
         {
           "severity": "warn",
-          "text": "No No Fizz with inexperienced 5lb claimer in tactical battle against seasoned jockeys"
+          "text": "No No Fizz's attitude after being pulled up last time - needs to bounce back to her March course winning form"
         },
         {
           "severity": "info",
-          "text": "Notnowlinda's jumping fluency - must travel smoothly to deliver her customary late challenge"
+          "text": "The pace through the first mile - if Mary goes too fast early it opens up the race for the hold-up horses"
         }
       ],
       "skipped": false
@@ -1003,7 +1001,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Confirmed front runner returning from 24-day break with useful recent form, but 10-year-old legs may struggle to sustain the gallop if pressured early.",
+          "note": "Front-runner returning to hurdles after disappointing fence efforts, 24 days off should have him fresh for leading role",
           "draw": null,
           "draw_adv": null,
           "jockey": "Jack Hogan",
@@ -1018,12 +1016,12 @@
           "headgear": "tp",
           "rpr": "94",
           "ts": "84",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Placed in valuable chase in January but otherwise disappointing last season; back hurdling",
+          "spotlight": "Placed in valuable series final over fences at Fakenham (2m5f, good to soft) in January but rest of last season's form was disappointing and it's hard to predict whether she'll be in the right mood for this return to hurdling; tried blinkers when pulled up last time; usual cheekpieces return.",
           "_projected": 78.0,
-          "_model_price": "9/2",
+          "_model_price": "4/1",
           "_mkt_price": "13/2",
-          "_win_pct": 18.3,
+          "_win_pct": 19.3,
           "_edge": 12.4,
           "_action": "CONSIDER"
         },
@@ -1034,13 +1032,13 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Non-runner declared but would have been the main pace rival, potentially leaving Moviddy with an easier lead if withdrawal confirmed.",
+          "note": "NON-RUNNER - would have been key pace angle with three consecutive chase wins before recent problems",
           "draw": null,
           "draw_adv": null,
           "jockey": "NON-RUNNER",
           "trainer": "Jamie Snowden",
           "trainer_rtf": "64",
-          "trainer_14": "3/9",
+          "trainer_14": "5/14",
           "last_run": "18",
           "age": "8",
           "sex": "gelding",
@@ -1049,12 +1047,12 @@
           "headgear": "tb",
           "rpr": "-",
           "ts": "-",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Won three chases in late 2025 but out of sorts on both starts this year; now back hurdling",
+          "spotlight": "Won three consecutive chases (2m6f-3m) towards end of 2025 but looked out of sorts when pulled up on both appearances this year (bled on first occasion); reverts to hurdling and swaps cheekpieces for first-time blinkers; needs to turn things around.",
           "_projected": 69.6,
           "_model_price": "5/1",
           "_mkt_price": null,
-          "_win_pct": 15.4,
+          "_win_pct": 16.3,
           "_edge": 3.0,
           "_action": "WATCH"
         },
@@ -1065,7 +1063,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up specialist returning from long 186-day absence but has strong course form and benefits from the likely strong pace.",
+          "note": "Hold-up performer returning after 186-day break, dual C&D winner last year suits the expected strong pace",
           "draw": null,
           "draw_adv": null,
           "jockey": "Harry Bannister",
@@ -1080,12 +1078,12 @@
           "headgear": "",
           "rpr": "101",
           "ts": "98",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Two wins in 2025, the latter over C&D; returns from break on fairly tough mark, though",
+          "spotlight": "Dual hurdle winner last year, latterly over C&D (good) in October; absent since lesser effort here in November, though, and will need to resume in prime form to have a chance off his current mark.",
           "_projected": 67.4,
-          "_model_price": "5/1",
+          "_model_price": "9/2",
           "_mkt_price": "5/1",
-          "_win_pct": 16.5,
+          "_win_pct": 17.4,
           "_edge": 4.8,
           "_action": "WATCH"
         },
@@ -1096,7 +1094,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent racer with solid recent form and 3lb claimer Lewis Stones takes off useful weight in this grade.",
+          "note": "Prominent runner back in form for new trainer, cheekpieces refitted and 3-mile trip ideal for his style",
           "draw": null,
           "draw_adv": null,
           "jockey": "Lewis Stones(3)",
@@ -1111,12 +1109,12 @@
           "headgear": "p",
           "rpr": "102",
           "ts": "80",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Back on song in refitted cheekpieces towards end of last season; probably in the mix",
+          "spotlight": "Back on song in refitted cheekpieces at Southwell (3m, good) in March, his third start for Caroline Fryer, and the form of his respectable fourth at Fakenham (2m7f, good) last month was well advertised by the winner there on Monday; not yet fully exposed as a stayer; probably won't be far away.",
           "_projected": 59.9,
-          "_model_price": "7/1",
+          "_model_price": "6/1",
           "_mkt_price": "4/1",
-          "_win_pct": 12.9,
+          "_win_pct": 13.6,
           "_edge": -6.7,
           "_action": "AVOID"
         },
@@ -1127,13 +1125,13 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Versatile prominent runner who can adapt to the pace and represents the in-form O'Neill yard despite their poor recent strike rate.",
+          "note": "Prominent type with limited form on good going, needs pace collapse to be competitive at this level",
           "draw": null,
           "draw_adv": null,
           "jockey": "Richie McLernon",
           "trainer": "Jonjo & A J O'Neill",
           "trainer_rtf": "35",
-          "trainer_14": "0/18",
+          "trainer_14": "1/22",
           "last_run": "30",
           "age": "6",
           "sex": "gelding",
@@ -1145,9 +1143,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 55.5,
-          "_model_price": "7/2",
-          "_mkt_price": "7/5",
-          "_win_pct": 22.7,
+          "_model_price": "9/2",
+          "_mkt_price": "17/8",
+          "_win_pct": 18.4,
           "_edge": -12.1,
           "_action": "AVOID"
         },
@@ -1158,13 +1156,13 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Pure hold-up horse carrying bottom weight who will need every yard of the trip and strong pace to be effective.",
+          "note": "Hold-up specialist and dual C&D winner, disappointing since return but capable of big bounce back",
           "draw": null,
           "draw_adv": null,
           "jockey": "Sam Twiston-Davies",
           "trainer": "Henry Daly",
           "trainer_rtf": "60",
-          "trainer_14": "1/9",
+          "trainer_14": "1/7",
           "last_run": "31",
           "age": "9",
           "sex": "gelding",
@@ -1173,24 +1171,24 @@
           "headgear": "b",
           "rpr": "106",
           "ts": "88",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Dual C&D winner; not at best since returning from one-year break in November; on good mark",
+          "spotlight": "Dual C&D winner; not at best since returning from one-year absence in November and was particularly disappointing when pulled up over fences last month; needs a revival but is back hurdling on a tempting mark.",
           "_projected": 55.3,
           "_model_price": "6/1",
           "_mkt_price": "9/2",
-          "_win_pct": 14.2,
+          "_win_pct": 15.0,
           "_edge": -1.3,
           "_action": "WATCH"
         }
       ],
-      "paceDynamic": "Moviddy and Roe And Co are both confirmed front runners who will clash from the outset, creating an honest gallop over this staying trip. With only six runners, the small field means the pace will be set by these two leaders with no hiding place behind them. Raby Mere and Greedy Smith will track prominently, while Indian Sunbird and Braganza Bay will look to pick up the pieces from off the pace. This pace scenario clearly favours the hold-up horses who can benefit from the strong early gallop and have something left to finish with.",
+      "paceDynamic": "Moviddy and the returning Roe And Co are both confirmed front-runners who will contest the early lead in this small field, creating an honest gallop over the extended trip. With two genuine pace-setters likely to engage early, the tempo should be sustained rather than stop-start, though the 3m1f distance may force them to moderate slightly mid-race. The hold-up horses Indian Sunbird and Braganza Bay will benefit most from this setup, as the pace-setters are likely to soften each other up over the final mile, creating opportunities for strong finishers to sweep past tired leaders.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Pace Duel Collapse",
-          "prob": 45,
-          "trigger": "If Moviddy and Roe And Co fight it out through the early stages and weaken",
-          "body": "The sustained pace over 3m1f will find out both leaders, allowing the patient hold-up horses to sweep past in the closing stages. Indian Sunbird and Braganza Bay are perfectly positioned to capitalise with their finishing kicks.",
+          "title": "Hold-Up Horses Prevail",
+          "prob": 55,
+          "trigger": "If both front-runners engage early and maintain honest pace throughout",
+          "body": "The sustained gallop plays perfectly into the hands of Indian Sunbird and Braganza Bay who can pick off tiring leaders. Strong finishers get ideal setup with pace to aim at over final two furlongs.",
           "winners": [
             "Indian Sunbird",
             "Braganza Bay"
@@ -1202,10 +1200,25 @@
         },
         {
           "label": "B",
-          "title": "Front Runner Survives",
-          "prob": 30,
-          "trigger": "If one of the leaders manages to shake off their rival and establish a clear advantage",
-          "body": "The winner will come from Moviddy or Roe And Co if they can get first run and maintain their advantage to the line. The prominent racers will struggle to bridge the gap once the leader kicks clear.",
+          "title": "Pace Collapses Mid-Race",
+          "prob": 25,
+          "trigger": "If Moviddy and Roe And Co go too fast early then significantly slow the tempo",
+          "body": "The race becomes tactical in the middle stages, suiting the prominent runners who can position closer. Raby Mere and Greedy Smith benefit from the moderate finish that develops.",
+          "winners": [
+            "Raby Mere",
+            "Greedy Smith"
+          ],
+          "others": [
+            "Moviddy",
+            "Indian Sunbird"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Front-Runner Survives",
+          "prob": 12,
+          "trigger": "If one pace-setter gets easy lead while the other struggles or doesn't engage",
+          "body": "Moviddy or returning Roe And Co controls the race from the front without pressure. The lack of pace pressure allows the leader to save energy for sustained finish.",
           "winners": [
             "Moviddy",
             "Roe And Co"
@@ -1216,56 +1229,41 @@
           ]
         },
         {
-          "label": "C",
-          "title": "Prominent Tracker Pounces",
-          "prob": 15,
-          "trigger": "If the pace setters tie up but the hold-up horses leave their run too late",
-          "body": "Raby Mere and Greedy Smith, racing prominently, will be perfectly positioned to strike when the leaders weaken. Their tactical position gives them the ideal launching pad for a well-timed challenge.",
-          "winners": [
-            "Raby Mere",
-            "Greedy Smith"
-          ],
-          "others": [
-            "Indian Sunbird",
-            "Braganza Bay"
-          ]
-        },
-        {
           "label": "D",
-          "title": "Slow Burn Tactical",
-          "prob": 10,
-          "trigger": "If both leaders are mindful of each other and set modest fractions early",
-          "body": "The race becomes a tactical affair with a sprint finish, suiting horses with natural pace rather than pure stamina. This plays into the hands of the more versatile performers who can quicken off any pace.",
+          "title": "Tactical Crawl Throughout",
+          "prob": 8,
+          "trigger": "If both front-runners show early caution due to the extended distance",
+          "body": "Race becomes very slowly run affair with sprint finish over final three furlongs. This neutralizes stamina advantages and favors horses with most natural speed regardless of style.",
           "winners": [
             "Greedy Smith",
             "Raby Mere"
           ],
           "others": [
-            "Moviddy",
-            "Indian Sunbird"
+            "Indian Sunbird",
+            "Braganza Bay"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Watch for Roe And Co's participation status as withdrawal would significantly alter the pace dynamic and benefit Moviddy's chances"
+          "text": "Roe And Co withdrawal removes key pace element, making Moviddy potentially unopposed early"
         },
         {
           "severity": "warn",
-          "text": "Monitor how aggressively Moviddy breaks from the stalls as any tardiness could see Raby Mere or Greedy Smith steal the initiative"
+          "text": "Indian Sunbird returning from 186-day absence needs to show immediate sharpness to capitalize on race shape"
         },
         {
           "severity": "info",
-          "text": "Observe Indian Sunbird's jumping rhythm early as rustiness from the long break could compromise his finishing effort"
+          "text": "Raby Mere wearing cheekpieces again after successful return to form suggests connections expect improved effort"
         },
         {
           "severity": "warn",
-          "text": "Check Lewis Stones' positioning on Raby Mere through the early stages as inexperience could see him get too far back"
+          "text": "Braganza Bay pulled up last time over fences and needs to prove recent troubles are behind him"
         },
         {
           "severity": "info",
-          "text": "Watch Braganza Bay's position turning for home as he needs to be within striking distance to utilize his finishing kick"
+          "text": "Weather conditions remain good across all races, confirming genuine good going for stamina test"
         }
       ],
       "skipped": false
@@ -1314,9 +1312,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 106.2,
-          "_model_price": "12/1",
+          "_model_price": "10/1",
           "_mkt_price": "8/1",
-          "_win_pct": 8.2,
+          "_win_pct": 8.3,
           "_edge": -9.7,
           "_action": "WATCH"
         },
@@ -1342,12 +1340,12 @@
           "headgear": "",
           "rpr": "-",
           "ts": "-",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Half-sister to St Irene, who won a Listed mares' hurdle for connections last season",
+          "spotlight": "Seventh foal; half-sister to St Irene, who won a Listed mares' hurdle for connections last season, and a point winner; dam fair 2m1f/2m6f hurdle winner; one of two newcomers representing the stable.",
           "_projected": 106.2,
-          "_model_price": "4/1",
+          "_model_price": "7/2",
           "_mkt_price": "5/2",
-          "_win_pct": 21.0,
+          "_win_pct": 21.4,
           "_edge": -9.7,
           "_action": "WATCH"
         },
@@ -1373,12 +1371,12 @@
           "headgear": "",
           "rpr": "-",
           "ts": "-",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Third foal from unraced half-sister to two useful jumpers; may be stable's second string",
+          "spotlight": "34,000euros foal; third foal; half-sister to a point winner; dam unraced half-sister to useful jumpers Carrigmartin and City Slicker; riding arrangements suggest St Julie may be the stable's main hope.",
           "_projected": 106.2,
-          "_model_price": "9/1",
+          "_model_price": "8/1",
           "_mkt_price": "6/1",
-          "_win_pct": 10.5,
+          "_win_pct": 10.7,
           "_edge": -9.7,
           "_action": "WATCH"
         },
@@ -1404,12 +1402,12 @@
           "headgear": "",
           "rpr": "93",
           "ts": "72",
-          "comment": "",
-          "spotlight": "",
+          "comment": "Dropped out rather tamely and was beaten about 24l when eighth at Hereford last month",
+          "spotlight": "First foal from a French 2m4f/2m5f chase winner; ran well to a point but dropped out rather tamely and was beaten about 24l when eighth of 11 at Hereford (good) last month; needs that run to have brought him on.",
           "_projected": 101.0,
           "_model_price": "7/2",
           "_mkt_price": "4/1",
-          "_win_pct": 21.9,
+          "_win_pct": 22.4,
           "_edge": 17.1,
           "_action": "WATCH"
         },
@@ -1426,7 +1424,7 @@
           "jockey": "Sean Bowen",
           "trainer": "Warren Greatrex",
           "trainer_rtf": "38",
-          "trainer_14": "2/14",
+          "trainer_14": "2/17",
           "last_run": "33",
           "age": "4",
           "sex": "gelding",
@@ -1439,8 +1437,8 @@
           "spotlight": "",
           "_projected": 90.7,
           "_model_price": "6/4",
-          "_mkt_price": "8/5",
-          "_win_pct": 38.4,
+          "_mkt_price": "7/4",
+          "_win_pct": 37.1,
           "_edge": 11.9,
           "_action": "WATCH"
         }
