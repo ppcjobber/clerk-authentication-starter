@@ -1,0 +1,1521 @@
+{
+  "course": "Hereford",
+  "date": "12 May 2026",
+  "slug": "hereford_12-may-2026",
+  "races": [
+    {
+      "id": 1,
+      "time": "2:38",
+      "name": "Worcester Racecourse Ladies Day 6th June Novices' Limited Handicap Chase (GBB Race)",
+      "grade": "HCAP",
+      "dist": "3m1f",
+      "dist_f": 25.0,
+      "going": "Good",
+      "runners": 2,
+      "free": true,
+      "type": "jumps",
+      "pace": "SLOWLY_RUN",
+      "paceConf": 85,
+      "leads": [
+        "Queensbury Boy"
+      ],
+      "prominent": [],
+      "midfield": [],
+      "holdup": [
+        "Court In A Storm"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Queensbury Boy",
+          "or": 127,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Hold-up performer with class advantage but worrying 88-day absence and poor recent Hereford form when last seen",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "James Bowen",
+          "trainer": "Mickey Bowen",
+          "trainer_rtf": "50",
+          "trainer_14": "1/14",
+          "last_run": "88",
+          "age": "7",
+          "sex": "gelding",
+          "form": "45526-",
+          "lbs": "164",
+          "headgear": "t",
+          "rpr": "135",
+          "ts": "127",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 100.2,
+          "_model_price": "6/4",
+          "_mkt_price": "9/10",
+          "_win_pct": 43.4,
+          "_edge": -4.0,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Court In A Storm",
+          "or": 115,
+          "style_code": "H",
+          "finish_type": "S",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Fellow hold-up horse but fresher, 12lbs lighter, and Kim Bailey's yard in excellent form with 50% strike rate",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Tom Bellamy",
+          "trainer": "Kim Bailey & Mat Nicholls",
+          "trainer_rtf": "50",
+          "trainer_14": "1/2",
+          "last_run": "26",
+          "age": "7",
+          "sex": "gelding",
+          "form": "1F743-",
+          "lbs": "152",
+          "headgear": "t",
+          "rpr": "-",
+          "ts": "-",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 96.2,
+          "_model_price": "4/5",
+          "_mkt_price": "9/8",
+          "_win_pct": 56.6,
+          "_edge": 4.0,
+          "_action": "CONSIDER"
+        }
+      ],
+      "paceDynamic": "With only two runners, both hold-up horses, this becomes a tactical chess match rather than a conventional pace scenario. Neither Queensbury Boy nor Court In A Storm wants to make the running, creating potential for a cat-and-mouse affair early before the real race begins from the final circuit. The lack of natural pace-setters means whoever goes forward will dictate terms unopposed, potentially setting up ideal conditions for themselves. This race shape strongly favours whichever horse can best utilize the tactical advantage of controlled fractions and time their challenge most effectively.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Queensbury Boy Controls",
+          "prob": 45,
+          "trigger": "If Queensbury Boy's experience tells and he takes up the running early.",
+          "body": "The 7-year-old can dictate his own fractions unopposed and use his higher official rating to full effect. His recent Hereford form gives him course knowledge that could prove decisive in a tactical affair.",
+          "winners": [
+            "Queensbury Boy"
+          ],
+          "others": [
+            "Court In A Storm"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Court In A Storm Strikes",
+          "prob": 35,
+          "trigger": "If Court In A Storm's fresher preparation and trainer form pays dividends.",
+          "body": "The Kim Bailey runner has raced more recently and carries 12lbs less weight in what becomes a sprint finish. His excellent record on good going (3W5P from 8 runs) gives him every chance to reverse ratings.",
+          "winners": [
+            "Court In A Storm"
+          ],
+          "others": [
+            "Queensbury Boy"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Late Tactical Battle",
+          "prob": 15,
+          "trigger": "If both horses refuse to commit early and it becomes a waiting game.",
+          "body": "The race becomes a glorified match race from the last fence with stamina and tactical nous paramount. Queensbury Boy's class advantage could tell in a grueling finish over this extended trip.",
+          "winners": [
+            "Queensbury Boy"
+          ],
+          "others": [
+            "Court In A Storm"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Jumping Errors Decide",
+          "prob": 5,
+          "trigger": "If either horse makes a significant jumping mistake in the straight.",
+          "body": "Clean jumping becomes crucial when there's nowhere to hide with only two runners. One bad jump hands the initiative completely to the rival in what should be a tight finish.",
+          "winners": [
+            "Court In A Storm",
+            "Queensbury Boy"
+          ],
+          "others": []
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Monitor Queensbury Boy's jumping early - any rustiness from his 88-day break could be fatal with only one rival to exploit mistakes"
+        },
+        {
+          "severity": "warn",
+          "text": "Watch Court In A Storm's stamina reserves over this extended 3m1f trip given his mixed record at the distance"
+        },
+        {
+          "severity": "info",
+          "text": "Observe which jockey commits first to making the running as tactical positioning will be crucial in this small field"
+        },
+        {
+          "severity": "warn",
+          "text": "Check both horses' fitness levels in the preliminaries as neither has raced recently enough to guarantee peak condition"
+        }
+      ],
+      "skipped": false
+    },
+    {
+      "id": 2,
+      "time": "3:08",
+      "name": "CopyBet Overnight Best Odds Guarenteed Handicap Chase (Arc Summer Chase Series Qualifier) (GBB Race)",
+      "grade": "HCAP",
+      "dist": "2m5f",
+      "dist_f": 21.0,
+      "going": "Good",
+      "runners": 3,
+      "free": false,
+      "type": "jumps",
+      "pace": "SLOWLY_RUN",
+      "paceConf": 85,
+      "leads": [
+        "Delpotro"
+      ],
+      "prominent": [
+        "Quick Sharpener"
+      ],
+      "midfield": [],
+      "holdup": [
+        "Beep Beep Becky"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Quick Sharpener",
+          "or": 110,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Prominent runner with highest official rating who should track Delpotro comfortably, though 108 days off the track raises fitness questions despite Sheehan's 25% strike rate.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Gavin Sheehan",
+          "trainer": "Jamie Snowden",
+          "trainer_rtf": "62",
+          "trainer_14": "3/12",
+          "last_run": "108",
+          "age": "9",
+          "sex": "gelding",
+          "form": "PF5PP-",
+          "lbs": "168",
+          "headgear": "t",
+          "rpr": "117",
+          "ts": "101",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 92.9,
+          "_model_price": "6/4",
+          "_mkt_price": "2/1",
+          "_win_pct": 40.0,
+          "_edge": 18.1,
+          "_action": "CONSIDER"
+        },
+        {
+          "name": "Delpotro",
+          "or": 108,
+          "style_code": "L",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Natural front-runner who won last time out in good going and should get uncontested lead here, with Sean Bowen's 20% strike rate for the yard adding confidence.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Sean Bowen",
+          "trainer": "Charlie Longsdon",
+          "trainer_rtf": "50",
+          "trainer_14": "1/5",
+          "last_run": "57",
+          "age": "6",
+          "sex": "gelding",
+          "form": "P1243-",
+          "lbs": "166",
+          "headgear": "t",
+          "rpr": "113",
+          "ts": "110",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 84.7,
+          "_model_price": "evens",
+          "_mkt_price": "9/10",
+          "_win_pct": 50.1,
+          "_edge": 11.8,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Beep Beep Becky",
+          "or": 88,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Hold-up mare carrying significant weight concession but faces task from rear in small field, with modest recent form and no RPR or TopSpeed figures available.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Toby Wynne",
+          "trainer": "Oliver Greenall & Josh Guerriero",
+          "trainer_rtf": "50",
+          "trainer_14": "1/4",
+          "last_run": "69",
+          "age": "5",
+          "sex": "mare",
+          "form": "/6607-",
+          "lbs": "146",
+          "headgear": "t",
+          "rpr": "-",
+          "ts": "-",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 22.9,
+          "_model_price": "9/1",
+          "_mkt_price": "7/2",
+          "_win_pct": 9.9,
+          "_edge": -29.9,
+          "_action": "AVOID"
+        }
+      ],
+      "paceDynamic": "Delpotro will dictate from the front with no genuine pace pressure in this small field. Quick Sharpener sits prominent but won't challenge early, while Beep Beep Becky drops in at the back needing to make ground late. The uncontested leader scenario creates moderate fractions that should hold up, with the main danger coming from Quick Sharpener's class advantage if tracking into contention. This pace setup clearly favors the front runner and prominent tracker over the hold-up horse who faces a steep task from the rear.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Uncontested Leader Holds",
+          "prob": 55,
+          "trigger": "If Delpotro maintains steady fractions without pressure through the middle stages",
+          "body": "The controlled pace allows him to retain enough energy for the finish, while Beep Beep Becky struggles to bridge the gap from too far back. Quick Sharpener's class gives him the best chance to reel in the leader but may come up just short.",
+          "winners": [
+            "Delpotro",
+            "Quick Sharpener"
+          ],
+          "others": [
+            "Beep Beep Becky"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Class Tells Late",
+          "prob": 30,
+          "trigger": "If Quick Sharpener's superior rating (OR 110 vs 108) and Gavin Sheehan's tactical ride come to the fore",
+          "body": "The 9-year-old's experience and higher grade allows him to time his challenge perfectly, overhauling Delpotro in the final furlong. Delpotro's honest front-running keeps him competitive for place money.",
+          "winners": [
+            "Quick Sharpener",
+            "Delpotro"
+          ],
+          "others": [
+            "Beep Beep Becky"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Lightweight Surprise",
+          "prob": 10,
+          "trigger": "If Beep Beep Becky's 22lb weight advantage (146lbs vs 166-168lbs) proves decisive and the pace collapses",
+          "body": "The significantly lighter burden allows the hold-up horse to close strongly when the leaders tire, capitalizing on any tactical errors. Her trainer partnership has been selective but effective recently.",
+          "winners": [
+            "Beep Beep Becky",
+            "Quick Sharpener"
+          ],
+          "others": [
+            "Delpotro"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Pace Duel Develops",
+          "prob": 5,
+          "trigger": "If Quick Sharpener decides to press Delpotro earlier than expected, creating genuine tempo",
+          "body": "The increased gallop suits neither front-runner as they compromise each other, potentially opening the door for Beep Beep Becky's finishing kick. However, her modest form ratings make this outcome unlikely.",
+          "winners": [
+            "Beep Beep Becky",
+            "Delpotro"
+          ],
+          "others": [
+            "Quick Sharpener"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Quick Sharpener's early position - if he tracks closer than usual to Delpotro, it creates genuine tempo that could compromise both."
+        },
+        {
+          "severity": "warn",
+          "text": "Delpotro's jumping rhythm in the back straight - any mistakes while in front will invite pressure from Quick Sharpener."
+        },
+        {
+          "severity": "info",
+          "text": "Beep Beep Becky's position turning for home - needs to be within 10 lengths to have any realistic chance given the small field dynamics."
+        },
+        {
+          "severity": "warn",
+          "text": "Quick Sharpener's fitness after 108 days off - watch for any signs of rustiness or blowing in the home straight."
+        },
+        {
+          "severity": "info",
+          "text": "The pace through halfway - if genuinely steady, it heavily favors Delpotro's stamina reserves over the closers."
+        }
+      ],
+      "skipped": false
+    },
+    {
+      "id": 3,
+      "time": "3:38",
+      "name": "Ludford Car Parts Group Mares' Novices' Hurdle (GBB Race)",
+      "grade": "NOV",
+      "dist": "2m3½f",
+      "dist_f": 19.5,
+      "going": "Good",
+      "runners": 6,
+      "free": false,
+      "type": "jumps",
+      "pace": "GENUINE_PACE",
+      "paceConf": 65,
+      "leads": [
+        "Nannymooresbridge",
+        "Hidden Fortune",
+        "Lady Kara"
+      ],
+      "prominent": [
+        "Mrs Cravatte"
+      ],
+      "midfield": [],
+      "holdup": [
+        "Kittys Glance",
+        "Liasse d'Argent"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Hidden Fortune",
+          "or": 120,
+          "style_code": "L",
+          "finish_type": "S",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Leading style with Harry Skelton aboard gives her tactical edge, though 36 days off may need overlooking",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Harry Skelton",
+          "trainer": "Dan Skelton",
+          "trainer_rtf": "73",
+          "trainer_14": "10/30",
+          "last_run": "36",
+          "age": "5",
+          "sex": "mare",
+          "form": "1/22-",
+          "lbs": "154",
+          "headgear": "",
+          "rpr": "-",
+          "ts": "-",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 100.2,
+          "_model_price": "6/4",
+          "_mkt_price": "9/8",
+          "_win_pct": 42.4,
+          "_edge": 0.6,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Mrs Cravatte",
+          "or": 95,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Prominent runner who faces a big step up in class after disappointing recent efforts over longer trips",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Lee Edwards",
+          "trainer": "Henry Oliver",
+          "trainer_rtf": "20",
+          "trainer_14": "0/5",
+          "last_run": "8",
+          "age": "6",
+          "sex": "mare",
+          "form": "9/F9-7",
+          "lbs": "154",
+          "headgear": "h",
+          "rpr": "101",
+          "ts": "71",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 90.5,
+          "_model_price": "23/1",
+          "_mkt_price": "28/1",
+          "_win_pct": 4.2,
+          "_edge": 15.8,
+          "_action": "CONSIDER"
+        },
+        {
+          "name": "Lady Kara",
+          "or": 105,
+          "style_code": "L",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Consistent front runner whose multiple placed efforts suggest she's due a breakthrough performance soon",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Luke Scott(3)",
+          "trainer": "Dr Richard Newland & Jamie Insole",
+          "trainer_rtf": "46",
+          "trainer_14": "2/25",
+          "last_run": "8",
+          "age": "5",
+          "sex": "mare",
+          "form": "2442-3",
+          "lbs": "154",
+          "headgear": "ht",
+          "rpr": "116",
+          "ts": "92",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 86.3,
+          "_model_price": "5/1",
+          "_mkt_price": "9/2",
+          "_win_pct": 17.1,
+          "_edge": 1.7,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Kittys Glance",
+          "or": 100,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Hold-up specialist returns from 55-day break with proven class advantage but needs the pace to develop",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Tom Bellamy",
+          "trainer": "Alan King",
+          "trainer_rtf": "67",
+          "trainer_14": "2/24",
+          "last_run": "55",
+          "age": "5",
+          "sex": "mare",
+          "form": "3/801-",
+          "lbs": "161",
+          "headgear": "h",
+          "rpr": "106",
+          "ts": "63",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 85.6,
+          "_model_price": "2/1",
+          "_mkt_price": "17/8",
+          "_win_pct": 31.8,
+          "_edge": 5.9,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Liasse d'Argent",
+          "or": 94,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Another hold-up horse with Benjamin Macey's claim, though trainer's poor recent form is concerning",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Benjamin Macey(5)",
+          "trainer": "Tom Gretton",
+          "trainer_rtf": "",
+          "trainer_14": "0/2",
+          "last_run": "23",
+          "age": "6",
+          "sex": "mare",
+          "form": "56-",
+          "lbs": "154",
+          "headgear": "",
+          "rpr": "99",
+          "ts": "68",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 84.2,
+          "_model_price": "25/1",
+          "_mkt_price": "28/1",
+          "_win_pct": 3.8,
+          "_edge": 10.6,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Nannymooresbridge",
+          "or": 120,
+          "style_code": "L",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Front runner making seasonal debut after 194 days off, with Ella Pickard's stable form worrying",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Ben Godfrey",
+          "trainer": "Ella Pickard",
+          "trainer_rtf": "40",
+          "trainer_14": "0/5",
+          "last_run": "194",
+          "age": "5",
+          "sex": "mare",
+          "form": "95P-",
+          "lbs": "154",
+          "headgear": "t",
+          "rpr": "-",
+          "ts": "-",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 65.0,
+          "_model_price": "130/1",
+          "_mkt_price": "80/1",
+          "_win_pct": 0.8,
+          "_edge": -34.7,
+          "_action": "AVOID"
+        }
+      ],
+      "paceDynamic": "Nannymooresbridge, Hidden Fortune, and Lady Kara will ensure a relentless gallop from the start, with all three capable of forcing the issue. Hidden Fortune looks the most reliable pace-setter given recent form, but Lady Kara's consistent prominent racing adds pressure. The strong early pace will stretch the field and test stamina reserves over this demanding trip. This setup clearly favors hold-up horses who can conserve energy and finish strongly, with Kittys Glance and Liasse d'Argent best positioned to benefit from the expected collapse ahead.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Pace Collapse Finish",
+          "prob": 55,
+          "trigger": "If the three front runners go too fast early and tie up in the final furlong",
+          "body": "The strong gallop will find out the leaders' stamina limitations, allowing the two hold-up horses to sweep past tired rivals. Kittys Glance's class and Liasse d'Argent's fresh legs become decisive advantages.",
+          "winners": [
+            "Kittys Glance",
+            "Liasse d'Argent"
+          ],
+          "others": [
+            "Mrs Cravatte",
+            "Lady Kara"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Hidden Fortune Dominates",
+          "prob": 25,
+          "trigger": "If Hidden Fortune can dictate a steady pace and kick clear turning in",
+          "body": "Her recent win and Harry Skelton's tactical nous allows her to control the tempo before accelerating away from rivals. The Skelton combination proves too strong for this grade.",
+          "winners": [
+            "Hidden Fortune",
+            "Lady Kara"
+          ],
+          "others": [
+            "Kittys Glance",
+            "Mrs Cravatte"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Lady Kara Springs Upset",
+          "prob": 12,
+          "trigger": "If Lady Kara's consistency translates to finally breaking her maiden over hurdles",
+          "body": "Her multiple placed efforts show she's knocking on the door and the step back in trip could unlock improvement. Luke Scott's claim becomes crucial in a tight finish.",
+          "winners": [
+            "Lady Kara",
+            "Kittys Glance"
+          ],
+          "others": [
+            "Hidden Fortune",
+            "Mrs Cravatte"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Pace Holds Together",
+          "prob": 8,
+          "trigger": "If the front runners go steady early and it becomes a sprint finish",
+          "body": "The lack of early pressure allows all horses to stay in contention turning for home. Superior class rather than tactics decides the outcome in a bunched finish.",
+          "winners": [
+            "Hidden Fortune",
+            "Kittys Glance"
+          ],
+          "others": [
+            "Lady Kara",
+            "Nannymooresbridge"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Nannymooresbridge's fitness after 194 days off could see her fade badly if forcing the early pace"
+        },
+        {
+          "severity": "warn",
+          "text": "Kittys Glance needs the strong pace to materialize or her hold-up style becomes a major disadvantage"
+        },
+        {
+          "severity": "info",
+          "text": "Lady Kara's consistency suggests she's the most reliable each-way option despite breaking maiden concerns"
+        },
+        {
+          "severity": "warn",
+          "text": "Hidden Fortune's 36-day break might leave her short of peak fitness in a competitive finish"
+        },
+        {
+          "severity": "info",
+          "text": "The three confirmed front runners could ensure an honest gallop that suits the two hold-up horses"
+        }
+      ],
+      "skipped": false
+    },
+    {
+      "id": 4,
+      "time": "4:10",
+      "name": "CopyBet Says Thank You To Hereford Handicap Hurdle",
+      "grade": "HCAP",
+      "dist": "3m1½f",
+      "dist_f": 25.5,
+      "going": "Good",
+      "runners": 5,
+      "free": false,
+      "type": "jumps",
+      "pace": "CONTESTED",
+      "paceConf": 50,
+      "leads": [
+        "Catwalk Girl"
+      ],
+      "prominent": [
+        "Campaign Trail"
+      ],
+      "midfield": [
+        "Border Gem"
+      ],
+      "holdup": [
+        "Heard That",
+        "I Am Spider Man"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Catwalk Girl",
+          "or": 104,
+          "style_code": "L",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Front-running style perfectly suits this tactical contest, fresh off a 5-day break with winning form and Mr James King's 3lb claim reducing her to 159lbs effective",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Mr James King(3)",
+          "trainer": "Max Comley",
+          "trainer_rtf": "80",
+          "trainer_14": "1/5",
+          "last_run": "5",
+          "age": "6",
+          "sex": "mare",
+          "form": "353F-1",
+          "lbs": "162",
+          "headgear": "p",
+          "rpr": "111",
+          "ts": "88",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 87.5,
+          "_model_price": "3/1",
+          "_mkt_price": "3/1",
+          "_win_pct": 26.4,
+          "_edge": 10.4,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Border Gem",
+          "or": 93,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Hold-up style faces major disadvantage with limited pace to aim at, though 20-day break and Lorcan Williams booking suggests connections are confident",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Lorcan Williams",
+          "trainer": "Jeremy Scott",
+          "trainer_rtf": "50",
+          "trainer_14": "0/4",
+          "last_run": "20",
+          "age": "6",
+          "sex": "mare",
+          "form": "24525-",
+          "lbs": "151",
+          "headgear": "",
+          "rpr": "110",
+          "ts": "90",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 85.1,
+          "_model_price": "2/1",
+          "_mkt_price": "5/1",
+          "_win_pct": 31.0,
+          "_edge": 19.1,
+          "_action": "WIN"
+        },
+        {
+          "name": "Campaign Trail",
+          "or": 111,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Prominent racer ideally placed to track the leader, highest official rating but 41-day layoff and top weight of 169lbs are concerns",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Tom Bellamy",
+          "trainer": "Kim Bailey & Mat Nicholls",
+          "trainer_rtf": "50",
+          "trainer_14": "1/2",
+          "last_run": "41",
+          "age": "6",
+          "sex": "gelding",
+          "form": "3/843-",
+          "lbs": "169",
+          "headgear": "tp",
+          "rpr": "111",
+          "ts": "107",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 84.7,
+          "_model_price": "3/1",
+          "_mkt_price": "9/4",
+          "_win_pct": 25.4,
+          "_edge": 0.6,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Heard That",
+          "or": 108,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Hold-up horse with better chasing than hurdling record, Sean Bowen booking is positive but inconsistent form makes him hard to predict",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Sean Bowen",
+          "trainer": "Olly Murphy",
+          "trainer_rtf": "79",
+          "trainer_14": "1/9",
+          "last_run": "19",
+          "age": "7",
+          "sex": "gelding",
+          "form": "P3627-",
+          "lbs": "166",
+          "headgear": "b",
+          "rpr": "109",
+          "ts": "95",
+          "comment": "Better chaser than hurdler and not easy to predict in either discipline; tries blinkers",
+          "spotlight": "Better chaser than hurdler and not easy to predict in either discipline; finished runner-up over C&D in March but then tailed off at Perth, again over hurdles; blinkers go on.",
+          "_projected": 77.7,
+          "_model_price": "8/1",
+          "_mkt_price": "11/2",
+          "_win_pct": 10.9,
+          "_edge": -3.4,
+          "_action": "WATCH"
+        },
+        {
+          "name": "I Am Spider Man",
+          "or": 97,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Veteran hold-up horse carrying just 155lbs after James Bowen's claim, but faces same tactical disadvantage as other back-markers in this pace scenario",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "James Bowen",
+          "trainer": "Barry John Murphy",
+          "trainer_rtf": "22",
+          "trainer_14": "0/11",
+          "last_run": "6",
+          "age": "9",
+          "sex": "gelding",
+          "form": "76P7-2",
+          "lbs": "155",
+          "headgear": "h",
+          "rpr": "113",
+          "ts": "100",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 43.4,
+          "_model_price": "15/1",
+          "_mkt_price": "39/8",
+          "_win_pct": 6.3,
+          "_edge": -26.6,
+          "_action": "AVOID"
+        }
+      ],
+      "paceDynamic": "Catwalk Girl will dictate from the front as the sole natural leader, with Campaign Trail likely tracking in second and the three hold-up horses (Border Gem, Heard That, I Am Spider Man) settling towards the rear. With no pace pressure on Catwalk Girl, she can control the tempo and potentially steal a march on the field. The lack of early speed creates a tactical race where positioning and timing become crucial. This race shape strongly favors front-runners and prominent racers who can avoid the scramble behind, as the hold-up horses face a significant disadvantage with limited pace to aim at.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Front Runner Dominates",
+          "prob": 55,
+          "trigger": "If Catwalk Girl maintains control and kicks clear approaching the final flight",
+          "body": "Her sustainable pace advantage combined with no early pressure allows her to dictate throughout and prove too strong late on. Campaign Trail's prominent style gives him the best chance of chasing her home but he faces a tough task conceding 11lbs.",
+          "winners": [
+            "Catwalk Girl",
+            "Campaign Trail"
+          ],
+          "others": [
+            "Border Gem",
+            "I Am Spider Man"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Prominent Tracker Strikes",
+          "prob": 25,
+          "trigger": "If Campaign Trail can get first run on Catwalk Girl turning for home",
+          "body": "His class advantage (OR 111) and prominent racing style prove decisive as he times his challenge perfectly. The hold-up horses struggle to make up ground in a slowly-run race with limited pace.",
+          "winners": [
+            "Campaign Trail",
+            "Catwalk Girl"
+          ],
+          "others": [
+            "Heard That",
+            "Border Gem"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Hold-Up Surprise",
+          "prob": 12,
+          "trigger": "If the pace collapses completely and becomes a sprint finish",
+          "body": "Border Gem or I Am Spider Man benefit from their fresh conditions and lower weights in a tactical finish. The front-runners pay for their early efforts when the race becomes a pure staying test.",
+          "winners": [
+            "Border Gem",
+            "I Am Spider Man"
+          ],
+          "others": [
+            "Campaign Trail",
+            "Heard That"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Heard That Revival",
+          "prob": 8,
+          "trigger": "If Heard That rediscovers his chasing form over hurdles and gets the perfect trip",
+          "body": "His C&D runner-up effort in March suggests he handles the track well, and Sean Bowen's 10% strike rate could spark improvement. However, his inconsistent hurdling form makes this an unlikely outcome.",
+          "winners": [
+            "Heard That",
+            "Campaign Trail"
+          ],
+          "others": [
+            "Catwalk Girl",
+            "Border Gem"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Catwalk Girl's jumping under pressure - any mistake when challenged could prove costly given her front-running style"
+        },
+        {
+          "severity": "warn",
+          "text": "Campaign Trail's fitness after 41-day break - needs to be sharp to capitalize on his class advantage from the prominent position"
+        },
+        {
+          "severity": "info",
+          "text": "Border Gem's early positioning - if Lorcan Williams pushes forward early it could disrupt the expected pace scenario"
+        },
+        {
+          "severity": "warn",
+          "text": "The pace through the early stages - if it goes faster than expected it could bring the hold-up horses into play"
+        },
+        {
+          "severity": "info",
+          "text": "Weather conditions on the day - any change to the Good going could significantly alter the tactical picture"
+        }
+      ],
+      "skipped": false
+    },
+    {
+      "id": 5,
+      "time": "4:45",
+      "name": "First Past The Post At CopyBet Handicap Hurdle",
+      "grade": "HCAP",
+      "dist": "2m3½f",
+      "dist_f": 19.5,
+      "going": "Good",
+      "runners": 9,
+      "free": false,
+      "type": "jumps",
+      "pace": "CONTESTED",
+      "paceConf": 50,
+      "leads": [
+        "Man Of The Sea"
+      ],
+      "prominent": [
+        "Ikigai Star",
+        "Launceston"
+      ],
+      "midfield": [
+        "Jackeline",
+        "The Padster",
+        "Celine Man"
+      ],
+      "holdup": [
+        "Jack Hoola",
+        "Midnight Pass",
+        "Ice Jet"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Man Of The Sea",
+          "or": 99,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Front-running type with solid recent form who can dictate the pace from the front under an in-form Tudor/Mulholland combination.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Jack Tudor",
+          "trainer": "Neil Mulholland",
+          "trainer_rtf": "50",
+          "trainer_14": "1/13",
+          "last_run": "166 (25F)",
+          "age": "10",
+          "sex": "gelding",
+          "form": "43632-",
+          "lbs": "168",
+          "headgear": "tp",
+          "rpr": "104",
+          "ts": "95",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 85.7,
+          "_model_price": "7/2",
+          "_mkt_price": "7/1",
+          "_win_pct": 21.6,
+          "_edge": 29.3,
+          "_action": "WIN"
+        },
+        {
+          "name": "Ikigai Star",
+          "or": 94,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Prominent runner with decent recent efforts who should be on the pace throughout and can battle for the lead if required.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Lilly Pinchin",
+          "trainer": "Charlie Longsdon",
+          "trainer_rtf": "50",
+          "trainer_14": "1/5",
+          "last_run": "34",
+          "age": "6",
+          "sex": "gelding",
+          "form": "55533-",
+          "lbs": "163",
+          "headgear": "p",
+          "rpr": "104",
+          "ts": "87",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 76.3,
+          "_model_price": "5/1",
+          "_mkt_price": "8/1",
+          "_win_pct": 16.3,
+          "_edge": 24.9,
+          "_action": "CONSIDER"
+        },
+        {
+          "name": "Jackeline",
+          "or": 88,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Hold-up performer who needs the race to develop into a sprint finish to show her best form under the 3lb claiming rider.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Daniel Sansom(3)",
+          "trainer": "Seamus Mullins",
+          "trainer_rtf": "71",
+          "trainer_14": "2/9",
+          "last_run": "38",
+          "age": "7",
+          "sex": "mare",
+          "form": "53PP7-",
+          "lbs": "157",
+          "headgear": "b",
+          "rpr": "103",
+          "ts": "77",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 73.1,
+          "_model_price": "7/1",
+          "_mkt_price": "12/1",
+          "_win_pct": 12.6,
+          "_edge": 27.7,
+          "_action": "CONSIDER"
+        },
+        {
+          "name": "Jack Hoola",
+          "or": 97,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Proven hold-up horse returning from a 74-day break who needs a strong early pace to bring his stamina into play.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Stan Sheppard",
+          "trainer": "Tom Lacey",
+          "trainer_rtf": "67",
+          "trainer_14": "0/3",
+          "last_run": "74",
+          "age": "6",
+          "sex": "gelding",
+          "form": "21287-",
+          "lbs": "166",
+          "headgear": "v",
+          "rpr": "100",
+          "ts": "92",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 62.4,
+          "_model_price": "8/1",
+          "_mkt_price": "13/2",
+          "_win_pct": 10.9,
+          "_edge": 8.0,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Midnight Pass",
+          "or": 95,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Consistent hold-up type who has been running well recently and needs to be produced with one late run from off the pace.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "James Bowen",
+          "trainer": "Emma Lavelle",
+          "trainer_rtf": "69",
+          "trainer_14": "2/16",
+          "last_run": "20",
+          "age": "5",
+          "sex": "mare",
+          "form": "69334-",
+          "lbs": "164",
+          "headgear": "",
+          "rpr": "92",
+          "ts": "78",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 56.5,
+          "_model_price": "6/1",
+          "_mkt_price": "4/1",
+          "_win_pct": 14.5,
+          "_edge": 4.1,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Ice Jet",
+          "or": 92,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Hold-up runner from the powerful Skelton stable carrying bottom weight who can benefit if the pace develops favourably for back markers.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Harry Skelton",
+          "trainer": "Dan Skelton",
+          "trainer_rtf": "73",
+          "trainer_14": "10/30",
+          "last_run": "56",
+          "age": "4",
+          "sex": "gelding",
+          "form": "7972-",
+          "lbs": "153",
+          "headgear": "t",
+          "rpr": "99",
+          "ts": "90",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 37.8,
+          "_model_price": "4/1",
+          "_mkt_price": "7/5",
+          "_win_pct": 19.4,
+          "_edge": -11.7,
+          "_action": "AVOID"
+        },
+        {
+          "name": "The Padster",
+          "or": 86,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Hold-up horse who needs everything to fall right including a strong early pace and a good ride from the back to feature prominently.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Callum Pritchard",
+          "trainer": "Joe Tickle",
+          "trainer_rtf": "33",
+          "trainer_14": "0/3",
+          "last_run": "25",
+          "age": "5",
+          "sex": "gelding",
+          "form": "7O404-",
+          "lbs": "155",
+          "headgear": "p",
+          "rpr": "102",
+          "ts": "61",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 23.7,
+          "_model_price": "33/1",
+          "_mkt_price": "16/1",
+          "_win_pct": 2.9,
+          "_edge": -19.7,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Launceston",
+          "or": 81,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Prominent runner carrying bottom weight after a long break who could force the pace if allowed to bowl along in front early.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "James Best",
+          "trainer": "Joe Ponting",
+          "trainer_rtf": "20",
+          "trainer_14": "0/6",
+          "last_run": "117 (99F)",
+          "age": "4",
+          "sex": "gelding",
+          "form": "P79-",
+          "lbs": "142",
+          "headgear": "",
+          "rpr": "81",
+          "ts": "37",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 11.0,
+          "_model_price": "77/1",
+          "_mkt_price": "25/1",
+          "_win_pct": 1.3,
+          "_edge": -27.4,
+          "_action": "AVOID"
+        },
+        {
+          "name": "Celine Man",
+          "or": 73,
+          "style_code": "H",
+          "finish_type": "F",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Veteran hold-up horse who has shown a tendency to fade in the finish and faces a difficult task from his preferred running style.",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "James Davies",
+          "trainer": "J R Jenkins",
+          "trainer_rtf": "14",
+          "trainer_14": "0/6",
+          "last_run": "82",
+          "age": "8",
+          "sex": "gelding",
+          "form": "PP/P8-",
+          "lbs": "142",
+          "headgear": "",
+          "rpr": "78",
+          "ts": "-",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 0.0,
+          "_model_price": "173/1",
+          "_mkt_price": "50/1",
+          "_win_pct": 0.6,
+          "_edge": -35.2,
+          "_action": "AVOID"
+        }
+      ],
+      "paceDynamic": "Man Of The Sea and Ikigai Star will dispute the early lead, with Launceston also likely to race prominently in this small field. The pace should be solid but not excessive given Man Of The Sea's tactical speed and ability to dictate terms without pressure. With six of the nine runners adopting hold-up tactics, the race will develop into a typical scenario where the leaders get first run and the back markers must produce late surges. This shape clearly favours the prominent runners who can stay close to the pace and kick clear before the hold-up horses can mount their challenges.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Front Runners Dominate",
+          "prob": 50,
+          "trigger": "If Man Of The Sea and Ikigai Star are allowed to set their own tempo without early pressure",
+          "body": "The pace becomes manageable for the leaders who can quicken clear in the straight while the hold-up horses find themselves with too much ground to make up. The prominent runners exploit their positional advantage with sustained drives to the line.",
+          "winners": [
+            "Man Of The Sea",
+            "Ikigai Star"
+          ],
+          "others": [
+            "Launceston",
+            "Jack Hoola"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Strong Early Gallop",
+          "prob": 25,
+          "trigger": "If Launceston or another runner forces a stronger early pace than the leaders prefer",
+          "body": "The sustained tempo stretches the field and brings stamina into play, potentially setting up the race for a strong stayer from off the pace. Hold-up horses with proven stamina can pick up the pieces as the early leaders tire.",
+          "winners": [
+            "Jack Hoola",
+            "Ice Jet"
+          ],
+          "others": [
+            "Midnight Pass",
+            "Jackeline"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Tactical Slow Pace",
+          "prob": 15,
+          "trigger": "If the prominent runners settle too conservatively and allow the hold-up horses to stay closer",
+          "body": "The race becomes a sprint finish where class and finishing speed matter most, allowing the best hold-up performers to unleash decisive late kicks. Quality prevails over position in a bunched finish.",
+          "winners": [
+            "Jackeline",
+            "Jack Hoola"
+          ],
+          "others": [
+            "Ice Jet",
+            "Man Of The Sea"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Pace Collapse Late",
+          "prob": 10,
+          "trigger": "If the leaders go too hard early and fade dramatically in the final furlong",
+          "body": "The race falls apart for those who led, creating opportunities for hold-up horses who may have been written off positionally. Even moderate finishers can pick up the pieces as the field comes back to them.",
+          "winners": [
+            "Midnight Pass",
+            "The Padster"
+          ],
+          "others": [
+            "Ice Jet",
+            "Jackeline"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Man Of The Sea could get an uncontested lead and prove very difficult to peg back if allowed to dictate his own fractions."
+        },
+        {
+          "severity": "warn",
+          "text": "Jack Hoola returns from a 74-day layoff which could leave him short of peak fitness despite his proven class advantage."
+        },
+        {
+          "severity": "info",
+          "text": "Ikigai Star under Lilly Pinchin represents the in-form Longsdon yard and could benefit from aggressive early tactics to pressure the leader."
+        },
+        {
+          "severity": "warn",
+          "text": "The hold-up horses Ice Jet and Midnight Pass need the early pace to be strong enough to bring them into contention late."
+        },
+        {
+          "severity": "info",
+          "text": "Launceston's 117-day absence and bottom weight could see him sent forward early to force a stronger gallop than the leaders prefer."
+        }
+      ],
+      "skipped": false
+    },
+    {
+      "id": 6,
+      "time": "5:20",
+      "name": "Hereford Season Finale Open National Hunt Flat Race (Cat 1 Elimination) (GBB)",
+      "grade": "CLS5",
+      "dist": "2m",
+      "dist_f": 16.0,
+      "going": "Good",
+      "runners": 5,
+      "free": false,
+      "type": "jumps",
+      "pace": "UNKNOWN",
+      "paceConf": 0,
+      "leads": [],
+      "prominent": [],
+      "midfield": [],
+      "holdup": [],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Five Lanes",
+          "or": 120,
+          "style_code": "U",
+          "finish_type": "E",
+          "dist_code": "UNKNOWN",
+          "going_flag": "UNKNOWN",
+          "note": "",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Sean Houlihan",
+          "trainer": "Tim Dennis",
+          "trainer_rtf": "",
+          "trainer_14": "0/0",
+          "last_run": "(24P)",
+          "age": "4",
+          "sex": "gelding",
+          "form": "O-",
+          "lbs": "150",
+          "headgear": "",
+          "rpr": "-",
+          "ts": "-",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 98.6,
+          "_model_price": "30/1",
+          "_mkt_price": "22/1",
+          "_win_pct": 3.2,
+          "_edge": -9.2,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Master Roque",
+          "or": 104,
+          "style_code": "U",
+          "finish_type": "F",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Tom Bellamy",
+          "trainer": "Alan King",
+          "trainer_rtf": "67",
+          "trainer_14": "2/24",
+          "last_run": "52",
+          "age": "4",
+          "sex": "gelding",
+          "form": "0-",
+          "lbs": "150",
+          "headgear": "",
+          "rpr": "110",
+          "ts": "95",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 94.3,
+          "_model_price": "2/1",
+          "_mkt_price": "6/4",
+          "_win_pct": 34.7,
+          "_edge": 2.5,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Lost In The Dream",
+          "or": 95,
+          "style_code": "H",
+          "finish_type": "S",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "Sean Bowen",
+          "trainer": "Olly Murphy",
+          "trainer_rtf": "79",
+          "trainer_14": "1/9",
+          "last_run": "33",
+          "age": "4",
+          "sex": "gelding",
+          "form": "1-",
+          "lbs": "157",
+          "headgear": "",
+          "rpr": "101",
+          "ts": "93",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 89.6,
+          "_model_price": "4/5",
+          "_mkt_price": "4/6",
+          "_win_pct": 55.5,
+          "_edge": 6.8,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Mayo",
+          "or": 87,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "James Bowen",
+          "trainer": "Mickey Bowen",
+          "trainer_rtf": "50",
+          "trainer_14": "1/14",
+          "last_run": "249",
+          "age": "5",
+          "sex": "gelding",
+          "form": "47-",
+          "lbs": "156",
+          "headgear": "",
+          "rpr": "92",
+          "ts": "42",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 78.0,
+          "_model_price": "20/1",
+          "_mkt_price": "18/1",
+          "_win_pct": 4.6,
+          "_edge": 3.2,
+          "_action": "WATCH"
+        },
+        {
+          "name": "Monsieur Fernand",
+          "or": 87,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "",
+          "draw": null,
+          "draw_adv": null,
+          "jockey": "NON-RUNNER",
+          "trainer": "Oliver Signy",
+          "trainer_rtf": "",
+          "trainer_14": "0/2",
+          "last_run": "64",
+          "age": "4",
+          "sex": "gelding",
+          "form": "06-",
+          "lbs": "150",
+          "headgear": "",
+          "rpr": "92",
+          "ts": "-",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 71.7,
+          "_model_price": "50/1",
+          "_mkt_price": "40/1",
+          "_win_pct": 2.0,
+          "_edge": -3.1,
+          "_action": "WATCH"
+        }
+      ],
+      "paceDynamic": "",
+      "scenarios": [],
+      "watchPoints": [],
+      "skipped": true
+    }
+  ]
+}
