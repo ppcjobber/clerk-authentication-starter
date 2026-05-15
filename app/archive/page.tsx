@@ -2619,7 +2619,7 @@ const styles = {
     fontFamily: "'DM Mono',monospace",
     fontSize: "0.72rem",
     padding: "9px 12px",
-    background: "rgba(255,255,255,0.04)",
+    background: "#0D1B2A",
     border: "1px solid rgba(255,255,255,0.1)",
     borderRadius: "5px",
     color: "var(--cream)",
@@ -2826,9 +2826,11 @@ export default function ArchivePage() {
             onChange={e => setCourseFilter(e.target.value)}
             style={{ ...styles.input, flex: "1 1 200px" }}
           >
-            <option value="">All courses</option>
+            <option value="" style={{ background: "#0D1B2A", color: "var(--cream)" }}>All courses</option>
             {courseOptions.map(c => (
-              <option key={c.slug} value={c.slug}>{c.name}</option>
+              <option key={c.slug} value={c.slug} style={{ background: "#0D1B2A", color: "var(--cream)" }}>
+                {c.name}
+              </option>
             ))}
           </select>
           <input
