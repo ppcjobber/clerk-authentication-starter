@@ -2047,6 +2047,23 @@ for course in target_courses:
             damp_map = dampen_field(horses=horses, rating_results_map=rr_map, pref_results_map=pref_map,
                                     pace_result=pace, field_avg_or=avg_or,
                                     step_up_trip_map={}, step_up_class_map={})
+ 
+            # ── Draw bias adjustment ──────────────────────────────
+            # Shifts projected_rating by the quality-controlled draw
+            # adjustment. Silent — not surfaced in UI. Feeds the EV calc.
+            _field_size = len(horses)
+            for _h in horses:
+                if _h.name not in damp_map:
+                    continue
+                _adj = _draw_adjustment(course, dist_f, _h.cloth_number, _field_size)
+                if _adj != 0.0:
+                    _dr = damp_map[_h.name]
+                    _dr.projected_rating = round(_dr.projected_rating + _adj, 2)
+                    _dr.band_low  = round(_dr.band_low  + _adj, 2)
+                    _dr.band_high = round(_dr.band_high + _adj, 2)
+                    print(f'    draw-adj: {_h.name[:24]:<24} draw={_h.cloth_number} {_adj:+.2f}lb')
+            # ──────────────────────────────────────────────────────
+ 
             ev_summary = calculate_ev(dampening_results=damp_map, odds_map=race_odds, race_name=race_name,
                                       field_avg_or=avg_or, pace_result=pace,
                                       race_grade=race_grade, distance_f=dist_f)
@@ -2102,6 +2119,123 @@ def _course_slug(course):
     slug = re.sub(r'-+', '-', slug).strip('-')
     return slug
 
+# ─────────────────────────────────────────────────────────────
+# Draw bias adjustments in lbs of rating.
+# Generated from 12 months of handicap data, controlled for horse quality.
+# Each value = mean(RPR - OR) for that draw third, normalised within race.
+# Generated: 2026-05-20  — RE-RUN THE NOTEBOOK QUARTERLY TO REFRESH
+# Cells: 50 (14 statistically significant at 95%)
+DRAW_BIAS = {
+    'ayr': {
+        'mile': {'L': -0.87, 'M': +0.27, 'H': +0.38, 'n': 42, 'sig': False},
+    },
+    'bath': {
+        'sprint': {'L': +3.04, 'M': -1.10, 'H': -1.26, 'n': 46, 'sig': True},
+        'mile': {'L': +0.86, 'M': +1.35, 'H': -1.60, 'n': 36, 'sig': False},
+    },
+    'beverley': {
+        'mile': {'L': +0.86, 'M': +1.59, 'H': -1.90, 'n': 31, 'sig': False},
+    },
+    'brighton': {
+        'mile': {'L': +0.88, 'M': +0.84, 'H': -1.30, 'n': 43, 'sig': False},
+    },
+    'carlisle': {
+        'mile': {'L': +0.01, 'M': +1.52, 'H': -1.23, 'n': 31, 'sig': False},
+    },
+    'catterick': {
+        'sprint': {'L': +3.17, 'M': -0.27, 'H': -2.07, 'n': 38, 'sig': True},
+    },
+    'chelmsford-aw': {
+        'sprint': {'L': +1.86, 'M': -1.41, 'H': -0.22, 'n': 67, 'sig': False},
+        'mile': {'L': +1.08, 'M': +1.46, 'H': -1.95, 'n': 75, 'sig': True},
+        'middle': {'L': -0.80, 'M': -0.45, 'H': +0.92, 'n': 39, 'sig': False},
+    },
+    'chepstow': {
+        'sprint': {'L': +1.14, 'M': -0.13, 'H': -0.56, 'n': 33, 'sig': False},
+        'mile': {'L': -1.52, 'M': +2.13, 'H': -0.64, 'n': 30, 'sig': False},
+    },
+    'doncaster': {
+        'sprint': {'L': -0.34, 'M': +0.55, 'H': -0.19, 'n': 39, 'sig': False},
+        'mile': {'L': +2.04, 'M': -0.19, 'H': -1.36, 'n': 55, 'sig': True},
+        'middle': {'L': -0.58, 'M': +1.55, 'H': -0.79, 'n': 33, 'sig': False},
+    },
+    'dundalk-aw': {
+        'mile': {'L': -0.19, 'M': +1.27, 'H': -0.80, 'n': 49, 'sig': False},
+        'middle': {'L': +1.41, 'M': +0.26, 'H': -1.01, 'n': 35, 'sig': False},
+    },
+    'gowran-park': {
+        'mile': {'L': +3.14, 'M': -2.09, 'H': -0.66, 'n': 32, 'sig': True},
+    },
+    'hamilton': {
+        'sprint': {'L': +0.95, 'M': -0.37, 'H': -0.36, 'n': 51, 'sig': False},
+    },
+    'haydock': {
+        'mile': {'L': +2.74, 'M': +0.89, 'H': -2.48, 'n': 36, 'sig': True},
+    },
+    'kempton-aw': {
+        'sprint': {'L': +3.10, 'M': -0.04, 'H': -2.41, 'n': 55, 'sig': True},
+        'mile': {'L': +0.84, 'M': +0.64, 'H': -1.16, 'n': 132, 'sig': True},
+        'middle': {'L': +1.23, 'M': -0.48, 'H': -0.51, 'n': 54, 'sig': False},
+    },
+    'leicester': {
+        'mile': {'L': +3.67, 'M': -0.29, 'H': -2.24, 'n': 34, 'sig': True},
+    },
+    'lingfield-aw': {
+        'sprint': {'L': -0.59, 'M': +0.41, 'H': +0.07, 'n': 96, 'sig': False},
+        'mile': {'L': -0.66, 'M': +0.35, 'H': +0.20, 'n': 125, 'sig': False},
+        'middle': {'L': -0.67, 'M': +1.10, 'H': -0.42, 'n': 76, 'sig': False},
+    },
+    'musselburgh': {
+        'mile': {'L': +0.82, 'M': -0.59, 'H': -0.12, 'n': 43, 'sig': False},
+    },
+    'newcastle-aw': {
+        'sprint': {'L': -0.28, 'M': -0.63, 'H': +0.74, 'n': 160, 'sig': False},
+        'mile': {'L': -1.11, 'M': +1.01, 'H': -0.04, 'n': 163, 'sig': False},
+        'middle': {'L': -2.06, 'M': -0.33, 'H': +1.68, 'n': 73, 'sig': True},
+    },
+    'newmarket': {
+        'mile': {'L': -0.84, 'M': -2.68, 'H': +2.77, 'n': 32, 'sig': False},
+    },
+    'newmarket-july': {
+        'mile': {'L': -0.92, 'M': +3.68, 'H': -2.01, 'n': 30, 'sig': False},
+    },
+    'nottingham': {
+        'sprint': {'L': -2.26, 'M': +0.12, 'H': +1.57, 'n': 31, 'sig': False},
+    },
+    'pontefract': {
+        'sprint': {'L': +1.50, 'M': +0.85, 'H': -1.75, 'n': 36, 'sig': False},
+    },
+    'redcar': {
+        'mile': {'L': +1.19, 'M': -1.30, 'H': +0.21, 'n': 35, 'sig': False},
+    },
+    'ripon': {
+        'sprint': {'L': -0.43, 'M': +1.62, 'H': -0.93, 'n': 32, 'sig': False},
+    },
+    'southwell-aw': {
+        'sprint': {'L': -0.21, 'M': +0.12, 'H': +0.06, 'n': 129, 'sig': False},
+        'mile': {'L': +0.15, 'M': +0.63, 'H': -0.65, 'n': 167, 'sig': False},
+        'middle': {'L': -1.35, 'M': +1.11, 'H': +0.06, 'n': 53, 'sig': False},
+        'staying': {'L': -0.96, 'M': +1.13, 'H': -0.28, 'n': 46, 'sig': False},
+    },
+    'thirsk': {
+        'sprint': {'L': -2.83, 'M': +0.42, 'H': +1.73, 'n': 35, 'sig': True},
+    },
+    'windsor': {
+        'sprint': {'L': +0.49, 'M': -1.27, 'H': +0.61, 'n': 53, 'sig': False},
+        'middle': {'L': +0.39, 'M': -0.67, 'H': +0.21, 'n': 37, 'sig': False},
+    },
+    'wolverhampton-aw': {
+        'sprint': {'L': +1.11, 'M': +0.37, 'H': -1.15, 'n': 161, 'sig': True},
+        'mile': {'L': -0.23, 'M': +0.71, 'H': -0.43, 'n': 244, 'sig': False},
+        'middle': {'L': +1.61, 'M': +0.18, 'H': -1.16, 'n': 47, 'sig': True},
+        'staying': {'L': +0.76, 'M': +1.80, 'H': -2.10, 'n': 36, 'sig': False},
+    },
+    'yarmouth': {
+        'sprint': {'L': +2.95, 'M': +0.30, 'H': -2.08, 'n': 42, 'sig': True},
+        'mile': {'L': +1.92, 'M': -0.30, 'H': -0.95, 'n': 46, 'sig': False},
+    },
+}
+
 _FLAT_BIAS = {
     'Chester':   {'sprint':('STRONG',['L'],72,8),'mile':('STRONG',['L'],58,14),'middle':('MODERATE',['L','M'],42,22),'staying':('MINIMAL',['M'],35,28)},
     'Ascot':     {'sprint':('MODERATE',['H'],28,48),'mile':('SLIGHT',['M'],34,32),'middle':('MINIMAL',['M'],33,33),'staying':('MINIMAL',['M'],33,33)},
@@ -2130,6 +2264,49 @@ def _draw_adv(draw, field_size, course, dist_f):
     if pos in fav: return 'FAVOURED'
     if ('L' in fav and pos=='H') or ('H' in fav and pos=='L'): return 'AGAINST'
     return 'NEUTRAL'
+
+def _draw_adjustment(course, dist_f, draw, field_size):
+    """
+    Return the lbs adjustment for a given draw, from the
+    quality-controlled bias model (DRAW_BIAS).
+ 
+    Non-significant cells with a large absolute value (>2 lbs) are
+    treated as noise and return 0.0 — only small suggestive nudges
+    and statistically significant cells are applied.
+ 
+    Returns 0.0 if no data for this course/distance.
+    """
+    if not draw or not field_size or draw < 1 or field_size < 4:
+        return 0.0
+ 
+    slug = _course_slug(course)
+    slug = slug.replace('-ire', '')   # bias data has (IRE) stripped from slugs
+ 
+    if dist_f <= 6.5:
+        band = 'sprint'
+    elif dist_f <= 9.5:
+        band = 'mile'
+    elif dist_f <= 12.5:
+        band = 'middle'
+    else:
+        band = 'staying'
+ 
+    cell = DRAW_BIAS.get(slug, {}).get(band)
+    if not cell:
+        return 0.0
+ 
+    if draw <= field_size / 3:
+        val = cell['L']
+    elif draw <= 2 * field_size / 3:
+        val = cell['M']
+    else:
+        val = cell['H']
+ 
+    # Safety filter: drop large non-significant values as likely noise
+    if not cell['sig'] and abs(val) > 2.0:
+        return 0.0
+ 
+    return val
 
 def _draw_bias_summary(course, dist_f):
     bias = _FLAT_BIAS.get(course,{}).get(_dist_band(dist_f))
