@@ -714,7 +714,6 @@ export default function MeetingPage({ params }: { params: Promise<{ slug: string
 
   if (error || !data) return (
     <>
-      <Nav />
       <div className="wrap" style={{ paddingTop: "140px", textAlign: "center" }}>
         <p style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.72rem",
           color: "rgba(245,240,232,0.4)" }}>Meeting not found.</p>
