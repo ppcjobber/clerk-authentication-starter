@@ -1,10 +1,7 @@
-import Nav from "@/components/Nav";
-import Footer from "@/components/Footer";
 
 export default function TermsPage() {
   return (
     <>
-      <Nav />
       <div className="wrap" style={{ maxWidth: "720px" }}>
 
         <div style={{ marginBottom: "40px", paddingBottom: "24px",
@@ -101,7 +98,6 @@ export default function TermsPage() {
 
         </div>
       </div>
-      <Footer />
     </>
   );
 }
