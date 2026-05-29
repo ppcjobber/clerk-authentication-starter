@@ -1,6 +1,4 @@
-import Nav from "@/components/Nav";
 import Link from "next/link";
-import Footer from "@/components/Footer";
 
 type Meeting = {
   slug: string;
@@ -109,7 +107,6 @@ export default async function Home() {
 
   return (
     <>
-      <Nav />
 
       {/* Hero */}
       <section style={{
