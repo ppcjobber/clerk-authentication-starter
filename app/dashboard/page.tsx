@@ -67,7 +67,6 @@ export default async function DashboardPage() {
         </div>
       </main>
       <LearnMore cards={DASHBOARD_CARDS} />
-      <Footer />
     </>
   );
 }
