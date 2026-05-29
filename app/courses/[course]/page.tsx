@@ -1,9 +1,7 @@
 "use client";
 
-import Nav from "@/components/Nav";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import Footer from "@/components/Footer";
 
 type Meeting = {
   slug: string;
@@ -84,7 +82,6 @@ export default function CoursePage({ params }: Props) {
   if (loading) {
     return (
       <>
-        <Nav />
         <div className="wrap" style={{ paddingTop: "140px", textAlign: "center" }}>
           <p style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.72rem",
             color: "rgba(245,240,232,0.4)" }}>Loading...</p>
@@ -95,7 +92,6 @@ export default function CoursePage({ params }: Props) {
 
   return (
     <>
-      <Nav />
       <div className="wrap">
 
         <div style={{ marginBottom: "40px", paddingBottom: "24px",
@@ -179,7 +175,6 @@ export default function CoursePage({ params }: Props) {
         )}
 
       </div>
-      <Footer />
     </>
   );
 }
