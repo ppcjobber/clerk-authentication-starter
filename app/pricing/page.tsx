@@ -93,7 +93,5 @@ export default function Pricing() {
           Payments processed securely by Stripe · Monthly subscription cancellable anytime
         </p>
       </div>
-
-    </>
   );
 }
