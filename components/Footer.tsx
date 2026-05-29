@@ -44,7 +44,7 @@ export default function Footer() {
             {[
               { href: "/archive",      label: "Meeting Archive" },
               { href: "/pricing",      label: "Pricing"         },
-              { href: "/how-it-works", label: "How It Works"    },
+              { href: "/method",       label: "Method"          },
               { href: "/about",        label: "About"           },
             ].map(l => (
               <Link key={l.href} href={l.href} style={{
