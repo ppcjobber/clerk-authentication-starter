@@ -4,6 +4,7 @@ import { ui } from "@clerk/ui";
 import Script from "next/script";
 import "./globals.css";
 import CookieBanner from "@/components/CookieBanner";
+import Nav from "@/components/Nav";
 
 export const metadata: Metadata = {
   title: "PaceMap — Race Shape Analysis",
@@ -45,6 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           `}</Script>
         </head>
         <body>
+          <Nav />
           <CookieBanner />
           <noscript>
             <iframe
