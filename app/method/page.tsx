@@ -30,6 +30,12 @@ const ARTICLES = [
     tagline: 'Going, trip and course preference are not yes-or-no. The honest read is when form is information about today and when it is not.',
     part: 'PART FOUR',
   },
+  {
+    slug: 'race-shape-before-runners',
+    title: 'Race shape before runners',
+    tagline: 'Race shape is not commentary written afterwards. It is a rating factor that can be modelled before the race runs.',
+    part: 'PART FIVE',
+  },
 ];
 
 export default function MethodIndex() {
