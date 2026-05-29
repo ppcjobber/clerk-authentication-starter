@@ -1,11 +1,8 @@
-import Nav from "@/components/Nav";
 import Link from "next/link";
-import Footer from "@/components/Footer";
 
 export default function ResponsibleGamblingPage() {
   return (
     <>
-      <Nav />
       <div className="wrap" style={{ maxWidth: "720px" }}>
 
         <div style={{ marginBottom: "40px", paddingBottom: "24px",
@@ -110,7 +107,6 @@ export default function ResponsibleGamblingPage() {
 
         </div>
       </div>
-      <Footer />
     </>
   );
 }
