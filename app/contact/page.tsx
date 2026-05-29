@@ -1,11 +1,8 @@
-import Nav from "@/components/Nav";
 import Link from "next/link";
-import Footer from "@/components/Footer";
 
 export default function ContactPage() {
   return (
     <>
-      <Nav />
       <div className="wrap" style={{ maxWidth: "720px" }}>
 
         {/* Header */}
@@ -116,7 +113,6 @@ export default function ContactPage() {
         </div>
 
       </div>
-      <Footer />
     </>
   );
 }
