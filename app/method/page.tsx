@@ -1,22 +1,22 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Method — How PaceMap Reads a Race',
-  description: 'A series of articles explaining the ANCHOR engine: the analytical layers behind PaceMap, one at a time.',
+  title: 'Method — PaceMap',
+  description: 'How PaceMap Reads a Race — articles on the ANCHOR engine, the analytical method behind PaceMap.',
 };
 
 const ARTICLES = [
   {
     slug: 'the-part-you-do-by-feel',
     title: 'The part you do by feel',
-    tagline: 'Most of the layered read is craft. One part of it is genuinely hard to do by hand, and that is what the machine is for.',
-    part: 'Part One',
+    tagline: 'Most of the layered read is craft. One part of it is genuinely hard to do by hand. That is what the engine is for.',
+    part: 'PART ONE',
   },
   {
     slug: 'what-the-draw-is-worth',
     title: 'What the draw is actually worth',
-    tagline: 'The standard draw guides conflate the stall with the quality of horse drawn there. Held quality constant, the picture changes.',
-    part: 'Part Two',
+    tagline: 'The standard draw guides conflate the stall with the quality drawn there. Held quality constant, the picture changes.',
+    part: 'PART TWO',
   },
 ];
 
@@ -24,108 +24,124 @@ export default function MethodIndex() {
   return (
     <main style={{
       minHeight: '100vh',
-      background: '#0D1B2A',
-      color: '#EFF3F6',
-      fontFamily: 'Raleway, -apple-system, BlinkMacSystemFont, sans-serif',
+      background: '#0A3D1F',
+      color: '#F5F0E8',
+      fontFamily: '"DM Sans", -apple-system, BlinkMacSystemFont, sans-serif',
     }}>
       <div style={{
-        maxWidth: 760,
+        maxWidth: 800,
         margin: '0 auto',
         padding: '80px 24px 120px',
       }}>
+        {/* Section label */}
         <div style={{
-          fontSize: 13,
+          fontFamily: '"DM Mono", monospace',
+          fontSize: 11,
           letterSpacing: '0.18em',
           textTransform: 'uppercase',
-          color: '#8AACBE',
-          marginBottom: 24,
+          color: '#C9A84C',
+          marginBottom: 28,
         }}>
           The Method
         </div>
 
+        {/* Page heading — Bebas Neue */}
         <h1 style={{
-          fontFamily: 'Poppins, sans-serif',
-          fontSize: 'clamp(36px, 6vw, 56px)',
-          fontWeight: 600,
-          lineHeight: 1.1,
-          margin: '0 0 32px',
-          letterSpacing: '-0.02em',
+          fontFamily: '"Bebas Neue", "Arial Black", Impact, sans-serif',
+          fontSize: 'clamp(56px, 9vw, 80px)',
+          fontWeight: 400,
+          lineHeight: 1.0,
+          margin: '0 0 36px',
+          letterSpacing: '0.01em',
+          textTransform: 'uppercase',
+          color: '#F5F0E8',
         }}>
           How PaceMap Reads a Race
         </h1>
 
+        {/* Intro */}
         <p style={{
           fontSize: 19,
-          lineHeight: 1.6,
-          color: '#EFF3F6',
-          marginBottom: 16,
-          maxWidth: 640,
+          lineHeight: 1.65,
+          fontWeight: 400,
+          color: '#F5F0E8',
+          marginBottom: 18,
+          maxWidth: 660,
         }}>
-          A series of articles describing the ANCHOR engine — the analytical method behind PaceMap — one layer at a time.
+          A series of articles on the ANCHOR engine — the analytical
+          method behind PaceMap — one layer at a time.
         </p>
 
         <p style={{
-          fontSize: 17,
-          lineHeight: 1.6,
-          color: '#8AACBE',
-          marginBottom: 64,
-          maxWidth: 640,
+          fontSize: 16,
+          lineHeight: 1.65,
+          color: 'rgba(245, 240, 232, 0.7)',
+          marginBottom: 72,
+          maxWidth: 660,
         }}>
-          New articles are added as the underlying analysis is done to the same evidence standard. This is a growing library, not a manifesto.
+          New articles are added as the underlying analysis is done to
+          the same evidence standard. A growing library, not a manifesto.
         </p>
 
+        {/* Article list */}
         <div style={{
-          borderTop: '1px solid rgba(138, 172, 190, 0.2)',
-          paddingTop: 8,
+          borderTop: '1px solid rgba(201, 168, 76, 0.25)',
         }}>
           {ARTICLES.map((article) => (
             <Link
               key={article.slug}
               href={`/method/${article.slug}`}
+              className="method-card"
               style={{
                 display: 'block',
-                padding: '32px 0',
-                borderBottom: '1px solid rgba(138, 172, 190, 0.2)',
+                padding: '36px 0',
+                borderBottom: '1px solid rgba(201, 168, 76, 0.25)',
                 textDecoration: 'none',
                 color: 'inherit',
-                transition: 'opacity 0.2s',
               }}
             >
               <div style={{
-                fontSize: 12,
+                fontFamily: '"DM Mono", monospace',
+                fontSize: 11,
                 letterSpacing: '0.14em',
                 textTransform: 'uppercase',
-                color: '#E8601C',
-                marginBottom: 10,
-                fontWeight: 600,
+                color: '#C9A84C',
+                marginBottom: 14,
               }}>
                 {article.part}
               </div>
+
               <h2 style={{
-                fontFamily: 'Poppins, sans-serif',
-                fontSize: 'clamp(24px, 3.5vw, 30px)',
-                fontWeight: 600,
-                lineHeight: 1.2,
-                margin: '0 0 12px',
-                color: '#EFF3F6',
-                letterSpacing: '-0.01em',
+                fontFamily: '"Bebas Neue", "Arial Black", Impact, sans-serif',
+                fontSize: 'clamp(32px, 5vw, 42px)',
+                fontWeight: 400,
+                lineHeight: 1.05,
+                margin: '0 0 14px',
+                color: '#F5F0E8',
+                letterSpacing: '0.015em',
+                textTransform: 'uppercase',
               }}>
                 {article.title}
               </h2>
+
               <p style={{
-                fontSize: 17,
-                lineHeight: 1.55,
-                color: '#8AACBE',
+                fontSize: 16,
+                lineHeight: 1.6,
+                color: 'rgba(245, 240, 232, 0.75)',
                 margin: 0,
                 maxWidth: 600,
               }}>
                 {article.tagline}
               </p>
+
               <div style={{
-                fontSize: 14,
-                color: '#E8601C',
-                marginTop: 16,
-                fontWeight: 500,
+                fontFamily: '"DM Mono", monospace',
+                fontSize: 11,
+                letterSpacing: '0.14em',
+                textTransform: 'uppercase',
+                color: '#C9A84C',
+                marginTop: 20,
+                fontWeight: 400,
               }}>
                 Read →
               </div>
@@ -133,6 +149,12 @@ export default function MethodIndex() {
           ))}
         </div>
       </div>
+
+      <style>{`
+        .method-card:hover h2 {
+          color: #E8CC7A !important;
+        }
+      `}</style>
     </main>
   );
 }
