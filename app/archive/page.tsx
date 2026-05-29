@@ -1,8 +1,6 @@
 "use client";
 
-import Nav from "@/components/Nav";
 import Link from "next/link";
-import Footer from "@/components/Footer";
 import { useMemo, useState } from "react";
 
 type Meeting = {
@@ -3229,7 +3227,6 @@ export default function ArchivePage() {
 
   return (
     <>
-      <Nav />
       <div className="wrap">
 
         {/* Header */}
@@ -3366,7 +3363,6 @@ export default function ArchivePage() {
         </section>
 
       </div>
-      <Footer />
     </>
   );
 }
