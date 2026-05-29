@@ -1,6 +1,5 @@
 "use client";
 
-import Nav from "@/components/Nav";
 import { useUser, SignUpButton } from "@clerk/nextjs";
 import { useState } from "react";
 
@@ -32,7 +31,6 @@ export default function Pricing() {
 
   return (
     <>
-      <Nav />
       <div className="wrap" style={{ maxWidth: "900px" }}>
         <div style={{ textAlign: "center", marginBottom: "52px" }}>
           <p style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.62rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--gold)", marginBottom: "10px" }}>Pricing</p>
@@ -96,10 +94,6 @@ export default function Pricing() {
         </p>
       </div>
 
-      <footer>
-        <span className="footer-brand">PaceMap</span>
-        <span className="footer-note">pacemap.co.uk · A Signalweight product<br />For informational purposes only · Not financial advice</span>
-      </footer>
     </>
   );
 }
