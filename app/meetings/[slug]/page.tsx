@@ -729,7 +729,6 @@ export default function MeetingPage({ params }: { params: Promise<{ slug: string
 
   return (
     <>
-      <Nav />
       <RaceNav races={data.races} />
       <div className="wrap">
         <div style={{ marginBottom: "28px", paddingBottom: "18px",
