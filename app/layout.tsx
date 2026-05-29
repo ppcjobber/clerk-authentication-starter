@@ -5,6 +5,7 @@ import Script from "next/script";
 import "./globals.css";
 import CookieBanner from "@/components/CookieBanner";
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "PaceMap — Race Shape Analysis",
@@ -57,6 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             />
           </noscript>
           {children}
+          <Footer />
         </body>
       </ClerkProvider>
     </html>
