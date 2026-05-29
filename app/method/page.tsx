@@ -24,6 +24,12 @@ const ARTICLES = [
     tagline: 'A finishing position is the answer to a question, not a description of a run. The in-running prose carries information the figures cannot.',
     part: 'PART THREE',
   },
+  {
+    slug: 'when-form-is-information',
+    title: 'When form is information',
+    tagline: 'Going, trip and course preference are not yes-or-no. The honest read is when form is information about today and when it is not.',
+    part: 'PART FOUR',
+  },
 ];
 
 export default function MethodIndex() {
