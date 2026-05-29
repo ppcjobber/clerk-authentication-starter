@@ -18,6 +18,12 @@ const ARTICLES = [
     tagline: 'The standard draw guides conflate the stall with the quality drawn there. Held quality constant, the picture changes.',
     part: 'PART TWO',
   },
+  {
+    slug: 'what-the-figures-dont-say',
+    title: "What the figures don't say",
+    tagline: 'A finishing position is the answer to a question, not a description of a run. The in-running prose carries information the figures cannot.',
+    part: 'PART THREE',
+  },
 ];
 
 export default function MethodIndex() {
