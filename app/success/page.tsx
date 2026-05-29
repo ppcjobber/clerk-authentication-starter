@@ -1,8 +1,6 @@
 "use client";
 
-import Nav from "@/components/Nav";
 import Link from "next/link";
-import Footer from "@/components/Footer";
 import { useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 
@@ -28,7 +26,6 @@ function PurchaseTracker() {
 export default function Success() {
   return (
     <>
-      <Nav />
       <Suspense fallback={null}>
         <PurchaseTracker />
       </Suspense>
@@ -46,7 +43,6 @@ export default function Success() {
           View Meetings
         </Link>
       </div>
-      <Footer />
     </>
   );
 }
