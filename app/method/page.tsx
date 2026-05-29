@@ -36,6 +36,12 @@ const ARTICLES = [
     tagline: 'Race shape is not commentary written afterwards. It is a rating factor that can be modelled before the race runs.',
     part: 'PART FIVE',
   },
+  {
+    slug: 'a-rating-is-a-sentence',
+    title: 'A rating is a sentence',
+    tagline: 'The Official Rating is a sentence compressed to a word. The engine keeps the structure — and that is what lets the other layers correct it.',
+    part: 'PART SIX',
+  },
 ];
 
 export default function MethodIndex() {
