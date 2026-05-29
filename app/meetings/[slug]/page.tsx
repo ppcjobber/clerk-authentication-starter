@@ -1,8 +1,6 @@
 "use client";
 
-import Nav from "@/components/Nav";
 import Link from "next/link";
-import Footer from "@/components/Footer";
 import RacePositionMap from "@/components/RacePositionMap";
 import { useUser } from "@clerk/nextjs";
 import { useEffect, useState, useRef } from "react";
@@ -707,7 +705,6 @@ export default function MeetingPage({ params }: { params: Promise<{ slug: string
 
   if (loading) return (
     <>
-      <Nav />
       <div className="wrap" style={{ paddingTop: "140px", textAlign: "center" }}>
         <p style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.72rem",
           color: "rgba(245,240,232,0.4)" }}>Loading race data…</p>
@@ -773,7 +770,6 @@ export default function MeetingPage({ params }: { params: Promise<{ slug: string
           <RaceCard key={i} race={race} hasAccess={hasAccess} meetingDate={data.date} />
         ))}
       </div>
-      <Footer />
     </>
   );
 }
