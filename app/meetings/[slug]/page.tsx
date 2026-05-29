@@ -764,9 +764,68 @@ export default function MeetingPage({ params }: { params: Promise<{ slug: string
           </p>
         </div>
 
+        {/* Method link — small mention above analysis */}
+        <div style={{ marginBottom: "24px", display: "flex", alignItems: "center",
+          gap: "8px", fontFamily: "'DM Mono',monospace", fontSize: "0.62rem",
+          letterSpacing: "0.04em", flexWrap: "wrap" }}>
+          <span style={{ color: "rgba(245,240,232,0.35)",
+            textTransform: "uppercase", letterSpacing: "0.1em" }}>
+            Built on ANCHOR
+          </span>
+          <span style={{ color: "rgba(245,240,232,0.2)" }}>·</span>
+          <Link href="/method/the-part-you-do-by-feel"
+            style={{ color: "var(--gold)", textDecoration: "none" }}>
+            Read the method behind this analysis →
+          </Link>
+        </div>
+
         {data.races.map((race, i) => (
           <RaceCard key={i} race={race} hasAccess={hasAccess} meetingDate={data.date} />
         ))}
+
+        {/* Method link — bottom block after analysis */}
+        <div style={{
+          marginTop: "48px",
+          padding: "28px 28px 26px",
+          background: "rgba(201,168,76,0.04)",
+          border: "1px solid rgba(201,168,76,0.18)",
+          borderRadius: "10px",
+        }}>
+          <p style={{
+            fontFamily: "'DM Mono',monospace",
+            fontSize: "0.6rem",
+            letterSpacing: "0.14em",
+            textTransform: "uppercase",
+            color: "var(--gold)",
+            marginBottom: "12px",
+          }}>
+            About this analysis
+          </p>
+          <p style={{
+            fontFamily: "'DM Sans',sans-serif",
+            fontSize: "0.85rem",
+            lineHeight: "1.7",
+            color: "rgba(245,240,232,0.7)",
+            marginBottom: "16px",
+            maxWidth: "640px",
+          }}>
+            Every race on PaceMap is read through the ANCHOR engine — a layered method
+            covering anchored private ratings, comment-parsed form, preference, pace
+            shape, draw bias and measured uncertainty. The analysis above is the output.
+          </p>
+          <Link href="/method/the-part-you-do-by-feel"
+            style={{
+              fontFamily: "'DM Mono',monospace",
+              fontSize: "0.7rem",
+              letterSpacing: "0.08em",
+              textTransform: "uppercase",
+              color: "var(--gold)",
+              textDecoration: "none",
+              fontWeight: 500,
+            }}>
+            Read the method behind this analysis →
+          </Link>
+        </div>
       </div>
     </>
   );
