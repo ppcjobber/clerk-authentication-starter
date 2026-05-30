@@ -1,8 +1,12 @@
 import ArticleLayout from '../_components/ArticleLayout';
 
 export const metadata = {
-  title: 'What the draw is actually worth — PaceMap',
-  description: 'How PaceMap measures draw bias controlled for horse quality, and what twelve months of data shows. Part Two of How PaceMap Reads a Race.',
+  title: "Draw Bias In UK Flat Racing — Measured Properly",
+  description: "Most draw bias guides confuse the stall with the quality of horses drawn there. Held quality constant, the picture changes. PaceMap's draw bias methodology, explained.",
+  openGraph: {
+    title: "What The Draw Is Actually Worth — Findings From 12 Months Of UK Racing",
+    description: "Standard draw guides conflate stall position with the quality of horses drawn there. PaceMap quality-controls the data — and finds the real picture is different.",
+  },
 };
 
 export default function Article2() {
