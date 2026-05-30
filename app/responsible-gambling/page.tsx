@@ -1,5 +1,10 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Responsible Gambling — Support & Resources",
+  description: "PaceMap publishes analysis, not tips. Resources for gambling support including GamCare, BeGambleAware and GamStop. Must be 18+.",
+};
+
 export default function ResponsibleGamblingPage() {
   return (
     <>
