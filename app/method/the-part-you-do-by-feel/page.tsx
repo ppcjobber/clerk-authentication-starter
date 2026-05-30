@@ -1,8 +1,12 @@
 import ArticleLayout from '../_components/ArticleLayout';
 
 export const metadata = {
-  title: 'The part you do by feel — PaceMap',
-  description: 'How PaceMap measures the strength of its own conviction. Part One of How PaceMap Reads a Race.',
+  title: "Confidence In Race Ratings — The PaceMap Method",
+  description: "Most form reading produces a number. PaceMap also produces the confidence band around it — measured uncertainty, in proportion to the evidence underneath the rating.",
+  openGraph: {
+    title: "The Part You Do By Feel — How PaceMap Measures Confidence",
+    description: "The formal version of the shrug. How PaceMap puts a number on the confidence in every rating it produces.",
+  },
 };
 
 export default function Article1() {
