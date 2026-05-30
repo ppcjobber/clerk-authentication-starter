@@ -1,5 +1,14 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "About PaceMap — The Story Behind The ANCHOR Engine",
+  description: "PaceMap is built by Andy Jobber, an analyst combining sixteen years of data work with horse racing form study. The ANCHOR engine is the result.",
+  openGraph: {
+    title: "About PaceMap — Built On Data, Not Hunches",
+    description: "The story behind the ANCHOR engine — and the person who built it.",
+  },
+};
+
 export default function AboutPage() {
   return (
     <>
