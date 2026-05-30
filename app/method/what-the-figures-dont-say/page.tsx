@@ -1,8 +1,12 @@
 import ArticleLayout from '../_components/ArticleLayout';
 
 export const metadata = {
-  title: "What the figures don't say — PaceMap",
-  description: 'How PaceMap reads in-running comments and folds them into the rating. Part Three of How PaceMap Reads a Race.',
+  title: "How PaceMap Reads Race Comments — Form Signal Parsing",
+  description: "Finishing positions don't carry information about how a race was run. PaceMap reads the in-running comments on every recent run for every runner — and weights ratings accordingly.",
+  openGraph: {
+    title: "What The Figures Don't Say — Why PaceMap Reads The Prose",
+    description: "A horse beaten three lengths having stayed on well from the back did not run a three-length-beaten race. The figure doesn't carry that. The comment does.",
+  },
 };
 
 export default function Article3() {
