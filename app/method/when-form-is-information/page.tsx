@@ -1,8 +1,12 @@
 import ArticleLayout from '../_components/ArticleLayout';
 
 export const metadata = {
-  title: 'When form is information — PaceMap',
-  description: 'How PaceMap handles going, trip and course preference — and the difference between evidence against conditions and absence of evidence. Part Four of How PaceMap Reads a Race.',
+  title: "Going, Trip & Course Preference In Horse Racing Ratings",
+  description: "Going suitability isn't binary. PaceMap separates evidence against today's conditions from absence of evidence about them — and treats the two very differently.",
+  openGraph: {
+    title: "When Form Is Information — And When It Isn't",
+    description: "Form built in one place lies about another place. How PaceMap handles preference — going, trip, course shape — as a confidence question, not yes-or-no.",
+  },
 };
 
 export default function Article4() {
