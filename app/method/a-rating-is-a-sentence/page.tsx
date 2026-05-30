@@ -1,8 +1,12 @@
 import ArticleLayout from '../_components/ArticleLayout';
 
 export const metadata = {
-  title: 'A rating is a sentence — PaceMap',
-  description: 'The foundation underneath the method. How ANCHOR rebuilds the rating from the runs that produced it, and where it diverges from the Official Rating. Part Six of How PaceMap Reads a Race.',
+  title: "How PaceMap Rates Horses — The ANCHOR Engine Explained",
+  description: "Official Ratings compress a chain of judgements into a single number. PaceMap rebuilds the rating run by run, keeps the structure, and shows where the engine diverges from the OR.",
+  openGraph: {
+    title: "A Rating Is A Sentence — How PaceMap Builds Its Ratings",
+    description: "The Official Rating is a sentence pretending to be a word. PaceMap's anchored private rating keeps the structure — and that is what lets the other layers correct it.",
+  },
 };
 
 export default function Article6() {
