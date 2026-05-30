@@ -3,11 +3,6 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
-export const metadata = {
-  title: "Meeting Archive — Every UK & Irish Card Analysed",
-  description: "Browse every UK and Irish horse racing meeting analysed by PaceMap. Race shape, pace scenarios, watch points — searchable by course and date.",
-};
-
 type Meeting = {
   slug: string;
   date: string;
