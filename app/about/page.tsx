@@ -28,19 +28,38 @@ export default function AboutPage() {
           </h1>
           <p style={{ fontSize: "0.82rem", color: "rgba(245,240,232,0.5)",
             lineHeight: "1.7", maxWidth: "540px" }}>
-            PaceMap is a race shape analysis tool for UK and Irish horse racing. It models
-            how each race is likely to be run — before it happens — and publishes that
-            analysis the evening before racing.
+            PaceMap is a race shape analysis tool for British and Irish horse racing,
+            powered by an engine called ANCHOR. The analysis is published the evening
+            before racing, every race, every meeting.
           </p>
         </div>
 
-        {/* What it is */}
-        <div style={{ marginBottom: "36px" }}>
+        {/* What PaceMap is and isn't */}
+        <div style={{ marginBottom: "36px", paddingBottom: "36px",
+          borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
+          <h2 style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: "1.1rem",
+            color: "var(--gold)", letterSpacing: "0.06em", marginBottom: "16px" }}>
+            No tips. No selections. Deliberately.
+          </h2>
           <p style={{ fontSize: "0.82rem", color: "rgba(245,240,232,0.55)",
             lineHeight: "1.85", marginBottom: "12px" }}>
-            No tips. No selections. No predictions about who will win. Just structured,
-            data-driven context about how a race will unfold tactically, and which running
-            style profiles that shape favours.
+            PaceMap publishes context, not advice. The engine reads each race, classifies
+            running styles, models the likely shape, weighs the form against today&apos;s
+            conditions, and produces a private rating for every horse alongside a measure
+            of how confident it is in that rating.
+          </p>
+          <p style={{ fontSize: "0.82rem", color: "rgba(245,240,232,0.55)",
+            lineHeight: "1.85", marginBottom: "12px" }}>
+            What it does not do is turn that analysis into a selection. There is no
+            tipping line, no nap of the day, no recommended stake. That is a choice, not
+            an oversight. The job of the engine is to be honest about what it knows and
+            transparent about what it does not. The job of the reader is to decide what
+            to do with the analysis.
+          </p>
+          <p style={{ fontSize: "0.82rem", color: "rgba(245,240,232,0.55)",
+            lineHeight: "1.85" }}>
+            The most useful thing a tool like this can be is rigorous and unbiased. The
+            moment it starts producing selections, it stops being either.
           </p>
         </div>
 
@@ -53,29 +72,60 @@ export default function AboutPage() {
           </h2>
           <p style={{ fontSize: "0.82rem", color: "rgba(245,240,232,0.55)",
             lineHeight: "1.85", marginBottom: "12px" }}>
-            PaceMap is built and run by Andy Jobber, based in Cheshire.
+            PaceMap is built and run by Andy Jobber, based in Cheshire. Mathematics
+            graduate from the University of Liverpool, sixteen years working in data and
+            digital — most of it spent finding signal in noisy commercial data for
+            clients who needed decisions made from it.
           </p>
           <p style={{ fontSize: "0.82rem", color: "rgba(245,240,232,0.55)",
             lineHeight: "1.85", marginBottom: "12px" }}>
-            I&apos;ve followed horse racing since 2007, running my own form analysis and
-            chasing the same question most serious followers end up asking — is there a
-            systematic way to get ahead of what&apos;s going to happen, rather than
-            reacting to it after the fact.
+            I&apos;ve followed horse racing since 2007. The question that drew me to it
+            is the same one every serious follower ends up asking — is there a
+            systematic way to get ahead of what is about to happen, rather than
+            explaining it after the fact. For years I read form by hand. Eventually I
+            started building tools to do the parts that did not need a human.
           </p>
           <p style={{ fontSize: "0.82rem", color: "rgba(245,240,232,0.55)",
             lineHeight: "1.85", marginBottom: "12px" }}>
-            My professional background is in data and digital — over a decade working in
-            paid search, SEO and commercial roles at digital agencies, where the job was
-            always the same: find the signal in noisy data and turn it into something
-            actionable.
+            ANCHOR is what came out of that. It is a structured method for reading a
+            race the way a sharp form student would, but at the scale a full afternoon
+            of racing actually requires — every comment on every recent run for every
+            runner, every preference axis, every plausible race shape, dampened by the
+            confidence the evidence supports.
           </p>
           <p style={{ fontSize: "0.82rem", color: "rgba(245,240,232,0.55)",
             lineHeight: "1.85" }}>
-            PaceMap is where those two things meet. The pace analysis framework it runs on
-            took a long time to build and test. The goal was always the same — a
-            repeatable, data-driven way to understand race shape before the off, not a gut
-            feel dressed up in numbers.
+            The engine took a long time to build and test. The goal was always the same.
+            A repeatable, data-driven way to understand race shape before the off — not
+            a gut feel dressed up in numbers.
           </p>
+        </div>
+
+        {/* Read the method */}
+        <div style={{ marginBottom: "40px", padding: "24px 28px",
+          background: "rgba(201,168,76,0.05)",
+          border: "1px solid rgba(201,168,76,0.18)",
+          borderRadius: "10px" }}>
+          <p style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.6rem",
+            letterSpacing: "0.12em", textTransform: "uppercase",
+            color: "var(--gold)", marginBottom: "10px" }}>
+            Next
+          </p>
+          <p style={{ fontSize: "0.82rem", color: "rgba(245,240,232,0.65)",
+            lineHeight: "1.75", marginBottom: "14px", maxWidth: "560px" }}>
+            The six analytical layers of the engine — anchored ratings, parsed form,
+            preference, pace shape, dampening and structural factors — are explained in
+            full at <Link href="/method" style={{ color: "var(--gold)",
+              textDecoration: "none" }}>The Method</Link>. Each layer has a dedicated
+            article describing what it does, why it matters and where the engine
+            diverges from how a single-number rating would handle the same horse.
+          </p>
+          <Link href="/method"
+            style={{ fontFamily: "'DM Mono',monospace", fontSize: "0.7rem",
+              letterSpacing: "0.08em", textTransform: "uppercase",
+              color: "var(--gold)", textDecoration: "none", fontWeight: 500 }}>
+            Read The Method →
+          </Link>
         </div>
 
         {/* Footer links */}
@@ -83,7 +133,7 @@ export default function AboutPage() {
           borderTop: "1px solid rgba(255,255,255,0.06)",
           display: "flex", gap: "24px", flexWrap: "wrap" }}>
           {[
-            { label: "How It Works", href: "/how-it-works" },
+            { label: "Method", href: "/method" },
             { label: "Pricing", href: "/pricing" },
             { label: "Contact", href: "/contact" },
           ].map(l => (
