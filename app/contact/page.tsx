@@ -1,5 +1,10 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Contact PaceMap",
+  description: "Get in touch with PaceMap — questions, feedback, partnership enquiries or method discussion.",
+};
+
 export default function ContactPage() {
   return (
     <>
