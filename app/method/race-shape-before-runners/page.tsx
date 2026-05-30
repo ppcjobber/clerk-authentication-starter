@@ -1,8 +1,12 @@
 import ArticleLayout from '../_components/ArticleLayout';
 
 export const metadata = {
-  title: 'Race shape before runners — PaceMap',
-  description: 'How PaceMap reads race shape as a rating factor, not commentary. The order of operations changes which horses come out on top. Part Five of How PaceMap Reads a Race.',
+  title: "Pace Analysis In Horse Racing — How Race Shape Moves Ratings",
+  description: "Race shape is not commentary written afterwards. PaceMap classifies it before the runners leave the stalls — and treats it as a rating factor, not a narrative.",
+  openGraph: {
+    title: "Race Shape Before Runners — Pace As A Rating Factor",
+    description: "The race shape that explains a result could nearly always be read off the runners before the race. PaceMap's pace methodology, explained.",
+  },
 };
 
 export default function Article5() {
