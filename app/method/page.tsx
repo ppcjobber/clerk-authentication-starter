@@ -1,8 +1,12 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Method — PaceMap',
-  description: 'How PaceMap Reads a Race — articles on the ANCHOR engine, the analytical method behind PaceMap.',
+  title: "The Method — How PaceMap Reads A Race",
+  description: "Six analytical layers, applied every race, every meeting. The method behind the ANCHOR engine, explained in detail — from anchored ratings to dampening.",
+  openGraph: {
+    title: "How PaceMap Reads A Race — The Method Behind The Engine",
+    description: "Six layers, one method. The analytical reasoning behind every PaceMap analysis, written up by the person who built it.",
+  },
 };
 
 const ARTICLES = [
