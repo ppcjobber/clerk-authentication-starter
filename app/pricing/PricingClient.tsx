@@ -3,7 +3,7 @@
 import { useUser, SignUpButton } from "@clerk/nextjs";
 import { useState } from "react";
 
-export default function Pricing() {
+export default function PricingClient() {
   const { isSignedIn } = useUser();
   const [loading, setLoading] = useState<"dayPass" | "monthly" | null>(null);
 
