@@ -1,5 +1,14 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "PaceMap: Race Shape Analysis For UK & Irish Racing",
+  description: "Race shape, draw bias, dampening — all measured. Published every evening for the next day's UK and Irish horse racing. Built on the ANCHOR engine.",
+  openGraph: {
+    title: "PaceMap — Race shape analysis for every UK & Irish meeting",
+    description: "Built on the ANCHOR engine. Anchored ratings, parsed form, preference, pace, draw bias, dampening — every race, every meeting, published evening before.",
+  },
+};
+
 type Meeting = {
   slug: string;
   course: string;
