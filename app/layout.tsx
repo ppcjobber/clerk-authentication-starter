@@ -9,10 +9,10 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "PaceMap — Race Shape Analysis",
-  description: "Pace maps for every UK & Irish horse racing meeting.",
+  description: "Race shape analysis for UK and Irish horse racing. Anchored ratings, draw bias and pace, published every evening on the ANCHOR engine.",
   openGraph: {
     title: "PaceMap — Race Shape Analysis",
-    description: "Pace maps for every UK & Irish horse racing meeting.",
+    description: "Race shape analysis for UK and Irish horse racing. Anchored ratings, draw bias and pace, published every evening on the ANCHOR engine.",
     url: "https://pacemap.co.uk",
     siteName: "PaceMap",
     locale: "en_GB",
