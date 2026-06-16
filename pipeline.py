@@ -2518,7 +2518,7 @@ def _call_claude(prompt, max_tokens=2800):
         resp = requests.post(
             'https://api.anthropic.com/v1/messages',
             headers={'Content-Type':'application/json','x-api-key':ANTHROPIC_KEY,'anthropic-version':'2023-06-01'},
-            json={'model':'claude-sonnet-4-20250514','max_tokens':max_tokens,'messages':[{'role':'user','content':prompt}]})
+            json={'model':'claude-sonnet-4-6','max_tokens':max_tokens,'messages':[{'role':'user','content':prompt}]})
         data = resp.json()
         if 'error' in data:
             err_type = data['error'].get('type','') if isinstance(data['error'],dict) else str(data['error'])
