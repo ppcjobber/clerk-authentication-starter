@@ -2466,6 +2466,37 @@ def _build_pace_dynamic(runners, style_summary, ev, meta):
                 'true_style':'hold up', 'mapped_to':'midfield',
                 'reason':'more hold-up types than the map shows at the rear'}
 
+    # ── Reverse-fill: pull rear midfield into hold-up for a natural shape ──
+    # A field with zero/thin hold-up runners reads unnaturally. Aim for a lean
+    # rear (~15% of field). We pick the horses LEAST likely to want a forward
+    # spot — combining low projected rating, low OR, any latent hold-up/midfield
+    # tendency, and a closer's finish profile (finish_type 'S') as a speed proxy
+    # when no speed rating is available. Pulled horses are recorded as mapped
+    # into hold up, which the style-fit step then treats as out-of-role.
+    target_hold = max(1, round(field_size * 0.15))
+    if len(holdup_names) < target_hold and midfield_names:
+        proj_by_name = {r['name']: (r.get('_projected') or r.get('or', 0) or 0) for r in runners}
+        def _holdup_fit(name):
+            s = style_summary.get(name, {}) if style_summary else {}
+            sc = s.get('sc', {'L':0,'P':0,'M':0,'H':0}); tot = sum(sc.values()) or 1
+            proj = proj_by_name.get(name, 0)
+            # higher score = better fit to drop back. Lower projected/OR -> more likely.
+            weak = -proj  # weaker horses drop back first
+            latent = (sc.get('H',0) + 0.5*sc.get('M',0)) / tot  # latent rear tendency
+            closer = 1.0 if s.get('finish_type') == 'S' else 0.0  # speed/finish proxy
+            return weak + latent*8 + closer*5
+        # candidates = current midfield (already includes unknowns + any overflow), excluding promoted leader later
+        gap = target_hold - len(holdup_names)
+        ranked = sorted(midfield_names, key=_holdup_fit, reverse=True)
+        pull = ranked[:gap]
+        for n in pull:
+            midfield_names.remove(n); holdup_names.append(n)
+            s = style_summary.get(n, {}) if style_summary else {}
+            true_style = {'L':'front runner','P':'prominent','M':'midfield','H':'hold up'}.get(s.get('style_code','U'),'midfield')
+            redistributed[n] = {
+                'true_style': true_style, 'mapped_to':'hold up',
+                'reason':'field is light on hold-up types, so the least pace-committed midfielders are shown at the rear'}
+
     if not leader_names:
         if prominent_names: promoted = prominent_names[0]; prominent_names = prominent_names[1:]; leader_names = [promoted]
         else:
@@ -2505,6 +2536,32 @@ def _build_pace_dynamic(runners, style_summary, ev, meta):
             redis_note = (' Note: this field contains more pace than the map can place — '
                           '{}{} are genuine prominent/hold-up types shown in midfield because '
                           'they are unlikely to get their natural position in this race shape.').format(shown, more)
+
+    # ── Style-fit dampener (does NOT touch _projected) ────────
+    # Each horse gets a multiplier in [0,1] reflecting how well its MAPPED
+    # position matches its natural running style. A horse racing out of role
+    # has its in-scenario winning chance discounted; the engine rating is
+    # untouched. Mild calibration: worst case (confirmed style forced into the
+    # opposite role) keeps ~0.80. The narrative reads _style_fit to weight shapes.
+    pos_of = {}
+    for n in leader_names: pos_of[n] = 'L'
+    for n in prominent_names: pos_of[n] = 'P'
+    for n in midfield_names: pos_of[n] = 'M'
+    for n in holdup_names: pos_of[n] = 'H'
+    # distance between style codes on the pace spectrum L<P<M<H
+    order = {'L':0,'P':1,'M':2,'H':3}
+    for r in runners:
+        name = r['name']; s = style_summary.get(name, {}) if style_summary else {}
+        natural = s.get('style_code','U'); mapped = pos_of.get(name, 'M')
+        if natural == 'U' or natural not in order or mapped not in order:
+            r['_style_fit'] = 1.0; continue
+        gap = abs(order[natural] - order[mapped])
+        # 0 gap = perfect (1.0); each step costs ~0.10, so max gap (3) -> ~0.80 floor.
+        # confirmed-style horses (>=70% one style) take the full step cost; versatile horses half.
+        sc = s.get('sc',{'L':0,'P':0,'M':0,'H':0}); tot = sum(sc.values()) or 1
+        conviction = (sc.get(natural,0)/tot)
+        step = 0.0667 * (0.5 + conviction)  # ~0.10 for confirmed, ~0.05 for marginal
+        r['_style_fit'] = round(max(0.80, 1.0 - gap*step), 3)
 
     return dynamic + congestion + redis_note, {
         'n_leads':n_leads,'n_prom':n_prom,'n_mid':n_mid,'n_hold':n_hold,
@@ -2553,6 +2610,8 @@ def _narrative_prompt(meta, ev, runners, going_report, is_flat,
         if redis:
             redis_str = ' [REDISTRIBUTED: true {} \u2014 mapped to {} because {}]'.format(
                 redis['true_style'], redis['mapped_to'], redis['reason'])
+        fit = r.get('_style_fit', 1.0)
+        fit_str = '' if fit >= 0.999 else ' [STYLE_FIT={:.2f}: racing out of role, discount its chance in shapes that need this position]'.format(fit)
         draw_str = ''
         if is_flat and r.get('draw'): draw_str = ' draw={}({})'.format(r['draw'], r.get('draw_adv',''))
         jockey = r.get('jockey','') or ''; trainer = r.get('trainer','') or ''
@@ -2589,9 +2648,9 @@ def _narrative_prompt(meta, ev, runners, going_report, is_flat,
                 gp = sum(1 for r2 in going_runs if r2.position and r2.position <= 3)
                 hist_str += ' sim-going:{}/{} {}W{}P'.format(len(going_runs), len(horse_obj.runs), gw, gp)
         spot_str = '\n    SP: {}'.format(spotlight[:160]) if spotlight else ''
-        runner_lines.append('  {:<26} OR={:<4} style={} going={}{}{}{}{}{}{}'.format(
+        runner_lines.append('  {:<26} OR={:<4} style={} going={}{}{}{}{}{}{}{}'.format(
             name, r.get('or','--'), s.get('style_code','U'), s.get('going_flag','?'),
-            flag, redis_str, draw_str, extras_str, hist_str, spot_str))
+            flag, redis_str, fit_str, draw_str, extras_str, hist_str, spot_str))
     runners_block = '\n'.join(runner_lines)
     draw_note = ''
     if is_flat:
@@ -2622,6 +2681,20 @@ def _narrative_prompt(meta, ev, runners, going_report, is_flat,
         'the field holds more front-running or prominent types than can all get their position, and name '
         'which are most likely to actually secure it. '
         'Be direct. No hedging.]\n\n'
+        'PROBABILITY RULES for the four scenarios below:\n'
+        '- The four scenarios are DISTINCT race shapes, not hedges. Probabilities must sum to roughly 100.\n'
+        '- Commit to the most likely shape. The lead scenario should normally carry 45-70%. '
+        'When the pace setup is clear-cut, it SHOULD exceed 70%. Do NOT anchor every race around 45-50% — '
+        'that is a hedge, not an analysis. If the data points one way, say so with conviction.\n'
+        '- WORKED EXAMPLE: a lone, uncontested, Group-class front-runner who can dictate and quicken clear '
+        'is NOT a 45% lead scenario — that is a 60-72% scenario, with the remaining weight split across the '
+        'less likely shapes. Reserve sub-50% lead scenarios for races that are genuinely open (no dominant '
+        'pace figure, several equally-plausible shapes).\n'
+        '- A scenario that depends on horses racing OUT OF ROLE must carry LOWER probability. If the horses '
+        'who would win a given shape are tagged [REDISTRIBUTED] or [STYLE_FIT] in the runner list, that race '
+        'shape is less likely to deliver — discount it and move that weight to the dominant shape.\n'
+        '- Example: if "closers pounce late" depends on hold-up horses that are really front-runners pushed back, '
+        'that scenario should be markedly less likely, because those horses are not true hold-up types.\n\n'
         '%%SCENARIOS%%\n'
         'SCENARIO_A|[3-5 word title]|[probability 0-100]|[one-line trigger starting with "If..."]|'
         '[2 sentences: how it unfolds and why this profile benefits]|[winner1,winner2]|[other1,other2]\n'
@@ -2632,11 +2705,15 @@ def _narrative_prompt(meta, ev, runners, going_report, is_flat,
         '[horse_name]|[one concise sentence covering: running style, jockey/trainer angle if relevant, '
         'going or distance concern, headgear, days since last run if notable, or key tactical factor]\n'
         '...one line per runner, all runners\n'
-        'HONESTY RULE: If a runner is tagged [REDISTRIBUTED] in the runner list, its note MUST state the '
-        'horse\'s true running style first, then explain the shown map position as a consequence of the '
-        'race shape — e.g. "a natural front-runner, but with several confirmed leaders here is likely to be '
-        'taken back into midfield". NEVER describe a redistributed horse as though the shown position were '
-        'its natural style.\n\n'
+        'HONESTY RULE: If a runner is tagged [REDISTRIBUTED] in the runner list, the note must still be '
+        'HONEST about its true running style — never describe the shown map position as though it were the '
+        'horse\'s natural style. BUT: lead the note with the horse\'s actual form/angle (trainer, going, '
+        'trip, jockey, headgear), and mention the redistribution only as a brief secondary clause. '
+        'VARY the wording every time — do NOT reuse a stock phrase like "a natural prominent racer mapped to '
+        'midfield because...". Across a race with several redistributed horses, each note must read differently: '
+        'change the sentence structure, the verb, and where the style point sits. The redistribution is context, '
+        'not the headline. If a runner is tagged [STYLE_FIT], let that temper how strongly you rate its chance '
+        'without making it the focus of the note.\n\n'
         '%%WATCH%%\n'
         '[severity: danger/warn/info]|[one concrete sentence naming specific horse(s) and what to watch]\n'
         '...3-5 watch points total\n\n'
@@ -2664,12 +2741,19 @@ def _parse_narrative(raw, runners):
         m = re.search(pat, scen_block, re.DOTALL)
         if not m: continue
         parts = [p.strip() for p in m.group(1).split('|')]
-        if len(parts) < 6: continue
+        if len(parts) < 5: continue
         try: prob = int(re.sub(r'[^0-9]','',parts[1]))
         except: prob = 25
-        winners = [h.strip() for h in parts[4].split(',') if h.strip()]
-        others  = [h.strip() for h in parts[5].split(',') if h.strip()]
-        scenarios.append({'label':letter,'title':parts[0],'prob':prob,'trigger':parts[2],'body':parts[3],'winners':winners,'others':others})
+        if len(parts) >= 7:
+            trigger, body, win_i, oth_i = parts[2], parts[3], 4, 5
+        elif len(parts) == 6:
+            # model merged trigger+body into one field; split heuristically, keep last two as winners/others
+            trigger, body, win_i, oth_i = parts[2], parts[2], 4, 5
+        else:  # exactly 5: title|prob|merged|winners|others
+            trigger, body, win_i, oth_i = parts[2], parts[2], 3, 4
+        winners = [h.strip() for h in parts[win_i].split(',') if h.strip()]
+        others  = [h.strip() for h in parts[oth_i].split(',') if h.strip()]
+        scenarios.append({'label':letter,'title':parts[0],'prob':prob,'trigger':trigger,'body':body,'winners':winners,'others':others})
     notes_map = {}
     for line in _section(raw, 'NOTES').split('\n'):
         line = line.strip()
