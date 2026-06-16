@@ -2904,6 +2904,7 @@ def publish_meeting(meeting_results, course, race_date_str, going_report=None, g
                 prompt = _narrative_prompt(meta, ev, runners, going_report, is_flat,
                                            style_summary, pd_str, pace_info, horses_list=horses_list)
                 raw = _call_claude(prompt); time.sleep(8)
+                print('RAW_OUTPUT_START\n' + raw + '\nRAW_OUTPUT_END')
                 pace_dynamic_str, scenarios, notes_map, watch_points = _parse_narrative(raw, runners)
                 for r in runners: r['note'] = notes_map.get(r['name'],'')
                 print('         done ({} scenarios, {} watch points)'.format(len(scenarios), len(watch_points)))
