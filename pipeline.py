@@ -2570,6 +2570,54 @@ def _build_pace_dynamic(runners, style_summary, ev, meta):
         'redistributed':redistributed,
     }
 
+def _lead_scenario_range(pace_info, field_size):
+    """Compute a suggested probability BAND (low, high) for the most-likely race
+    shape, derived from the actual pace data so it varies race to race and the
+    model cannot anchor on a fixed number. Clear races -> high, narrow band;
+    messy/contested races -> lower, wider band. The model picks the exact figure
+    within this band using the qualitative read code can't see.
+
+    Weighted factors (all already computed in pace_info):
+      - n_leads: pace clarity. 1 lone leader = predictable; 0 or 3+ = uncertain.
+      - field_size: small fields are more predictable than big cavalry charges.
+      - pace congestion: n_prom relative to how many prominent spots exist.
+      - out-of-role count: redistributed horses + the disruption they imply.
+    """
+    n_leads = pace_info.get('n_leads', 0)
+    n_prom  = pace_info.get('n_prom', 0)
+    redistributed = pace_info.get('redistributed', {}) or {}
+    fs = max(1, field_size or 1)
+
+    base = 50.0  # neutral starting conviction for the dominant shape
+
+    # 1) Pace clarity from number of confirmed leaders (weight ~ +/-14)
+    if   n_leads == 1: base += 14      # lone uncontested leader = most predictable
+    elif n_leads == 2: base += 4       # two leaders, still a defined contest
+    elif n_leads == 0: base -= 10      # no confirmed leader = sprint lottery
+    else:              base -= 8       # 3+ leaders = pace meltdown, unpredictable
+
+    # 2) Field size (weight ~ +/-10). Small fields predictable, big ones not.
+    if   fs <= 7:  base += 10
+    elif fs <= 11: base += 4
+    elif fs <= 16: base -= 2
+    elif fs <= 20: base -= 7
+    else:          base -= 11          # 21+ runner scrambles
+
+    # 3) Pace congestion: prominent types beyond what the front can hold (weight ~ -12)
+    prom_capacity = max(2, round(fs * 0.40))
+    congestion = max(0, n_prom - prom_capacity)
+    base -= min(12, congestion * 3)
+
+    # 4) Out-of-role disruption: each redistributed horse adds uncertainty (weight ~ -10)
+    base -= min(10, len(redistributed) * 2)
+
+    centre = max(38.0, min(78.0, base))
+    # Band WIDTH narrows when the race is clear (high centre), widens when open.
+    half = 6.0 if centre >= 64 else (8.0 if centre >= 52 else 11.0)
+    low  = int(round(max(35, centre - half)))
+    high = int(round(min(82, centre + half)))
+    return low, high
+
 def _call_claude(prompt, max_tokens=2800):
     for attempt in range(4):
         resp = requests.post(
@@ -2587,6 +2635,7 @@ def _call_claude(prompt, max_tokens=2800):
 
 def _narrative_prompt(meta, ev, runners, going_report, is_flat,
                       style_summary=None, pace_dynamic_str=None, pace_info=None, horses_list=None):
+    _lead_lo, _lead_hi = _lead_scenario_range(pace_info or {}, getattr(ev, 'field_size', 0))
     runners_sorted = sorted(runners, key=lambda r: r.get('_projected') or 0, reverse=True)
     # PATCH 4: STANDARD added to GOING_SIMILAR
     GOING_SIMILAR = {
@@ -2683,9 +2732,7 @@ def _narrative_prompt(meta, ev, runners, going_report, is_flat,
         'Be direct. No hedging.]\n\n'
         'PROBABILITY RULES for the four scenarios below:\n'
         '- The four scenarios are DISTINCT race shapes, not hedges. Probabilities must sum to roughly 100.\n'
-        '- Commit to the most likely shape. The lead scenario should normally carry 45-70%. '
-        'When the pace setup is clear-cut, it SHOULD exceed 70%. Do NOT anchor every race around 45-50% — '
-        'that is a hedge, not an analysis. If the data points one way, say so with conviction.\n'
+        '{}'
         '- WORKED EXAMPLE: a lone, uncontested, Group-class front-runner who can dictate and quicken clear '
         'is NOT a 45% lead scenario — that is a 60-72% scenario, with the remaining weight split across the '
         'less likely shapes. Reserve sub-50% lead scenarios for races that are genuinely open (no dominant '
@@ -2726,7 +2773,12 @@ def _narrative_prompt(meta, ev, runners, going_report, is_flat,
         'The %%PACE_DYNAMIC%% must end with a clear directional verdict on which profile benefits.'
     ).format(race_type, meta['time'], meta['name'], meta.get('course',''), meta['dist'],
              going_display, surface, ev.field_size, draw_note, going_report,
-             pace_dynamic_str or 'No pace dynamic computed.', runners_block)
+             pace_dynamic_str or 'No pace dynamic computed.', runners_block,
+             ('- DATA-DRIVEN BAND: for THIS race, the pace data suggests the most-likely shape should land '
+              'roughly between {}% and {}%. Pick the exact figure within that band using class, jockey, course '
+              'form and the qualitative read. Do NOT default to a round number or the band\'s midpoint — if the '
+              'race is clear-cut lean to the top, if it is open lean to the bottom. The other three scenarios '
+              'share the remainder.\n').format(_lead_lo, _lead_hi))
 
 def _parse_narrative(raw, runners):
     def _section(text, marker):
