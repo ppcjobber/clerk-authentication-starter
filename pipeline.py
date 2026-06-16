@@ -1807,15 +1807,22 @@ def _course_code(name):
 def _irc_from_comment(comment):
     if not comment: return 'UNKNOWN'
     c = comment.lower()
+    # FRONT_RUNNER — early-position phrases only
     if any(w in c for w in ['made all','led all','led from','led throughout','set the pace',
             'led 2f','led 3f','led 4f','in front','led early','jumped well in front','went clear']):
         return 'FRONT_RUNNER'
     if c.startswith('led') or ', led' in c[:30]: return 'FRONT_RUNNER'
+    # PROMINENT — only with an explicit leader/pace reference
     if any(w in c for w in ['prominent','chased leader','chased leaders','close up',
             'tracked leader','tracked leaders','pressed leader','disputed lead',
-            'disputed','handy','chased','pressed']): return 'PROMINENT'
+            'disputed','handy']): return 'PROMINENT'
+    # HOLD_UP — rear/held-up EARLY-POSITION phrases only.
+    # NOTE: 'headway','progress','stayed on','late headway' REMOVED —
+    # these describe finishing effort, not early position. A front-runner
+    # that "made all, stayed on well" must NOT be pulled into HOLD_UP.
     if any(w in c for w in ['held up','held-up','towards rear','rear of field','back of field',
-            'towards back','in rear','rearward','headway','late headway','progress','stayed on']):
+            'towards back','in rear','rearward','settled last','settled towards rear',
+            'patiently ridden','waited with']):
         return 'HOLD_UP'
     if any(w in c for w in ['midfield','mid-field','in touch','middle of field']): return 'MIDFIELD'
     return 'UNKNOWN'
@@ -2431,14 +2438,34 @@ def _build_pace_dynamic(runners, style_summary, ev, meta):
     holdup_names = [n for _,n,_ in buckets['H']]
     unknown_names = [n for _,n,_ in buckets['U']]
     midfield_names.extend(unknown_names)
+
+    # ── Redistribution tracking ───────────────────────────────
+    # When a bucket holds more runners than the map can show, the
+    # overflow is moved to midfield FOR DISPLAY ONLY. We record each
+    # moved horse's TRUE style here so the narrative can be honest:
+    # the horse is still really a prominent/hold-up type, we just
+    # don't expect it to get that position in this particular race.
+    redistributed = {}  # name -> {'true_style','mapped_to','reason'}
+
     max_prom = max(2, round(field_size * 0.40))
     if len(prominent_names) > max_prom:
-        overflow = prominent_names[max_prom:]; prominent_names = prominent_names[:max_prom]; midfield_names.extend(overflow)
+        overflow = prominent_names[max_prom:]; prominent_names = prominent_names[:max_prom]
+        midfield_names.extend(overflow)
+        for n in overflow:
+            redistributed[n] = {
+                'true_style':'prominent', 'mapped_to':'midfield',
+                'reason':'more prominent types than can hold that position in this field'}
+
     max_hold = max(2, round(field_size * 0.30))
     if len(holdup_names) > max_hold:
         holdup_sorted = sorted(buckets['H'], reverse=True)
         holdup_names = [n for _,n,_ in holdup_sorted[:max_hold]]
         overflow = [n for _,n,_ in holdup_sorted[max_hold:]]; midfield_names.extend(overflow)
+        for n in overflow:
+            redistributed[n] = {
+                'true_style':'hold up', 'mapped_to':'midfield',
+                'reason':'more hold-up types than the map shows at the rear'}
+
     if not leader_names:
         if prominent_names: promoted = prominent_names[0]; prominent_names = prominent_names[1:]; leader_names = [promoted]
         else:
@@ -2451,19 +2478,39 @@ def _build_pace_dynamic(runners, style_summary, ev, meta):
                 for lst in [prominent_names, midfield_names, holdup_names]:
                     if best_lead in lst: lst.remove(best_lead)
                 leader_names = [best_lead]
+                # A horse with no confirmed lead history promoted to lead
+                # purely because the race lacks one — flag it honestly.
+                redistributed[best_lead] = {
+                    'true_style':'prominent', 'mapped_to':'front',
+                    'reason':'no confirmed front runner in the race, so the most likely pace-setter is shown on the lead'}
+
     n_leads = len(leader_names); n_prom = len(prominent_names)
     n_mid = len(midfield_names); n_hold = len(holdup_names)
     if n_leads == 0: dynamic = 'No confirmed front runner — field likely to drift into a sprint finish.'
     elif n_leads == 1: dynamic = 'One confirmed front runner ({}) — sustainable pace, not pressured.'.format(leader_names[0])
     elif n_leads == 2: dynamic = 'Two confirmed front runners ({}) — contested early, honest gallop likely.'.format(', '.join(leader_names[:2]))
     else: dynamic = '{} confirmed front runners ({}) — strong gallop almost guaranteed. Stamina tested.'.format(n_leads, ', '.join(leader_names[:3]))
+
     congestion = ''
     if n_prom >= field_size * 0.4 and n_prom >= 4:
         congestion = ' Prominent congestion: {} of {} runners want that position — traffic danger 2-3 out.'.format(n_prom, field_size)
-    return dynamic + congestion, {
+
+    # ── Honest redistribution sentence in the pace dynamic ─────
+    redis_note = ''
+    if redistributed:
+        moved_to_mid = [n for n, d in redistributed.items() if d['mapped_to'] == 'midfield']
+        if moved_to_mid:
+            shown = ', '.join(moved_to_mid[:3])
+            more = '' if len(moved_to_mid) <= 3 else ' and others'
+            redis_note = (' Note: this field contains more pace than the map can place — '
+                          '{}{} are genuine prominent/hold-up types shown in midfield because '
+                          'they are unlikely to get their natural position in this race shape.').format(shown, more)
+
+    return dynamic + congestion + redis_note, {
         'n_leads':n_leads,'n_prom':n_prom,'n_mid':n_mid,'n_hold':n_hold,
         'leader_names':leader_names,'prominent_names':prominent_names,
         'midfield_names':midfield_names,'holdup_names':holdup_names,
+        'redistributed':redistributed,
     }
 
 def _call_claude(prompt, max_tokens=2800):
@@ -2501,6 +2548,11 @@ def _narrative_prompt(meta, ev, runners, going_report, is_flat,
         name = r['name']; s = style_summary.get(name, {}) if style_summary else {}
         notes_str = ' | '.join(s.get('notes',[])) if s.get('notes') else ''
         flag = ' \u26a0 {}'.format(notes_str) if notes_str else ''
+        redis = (pace_info or {}).get('redistributed', {}).get(name)
+        redis_str = ''
+        if redis:
+            redis_str = ' [REDISTRIBUTED: true {} \u2014 mapped to {} because {}]'.format(
+                redis['true_style'], redis['mapped_to'], redis['reason'])
         draw_str = ''
         if is_flat and r.get('draw'): draw_str = ' draw={}({})'.format(r['draw'], r.get('draw_adv',''))
         jockey = r.get('jockey','') or ''; trainer = r.get('trainer','') or ''
@@ -2537,9 +2589,9 @@ def _narrative_prompt(meta, ev, runners, going_report, is_flat,
                 gp = sum(1 for r2 in going_runs if r2.position and r2.position <= 3)
                 hist_str += ' sim-going:{}/{} {}W{}P'.format(len(going_runs), len(horse_obj.runs), gw, gp)
         spot_str = '\n    SP: {}'.format(spotlight[:160]) if spotlight else ''
-        runner_lines.append('  {:<26} OR={:<4} style={} going={}{}{}{}{}{}'.format(
+        runner_lines.append('  {:<26} OR={:<4} style={} going={}{}{}{}{}{}{}'.format(
             name, r.get('or','--'), s.get('style_code','U'), s.get('going_flag','?'),
-            flag, draw_str, extras_str, hist_str, spot_str))
+            flag, redis_str, draw_str, extras_str, hist_str, spot_str))
     runners_block = '\n'.join(runner_lines)
     draw_note = ''
     if is_flat:
@@ -2566,6 +2618,9 @@ def _narrative_prompt(meta, ev, runners, going_report, is_flat,
         '[3-4 sentences. Name specific horses. Describe how this race will be run from flag to finish. '
         'Name the pace-setters and what they create. Conclude with a clear tactical verdict: '
         'which running style profile this race shape favours and why. '
+        'If any runners are tagged [REDISTRIBUTED] in the runner list, add one sentence stating that '
+        'the field holds more front-running or prominent types than can all get their position, and name '
+        'which are most likely to actually secure it. '
         'Be direct. No hedging.]\n\n'
         '%%SCENARIOS%%\n'
         'SCENARIO_A|[3-5 word title]|[probability 0-100]|[one-line trigger starting with "If..."]|'
@@ -2576,7 +2631,12 @@ def _narrative_prompt(meta, ev, runners, going_report, is_flat,
         '%%NOTES%%\n'
         '[horse_name]|[one concise sentence covering: running style, jockey/trainer angle if relevant, '
         'going or distance concern, headgear, days since last run if notable, or key tactical factor]\n'
-        '...one line per runner, all runners\n\n'
+        '...one line per runner, all runners\n'
+        'HONESTY RULE: If a runner is tagged [REDISTRIBUTED] in the runner list, its note MUST state the '
+        'horse\'s true running style first, then explain the shown map position as a consequence of the '
+        'race shape — e.g. "a natural front-runner, but with several confirmed leaders here is likely to be '
+        'taken back into midfield". NEVER describe a redistributed horse as though the shown position were '
+        'its natural style.\n\n'
         '%%WATCH%%\n'
         '[severity: danger/warn/info]|[one concrete sentence naming specific horse(s) and what to watch]\n'
         '...3-5 watch points total\n\n'
@@ -2624,6 +2684,47 @@ def _parse_narrative(raw, runners):
         if sev not in {'danger','warn','info'}: sev = 'info'
         if text: watch_points.append({'severity':sev,'text':text})
     return pace_dynamic, scenarios, notes_map, watch_points
+  
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# Consistency guardrail — catches AI notes that contradict the
+# engine's own style classification before they reach a customer.
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+_HOLDUP_LANGUAGE = [
+    'held up', 'held-up', 'hold up', 'hold-up', 'from the rear', 'off the pace',
+    'towards the rear', 'at the back', 'settled last', 'patiently ridden',
+    'waited with', 'dropped out', 'in rear', 'rearward', 'last of all',
+]
+_LEAD_LANGUAGE = [
+    'make all', 'makes all', 'made all', 'set the pace', 'sets the pace',
+    'from the front', 'leads the field', 'go on early', 'bowl along in front',
+    'dictate from the front',
+]
+
+def _consistency_check(races_data):
+    """Flag any runner whose AI note contradicts the engine's style code.
+    Returns a list of conflict dicts. Does not modify races_data."""
+    conflicts = []
+    for race in races_data:
+        if race.get('skipped'):
+            continue
+        engine_style = {}
+        for n in race.get('leads', []):     engine_style[n] = 'L'
+        for n in race.get('prominent', []): engine_style.setdefault(n, 'P')
+        for n in race.get('midfield', []):  engine_style.setdefault(n, 'M')
+        for n in race.get('holdup', []):    engine_style.setdefault(n, 'H')
+        for r in race.get('runners_data', []):
+            name = r.get('name', ''); note = (r.get('note', '') or '').lower()
+            if not note:
+                continue
+            code = engine_style.get(name, r.get('style_code', 'U'))
+            if code == 'L' and any(p in note for p in _HOLDUP_LANGUAGE):
+                conflicts.append({'race':race['time'],'horse':name,
+                                  'engine':'front-runner','note_says':'hold-up','note':r.get('note','')})
+            elif code == 'H' and any(p in note for p in _LEAD_LANGUAGE):
+                conflicts.append({'race':race['time'],'horse':name,
+                                  'engine':'hold-up','note_says':'front-runner','note':r.get('note','')})
+    return conflicts
 
 def _gh_push(path, content_str, message):
     url = 'https://api.github.com/repos/{}/contents/{}'.format(GITHUB_REPO, path)
@@ -2821,6 +2922,19 @@ def publish_meeting(meeting_results, course, race_date_str, going_report=None, g
             'drawBias':_draw_bias_summary(meta.get('course',''),dist_f) if is_flat else None,
             'runners_data':runners,'paceDynamic':pace_dynamic_str,'scenarios':scenarios,
             'watchPoints':watch_points,'skipped':False})
+      
+    conflicts = _consistency_check(races_data)
+    if conflicts:
+        print('\n  \u26a0 STYLE CONFLICTS DETECTED ({}):'.format(len(conflicts)))
+        for c in conflicts:
+            print('    {} {} \u2014 engine says {}, note reads {}: "{}"'.format(
+                c['race'], c['horse'], c['engine'], c['note_says'], c['note'][:80]))
+        flagged_times = {c['race'] for c in conflicts}
+        for race in races_data:
+            if race.get('time') in flagged_times:
+                race['review_flag'] = True
+                race['review_reason'] = 'style/note conflict — check before trusting notes'
+
     for race in races_data:
         if not race.get('skipped'): race['free'] = True; break
     json_str = json.dumps({'course':course,'date':race_date_str,'slug':slug,'races':races_data},
