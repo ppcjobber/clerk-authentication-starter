@@ -34,7 +34,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Three wins in a row over 14-17f on Good ground tells the story here — James Owen's seven-year-old thrives in this exact environment, and while the STYLE_FIT tag notes she's technically mapped prominent rather than fully leading, her recent record makes her the dominant force; De Sousa can simply let her bowl along in a three-runner field.",
+          "note": "In blistering form with three consecutive wins over 14-17f on good ground, she sets the pace here by default and her visor has coincided with this purple patch; the STYLE_FIT tag notes she is mapped slightly out of her most natural role but her front-running tendency on this track profile is the defining tactical factor in a tiny field.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Silvestre De Sousa",
@@ -54,7 +54,7 @@
           "_projected": 63.7,
           "_model_price": "1/2",
           "_mkt_price": "2/5",
-          "_win_pct": 67.5,
+          "_win_pct": 65.3,
           "_edge": -5.3,
           "_action": "WATCH",
           "_style_fit": 0.917
@@ -66,7 +66,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Muscutt partnering a horse that has placed twice at 1m4f-1m6f on Soft and Standard, with a win on 1m4f Soft — the 29-day absence is a mild query, but the trip and decent going are fine, and his natural hold-up style means the race hinges entirely on whether Laravie leaves a gap in the final furlong.",
+          "note": "The most credentialled stayer of the hold-up pair with two placed efforts over 16f on Polytrack, and Muscutt is a strong booking for a horse who needs the race run to suit; 29 days off is not a concern given the trainer's 14-day strike rate of 1/7, but he requires Laravie to set a real gallop rather than a dawdle.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Daniel Muscutt",
@@ -84,9 +84,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 63.7,
-          "_model_price": "7/2",
-          "_mkt_price": "15/4",
-          "_win_pct": 21.1,
+          "_model_price": "6/1",
+          "_mkt_price": "6/1",
+          "_win_pct": 13.8,
           "_edge": -0.3,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -98,7 +98,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "David Simcock's four-year-old has mixed form over 1m4f-1m6f on Good and Good to Firm, including a second and a third, but also has 8s at this trip on Good — Ghiani will need to be patient from a hold-up berth and hope the front-runner stops, which this pace dynamic makes unlikely given how controllable Laravie's solo lead will be.",
+          "note": "Simcock's four-year-old has placed at 2m and shown he stays well, but his recent form figures of 8-5-8 at 14f on good and good-to-firm suggest he needs things to fall perfectly; lightest in the weights at 128lbs, he is not without a chance if the pace is genuine but his record in similar conditions shows more near-misses than wins.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Marco Ghiani",
@@ -116,22 +116,22 @@
           "comment": "",
           "spotlight": "",
           "_projected": 63.7,
-          "_model_price": "8/1",
-          "_mkt_price": "17/2",
-          "_win_pct": 11.4,
+          "_model_price": "4/1",
+          "_mkt_price": "4/1",
+          "_win_pct": 20.9,
           "_edge": 5.7,
           "_action": "WATCH",
           "_style_fit": 1.0
         }
       ],
-      "paceDynamic": "Laravie is the sole confirmed pace-setter in a three-runner field over 1m6f on Good to Firm ground at Yarmouth, and with no rival willing to push for the lead, she will dictate every yard of this race at a tempo entirely of her own choosing. Coming off a hat-trick of wins over similar trips on Good ground and carrying the momentum of six-from-recent form, Laravie is likely to bowl along at a comfortable, sustainable gallop that never truly tests the field's stamina reserves until late. Betelgeuse and Captain Brett are both hold-up types who will have no choice but to settle in behind and wait for a signal to challenge, meaning the race becomes a late procession unless Laravie is collared in the final furlong. This race shape overwhelmingly favours horses who can track a single uncontested leader and produce a clean, well-timed finish — a profile that suits hold-up horses who have the racing style to close on a solo front-runner, but equally rewards a front-runner who dictates and isn't asked to quicken hard.",
+      "paceDynamic": "Laravie is the lone front-runner in this three-runner contest over 1m6f at Yarmouth on good-to-firm ground, and with no rivals willing or able to challenge for the lead, she will control every fraction from the gate. Racing prominently by style and carrying a visor, Laravie arrives on a hat-trick of wins over similar staying trips and will set a measured, uncontested tempo that could be deceptively steady through the early stages. Both Betelgeuse and Captain Brett are hold-up horses who will sit in behind and rely on a strong enough gallop to bring their finishing kicks into play. This race shape strongly favours a front-runner or prominent racer who can dictate and conserve energy at a controlled pace — the hold-up pair need Laravie to stretch things out, but she holds every card in setting the terms she prefers.",
       "scenarios": [
         {
           "label": "A",
           "title": "Laravie Dictates Unchallenged",
           "prob": 72,
-          "trigger": "If Laravie is allowed to bowl along at her own pace and neither chaser can close the gap in the final two furlongs.",
-          "body": "If Laravie is allowed to bowl along at her own pace and neither chaser can close the gap in the final two furlongs.",
+          "trigger": "If Laravie leads at her own pace and the hold-up pair fail to quicken past her in the straight.",
+          "body": "If Laravie leads at her own pace and the hold-up pair fail to quicken past her in the straight.",
           "winners": [
             "Laravie"
           ],
@@ -142,10 +142,10 @@
         },
         {
           "label": "B",
-          "title": "Closer Gets Up Late",
-          "prob": 16,
-          "trigger": "If Laravie sets a genuinely strong tempo that leaves her vulnerable and one of the hold-up horses times a run to perfection.",
-          "body": "If Laravie sets a genuinely strong tempo that leaves her vulnerable and one of the hold-up horses times a run to perfection.",
+          "title": "Hold-Up Pair Outstay Leader",
+          "prob": 15,
+          "trigger": "If Laravie sets a stronger-than-expected gallop that exposes her stamina limits late, allowing the closers to pick her off.",
+          "body": "If Laravie sets a stronger-than-expected gallop that exposes her stamina limits late, allowing the closers to pick her off.",
           "winners": [
             "Betelgeuse"
           ],
@@ -156,49 +156,49 @@
         },
         {
           "label": "C",
-          "title": "Captain Brett Strikes Late",
+          "title": "Captain Brett Stays On Late",
           "prob": 8,
-          "trigger": "If Captain Brett produces a career-best effort under Ghiani and Betelgeuse misses the kick or gets outpaced.",
-          "body": "If Captain Brett produces a career-best effort under Ghiani and Betelgeuse misses the kick or gets outpaced.",
+          "trigger": "If the pace is genuinely strong and Captain Brett, who ran well over 2m at Goodwood, proves the most effective stayer at this 1m6f trip.",
+          "body": "If the pace is genuinely strong and Captain Brett, who ran well over 2m at Goodwood, proves the most effective stayer at this 1m6f trip.",
           "winners": [
             "Captain Brett"
           ],
           "others": [
-            "Laravie",
-            "Betelgeuse"
+            "Betelgeuse",
+            "Laravie"
           ]
         },
         {
           "label": "D",
-          "title": "Muddled Finish",
-          "prob": 4,
-          "trigger": "If the race breaks down tactically, Laravie is caught wide or badly positioned, and the field finishes in a tight bunch.",
-          "body": "If the race breaks down tactically, Laravie is caught wide or badly positioned, and the field finishes in a tight bunch.",
+          "title": "Muddling Tactical Race",
+          "prob": 5,
+          "trigger": "If the pace collapses to a near-crawl and the race becomes a sprint finish from the home turn.",
+          "body": "If the pace collapses to a near-crawl and the race becomes a sprint finish from the home turn.",
           "winners": [
-            "Betelgeuse",
-            "Captain Brett"
+            "Laravie"
           ],
           "others": [
-            "Laravie"
+            "Betelgeuse",
+            "Captain Brett"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Laravie's solo lead means she controls the pace entirely — if De Sousa gets overly confident and slows the tempo dramatically, the hold-up pair will have an unusually short trip home to reel her in."
+          "text": "Laravie controls the pace entirely — watch whether she accelerates entering the straight to deny the hold-up pair a target, as a slow-and-sprint scenario narrows the hold-up horses' winning angles dramatically."
         },
         {
           "severity": "warn",
-          "text": "Betelgeuse's 29-day absence is worth monitoring in the paddock — if Muscutt is instructed to be conservative early, he may leave himself too much to do in a race where the leader won't tie herself up."
+          "text": "Betelgeuse was last seen 29 days ago and ran on Polytrack; watch his early movement and positioning to gauge whether he has the zip to close on a front-runner who is never pressured."
         },
         {
           "severity": "warn",
-          "text": "Captain Brett has a patchy record at this trip on Good ground (two 8ths), and if he's not travelling fluently behind the leader by halfway, Ghiani will have very little race left to mount a challenge."
+          "text": "Captain Brett has been beaten at short odds in similar conditions before — watch whether Ghiani tries an atypical positive move to avoid getting caught flat-footed in a steadily-run small-field contest."
         },
         {
           "severity": "info",
-          "text": "With only three runners, any incident at the start — a slow break or early interference — would immediately reshape the entire tactical picture, as even a length's advantage at the first bend becomes significant over this trip."
+          "text": "With only three runners, any early incident or interference is magnified — watch the break from the gate, as Laravie must establish her lead cleanly to ensure the race runs to her strengths."
         }
       ],
       "skipped": false
@@ -247,9 +247,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 123.0,
-          "_model_price": "43/1",
-          "_mkt_price": "35/1",
-          "_win_pct": 2.3,
+          "_model_price": "50/1",
+          "_mkt_price": "45/1",
+          "_win_pct": 2.0,
           "_edge": 2.8,
           "_action": "WATCH"
         },
@@ -278,9 +278,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 123.0,
-          "_model_price": "16/1",
-          "_mkt_price": "13/1",
-          "_win_pct": 5.8,
+          "_model_price": "13/1",
+          "_mkt_price": "12/1",
+          "_win_pct": 7.1,
           "_edge": 2.8,
           "_action": "WATCH"
         },
@@ -309,9 +309,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 123.0,
-          "_model_price": "5/2",
-          "_mkt_price": "7/4",
-          "_win_pct": 29.7,
+          "_model_price": "2/1",
+          "_mkt_price": "13/7",
+          "_win_pct": 32.3,
           "_edge": 2.8,
           "_action": "WATCH"
         },
@@ -340,9 +340,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 120.3,
-          "_model_price": "20/1",
-          "_mkt_price": "16/1",
-          "_win_pct": 4.7,
+          "_model_price": "33/1",
+          "_mkt_price": "30/1",
+          "_win_pct": 2.9,
           "_edge": 0.2,
           "_action": "WATCH"
         },
@@ -371,9 +371,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 120.3,
-          "_model_price": "28/1",
+          "_model_price": "25/1",
           "_mkt_price": "22/1",
-          "_win_pct": 3.5,
+          "_win_pct": 4.0,
           "_edge": 0.2,
           "_action": "WATCH"
         },
@@ -402,9 +402,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 120.3,
-          "_model_price": "5/1",
-          "_mkt_price": "4/1",
-          "_win_pct": 16.1,
+          "_model_price": "6/1",
+          "_mkt_price": "27/5",
+          "_win_pct": 14.2,
           "_edge": 0.2,
           "_action": "WATCH"
         },
@@ -433,9 +433,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 117.9,
-          "_model_price": "18/1",
-          "_mkt_price": "14/1",
-          "_win_pct": 5.3,
+          "_model_price": "28/1",
+          "_mkt_price": "25/1",
+          "_win_pct": 3.5,
           "_edge": -2.2,
           "_action": "WATCH"
         },
@@ -465,8 +465,8 @@
           "spotlight": "",
           "_projected": 117.9,
           "_model_price": "4/1",
-          "_mkt_price": "3/1",
-          "_win_pct": 19.9,
+          "_mkt_price": "7/2",
+          "_win_pct": 20.0,
           "_edge": -2.2,
           "_action": "WATCH"
         },
@@ -496,8 +496,8 @@
           "spotlight": "",
           "_projected": 117.9,
           "_model_price": "15/1",
-          "_mkt_price": "12/1",
-          "_win_pct": 6.1,
+          "_mkt_price": "13/1",
+          "_win_pct": 6.4,
           "_edge": -2.2,
           "_action": "WATCH"
         },
@@ -526,9 +526,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 117.9,
-          "_model_price": "14/1",
+          "_model_price": "12/1",
           "_mkt_price": "11/1",
-          "_win_pct": 6.6,
+          "_win_pct": 7.5,
           "_edge": -2.2,
           "_action": "WATCH"
         }
@@ -574,7 +574,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Sole front-runner here, and Tom Clover's six-year-old has strong course-and-distance form with five runs at 5f on good ground in recent history; 36 days since last run is not a concern for a horse in good fettle, but a prominent style rating that nudges into lead territory means he is operating at the top of his natural range rather than comfortably within it.",
+          "note": "Confirmed front-runner with a solid 5f Good ground profile (13 of 15 similar-going runs placed or won within competitive range), Tom Clover yard in fair 3/13 form over 14 days; he races off a 36-day break but hg:p (hood) suggests connections are trying to sharpen his focus, and dictating here from stall to post is his obvious route to victory.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Jack Mitchell",
@@ -592,9 +592,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 85.5,
-          "_model_price": "7/1",
-          "_mkt_price": "13/2",
-          "_win_pct": 12.1,
+          "_model_price": "6/1",
+          "_mkt_price": "6/1",
+          "_win_pct": 13.6,
           "_edge": -1.9,
           "_action": "WATCH",
           "_style_fit": 0.933
@@ -606,7 +606,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Silvestre De Sousa takes over on this eight-year-old who landed a 5f good-ground win just six days ago, making the quick turnaround the key angle; a genuine hold-up horse who needs others to set the tempo, and the single front-runner here gives him that but also means he must produce a clean finishing effort in a tight group.",
+          "note": "Eight-year-old hold-up specialist who most recently won over 5f on Good ground, giving Silvestre De Sousa a live booking; Richard Spencer yard at 4/12 over 14 days is encouraging, but the 1/5f/GOO win at the head of the form is the key line — he needs the pace to be genuine enough to close into, which this shape may not deliver.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Silvestre De Sousa",
@@ -624,9 +624,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 85.5,
-          "_model_price": "5/2",
+          "_model_price": "2/1",
           "_mkt_price": "2/1",
-          "_win_pct": 30.7,
+          "_win_pct": 32.2,
           "_edge": 1.1,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -638,7 +638,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Robert Cowell's six-year-old shows his best form on faster surfaces, but his last five runs reveal only two placed efforts on Stansted ground and limited exposure to Good — the sim-going record of 0W2P on comparable conditions is a note of caution; settles at the rear naturally and needs a strong pace to deliver his best, which is not guaranteed here.",
+          "note": "Hold-up runner whose recent form shows a win and place over 5f on Standard surfaces, so the Good to Firm conditions here are a slight unknown (only 7 of 15 similar-going runs in the frame); Robert Cowell fields him off a 36-day break at a competitive OR of 83 and Marco Ghiani retains the ride, but he needs more pace than Rocking Ends is likely to generate.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Marco Ghiani",
@@ -658,7 +658,7 @@
           "_projected": 82.8,
           "_model_price": "15/1",
           "_mkt_price": "14/1",
-          "_win_pct": 6.1,
+          "_win_pct": 6.4,
           "_edge": -0.6,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -670,7 +670,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "James Fanshawe's four-year-old wears headgear and has a solid record of placed efforts at 5-6f on Stansted surfaces, though his Good to Firm sim-going record of 0W2P tempers expectations slightly; a naturally prominent racer, Daniel Muscutt should secure the position just off Rocking Ends and is well placed tactically regardless of how the race unfolds.",
+          "note": "Prominent-style four-year-old who has placed twice at this trip and is the only horse likely to sit directly behind Rocking Ends; James Fanshawe at 3/22 over 14 days is modest, Standard track form dominates his history (only 4 of 9 similar-going runs shown), and the hg:ht (hood and tongue tie) combination suggests the yard is seeking more resolution from him.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Daniel Muscutt",
@@ -689,8 +689,8 @@
           "spotlight": "",
           "_projected": 82.8,
           "_model_price": "3/1",
-          "_mkt_price": "5/2",
-          "_win_pct": 26.1,
+          "_mkt_price": "14/5",
+          "_win_pct": 25.2,
           "_edge": -0.6,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -702,7 +702,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Chelsea Banham's five-year-old arrives in form having won twice in his last four outings on Good and Firm ground, and his trainer's 14-day strike rate of 0/3 is worth noting; his true style is hold-up but he has been mapped into midfield because the rear is overcrowded — he may not get his preferred position in a six-runner field, which complicates a straightforward winning move.",
+          "note": "In-form five-year-old who has won his last two starts at 5f on Good and Firm going — the profile fits the conditions well; however, his natural instinct is to come from off the pace, and in this race he has been pushed forward on the map purely because too many hold-up types compete for the same rear-of-field position — that positional squeeze may blunt his effectiveness.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Joey Haynes",
@@ -720,9 +720,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 80.4,
-          "_model_price": "7/2",
-          "_mkt_price": "3/1",
-          "_win_pct": 22.7,
+          "_model_price": "4/1",
+          "_mkt_price": "18/5",
+          "_win_pct": 20.7,
           "_edge": -2.0,
           "_action": "WATCH",
           "_style_fit": 0.92
@@ -734,7 +734,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Phil McEntee's four-year-old wears a visor and was beaten out of sight last time on Good ground at Yarmouth — the 8th of 14 — though she does own a 5f Stansted win in her recent history; her natural tendency to race at the back means she is in the same congested hold-up group as Law Of Average and Michaela's Boy, and in a small flat sprint that is a difficult draw for all three.",
+          "note": "Unexposed four-year-old filly with a recent 5f win on Standard ground, wearing a visor for the first time in recent runs (hg:v), which can sharpen or unsettle; Phil McEntee yard at 1/10 over 14 days is modest, and while her hold-up style suits a field that produces a strong pace, she too is a genuine closer repositioned on the map by the volume of hold-up types — her true chance hinges on a tempo this shape probably won't serve up.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Connor Planas",
@@ -752,22 +752,22 @@
           "comment": "",
           "spotlight": "",
           "_projected": 80.4,
-          "_model_price": "43/1",
-          "_mkt_price": "40/1",
-          "_win_pct": 2.3,
+          "_model_price": "50/1",
+          "_mkt_price": "50/1",
+          "_win_pct": 1.9,
           "_edge": 4.0,
           "_action": "WATCH",
           "_style_fit": 0.922
         }
       ],
-      "paceDynamic": "Rocking Ends is the sole confirmed front-runner in this six-runner 5f sprint on Good to Firm ground at Yarmouth, and with no genuine rival to press him early, he should be able to dictate a controlled, sustainable gallop from the outset. Havana Blast will look to sit just off the pace in a prominent position, while the hold-up contingent of Twilight Calls, Michaela's Boy, Law Of Average, and Cressida Wildes will be forced to work from behind — though Law Of Average and Cressida Wildes are true hold-up types redistributed to midfield on the map because the rear of the field is over-subscribed with closers who cannot all find a clear run in a small field. A single front-runner setting a measured pace on a flat, fast track with no pressure is a scenario that historically suits hold-up horses who can sprint through from off the pace — but with four closers competing for the same finishing surge and Rocking Ends controlling fractions, the race shape most clearly favours horses with tactical versatility near the pace or strong finishing ability from a prominent pitch. The directional verdict is that Rocking Ends' uncontested lead sets up a pace scenario that rewards prominent racers and strong finishers equally, but the compressed, uncontested gallop slightly favours those who can travel smoothly in the first two positions rather than those buried in a traffic-laden hold-up group.",
+      "paceDynamic": "Rocking Ends is the lone confirmed front-runner in this six-runner 5f sprint at Yarmouth on Good to Firm ground, and with no genuine rival willing to press him for the lead, he is set to control a measured, sustainable gallop from the gates. Havana Blast is the only other prominent-style horse and is more likely to track than challenge for the lead, meaning Rocking Ends can dictate without being pressured. The hold-up contingent of Twilight Calls, Michaela's Boy, Law Of Average, and Cressida Wildes all share the rear of the field, though Law Of Average and Cressida Wildes are true hold-up types redistributed into the midfield picture on the map — the field holds more closers than the race shape comfortably accommodates at the back, and Twilight Calls and Michaela's Boy are the most likely to genuinely occupy those rearward berths. An uncontested lead on fast ground over an undemanding flat five furlongs strongly favours the prominent and front-running profile — a horse that can control tempo and outstay rivals from the front is ideally placed, with hold-up runners needing either an overly brisk pace or a well-timed split that this shape may simply not deliver.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Rocking Ends Controls Throughout",
+          "title": "Uncontested Lead Dominates",
           "prob": 68,
-          "trigger": "If Rocking Ends bowls along uncontested and sets a measured but not slow gallop, enabling him to sustain his effort to the line.",
-          "body": "If Rocking Ends bowls along uncontested and sets a measured but not slow gallop, enabling him to sustain his effort to the line.",
+          "trigger": "If Rocking Ends bowls along in front unchallenged and the pace is controlled but honest enough to expose hold-up horses.",
+          "body": "If Rocking Ends bowls along in front unchallenged and the pace is controlled but honest enough to expose hold-up horses.",
           "winners": [
             "Rocking Ends",
             "Havana Blast"
@@ -779,70 +779,70 @@
         },
         {
           "label": "B",
-          "title": "Hold-Up Finishers Swamp Leader",
+          "title": "Prominent Pair Fight Out",
           "prob": 16,
-          "trigger": "If the pace is slightly faster than expected and Rocking Ends ties up inside the final furlong, allowing the closers to mow him down.",
-          "body": "If the pace is slightly faster than expected and Rocking Ends ties up inside the final furlong, allowing the closers to mow him down.",
+          "trigger": "If Havana Blast tracks Rocking Ends closely enough to mount a sustained challenge in the final furlong rather than simply tracking.",
+          "body": "If Havana Blast tracks Rocking Ends closely enough to mount a sustained challenge in the final furlong rather than simply tracking.",
           "winners": [
-            "Twilight Calls",
-            "Law Of Average"
+            "Havana Blast",
+            "Rocking Ends"
           ],
           "others": [
-            "Michaela's Boy",
-            "Havana Blast"
+            "Twilight Calls",
+            "Michaela's Boy"
           ]
         },
         {
           "label": "C",
-          "title": "Prominent Hold Proves Key",
+          "title": "Late Closers Pounce",
           "prob": 10,
-          "trigger": "If the pace is moderate enough that the prominent horses dominate and the hold-up runners never get competitive room in a small, compact field.",
-          "body": "If the pace is moderate enough that the prominent horses dominate and the hold-up runners never get competitive room in a small, compact field.",
+          "trigger": "If Rocking Ends sets a genuinely fast early tempo that results in him tying up inside the final furlong, opening the door for hold-up horses.",
+          "body": "If Rocking Ends sets a genuinely fast early tempo that results in him tying up inside the final furlong, opening the door for hold-up horses.",
           "winners": [
-            "Havana Blast",
-            "Twilight Calls"
+            "Twilight Calls",
+            "Michaela's Boy"
           ],
           "others": [
-            "Rocking Ends",
-            "Cressida Wildes"
+            "Law Of Average",
+            "Havana Blast"
           ]
         },
         {
           "label": "D",
-          "title": "Traffic Chaos From Rear",
+          "title": "Midfield Spoiler Strikes",
           "prob": 6,
-          "trigger": "If the hold-up horses get into a pocket or are forced to wait longer than ideal, gifting the race to those in front.",
-          "body": "If the hold-up horses get into a pocket or are forced to wait longer than ideal, gifting the race to those in front.",
+          "trigger": "If the race fragments with horses spread across the track and one of the redistributed hold-up types finds a clear run from midfield to score against the bias.",
+          "body": "If the race fragments with horses spread across the track and one of the redistributed hold-up types finds a clear run from midfield to score against the bias.",
           "winners": [
-            "Rocking Ends",
-            "Havana Blast"
+            "Law Of Average",
+            "Cressida Wildes"
           ],
           "others": [
-            "Michaela's Boy",
-            "Cressida Wildes"
+            "Twilight Calls",
+            "Havana Blast"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Rocking Ends sets the entire race shape — watch whether Jack Mitchell allows him to stride on from the gates or is checked into a false rhythm by any early jostling from Havana Blast, as the tempo he sets in the first two furlongs determines every subsequent scenario."
+          "text": "Rocking Ends exits the stalls cleanly — if he misses the break in a small field of six, the entire race shape collapses and hold-up horses inherit a far more live chance."
         },
         {
           "severity": "warn",
-          "text": "Law Of Average and Cressida Wildes are both genuine hold-up horses operating in an over-populated closing group of four — watch for traffic and crowding issues in the straight as Joey Haynes and Connor Planas look for daylight simultaneously on a five-furlong track with no room to manoeuvre around horses."
+          "text": "Twilight Calls and Michaela's Boy are the genuine closers; watch whether either can find a clear passage in a six-runner race where the field may fan wide early and leave limited ground to make up."
         },
         {
           "severity": "warn",
-          "text": "Twilight Calls is on a six-day turnaround after a recent run, which is a short recovery window for an eight-year-old sprinter — watch the paddock for any signs of freshness or fatigue before concluding the quick return is straightforward."
+          "text": "Law Of Average's last two wins came on Good and Firm — if the going is riding faster than the official Good to Firm assessment, his class and recent form make him a sharper threat than his redistributed map position implies."
         },
         {
           "severity": "info",
-          "text": "Havana Blast's headgear and his natural prominently-raced style make him the most tactically well-placed of the non-front-runners — watch whether Daniel Muscutt can secure the position directly behind Rocking Ends from the gates, as that slot is the most coveted in this race shape."
+          "text": "Havana Blast's course and trip record on non-Standard surfaces is limited (4 from 9 on similar going); if he fails to travel comfortably tracking Rocking Ends, the prominent profile in this race is thinly represented and the race becomes more one-dimensional."
         },
         {
           "severity": "info",
-          "text": "Good to Firm is confirmed for this race on the going report despite the stated GOOD in the race header — all pace and going assessments should reflect the faster surface, which marginally favours hold-up horses with a sharp turn of foot over pure front-running stamina."
+          "text": "With only six runners on a straight flat five furlongs, a wide draw could grant any hold-up horse a rails-hugging or clear-air run without being blocked — check stall positions and early race positioning once the handlers release them."
         }
       ],
       "skipped": false
@@ -884,7 +884,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Recent form is patchy with no wins on similar going (0W0P in sim-going) and the 1m2f trip sits at the shorter end of their recent runs; David Simcock runner with a 5lb claimer up, they set the fractions here but their finishing kick may be limited if tracked closely.",
+          "note": "Consistent front-runner for David Simcock who will go straight to the lead under Taryn Langley — the Simcock yard is 1/10 in the 14-day window and the horse has zero wins on similar going from 15 attempts, which tempers confidence despite the prime tactical position.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Taryn Langley(5)",
@@ -904,7 +904,7 @@
           "_projected": 73.4,
           "_model_price": "16/1",
           "_mkt_price": "14/1",
-          "_win_pct": 5.5,
+          "_win_pct": 5.6,
           "_edge": -3.6,
           "_action": "WATCH",
           "_style_fit": 0.929
@@ -916,7 +916,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Strong course-profile horse with two wins at 10f on Good going and a runner-up at the same trip — Joseph Parr's yard is quiet over 14 days but Jack Mitchell is a strong booking and this runner shapes as the most natural beneficiary of a prominent tracking role.",
+          "note": "Joseph Parr's four-year-old boasts a strong profile at this trip, winning twice at 10f on Good ground and placing twice more — Jack Mitchell takes the ride and the horse should be ideally placed just off Charlie's Choice throughout.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Jack Mitchell",
@@ -935,8 +935,8 @@
           "spotlight": "",
           "_projected": 73.4,
           "_model_price": "4/1",
-          "_mkt_price": "10/3",
-          "_win_pct": 19.4,
+          "_mkt_price": "7/2",
+          "_win_pct": 19.1,
           "_edge": -1.6,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -948,7 +948,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Steps back up to 10f after two runs over 8f on Standard, and his two places on Tapeta suggest he handles synthetic well but Good to Firm is less proven; Kevin Philippart De Foy's yard is in fair form at 3/12 over 14 days and Daniel Muscutt is a quality ride, though 59 days off adds a small fitness query.",
+          "note": "Kevin Philippart De Foy's charge has been placed three times on similar going and steps up from 8f, where he has been placed twice on the all-weather — Daniel Muscutt rides and 59 days off the track is a mild concern, though the form has been consistent enough to suggest fitness should be intact.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Daniel Muscutt",
@@ -966,9 +966,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 73.4,
-          "_model_price": "8/1",
-          "_mkt_price": "13/2",
-          "_win_pct": 11.2,
+          "_model_price": "7/1",
+          "_mkt_price": "11/2",
+          "_win_pct": 13.2,
           "_edge": -1.6,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -980,7 +980,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Landed a win at 8f on Good and has placed form on Good ground, but naturally inclined to race prominently — the crowded early positions mean she is likely to find herself further back than ideal, which is a tactical disadvantage for a filly who wants to see daylight early; blinkers noted.",
+          "note": "Six wins and places from 53 starts in 14 days flags James Owen as a volume trainer in current form — this mare has front-end instincts but with three prominent horses ahead of her in the queue she is likely to find herself in a midfield berth rather than the position she needs to be at her best.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Mason Paetel(5)",
@@ -998,9 +998,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 73.4,
-          "_model_price": "3/1",
-          "_mkt_price": "5/2",
-          "_win_pct": 24.5,
+          "_model_price": "7/2",
+          "_mkt_price": "14/5",
+          "_win_pct": 23.1,
           "_edge": 0.4,
           "_action": "WATCH",
           "_style_fit": 0.927
@@ -1012,7 +1012,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Won on Firm most recently over 10f and has placed form at that trip on Good, so the going and distance both suit; Joe Bradnam is a 7lb claimer which is significant weight relief, and a hold-up style means he needs something to go wrong up front — the expected controlled pace is the main obstacle to his chance; blinkers on.",
+          "note": "The stable's 14-day strike rate is 0/6 and Joe Bradnam claims 7lbs, though the horse's last win came over this exact trip on Firm ground and the hold-up style is genuine — needs the others to have done enough by the two-furlong pole to mount a realistic closing run.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Joe Bradnam(7)",
@@ -1030,9 +1030,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 73.4,
-          "_model_price": "5/1",
-          "_mkt_price": "9/2",
-          "_win_pct": 15.7,
+          "_model_price": "6/1",
+          "_mkt_price": "5/1",
+          "_win_pct": 14.7,
           "_edge": 1.4,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1044,7 +1044,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Has won twice at 12f including on Good ground and is clearly suited by today's trip, but naturally wants to race close to the pace — with the prominent berths already occupied, Marco Ghiani will need to settle him further back than his form dictates, which undermines what has been his winning mechanism in both victories at this distance.",
+          "note": "Back-to-back wins at 12f including on Good ground mark Sibling Rivelry as a course-effective type, but this horse naturally wants to race up with the pace and Marco Ghiani will likely find himself further back than ideal with three confirmed prominent rivals already staking their claim ahead of him.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Marco Ghiani",
@@ -1064,7 +1064,7 @@
           "_projected": 73.4,
           "_model_price": "6/1",
           "_mkt_price": "11/2",
-          "_win_pct": 13.4,
+          "_win_pct": 13.7,
           "_edge": 2.4,
           "_action": "WATCH",
           "_style_fit": 0.927
@@ -1076,7 +1076,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse for Michael Appleby whose best form (3rd on Good at 10f) came over today's trip; Silvestre De Sousa is a strong jockey booking for this yard, though Appleby's 14-day record of 0/24 is concerning, and the steady expected gallop makes it hard for a hold-up runner to generate the momentum needed to close on this flat, fast track; hood worn.",
+          "note": "Silvestre De Sousa takes the ride for Michael Appleby, whose yard has yet to fire in the last 14 days (0/24) — Moonjid carries a hood and has placed on Good ground at this distance, but the hold-up style requires a genuinely pressured gallop that this race shape is unlikely to produce.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Silvestre De Sousa",
@@ -1096,91 +1096,95 @@
           "_projected": 73.4,
           "_model_price": "9/1",
           "_mkt_price": "15/2",
-          "_win_pct": 10.2,
+          "_win_pct": 10.5,
           "_edge": 2.4,
           "_action": "WATCH",
           "_style_fit": 1.0
         }
       ],
-      "paceDynamic": "Charlie's Choice is the one confirmed front runner in this seven-runner field and, with no horse likely to seriously pressure them from the outside, they should be able to dictate a controlled, sustainable gallop over the 1m2f trip on Good to Firm ground at Yarmouth. King's Hand and Nicator are genuine prominent types who will look to sit just off the pace, filling the early positions directly behind Charlie's Choice and creating a compressed, orderly early shape rather than a hot pace scenario. The field actually contains more prominent-minded horses than the race shape can accommodate — Penelope Valentine and Sibling Rivelry are both natural front-runners or prominent racers who are likely to be shuffled back into midfield as the prominent slots fill, meaning their influence will be diluted from the start. This controlled, single-leader setup on fast ground over a mid-distance trip strongly favours prominent-to-midfield horses who can track the steady pace and deliver a sustained finish, rather than true hold-up horses who need a stronger tempo to generate a winning run.",
+      "paceDynamic": "Charlie's Choice is the lone confirmed front-runner and, with no genuine pressurer likely to challenge for the lead, will be allowed to dictate at a comfortable, sustainable gallop over this 1m2f on Good to Firm ground at Yarmouth. King's Hand and Nicator will push forward to fill the prominent positions directly behind, creating a controlled, single-file procession rather than a contested pace scenario. The field holds more prominent-leaning horses than the race shape can accommodate — Penelope Valentine and Sibling Rivelry are both natural front-end types but are likely to be shuffled back into midfield against their instincts, compromising their effectiveness. This race shape strongly favours horses who can travel prominently in a genuine position — King's Hand and Nicator — or those proven closers with the tactical speed to pounce off a modest, uncontested gallop, rather than hold-up horses who need a truly searching pace to reel in the leaders.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Controlled Lead, Prominent Wins",
+          "title": "Controlled Lead, Prominent Win",
           "prob": 68,
-          "trigger": "If Charlie's Choice dictates a measured gallop and King's Hand or Nicator track closely to pounce at the two-furlong pole.",
-          "body": "If Charlie's Choice dictates a measured gallop and King's Hand or Nicator track closely to pounce at the two-furlong pole.",
+          "trigger": "If Charlie's Choice dictates an unchallenged, moderate tempo and the race is won by a horse tracking in second or third.",
+          "body": "If Charlie's Choice dictates an unchallenged, moderate tempo and the race is won by a horse tracking in second or third.",
           "winners": [
             "King's Hand",
             "Nicator"
           ],
           "others": [
             "Charlie's Choice",
-            "Sibling Rivelry"
+            "Penelope Valentine"
           ]
         },
         {
           "label": "B",
           "title": "Front Runner Holds On",
           "prob": 14,
-          "trigger": "If Charlie's Choice gets a completely uncontested lead and controls the tempo so thoroughly that nothing gets to them in the straight.",
-          "body": "If Charlie's Choice gets a completely uncontested lead and controls the tempo so thoroughly that nothing gets to them in the straight.",
+          "trigger": "If Charlie's Choice's moderate gallop is never genuinely challenged and the field is slow to respond in the straight.",
+          "body": "If Charlie's Choice's moderate gallop is never genuinely challenged and the field is slow to respond in the straight.",
           "winners": [
             "Charlie's Choice",
             "King's Hand"
           ],
           "others": [
             "Nicator",
-            "Penelope Valentine"
+            "Sibling Rivelry"
           ]
         },
         {
           "label": "C",
-          "title": "Late Runners Pounce",
+          "title": "Closers Reel Them In",
           "prob": 12,
-          "trigger": "If the pace is genuinely strong enough to compress the field and the hold-up horses Show Biz Kid and Moonjid find room to close late.",
-          "body": "If the pace is genuinely strong enough to compress the field and the hold-up horses Show Biz Kid and Moonjid find room to close late.",
+          "trigger": "If the pace proves genuinely slow enough that hold-up horses conserve energy and pounce with a sharp turn of foot in the final two furlongs.",
+          "body": "If the pace proves genuinely slow enough that hold-up horses conserve energy and pounce with a sharp turn of foot in the final two furlongs.",
           "winners": [
             "Show Biz Kid",
             "Moonjid"
           ],
           "others": [
-            "King's Hand",
-            "Sibling Rivelry"
+            "Sibling Rivelry",
+            "Penelope Valentine"
           ]
         },
         {
           "label": "D",
-          "title": "Redistribution Chaos",
+          "title": "Pace Collapse, Chaos",
           "prob": 6,
-          "trigger": "If multiple prominent horses contest the early positions aggressively, raising the tempo and unsettling the expected shape entirely.",
-          "body": "If multiple prominent horses contest the early positions aggressively, raising the tempo and unsettling the expected shape entirely.",
+          "trigger": "If the modest gallop produces a bunched, sprint-finish from the two-furlong pole with multiple horses in contention simultaneously.",
+          "body": "If the modest gallop produces a bunched, sprint-finish from the two-furlong pole with multiple horses in contention simultaneously.",
           "winners": [
-            "Moonjid",
-            "Show Biz Kid"
-          ],
-          "others": [
             "Sibling Rivelry",
             "Penelope Valentine"
+          ],
+          "others": [
+            "Moonjid",
+            "Show Biz Kid"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "King's Hand has two wins at 10f on Good going and races from a prominent position that suits the expected race shape exactly — if he tracks Charlie's Choice cleanly, he is the primary danger at the business end."
+          "text": "King's Hand has won twice on Good ground at 10f and gets a prominent pitch directly behind Charlie's Choice — if he travels smoothly under Jack Mitchell, he is the most dangerous horse in the race to the leader turning for home."
         },
         {
           "severity": "warn",
-          "text": "Sibling Rivelry is a natural front-runner or close-up racer with two wins at this trip but is mapped to midfield due to pace congestion — watch whether Marco Ghiani attempts to push forward early, which could temporarily disrupt the expected shape."
+          "text": "Penelope Valentine and Sibling Rivelry both want to race prominently but cannot both get that position — watch which of the two manages to slot in closer to the pace early, as the one left in midfield will be racing against its own instincts."
         },
         {
           "severity": "warn",
-          "text": "Show Biz Kid wears blinkers and comes off a Firm-ground win at 10f, meaning the going is not a concern, but a 7lb claimer (Joe Bradnam) on a hold-up horse in a slow-paced race is a tactical mismatch to monitor."
+          "text": "Show Biz Kid's last win came on Firm ground over this trip but Michael Appleby's 0/24 14-day record is a significant trainer-form concern — monitor market moves for any sign the yard has this horse ready."
         },
         {
           "severity": "info",
-          "text": "The actual going for this race is reported as Good to Firm rather than Good — all runners are flagged as going OK, but horses with pure Good or softer winning form (Sibling Rivelry, Moonjid) may find conditions faster than ideal and their sectionals could be compressed as a result."
+          "text": "Going is confirmed Good to Firm for this race despite the headline listed as Good — fast-ground specialists such as Show Biz Kid and King's Hand receive a quiet nudge in their favour from the updated going report."
+        },
+        {
+          "severity": "info",
+          "text": "Charlie's Choice has simulated-going stats of 1 win from 15 attempts on comparable surfaces — a front-runner who fails to win on this going profile even when allowed to lead unchallenged is worth noting as a fade risk late in the straight."
         }
       ],
       "skipped": false
@@ -1231,7 +1235,7 @@
           "_projected": 117.5,
           "_model_price": "25/1",
           "_mkt_price": "18/1",
-          "_win_pct": 3.7,
+          "_win_pct": 3.8,
           "_edge": -2.7,
           "_action": "WATCH"
         },
@@ -1262,7 +1266,7 @@
           "_projected": 117.5,
           "_model_price": "4/5",
           "_mkt_price": "4/5",
-          "_win_pct": 54.6,
+          "_win_pct": 55.6,
           "_edge": 37.3,
           "_action": "WATCH"
         },
@@ -1291,7 +1295,7 @@
           "comment": "",
           "spotlight": "",
           "_projected": 117.5,
-          "_model_price": "94/1",
+          "_model_price": "92/1",
           "_mkt_price": "66/1",
           "_win_pct": 1.1,
           "_edge": -2.7,
@@ -1326,7 +1330,7 @@
           "_mkt_price": "19/1",
           "_win_pct": 3.5,
           "_edge": -4.9,
-          "_action": "AVOID"
+          "_action": "WATCH"
         },
         {
           "name": "Esdaile",
@@ -1353,11 +1357,11 @@
           "comment": "",
           "spotlight": "",
           "_projected": 115.3,
-          "_model_price": "58/1",
-          "_mkt_price": "40/1",
-          "_win_pct": 1.7,
+          "_model_price": "64/1",
+          "_mkt_price": "45/1",
+          "_win_pct": 1.5,
           "_edge": -4.9,
-          "_action": "AVOID"
+          "_action": "WATCH"
         },
         {
           "name": "Miss Guinevere",
@@ -1385,10 +1389,10 @@
           "spotlight": "",
           "_projected": 114.6,
           "_model_price": "28/1",
-          "_mkt_price": "19/1",
-          "_win_pct": 3.5,
+          "_mkt_price": "20/1",
+          "_win_pct": 3.4,
           "_edge": -5.5,
-          "_action": "AVOID"
+          "_action": "WATCH"
         },
         {
           "name": "Summerson",
@@ -1416,10 +1420,10 @@
           "spotlight": "",
           "_projected": 114.6,
           "_model_price": "5/1",
-          "_mkt_price": "3/1",
-          "_win_pct": 17.3,
+          "_mkt_price": "16/5",
+          "_win_pct": 16.8,
           "_edge": -5.5,
-          "_action": "AVOID"
+          "_action": "WATCH"
         },
         {
           "name": "Topathemorning",
@@ -1446,11 +1450,11 @@
           "comment": "",
           "spotlight": "",
           "_projected": 114.6,
-          "_model_price": "13/1",
-          "_mkt_price": "9/1",
-          "_win_pct": 6.9,
+          "_model_price": "15/1",
+          "_mkt_price": "10/1",
+          "_win_pct": 6.4,
           "_edge": -5.5,
-          "_action": "AVOID"
+          "_action": "WATCH"
         },
         {
           "name": "La Mariposa",
@@ -1479,7 +1483,7 @@
           "_projected": 114.6,
           "_model_price": "12/1",
           "_mkt_price": null,
-          "_win_pct": 7.7,
+          "_win_pct": 7.8,
           "_edge": -5.5,
           "_action": "WATCH"
         }
@@ -1529,7 +1533,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up style suits the anticipated controlled pace perfectly; trainer Chapple-Hyam returns 0/4 over 14 days and 76 days off is a query, but one win from 15 on similar going is the key concern — needs everything to fall right for a clean run.|",
+          "note": "Genuine hold-up performer whose best effort in this string was a recent Yarmouth win over this exact course and distance; the 76-day break is the key query, but Chapple-Hyam's 0/4 T14 stat suggests timing this return carefully — if fit, the profile fits the expected race shape ideally.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Benoit De La Sayette",
@@ -1547,9 +1551,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 78.7,
-          "_model_price": "12/1",
+          "_model_price": "10/1",
           "_mkt_price": "9/1",
-          "_win_pct": 8.1,
+          "_win_pct": 8.6,
           "_edge": -2.4,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1561,7 +1565,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Recent form reads 3-9-5-10-9 and the STYLE_FIT flag (0.93) confirms this front-runner is stepping into a race where it must dictate or lose its advantage; four wins from 33 for the yard over 14 days is respectable but 2W3P on similar going from 15 runs shows capability.|",
+          "note": "Sole confirmed pace-setter and holds a STYLE_FIT flag of 0.93 suggesting he is operating slightly outside natural comfort; recent form shows two wins in similar going conditions and the uncontested lead is his primary asset, but handicappers have him at OR 80 and he needs the pace to stay steady.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Jack Doughty",
@@ -1579,9 +1583,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 78.7,
-          "_model_price": "6/1",
-          "_mkt_price": "5/1",
-          "_win_pct": 13.7,
+          "_model_price": "5/1",
+          "_mkt_price": "9/2",
+          "_win_pct": 15.8,
           "_edge": -1.4,
           "_action": "WATCH",
           "_style_fit": 0.93
@@ -1593,7 +1597,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Roger Varian yard is in strong form at 5/19 over 14 days and the horse's last run was a win at Sandown over this trip on Standard; zero wins from six on comparable going is noted but the two placed efforts suggest it handles conditions — hold-up style maps well to the expected race shape.|",
+          "note": "Roger Varian's 5/19 T14 strike-rate is a positive flag, and the horse arrives on the back of a Yarmouth win over this trip in similar conditions 29 days ago; a genuine hold-up type whose sim-going record of 2/6 runs is thin but includes that recent course win — the short-priced positional style should suit the anticipated tempo perfectly.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Robbie Downey",
@@ -1611,9 +1615,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 78.7,
-          "_model_price": "3/1",
-          "_mkt_price": "5/2",
-          "_win_pct": 23.7,
+          "_model_price": "7/2",
+          "_mkt_price": "23/8",
+          "_win_pct": 22.7,
           "_edge": 0.6,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1625,7 +1629,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "258 days off is the defining concern here despite winning twice on similar going from 15 runs; visors fitted, and the form 8-2-1-1-4 over 7-8f shows genuine ability when fresh — Charlie Johnston sends out 3/21 over 14 days and this is very much a fitness question on return.|",
+          "note": "258 days off the track is a significant concern — the longest absence in the field — but Charlie Johnston's 3/21 T14 form and a two-win sequence at 7f-1m on good ground suggest the horse returns ready; visor worn previously and a natural prominent style means she will try to slot behind Knights Gold from the off.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Liam Wright(5)",
@@ -1643,9 +1647,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 76.5,
-          "_model_price": "16/1",
-          "_mkt_price": "14/1",
-          "_win_pct": 5.5,
+          "_model_price": "14/1",
+          "_mkt_price": "12/1",
+          "_win_pct": 6.7,
           "_edge": -1.6,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1657,7 +1661,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Dropped from 7f winners, Sea Suite has a win and two places from six on Good-type ground and the yard fires at 5/53 over 14 days which is modest; visor is fitted and a prominent style should see it competitive, though the 5-furlong base arguably makes this mile trip a stretch at the top end of its range.|",
+          "note": "On the back of a win, wearing headgear, and prominent in style; James Owen's 5/53 T14 strike-rate is modest, but Sea Suite has won twice at 7f on good going and handles fast conditions — the step up to a mile is the tactical question, and the apprentice rider (Mason Paetel, 5lb) helps the weight allowance.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Mason Paetel(5)",
@@ -1675,9 +1679,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 76.5,
-          "_model_price": "4/1",
-          "_mkt_price": "3/1",
-          "_win_pct": 20.6,
+          "_model_price": "9/2",
+          "_mkt_price": "4/1",
+          "_win_pct": 17.4,
           "_edge": -0.6,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1689,7 +1693,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Consistent hold-up profile from Silvestre De Sousa but a difficult 68 days between runs and a career-best form that shows only one place from 13 on similar going; last four efforts on soft or firm give limited confidence at this level, and the trip reduction from 10f to 8f is worth monitoring.|",
+          "note": "A hold-up horse whose last win came at 8f on Tapeta and whose Yarmouth form includes a second at this trip; the 68-day absence and a sim-going record of 4/13 with no wins on turf good ground is sobering, but De Sousa's ability to organise a late run from the rear keeps him relevant if the hold-up scenario materialises.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Silvestre De Sousa",
@@ -1709,7 +1713,7 @@
           "_projected": 76.5,
           "_model_price": "16/1",
           "_mkt_price": "14/1",
-          "_win_pct": 5.5,
+          "_win_pct": 5.8,
           "_edge": -0.6,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1721,7 +1725,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "David Simcock sends this one out on 0/11 over 14 days; the horse is a genuine hold-up type by nature but has been mapped to midfield due to redistribution, meaning it may not get as far back as it would like — one place from 15 on similar going and a form string of 1-5-4-4-0-6 suggests it needs things to click.|",
+          "note": "David Simcock's yard is 0/11 in the 14-day window — a negative flag; genuinely a hold-up horse pushed forward on the map due to redistribution, so the STYLE_FIT discount (0.92) is fair and meaningful — the sim-going record of 1/15 on comparable ground is the weakest in the field and the recent 19-day turnaround doesn't obviously help.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Daniel Muscutt",
@@ -1739,9 +1743,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 75.8,
-          "_model_price": "28/1",
+          "_model_price": "25/1",
           "_mkt_price": "22/1",
-          "_win_pct": 3.6,
+          "_win_pct": 3.8,
           "_edge": -0.3,
           "_action": "WATCH",
           "_style_fit": 0.922
@@ -1753,7 +1757,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Persistent form of 5-3-5-7-5 tells its own story — consistently beaten but stays involved; William Knight returns 0/13 over 14 days and six prior runs on similar going yield one win and two places, making it a hold-your-position rather than a win-your-race type.|",
+          "note": "A prominent racer with a sim-going record of 6/15 including one win, but William Knight's T14 stands at 0/13 and the horse's finishing positions across its last five runs (3rd-5th-5th-7th-5th) suggest a consistent but not winning profile; the 19-day return is fine and Ghiani is a capable Yarmouth jockey.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Marco Ghiani",
@@ -1771,9 +1775,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 75.8,
-          "_model_price": "15/1",
-          "_mkt_price": "12/1",
-          "_win_pct": 6.4,
+          "_model_price": "20/1",
+          "_mkt_price": "18/1",
+          "_win_pct": 4.6,
           "_edge": 0.7,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1785,7 +1789,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "The form reads 8-8-8-8-8-2, which is stark — genuinely prominent in style but the field density means it has been pushed back in the mapping; the Dylan Cunha yard sends out 2/25 over 14 days and the most recent run was only 8 days ago, so fitness is not the concern — raw ability at this level is.|",
+          "note": "Four consecutive 8th-place finishes make the form unambiguously poor; naturally prominent but displaced to midfield on the map because the field is overloaded with pace-biased horses — Dylan Cunha's 2/25 T14 rate offers limited trainer confidence, and the STYLE_FIT tag (0.92) reflects genuine positional difficulty in this field shape.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Taryn Langley(5)",
@@ -1803,9 +1807,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 75.8,
-          "_model_price": "12/1",
-          "_mkt_price": "10/1",
-          "_win_pct": 7.6,
+          "_model_price": "10/1",
+          "_mkt_price": "17/2",
+          "_win_pct": 9.3,
           "_edge": 0.7,
           "_action": "WATCH",
           "_style_fit": 0.922
@@ -1817,7 +1821,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "270 days since its last run is an enormous flag, and Joseph Parr has 0/7 over 14 days; naturally prefers to race prominently but the crowded pace positions mean it is unlikely to find its preferred spot — four placed efforts from 15 on similar going show it handles the conditions if it arrives fit.|",
+          "note": "270 days off the track is the longest layoff in the race alongside a record of consistent mid-pack finishes (four 4ths and a 10th); a naturally prominent horse similarly crowded out of position by the pace-heavy field, and the Joseph Parr yard at 0/7 T14 gives no confidence about a first-time-out return — requires significant improvement to factor.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Jack Mitchell",
@@ -1836,39 +1840,39 @@
           "spotlight": "",
           "_projected": 75.8,
           "_model_price": "18/1",
-          "_mkt_price": "15/1",
+          "_mkt_price": "16/1",
           "_win_pct": 5.3,
           "_edge": 4.7,
           "_action": "WATCH",
           "_style_fit": 0.929
         }
       ],
-      "paceDynamic": "Knights Gold is the sole confirmed front-runner and, on Good to Firm ground at Yarmouth's flat mile, is likely to bowl along at a sustainable gallop without any genuine pressure from the field. Sea Suite and Cancan In The Rain are the most credible prominent types capable of sitting just off the pace, while Red Hat Eagle also prefers to race with cover from the front. Rogue Encore, Influential, Shihoku and Hitched are the natural hold-up brigade, though the field carries more prominent and midfield types than the map can accommodate — Gorgeous Mr George, Kalamunda and Hitched are genuine positional types who will be competing for space and are unlikely to fully execute their preferred tactics. With one unhurried front-runner setting a controlled, honest gallop on fast ground, this race shape strongly favours hold-up horses with a sharp turn of foot who can finish through the field, provided they are not blocked for a run on a straight, flat track.",
+      "paceDynamic": "Knights Gold is the sole confirmed front-runner and, on Good to Firm ground at Yarmouth's flat mile, is expected to bowl along at a sustainable, uncontested tempo without any genuine pace rival to force him into an early duel. Behind him, Cancan In The Rain, Sea Suite, and Red Hat Eagle are natural prominent types who will compete for the early positions just off the leader, creating a compact early order but not a truly pressured gallop. The field holds more prominent-minded horses than can all slot naturally into those early positions — Gorgeous Mr George, Kalamunda, and Hitched are genuine pace-biased or hold-up types redistributed on the map, meaning real scrimmaging for positions two through five is probable, with Knights Gold, Cancan In The Rain, and Sea Suite most likely to actually secure their preferred slots. A lone, relaxed front-runner on fast ground over a flat mile at Yarmouth creates a rail-hugging, controlled tempo that classically suits hold-up finishers who can track and quicken in the straight, or a prominent horse with the engine to maintain their position and outstay rivals once the pace lifts — the tactical verdict favours genuine hold-up horses who can draft off the steady tempo and unleash a sustained late run.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Controlled Pace, Closers Strike",
-          "prob": 62,
-          "trigger": "If Knights Gold bowls along uncontested at an even tempo that sets up a strong-finishing straight.",
-          "body": "If Knights Gold bowls along uncontested at an even tempo that sets up a strong-finishing straight.",
+          "title": "Knights Gold Controls; Closers Strike",
+          "prob": 58,
+          "trigger": "If Knights Gold dictates an uncontested, even gallop and the pace is just strong enough to spread the field without burning off the hold-up horses.",
+          "body": "If Knights Gold dictates an uncontested, even gallop and the pace is just strong enough to spread the field without burning off the hold-up horses.",
           "winners": [
             "Rogue Encore",
             "Influential"
           ],
           "others": [
             "Shihoku",
-            "Sea Suite"
+            "Hitched"
           ]
         },
         {
           "label": "B",
-          "title": "Prominent Duo Grind It Out",
-          "prob": 20,
-          "trigger": "If Sea Suite and Cancan In The Rain press Knights Gold hard enough to lift the tempo and grind out a rhythm that suits positional horses.",
-          "body": "If Sea Suite and Cancan In The Rain press Knights Gold hard enough to lift the tempo and grind out a rhythm that suits positional horses.",
+          "title": "Prominent Types Dominate; Pace Honest Enough",
+          "prob": 22,
+          "trigger": "If the early pace is fractionally stronger than expected — either Sea Suite or Cancan In The Rain pressing Knights Gold — creating a genuine enough tempo that the best-placed prominent runners hold on.",
+          "body": "If the early pace is fractionally stronger than expected — either Sea Suite or Cancan In The Rain pressing Knights Gold — creating a genuine enough tempo that the best-placed prominent runners hold on.",
           "winners": [
-            "Sea Suite",
-            "Cancan In The Rain"
+            "Cancan In The Rain",
+            "Sea Suite"
           ],
           "others": [
             "Knights Gold",
@@ -1877,31 +1881,31 @@
         },
         {
           "label": "C",
-          "title": "Front Runner Steals It",
-          "prob": 11,
-          "trigger": "If Knights Gold's uncontested lead translates into a soft, unchallenged gallop that is never truly tested from the front.",
-          "body": "If Knights Gold's uncontested lead translates into a soft, unchallenged gallop that is never truly tested from the front.",
+          "title": "Pace Collapses; Front Runner Steals It",
+          "prob": 13,
+          "trigger": "If Knights Gold meets minimal challenge, crawls the early fractions, and sprints clear before hold-up horses can organise a response.",
+          "body": "If Knights Gold meets minimal challenge, crawls the early fractions, and sprints clear before hold-up horses can organise a response.",
           "winners": [
             "Knights Gold",
-            "Red Hat Eagle"
+            "Cancan In The Rain"
           ],
           "others": [
-            "Cancan In The Rain",
-            "Sea Suite"
+            "Sea Suite",
+            "Red Hat Eagle"
           ]
         },
         {
           "label": "D",
-          "title": "Pace Collapse, Late Surge",
+          "title": "Chaotic Pace; Hold-Up Types Flattered",
           "prob": 7,
-          "trigger": "If the pace is so slow early that a mass sprint develops and one of the true hold-up types finds an uninterrupted passage at the finish.",
-          "body": "If the pace is so slow early that a mass sprint develops and one of the true hold-up types finds an uninterrupted passage at the finish.",
+          "trigger": "If scrambling for positions in the early furlongs creates an uneven, stop-start gallop that briefly flatters hold-up horses without truly suiting them.",
+          "body": "If scrambling for positions in the early furlongs creates an uneven, stop-start gallop that briefly flatters hold-up horses without truly suiting them.",
           "winners": [
-            "Shihoku",
-            "Hitched"
+            "Rogue Encore",
+            "Shihoku"
           ],
           "others": [
-            "Rogue Encore",
+            "Hitched",
             "Influential"
           ]
         }
@@ -1909,23 +1913,23 @@
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Knights Gold's ability to control the tempo unchallenged is the single biggest race-shaping variable — if Sea Suite or Cancan In The Rain press it from the off, the scenario swings sharply toward hold-up horses.|"
+          "text": "Rogue Encore's 76-day absence is a concern, but if Chapple-Hyam has him spot-on for this Yarmouth return over the exact trip of his last win, he is the most naturally suited profile to the anticipated pace shape and any sign of freshness in the paddock should be noted."
         },
         {
           "severity": "warn",
-          "text": "Cancan In The Rain returns after 258 days off and Kalamunda after 270 days — both are significant fitness unknowns and could produce unpredictable positional behaviour in the early stages that disrupts the pace map.|"
+          "text": "The scrimmage for prominent positions early on — between Cancan In The Rain, Sea Suite, Red Hat Eagle, and the redistributed Gorgeous Mr George and Kalamunda — could create a slightly uneven early pace, which would be the key race-shape-altering event to watch for in the opening two furlongs."
         },
         {
           "severity": "warn",
-          "text": "Gorgeous Mr George, Kalamunda and Hitched are all likely to find their natural positions compromised by the volume of prominent types in this field — watch how the first two furlongs unfold to see which of them actually secures its preferred slot.|"
+          "text": "Cancan In The Rain's 258-day absence makes her a significant watch at the start and in the early stages — if she shows any signs of ring-rustiness or fails to stride out prominently, her scenario (B) collapses and the weight shifts firmly back to scenario A."
         },
         {
           "severity": "info",
-          "text": "Rogue Encore has only one place from 15 starts on similar going (Good-to-Firm equivalent), which tempers its appeal despite the style fit — monitor whether De La Sayette gets a clean, uninterrupted passage on the outside rather than being trapped on the rail.|"
+          "text": "Knights Gold's STYLE_FIT flag (0.93) deserves monitoring — if he finds himself pressed by Sea Suite or Cancan In The Rain off a fast break, the uncontested gallop evaporates and the probability profile shifts meaningfully toward hold-up horses arriving late."
         },
         {
           "severity": "info",
-          "text": "Yarmouth's flat, straight mile rewards horses with a direct line to the winner, so any runner forced to switch or wait for a gap in the final two furlongs faces a material disadvantage — field width in the closing stages is worth noting at the off.|"
+          "text": "Influential's trainer Roger Varian is 5/19 in the 14-day window — the second-strongest yard stat in the race — making this horse worth tracking through the early furlongs to see whether Robbie Downey commits to a closer's run or attempts to edge closer than usual."
         }
       ],
       "skipped": false
