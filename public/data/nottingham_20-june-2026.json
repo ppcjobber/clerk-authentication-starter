@@ -35,7 +35,7 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Gosden yard in 7-from-23 form over 14 days, returning on 12 days' rest with two recent runner-up efforts over shorter at Sandown on Soft/Standard; steps up to 1m2f on Good which should suit a horse likely to be ridden prominently, though the STYLE_FIT flag suggests he is naturally a more prominent racer and the lone-leader role here is close enough to his true profile to be manageable.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Luke Catton(3)",
@@ -67,7 +67,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "",
+          "note": "Hold-up specialist with back-to-back sixth-place finishes including one at 11f on Standard and one at 8f on Good, the latter from a similar-going run that produced no win or placed effort (0W0P sim-going); Michael Appleby's yard is in 0-from-20 form over the past 14 days, and from the rear in a small three-runner field with no real pace collapse expected, Flag Of Eva faces a stiff task to land a winning blow.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Jack Dace(5)",
@@ -99,7 +99,7 @@
           "finish_type": "E",
           "dist_code": "UNKNOWN",
           "going_flag": "UNKNOWN",
-          "note": "",
+          "note": "Lightly raced and entirely unknown in terms of running style (tagged U/UNKNOWN going), wearing headgear (hg:h) which may indicate a need for focus; Pat Dobbs partners for Ralph Beckett whose 2-from-27 14-day record is modest, but the yard's ability to produce ready debutants at least keeps Seacole on the radar as a dark horse despite having no form to assess.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Pat Dobbs",
@@ -125,9 +125,82 @@
           "_style_fit": 1.0
         }
       ],
-      "paceDynamic": "",
-      "scenarios": [],
-      "watchPoints": [],
+      "paceDynamic": "Cyrano De Bergerac is the sole confirmed pace-setter in this three-runner contest and will lead from the outset at Nottingham over 1m2f on Good ground, dictating every fraction without any rival willing or able to pressurise him. Flag Of Eva is a hold-up type who will be last away from the gates, leaving Seacole to fill the middle ground by default rather than by design. With no rival to challenge Cyrano De Bergerac's lead, he sets a sustainable, controlled tempo that is likely to stretch the field rather than set up a late sprint — meaning any closer must find genuine finishing power off their own back rather than capitalising on a collapsed pace. This race shape overwhelmingly favours the front-runner or any horse with enough tactical versatility to sit close to the fractions, as a lone, uncontested leader on Good ground at a flat track like Nottingham is extremely difficult to peg back.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Lone Leader Controls",
+          "prob": 72,
+          "trigger": "If Cyrano De Bergerac bowls along unchallenged and sets a measured pace that saps the closers' finishing kick.",
+          "body": "If Cyrano De Bergerac bowls along unchallenged and sets a measured pace that saps the closers' finishing kick.",
+          "winners": [
+            "Cyrano De Bergerac",
+            "Seacole"
+          ],
+          "others": [
+            "Flag Of Eva"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Closer Swoops Late",
+          "prob": 14,
+          "trigger": "If Seacole or Flag Of Eva produces a powerful sustained finish to reel in the leader in the final furlong.",
+          "body": "If Seacole or Flag Of Eva produces a powerful sustained finish to reel in the leader in the final furlong.",
+          "winners": [
+            "Seacole",
+            "Flag Of Eva"
+          ],
+          "others": [
+            "Cyrano De Bergerac"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Front Runner Outstays All",
+          "prob": 10,
+          "trigger": "If the pace is genuinely modest and Cyrano De Bergerac simply gallops his rivals into submission with a sustained staying effort.",
+          "body": "If the pace is genuinely modest and Cyrano De Bergerac simply gallops his rivals into submission with a sustained staying effort.",
+          "winners": [
+            "Cyrano De Bergerac",
+            "Seacole"
+          ],
+          "others": [
+            "Flag Of Eva"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Rank Outsider Upsets",
+          "prob": 4,
+          "trigger": "If Seacole, lightly raced and entirely unexposed, produces an unexpectedly high ceiling on debut or near-debut form.",
+          "body": "If Seacole, lightly raced and entirely unexposed, produces an unexpectedly high ceiling on debut or near-debut form.",
+          "winners": [
+            "Seacole"
+          ],
+          "others": [
+            "Cyrano De Bergerac"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Cyrano De Bergerac's ability to dictate his own fractions unchallenged is the single biggest race-shape factor — watch whether Luke Catton elects to bowl along at a true gallop or crawl, as the tempo he sets will determine whether the closers have any chance of closing."
+        },
+        {
+          "severity": "warn",
+          "text": "Seacole is completely unexposed with headgear fitted and an UNKNOWN going profile — if Pat Dobbs and Ralph Beckett have this horse primed, an upset is live despite the lack of form data; monitor market moves before the off."
+        },
+        {
+          "severity": "warn",
+          "text": "Flag Of Eva's trainer Michael Appleby is in a deep losing run (0/20 over 14 days) and the horse has failed to place in either recent start at similar distances and going — watch for any signs of market confidence that might indicate a revival, otherwise treat sceptically."
+        },
+        {
+          "severity": "info",
+          "text": "With only three runners, the dynamics of whether Seacole tracks the leader or drops in behind Flag Of Eva will materially affect the race — if Seacole goes second early, the race becomes a procession; if Seacole is reluctant and dwells, it effectively hands Cyrano De Bergerac a solo gallop."
+        }
+      ],
       "skipped": false
     },
     {
@@ -165,7 +238,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Confirmed front-runner who steps up from 1m2f to 1m½f on similar Good ground, and with a recent win over 8f suggests stamina for this trip is not guaranteed — however its OR of 82 heads the field and an uncontested lead is a significant tactical bonus for Kyle McHugh(3) on just 19 days' rest.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Kyle McHugh(3)",
@@ -185,7 +258,7 @@
           "_projected": 74.0,
           "_model_price": "3/1",
           "_mkt_price": "5/2",
-          "_win_pct": 24.8,
+          "_win_pct": 24.7,
           "_edge": -8.0,
           "_action": "WATCH",
           "_style_fit": 0.9
@@ -197,7 +270,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Returned a winner last time out after a 74-day break, but all five recent runs have been over shorter 7f-8f trips, making this 1m½f distance a significant and untested stamina query; Shay Farmer will need to produce a career-best staying performance from a horse whose hold-up style is also reliant on pace being set ahead of it.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Shay Farmer",
@@ -217,7 +290,7 @@
           "_projected": 74.0,
           "_model_price": "3/1",
           "_mkt_price": "11/4",
-          "_win_pct": 24.0,
+          "_win_pct": 23.8,
           "_edge": -3.0,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -229,7 +302,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Won impressively over 10f on Good at the last start and returns after a long 232-day absence, but Tom Clover's yard have a 1-from-8 14-day strike rate suggesting in-form fitness is plausible; Molly Keegan-Price (7lb claim) partners a horse whose best recent form has come at shorter than today's trip and the layoff is the key risk factor.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Molly Keegan-Price(7)",
@@ -247,9 +320,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 74.0,
-          "_model_price": "5/2",
-          "_mkt_price": "9/4",
-          "_win_pct": 27.9,
+          "_model_price": "3/1",
+          "_mkt_price": "5/2",
+          "_win_pct": 25.7,
           "_edge": -2.0,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -261,7 +334,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "",
+          "note": "Tim Easterby's yard is in excellent form (7/92 over 14 days) and this six-year-old returns quickly on seven days' rest, but its natural inclination is to race from off the pace — a trait that sits awkwardly in a small field where the tempo may not be strong enough to create the late opening it needs; the style mismatch tempers its appeal regardless of trainer form.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Jake Dickson",
@@ -279,9 +352,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 74.0,
-          "_model_price": "6/1",
-          "_mkt_price": "11/2",
-          "_win_pct": 14.1,
+          "_model_price": "5/1",
+          "_mkt_price": "9/2",
+          "_win_pct": 16.6,
           "_edge": 0.0,
           "_action": "WATCH",
           "_style_fit": 0.927
@@ -293,7 +366,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "An eight-year-old prominent racer who has not won in 15 similar-going starts and is stepping up markedly in trip after a series of 8f runs on Standard surfaces; Tony Carroll's stable is active (7/70 in 14 days) but Myla Coppins faces a tough task conjuring improvement from a horse who has run out of form at shorter distances.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Myla Coppins",
@@ -319,9 +392,86 @@
           "_style_fit": 1.0
         }
       ],
-      "paceDynamic": "",
-      "scenarios": [],
-      "watchPoints": [],
+      "paceDynamic": "Ramli is the lone confirmed front-runner in this five-runner field and, with no rival likely to seriously contest the lead, should be allowed to set a comfortable, uncontested gallop over the mile and a half on Good turf at Nottingham. Equion carries prominent-style tendencies and may sit close behind Ramli, but neither horse profiles as a genuine pressurer, meaning the pace is likely to be honest rather than brutal — a sustainable rhythm that keeps the field bunched and the race genuinely competitive into the straight. The hold-up trio of Zowal, Lord Normandy, and Leadenhall will be forced to settle in behind a modest tempo, which compresses the gaps and reduces the advantage of a late run. This race shape strongly favours a horse that can track the leader closely in second or third and pick up as the pace settles — a prominent-to-tracking profile has the clearest tactical edge, as the tempo is unlikely to be fast enough to string out the field and leave true closers with a meaningful gap to exploit.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Ramli Controls, Leads Home",
+          "prob": 70,
+          "trigger": "If Ramli dictates an uncontested, measured gallop and the hold-up horses cannot accelerate from too far back.",
+          "body": "If Ramli dictates an uncontested, measured gallop and the hold-up horses cannot accelerate from too far back.",
+          "winners": [
+            "Ramli",
+            "Equion"
+          ],
+          "others": [
+            "Lord Normandy",
+            "Zowal"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Tracker Pounces Late Straight",
+          "prob": 16,
+          "trigger": "If Ramli's pace proves slightly too brisk for comfort and a close tracker delivers a decisive challenge inside the final furlong.",
+          "body": "If Ramli's pace proves slightly too brisk for comfort and a close tracker delivers a decisive challenge inside the final furlong.",
+          "winners": [
+            "Equion",
+            "Lord Normandy"
+          ],
+          "others": [
+            "Ramli",
+            "Zowal"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Hold-Up Horse Swoops Late",
+          "prob": 9,
+          "trigger": "If the tempo is genuinely strong enough to stretch the field and leave a true closer with a meaningful gap to pick off beaten rivals.",
+          "body": "If the tempo is genuinely strong enough to stretch the field and leave a true closer with a meaningful gap to pick off beaten rivals.",
+          "winners": [
+            "Lord Normandy",
+            "Zowal"
+          ],
+          "others": [
+            "Equion",
+            "Ramli"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Leadenhall Overcomes Redistribution",
+          "prob": 5,
+          "trigger": "If Leadenhall, a true hold-up horse pushed forward on the pace map, manages to find its natural rearward berth and produces a strong late run.",
+          "body": "If Leadenhall, a true hold-up horse pushed forward on the pace map, manages to find its natural rearward berth and produces a strong late run.",
+          "winners": [
+            "Leadenhall"
+          ],
+          "others": [
+            "Zowal",
+            "Lord Normandy"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Watch whether Equion attempts to push up and apply pressure on Ramli early — if it does, the pace could lift significantly and the hold-up horses would benefit far more than the pace map currently suggests."
+        },
+        {
+          "severity": "warn",
+          "text": "Lord Normandy's 232-day absence is the biggest unknown in the race; if it returns at peak fitness it holds strong form on Good ground, but watch for any signs of ring rustiness in the paddock before drawing conclusions."
+        },
+        {
+          "severity": "warn",
+          "text": "Leadenhall runs just seven days after its last race and true hold-up horses in five-runner fields frequently fail to get the pace or room they need — monitor whether Jake Dickson attempts to ride it closer than its natural style to compensate."
+        },
+        {
+          "severity": "info",
+          "text": "Zowal's stamina for 1m½f is entirely untested — its entire recent history is over 7f-8f, and if it weakens sharply in the final two furlongs it could cause interference for horses attempting to finish past it on the outside."
+        }
+      ],
       "skipped": false
     },
     {
@@ -362,7 +512,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "The lone front-runner who sets the tactical tempo; Harry Vigors claims 7lb which could be significant in a handicap, trainer Martyn Meade is 0/2 in the last 14 days, and at 44 days since last run fitness warrants a check, but good-going form reads 11 starts in 12 similar conditions with strong placed record.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Harry Vigors(7)",
@@ -380,9 +530,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 85.1,
-          "_model_price": "7/2",
-          "_mkt_price": "11/4",
-          "_win_pct": 22.2,
+          "_model_price": "9/2",
+          "_mkt_price": "4/1",
+          "_win_pct": 17.9,
           "_edge": -1.9,
           "_action": "WATCH",
           "_style_fit": 0.929
@@ -394,7 +544,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "",
+          "note": "Roger Varian's filly returns from a significant 289-day layoff which is the biggest fitness flag in the race; the one win in similar going is encouraging and Sean Bowen is a high-quality booking, but the long break means she needs to strip fit first time out.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Sean D Bowen",
@@ -412,9 +562,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 85.1,
-          "_model_price": "8/1",
-          "_mkt_price": "13/2",
-          "_win_pct": 11.1,
+          "_model_price": "9/1",
+          "_mkt_price": "8/1",
+          "_win_pct": 9.9,
           "_edge": -1.9,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -426,7 +576,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "",
+          "note": "A seven-year-old hold-up specialist who prefers to be produced late, Hugo Palmer has sent out 5 winners from 27 runners in the last 14 days which is solid strike rate; recent form includes a string of midfield finishes at longer trips suggesting this 1m2f may be on the sharp side for him.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Luke Catton(3)",
@@ -444,9 +594,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 85.1,
-          "_model_price": "22/1",
+          "_model_price": "20/1",
           "_mkt_price": "18/1",
-          "_win_pct": 4.4,
+          "_win_pct": 4.7,
           "_edge": -1.9,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -458,7 +608,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "",
+          "note": "Consistent closer who has placed twice from five similar-going starts, notably second twice in quick succession; David O'Meara is in decent 14-day form and the 15-day turnaround suggests the horse is in a good routine, making him the most reliable of the hold-up contingent.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Callum Hutchinson",
@@ -477,7 +627,7 @@
           "spotlight": "",
           "_projected": 85.1,
           "_model_price": "3/1",
-          "_mkt_price": "5/2",
+          "_mkt_price": "11/4",
           "_win_pct": 24.0,
           "_edge": -0.9,
           "_action": "WATCH",
@@ -490,7 +640,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "",
+          "note": "A genuine hold-up horse pushed toward midfield on the map due to field overcrowding at the rear — his true racing style is to be produced last; Simon & Ed Crisford's yard has only 1 winner from 20 runners in 14 days and the tongue-tie plus a series of placed-but-no-win efforts in good going suggest he fills a minor role rather than a winning one here.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Ross Coakley",
@@ -508,9 +658,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 85.1,
-          "_model_price": "9/1",
-          "_mkt_price": "15/2",
-          "_win_pct": 10.0,
+          "_model_price": "7/1",
+          "_mkt_price": "13/2",
+          "_win_pct": 12.1,
           "_edge": 0.1,
           "_action": "WATCH",
           "_style_fit": 0.922
@@ -522,7 +672,7 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Pat Dobbs rides this William Haggas-trained five-year-old who is a natural prominent racer by inclination but finds himself squeezed out of that position by the congestion at the head of affairs; Haggas is red-hot at 11/30 over 14 days, which is the best trainer stat in the race, and Time Loop's form over 10f on easier ground is decent enough to be dangerous if the shape allows.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Pat Dobbs",
@@ -540,9 +690,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 85.1,
-          "_model_price": "6/1",
-          "_mkt_price": "5/1",
-          "_win_pct": 14.2,
+          "_model_price": "5/1",
+          "_mkt_price": "9/2",
+          "_win_pct": 16.7,
           "_edge": 1.1,
           "_action": "WATCH",
           "_style_fit": 0.9
@@ -554,7 +704,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Tony Carroll's four-year-old has a reliable prominent style that should find a clean position just behind Organ; recent form of 413504 shows consistency without a win on quicker ground, and the 42-day break is standard, but the trainer's modest 5/49 14-day return tempers enthusiasm about a stable uptick.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Jack Doughty",
@@ -573,8 +723,8 @@
           "spotlight": "",
           "_projected": 85.1,
           "_model_price": "20/1",
-          "_mkt_price": "16/1",
-          "_win_pct": 5.0,
+          "_mkt_price": "18/1",
+          "_win_pct": 4.8,
           "_edge": 1.1,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -586,7 +736,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Off the track for 257 days — the joint-longest layoff in the field alongside Model Yuko — which is the dominant concern; a natural prominent runner by style, she is pushed back to midfield on the map because of front-end congestion, and with Charlie Pike's yard at 0/11 in 14 days, the comeback angle is hard to back with confidence.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Kieren Fox",
@@ -604,17 +754,99 @@
           "comment": "",
           "spotlight": "",
           "_projected": 85.1,
-          "_model_price": "10/1",
+          "_model_price": "9/1",
           "_mkt_price": "17/2",
-          "_win_pct": 9.2,
+          "_win_pct": 9.9,
           "_edge": 4.1,
           "_action": "WATCH",
           "_style_fit": 0.9
         }
       ],
-      "paceDynamic": "",
-      "scenarios": [],
-      "watchPoints": [],
+      "paceDynamic": "Organ is the sole confirmed front-runner and, with no genuine rival likely to push for the lead, should be able to dictate a controlled, sustainable gallop from the outset over this flat 1m2f trip on good ground at Nottingham. Towerlands and Model Yuko are the likeliest prominent horses to sit close behind, while the hold-up brigade of Spoken Truth and Nolton Cross will be waiting for a late injection of pace that may or may not come. This field contains more pace-inclined horses than the map can accommodate — Time Loop and Bella's Path are natural prominent types who will almost certainly find themselves shuffled back into midfield given Organ's head start at the rail, and Green Triangle, a true hold-up horse, is shown in midfield for the same crowding reason. With Organ setting a measured, uncontested tempo, this race shape strongly favours prominent horses who can travel in the slipstream and pick up cleanly when the pace is controlled rather than severe — a sit-close-and-quicken profile wins this shape most often.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Organ Controls, Sits Close Win",
+          "prob": 62,
+          "trigger": "If Organ dictates an uncontested, economical gallop and the pace stays honest but never brutal.",
+          "body": "If Organ dictates an uncontested, economical gallop and the pace stays honest but never brutal.",
+          "winners": [
+            "Organ",
+            "Towerlands"
+          ],
+          "others": [
+            "Model Yuko",
+            "Spoken Truth"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Hold-Up Horses Finish Over Top",
+          "prob": 17,
+          "trigger": "If the pace is slow enough that the field bunches and closers get a dream run through from off the pace.",
+          "body": "If the pace is slow enough that the field bunches and closers get a dream run through from off the pace.",
+          "winners": [
+            "Spoken Truth",
+            "Nolton Cross"
+          ],
+          "others": [
+            "Green Triangle",
+            "Time Loop"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Pace Collapse, Prominent Poach",
+          "prob": 13,
+          "trigger": "If Organ sets a pace that proves too slow and a prominent horse steals the race without being challenged into the final furlong.",
+          "body": "If Organ sets a pace that proves too slow and a prominent horse steals the race without being challenged into the final furlong.",
+          "winners": [
+            "Model Yuko",
+            "Towerlands"
+          ],
+          "others": [
+            "Organ",
+            "Time Loop"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Redistribution Chaos, Wide Run",
+          "prob": 8,
+          "trigger": "If the prominent horses fail to settle and crowd each other, forcing Time Loop or Bella's Path into an unintended front-rank role that scrambles the shape.",
+          "body": "If the prominent horses fail to settle and crowd each other, forcing Time Loop or Bella's Path into an unintended front-rank role that scrambles the shape.",
+          "winners": [
+            "Time Loop",
+            "Bella's Path"
+          ],
+          "others": [
+            "Towerlands",
+            "Organ"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Organ's jockey Harry Vigors claims 7lb — watch whether the inexperienced claim rider can manage the front-running role cleanly from the off and prevent rivals from stealing a march in the first two furlongs."
+        },
+        {
+          "severity": "warn",
+          "text": "Model Yuko and Bella's Path both return from absences of over 250 days — if either shows greenness or takes time to find stride, they could interfere with horses attempting to track Organ through the early stages."
+        },
+        {
+          "severity": "warn",
+          "text": "Time Loop is a natural prominent type racing out of role in midfield; if Pat Dobbs elects to send him forward regardless, it could inject unexpected pressure on Organ and transform the race shape entirely from a controlled to a contested gallop."
+        },
+        {
+          "severity": "info",
+          "text": "Spoken Truth is on a 15-day turnaround and has placed five times from thirteen similar-going runs — watch his position at the two-furlong pole to judge whether the slow pace scenario is materialising and he has a clear run to the stands rail."
+        },
+        {
+          "severity": "info",
+          "text": "Nottingham's straight flat mile-and-two finish strongly rewards horses with a clean early position; watch the draw and the first two furlongs closely to see which of the crowded prominent horses secures the rail and which are forced wider at a cost."
+        }
+      ],
       "skipped": false
     },
     {
@@ -654,7 +886,7 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "William Haggas-trained 3yo with a sharp recent form string of 1-1-0 on good ground over 5f, making her the most course-relevant horse in the race; prominent style suits this uncontested pace perfectly, and 36 days between runs is well within normal range for the stable.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Pat Dobbs",
@@ -672,9 +904,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 83.1,
-          "_model_price": "7/2",
+          "_model_price": "4/1",
           "_mkt_price": "7/2",
-          "_win_pct": 21.1,
+          "_win_pct": 20.5,
           "_edge": 1.4,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -686,7 +918,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "176 days off the track is a significant fitness concern for Tony Carroll's 5yo despite her two 5f placed efforts on good going; in truth a genuine hold-up horse whose natural closing role is squeezed in this moderate-tempo shape, where she is unlikely to be able to drop in far enough to produce her best finish.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Myla Coppins(7)",
@@ -706,7 +938,7 @@
           "_projected": 83.1,
           "_model_price": "16/1",
           "_mkt_price": "16/1",
-          "_win_pct": 5.8,
+          "_win_pct": 5.6,
           "_edge": 8.4,
           "_action": "WATCH",
           "_style_fit": 0.927
@@ -718,7 +950,7 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Ralph Beckett's 3yo won last time over 6f on good ground and drops to 5f, which is a slight stamina unknown, but her prominent racing style means she will be in the firing line throughout and is very much in the right tactical position for this pace map; the 5lb claimer Jack Dace takes some of the weight off a potentially lightly treated filly.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Jack Dace(5)",
@@ -736,9 +968,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 83.1,
-          "_model_price": "4/1",
-          "_mkt_price": "15/4",
-          "_win_pct": 20.4,
+          "_model_price": "9/2",
+          "_mkt_price": "4/1",
+          "_win_pct": 18.9,
           "_edge": 6.4,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -750,7 +982,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "The race's only confirmed front-runner, and while she sets the race up for others given her STYLE_FIT tag, her tongue-tie and visor setup suggest connections want her mentally switched on from the gate; her good-ground record over 5f is solid but her recent form figures of 5-2-5-8-11 tell a horse who is competitive but not dominant from the front.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Jack Doughty",
@@ -768,9 +1000,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 81.7,
-          "_model_price": "8/1",
-          "_mkt_price": "15/2",
-          "_win_pct": 11.1,
+          "_model_price": "9/1",
+          "_mkt_price": "8/1",
+          "_win_pct": 10.2,
           "_edge": -0.0,
           "_action": "WATCH",
           "_style_fit": 0.927
@@ -782,7 +1014,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "",
+          "note": "Eve Johnson Houghton's 3yo has been wearing a tongue-piece and is 7 days between runs, suggesting a quick turnaround that may not have been ideal; a natural hold-up horse who is mapped to midfield because the field is cluttered with closers, and with no searching pace to close into, her five-run form string of 0-3-6-5-5 in similar company does not inspire confidence.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Callum Hutchinson",
@@ -800,9 +1032,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 81.7,
-          "_model_price": "7/1",
-          "_mkt_price": "6/1",
-          "_win_pct": 13.2,
+          "_model_price": "5/1",
+          "_mkt_price": "9/2",
+          "_win_pct": 16.3,
           "_edge": -5.0,
           "_action": "WATCH",
           "_style_fit": 0.922
@@ -814,7 +1046,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Veteran 9yo hold-up filly whose best form figures on good ground (a 4th) mask a recent run of 4-0-9-0-6 that points firmly away from a win; without a scorching pace to close into, her style is fundamentally misaligned with what this race shape is likely to produce.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Tom Kiely-Marshall(5)",
@@ -834,7 +1066,7 @@
           "_projected": 81.6,
           "_model_price": "18/1",
           "_mkt_price": "16/1",
-          "_win_pct": 5.4,
+          "_win_pct": 5.3,
           "_edge": -6.1,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -846,7 +1078,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Genuinely the most interesting of the hold-up horses given her two most recent runs produced a win and a second over 5f on good ground; Lisa Williamson's 6yo has the course-and-distance profile to land a blow if the pace gets honest, but in a race where Tiva is unlikely to be pressured, she may simply not get into it.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Ross Coakley",
@@ -865,16 +1097,98 @@
           "spotlight": "",
           "_projected": 81.6,
           "_model_price": "7/2",
-          "_mkt_price": "3/1",
-          "_win_pct": 23.1,
+          "_mkt_price": "23/8",
+          "_win_pct": 23.2,
           "_edge": -5.1,
           "_action": "WATCH",
           "_style_fit": 1.0
         }
       ],
-      "paceDynamic": "",
-      "scenarios": [],
-      "watchPoints": [],
+      "paceDynamic": "Tiva is the confirmed front-runner here and, with no other genuine lead horse in the field, she should secure a clean, uncontested lead over five furlongs on good ground at Nottingham. Desert Treasure and Paradise Walk will press forward and race prominently just off Tiva's heels, meaning the pace should be honest but not brutal — a controlled, sustainable gallop that keeps the race together rather than stringing it out. That scenario plays directly into the hands of prominent racers who can travel close to the pace and pick up in the final furlong, making the lead-to-prominent profile the dominant tactical sweet spot. The field contains more hold-up types than the race shape can accommodate: Palmeira, Secret Mistral, and Sugar Hill Babe are all genuine closers, but with Tiva dictating a measured tempo rather than a scorching one, those true hold-up horses face an uphill task getting into the race from off the pace.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Tiva Controls, Prominent Wins",
+          "prob": 68,
+          "trigger": "If Tiva leads at a sustainable clip and prominent racers Desert Treasure and Paradise Walk travel smoothly just off the pace.",
+          "body": "If Tiva leads at a sustainable clip and prominent racers Desert Treasure and Paradise Walk travel smoothly just off the pace.",
+          "winners": [
+            "Desert Treasure",
+            "Paradise Walk"
+          ],
+          "others": [
+            "Tiva",
+            "Secret Mistral"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Pace Collapses, Closers Storm",
+          "prob": 14,
+          "trigger": "If Tiva goes off too hard early, ties up in the final furlong, and opens the door for hold-up horses to come from off the pace.",
+          "body": "If Tiva goes off too hard early, ties up in the final furlong, and opens the door for hold-up horses to come from off the pace.",
+          "winners": [
+            "Sugar Hill Babe",
+            "Secret Mistral"
+          ],
+          "others": [
+            "Palmeira",
+            "Elegant Erin"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Dead Track Draws Late Closers",
+          "prob": 10,
+          "trigger": "If the good ground plays slower than advertised and the pace becomes more of a grind, rewarding stamina and late sectionals.",
+          "body": "If the good ground plays slower than advertised and the pace becomes more of a grind, rewarding stamina and late sectionals.",
+          "winners": [
+            "Sugar Hill Babe",
+            "Palmeira"
+          ],
+          "others": [
+            "Secret Mistral",
+            "Paradise Walk"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Prominent Types Tangle, Chaos",
+          "prob": 8,
+          "trigger": "If Desert Treasure and Paradise Walk both push hard to track Tiva and contest position aggressively in the early stages.",
+          "body": "If Desert Treasure and Paradise Walk both push hard to track Tiva and contest position aggressively in the early stages.",
+          "winners": [
+            "Secret Mistral",
+            "Elegant Erin"
+          ],
+          "others": [
+            "Sugar Hill Babe",
+            "Paradise Walk"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Desert Treasure's three wins all came on good ground over 5f and William Haggas has a strong recent strike rate — if she travels smoothly in behind Tiva, she has the profile to win this race comfortably."
+        },
+        {
+          "severity": "warn",
+          "text": "Sugar Hill Babe won and was placed on this exact trip and going profile recently, and if the pace gets at all honest she could close powerfully — watch how quickly she finds her stride out of the gates to gauge whether she gets a target to chase."
+        },
+        {
+          "severity": "warn",
+          "text": "Secret Mistral's 176-day absence is the single biggest flag in the race — watch her in the paddock and at the start for signs she is ring-rusty, as her hold-up style requires peak fitness to execute."
+        },
+        {
+          "severity": "info",
+          "text": "Tiva wears a visor and tongue-tie and has form figures that suggest she can front-run competently without stopping — if she gets away cleanly and settles, she controls the tempo and that controls the race shape for every other runner."
+        },
+        {
+          "severity": "info",
+          "text": "Paradise Walk drops from 6f to 5f for the first time on her visible record; watch whether Jack Dace attempts to track Tiva or allows her to come off the pace slightly, as that decision will define whether she can sustain her run to the line."
+        }
+      ],
       "skipped": false
     },
     {
@@ -913,7 +1227,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Prominent racer trained by Adrian Nicholls who has placed three times at 6f on good ground in this campaign; handles the conditions without concern but his OR-70 ceiling means he likely plays second fiddle to Holbache in the early exchanges, leaving him exposed in a straight battle with classier finishers.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Jack Garritty",
@@ -933,7 +1247,7 @@
           "_projected": 73.9,
           "_model_price": "9/2",
           "_mkt_price": "4/1",
-          "_win_pct": 18.6,
+          "_win_pct": 18.7,
           "_edge": 3.3,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -945,7 +1259,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "",
+          "note": "Sean Bowen takes the ride for Paul Midgley, who is 0-from-19 over the last 14 days — a cold stable stat worth noting; this horse's natural instinct is to come from well off the pace, but in a six-runner field he is unlikely to find his usual rear berth and will be competing from a position that is not his natural ground.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Sean D Bowen",
@@ -977,7 +1291,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Jack Jones has sent out two winners from 13 in the last fortnight and Raffles Angel won at 6f on good going; her form string shows a patchy campaign but the one win came in exactly these conditions, and Ross Coakley's booking is straightforward for a hold-up horse who needs a strong pace to sustain into.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Ross Coakley",
@@ -996,8 +1310,8 @@
           "spotlight": "",
           "_projected": 72.5,
           "_model_price": "12/1",
-          "_mkt_price": "11/1",
-          "_win_pct": 7.5,
+          "_mkt_price": "10/1",
+          "_win_pct": 8.3,
           "_edge": -2.1,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1009,7 +1323,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Pat Dobbs partners a David Evans runner who won last time out, but the bulk of Early Release's speed figures come on Standard artificial surfaces and his four turf-good runs are thin on substance; he is a genuine sit-and-wait horse who, shifted forward in the race map because the field is hold-up heavy, will find his finishing effort harder to time than usual.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Pat Dobbs",
@@ -1028,8 +1342,8 @@
           "spotlight": "",
           "_projected": 72.5,
           "_model_price": "6/1",
-          "_mkt_price": "5/1",
-          "_win_pct": 15.3,
+          "_mkt_price": "11/2",
+          "_win_pct": 14.2,
           "_edge": 0.9,
           "_action": "WATCH",
           "_style_fit": 0.926
@@ -1041,7 +1355,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "",
+          "note": "Harry Vigors (7lb claimer) gets the leg up on the highest-rated runner in the field at OR-75, a horse in sharp form with consecutive wins at 5f and 6f; headgear-free and last seen nine days ago, Winchurch is a hold-up type on form that speaks for itself, but his good-going record at 6f is modest and the claiming jockey introduces a small tactical uncertainty.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Harry Vigors(7)",
@@ -1061,7 +1375,7 @@
           "_projected": 72.3,
           "_model_price": "3/1",
           "_mkt_price": "5/2",
-          "_win_pct": 25.7,
+          "_win_pct": 25.8,
           "_edge": -3.2,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1073,7 +1387,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Julie Camacho's eight-year-old is the race's controlling influence — two wins on good going at 6f, including one at this distance in recent history, and the only confirmed front-runner in the race; Tom Kiely-Marshall (5lb claimer) is a style-fit consideration but Holbache's ability to dominate from the front is the race's defining tactical fact regardless of the rider's experience level.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Tom Kiely-Marshall(5)",
@@ -1093,15 +1407,97 @@
           "_projected": 72.3,
           "_model_price": "7/2",
           "_mkt_price": "3/1",
-          "_win_pct": 22.5,
+          "_win_pct": 22.6,
           "_edge": -3.2,
           "_action": "WATCH",
           "_style_fit": 0.933
         }
       ],
-      "paceDynamic": "",
-      "scenarios": [],
-      "watchPoints": [],
+      "paceDynamic": "Holbache is the confirmed pace-setter here, a consistent front-runner who has won twice on good ground at 6f and will stride out from the gates to dictate on his own terms without meaningful early pressure. With Ingleby Archie the only other prominent-style runner, Holbache faces no serious challenge for the lead and can set a controlled, honest gallop on this flat Nottingham track — precisely the conditions that suit a horse who thrives when allowed to bowl along unchallenged. The bulk of the field — Raffles Angel, Winchurch, Cairdeas, and Early Release — are hold-up types, meaning they collectively surrender the early fractions and must finish strongly off a single sustained run; with four closers chasing one controlling front-runner, they split each other's ground and finishing momentum. This race shape strongly favours a front-runner or close-up prominent racer who can dictate terms and repel challengers from a position of strength. The field holds more hold-up horses than the race map can place at the rear in their true role; Cairdeas and Early Release are genuine hold-up types remapped to midfield, meaning neither is likely to secure their natural rearward pitch, making their finishing kicks less predictable than their profiles suggest.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Holbache Leads Unchallenged",
+          "prob": 68,
+          "trigger": "If Holbache breaks cleanly and bowls into an uncontested lead with Ingleby Archie tracking, setting a comfortable but honest pace throughout.",
+          "body": "If Holbache breaks cleanly and bowls into an uncontested lead with Ingleby Archie tracking, setting a comfortable but honest pace throughout.",
+          "winners": [
+            "Holbache",
+            "Ingleby Archie"
+          ],
+          "others": [
+            "Raffles Angel",
+            "Winchurch"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Closers Surge Late",
+          "prob": 16,
+          "trigger": "If Holbache sets a stronger pace than intended and ties up inside the final furlong, leaving a wall of hold-up horses to swoop.",
+          "body": "If Holbache sets a stronger pace than intended and ties up inside the final furlong, leaving a wall of hold-up horses to swoop.",
+          "winners": [
+            "Winchurch",
+            "Raffles Angel"
+          ],
+          "others": [
+            "Cairdeas",
+            "Early Release"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Midfield Grinders Benefit",
+          "prob": 10,
+          "trigger": "If the pace is genuinely even and hold-up horses can track closer than usual due to the small six-runner field, creating a compressed finish.",
+          "body": "If the pace is genuinely even and hold-up horses can track closer than usual due to the small six-runner field, creating a compressed finish.",
+          "winners": [
+            "Early Release",
+            "Cairdeas"
+          ],
+          "others": [
+            "Raffles Angel",
+            "Winchurch"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Pace Collapse Chaos",
+          "prob": 6,
+          "trigger": "If Holbache misses the break or is bumped early, removing the controlling influence and causing a muddling, contested pace scenario.",
+          "body": "If Holbache misses the break or is bumped early, removing the controlling influence and causing a muddling, contested pace scenario.",
+          "winners": [
+            "Winchurch",
+            "Raffles Angel"
+          ],
+          "others": [
+            "Ingleby Archie",
+            "Cairdeas"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Holbache's break from the stalls is the single most important moment in this race — if he exits cleanly, he controls every other horse's chance; watch the gates for any signs of a slow start that would dissolve his entire tactical advantage."
+        },
+        {
+          "severity": "warn",
+          "text": "Winchurch carries the top weight at 135lbs with a 7lb claimer in Harry Vigors; in a race where every pound matters at 6f on good ground, the combination of maximum weight and a claiming jockey could blunt a horse in career-best form, and that jockey booking deserves scrutiny in running."
+        },
+        {
+          "severity": "warn",
+          "text": "Cairdeas and Early Release are both genuine hold-up horses remapped into midfield slots — watch whether either settles for a position further back than the map shows, which would lengthen their finishing run and reduce their effectiveness."
+        },
+        {
+          "severity": "info",
+          "text": "Paul Midgley's yard (0-from-19 over the last 14 days) is in a cold patch and Cairdeas carries that stable context; if Cairdeas is easy to back in the market it may reflect insider knowledge of his current condition."
+        },
+        {
+          "severity": "info",
+          "text": "Raffles Angel's trainer Jack Jones is 2-from-13 in the last fortnight — one of the livelier small-yard trainer stats in this race — worth tracking whether that form reflects a horse being aimed deliberately at this race."
+        }
+      ],
       "skipped": false
     },
     {
@@ -1139,7 +1535,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Won last time out over 10f on Good and steps up in trip here, which looks manageable; Charles Hills has a modest 14-day strike rate but this filly has the clearest tactical advantage in the race as the lone pace-setter, though her STYLE_FIT flag is worth noting if the race shape forces her to lead more aggressively than ideal.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Harry Vigors(7)",
@@ -1159,7 +1555,7 @@
           "_projected": 67.8,
           "_model_price": "evens",
           "_mkt_price": "EVS",
-          "_win_pct": 46.0,
+          "_win_pct": 45.1,
           "_edge": -2.2,
           "_action": "WATCH",
           "_style_fit": 0.933
@@ -1171,7 +1567,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Pat Dobbs takes the ride on this Burke-trained 3yo who has only three career starts, all at further than today's 10f; his sole Good-ground run yielded a seventh but on a longer trip, and 43 days off means fitness is a question mark, with a hold-up style that needs genuine pace ahead of him.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Pat Dobbs",
@@ -1191,7 +1587,7 @@
           "_projected": 67.8,
           "_model_price": "6/1",
           "_mkt_price": "11/2",
-          "_win_pct": 14.4,
+          "_win_pct": 14.1,
           "_edge": -0.2,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1203,7 +1599,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "",
+          "note": "Ran on Good ground last time over 10f and finished well beaten in tenth, but her prominent style is the most race-shape-compatible of anyone other than Kalokalo; Edward Smyth-Osbourne's yard is winless in the last 14 days (0/5) and Georgia Dobie rides, so the trainer angle is muted despite the tactical positional advantage.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Georgia Dobie",
@@ -1223,7 +1619,7 @@
           "_projected": 67.8,
           "_model_price": "15/1",
           "_mkt_price": "14/1",
-          "_win_pct": 6.3,
+          "_win_pct": 6.2,
           "_edge": 0.8,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1235,7 +1631,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "",
+          "note": "Wears a hood (hg:p) and has disappointed on his last three starts, all at distances short of today's 1m2f on varying ground; Michael Bell's 14-day record is modest (1/21) and a 32-day absence adds an element of doubt, with his hold-up style leaving him at the mercy of a pace shape that may not materialise.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Ross Coakley",
@@ -1253,9 +1649,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 67.8,
-          "_model_price": "6/1",
-          "_mkt_price": "11/2",
-          "_win_pct": 14.5,
+          "_model_price": "7/1",
+          "_mkt_price": "6/1",
+          "_win_pct": 13.2,
           "_edge": 0.8,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1267,7 +1663,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "",
+          "note": "David Menuisier's runner has posted back-to-back sixth-place finishes on Good at 10f, which shows consistency if not improvement; a genuine hold-up horse by nature, he is placed in midfield on this map purely through redistribution — his real position will likely be towards the rear — and Jack Doughty's claim is a factor worth monitoring, though the STYLE_FIT discount and pace shape work against him.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Jack Doughty",
@@ -1285,17 +1681,99 @@
           "comment": "",
           "spotlight": "",
           "_projected": 67.8,
-          "_model_price": "9/2",
-          "_mkt_price": "4/1",
-          "_win_pct": 18.9,
+          "_model_price": "7/2",
+          "_mkt_price": "10/3",
+          "_win_pct": 21.4,
           "_edge": 0.8,
           "_action": "WATCH",
           "_style_fit": 0.9
         }
       ],
-      "paceDynamic": "",
-      "scenarios": [],
-      "watchPoints": [],
+      "paceDynamic": "Kalokalo is the sole confirmed front-runner in this five-runner field and, with no horse likely to seriously challenge for the lead, she should dictate a sustainable, unhurried gallop over Nottingham's straight 1m2f. Miss Pretty is the only other prominent-style runner, but with Kalokalo likely to slot comfortably into the lead from her draw, Miss Pretty will settle just off the pace rather than contest it. The hold-up contingent — Distorted Truth, Mr Bollinger, and Astracornus — will be chasing from the rear on a track where Good ground and a straight course favour those who can race handy and sustain their effort, rather than those relying on a late burst off a slow tempo. Tactically, this race shape favours prominent racers and horses that can travel within striking range of a controlled pace, as the tempo set by a single, uncontested leader is unlikely to produce the strong end-to-end gallop that true closers need to maximise their finishing kick. The field holds more hold-up types than the map can accommodate at the rear, with Astracornus the most notable example — though a genuine hold-up horse, it has been mapped to midfield due to redistribution, and Distorted Truth and Mr Bollinger are most likely to occupy the deeper positions in reality.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Kalokalo Controls, Holds On",
+          "prob": 71,
+          "trigger": "If Kalokalo bowls along uncontested and sets a controlled, gallop-friendly tempo that suits those racing prominently.",
+          "body": "If Kalokalo bowls along uncontested and sets a controlled, gallop-friendly tempo that suits those racing prominently.",
+          "winners": [
+            "Kalokalo",
+            "Miss Pretty"
+          ],
+          "others": [
+            "Distorted Truth",
+            "Astracornus"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Prominent Racer Reels In Leader",
+          "prob": 16,
+          "trigger": "If Kalokalo's pace is just honest enough to string out the field, but Miss Pretty or a prominent-tracking horse has more in reserve and times the run to perfection.",
+          "body": "If Kalokalo's pace is just honest enough to string out the field, but Miss Pretty or a prominent-tracking horse has more in reserve and times the run to perfection.",
+          "winners": [
+            "Miss Pretty",
+            "Kalokalo"
+          ],
+          "others": [
+            "Distorted Truth",
+            "Astracornus"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Closer Springs A Surprise",
+          "prob": 8,
+          "trigger": "If Kalokalo sets an unexpectedly strong pace that burns off Miss Pretty and brings the hold-up horses into contention in the final two furlongs.",
+          "body": "If Kalokalo sets an unexpectedly strong pace that burns off Miss Pretty and brings the hold-up horses into contention in the final two furlongs.",
+          "winners": [
+            "Distorted Truth",
+            "Mr Bollinger"
+          ],
+          "others": [
+            "Miss Pretty",
+            "Astracornus"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Astracornus Lands Late Blow",
+          "prob": 5,
+          "trigger": "If the redistribution proves irrelevant and Astracornus finds an unexpectedly clear passage to finish off a truly run race.",
+          "body": "If the redistribution proves irrelevant and Astracornus finds an unexpectedly clear passage to finish off a truly run race.",
+          "winners": [
+            "Astracornus",
+            "Mr Bollinger"
+          ],
+          "others": [
+            "Distorted Truth",
+            "Miss Pretty"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Kalokalo's rider Harry Vigors (7lb claimer) must not dawdle — if Vigors misjudges the pace and goes either too slow (bringing the field to her) or too fast (burning her out), the race result changes materially."
+        },
+        {
+          "severity": "warn",
+          "text": "Miss Pretty's finishing effort on Good ground last time was poor (10th of field), so watch whether Georgia Dobie positions her closer than usual early; if she drifts back to midfield, her chance largely evaporates in this pace shape."
+        },
+        {
+          "severity": "warn",
+          "text": "Mr Bollinger's hood is on for the first time or retained — watch the pre-race demeanour, as headgear horses that sweat or become fractious at the start can lose several lengths before the off, negating any ground-saving tactic."
+        },
+        {
+          "severity": "info",
+          "text": "Distorted Truth is returning after 43 days off with only three career runs — watch the market for late support, as K R Burke's horses often need a run back after a break of six-plus weeks and any shortening in price could be misleading."
+        },
+        {
+          "severity": "info",
+          "text": "Going has remained consistently Good throughout the card at Nottingham tonight across multiple 1m2f contests — no evidence of any late-evening deterioration that would alter pace assumptions or favour a different running style."
+        }
+      ],
       "skipped": false
     }
   ]
