@@ -445,14 +445,23 @@ class SignalObject:
 RUNNING_STYLE_PHRASES = [
     (r"made (all|virtually all|every yard)",          RunningStyle.FRONT_RUNNER, 1.00),
     (r"\bled (from|throughout|early|the way)",        RunningStyle.FRONT_RUNNER, 1.00),
+    (r"\bsoon led\b",                                 RunningStyle.FRONT_RUNNER, 1.00),
+    (r"\bquickly (in)?to lead\b",                     RunningStyle.FRONT_RUNNER, 1.00),
+    (r"\bled (after|before|inside|over|until|approaching|going)", RunningStyle.FRONT_RUNNER, 1.00),
+    (r"\b(soon |went |pushed )?(in)?to (the )?lead", RunningStyle.FRONT_RUNNER, 1.00),
     (r"set (the |a )?(strong |fierce |good )?pace",   RunningStyle.FRONT_RUNNER, 1.00),
     (r"went off (in )?front",                         RunningStyle.FRONT_RUNNER, 1.00),
+    (r"\bin front\b",                                 RunningStyle.FRONT_RUNNER, 1.00),
+    (r"\bwent clear\b",                               RunningStyle.FRONT_RUNNER, 1.00),
     (r"disputed (the )?lead",                         RunningStyle.FRONT_RUNNER, 1.00),
+    (r"\bled\b.*\bheaded\b",                          RunningStyle.FRONT_RUNNER, 0.95),
     (r"tracked (the |a )?(leader|pace|winner)",       RunningStyle.PROMINENT,    1.00),
     (r"chased (the |a )?(leader|pace|winner)",        RunningStyle.PROMINENT,    1.00),
     (r"pressed (the |a )?(leader|pace)",              RunningStyle.PROMINENT,    1.00),
     (r"prominent(ly)?",                               RunningStyle.PROMINENT,    1.00),
+    (r"\bsoon prominent\b",                           RunningStyle.PROMINENT,    1.00),
     (r"close (up |to )(the |a )?(leader|pace)",       RunningStyle.PROMINENT,    1.00),
+    (r"\bevery chance\b",                             RunningStyle.PROMINENT,    0.90),
     (r"mid.?division",                                RunningStyle.MIDFIELD,     1.00),
     (r"in (the )?middle",                             RunningStyle.MIDFIELD,     1.00),
     (r"in touch",                                     RunningStyle.MIDFIELD,     1.00),
@@ -462,8 +471,11 @@ RUNNING_STYLE_PHRASES = [
     (r"towards (the )?rear",                          RunningStyle.HOLD_UP,      1.00),
     (r"dropped (out|away|to (the )?rear)",            RunningStyle.HOLD_UP,      1.00),
     (r"in (the )?rear",                               RunningStyle.HOLD_UP,      1.00),
+    (r"\bbehind\b",                                   RunningStyle.HOLD_UP,      0.90),
     (r"last (of all|pair|three)",                     RunningStyle.HOLD_UP,      1.00),
-    (r"settled (in )?last",                           RunningStyle.HOLD_UP,      1.00),
+    (r"settled (in )?(rear|last|towards rear)",       RunningStyle.HOLD_UP,      1.00),
+    (r"\bpatiently ridden\b",                         RunningStyle.HOLD_UP,      1.00),
+    (r"\bwaited with\b",                              RunningStyle.HOLD_UP,      1.00),
 ]
 
 TRIP_PHRASES = [
@@ -1886,8 +1898,24 @@ def _build_form_run(result_race, our_horse_id):
         val = _clean_rating(r.get('or')) or (int(_clean_rating(r.get('rpr')) * 0.95) if _clean_rating(r.get('rpr')) else None)
         if h and val: local_or_map[h] = val
     comment = our_runner.get('comment', '') or ''
-    style_str = _irc_from_comment(comment)
-    if style_str == 'UNKNOWN': style_str = _infer_running_style(position, margin, field_size)
+    # Classify running style using the engine's RICH phrase table (parse_comment ->
+    # RUNNING_STYLE_PHRASES), the same path the rest of the engine uses — NOT the
+    # brittle keyword list. Map its RunningStyle enum back to the style_str strings.
+    _rs_map = {RunningStyle.FRONT_RUNNER:'FRONT_RUNNER', RunningStyle.PROMINENT:'PROMINENT',
+               RunningStyle.MIDFIELD:'MIDFIELD', RunningStyle.HOLD_UP:'HOLD_UP',
+               RunningStyle.UNKNOWN:'UNKNOWN'}
+    if comment.strip():
+        try:
+            _sig = parse_comment(comment, _GW.get(grade, 0.55))
+            style_str = _rs_map.get(_sig.running_style, 'UNKNOWN')
+        except Exception:
+            style_str = _irc_from_comment(comment)  # secondary keyword pass
+        # If a comment EXISTS but neither parser matched, do NOT guess from finish
+        # position — that is what mislabels faded front-runners as hold-up. Leave
+        # UNKNOWN and let modal style across multiple runs resolve it.
+    else:
+        # No comment at all: position-based inference is the only signal available.
+        style_str = _infer_running_style(position, margin, field_size)
     style_to_irc = {'FRONT_RUNNER':'made all','PROMINENT':'tracked leader','MIDFIELD':'midfield','HOLD_UP':'held up','UNKNOWN':''}
     irc = style_to_irc.get(style_str, ''); gw = _GW.get(grade, 0.55)
     try: signal = _build_signal_from_irc(irc, gw)
