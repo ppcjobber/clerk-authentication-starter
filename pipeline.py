@@ -2824,13 +2824,18 @@ def _parse_narrative(raw, runners):
         if len(parts) < 5: continue
         try: prob = int(re.sub(r'[^0-9]','',parts[1]))
         except: prob = 25
-        if len(parts) >= 7:
+        # NOTE: the capture regex strips the 'SCENARIO_X|' prefix, so a well-formed
+        # line yields 6 parts: title|prob|trigger|body|winners|others.
+        if len(parts) >= 6:
             trigger, body, win_i, oth_i = parts[2], parts[3], 4, 5
-        elif len(parts) == 6:
-            # model merged trigger+body into one field; split heuristically, keep last two as winners/others
-            trigger, body, win_i, oth_i = parts[2], parts[2], 4, 5
-        else:  # exactly 5: title|prob|merged|winners|others
-            trigger, body, win_i, oth_i = parts[2], parts[2], 3, 4
+        elif len(parts) == 5:
+            # one field short (model merged trigger+body): no separate body
+            trigger, body, win_i, oth_i = parts[2], '', 3, 4
+        else:
+            continue
+        # never render the same sentence twice: if body duplicates trigger, drop it
+        if body.strip() and body.strip().lower() == trigger.strip().lower():
+            body = ''
         winners = [h.strip() for h in parts[win_i].split(',') if h.strip()]
         others  = [h.strip() for h in parts[oth_i].split(',') if h.strip()]
         scenarios.append({'label':letter,'title':parts[0],'prob':prob,'trigger':trigger,'body':body,'winners':winners,'others':others})
