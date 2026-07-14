@@ -35,7 +35,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "",
+          "note": "Beckett and Ryan are a potent combination and this horse's recent win at Goodwood (7f) shows ability, though today's step up to 1m3½f is a significant trip test; the prominent style suits pace-controlling roles but 136lbs is a notable burden, and the style-fit tag suggests this mapped position may not be its natural comfort zone.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Rossa Ryan",
@@ -67,7 +67,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "",
+          "note": "Three consecutive placed efforts at 10f suggest consistent enough form around this trip distance, and similar-going record (1 place from 3 runs on Standard) offers mild encouragement; style is unclassified so Egan will need to make a tactical decision early — shadow the leader or wait — with the yard running at only 3/11 over 14 days.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Alexandra Egan(7)",
@@ -99,7 +99,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "A confirmed hold-up operator per headgear and history, Rajendra has yet to win or place in five career runs and the form string (6-4-6-7) tells a sobering story; Saffie Osborne picks up the ride and Simcock has one winner from eight (T14:1/8), while the horse's 39-day absence and step up in trip add further uncertainty about readiness and stamina.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Saffie Osborne",
@@ -125,9 +125,87 @@
           "_style_fit": 1.0
         }
       ],
-      "paceDynamic": "",
-      "scenarios": [],
-      "watchPoints": [],
+      "paceDynamic": "Golden Orbit is the lone pace-setter in this three-runner affair and will dictate from the front unchallenged, controlling tempo across the 1m3½f Lingfield trip at whatever speed suits Ralph Beckett's team. Probation (style unknown) and Rajendra (hold-up) are both off-pace types, meaning no horse will apply pressure to Golden Orbit through the early or middle stages, creating a genuinely soft, sustainable gallop. With Rossa Ryan able to manage fractions precisely and no rival willing or able to hunt him down, the race is set up for a front-runner to control and potentially steal on the turn for home. This race shape heavily favours a horse who can lead and quicken — the lone prominent/lead profile is the dominant tactical position, and closers will need a genuine test of stamina to reel in a horse granted a trouble-free passage.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Golden Orbit Dictates Alone",
+          "prob": 72,
+          "trigger": "If Golden Orbit leads at a controlled pace and Rossa Ryan manages fractions to perfection over the trip.",
+          "body": "Golden Orbit sets an uncontested tempo, conserving energy through the middle stages before quickening in the straight with no rival in a position to challenge early enough; the hold-up horses face too much ground to make up against a fresh leader. Beckett's yard is in form (T14:15/53) and Ryan's ability to judge pace on a lone leader is the key asset.",
+          "winners": [
+            "Golden Orbit",
+            "Probation"
+          ],
+          "others": [
+            "Rajendra",
+            "Probation"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Staying Closers Grind Through",
+          "prob": 14,
+          "trigger": "If the pace is genuinely slow and the hold-up horses accelerate powerfully in the final two furlongs to overhaul a weakening leader.",
+          "body": "A dawdling gallop suits Rajendra or Probation if they can close the gap in the straight once Golden Orbit's energy is spent late; both have run at 10f+ distances and may carry stamina reserves into this 1m3½f trip. This shape requires Golden Orbit to overcook the pace or empty in the final furlong, which is only plausible if the ground or weight (136lbs) takes its toll.",
+          "winners": [
+            "Probation",
+            "Rajendra"
+          ],
+          "others": [
+            "Golden Orbit",
+            "Probation"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Probation Tracks And Pounces",
+          "prob": 9,
+          "trigger": "If Probation, whose style is unknown, settles just off Golden Orbit's pace and times a run to lead in the closing stages.",
+          "body": "Probation's form (3-4-3) shows consistent placing at 10f on similar going and if ridden to track the leader, Alexandra Egan can deliver a challenge at the right moment; Philippart De Foy's yard is 3/11 over 14 days suggesting modest current form but a live runner nonetheless. This scenario depends on Probation having enough natural pace to sit close and quicken, which remains unproven over this trip.",
+          "winners": [
+            "Probation",
+            "Rajendra"
+          ],
+          "others": [
+            "Golden Orbit",
+            "Rajendra"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Rajendra Stealthy Late Run",
+          "prob": 5,
+          "trigger": "If the pace collapses completely in the straight and Rajendra's hold-up profile allows a powerful late surge from last.",
+          "body": "Rajendra has consistently raced from the rear but form figures of 6-4-6-7 suggest the finish rarely comes in time; Saffie Osborne would need a truly exceptional run at the right moment over an inadequate trip for a horse with limited form. David Simcock's runner (T14:1/8) carries the lightest weight but needs everything to fall perfectly, making this the least likely outcome.",
+          "winners": [
+            "Rajendra",
+            "Probation"
+          ],
+          "others": [
+            "Golden Orbit",
+            "Probation"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Golden Orbit carries 136lbs — watch whether Rossa Ryan allows any breathing room in the middle portion or drives on relentlessly, as fatigue in the final furlong would open the race up for Probation or Rajendra."
+        },
+        {
+          "severity": "warn",
+          "text": "Probation's unknown running style is a genuine tactical wildcard — if Alexandra Egan elects to track Golden Orbit closely from the start rather than sit off the pace, the dynamic of this race changes materially."
+        },
+        {
+          "severity": "warn",
+          "text": "Rajendra has 39 days between runs and no win or place on record; watch in the paddock and early running for any sign of freshness or lack of fitness that could see the horse trail badly."
+        },
+        {
+          "severity": "info",
+          "text": "With only three runners and a lone front-runner, watch the early gallop tempo — if Ryan sets a crawl to preserve Golden Orbit's stamina, the two closers may find themselves unable to build momentum for a meaningful late challenge."
+        }
+      ],
       "skipped": false
     },
     {
@@ -167,7 +245,7 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Unspecified style with three career runs including a placed effort at 12f Goodwood — the step up to 1m3½f is a genuine positive, and Boughey's stable (T14: 4/23) is in fair nick; no similar-going wins from three attempts on standard, which is a minor query.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "",
@@ -199,7 +277,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Hold-up operator with a win and a placed effort over 14f at Goodwood suggesting stamina is not in doubt, but Charlie Johnston's yard (T14: 9/68) is firing and this horse needs a stronger gallop than Golden Orbit is expected to generate to unleash its late run.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "",
@@ -231,7 +309,7 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Ralph Beckett's prominent racer has been placed in five of its seven starts and handles soft ground well; all three career runs came on give underfoot, so standard going is an untested variable, though Hector Crouch's booking on a Beckett horse at this trip is worth noting.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Hector Crouch",
@@ -263,7 +341,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "",
+          "note": "Beckett's highest-rated runner (OR 86) has the form to lead this field on a solo front-running task — its sole win came over 7f on good ground, however, and the style-fit tag signals it is racing beyond its natural comfort zone; Ryan's positive booking is the countering factor.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Rossa Ryan",
@@ -295,7 +373,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "",
+          "note": "Kevin Philippart De Foy's charge has three placed efforts in ten-furlong company including on standard going, giving it relevant conditions form; unbeaten in terms of finding the frame here, but has not broken through for a win in three tries and its unspecified style leaves tactical uncertainty.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "",
@@ -327,7 +405,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Consistent bottom-of-the-market operator who has been out of the first three in six of seven career starts; all form over shorter trips (seven-to-nine furlongs) and the step up to 1m3½f is a big unknown — Simcock's yard (T14: 1/8) is below par and this horse is hard to recommend on any angle.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "",
@@ -359,7 +437,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "James Fanshawe's in-form prominent racer arrives on the back of four wins from five starts at ten furlongs, including a placed effort on standard going — the trip up to 1m3½f is the key question, but its consistency and winning habit give it the best alternative claim to Golden Orbit in this field; LR of just 6 days is brisk.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "",
@@ -385,9 +463,91 @@
           "_style_fit": 1.0
         }
       ],
-      "paceDynamic": "",
-      "scenarios": [],
-      "watchPoints": [],
+      "paceDynamic": "Golden Orbit is the sole confirmed pace-setter in this seven-runner 1m3½f maiden, and with no rival likely to contest the lead aggressively, Rossa Ryan can dictate on his own terms from the front. Room Fourteen, Glory Road, and potentially Brunhilde will track up prominently, creating an organised, single-file shape behind the leader rather than a contested gallop. At a sustainable, metronomic pace over this longer trip on Lingfield's flat synthetic-substitute surface, the race is unlikely to develop into a true test of stamina through attrition — instead, the premium will fall on horses who can travel close to the pace and produce a decisive mid-race or straight move. This race shape clearly favours prominent racers with tactical speed and proven form over ten-to-fourteen furlongs — horses who save ground, sit within striking distance, and don't need a genuine end-to-end gallop to get competitive.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Golden Orbit Front-Runs Clear",
+          "prob": 72,
+          "trigger": "If Golden Orbit sets a controlled, unchallenged pace and the prominent trackers never get close enough to pounce",
+          "body": "Ryan settles Golden Orbit in front with a comfort margin, controlling tempo completely and ensuring rivals face a stiff final ask; the lone front-runner's ability to ration its effort over a flat trip makes this the default shape. Prominent types behind have to work hardest to close, and Room Fourteen — with its string of Goodwood wins — is best placed to chase, but closing the gap is the challenge.",
+          "winners": [
+            "Golden Orbit",
+            "Room Fourteen"
+          ],
+          "others": [
+            "Glory Road",
+            "Brunhilde"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Prominent Chaser Pounces Late",
+          "prob": 16,
+          "trigger": "If Golden Orbit's pace is just slightly too honest and the prominent tracking horses save enough to sweep past in the final two furlongs",
+          "body": "Room Fourteen's remarkable run of four wins at ten furlongs — including form on standard going — makes it the likeliest beneficiary if the leader comes back to the field; it has the class (OR 77) and proven winning habit at this sort of trip to lead close home. Glory Road, consistent in placed efforts, could grab second if the leader briefly falters.",
+          "winners": [
+            "Room Fourteen",
+            "Glory Road"
+          ],
+          "others": [
+            "Brunhilde",
+            "Gaelic Approach"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Hold-Up Horse Finishes Through",
+          "prob": 7,
+          "trigger": "If the pace is genuinely strong enough to stretch the field and leave daylight for a late run from off the pace",
+          "body": "Gaelic Approach won over 14 furlongs at Goodwood and has the staying profile to benefit from a true gallop, but the most likely shape here does not favour horses from deep; Gaelic Approach's trainer form (T14: 9/68) is solid but its hold-up style needs more pace than Golden Orbit is likely to generate. Probation, placed three times in ten-furlong company, could also factor if it gets a clear run through.",
+          "winners": [
+            "Gaelic Approach",
+            "Probation"
+          ],
+          "others": [
+            "Room Fourteen",
+            "Glory Road"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Outsider Upsets Market",
+          "prob": 5,
+          "trigger": "If the front-runners tie each other up or the race is run in an unexpectedly demanding fashion and form lines are scrambled",
+          "body": "Brunhilde has run twice over longer trips at Goodwood and placed at 12f, giving it stamina credentials others lack if the race turns into a slog; Probation has placed at 10f on standard going and could hit the frame if others disappoint. Both remain outsiders on rating and style, but stamina-biased collapses at this trip occasionally reward exactly these types.",
+          "winners": [
+            "Brunhilde",
+            "Probation"
+          ],
+          "others": [
+            "Rajendra",
+            "Gaelic Approach"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Room Fourteen has won four of its last five, all at Goodwood over 10f — watch whether it can extend that form over 1m3½f on a flat track, as the extra two furlongs on standard ground is the one unresolved question about its chance."
+        },
+        {
+          "severity": "warn",
+          "text": "Golden Orbit carries a STYLE_FIT tag of 0.93 suggesting it is racing out of role — if Rossa Ryan finds it reluctant or flat early, the expected tempo advantage evaporates and the entire race shape shifts."
+        },
+        {
+          "severity": "warn",
+          "text": "Gaelic Approach has the most proven stamina in the field (won 14f at Goodwood) but is reliant on a faster-than-expected gallop to deliver its late effort — watch the early pace closely to assess whether it ever gets into the race."
+        },
+        {
+          "severity": "info",
+          "text": "Glory Road is untested on standard going, having run all three previous starts on soft ground — any firming of the surface away from what it knows could blunt what has otherwise been a reliable placing record."
+        },
+        {
+          "severity": "info",
+          "text": "Room Fourteen's turnaround of just six days since its last run is notably quick — watch in the paddock and early for any sign that the short preparation has dulled its usual prominent travelling style."
+        }
+      ],
       "skipped": false
     },
     {
@@ -667,7 +827,7 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Claimed the win at 6f Standard on this very course last time — the key piece of form in the race — and Billy Loughnane gives the yard a confident booking; style flag suggests it may race more forward than its mapped prominent tag implies, which in this small field only strengthens its tactical command.|",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Billy Loughnane",
@@ -699,7 +859,7 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Jamie Osborne's runner has placed twice over 6f on Good but lacks a confirmed Standard going effort at the trip; Saffie Osborne riding keeps costs down and the horse's undefined running style means its position in running is genuinely unpredictable, which adds a small layer of tactical risk for those around it.|",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Saffie Osborne",
@@ -731,7 +891,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Hugo Palmer's filly has consistent place form at 6f on Good ground but has not shown an ability to win from off the pace over the standard surface; David Probert will need plenty to go right for a hold-up horse in a race where the leaders are unlikely to set a truly searching gallop.|",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "David Probert",
@@ -763,7 +923,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Richard Hannon's juvenile won over this exact trip at Goodwood on its latest start and Sean Levey is an experienced booking who will know exactly where to position it; its prominent style pairs naturally with the race shape and it represents the most realistic threat to the likely leader.|",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Sean Levey",
@@ -795,7 +955,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "",
+          "note": "Rossa Ryan's mount showed its one win came over 6f on Good ground but has since posted two poor efforts at five furlongs on softer surfaces; the visor (headgear) is noted and it races from off the pace, leaving it dependent on a tempo that this field configuration is unlikely to generate.|",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Rossa Ryan",
@@ -821,9 +981,87 @@
           "_style_fit": 1.0
         }
       ],
-      "paceDynamic": "",
-      "scenarios": [],
-      "watchPoints": [],
+      "paceDynamic": "Ron's Angel is the only confirmed front-runner in this five-runner field and, with Quantum Swift also likely to push forward from a prominent position, the early tempo should be honest but controlled — two horses pressing for the front without being chased by multiple rivals. Jazz Queen and Pageant Girl will be held up off the pace, leaving Knock Three Times to find its own position in the middle of the field. With no true pacemaker wars developing, Ron's Angel can dictate a comfortable, metronomic gallop that keeps the race well within its stamina reserves — a shape that squarely favours front-runners and prominent racers who can travel in comfort and resist the late challenge of hold-up horses who will have little advantage from a lack of genuine end-to-end pressure.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Controlled Lead Holds Firm",
+          "prob": 72,
+          "trigger": "If Ron's Angel leads at a sustainable clip and the prominent runners travel in comfort throughout, the front end dictates unchallenged.",
+          "body": "Ron's Angel bowls along setting a pace no one seriously contests, with Quantum Swift close behind covering its position on the inner; the hold-up pair Jazz Queen and Pageant Girl simply face too much ground to make up inside the final furlong on a flat Lingfield surface when the tempo is never truly searching.",
+          "winners": [
+            "Ron's Angel",
+            "Quantum Swift"
+          ],
+          "others": [
+            "Knock Three Times",
+            "Jazz Queen"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Prominent Rival Pounces Late",
+          "prob": 15,
+          "trigger": "If Quantum Swift tracks Ron's Angel and produces a sharper turn of foot in the final two furlongs while the leader finds nothing extra.",
+          "body": "Sean Levey's recent winning form and Quantum Swift's last-time-out victory at 6f Good suggest it has the engine to respond when the gaps arrive; if Ron's Angel slightly overdoes the fractions on a Lingfield surface it hasn't encountered, the tracking horse snatches it close home.",
+          "winners": [
+            "Quantum Swift",
+            "Knock Three Times"
+          ],
+          "others": [
+            "Ron's Angel",
+            "Jazz Queen"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Closers Land Late",
+          "prob": 8,
+          "trigger": "If the early pace is genuinely brisk and the leaders tie each other up, creating conditions for Jazz Queen or Pageant Girl to swoop.",
+          "body": "Jazz Queen's runner-up form over course and distance and Pageant Girl's one career win coming over 6f on Good are slim foundations for a late rally unless the front two genuinely burn each other out.",
+          "winners": [
+            "Jazz Queen",
+            "Pageant Girl"
+          ],
+          "others": [
+            "Knock Three Times",
+            "Quantum Swift"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Upset at Big Odds",
+          "prob": 5,
+          "trigger": "If the pace collapses entirely and Knock Three Times, finding a clear run, outstays a field that has never properly got rolling.",
+          "body": "Saffie Osborne is a capable apprentice and Knock Three Times has placed twice over 6f on Good, but its style is undefined (U) and its Standard going form is limited to one fourth at 5f; a complete pace collapse is the only route for a major shock.",
+          "winners": [
+            "Knock Three Times",
+            "Jazz Queen"
+          ],
+          "others": [
+            "Pageant Girl",
+            "Ron's Angel"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Ron's Angel — if it trots up in front uncontested as its course win and today's pace map both suggest, the race may effectively be over by the two-furlong pole; watch whether any rival applies pressure in the first two furlongs or leaves it completely alone.|"
+        },
+        {
+          "severity": "warn",
+          "text": "Quantum Swift — Sean Levey will need to settle it just off Ron's Angel without letting the leader steal an unassailable break; if it gets outpaced in the first half-furlong and drops further back than expected, its winning chance narrows sharply.|"
+        },
+        {
+          "severity": "warn",
+          "text": "Knock Three Times — its undefined style (U) means it could take up any position; if Saffie Osborne elects to send it forward and it clashes with Ron's Angel for the lead, the dynamic of the whole race changes and the hold-up horses could benefit.|"
+        },
+        {
+          "severity": "info",
+          "text": "Jazz Queen and Pageant Girl — both hold-up horses in a five-runner race with a single, measured pace-setter; unless the fractions are genuinely quick, they will likely be held up in a race that is simply not run to suit them, and Lingfield's flat, unforgiving finish offers no geographic help.|"
+        }
+      ],
       "skipped": false
     },
     {
@@ -860,7 +1098,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "George Boughey's consistent performer arrives on a 26-day break having won over 8f at Goodwood and placed twice in similar company; Billy Loughnane's booking is a positive, and his prominent style suits a race where the front is likely to be run at a controlled tempo with few rivals to contest it.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Billy Loughnane",
@@ -892,7 +1130,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Oliver Cole sends him out after a 92-day absence — the layoff is the primary flag here — wearing a hood and carrying a STYLE_FIT discount for racing in an outright lead role that his recent positional history doesn't fully reflect; on standard going at Lingfield with only three rivals, he gets an uncontested lead that few horses enjoy.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Kieran Shoemark",
@@ -924,7 +1162,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Saeed bin Suroor's four-year-old wears a visor and has strong placed form over 10f and 12f on standard going, making the step back to 7½f a credible stamina concern; Sean Levey will look to pick up late but with Great Chieftain likely to set only a moderate pace, Desert Shadow's hold-up profile is working against the race shape here.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Sean Levey",
@@ -956,7 +1194,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Charles Hills' gelding ran just 13 days ago and showed his natural front-running instincts over 7f on standard going with a second at Lingfield earlier in his form string; his true style is prominent but he cannot secure that berth in this field, meaning Tom Marquand must work with a rearward position that dulls his best chance.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Tom Marquand",
@@ -982,9 +1220,87 @@
           "_style_fit": 0.929
         }
       ],
-      "paceDynamic": "",
-      "scenarios": [],
-      "watchPoints": [],
+      "paceDynamic": "Great Chieftain is the lone confirmed front-runner in this four-runner field and, crucially, faces no genuine pressure for the lead — he can dictate a controlled, sustainable gallop from the front across the 7½ furlongs at Lingfield. Classic Encounter will push forward from his prominent position and may sit just off the pace, but with Huscal redistributed to midfield (a natural prominent type unable to secure his preferred berth in this shape), the race is unlikely to develop into a true speed duel. Desert Shadow will track from hold-up in the rear and relies on the pace being strong enough to close into, which an uncontested Great Chieftain is unlikely to generate. The field holds more prominent-minded horses than can all occupy that territory — Great Chieftain and Classic Encounter are best-placed to get position, while Huscal is pushed further back than he'd like. This race shape strongly favours a horse that can track or press at the front, as the pace will be measured and the race is likely won close to the lead.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Controlled Lead, Front Wins",
+          "prob": 71,
+          "trigger": "If Great Chieftain dictates an uncontested, moderate gallop and Classic Encounter sits close without applying pressure.",
+          "body": "Great Chieftain rolls along at his own tempo, and the race is won by a horse that has tracked near the front throughout the 7½f without expending energy fighting for position; the lack of genuine pace pressure means hold-up horses have insufficient gallop to close into. Classic Encounter, prominent and proven over the trip with course-form credentials, is best-placed to capitalise if Great Chieftain ties up late.",
+          "winners": [
+            "Great Chieftain",
+            "Classic Encounter"
+          ],
+          "others": [
+            "Desert Shadow",
+            "Huscal"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Classic Encounter Overcomes",
+          "prob": 14,
+          "trigger": "If Great Chieftain sets a pace that proves just generous enough and Classic Encounter times his run to lead inside the final furlong.",
+          "body": "Classic Encounter has the most consistent recent form in the field, showed a win over 8f on good ground, and Billy Loughnane can exploit the prominent position to pounce when the leader begins to idle. If the gallop is slightly more genuine than a lone front-runner usually sets, Classic Encounter's proximity to it becomes decisive.",
+          "winners": [
+            "Classic Encounter",
+            "Great Chieftain"
+          ],
+          "others": [
+            "Desert Shadow",
+            "Huscal"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Hold-Up Horse Swoops",
+          "prob": 9,
+          "trigger": "If Great Chieftain is allowed to crawl and Desert Shadow produces a powerful late run from the rear that the leaders cannot repel.",
+          "body": "This requires the pace to collapse so dramatically that Desert Shadow's superior stamina reserves at 10f+ distances kick in on the shorter 7½f trip — a meaningful ask, and his best form has come over longer distances. Sean Levey is an astute tactical rider but Desert Shadow must overcome a genuinely unfavourable scenario for hold-up types when there is no genuine pace pressure.",
+          "winners": [
+            "Desert Shadow",
+            "Classic Encounter"
+          ],
+          "others": [
+            "Huscal",
+            "Great Chieftain"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Huscal Finds Position",
+          "prob": 6,
+          "trigger": "If Huscal overcomes his redistributed position and manages to race more prominently than mapped, pressing Great Chieftain and benefiting from any late fade.",
+          "body": "Huscal's natural style is prominent and if the race allows him to creep forward from his mapped midfield berth, he enters calculations — but his STYLE_FIT tag and recent form figures of 0843 make this a low-confidence outcome. Tom Marquand is capable of adapting tactically, but Huscal needs a sequence of events that breaks in his favour and against the grain of this race shape.",
+          "winners": [
+            "Huscal",
+            "Classic Encounter"
+          ],
+          "others": [
+            "Desert Shadow",
+            "Great Chieftain"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Watch Great Chieftain's early stride — if Kieran Shoemark elects to push forward hard from the gates to assert the lead, any unexpected challenge from Classic Encounter could force a faster-than-ideal early tempo, undermining the controlled scenario entirely."
+        },
+        {
+          "severity": "warn",
+          "text": "Desert Shadow's visor is being worn for focus in hold-up role — if the pace is genuinely slow, watch whether Sean Levey switches tactics and tries to sit closer than mapped, which would signal a more competitive mid-race shape than expected."
+        },
+        {
+          "severity": "warn",
+          "text": "Great Chieftain's 92-day absence is the single biggest unknown in this race; horses returning from that layoff at Lingfield can come up short late, so monitor his final-furlong response as a key result-driver."
+        },
+        {
+          "severity": "info",
+          "text": "Huscal's 13-day turnaround is worth noting — Charles Hills runs horses back quickly when confident, and if Huscal breaks sharply and Marquand opts to press forward early, the race shape could compress and benefit the closers more than anticipated."
+        }
+      ],
       "skipped": false
     },
     {
@@ -1020,7 +1336,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "",
+          "note": "Won over this course and distance on standard going and returns in good form (182106), but is a natural hold-up horse pressed into a pace-setting role by default; David Probert's positional awareness will be crucial in managing an unfamiliar front-running brief, and the 6-day turnaround suggests a trainer confident in the horse's wellbeing.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "David Probert",
@@ -1052,7 +1368,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "",
+          "note": "Sir Mark Prescott's operation is renowned for placing horses precisely, and this lightly-weighted three-year-old has placed at five furlongs on standard Lingfield going before; a genuine hold-up type who will need to produce a sharp late run, and the drop back from six furlongs to five looks an important positive angle with Jack Gilligan booked.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Jack Gilligan",
@@ -1084,7 +1400,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "",
+          "note": "Remarkably consistent without winning — five consecutive placed efforts at six furlongs on standard — but this is a step down to five furlongs after a 135-day layoff, both of which introduce genuine uncertainty; naturally a hold-up horse but mapped to midfield here, meaning Billy Loughnane may find this horse racing somewhat closer than it typically prefers.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Billy Loughnane",
@@ -1116,7 +1432,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "",
+          "note": "All recent form comes on good ground at Goodwood over six and seven furlongs, making this switch to standard Lingfield over five furlongs a significant shift in conditions; Saffie Osborne takes over the ride, and while the horse is a true hold-up type, it has been slotted into a midfield position on the map that doesn't fully reflect its natural rear-of-field tendencies.",
           "draw": null,
           "draw_adv": "NEUTRAL",
           "jockey": "Saffie Osborne",
@@ -1142,10 +1458,90 @@
           "_style_fit": 0.9
         }
       ],
-      "paceDynamic": "",
-      "scenarios": [],
-      "watchPoints": [],
-      "skipped": false
+      "paceDynamic": "Mister Moet, a natural hold-up horse redistributed to the lead role, will effectively set the pace in this four-runner sprint through default rather than genuine front-running inclination, meaning the tempo is unlikely to be truly contested or pressured at any point. Sunlit Sea is another hold-up type who will likely settle towards the rear, while Real Gold and Shining Guest are genuine hold-up horses mapped to midfield purely because the field contains no natural prominent types to fill those positions. The result is a race where a single unchallenged pace-setter controls affairs over five furlongs on standard Lingfield turf, setting up a soft, sustainable gallop that will compress the field and produce a sprint finish from the furlong pole. This race shape strongly favours horses with tactical speed who can travel close to the pace and pick up cleanly in the straight, rather than late-finishing closers who need a true searching gallop to make ground — this field holds more hold-up types than can all get their natural position, and Mister Moet is most likely to secure the lead with Real Gold and Shining Guest unable to fully express their usual come-from-behind style.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Controlled Lead, Sprint Finish",
+          "prob": 66,
+          "trigger": "If Mister Moet dictates an uncontested, measured gallop and the field bunches before a sprint-for-home in the final furlong.",
+          "body": "Mister Moet dictates from the front at his own pace and, having conserved energy, quickens away from his rivals when the whips crack inside the final furlong; horses who can travel prominently and have a sharp turn of foot benefit most from this low-tempo shape.",
+          "winners": [
+            "Mister Moet",
+            "Sunlit Sea"
+          ],
+          "others": [
+            "Real Gold",
+            "Shining Guest"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Hold-Up Horses Pounce",
+          "prob": 17,
+          "trigger": "If the tempo collapses to near-walking pace and the trailing horses pick off a tiring Mister Moet in the closing stages.",
+          "body": "Mister Moet, uncomfortable in a lead role, fails to sustain his effort past the furlong marker as the hold-up runners produce late runs; this shape benefits closers with finishing kick, though both Real Gold and Shining Guest are racing away from their natural ground position, limiting their effectiveness.",
+          "winners": [
+            "Sunlit Sea",
+            "Real Gold"
+          ],
+          "others": [
+            "Shining Guest",
+            "Mister Moet"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Muddling Pace, Blanket Finish",
+          "prob": 11,
+          "trigger": "If Mister Moet is unable to find a clear rhythm and the race deteriorates into a rough, messy sprint with no clear shape.",
+          "body": "With no natural front-runner controlling affairs confidently, the field races in a tight group across the five furlongs and the result is determined by raw ability and weight carried rather than tactical positioning; Sunlit Sea's five-furlong form and Sir Mark Prescott's placing record offer some appeal in a chaotic finish.",
+          "winners": [
+            "Sunlit Sea",
+            "Shining Guest"
+          ],
+          "others": [
+            "Mister Moet",
+            "Real Gold"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Leader Outstays Field",
+          "prob": 6,
+          "trigger": "If Mister Moet, once clear and unharassed, simply grinds his rivals into submission at a pace too fast for hold-up horses to bridge.",
+          "body": "Despite being a natural hold-up horse, Mister Moet uses the redistribution to his advantage by stealing an uncontested lead and never relinquishing it, with hold-up rivals finding the task of making up ground on a fresh, unextended leader simply too great over a short five furlongs.",
+          "winners": [
+            "Mister Moet",
+            "Real Gold"
+          ],
+          "others": [
+            "Sunlit Sea",
+            "Shining Guest"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Mister Moet's willingness to stride forward and lead is unproven — watch at the start to see whether he jumps and immediately takes up the running or hesitates, as any reluctance to lead will leave this race without a genuine pace-setter and create a chaotic shape."
+        },
+        {
+          "severity": "warn",
+          "text": "Real Gold's 135-day absence is the longest layoff in this field — watch for any signs of ring-rustiness in the first furlong, particularly given the step down in trip and the horse's typical need to settle and build momentum from the rear."
+        },
+        {
+          "severity": "warn",
+          "text": "Shining Guest has no form on standard going or at Lingfield, making her the biggest unknown in terms of surface adaptability — watch how Saffie Osborne positions her in the early stages, as any traffic problems in a small field will be particularly damaging to a hold-up type."
+        },
+        {
+          "severity": "info",
+          "text": "With all four runners classified as hold-up horses and a fully compressed, slow-tempo race shape expected, watch the draw and initial stall positions — any runner that gains a width of daylight on the rail exiting the stalls could exploit the lack of genuine pace and steal an advantage that proves decisive over five furlongs."
+        }
+      ],
+      "skipped": false,
+      "review_flag": true,
+      "review_reason": "style/note conflict — check before trusting notes"
     }
   ]
 }
