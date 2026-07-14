@@ -2796,13 +2796,18 @@ def _parse_narrative(raw, runners):
         if len(parts) < 5: continue
         try: prob = int(re.sub(r'[^0-9]','',parts[1]))
         except: prob = 25
-        if len(parts) >= 7:
+        # The capture regex strips the 'SCENARIO_X|' prefix, so a WELL-FORMED line
+        # yields 6 parts: title|prob|trigger|body|winners|others.
+        if len(parts) >= 6:
             trigger, body, win_i, oth_i = parts[2], parts[3], 4, 5
-        elif len(parts) == 6:
-            # model merged trigger+body into one field; split heuristically, keep last two as winners/others
-            trigger, body, win_i, oth_i = parts[2], parts[2], 4, 5
-        else:  # exactly 5: title|prob|merged|winners|others
-            trigger, body, win_i, oth_i = parts[2], parts[2], 3, 4
+        elif len(parts) == 5:
+            # model merged trigger+body into one field — no separate body to show
+            trigger, body, win_i, oth_i = parts[2], '', 3, 4
+        else:
+            continue
+        # never render the same sentence twice in the UI
+        if body.strip() and body.strip().lower() == trigger.strip().lower():
+            body = ''
         winners = [h.strip() for h in parts[win_i].split(',') if h.strip()]
         others  = [h.strip() for h in parts[oth_i].split(',') if h.strip()]
         scenarios.append({'label':letter,'title':parts[0],'prob':prob,'trigger':trigger,'body':body,'winners':winners,'others':others})
@@ -3040,13 +3045,27 @@ def publish_meeting(meeting_results, course, race_date_str, going_report=None, g
                 prompt = _narrative_prompt(meta, ev, runners, going_report, is_flat,
                                            style_summary, pd_str, pace_info, horses_list=horses_list)
                 raw = _call_claude(prompt); time.sleep(8)
-                print('RAW_OUTPUT_START\n' + raw + '\nRAW_OUTPUT_END')
                 pace_dynamic_str, scenarios, notes_map, watch_points = _parse_narrative(raw, runners)
                 for r in runners: r['note'] = notes_map.get(r['name'],'')
                 print('         done ({} scenarios, {} watch points)'.format(len(scenarios), len(watch_points)))
             except Exception as e:
                 import traceback; traceback.print_exc()
                 print('         Claude error: {}'.format(e))
+                # FATAL ERRORS — these will fail on EVERY race, so publishing
+                # would push a whole card of empty notes live. Abort loudly
+                # instead: the workflow goes red and nothing bad ships.
+                _emsg = str(e).lower()
+                _fatal = ('credit balance' in _emsg or 'billing' in _emsg
+                          or 'authentication' in _emsg or 'invalid x-api-key' in _emsg
+                          or 'not_found_error' in _emsg or 'model' in _emsg and 'not' in _emsg)
+                if _fatal:
+                    print('\n' + '!'*70)
+                    print('  FATAL ANTHROPIC API ERROR — ABORTING BEFORE PUBLISH')
+                    print('  {}'.format(e))
+                    print('  Every narrative call will fail. Nothing has been published.')
+                    print('  Check: credit balance / API key / model string.')
+                    print('!'*70 + '\n')
+                    sys.exit(1)
         else:
             print('  [{}/{}] {} {} (no narrative)'.format(i+1, len(meeting_results), meta['time'], meta['name'][:42]))
         races_data.append({
