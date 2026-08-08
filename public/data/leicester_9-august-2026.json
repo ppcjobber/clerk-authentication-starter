@@ -1,0 +1,1711 @@
+{
+  "course": "Leicester",
+  "date": "9 August 2026",
+  "slug": "leicester_9-august-2026",
+  "races": [
+    {
+      "id": 1,
+      "time": "2:24",
+      "name": "Loros - Irish EBF Novice Stakes (GBB Race)",
+      "grade": "NOV",
+      "dist": "7f",
+      "dist_f": 7.0,
+      "going": "Good",
+      "runners": 3,
+      "free": true,
+      "type": "flat",
+      "pace": "SLOWLY_RUN",
+      "paceConf": 85,
+      "leads": [
+        "Al Wathba"
+      ],
+      "prominent": [
+        "Jimtrott"
+      ],
+      "midfield": [],
+      "holdup": [
+        "Ebt's Warrior"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Al Wathba",
+          "or": 120,
+          "style_code": "P",
+          "finish_type": "S",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Charlie Appleby's 2yo showed a solid 2nd on Good ground over 7f last time, has course-relevant sim-going form, and carries the class of OR 120; his prominent tag slightly understates his likely front-running role in a three-runner field, though the STYLE_FIT flag is a mild caution against over-relying on his tactical position translating perfectly.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Connor Planas",
+          "trainer": "Charlie Appleby",
+          "trainer_rtf": "",
+          "trainer_14": "8/19",
+          "last_run": "29",
+          "age": "2",
+          "sex": "colt",
+          "form": "2",
+          "lbs": "133",
+          "headgear": "",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 107.3,
+          "_model_price": "1/3",
+          "_mkt_price": "1/4",
+          "_win_pct": 71.8,
+          "_edge": -12.7,
+          "_action": "AVOID",
+          "_style_fit": 0.9
+        },
+        {
+          "name": "Ebt's Warrior",
+          "or": 120,
+          "style_code": "U",
+          "finish_type": "E",
+          "dist_code": "UNKNOWN",
+          "going_flag": "UNKNOWN",
+          "note": "William Muir and Chris Grassick send out this unexposed 2yo with an unknown running style — the redistribution to the rear is a field-mapping device, not a reflection of a proven hold-up profile, and his true race position on debut remains genuinely uncertain; lightly raced and unquantified, he is the biggest wildcard in a small field.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Lewis Edmunds",
+          "trainer": "William Muir & Chris Grassick",
+          "trainer_rtf": "",
+          "trainer_14": "3/19",
+          "last_run": "",
+          "age": "2",
+          "sex": "colt",
+          "form": "",
+          "lbs": "133",
+          "headgear": "",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 107.3,
+          "_model_price": "18/1",
+          "_mkt_price": "16/1",
+          "_win_pct": 5.3,
+          "_edge": -12.7,
+          "_action": "AVOID",
+          "_style_fit": 1.0
+        },
+        {
+          "name": "Jimtrott",
+          "or": 82,
+          "style_code": "P",
+          "finish_type": "S",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Eve Johnson Houghton's 2yo has two consecutive 2nd-place finishes over 6f on Good and Soft ground, stepping up to 7f here which may suit; a natural prominent racer likely to sit just behind Al Wathba, and Charles Bishop's placing will be key — tracking the leader snugly is his best route to a winning chance.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Charles Bishop",
+          "trainer": "Eve Johnson Houghton",
+          "trainer_rtf": "",
+          "trainer_14": "3/38",
+          "last_run": "38",
+          "age": "2",
+          "sex": "colt",
+          "form": "22",
+          "lbs": "133",
+          "headgear": "",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 107.3,
+          "_model_price": "7/2",
+          "_mkt_price": "4/1",
+          "_win_pct": 22.9,
+          "_edge": 25.3,
+          "_action": "WATCH",
+          "_style_fit": 1.0
+        }
+      ],
+      "paceDynamic": "Al Wathba is the sole confirmed pace-maker here and will stride forward to lead on a flat 7f Leicester straight, setting a comfortable, uncontested tempo with no rival capable of matching or pressuring him early. Jimtrott is also prominent-styled and will track just off Al Wathba's quarters, meaning the pair are likely to dominate the early and middle stages of this race. Ebt's Warrior, lightly raced with an unknown style, has been redistributed to the rear as the least pace-committed runner in a three-horse field, but there is no genuine hold-up horse in this race — prominent and front-running types dominate, and both Al Wathba and Jimtrott are most likely to actually secure their forward positions. With a single, uncontested leader setting a sustainable gallop on Good to Firm ground, this race shape strongly favours horses racing prominently or tracking the pace from a handy position, as there will be no searching fractions to compromise front-runners and no late frenzy to aid hold-up types.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Lone Leader Controls",
+          "prob": 72,
+          "trigger": "If Al Wathba bowls along uncontested and dictates a measured pace from the front throughout.",
+          "body": "Al Wathba sets his own fractions on Good to Firm ground, travels within himself, and has the class (OR 120) and Appleby/Planas combination to quicken clear inside the final furlong; the absence of any genuine pressure means his stamina and quality go untested.",
+          "winners": [
+            "Al Wathba",
+            "Jimtrott"
+          ],
+          "others": [
+            "Ebt's Warrior"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Prominent Pair Fight Out",
+          "prob": 16,
+          "trigger": "If Jimtrott pushes hard to press Al Wathba and the pair race head-to-head from early, injecting more pace.",
+          "body": "The contest becomes a duel between the two prominent types across the 7f, lifting the tempo and making the race more genuinely run; Jimtrott, with two 2nd-place efforts and good sim-going form, is best placed to capitalise if Al Wathba over-exerts.",
+          "winners": [
+            "Jimtrott",
+            "Al Wathba"
+          ],
+          "others": [
+            "Ebt's Warrior"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Closer Swoops Late",
+          "prob": 8,
+          "trigger": "If the pace is strong enough to set up a late run and Ebt's Warrior, positioned last, produces a finishing burst.",
+          "body": "Ebt's Warrior would need a genuinely strong gallop to be carried into contention from the rear in a three-runner field over 7f, and his redistribution to hold-up reflects his unknown style rather than a proven closing profile; this scenario depends heavily on favourable pace dynamics that are unlikely to materialise.",
+          "winners": [
+            "Ebt's Warrior"
+          ],
+          "others": [
+            "Jimtrott"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Slow Pace Bunches Field",
+          "prob": 4,
+          "trigger": "If Al Wathba dawdles to create a sprint finish where all three converge in the final furlong.",
+          "body": "With only three runners and a single pace-maker, an unusually slow early gallop could compress the field late, giving Ebt's Warrior a fleeting chance; however this outcome is highly improbable given Al Wathba's natural forward-going style and Appleby's horses typically travelling well on Good to Firm.",
+          "winners": [
+            "Ebt's Warrior",
+            "Jimtrott"
+          ],
+          "others": [
+            "Al Wathba"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Watch Al Wathba's early position — if he goes unchallenged to the lead from the start, his uncontested advantage in a three-runner field becomes a significant tactical edge throughout."
+        },
+        {
+          "severity": "warn",
+          "text": "Monitor Jimtrott's early move: if Bishop elects to press Al Wathba aggressively rather than track, it could inject a pace into the race that suits neither horse and opens the door for Ebt's Warrior."
+        },
+        {
+          "severity": "warn",
+          "text": "Ebt's Warrior's debut behaviour is entirely unknown — greenness, missing the break, or racing freely could each dramatically alter the race shape despite the small field."
+        },
+        {
+          "severity": "info",
+          "text": "Going is reported Good to Firm for this race despite the card listing Good — Al Wathba's one sim-going run was on Good, so the firmer conditions are worth noting for connections and punters assessing stamina over 7f."
+        }
+      ],
+      "skipped": false
+    },
+    {
+      "id": 2,
+      "time": "2:59",
+      "name": "Catalogue Engineering Nursery Handicap Stakes",
+      "grade": "HCAP",
+      "dist": "7f",
+      "dist_f": 7.0,
+      "going": "Good",
+      "runners": 6,
+      "free": false,
+      "type": "flat",
+      "pace": "SLOWLY_RUN",
+      "paceConf": 85,
+      "leads": [
+        "Love Rome"
+      ],
+      "prominent": [
+        "Greek Symphony",
+        "Katie's Cavalier"
+      ],
+      "midfield": [
+        "Jazzy Bay"
+      ],
+      "holdup": [
+        "Bayside",
+        "Better Nature"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Love Rome",
+          "or": 75,
+          "style_code": "L",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Confirmed front-runner for Charlie Johnston with Cieren Fallon up, who showed two placings at 7f on good ground and faces no pace rival here — the uncontested lead is its primary weapon and good to firm suits based on a 2/2 record in similar conditions.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Cieren Fallon",
+          "trainer": "Charlie Johnston",
+          "trainer_rtf": "",
+          "trainer_14": "5/42",
+          "last_run": "27",
+          "age": "2",
+          "sex": "colt",
+          "form": "32",
+          "lbs": "135",
+          "headgear": "",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 72.5,
+          "_model_price": "7/2",
+          "_mkt_price": "3/1",
+          "_win_pct": 22.1,
+          "_edge": -2.9,
+          "_action": "WATCH",
+          "_style_fit": 1.0
+        },
+        {
+          "name": "Greek Symphony",
+          "or": 72,
+          "style_code": "P",
+          "finish_type": "S",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Mason Paetel claims 5lb for Oliver Cole and the horse owns a win at 7f on standard ground, making this the standout form angle; a prominent runner who should track Love Rome and is best positioned to capitalise if the leader ties up.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Mason Paetel(5)",
+          "trainer": "Oliver Cole",
+          "trainer_rtf": "",
+          "trainer_14": "3/15",
+          "last_run": "27",
+          "age": "2",
+          "sex": "filly",
+          "form": "321",
+          "lbs": "132",
+          "headgear": "",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 72.5,
+          "_model_price": "5/2",
+          "_mkt_price": "2/1",
+          "_win_pct": 30.0,
+          "_edge": 0.1,
+          "_action": "WATCH",
+          "_style_fit": 1.0
+        },
+        {
+          "name": "Bayside",
+          "or": 71,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Rod Millman's hold-up juvenile has a scattergun form profile — a win came over 5f on soft, and its three runs at 7f have yielded only modest results — the step up in trip suits in theory but Lewis Edmunds will need a perfectly judged run from rear to land a blow.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Lewis Edmunds",
+          "trainer": "Rod Millman",
+          "trainer_rtf": "",
+          "trainer_14": "2/16",
+          "last_run": "38",
+          "age": "2",
+          "sex": "filly",
+          "form": "31603",
+          "lbs": "131",
+          "headgear": "",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 68.5,
+          "_model_price": "6/1",
+          "_mkt_price": "11/2",
+          "_win_pct": 13.6,
+          "_edge": -2.8,
+          "_action": "WATCH",
+          "_style_fit": 1.0
+        },
+        {
+          "name": "Katie's Cavalier",
+          "or": 67,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Silvestre De Sousa takes the ride for a David Loughnane yard that has drawn a blank in the last 14 days (0/16); four consecutive finishes of 4th-or-worse limit confidence, and while the prominent style is positionally sound here, the flat form line offers little encouragement.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Silvestre De Sousa",
+          "trainer": "David Loughnane",
+          "trainer_rtf": "",
+          "trainer_14": "0/16",
+          "last_run": "15",
+          "age": "2",
+          "sex": "gelding",
+          "form": "5664",
+          "lbs": "127",
+          "headgear": "",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 68.5,
+          "_model_price": "8/1",
+          "_mkt_price": "7/1",
+          "_win_pct": 11.3,
+          "_edge": 1.2,
+          "_action": "WATCH",
+          "_style_fit": 1.0
+        },
+        {
+          "name": "Better Nature",
+          "or": 66,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Rob Hornby partners a Jonathan Portman-trained hold-up type who has placed twice at 7f on good ground — the form is quietly consistent, the going suits, and 33 days off shouldn't inconvenience; needs a strong pace to set up a late run, which may not materialise with Love Rome controlling proceedings.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Rob Hornby",
+          "trainer": "Jonathan Portman",
+          "trainer_rtf": "",
+          "trainer_14": "1/14",
+          "last_run": "33",
+          "age": "2",
+          "sex": "gelding",
+          "form": "032",
+          "lbs": "126",
+          "headgear": "",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 66.6,
+          "_model_price": "8/1",
+          "_mkt_price": "15/2",
+          "_win_pct": 10.6,
+          "_edge": 0.2,
+          "_action": "WATCH",
+          "_style_fit": 1.0
+        },
+        {
+          "name": "Jazzy Bay",
+          "or": 62,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Eve Johnson Houghton's youngster is a genuine hold-up horse by nature — placed four times in five outings — but with multiple closers in this field it has been mapped to midfield and may not get the trailing position it needs; the style-fit discount is warranted and Oliver Carmichael's 7lb claim offers only partial compensation.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Oliver Carmichael(7)",
+          "trainer": "Eve Johnson Houghton",
+          "trainer_rtf": "",
+          "trainer_14": "3/38",
+          "last_run": "12",
+          "age": "2",
+          "sex": "gelding",
+          "form": "63334",
+          "lbs": "122",
+          "headgear": "",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 66.6,
+          "_model_price": "7/1",
+          "_mkt_price": "13/2",
+          "_win_pct": 12.3,
+          "_edge": 4.2,
+          "_action": "WATCH",
+          "_style_fit": 0.9
+        }
+      ],
+      "paceDynamic": "Love Rome is the sole confirmed front-runner in a six-runner field and, with no genuine challenger for the lead, should be able to dictate a controlled, sustainable gallop from the gates at Leicester's 7f. Greek Symphony and Katie's Cavalier will press forward into prominent positions, but neither has the profile to seriously dispute the lead, meaning Love Rome can set an honest but uncontested tempo on good to firm ground. Jazzy Bay is a genuine hold-up type redistributed into a midfield slot on the map because the field contains more hold-up horses than rear positions to accommodate — in practice, Better Nature and Bayside will also be tracking from off the pace, creating a degree of traffic congestion in the latter stages. This race shape strongly favours prominent-to-lead racers: a controlled pace set by Love Rome will compress the race into the final two furlongs, rewarding those able to quicken from a handy position rather than those forced wide or finishing through traffic late.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Controlled Lead, Holds On",
+          "prob": 71,
+          "trigger": "If Love Rome sets an uncontested, measured gallop and gets a soft lead throughout, allowing it to conserve energy and quicken away in the final furlong.",
+          "body": "Love Rome dictates every yard and the pace remains honest but never punishing, meaning its stamina reserves are intact for the business end; the prominent horses cannot close the gap in time on a flat, true surface.",
+          "winners": [
+            "Love Rome",
+            "Greek Symphony"
+          ],
+          "others": [
+            "Katie's Cavalier",
+            "Better Nature"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Prominent Racer Overhauled",
+          "prob": 16,
+          "trigger": "If the pace is slightly too slow, setting up a sprint finish that favours a horse travelling kindly just behind the leader.",
+          "body": "Greek Symphony, having shown a win at 7f on standard-equivalent ground, is ideally placed to pounce if Love Rome is caught flat-footed in the final 100 yards; Katie's Cavalier's prominent style also suits a late-dash scenario though its recent form is uninspiring.",
+          "winners": [
+            "Greek Symphony",
+            "Katie's Cavalier"
+          ],
+          "others": [
+            "Love Rome",
+            "Better Nature"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Hold-Up Horse Finishes Through",
+          "prob": 9,
+          "trigger": "If the pace quickens significantly mid-race, stringing the field out and creating a clear late run for a closer with a turn of foot.",
+          "body": "Better Nature has placed twice at 7f on good ground and Rob Hornby may set the horse alight late if the race truly develops into a test of stamina; Bayside has won before and handles the trip, though its recent form has been patchy.",
+          "winners": [
+            "Better Nature",
+            "Bayside"
+          ],
+          "others": [
+            "Greek Symphony",
+            "Jazzy Bay"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Pace Collapse, Field Regroups",
+          "prob": 4,
+          "trigger": "If Love Rome sets a falsely slow early gallop before the field bunches and sprints from the two-furlong pole, scrambling all positional advantages.",
+          "body": "Jazzy Bay, though carrying a style-fit discount having been mapped out of its true hold-up role, possesses multiple placed efforts and could benefit from chaos at the top of the straight; Bayside's raw ability at this trip gives it a punter's chance if everything falls right in a compressed finish.",
+          "winners": [
+            "Jazzy Bay",
+            "Bayside"
+          ],
+          "others": [
+            "Better Nature",
+            "Katie's Cavalier"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Love Rome sets off uncontested — watch whether Cieren Fallon elects to exploit the soft lead immediately or takes a conservative hold, as the choice will dictate whether this becomes a true test or a sprint-finish lottery."
+        },
+        {
+          "severity": "warn",
+          "text": "Greek Symphony's prominent pitch is comfortable but Mason Paetel (5lb claimer) has minimal experience at Leicester — watch for any positional hesitance leaving the stalls that could compromise the horse's ability to track Love Rome through the early stages."
+        },
+        {
+          "severity": "warn",
+          "text": "Better Nature and Bayside are both genuine hold-up types hunting the same ground late — watch for traffic interference in the final two furlongs if the field compresses, as one or both could find their run blocked."
+        },
+        {
+          "severity": "info",
+          "text": "Going listed as Good To Firm for this race on the official going report — watch for any watering updates before post time, as a move toward Good could aid the hold-up horses and reduce Love Rome's advantage on a faster surface."
+        },
+        {
+          "severity": "info",
+          "text": "Jazzy Bay has run 12 days ago and is racing out of its natural position — watch at the start to see whether Oliver Carmichael attempts to drop it out regardless of the mapped position, which could cause interference for Better Nature tracking just behind."
+        }
+      ],
+      "skipped": false
+    },
+    {
+      "id": 3,
+      "time": "3:34",
+      "name": "TLC Teddies For Loving Care Handicap Stakes",
+      "grade": "HCAP",
+      "dist": "1m4f",
+      "dist_f": 12.0,
+      "going": "Good",
+      "runners": 6,
+      "free": false,
+      "type": "flat",
+      "pace": "SLOWLY_RUN",
+      "paceConf": 85,
+      "leads": [
+        "Mountbatten"
+      ],
+      "prominent": [
+        "Robusto",
+        "Sahm Naif"
+      ],
+      "midfield": [
+        "Ottoman"
+      ],
+      "holdup": [
+        "Barak Warrior",
+        "Al Maslool"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Robusto",
+          "or": 65,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Prominent racer with a win 29 days ago over 14f on standard ground, suggesting this trip is right in the wheelhouse; Harry Vigors claims 5lb and the EJH yard has a respectable T14 strike, and the blinkered headgear should sharpen focus on a track where his style allows him to sit in a perfect stalking position.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Harry Vigors(5)",
+          "trainer": "Eve Johnson Houghton",
+          "trainer_rtf": "",
+          "trainer_14": "3/38",
+          "last_run": "29",
+          "age": "6",
+          "sex": "gelding",
+          "form": "301583",
+          "lbs": "140",
+          "headgear": "b",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 66.0,
+          "_model_price": "8/1",
+          "_mkt_price": "7/1",
+          "_win_pct": 11.5,
+          "_edge": 1.0,
+          "_action": "WATCH",
+          "_style_fit": 1.0
+        },
+        {
+          "name": "Ottoman",
+          "or": 60,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Won over 12f on good ground recently and has strong similar-going credentials (2W6P from 12 qualifying runs), but is a genuine hold-up type who is mapped to midfield here because the field carries more closers than the race shape can accommodate at the rear — his true finishing effort may be compromised by being unable to settle as far back as he'd prefer.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Jack Callan",
+          "trainer": "Oliver Greenall & Josh Guerriero",
+          "trainer_rtf": "",
+          "trainer_14": "0/5",
+          "last_run": "15",
+          "age": "4",
+          "sex": "gelding",
+          "form": "832515",
+          "lbs": "135",
+          "headgear": "b",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 66.0,
+          "_model_price": "14/1",
+          "_mkt_price": "14/1",
+          "_win_pct": 6.5,
+          "_edge": 6.0,
+          "_action": "WATCH",
+          "_style_fit": 0.927
+        },
+        {
+          "name": "Mountbatten",
+          "or": 70,
+          "style_code": "L",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "The only confirmed front-runner; Sir Mark Prescott sends this three-year-old out with blinkers fitted, a T14 strike of 5/22 suggesting the stable is in good nick, and a recent win over 12f on standard gives confidence that the step up to 14f on quick ground suits — lone leader status is the decisive tactical factor here.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Dylan Hogan",
+          "trainer": "Sir Mark Prescott Bt",
+          "trainer_rtf": "",
+          "trainer_14": "5/22",
+          "last_run": "44",
+          "age": "3",
+          "sex": "colt",
+          "form": "877-14",
+          "lbs": "135",
+          "headgear": "p",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 66.0,
+          "_model_price": "7/2",
+          "_mkt_price": "11/4",
+          "_win_pct": 23.3,
+          "_edge": -4.0,
+          "_action": "WATCH",
+          "_style_fit": 1.0
+        },
+        {
+          "name": "Barak Warrior",
+          "or": 69,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Won last time out over 12f on firm ground, so the conditions today are more than acceptable, but four of his five career starts came at 10f and this 14f trip is an unknown quantity; Silvestre De Sousa takes over in the saddle and the trainer has a minimal recent strike rate, meaning this is largely a fitness and trip question on debut at this distance.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Silvestre De Sousa",
+          "trainer": "James Keane",
+          "trainer_rtf": "",
+          "trainer_14": "0/2",
+          "last_run": "39",
+          "age": "3",
+          "sex": "gelding",
+          "form": "7781",
+          "lbs": "134",
+          "headgear": "",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 66.0,
+          "_model_price": "3/1",
+          "_mkt_price": "13/5",
+          "_win_pct": 24.5,
+          "_edge": -3.0,
+          "_action": "WATCH",
+          "_style_fit": 1.0
+        },
+        {
+          "name": "Al Maslool",
+          "or": 68,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "William Haggas has a fine T14 rate (10/49) and Cieren Fallon knows the horse, which has placed five times in its last eight runs on similar going and has a win over 12f on good ground; the headgear flag (p) is noted, and while the class profile is the best in the field, a natural hold-up style in a race likely to be run at a controlled tempo is the key tactical risk to its chance.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Cieren Fallon",
+          "trainer": "William Haggas",
+          "trainer_rtf": "",
+          "trainer_14": "10/49",
+          "last_run": "15",
+          "age": "3",
+          "sex": "gelding",
+          "form": "750231",
+          "lbs": "133",
+          "headgear": "p",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 66.0,
+          "_model_price": "3/1",
+          "_mkt_price": "11/4",
+          "_win_pct": 23.8,
+          "_edge": -2.0,
+          "_action": "WATCH",
+          "_style_fit": 1.0
+        },
+        {
+          "name": "Sahm Naif",
+          "or": 64,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Two wins in the last three starts (both over 10f on good ground) represent improving form for James Horton's youngster, and Ray Dawson picks up the ride on a three-year-old stretching to 14f for the first time; prominent style means he should be able to track Mountbatten, but the step in trip on today's going-to-firm ground is an unproven commodity that could prove decisive either way.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Ray Dawson",
+          "trainer": "James Horton",
+          "trainer_rtf": "",
+          "trainer_14": "0/9",
+          "last_run": "19",
+          "age": "3",
+          "sex": "gelding",
+          "form": "-74115",
+          "lbs": "129",
+          "headgear": "b",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 66.0,
+          "_model_price": "9/1",
+          "_mkt_price": "8/1",
+          "_win_pct": 10.3,
+          "_edge": 2.0,
+          "_action": "WATCH",
+          "_style_fit": 1.0
+        }
+      ],
+      "paceDynamic": "Mountbatten is the sole confirmed front-runner in a six-horse field and, with no genuine rival to dispute the lead, Dylan Hogan can dictate a controlled, sustainable gallop from the front on good-to-firm ground over 1m4f at Leicester. Robusto and Sahm Naif will track prominently behind, meaning the order through the first half of the race is likely to be orderly rather than pressured, producing a measured pace that rewards horses who can travel into the race comfortably. Ottoman and Barak Warrior are genuine hold-up types, but with Al Maslool also sitting back, there is a cluster of closers who will need the pace to truly lift in the final quarter to reel in any leader who has conserved energy through the race. The field contains more hold-up types than the race shape will comfortably accommodate, and runners filling midfield slots here may not be positioned where they naturally want to race. This shape — an uncontested lead, measured early gallop, and a tactical finish — strongly favours prominent racers who can sit just behind Mountbatten and pounce at the two-furlong pole, rather than hold-up horses who need a truly run race to deliver their finishing effort.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Mountbatten Controls, Prominent Pounce",
+          "prob": 71,
+          "trigger": "If Mountbatten sets a calm, uncontested lead and the prominently-placed duo pressurise at the two-furlong mark.",
+          "body": "Mountbatten dictates a modest fractions race, conserving enough to resist or nearly resist challengers, while Robusto and Sahm Naif — tucked in behind throughout — are best placed to strike as the race quickens.",
+          "winners": [
+            "Robusto",
+            "Sahm Naif"
+          ],
+          "others": [
+            "Mountbatten",
+            "Al Maslool"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Hold-Up Horses Collide Late",
+          "prob": 14,
+          "trigger": "If the pace genuinely lifts in the back straight and closers find a clear run to deliver late momentum.",
+          "body": "Al Maslool, handled by Cieren Fallon for the in-form William Haggas yard, has the class profile to benefit if a strong gallop sets it up, with solid similar-going form underpinning the case. Barak Warrior's sole win came on firm ground and, if producing a career-best effort in trip, could emerge as a late threat.",
+          "winners": [
+            "Al Maslool",
+            "Barak Warrior"
+          ],
+          "others": [
+            "Ottoman",
+            "Robusto"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Mountbatten Defies, Stays On",
+          "prob": 10,
+          "trigger": "If the pace proves genuinely modest throughout and Mountbatten simply outstays all rivals to win going away.",
+          "body": "Sir Mark Prescott's runner carries a headgear flag and the trainer's 5/22 fourteen-day strike rate underlines stable confidence; in a true go-as-you-please scenario, the front-runner simply may never be caught.",
+          "winners": [
+            "Mountbatten",
+            "Robusto"
+          ],
+          "others": [
+            "Sahm Naif",
+            "Al Maslool"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Chaos, Tactical Misfire",
+          "prob": 5,
+          "trigger": "If pace unexpectedly collapses early or jockeys misread positioning and the race falls apart tactically for the principals.",
+          "body": "Robusto, who has multiple wins at staying trips on artificial ground, could capitalise on a chaotic sequence if rivals are caught flat-footed, while Sahm Naif's two recent wins over 10f hint at untapped upside at this longer trip.",
+          "winners": [
+            "Sahm Naif",
+            "Robusto"
+          ],
+          "others": [
+            "Al Maslool",
+            "Mountbatten"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Mountbatten's ability to control fractions without pressure is the race's single biggest determinant — watch whether Dylan Hogan dictates a slow early pace that neutralises the closers entirely."
+        },
+        {
+          "severity": "warn",
+          "text": "Ottoman is a genuine hold-up horse racing out of its preferred rear position here; if Jack Callan cannot find a gap from midfield in the straight, the style mismatch makes its chance measurably harder to land."
+        },
+        {
+          "severity": "warn",
+          "text": "Al Maslool for Haggas and Fallon is the class proposition but depends on a truly run race — watch whether the pace is sufficient to give it a proper target in the final two furlongs."
+        },
+        {
+          "severity": "info",
+          "text": "Sahm Naif is unproven at 14f after two wins at 10f; watch the early market move and how Ray Dawson positions him — if he rides aggressively to track Mountbatten, the trip question becomes the key variable."
+        },
+        {
+          "severity": "info",
+          "text": "Going is confirmed good-to-firm for this race despite the headline card reading Good — any further drying of the track during the afternoon session could marginally favour the prominent runners over hold-up types in this small field."
+        }
+      ],
+      "skipped": false
+    },
+    {
+      "id": 4,
+      "time": "4:09",
+      "name": "Dave Myers Memorial - I'm Having A Dave Day Fillies' Handicap Stakes",
+      "grade": "HCAP",
+      "dist": "1m",
+      "dist_f": 8.0,
+      "going": "Good",
+      "runners": 5,
+      "free": false,
+      "type": "flat",
+      "pace": "SLOWLY_RUN",
+      "paceConf": 85,
+      "leads": [
+        "Spiritoftheblues"
+      ],
+      "prominent": [
+        "Kaori"
+      ],
+      "midfield": [
+        "Tamzan"
+      ],
+      "holdup": [
+        "Cancelled",
+        "Venetian Sky"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Cancelled",
+          "or": 77,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Five-year-old hold-up specialist trained by Jonjo & A.J. O'Neill, travelling form in good-ground conditions is solid (11/15 runs in similar going, two wins), but the flat mile at Leicester is shorter than her most recent starts at 9-10f and she will need to be produced late from the rear.|",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Kevin Stott",
+          "trainer": "Jonjo & A.J. O'Neill",
+          "trainer_rtf": "",
+          "trainer_14": "1/4",
+          "last_run": "11",
+          "age": "5",
+          "sex": "mare",
+          "form": "-43541",
+          "lbs": "143",
+          "headgear": "tp",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 76.9,
+          "_model_price": "3/1",
+          "_mkt_price": "5/2",
+          "_win_pct": 26.6,
+          "_edge": 0.1,
+          "_action": "WATCH",
+          "_style_fit": 1.0
+        },
+        {
+          "name": "Venetian Sky",
+          "or": 74,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "William Haggas three-year-old returning after 29 days off, exclusively raced at 7f on recent evidence and this step up to a mile is an unknown; natural hold-up style and a 0W1P record in similar going limits confidence, though Cieren Fallon's claim brings the weight down to a workable level.|",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Cieren Fallon",
+          "trainer": "William Haggas",
+          "trainer_rtf": "",
+          "trainer_14": "10/49",
+          "last_run": "29",
+          "age": "3",
+          "sex": "filly",
+          "form": "0-3445",
+          "lbs": "133",
+          "headgear": "",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 72.9,
+          "_model_price": "3/1",
+          "_mkt_price": "5/2",
+          "_win_pct": 26.4,
+          "_edge": -0.8,
+          "_action": "WATCH",
+          "_style_fit": 1.0
+        },
+        {
+          "name": "Spiritoftheblues",
+          "or": 73,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "David O'Meara's three-year-old is the race's only front-runner and has a strong record over this trip in good conditions (5/6 similar-going runs, 1W4P), but the STYLE_FIT tag (0.92) flags that she is racing slightly out of her most comfortable role — her best efforts have come pressing rather than leading outright, so uncontested front-running is not guaranteed to suit perfectly.|",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Mark Winn",
+          "trainer": "David O'Meara",
+          "trainer_rtf": "",
+          "trainer_14": "5/50",
+          "last_run": "11",
+          "age": "3",
+          "sex": "filly",
+          "form": "8-7232",
+          "lbs": "132",
+          "headgear": "",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 72.9,
+          "_model_price": "4/1",
+          "_mkt_price": "7/2",
+          "_win_pct": 20.6,
+          "_edge": 0.2,
+          "_action": "WATCH",
+          "_style_fit": 0.922
+        },
+        {
+          "name": "Kaori",
+          "or": 71,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "George Boughey filly wearing a hood, ran three consecutive placed efforts at 7f before a step up in trip underperformed; back at 8f here with Jack Callan aboard, her prominent style maps naturally to the second-position slot behind Spiritoftheblues and she holds the most obvious tactical position in the field to challenge.|",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Jack Callan",
+          "trainer": "George Boughey",
+          "trainer_rtf": "",
+          "trainer_14": "5/26",
+          "last_run": "18",
+          "age": "3",
+          "sex": "filly",
+          "form": "33-635",
+          "lbs": "130",
+          "headgear": "p",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 71.0,
+          "_model_price": "8/1",
+          "_mkt_price": "15/2",
+          "_win_pct": 10.9,
+          "_edge": 0.2,
+          "_action": "WATCH",
+          "_style_fit": 1.0
+        },
+        {
+          "name": "Tamzan",
+          "or": 71,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Marcus Tregoning's three-year-old is a genuine hold-up horse — winner over 8f on good ground last time (26 days ago) — but the field's surplus of rear-of-field types means she cannot secure her natural berth; Rob Hornby will need to find an early gap, and the STYLE_FIT flag (0.93) acknowledges that racing forward of her comfort zone tempers her prospects.|",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Rob Hornby",
+          "trainer": "Marcus Tregoning",
+          "trainer_rtf": "",
+          "trainer_14": "1/7",
+          "last_run": "26",
+          "age": "3",
+          "sex": "filly",
+          "form": "-43413",
+          "lbs": "130",
+          "headgear": "",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 71.0,
+          "_model_price": "5/1",
+          "_mkt_price": "5/1",
+          "_win_pct": 15.5,
+          "_edge": 0.2,
+          "_action": "WATCH",
+          "_style_fit": 0.929
+        }
+      ],
+      "paceDynamic": "Spiritoftheblues is the sole confirmed front-runner in this five-runner field and, crucially, faces no genuine pace rival to pressure her — she can dictate an honest but uncontested gallop from the outset over this flat mile on good-to-firm ground. With Cancelled, Venetian Sky, and Tamzan all holding natural hold-up profiles, the race is likely to be run at a measured tempo with Spiritoftheblues controlling fractions and Kaori potentially sitting just off her shoulder in second. That scenario creates a compressed, well-strung-out finish where the front two have the advantage of cover from the wind and an unbroken rhythm, giving the prominent and pace-pressing profile the clearest edge. Tamzan is a true hold-up type whose position on the pace map has been redistributed forward into midfield to reflect the crowded rear of the field, meaning genuine late closers may find themselves shuffled wider or lacking the gap they need — the race shape firmly favours horses who can press or track the steady pace, rather than those relying on a late surge from off it.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Spiritoftheblues Controls Cleanly",
+          "prob": 71,
+          "trigger": "If Spiritoftheblues bowls along at a sustainable gallop and no runner applies serious pressure before the final furlong.",
+          "body": "Spiritoftheblues sets her own fractions in front, Kaori tracks closely in second, and the two of them pull clear as hold-up runners find the pace too even to produce a decisive late burst; the prominent profile benefits from an uncontested lead on this flat, fair track.",
+          "winners": [
+            "Spiritoftheblues",
+            "Kaori"
+          ],
+          "others": [
+            "Cancelled",
+            "Tamzan"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Prominent Tracker Pounces",
+          "prob": 14,
+          "trigger": "If Kaori or a hold-up runner times a smooth challenge to peg back Spiritoftheblues inside the final furlong without the leader quickening clear.",
+          "body": "Spiritoftheblues sets a slightly stronger gallop than ideal for her stamina at the mile trip, allowing Kaori — well-placed throughout — to collar her near the line; a horse who can travel comfortably just off the pace and produce one strong burst benefits most here.",
+          "winners": [
+            "Kaori",
+            "Cancelled"
+          ],
+          "others": [
+            "Venetian Sky",
+            "Spiritoftheblues"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Late Closers Pounce",
+          "prob": 10,
+          "trigger": "If the gallop is surprisingly strong early and the front runners tie up in the final 150 yards, leaving hold-up types to finish powerfully through.",
+          "body": "Cancelled or Venetian Sky, settled in rear, find daylight late and cut down tiring leaders; however, this scenario is discounted because the likely steady pace set by a lone front-runner rarely generates the strong early fractions needed to unwind a true hold-up finish.",
+          "winners": [
+            "Cancelled",
+            "Venetian Sky"
+          ],
+          "others": [
+            "Tamzan",
+            "Kaori"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Tamzan Finds Gaps Late",
+          "prob": 5,
+          "trigger": "If Tamzan is shuffled forward by the redistributed field dynamics and manages to produce a clean run from a midfield position.",
+          "body": "Tamzan's natural hold-up style is compromised by the crowded rear of the field and its STYLE_FIT flag, making this scenario the least likely; only a combination of a faster-than-expected pace and a perfectly timed challenge would bring this into play.",
+          "winners": [
+            "Tamzan",
+            "Cancelled"
+          ],
+          "others": [
+            "Venetian Sky",
+            "Kaori"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Spiritoftheblues — watch whether Mark Winn elects to roll forward unchallenged or is placed more conservatively; if she bowls clear from the gate the race is effectively set and the prominent profile dominates.|"
+        },
+        {
+          "severity": "warn",
+          "text": "Kaori — her hood (headgear) and reversion to 8f after a disappointing 10f run is worth noting; if she travels fluently in second early she becomes the most dangerous challenger to the leader at the furlong pole.|"
+        },
+        {
+          "severity": "warn",
+          "text": "Tamzan — a genuine hold-up horse forced into a midfield slot by field dynamics; watch where Rob Hornby positions her in the first two furlongs — if she is buried towards the rear she may not find clear running on a track offering limited room in a five-runner field.|"
+        },
+        {
+          "severity": "info",
+          "text": "Venetian Sky — the unproven mile trip combined with a 29-day absence for the Haggas yard (10/49 in the T14 window) means watch her paddock demeanour; if she travels keenly she may outrun her odds, but if sluggish she is easily overlooked.|"
+        },
+        {
+          "severity": "info",
+          "text": "Going confirmed Good To Firm for this race — faster than the official Good description and worth monitoring for any runner that has a ground-softness preference, particularly Venetian Sky whose last two placed runs came on softer surfaces.|"
+        }
+      ],
+      "skipped": false
+    },
+    {
+      "id": 5,
+      "time": "4:44",
+      "name": "ADS Handicap Stakes",
+      "grade": "HCAP",
+      "dist": "6f",
+      "dist_f": 6.0,
+      "going": "Good",
+      "runners": 6,
+      "free": false,
+      "type": "flat",
+      "pace": "SLOWLY_RUN",
+      "paceConf": 85,
+      "leads": [
+        "Ray Mon Dough",
+        "Percy's Star"
+      ],
+      "prominent": [
+        "Evening Blues",
+        "Sea Cookie"
+      ],
+      "midfield": [],
+      "holdup": [
+        "Art Lover",
+        "Nuevo Slovo"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Ray Mon Dough",
+          "or": 87,
+          "style_code": "L",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Won over this exact 6f trip on Good ground 15 days ago and is on a retrieval mission after a string of disappointing efforts; a natural front-runner who must win the pace duel with Percy's Star, and if he cannot dominate cleanly, his tendency to set it up for others becomes a real risk.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Hector Crouch",
+          "trainer": "Oliver Cole",
+          "trainer_rtf": "",
+          "trainer_14": "3/15",
+          "last_run": "15",
+          "age": "3",
+          "sex": "colt",
+          "form": "1-626",
+          "lbs": "137",
+          "headgear": "t",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 83.7,
+          "_model_price": "5/1",
+          "_mkt_price": "9/2",
+          "_win_pct": 16.4,
+          "_edge": -3.3,
+          "_action": "WATCH",
+          "_style_fit": 1.0
+        },
+        {
+          "name": "Art Lover",
+          "or": 87,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "William Haggas-trained hold-up horse with consistent placed form at 6f on Good ground — four of his last six runs on similar going have produced a placing — and Cieren Fallon's riding intelligence makes him the prime beneficiary if the contested pace softens the leaders late.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Cieren Fallon",
+          "trainer": "William Haggas",
+          "trainer_rtf": "",
+          "trainer_14": "10/49",
+          "last_run": "29",
+          "age": "3",
+          "sex": "gelding",
+          "form": "2187-2",
+          "lbs": "137",
+          "headgear": "t",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 83.7,
+          "_model_price": "5/2",
+          "_mkt_price": "9/4",
+          "_win_pct": 27.7,
+          "_edge": -3.3,
+          "_action": "WATCH",
+          "_style_fit": 1.0
+        },
+        {
+          "name": "Evening Blues",
+          "or": 87,
+          "style_code": "P",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Raced prominently in recent starts and has placed form at 6f on Good ground, though a concerning 18th-place finish last time out at this trip on Good ground flags questions about current form; the step back from 9f is a positive, and Ben Robinson keeps the ride.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Ben Robinson",
+          "trainer": "Stephen Hanlon",
+          "trainer_rtf": "",
+          "trainer_14": "0/2",
+          "last_run": "15",
+          "age": "3",
+          "sex": "gelding",
+          "form": "2-5720",
+          "lbs": "137",
+          "headgear": "h",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 83.7,
+          "_model_price": "3/1",
+          "_mkt_price": "11/4",
+          "_win_pct": 24.0,
+          "_edge": -3.3,
+          "_action": "WATCH",
+          "_style_fit": 1.0
+        },
+        {
+          "name": "Sea Cookie",
+          "or": 84,
+          "style_code": "P",
+          "finish_type": "S",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Arrives with two consecutive wins over 6f on Good ground and a strong record at this course and distance, making him the standout pace-match candidate; Tom Clover's 4/21 14-day strike rate is solid, and Neil Callan can place him prominently to exploit the front-runner duel.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Neil Callan",
+          "trainer": "Tom Clover",
+          "trainer_rtf": "",
+          "trainer_14": "4/21",
+          "last_run": "31",
+          "age": "3",
+          "sex": "gelding",
+          "form": "22-110",
+          "lbs": "134",
+          "headgear": "",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 83.7,
+          "_model_price": "9/2",
+          "_mkt_price": "4/1",
+          "_win_pct": 18.3,
+          "_edge": -0.3,
+          "_action": "WATCH",
+          "_style_fit": 1.0
+        },
+        {
+          "name": "Nuevo Slovo",
+          "or": 83,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Returns from a 69-day break which is a significant concern, and recent form figures of 00 suggest he has gone off the boil; his sole win came over 5f on Good ground, and stepping to 6f with a trainer who has had just one runner in 14 days keeps expectations measured.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Paddy Bradley",
+          "trainer": "Simon Pearce",
+          "trainer_rtf": "",
+          "trainer_14": "0/1",
+          "last_run": "69",
+          "age": "3",
+          "sex": "gelding",
+          "form": "167-00",
+          "lbs": "133",
+          "headgear": "",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 83.7,
+          "_model_price": "44/1",
+          "_mkt_price": "40/1",
+          "_win_pct": 2.2,
+          "_edge": 0.7,
+          "_action": "WATCH",
+          "_style_fit": 1.0
+        },
+        {
+          "name": "Percy's Star",
+          "or": 74,
+          "style_code": "L",
+          "finish_type": "E",
+          "dist_code": "B+",
+          "going_flag": "OK",
+          "note": "Drops sharply to OR 74 with Silvestre De Sousa booked, and his 1W2P record on similar going is respectable; he is a confirmed front-runner who will make the running, but conceding weight to the entire field and facing Ray Mon Dough for the early lead means he is more likely to shape the race than win it.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Silvestre De Sousa",
+          "trainer": "Chris Dwyer",
+          "trainer_rtf": "",
+          "trainer_14": "0/3",
+          "last_run": "36",
+          "age": "3",
+          "sex": "gelding",
+          "form": "52416",
+          "lbs": "124",
+          "headgear": "p",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 83.7,
+          "_model_price": "8/1",
+          "_mkt_price": "15/2",
+          "_win_pct": 11.4,
+          "_edge": 9.7,
+          "_action": "WATCH",
+          "_style_fit": 1.0
+        }
+      ],
+      "paceDynamic": "Ray Mon Dough and Percy's Star are both confirmed front-runners, guaranteeing a contested lead from the off over this 6f on Good to Firm ground at Leicester. Ray Mon Dough (Hector Crouch) has recent winning form at this trip on similar ground, while Percy's Star (Silvestre De Sousa) drops significantly in the weights at OR 74 and will be keen to press from the front. The duel between these two is likely to produce an honest, pressured gallop rather than a soft, muddling pace — meaning they will take each other on and potentially set it up for those racing off the pace. This race shape most favours prominent-to-midfield horses with a late kick — specifically Sea Cookie and Art Lover — who can sit close enough to the pace to pounce when the front-runners start to feel the strain in the final furlong.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Front Runners Burn Bright",
+          "prob": 18,
+          "trigger": "If Ray Mon Dough and Percy's Star fight for supremacy but one finds a decisive rhythm and is not overhauled, the pace battle resolves cleanly rather than combusting.",
+          "body": "The horse that wins the pace duel and controls the tempo from a length clear could steal enough of a cushion to hold on as the closers arrive late; Good to Firm ground rewards a horse travelling efficiently at the front.",
+          "winners": [
+            "Ray Mon Dough",
+            "Percy's Star"
+          ],
+          "others": [
+            "Evening Blues"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Prominent Pair Pounce",
+          "prob": 62,
+          "trigger": "If the front-runner duel produces an honest gallop that sets up a perfectly timed challenge from horses racing just off the pace in the prominent-to-midfield group.",
+          "body": "Sea Cookie and Evening Blues are ideally placed to track the speed and strike as the leaders tire entering the final furlong; Sea Cookie's course-and-distance winning form on similar ground and Good to Firm bias makes this the standout scenario.",
+          "winners": [
+            "Sea Cookie",
+            "Evening Blues"
+          ],
+          "others": [
+            "Art Lover"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Late Closers Swoop",
+          "prob": 14,
+          "trigger": "If the pace truly burns fast enough to produce a falsely strong gallop that collapses the front two, allowing hold-up horses to pick up the pieces late.",
+          "body": "Art Lover has the profile to deliver a strong late run having finished second three times at 6f on Good ground, and Nuevo Slovo — though returning from 69 days off — has winning form at 5f on Good ground suggesting raw pace reserves.",
+          "winners": [
+            "Art Lover",
+            "Nuevo Slovo"
+          ],
+          "others": [
+            "Sea Cookie"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Muddled Moderate Pace",
+          "prob": 6,
+          "trigger": "If Percy's Star and Ray Mon Dough unexpectedly check each other early and the race devolves into a messy, uneven gallop with no true tempo established.",
+          "body": "A scrambled race over 6f on quick ground typically favours whoever manages to find clear daylight at the right moment, and in that scenario the jockey quality of Cieren Fallon on Art Lover or De Sousa on Percy's Star could prove decisive.",
+          "winners": [
+            "Art Lover",
+            "Percy's Star"
+          ],
+          "others": [
+            "Ray Mon Dough"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Ray Mon Dough and Percy's Star will contest the lead immediately — watch whether either horse blinks in the opening furlong, as the one that submits to pressure and drops back will be beaten, while the one who leads could still be vulnerable to those tracking just off the pace."
+        },
+        {
+          "severity": "warn",
+          "text": "Sea Cookie returns from 31 days off but has rock-solid course-and-distance form with two wins at 6f on Good ground; if Neil Callan positions him second or third early to track the pace, he is the most dangerous horse in the race in a truly-run contest."
+        },
+        {
+          "severity": "warn",
+          "text": "Nuevo Slovo is returning from 69 days absent with a trainer who has had minimal runners recently — watch his price in the market; if he drifts significantly, it confirms connections are not confident, while any support would make him a dangerous each-way outsider given his raw pace at 5f."
+        },
+        {
+          "severity": "info",
+          "text": "Evening Blues has headgear noted and a very poor last run (18th) but showed placed form over 6f earlier in his campaign — watch whether he travels comfortably in the early stages, as any signs of laboured movement behind the pace will confirm he is out of form."
+        }
+      ],
+      "skipped": false
+    },
+    {
+      "id": 6,
+      "time": "5:19",
+      "name": "Leicestershire And Rutland Freemasons Charity LRFC Handicap Stakes",
+      "grade": "HCAP",
+      "dist": "1m2f",
+      "dist_f": 10.0,
+      "going": "Good",
+      "runners": 6,
+      "free": false,
+      "type": "flat",
+      "pace": "SLOWLY_RUN",
+      "paceConf": 85,
+      "leads": [
+        "Ricardo Phillips"
+      ],
+      "prominent": [],
+      "midfield": [
+        "Kameel",
+        "Hachiman",
+        "Clipsham Noble",
+        "Read All About It"
+      ],
+      "holdup": [
+        "Pisanello"
+      ],
+      "drawBias": null,
+      "runners_data": [
+        {
+          "name": "Pisanello",
+          "or": 61,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Three wins on the spin, all on Good ground, and trainer O'Meara in sharp form at 5/50 over 14 days; the veteran nine-year-old has genuine class over nine to ten furlongs but this 1m2f trip is on the outer limit of his comfort zone, and Conor Whiteley's claim is an asset at the weights — natural hold-up style suits a race where a steady pace sets up a late run.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Conor Whiteley(5)",
+          "trainer": "David O'Meara",
+          "trainer_rtf": "",
+          "trainer_14": "5/50",
+          "last_run": "8",
+          "age": "9",
+          "sex": "gelding",
+          "form": "756111",
+          "lbs": "141",
+          "headgear": "v",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 54.0,
+          "_model_price": "5/2",
+          "_mkt_price": "2/1",
+          "_win_pct": 27.8,
+          "_edge": -7.0,
+          "_action": "WATCH",
+          "_style_fit": 1.0
+        },
+        {
+          "name": "Ricardo Phillips",
+          "or": 55,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Henry Candy's five-year-old has winning form at 1m2f on Good ground and is redistributed to lead here despite being a natural hold-up performer — racing entirely out of role is a significant ask, with a Style Fit of 0.80 tempering confidence that he can both control the pace and sustain it through the straight; Nicola Currie's experience at the track is the key positive.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Nicola Currie",
+          "trainer": "Henry Candy",
+          "trainer_rtf": "",
+          "trainer_14": "2/9",
+          "last_run": "18",
+          "age": "5",
+          "sex": "gelding",
+          "form": "193-32",
+          "lbs": "135",
+          "headgear": "",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 54.0,
+          "_model_price": "3/1",
+          "_mkt_price": "5/2",
+          "_win_pct": 25.1,
+          "_edge": -1.0,
+          "_action": "WATCH",
+          "_style_fit": 0.8
+        },
+        {
+          "name": "Kameel",
+          "or": 54,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Consistent at the top of the handicap with four consecutive placed efforts at 10f-12f on Good ground, but headgear (blinkers) and a Style Fit of 0.92 remind you this horse is a true hold-up type pushed into a midfield slot it will not naturally occupy; Jessica Macey's stable is winless in their last three entries, adding further caution.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Oliver Stammers",
+          "trainer": "Jessica Macey",
+          "trainer_rtf": "",
+          "trainer_14": "0/3",
+          "last_run": "18",
+          "age": "4",
+          "sex": "gelding",
+          "form": "952444",
+          "lbs": "134",
+          "headgear": "b",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 54.0,
+          "_model_price": "7/1",
+          "_mkt_price": "6/1",
+          "_win_pct": 12.6,
+          "_edge": 0.0,
+          "_action": "WATCH",
+          "_style_fit": 0.915
+        },
+        {
+          "name": "Hachiman",
+          "or": 53,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Ruth Carr's four-year-old has placed three times on Good going but the recent step up in distance is a question mark — prior form was almost exclusively at eight furlongs before the last two runs at ten, and the horse has yet to win over this extended trip; a true hold-up performer whose effectiveness depends on a fast pace that this race is unlikely to produce.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "James Sullivan",
+          "trainer": "Ruth Carr",
+          "trainer_rtf": "",
+          "trainer_14": "5/29",
+          "last_run": "18",
+          "age": "4",
+          "sex": "gelding",
+          "form": "839035",
+          "lbs": "133",
+          "headgear": "",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 54.0,
+          "_model_price": "12/1",
+          "_mkt_price": "11/1",
+          "_win_pct": 7.4,
+          "_edge": 1.0,
+          "_action": "WATCH",
+          "_style_fit": 0.907
+        },
+        {
+          "name": "Clipsham Noble",
+          "or": 51,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "Two wins from five runs at 10f-12f on Good ground make this horse statistically the best course-going specialist in the race, and headgear (pads) suggests the trainer is keen to sharpen focus; despite being a natural hold-up horse tucked into a midfield mapping here, Clipsham Noble's tactical record of making late ground is the most transferable skill in this race shape, and Liam Wright's claim helps the weight.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Liam Wright(5)",
+          "trainer": "Charlie Clover",
+          "trainer_rtf": "",
+          "trainer_14": "1/5",
+          "last_run": "18",
+          "age": "4",
+          "sex": "gelding",
+          "form": "541461",
+          "lbs": "131",
+          "headgear": "p",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 54.0,
+          "_model_price": "7/2",
+          "_mkt_price": "3/1",
+          "_win_pct": 22.7,
+          "_edge": 3.0,
+          "_action": "WATCH",
+          "_style_fit": 0.922
+        },
+        {
+          "name": "Read All About It",
+          "or": 50,
+          "style_code": "H",
+          "finish_type": "E",
+          "dist_code": "B",
+          "going_flag": "OK",
+          "note": "William Muir and Chris Grassick's four-year-old returns after 78 days off the track, which is a significant flag; form shows only one placing in nine turf starts and the horse's best recent effort came on Tapeta at Southwell rather than Good turf — a genuine hold-up performer whose redistribution to midfield does not mask the underlying concern that it is the least unexposed and least in-form runner in the field.",
+          "draw": null,
+          "draw_adv": "NEUTRAL",
+          "jockey": "Lewis Edmunds",
+          "trainer": "William Muir & Chris Grassick",
+          "trainer_rtf": "",
+          "trainer_14": "3/19",
+          "last_run": "78",
+          "age": "4",
+          "sex": "filly",
+          "form": "0-0380",
+          "lbs": "130",
+          "headgear": "",
+          "rpr": "",
+          "ts": "",
+          "comment": "",
+          "spotlight": "",
+          "_projected": 54.0,
+          "_model_price": "22/1",
+          "_mkt_price": "20/1",
+          "_win_pct": 4.4,
+          "_edge": 4.0,
+          "_action": "WATCH",
+          "_style_fit": 0.913
+        }
+      ],
+      "paceDynamic": "Ricardo Phillips is the only horse redistributed to the front, acting as the de facto pace-setter in a race where every other runner is a natural hold-up type — this means the pace will be modest and controlled, set by a horse racing out of its preferred role. With Kameel, Hachiman, Clipsham Noble, and Read All About It all genuine hold-up performers compressed into midfield positions, the race is likely to crawl into the first bend before a single-file procession develops through the middle stages on the Good to Firm Leicester straight. The field holds significantly more hold-up and prominent types than the map can accommodate at the rear — Ricardo Phillips is most likely to hold the front, with Pisanello and Clipsham Noble best placed to secure early positions behind. This race shape strongly favours horses with a proven ability to travel smoothly in behind a slow pace and produce a sustained finish from the two-furlong pole, rewarding those with tactical versatility and recent winning form on similar going.",
+      "scenarios": [
+        {
+          "label": "A",
+          "title": "Steady Pace, Closers Fail",
+          "prob": 62,
+          "trigger": "If Ricardo Phillips controls a genuine crawl and the hold-up horses cannot generate the momentum to peg him back in the straight.",
+          "body": "Ricardo Phillips sets a comfortable, uncontested tempo and the field strings out in a line behind, with closers unable to produce the sharp acceleration needed to close on a horse that has conserved energy throughout; on Good to Firm ground at Leicester the straight does not provide the stamina test that would ordinarily neutralise a pace-setter.",
+          "winners": [
+            "Ricardo Phillips",
+            "Pisanello"
+          ],
+          "others": [
+            "Clipsham Noble",
+            "Kameel"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Late Finishers Pounce",
+          "prob": 18,
+          "trigger": "If the pace genuinely collapses in the final quarter-mile and true hold-up horses burst through from behind.",
+          "body": "Pisanello, in the form of his life with three consecutive wins and proven on similar going, arrives with a late run that the modest early gallop ironically sets up by leaving petrol in the tank of closers; Clipsham Noble, also a multiple course-distance winner on Good ground, could be the second beneficiary if gaps open.",
+          "winners": [
+            "Pisanello",
+            "Clipsham Noble"
+          ],
+          "others": [
+            "Hachiman",
+            "Read All About It"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Midfield Grinders Prevail",
+          "prob": 12,
+          "trigger": "If the pace is just brisk enough to string the field out but not so fast that the front-runner capitulates, rewarding horses travelling prominently through the race.",
+          "body": "Horses mapped into midfield who can travel smoothly within themselves and gradually wind up their effort from two furlongs out will be best suited here; Clipsham Noble's record of wins at 10f on Good ground and Kameel's consistent placed efforts around this trip make them the logical beneficiaries of a messy, attritional finish.",
+          "winners": [
+            "Clipsham Noble",
+            "Kameel"
+          ],
+          "others": [
+            "Pisanello",
+            "Hachiman"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Front Runner Weakens Late",
+          "prob": 8,
+          "trigger": "If Ricardo Phillips, racing entirely out of natural role, ties up in the final furlong and hands the advantage to a chasing horse.",
+          "body": "Pisanello's extraordinary recent hat-trick of wins, all on Good ground at nine to ten furlongs, would make him the likeliest horse to capitalise on a fading leader in the closing stages; the weight swing and high draw could still leave Clipsham Noble's two wins at 10f-12f on Good ground as a secondary threat.",
+          "winners": [
+            "Pisanello",
+            "Clipsham Noble"
+          ],
+          "others": [
+            "Hachiman",
+            "Read All About It"
+          ]
+        }
+      ],
+      "watchPoints": [
+        {
+          "severity": "danger",
+          "text": "Watch Ricardo Phillips in the early stages — if this natural hold-up horse drifts back from the front despite being the only pace source, the race could collapse into a dawdle that hands an advantage to any horse with tactical speed."
+        },
+        {
+          "severity": "danger",
+          "text": "Pisanello's trainer David O'Meara has a live 14-day record and the horse arrives off three consecutive wins on identical going — watch for Conor Whiteley to position aggressively to offset the hold-up style and turn this into a sustained gallop finish."
+        },
+        {
+          "severity": "warn",
+          "text": "Clipsham Noble's two wins on Good ground at exactly this trip mark it as the most course-relevant hold-up horse in the field — watch whether Liam Wright is able to slot in behind the leader early rather than being stranded wide or further back than ideal."
+        },
+        {
+          "severity": "warn",
+          "text": "Read All About It returns from 78 days off — any sign of freshness or lack of match fitness in the paddock should be treated as a significant negative given the horse has not won on turf and faces a competitive lower-handicap field."
+        },
+        {
+          "severity": "info",
+          "text": "With five of six runners being genuine hold-up types, watch whether any of Kameel, Hachiman, or Read All About It attempt to take up a more prominent early position — if two or three push forward to avoid being buried, the pace dynamic changes entirely from what the map projects."
+        }
+      ],
+      "skipped": false,
+      "review_flag": true,
+      "review_reason": "style/note conflict — check before trusting notes"
+    }
+  ]
+}
