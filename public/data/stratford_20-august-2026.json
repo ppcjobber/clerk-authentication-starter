@@ -33,12 +33,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Rates a confident favourite on OR 130 and two recent wins on Good going; Sean Bowen and Gordon Elliott is a potent pairing, though the [STYLE_FIT=0.92] flag notes it is marginally out of natural role here — not a material concern in a two-horse field where it will simply take the lead unchallenged across 2m6f on Good to Firm.",
+          "note": "Gordon Elliott's four-year-old carries top weight at 162lbs and steps up from 16f to 2m6f, a trip that could expose or expose stamina; his three-from-three record on good ground is strong but Sean Bowen is 4/35 over 14 days for Elliott, softening the trainer angle slightly, and the [STYLE_FIT] tag notes he races somewhat out of his sharpest role here at this longer trip.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Sean Bowen",
           "trainer": "Gordon Elliott",
-          "trainer_rtf": "",
+          "trainer_rtf": "41",
           "trainer_14": "4/35",
           "last_run": "23",
           "age": "4",
@@ -53,7 +53,7 @@
           "_projected": 125.0,
           "_model_price": "1/2",
           "_mkt_price": "2/5",
-          "_win_pct": 63.9,
+          "_win_pct": 64.8,
           "_edge": -5.0,
           "_action": "WATCH",
           "_style_fit": 0.922
@@ -65,12 +65,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Won over 2m4f on Good and has a clean two-from-two record on similar going, making the surface no concern; Harry Skelton's record on this type is strong and the Skelton yard is firing (2/5 in 14 days), but Fine Thing faces a 10lb OR deficit against a horse that has beaten stronger fields recently.",
+          "note": "Dan and Harry Skelton are in sharp form at 2/5 over 14 days, and Fine Thing's win at 20f on good ground is directly relevant to this 2m6f test on similar going; the five-year-old drops 10lb in OR to Porcupine Bank, giving the Harry Skelton mount a class concession to chase down, and his track record of 2/2 on similar going makes him a genuine player in this match.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Harry Skelton",
           "trainer": "Dan Skelton",
-          "trainer_rtf": "",
+          "trainer_rtf": "57",
           "trainer_14": "2/5",
           "last_run": "36",
           "age": "5",
@@ -84,80 +84,86 @@
           "spotlight": "",
           "_projected": 125.0,
           "_model_price": "2/1",
-          "_mkt_price": "2/1",
-          "_win_pct": 36.1,
+          "_mkt_price": "17/8",
+          "_win_pct": 35.2,
           "_edge": 5.0,
           "_action": "WATCH",
           "_style_fit": 1.0
         }
       ],
-      "paceDynamic": "With only two runners, Porcupine Bank is the sole front-running force in this 2m6f novice hurdle at Stratford, and on Good to Firm ground will set a controlled, uncontested tempo from the outset. Fine Thing, also a prominent racer, will shadow Porcupine Bank throughout, meaning this effectively becomes a two-horse match run at whatever rhythm Porcupine Bank dictates. With no pressure from behind and no hold-up horses to mount a late challenge, the race shape is essentially a controlled procession that will be decided on class and jumping ability in the home straight. This strongly favours the horse with the highest cruising speed and best jumping under a sustainable gallop — a prominent racer who can quicken off a steady pace is the clear beneficiary, with Porcupine Bank's superior OR of 130 and recent winning form giving it the edge in that profile.",
+      "paceDynamic": "With only two runners declared, Porcupine Bank is the de facto pace-setter and will lead or race prominently throughout this 2m6f trip on good-to-firm ground at Stratford, setting a measured, uncontested tempo with no rival to pressurise him. Fine Thing, also a prominent racer by nature, will slot in directly behind or alongside, meaning there is no genuine pace battle and the race will be run at a controlled, sustainable gallop from the outset. The absence of any hold-up horses or midfielders means this is a straightforward match race between two prominent types, with the winner likely decided by jumping fluency, fitness and class in the closing stages rather than any tactical manoeuvre. This race shape strongly favours the horse who can dictate or shadow the pace comfortably and who possesses superior stamina reserves for the final climb — a front-running or close-tracking profile wins here, and there is no scenario where a closer profits from a slow early pace.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Controlled Lead, Clear Away",
+          "title": "Front-Runner Controls Match",
           "prob": 72,
-          "trigger": "If Porcupine Bank dictates a sustainable gallop throughout and kicks clear from the final flight.",
-          "body": "Porcupine Bank controls tempo from the front, conserving energy over the 2m6f trip on fast ground, and simply outstays Fine Thing when the race quickens up late. The higher OR, Gordon Elliott's targeting (23 days fresh), and two recent wins on Good underpin this as the dominant shape.",
+          "trigger": "If Porcupine Bank dictates an unchallenged, steady gallop and jumps cleanly throughout.",
+          "body": "Porcupine Bank, with Gordon Elliott's horses in solid form and Sean Bowen aboard, controls every yard and the even pace suits his stamina at this longer trip; his three hurdle runs this season at 16f show consistent form and he steps up in trip here which could play to his strengths.",
           "winners": [
-            "Porcupine Bank",
-            "Fine Thing"
+            "Porcupine Bank"
           ],
-          "others": []
+          "others": [
+            "Fine Thing"
+          ]
         },
         {
           "label": "B",
-          "title": "Fine Thing Overpowers",
-          "prob": 16,
-          "trigger": "If Fine Thing's 2m4f–2m6f Good ground form proves superior and Porcupine Bank's jumping under pressure wavers.",
-          "body": "Fine Thing, trained by Dan Skelton and ridden by Harry Skelton, has won over 2m4f on Good and will press Porcupine Bank closely, exploiting any jumping error or stamina fade on the testing trip. With a 100% Good-going win rate and a sharp Skelton yard in form (2/5 in 14 days), this scenario is plausible if Porcupine Bank finds the trip a yard too far.",
+          "title": "Fine Thing Matches And Pounces",
+          "prob": 18,
+          "trigger": "If Fine Thing, handled by the sharp Dan and Harry Skelton combination, tracks efficiently and outstays Porcupine Bank up the straight.",
+          "body": "Fine Thing's two wins at 20f and 16f on good ground show he handles this surface and trip profile well; the Skelton yard's 2/5 recent strike rate signals live form, and Harry Skelton may time his challenge to arrive late when Porcupine Bank's energy fades.",
           "winners": [
-            "Fine Thing",
-            "Porcupine Bank"
+            "Fine Thing"
           ],
-          "others": []
+          "others": [
+            "Porcupine Bank"
+          ]
         },
         {
           "label": "C",
-          "title": "Jumping Chaos Decides",
-          "prob": 8,
-          "trigger": "If either horse makes a costly jumping error mid-race that forces a race reshaping.",
-          "body": "In a two-horse field, a significant jumping blunder by either runner could dramatically alter the complexion — the error-free rival simply inherits the lead and controls the race without further contest. This is a pure execution risk scenario rather than a tactical one, relevant given both runners are novice hurdlers still learning their trade.",
+          "title": "Jumping Error Decides Outcome",
+          "prob": 7,
+          "trigger": "If either horse makes a significant jumping error mid-race that disrupts rhythm or causes a fall, gifting the other a simple lead.",
+          "body": "A two-runner race over 2m6f with multiple hurdles means a single blunder could be decisive; whichever horse jumps cleanly throughout will inherit a straightforward winning opportunity with no other rival to capitalise.",
           "winners": [
             "Fine Thing",
             "Porcupine Bank"
           ],
-          "others": []
+          "others": [
+            "Fine Thing",
+            "Porcupine Bank"
+          ]
         },
         {
           "label": "D",
-          "title": "Blanket Finish, Dead Rubber",
-          "prob": 4,
-          "trigger": "If both horses track each other so closely that the race is only settled in the final strides.",
-          "body": "With two prominent runners tracking each other throughout, if neither can generate a meaningful kick, the race degenerates into a flat-out sprint from the last hurdle home. This scenario favours whichever horse has the sharper turn of foot on Good to Firm ground, but is unlikely given the class gap and Porcupine Bank's recent dominant winning form.",
+          "title": "Sustained Battle Throughout",
+          "prob": 3,
+          "trigger": "If both horses match strides from the outset and race head-to-head for the entire trip, turning the contest into a genuine stamina test.",
+          "body": "An end-to-end duel on good-to-firm ground over this distance will drain both horses, meaning the one with the stronger hurdles record and superior class rating — Porcupine Bank at OR 130 — holds a marginal edge in this scenario.",
           "winners": [
-            "Porcupine Bank",
-            "Fine Thing"
+            "Porcupine Bank"
           ],
-          "others": []
+          "others": [
+            "Fine Thing"
+          ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Watch Porcupine Bank's jumping at the early hurdles — as a 4-year-old novice setting its own pace on Good to Firm, any mistake in the first mile could let Fine Thing take a decisive lead with no other horse to cover the gap."
+          "text": "Watch Fine Thing's jumping — a clean round from Harry Skelton's mount is the single biggest variable in deciding whether he can match Porcupine Bank stride-for-stride over 2m6f."
         },
         {
           "severity": "warn",
-          "text": "Monitor the early sectionals: if Porcupine Bank sets an unusually slow tempo, Fine Thing under Harry Skelton may elect to push on and steal the race on the front end, flipping the expected outcome."
+          "text": "Monitor Porcupine Bank's gallop early — if Sean Bowen sets too fast a pace for two runners over this trip on good-to-firm ground, the horse may tie up in the final stages and hand Fine Thing a winning chance."
+        },
+        {
+          "severity": "warn",
+          "text": "The going report consistently lists this race as Good To Firm rather than the advertised Good — both runners are tagged going=OK but neither has extensive experience on genuinely fast ground, and conditions could sharpen the pace beyond sustainable levels."
         },
         {
           "severity": "info",
-          "text": "With only two runners, market moves at the off carry outsized significance — any late drift on Porcupine Bank (currently OR favourite) in a two-horse race warrants attention as an indicator of fitness or going concerns flagged by the Elliott yard."
-        },
-        {
-          "severity": "info",
-          "text": "Fine Thing's 36-day absence is slightly longer than Porcupine Bank's 23 days; in a fast-ground novice over 2m6f, race-fitness could be a marginal but real factor if the pace quickens sharply from the third-last hurdle home."
+          "text": "With only two runners, any in-running incident such as a loose horse, a stumble at a hurdle, or rider error becomes instantly decisive — there is no third horse to fill the gap or exert alternative pressure."
         }
       ],
       "skipped": false
@@ -196,12 +202,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "A hold-up performer for Dan Skelton and Harry Skelton — a combination who squeeze maximum value from patient tactics — and her best form figures on good ground (9/15 similar-going runs showing a 0W4P profile) suggest she needs things to go her way; 105 days off is a flag worth noting, though Skelton runners often return fit.|",
+          "note": "A 9-year-old hold-up performer for the powerful Skelton yard, whose recent form includes a solid fourth on good ground; best watch is whether Harry Skelton can position her close enough to the pace over 2m6f to make her late effort count, as her 105-day absence is a minor query.|",
           "draw": null,
           "draw_adv": null,
           "jockey": "Harry Skelton",
           "trainer": "Dan Skelton",
-          "trainer_rtf": "",
+          "trainer_rtf": "57",
           "trainer_14": "2/5",
           "last_run": "105",
           "age": "9",
@@ -211,12 +217,12 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Notnowlinda shaped with promise when third two starts back, and a rating of 112 puts her firmly in contention off 161 lb, though she remains winless in recent starts and the 105-day absence is the chief concern.",
           "spotlight": "",
           "_projected": 108.0,
-          "_model_price": "7/2",
-          "_mkt_price": "23/7",
-          "_win_pct": 22.3,
+          "_model_price": "4/1",
+          "_mkt_price": "19/5",
+          "_win_pct": 19.4,
           "_edge": -1.0,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -228,12 +234,12 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Jamie Snowden's five-year-old has a superb record of 2W5P across all five recent runs on good ground, all in a front-running role, and goes to post fresh on 33 days' rest with his trainer firing at 2/2 in the past 14 days; the uncontested lead here is a significant tactical gift.|",
+          "note": "The dominant pace influence — Jamie Snowden's five-year-old has a perfect five-from-five place record on similar going including two wins, a T14 strike rate of 2/2, and will face zero front-running competition here; the key question is whether he can sustain his lead over this extended 2m6f trip without being reeled in.|",
           "draw": null,
           "draw_adv": null,
           "jockey": "Jonathan Burke",
           "trainer": "Jamie Snowden",
-          "trainer_rtf": "",
+          "trainer_rtf": "72",
           "trainer_14": "2/2",
           "last_run": "33",
           "age": "5",
@@ -243,12 +249,12 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Consistent and in fine nick, Rebel Tribesman has won twice in his last five starts with a second last time out, and he has run over today's trip before; carrying 161 lb is the one query, but his rating of 118 marks him as the one to beat here.",
           "spotlight": "",
           "_projected": 108.0,
-          "_model_price": "5/2",
+          "_model_price": "3/1",
           "_mkt_price": "5/2",
-          "_win_pct": 27.3,
+          "_win_pct": 26.7,
           "_edge": -1.0,
           "_action": "WATCH",
           "_style_fit": 0.9
@@ -260,12 +266,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Faye Bramley's six-year-old has the tongue-tie fitted and arrives 27 days post-run with a win and a second among his five recent outings; by inclination a hold-up horse, he will be operating against his grain if he tries to race prominently, and that style-fit discount is a real consideration against a leader who will not be caught napping.|",
+          "note": "A natural hold-up horse by inclination — with a win and two places from five runs on good ground — that Harry Cobden will find shunted further forward than ideal given the field's composition; the tongue-tie is noted, and his STYLE_FIT flag means his chance should be tempered if the pace plays into the front-runner's hands.|",
           "draw": null,
           "draw_adv": null,
           "jockey": "Harry Cobden",
           "trainer": "Faye Bramley",
-          "trainer_rtf": "",
+          "trainer_rtf": "46",
           "trainer_14": "1/6",
           "last_run": "27",
           "age": "6",
@@ -275,12 +281,12 @@
           "headgear": "tp",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Kom Tu Voudras arrives here with two wins in her last five starts, including a victory three starts back, and 27 days between runs suggests she returns fresh and ready; the main risk is a stiff 161 lb to shoulder.",
           "spotlight": "",
           "_projected": 108.0,
-          "_model_price": "6/1",
-          "_mkt_price": "11/2",
-          "_win_pct": 14.7,
+          "_model_price": "5/1",
+          "_mkt_price": "23/5",
+          "_win_pct": 16.7,
           "_edge": -1.0,
           "_action": "WATCH",
           "_style_fit": 0.927
@@ -292,12 +298,12 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Equipped with a hood and placed three times from ten runs on good-equivalent going, this Nigel Hawke five-year-old is a consistent hold-up type who has never won on similar ground in five attempts; he will need Rebel Tribesman to come back to him, rather than him to bridge the gap under his own steam.|",
+          "note": "Wears a hood and has shown moderate consistency at best, going winless in five similar-going starts with a string of mid-pack finishes; Nigel Hawke's yard has no T14 runners to form view on, and Torrent will need a significant step up to trouble the principals, though the trip and going are not obvious concerns.|",
           "draw": null,
           "draw_adv": null,
           "jockey": "David Noonan",
           "trainer": "Nigel Hawke",
-          "trainer_rtf": "",
+          "trainer_rtf": "40",
           "trainer_14": "0/0",
           "last_run": "27",
           "age": "5",
@@ -307,12 +313,12 @@
           "headgear": "p",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Torrent shaped with plenty of promise when third last time out, and he has run over today's trip, making him a genuine threat from a workable 27-day break; the main concern is that he remains winless in his last five starts.",
           "spotlight": "",
           "_projected": 108.0,
           "_model_price": "6/1",
           "_mkt_price": "11/2",
-          "_win_pct": 14.7,
+          "_win_pct": 14.3,
           "_edge": -1.0,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -324,12 +330,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Alan King's lightly-raced five-year-old has a tidy form string of 01-232 and a strong record of W1P5 on good, but she is a genuine closer by nature and, shown in midfield on the map only because there are more hold-up types than rear positions, she is not truly a prominent racer; Tom Bellamy will need to be creative if she is to overcome a race shape that suits the leader.|",
+          "note": "Alan King's five-year-old boasts a fine form profile — 1W5P on good/good-to-firm — but is a genuine hold-up type whose natural rear position is compromised in this shape; Tom Bellamy is an able judge of pace and may manufacture a useful midfield pitch, but the STYLE_FIT discount applies if the race stays truly steadily run throughout.|",
           "draw": null,
           "draw_adv": null,
           "jockey": "Tom Bellamy",
           "trainer": "Alan King",
-          "trainer_rtf": "",
+          "trainer_rtf": "66",
           "trainer_14": "1/15",
           "last_run": "48",
           "age": "5",
@@ -339,55 +345,55 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Ranked bottom of five on our figures, Kittys Glance faces a stiff task under 156 lb, though her recent form reads encouragingly — second last time out, and a winner four starts back — and she arrives fresh after 48 days off.",
           "spotlight": "",
           "_projected": 108.0,
           "_model_price": "7/2",
-          "_mkt_price": "4/1",
-          "_win_pct": 21.1,
+          "_mkt_price": "7/2",
+          "_win_pct": 22.9,
           "_edge": 4.0,
           "_action": "WATCH",
           "_style_fit": 0.927
         }
       ],
-      "paceDynamic": "Rebel Tribesman is the sole confirmed front-runner in this five-horse field and, with no rival likely to seriously challenge for the lead, he will dictate terms at whatever tempo suits Jonathan Burke from the front. On good-to-firm ground over 2m6f at Stratford — a tight, turning track that rewards jumping fluency and a prominent position — that uncontested lead is a meaningful tactical asset, particularly given Rebel Tribesman's consistent form figures of 122-12. The remainder of the field — Notnowlinda, Torrent, Kom Tu Voudras and Kittys Glance — are all hold-up or off-the-pace types, meaning they will be chasing a horse who has already banked a rhythm lead and faces no early pressure. This race shape strongly favours the horse able to control fractions from the front, with hold-up runners dependent on a collapse in the leader that may never materialise; the field holds more true hold-up types than the map can show at the rear, and Kom Tu Voudras and Kittys Glance — both genuine closers by nature — have been redistributed into midfield on the map, with Rebel Tribesman almost certain to secure the front position unchallenged.",
+      "paceDynamic": "Rebel Tribesman is the sole confirmed front-runner in this five-horse field and will dictate from the front over 2m6f on good-to-firm ground at Stratford, setting a sustainable and uncontested gallop with no rival likely to challenge for the lead. The remaining four runners — Notnowlinda, Kom Tu Voudras, Torrent, and Kittys Glance — are all hold-up or prominent types, meaning Rebel Tribesman faces zero pressure and can control the tempo entirely to suit himself. This field holds more hold-up types than the race map can place at the rear; Kom Tu Voudras and Kittys Glance are genuine closers by nature but are shown in midfield because the rearward slots are overcrowded, and neither is likely to secure their natural position in this shape. With a lone pace-setter dictating an honest but manageable tempo on quick ground over a staying trip, this race shape strongly favours the prominent/front-running profile — a horse that can travel comfortably just off or on the pace and sustain the effort to the line, rather than a pure hold-up type relying on a late surge that may never materialise.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Rebel Tribesman Dictates Unchallenged",
-          "prob": 70,
-          "trigger": "If Rebel Tribesman jumps cleanly and bowls along at a sustainable gallop with no rival pressing him for the lead.",
-          "body": "He travels comfortably in front, controls the tempo, and arrives at the final flight with enough petrol to repel challengers; his form figures of 2-1-2-1 on similar going underline he is a genuine front-runner who finishes his races.",
+          "title": "Rebel Tribesman Controls Unchallenged",
+          "prob": 68,
+          "trigger": "If Rebel Tribesman jumps well, dictates his own pace, and the hold-up horses fail to close the gap in time.",
+          "body": "Rebel Tribesman sets a controlled, uncontested gallop, jumps fluently, and uses his superior front-running class — backed by a T14 of 2/2 and five-from-five place record on similar going — to sustain the effort and hold on. Horses travelling in midfield or rear find themselves with too much to do over a trip that does not play to a late-finishing style on this quick surface.",
           "winners": [
             "Rebel Tribesman",
-            "Torrent"
+            "Notnowlinda"
           ],
           "others": [
-            "Notnowlinda",
+            "Kittys Glance",
             "Kom Tu Voudras"
           ]
         },
         {
           "label": "B",
-          "title": "Closers Close Late Ground",
-          "prob": 14,
-          "trigger": "If Rebel Tribesman sets a strong enough pace that he ties up inside the final half-mile, opening the door for hold-up horses to get into it.",
-          "body": "A faster-than-comfortable tempo would mean Rebel Tribesman's advantage is eroded approaching the last, allowing hold-up horses with fresh legs to close; Notnowlinda with Harry Skelton has the class and the going form to be the most dangerous finisher in this scenario.",
+          "title": "Hold-Up Horse Picks Up Late",
+          "prob": 16,
+          "trigger": "If Rebel Tribesman sets a stronger tempo than expected, opening the race up for a well-rated closer to finish powerfully.",
+          "body": "A slightly more pressured pace stretches the field and creates enough of a frantic gallop that a chasing runner has genuine ground to make up in the final half-mile. Notnowlinda, the most experienced horse here at age 9, has the best hold-up profile and is ridden by Harry Skelton, who has the course craft to time a late run.",
           "winners": [
             "Notnowlinda",
-            "Kittys Glance"
+            "Torrent"
           ],
           "others": [
-            "Kom Tu Voudras",
-            "Torrent"
+            "Kittys Glance",
+            "Kom Tu Voudras"
           ]
         },
         {
           "label": "C",
-          "title": "Prominent Sit-And-Sprint",
+          "title": "Midfield Stalker Pounces",
           "prob": 10,
-          "trigger": "If the pace is modest and one of the shorter-priced hold-up types positions closer than usual, turning it into a sprint finish from the last.",
-          "body": "A slow, messy race would compress the field and make positional advantage less decisive, giving Kittys Glance or Kom Tu Voudras a chance to land a blow if they travel into a prominent spot; however, both are true hold-up types redistributed forward on the map and neither is naturally suited to this role.",
+          "trigger": "If Kom Tu Voudras or Kittys Glance, forced into a more prominent position than usual, travel well enough to pounce turning for home.",
+          "body": "Displaced from their natural rear position, one of these two could find themselves in an unintentionally ideal stalking role just behind Rebel Tribesman, close enough to strike if he fades. Kittys Glance carries the stronger recent form profile — 1W5P on similar going — and Tom Bellamy's judgment of pace could make this scenario possible.",
           "winners": [
             "Kittys Glance",
             "Kom Tu Voudras"
@@ -399,10 +405,10 @@
         },
         {
           "label": "D",
-          "title": "Attrition Grinds Field Down",
+          "title": "Torrent Improves Markedly",
           "prob": 6,
-          "trigger": "If the good-to-firm ground and the stamina demands of 2m6f produce errors and a strung-out field where only the most durable survive.",
-          "body": "A gruelling race of attrition would put the emphasis on jumping accuracy and staying power over raw speed; Torrent, equipped with a hood and placed twice at this trip on good ground, could emerge from the wreckage if the principals empty.",
+          "trigger": "If Torrent steps forward significantly from recent modest efforts and the pace suits a horse who needs a strong gallop to stay competitive.",
+          "body": "Torrent has shown flashes of ability over this sort of trip on good ground but has failed to convert, and his headgear (p) signals connections seeking improvement. If Rebel Tribesman's uncontested pace suits a horse that travels best when switched off early, Torrent could emerge as a surprise package in the closing stages.",
           "winners": [
             "Torrent",
             "Notnowlinda"
@@ -416,19 +422,19 @@
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Rebel Tribesman's jumping is the single biggest variable — if he fires round cleanly and Jonathan Burke gets a rhythm lead from the off, the rest of the field may simply never get close enough to threaten.|"
+          "text": "Rebel Tribesman's jumping is critical — any hesitation or mistake at a hurdle will cost him the momentum advantage that is his entire tactical weapon in this shape."
         },
         {
           "severity": "warn",
-          "text": "Notnowlinda returns after 105 days off and, while the Skelton operation is capable of presenting horses fit first time back, a race that unfolds at a modest pace in front of her could leave Harry Skelton with too much ground to make up at the finish.|"
+          "text": "Monitor whether Kom Tu Voudras or Kittys Glance get shuffled further back than mapped at the start; if both end up behind Notnowlinda, the hold-up end of this field becomes dangerously congested and late closers will be fighting for room."
         },
         {
           "severity": "warn",
-          "text": "Kom Tu Voudras and Kittys Glance are both natural hold-up horses mapped to midfield due to the density of rear-runners in this small field; if neither can secure an improved position, they risk being caught in no-man's land — not close enough to the pace to challenge, not far enough back to produce a meaningful late run.|"
+          "text": "Notnowlinda's 105-day layoff for the Skelton yard is worth tracking in-running — if she travels freely early she is likely fit and dangerous, but a laboured effort from the three-furlong pole would signal the break has taken a toll."
         },
         {
           "severity": "info",
-          "text": "The good-to-firm ground at Stratford rewards accurate jumping and a forward position around this tight track; any horse that makes a significant error at a hurdle will concede ground that is very difficult to recover on a surface this quick over 2m6f.|"
+          "text": "Torrent's hood application is worth noting — if he settles better than in recent outings and tracks Rebel Tribesman at a length or two, he could emerge as a value factor in Scenario D at a longer price than his form strictly warrants."
         }
       ],
       "skipped": false
@@ -468,12 +474,12 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up horse trained by Jonjo & A.J. O'Neill (1 win from 6 runs in 14 days), returning after 53 days off; placed twice on good ground at similar distances but must overcome his deep hold-up style in a small six-runner field where the pace is likely to be honest rather than explosive.",
+          "note": "Hold-up specialist for Jonjo & A.J. O'Neill with Harry Cobden aboard — a strong pairing — who returns from 53 days off with two recent placings on good ground at 24f; the step to 2m3½f is well within range and a genuine gallop is exactly what this type needs.|",
           "draw": null,
           "draw_adv": null,
           "jockey": "Harry Cobden",
           "trainer": "Jonjo & A.J. O'Neill",
-          "trainer_rtf": "",
+          "trainer_rtf": "44",
           "trainer_14": "1/6",
           "last_run": "53",
           "age": "9",
@@ -483,12 +489,12 @@
           "headgear": "p",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Bounced back with a win two starts back and has experience over today's trip; Crebilly is the top-rated runner in this field and his 161 lb burden is the main query after 53 days off.",
           "spotlight": "",
           "_projected": 126.3,
-          "_model_price": "5/1",
-          "_mkt_price": "5/1",
-          "_win_pct": 16.8,
+          "_model_price": "6/1",
+          "_mkt_price": "6/1",
+          "_win_pct": 13.8,
           "_edge": -2.7,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -500,7 +506,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Excellent recent form with four wins from five on good ground at 20f, and James Bowen takes the ride for Deborah Cole (no runners in 14 days); 152 days since last run is the key query, but his prominent racing style is perfectly suited to sitting just off the contested early pace and he is the most consistent good-ground performer in the field.",
+          "note": "152-day absence is the primary concern, but four wins from five starts on good ground at 20f for Deborah Cole's yard gives a striking profile once fit; natural prominent racer who travels well and has the form reading to be competitive first time back if tuned up at home.|",
           "draw": null,
           "draw_adv": null,
           "jockey": "James Bowen",
@@ -515,12 +521,12 @@
           "headgear": "t",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Magistrato won three of his last five starts, but our figures rank him bottom of this field and a 152-day absence adds doubt; the burden of 159 lb is sizeable, though he has run over today's trip and going before.",
           "spotlight": "",
           "_projected": 126.3,
-          "_model_price": "12/1",
-          "_mkt_price": "12/1",
-          "_win_pct": 8.0,
+          "_model_price": "7/1",
+          "_mkt_price": "13/2",
+          "_win_pct": 13.3,
           "_edge": -0.7,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -532,12 +538,12 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Natural front-runner with a superb good-ground record (14 from 15 sim-going runs) who will bid to dominate under Sam Twiston-Davies; trainer Nigel Twiston-Davies has been quiet (0 from 5 in 14 days), but Bagheera Ginge's three wins from five recent outings and the 'v' headgear flag suggest he is a headstrong type who needs to be first away — the contest with Sir Tivo for the lead is the defining tactical variable.",
+          "note": "Confirmed front-runner who arrives on the back of a win 52 days ago at 22f on good ground, with three wins from five good-ground runs and Sam Twiston-Davies retaining the ride; the challenge is Sir Tivo's presence, which means he cannot simply stride clear unchallenged.|",
           "draw": null,
           "draw_adv": null,
           "jockey": "Sam Twiston-Davies",
           "trainer": "Nigel & Willy Twiston-Davies",
-          "trainer_rtf": "",
+          "trainer_rtf": "23",
           "trainer_14": "0/5",
           "last_run": "52",
           "age": "8",
@@ -547,12 +553,12 @@
           "headgear": "v",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Bagheera Ginge arrives on the back of a win, has run over today's trip and going, and his record shows three wins in his last five starts — a horse in fine fettle. The one concern is a 52-day absence since that victory.",
           "spotlight": "",
           "_projected": 126.3,
-          "_model_price": "5/1",
-          "_mkt_price": "5/1",
-          "_win_pct": 17.3,
+          "_model_price": "6/1",
+          "_mkt_price": "29/5",
+          "_win_pct": 14.7,
           "_edge": -0.7,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -564,12 +570,12 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Consistent six-year-old with form figures of 112213 and four wins from 13 runs on good ground; Sean Quinlan rides for a trainer in form (3 from 8 in 14 days), and his prominent style means he will likely slot in just behind the duelling front-runners — the step up in trip from his recent 17f runs to 2m3½f is the one slight query to resolve.",
+          "note": "Six-year-old in excellent recent form with three wins and three placings in his last six, all at shorter trips (16-17f) on good ground; the step to 2m3½f from 16-17f tests whether his finishing speed translates to a sterner stamina test — trainer Jennie Candlish is 3/8 in the last 14 days.|",
           "draw": null,
           "draw_adv": null,
           "jockey": "Sean Quinlan",
           "trainer": "Jennie Candlish",
-          "trainer_rtf": "",
+          "trainer_rtf": "40",
           "trainer_14": "3/8",
           "last_run": "32",
           "age": "6",
@@ -579,12 +585,12 @@
           "headgear": "tp",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Captain Cool brings strong recent form to this contest — a winner two starts back and third last time out, with experience of today's trip and going and a solid rating of 131 to underpin his claims; the main concern is whether 32 days off the track has left him short of peak sharpness.",
           "spotlight": "",
           "_projected": 126.3,
           "_model_price": "5/2",
-          "_mkt_price": "14/5",
-          "_win_pct": 27.8,
+          "_mkt_price": "11/4",
+          "_win_pct": 27.0,
           "_edge": 0.3,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -596,12 +602,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Ten-year-old hold-up horse trained by Nicky Richards (2 from 4 in 14 days) returning after 39 days; a winner at 20f on good ground and placed on softer, but his hold-up style in a six-runner field with two confirmed front-runners means he needs a genuine pace collapse to get competitive in the straight.",
+          "note": "Decade-old hold-up type for Nicky Richards who drops down from 24f trips; his recent form reads 41-525 which is patchy, but the two wins came on good ground at 20f and his best asset is a thorough staying profile that could see him home if rivals crack.|",
           "draw": null,
           "draw_adv": null,
           "jockey": "Danny McMenamin",
           "trainer": "Nicky Richards",
-          "trainer_rtf": "",
+          "trainer_rtf": "49",
           "trainer_14": "2/4",
           "last_run": "39",
           "age": "10",
@@ -611,12 +617,12 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Parisencore shaped with promise when second two starts back and has experience of both today's trip and going, while his 134 rating underlines his standing as a leading danger here; the concern is that fifth last time out and 39 days off the track since.",
           "spotlight": "",
           "_projected": 126.3,
           "_model_price": "7/1",
-          "_mkt_price": "8/1",
-          "_win_pct": 11.9,
+          "_mkt_price": "15/2",
+          "_win_pct": 12.1,
           "_edge": 1.3,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -628,12 +634,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Veteran 12-year-old front-runner who has won twice recently including a 17f handicap chase on good ground; Gary Hanmer (0 from 4 in 14 days) is quietly handled, but Sir Tivo's twin-track plate headgear and natural front-running style ensure he will dispute the lead with Bagheera Ginge — his stamina over this longer 2m3½f trip relative to his recent wins at 15-18f is the key concern if the duel is prolonged.",
+          "note": "12-year-old confirmed front-runner with a recent win at 17f and consistent good-ground record; at this age over a longer trip his ability to sustain the lead all the way against the younger Bagheera Ginge is the core question, and a tiring finish is a real risk.|",
           "draw": null,
           "draw_adv": null,
           "jockey": "Sean Bowen",
           "trainer": "Gary Hanmer",
-          "trainer_rtf": "",
+          "trainer_rtf": "43",
           "trainer_14": "0/4",
           "last_run": "32",
           "age": "12",
@@ -643,28 +649,43 @@
           "headgear": "tp",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Ranked fifth of six on our figures, Sir Tivo faces a stiff ask under 156 lb, yet he arrives in decent heart — a winner last time out, 32 days ago, and he has experience of today's going.",
           "spotlight": "",
           "_projected": 126.3,
-          "_model_price": "9/2",
-          "_mkt_price": "5/1",
-          "_win_pct": 18.2,
+          "_model_price": "4/1",
+          "_mkt_price": "9/2",
+          "_win_pct": 19.1,
           "_edge": 2.3,
           "_action": "WATCH",
           "_style_fit": 1.0
         }
       ],
-      "paceDynamic": "Bagheera Ginge and Sir Tivo are both confirmed front-runners and will contest the early lead from the off, creating a genuine pace battle over the first mile of this 2m3½f chase on good-to-firm ground at Stratford. Bagheera Ginge has the stronger recent front-running form (three wins in his last five on good ground) and Sam Twiston-Davies will likely push to dominate, but Sir Tivo — a two-time recent winner who has also led — will not simply concede, meaning the pace is set to be honest to brisk rather than dawdling. With two genuine lead horses fighting for supremacy, the race shape strongly favours prominent-to-hold-up types who can sit just off a contested gallop, conserve energy over the fences, and pick up the pieces when the leaders' duel takes its toll in the closing stages. Prominent runners with strong stamina credentials and proven good-ground form — particularly Magistrato and Captain Cool — are best positioned, while the deeper hold-up horses carry more risk given the field of only six.",
+      "paceDynamic": "Bagheera Ginge and Sir Tivo are both confirmed front-runners, meaning the opening exchanges at Stratford over 2m3½f on good-to-firm ground will be genuinely contested rather than dawdled along — both jockeys (Sam Twiston-Davies and Sean Bowen) are proactive riders who will want position, so a true-run gallop is near-certain from the outset. That honest pace shapes a race that will test stamina reserves through the final fences, applying pressure on any horse that has to race keenly or burns energy early to secure its position. The prominent-to-midfield horses — Captain Cool, Magistrato, and the hold-up pair Crebilly and Parisencore — are all handed a track-pace that suits measured, efficient jumping and a well-timed challenge off the back of a genuine gallop. This race shape decisively favours the prominent and hold-up profiles: horses who can settle just off the pace, conserve energy across the first circuit, and produce a sustained finishing effort when the leaders begin to tie up approaching the home straight.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Contested Lead Burns Rivals",
+          "title": "Genuine Gallop, Closers Strike",
           "prob": 62,
-          "trigger": "If Bagheera Ginge and Sir Tivo fight for supremacy and set a genuine gallop that stretches the field from flagfall.",
-          "body": "The pace duel consumes both front-runners approaching the final circuit, leaving the race wide open for the prominent pair tracking just behind to pounce from two out; the honest gallop on good-to-firm ground rewards stamina and jumping precision over raw speed.",
+          "trigger": "If Bagheera Ginge and Sir Tivo set an honest, unrelenting pace that drains each other and softens the field for those held up or tracking.",
+          "body": "The two front-runners trade blows throughout, creating a strong gallop on good-to-firm ground that leaves them vulnerable late; horses who have settled off the pace in the first 1m4f arrive with untapped reserves at the business end.",
           "winners": [
-            "Magistrato",
-            "Captain Cool"
+            "Crebilly",
+            "Magistrato"
+          ],
+          "others": [
+            "Captain Cool",
+            "Parisencore"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Prominent Pair Capitalise",
+          "prob": 20,
+          "trigger": "If the pace is genuine but Sir Tivo or Bagheera Ginge settles fractionally better than expected, allowing a prominent tracker to land close enough to pounce.",
+          "body": "Captain Cool's consistent recent form and proven good-ground speed make him the ideal beneficiary of a hot pace carried by rivals, as does Magistrato's strong course-type record of four wins in similar conditions; both can race prominently without burning their engines.",
+          "winners": [
+            "Captain Cool",
+            "Magistrato"
           ],
           "others": [
             "Bagheera Ginge",
@@ -672,11 +693,11 @@
           ]
         },
         {
-          "label": "B",
-          "title": "Front Runner Dictates Alone",
-          "prob": 18,
-          "trigger": "If Sir Tivo capitulates early and Bagheera Ginge is allowed to front-run unchallenged at a controlled tempo.",
-          "body": "Bagheera Ginge, uncontested and able to dictate a more measured gallop, conserves enough energy to jump fluently throughout and find extra when challenged from two out; his excellent good-ground record (three wins from five) and Twiston-Davies' tactical nous make this a credible alternative if Sir Tivo is outpaced early.",
+          "label": "C",
+          "title": "Front-Runner Controls",
+          "prob": 12,
+          "trigger": "If one of the two pace-setters — most likely Bagheera Ginge given superior recent form and Sam Twiston-Davies's tactical reading — establishes a clear lead while Sir Tivo fades.",
+          "body": "Bagheera Ginge's three wins at this going range and the trainer's eye for placing horses makes an unchallenged-enough lead plausible if Sir Tivo underperforms early; a controlled gallop lets the leader dictate and the race never truly tests its stamina.",
           "winners": [
             "Bagheera Ginge",
             "Sir Tivo"
@@ -684,59 +705,44 @@
           "others": [
             "Captain Cool",
             "Magistrato"
-          ]
-        },
-        {
-          "label": "C",
-          "title": "Hold-Up Horses Pounce Late",
-          "prob": 13,
-          "trigger": "If the pace is fierce enough to bring Crebilly and Parisencore into play from the back despite their wider draws off the pace.",
-          "body": "A truly scorching gallop from the duelling front-runners burns off the prominent pair, allowing the hold-up horses to close with sustained runs from the final fence; Crebilly's single win and place on good ground and Parisencore's 2019 win on similar conditions offer slim but real claims if conditions are extreme.",
-          "winners": [
-            "Crebilly",
-            "Parisencore"
-          ],
-          "others": [
-            "Magistrato",
-            "Captain Cool"
           ]
         },
         {
           "label": "D",
-          "title": "Tactical Upset, Slow Pace",
-          "prob": 7,
-          "trigger": "If both front-runners are ridden conservatively and a slow early gallop produces a bunch finish at the last fence.",
-          "body": "A falsely-run race rewards the best jumper at the final fence rather than the best stayer, introducing chaos into what should be a stamina test; in this unlikely scenario, younger, sharper horses like Captain Cool (six-year-old, consistent form figures of 112213) and Sir Tivo benefit from their jumping speed.",
+          "title": "Closers Fail, Race Collapses",
+          "prob": 6,
+          "trigger": "If the pace proves too hot too early and the race deteriorates into a slog, rewarding the horse with the highest raw stamina rather than finishing pace.",
+          "body": "At 10 years of age Parisencore has the profile of a stayer who can grind through a truly severe test, and Crebilly's hold-up style means it arrives fresh; however this scenario requires an extreme burn-up that remains unlikely given the moderate field size.",
           "winners": [
-            "Captain Cool",
-            "Sir Tivo"
+            "Parisencore",
+            "Crebilly"
           ],
           "others": [
-            "Bagheera Ginge",
-            "Magistrato"
+            "Magistrato",
+            "Captain Cool"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Bagheera Ginge and Sir Tivo — watch the opening exchanges closely; if both jockeys commit fully to the lead from the start, the resulting pace duel could be severe enough to compromise both horses' finishing prospects and dramatically boost the chances of Magistrato and Captain Cool."
+          "text": "Bagheera Ginge and Sir Tivo will fight for the same piece of real estate from the off — watch the opening half-mile closely, as an overly aggressive early duel between the two could burn both out long before the final fence."
         },
         {
           "severity": "warn",
-          "text": "Magistrato — 152 days off the track is the single biggest risk factor in this race; if he shows any sign of rustiness at his fences in the early stages, his prominent style could become a liability rather than an asset."
+          "text": "Magistrato's 152-day absence is a significant fitness flag; if he moves with his usual fluency early and travels sweetly, he becomes a live danger, but any sign of ring-rustiness in his jumping should temper confidence sharply."
         },
         {
           "severity": "warn",
-          "text": "Captain Cool — watch whether Sean Quinlan elects to track the front-runners closely or gives himself a length of daylight; at 2m3½f (longer than his recent wins), his positioning in the first mile will be critical to whether his stamina holds to the line."
+          "text": "Captain Cool has not been asked to travel beyond 17f in his recent starts — monitor whether he jumps fluently and travels comfortably in the 2m3½f context, particularly from the halfway point, as this is his first serious stamina test."
         },
         {
           "severity": "info",
-          "text": "Crebilly — Harry Cobden is a high-class jockey dropped into a modest handicap; if the pace is scorching and the field strings out, watch whether Cobden switches Crebilly to the inner to save ground and mount a late challenge from off the final fence."
+          "text": "Good-to-firm ground is confirmed for this race — all six runners carry an OK going tag, but Bagheera Ginge's dominant sim-going strike rate (14/15) stands out and is worth noting when interpreting any market moves in the final hour."
         },
         {
           "severity": "info",
-          "text": "Parisencore — in a field of only six, watch whether Danny McMenamin opts to sit closer than Parisencore's usual hold-up style would suggest; any move to ride more prominently in a small field would be a live tactical signal worth monitoring from the off."
+          "text": "Crebilly has had 53 days off and Magistrato 152 days — should either show race-morning market support, their fitness levels have clearly satisfied connections, which would materially upgrade their chance in what is otherwise a wide-open staying contest."
         }
       ],
       "skipped": false
@@ -773,12 +779,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Six-year-old who has won four of his last five including back-to-back victories this term, all in Good or Good to Firm conditions, sitting prominently and wearing headgear (hg:p); Jennie Candlish's yard is firing at 3/8 in the last 14 days and Sean Quinlan partners a horse ideally mapped for the sole stalking slot in a three-runner field.",
+          "note": "Boasts four wins from his last five, all on Good ground, and carries the joint-highest OR at 128 — Sean Quinlan will ride him prominently just behind Krak, hunting the leader throughout; the form figures scream a horse in the form of his life, and the Jennie Candlish yard is firing with a 3/8 14-day strike rate.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Sean Quinlan",
           "trainer": "Jennie Candlish",
-          "trainer_rtf": "",
+          "trainer_rtf": "40",
           "trainer_14": "3/8",
           "last_run": "31",
           "age": "6",
@@ -788,12 +794,12 @@
           "headgear": "p",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Dunkerque won four of his last five starts, with a runner-up finish last time out the only blemish, and he returns after 31 days in excellent recent nick; he has run over today's trip and going before, and 164 lb is the one query against a confident profile.",
           "spotlight": "",
           "_projected": 122.7,
           "_model_price": "6/4",
-          "_mkt_price": "5/4",
-          "_win_pct": 42.1,
+          "_mkt_price": "9/8",
+          "_win_pct": 43.0,
           "_edge": -5.3,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -805,12 +811,12 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Hold-up type who must produce his effort from last of three against a pair that will already have built a potentially decisive buffer; his similar-going record of 2W from 15 is modest, Beau Morgan claims 5lb but faces a tactical puzzle, and his best run this season (1/23f/GOO) came when he had a bigger field to counter-surf through.",
+          "note": "Races from hold-up, which is a structural problem in a three-runner race where only one horse is setting the pace — Beau Morgan (claiming 5lb) will need something to go wrong ahead of him to manufacture a winning run, as his sim-going record of 2W from 15 runs is notably modest; best form comes over 23-24f which gives him a slight distance edge.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Beau Morgan(5)",
           "trainer": "Ben Pauling",
-          "trainer_rtf": "",
+          "trainer_rtf": "33",
           "trainer_14": "0/0",
           "last_run": "36",
           "age": "7",
@@ -820,12 +826,12 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Samuel Spade caught the eye with a win three starts back and returns here in solid nick after 36 days off, his experience over today's trip and a rating of 127 marking him as a leading threat; the worry is he was only fifth two starts back.",
           "spotlight": "",
           "_projected": 122.7,
-          "_model_price": "2/1",
-          "_mkt_price": "9/4",
-          "_win_pct": 31.2,
+          "_model_price": "5/2",
+          "_mkt_price": "5/2",
+          "_win_pct": 28.0,
           "_edge": -1.3,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -837,12 +843,12 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Front-runner who gets a completely uncontested lead courtesy of the small field; Harry Skelton will manage the fractions shrewdly for Dan Skelton's yard and his three recent runs in Good ground (3rd, 4th, 2nd) show he handles conditions, though he is 12lbs below Dunkerque on official ratings and has not yet won over fences.",
+          "note": "The race-shaper: Harry Skelton will send him straight to the front and control the tempo entirely, and the Skelton yard's 2/5 recent record underlines stable confidence; he carries the lowest weight at 152lbs, has placed on similar going in his last three runs, but his 0W from 3P on sim-going is the key flag — he sets the pace but has not yet won from the front.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Harry Skelton",
           "trainer": "Dan Skelton",
-          "trainer_rtf": "",
+          "trainer_rtf": "57",
           "trainer_14": "2/5",
           "last_run": "31",
           "age": "6",
@@ -852,39 +858,25 @@
           "headgear": "p",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Krak has shaped with plenty of promise in recent starts, finishing third last time out and second three starts back, and he arrives here fresh enough after 31 days off carrying 152 lb; the main risk is that he remains yet to win in his last five starts.",
           "spotlight": "",
           "_projected": 122.7,
           "_model_price": "5/2",
-          "_mkt_price": "7/2",
-          "_win_pct": 26.7,
+          "_mkt_price": "3/1",
+          "_win_pct": 29.0,
           "_edge": 6.7,
-          "_action": "CONSIDER",
+          "_action": "WATCH",
           "_style_fit": 1.0
         }
       ],
-      "paceDynamic": "Krak is the sole confirmed front-runner in this three-horse field and will dictate terms from the outset at Stratford's right-handed track over 2m6½f, setting a sustainable gallop on Good to Firm ground with no rival likely to challenge for the lead. Dunkerque (style=P) will track Krak in second from an early stage, meaning the race resolves into a straightforward duel between these two from some way out, with Samuel Spade (style=H) forced to make up ground from the rear. With only three runners, no meaningful pace pressure exists — Krak controls tempo, Dunkerque gets the perfect stalking position, and Samuel Spade must produce a sustained finishing effort rather than a late sprint, which is a harder ask over a truly-run 2m6½f on a summer surface. This race shape strongly favours the prominent tracker (Dunkerque) who gets a free rail-to-rail berth just off a lone leader at a comfortable tempo, able to pounce without expending energy hunting a pace group that doesn't exist.",
+      "paceDynamic": "Krak is the sole confirmed front-runner and will set off to lead from the outset over this 2m6½f trip on Good to Firm ground at Stratford, with no rival likely to dispute that position — Dunkerque is a prominent-racing type who will sit just off the pace, and Samuel Spade is a hold-up horse who will be content to track from the rear. With Harry Skelton in the saddle for the in-form Dan Skelton yard, Krak will be allowed to dictate a controlled, sustainable gallop rather than being forced into a lung-busting duel, which fundamentally shapes this as a mucker's-heaven front-running affair. The key question is whether Krak can maintain that lead into the home straight or whether Dunkerque, hunting him from close range throughout, can reel him in late. This race shape overwhelmingly favours the prominent-to-lead profile: a lone leader controlling tempo on Good to Firm ground over a staying trip gives the front-running and prominent types a material tactical edge, while the lone hold-up runner Samuel Spade faces the dual burden of conceding ground and having limited targets to aim at in a three-runner field.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Tracker Pounces On Leader",
+          "title": "Krak Dictates Unchallenged",
           "prob": 72,
-          "trigger": "If Krak sets a sustainable gallop and Dunkerque tracks throughout before asserting from two out.",
-          "body": "Dunkerque's position directly behind Krak at an uncontested pace is the most advantageous in a three-runner field, and his five wins from 15 similar-going starts, including back-to-back wins this term, confirm his ability to capitalise on exactly this setup. Krak, having set the fractions without a fight, may have enough left to hold on for a share of the prize, while Samuel Spade must pass both from the rear.",
-          "winners": [
-            "Dunkerque",
-            "Krak"
-          ],
-          "others": [
-            "Samuel Spade"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "Front Runner Holds On",
-          "prob": 16,
-          "trigger": "If Krak dictates a genuinely slow tempo and conserves enough energy to repel Dunkerque's challenge on the run-in.",
-          "body": "Krak's trainer Dan Skelton has two winners from five runners in the last 14 days and Harry Skelton's judgement of pace means Krak could steal a march by presenting minimal gaps for Dunkerque to exploit late. Dunkerque's similar-going record makes him the main danger, but a slow-run race over fences can produce an advantage for the horse that travels widest and longest in front.",
+          "trigger": "If Krak bowls along at a measured pace and Dunkerque cannot close the gap approaching the final fences.",
+          "body": "Krak enjoys total control of the tempo with Harry Skelton able to manage the race from the front, conserving enough for a finishing effort over the last two fences; on Good to Firm ground this trip rewards a horse that jumps cleanly and travels smoothly, which suits Krak's profile.",
           "winners": [
             "Krak",
             "Dunkerque"
@@ -894,11 +886,25 @@
           ]
         },
         {
+          "label": "B",
+          "title": "Dunkerque Reels Krak In",
+          "prob": 18,
+          "trigger": "If Dunkerque travels powerfully throughout and gradually wears down Krak between the last two fences.",
+          "body": "Dunkerque's excellent recent form — four wins from his last five starts on Good ground — marks him as the improver in the race, and Sean Quinlan will be watching Krak's every move from close range; if Krak's stride shortens late, Dunkerque's persistent jumping ability and class advantage off OR 128 sees him collar the leader.",
+          "winners": [
+            "Dunkerque",
+            "Krak"
+          ],
+          "others": [
+            "Samuel Spade"
+          ]
+        },
+        {
           "label": "C",
-          "title": "Hold-Up Horse Pounces Late",
-          "prob": 8,
-          "trigger": "If Krak and Dunkerque burn each other out and Samuel Spade delivers one sustained burst to sweep them both up.",
-          "body": "Samuel Spade has won from hold-up tactics before (1/23f/GOO), but his form in similar going reads 8/15 with only two wins from fifteen and he needs the front pair to over-exert in a race that, by its nature, is likely to be unhurried.",
+          "title": "Samuel Spade Late Swoop",
+          "prob": 7,
+          "trigger": "If the pace is genuinely strong early, burning out Krak, and Samuel Spade produces a powerful staying finish from the rear.",
+          "body": "Samuel Spade's hold-up style is structurally disadvantaged in a three-runner race with only one confirmed front-runner setting a likely steady tempo, but if conditions play faster than expected and the pace proves genuinely searching, Beau Morgan could produce him with a late run; his two wins on similar ground and his form at this trip give him an outside chance in that specific scenario.",
           "winners": [
             "Samuel Spade",
             "Dunkerque"
@@ -909,39 +915,35 @@
         },
         {
           "label": "D",
-          "title": "Race Collapses In Chaos",
-          "prob": 4,
-          "trigger": "If a jumping error or exit changes the complexion dramatically, reducing the contest to a two-horse or even one-horse race.",
-          "body": "With only three runners over fences, a single incident — a fall, unseated rider, or a badly lost position after a blunder — could radically alter the order and hand the spoils to whichever runner survives cleanest.",
+          "title": "Errors Shuffle Order",
+          "prob": 3,
+          "trigger": "If one or more horses make a significant jumping error that disrupts the natural running order mid-race.",
+          "body": "With fences to jump over 2m6½f there is always the possibility that a mistake from Krak or Dunkerque reshuffles the field entirely; in that case the horse least inconvenienced by the incident — whether it benefits Dunkerque by inheriting the lead or Samuel Spade by closing ground — profits, but this outcome depends entirely on an incident rather than tactics.",
           "winners": [
             "Dunkerque",
-            "Krak"
+            "Samuel Spade"
           ],
           "others": [
-            "Samuel Spade"
+            "Krak"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Dunkerque's headgear (hg:p) has coincided with all five recent wins — if it continues to sharpen his focus travelling behind Krak, he is the most dangerous horse at any stage from the third-last fence onward."
+          "text": "Krak's 0W-from-3P record on similar going is the headline concern — watch whether Harry Skelton gets a clean round of jumping, as any fence error for the sole front-runner could trigger a dramatic reshuffle."
         },
         {
           "severity": "warn",
-          "text": "Krak's jumping under Harry Skelton needs monitoring at the first few fences — a blunder at an early obstacle with only two rivals could see the field reorganise completely and undermine Skelton's pace-control plan."
+          "text": "Dunkerque's proximity to Krak throughout the race is critical — if Sean Quinlan is able to sit within a length or two turning for home, the strongly in-form Dunkerque becomes a serious danger to the leader at the final fences."
         },
         {
           "severity": "warn",
-          "text": "Samuel Spade's hold-up style leaves him reliant on the front two tiring; if this race is run at a crawl, he may find himself three lengths off with nowhere near enough time to close, making his 160lbs weight burden even more costly."
+          "text": "Samuel Spade's 5lb claimer Beau Morgan adds uncertainty in a small field — watch how aggressively he rides for position early, as a three-runner race with a steady pace may force him to adapt away from his natural hold-up style."
         },
         {
           "severity": "info",
-          "text": "Good to Firm conditions are confirmed on course — all three horses show OK going flags, but Dunkerque's sim-going record of 12/15 including five wins gives him the strongest surface profile in the field."
-        },
-        {
-          "severity": "info",
-          "text": "With only three runners the market will be tight and short-priced; watch for any significant drifts or steams in the final 30 minutes that may reflect stable confidence, particularly from the Skelton operation whose trainer strike rate (T14:2/5) is notable."
+          "text": "Going reported as Good to Firm at Stratford all card — faster than the declared Good, which plays into the hands of horses with proven form on quick ground; Dunkerque's sim-going record of 12/15 5W6P is significantly stronger than Samuel Spade's 8/15 2W5P in this context."
         }
       ],
       "skipped": false
@@ -981,12 +983,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Dan Skelton's eight-year-old is a natural hold-up horse who arrives on a 51-day break wearing a hood, with solid good-ground credentials (1W2P in similar going) and form over distances beyond two miles suggesting this 3m3½f trip is within range; Harry Skelton takes the ride in what looks an ideal race shape for his style.|",
+          "note": "Harry Skelton's booking for Dan Skelton is the standout jockey-trainer combination in the race; a genuine hold-up horse with two wins at Good ground over distance, returning from 51 days off in form that includes a recent win, ideally suited by the expected hot pace over 3m3½f.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Harry Skelton",
           "trainer": "Dan Skelton",
-          "trainer_rtf": "",
+          "trainer_rtf": "57",
           "trainer_14": "2/5",
           "last_run": "51",
           "age": "8",
@@ -996,12 +998,12 @@
           "headgear": "t",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Glenmalure Flyer arrives here as a dual winner in her last five starts, with a third last time out no great setback in a lively recent spell, and she handles today's going, making her the one to beat off 168 lb.",
           "spotlight": "",
           "_projected": 84.5,
           "_model_price": "3/1",
-          "_mkt_price": "7/4",
-          "_win_pct": 26.4,
+          "_mkt_price": "2/1",
+          "_win_pct": 24.7,
           "_edge": -15.5,
           "_action": "AVOID",
           "_style_fit": 1.0
@@ -1013,12 +1015,12 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Alexandra Dunn's consistent eight-year-old hold-up performer has been placed or won in five of six good-ground starts and won over 26f, making the trip and conditions credible; Richie McLernon steers and the trainer's 1/1 14-day strike rate is worth noting, though OR 92 means he concedes weight to the higher-rated Glenmalure Flyer.|",
+          "note": "A confirmed hold-up horse with a win over 26f on Good ground and solid course form at Stratford-like tracks; Richie McLernon takes over for Alexandra Dunn whose T14 record reads a rare but sharp 1/1, and 48 days off is a manageable gap for a horse whose profile suits this race shape well.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Richie McLernon",
           "trainer": "Alexandra Dunn",
-          "trainer_rtf": "",
+          "trainer_rtf": "47",
           "trainer_14": "1/1",
           "last_run": "48",
           "age": "8",
@@ -1028,12 +1030,12 @@
           "headgear": "p",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Winning Paddy showed he knows how to get his head in front with a win three starts back, and at 160 lb he carries a stiff weight burden that may just blunt his finishing effort after 48 days off.",
           "spotlight": "",
           "_projected": 84.5,
           "_model_price": "10/1",
-          "_mkt_price": "41/5",
-          "_win_pct": 8.9,
+          "_mkt_price": "8/1",
+          "_win_pct": 9.3,
           "_edge": -7.5,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1045,7 +1047,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Belinda Clarke's nine-year-old has won twice in five good-ground starts and is genuinely a hold-up type at heart, but with two other confirmed back-markers in this small field, it is unlikely to settle at the very rear — racing closer to midfield than natural, the [STYLE_FIT=0.93] flag tempers confidence that it can reproduce its best form from an unnatural position, even though the form figures (1-1 recent wins) are eye-catching.|",
+          "note": "Recent back-to-back wins over marathon Good-ground trips confirm genuine staying ability, but this horse's natural style is hold-up — the field's depth of rearward types means it is likely to end up racing closer to the pace than it would prefer, with the STYLE_FIT flag of 0.93 reflecting that compromise in race position.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Lee Edwards",
@@ -1060,12 +1062,12 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Yes And Yes arrives on the back of back-to-back wins and has run over today's trip, making him a serious threat, though 92 days off the track is the obvious query on fitness.",
           "spotlight": "",
           "_projected": 84.5,
-          "_model_price": "3/1",
-          "_mkt_price": "9/4",
-          "_win_pct": 26.2,
+          "_model_price": "4/1",
+          "_mkt_price": "25/8",
+          "_win_pct": 21.1,
           "_edge": -5.5,
           "_action": "WATCH",
           "_style_fit": 0.93
@@ -1077,7 +1079,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Christian Williams' eight-year-old is a straightforward front-runner whose recent form string (346P-5) is modest, but its role here is pace-maker in chief over this marathon trip; Jack Tudor takes a solid booking, yet OR 81 and no wins in similar going across nine attempts limits confidence it can sustain the gallop it sets all the way to the line.|",
+          "note": "The highest-rated of the confirmed front-runners at OR 81, Jack Tudor is a capable operator for Christian Williams, but a recent form string of 346P-5 offers limited encouragement and the horse will need to manage a three-way pace battle over a demanding 3m3½f without burning out.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Jack Tudor",
@@ -1096,8 +1098,8 @@
           "spotlight": "",
           "_projected": 84.5,
           "_model_price": "9/2",
-          "_mkt_price": "33/7",
-          "_win_pct": 18.3,
+          "_mkt_price": "39/8",
+          "_win_pct": 18.2,
           "_edge": 3.5,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1109,7 +1111,7 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Robbie Llewellyn's nine-year-old is another confirmed front-runner, returning just 32 days after its last run, but crucially has zero wins or places from nine good-ground starts — the going here is likely a genuine concern and its tendency to jump big-and-bold at pace may prove costly in a contested lead scenario over this extended trip.|",
+          "note": "An honest front-runner for Robbie Llewellyn, freshest in the field at 32 days since last run, but his Good-ground record shows zero wins or places in nine runs on that surface and his form string of P1P-45 is patchy — likely to help set a fierce pace rather than profit from it.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Charlie Price",
@@ -1124,12 +1126,12 @@
           "headgear": "t",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Pulled up twice in his last five starts makes Flashy Boy hard to fancy, and he ranks last on our figures here; a winner four starts back offers some encouragement, but two non-completions in recent form are a significant concern.",
           "spotlight": "",
           "_projected": 84.5,
-          "_model_price": "6/1",
-          "_mkt_price": "9/1",
-          "_win_pct": 13.4,
+          "_model_price": "5/1",
+          "_mkt_price": "7/1",
+          "_win_pct": 17.0,
           "_edge": 11.5,
           "_action": "CONSIDER",
           "_style_fit": 1.0
@@ -1141,7 +1143,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "A young five-year-old trained by Tracey Leeson, carrying top weight alongside Flashy Boy at 142lbs, who has been consistent without winning (0W2P in similar going) and brings genuine front-running intent; Oscar Palmer claims 7lbs which partially offsets the burden, but the inexperience of a five-year-old in a pace-war over 3m3½f is a significant stamina question.|",
+          "note": "A young five-year-old tackling a very long 3m3½f trip, ridden by a 7lb-claiming amateur in Oscar Palmer, and form figures of 4-6335 suggest consistency without winning potency; going is fine, but age, trip, and inexperienced pilot all point to a horse that contributes to the pace rather than dictating the outcome.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Oscar Palmer(7)",
@@ -1156,25 +1158,25 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Winless in his last five starts and ranked fifth of six on our figures, The Kings Soldier faces a stiff ask here, though back-to-back thirds two and three starts ago hint at some consistency, and 55 days between runs leaves him fresh if not perhaps race-fit.",
           "spotlight": "",
           "_projected": 84.5,
-          "_model_price": "14/1",
-          "_mkt_price": "20/1",
-          "_win_pct": 6.8,
+          "_model_price": "9/1",
+          "_mkt_price": "14/1",
+          "_win_pct": 9.7,
           "_edge": 13.5,
           "_action": "CONSIDER",
           "_style_fit": 1.0
         }
       ],
-      "paceDynamic": "Illogical Logic, Flashy Boy, and The Kings Soldier are all confirmed front-runners in a six-runner field, meaning an unrelenting gallop is virtually certain from the opening fence over 3m3½f on good-to-firm ground at Stratford. Three horses cannot all lead, so a fierce battle for supremacy will develop early, burning through each other's stamina reserves and setting up a truly severe test for those attempting to dominate from the front. The prolonged pace ensures that this race shape is built almost entirely in favour of hold-up horses with the class and stamina to finish powerfully from off a strong pace — Glenmalure Flyer and Winning Paddy are the natural beneficiaries. Yes And Yes is a genuine hold-up type whose true style cannot be accommodated at the rear given the volume of back-markers, so it has been mapped to midfield — that redistribution means the closers' scenario is carried by fewer genuinely natural hold-up horses than the map implies, and that weight falls most cleanly on Glenmalure Flyer and Winning Paddy.",
+      "paceDynamic": "Illogical Logic, Flashy Boy, and The Kings Soldier are all confirmed front-runners, meaning this 3m3½f chase over Good to Firm ground at Stratford will be run at a genuine, unrelenting gallop from the outset — there is no scenario where these three cede the early pace voluntarily. The prolonged battle for supremacy up front will burn through the field's stamina reserves across the marathon trip, creating a race that almost inevitably sets up for those able to sit off the pace and pick up the pieces. Yes And Yes is a genuine hold-up type who has been mapped to midfield because the field holds more hold-up runners than the rear of the map can accommodate — Glenmalure Flyer and Winning Paddy are the true back-markers most likely to secure genuine rearward positions, while Yes And Yes is the one most likely to end up slightly closer than natural. This race shape overwhelmingly favours the patient hold-up profile — horses that can switch off behind a hot pace, conserve energy, and motor through beaten rivals from the home turn — making Glenmalure Flyer and Winning Paddy the most structurally advantaged runners given how the race will be framed.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Pace War Suits Closers",
+          "title": "Pace Collapse, Closers Pounce",
           "prob": 57,
-          "trigger": "If Illogical Logic, Flashy Boy, and The Kings Soldier fight a genuine three-way battle for the lead, burning stamina from the outset.",
-          "body": "The relentless gallop over this extreme distance on quick ground drains the front-runners long before the home straight, leaving the race entirely open to horses who have been able to conserve energy from off the pace. Glenmalure Flyer and Winning Paddy, both proven hold-up types at this sort of trip in good going, are optimally placed to pick up the pieces.",
+          "trigger": "If the three front-runners burn each other out over the extended 3m3½f trip, leaving the hold-up horses to cruise through on the bridle.",
+          "body": "The ferocious early gallop set by Illogical Logic, Flashy Boy, and The Kings Soldier drains the field up front, and the marathon distance ensures attrition bites hard in the final mile; patient hold-up horses travelling well in rear are perfectly positioned to capitalise. Glenmalure Flyer and Winning Paddy, both proven over big distances on Good ground with strong hold-up profiles and capable jockeys, are structurally best placed to collect.",
           "winners": [
             "Glenmalure Flyer",
             "Winning Paddy"
@@ -1186,10 +1188,10 @@
         },
         {
           "label": "B",
-          "title": "One Front-Runner Dominates",
+          "title": "One Pacemaker Breaks Clear",
           "prob": 22,
-          "trigger": "If one of the three front-runners establishes a clear lead early while the other two burn each other out fighting for second.",
-          "body": "Rather than three-abreast carnage, one pace-setter — most likely Illogical Logic given the better class — slips clear while the others neutralise each other, producing a controlled but still honest gallop that rewards the leader's jumping fluency and fitness. The hold-up horses still close but may find the leader too far ahead to reel in, and a prominent type who settles just off the lead could be best placed.",
+          "trigger": "If one of the three front-runners finds a better rhythm than the others and is allowed to coast at a sustainable lead while rivals fight behind.",
+          "body": "Illogical Logic is the highest-rated of the front-runners and has shown enough form at distance on Good ground to be the one most likely to establish a workable lead if infighting among front-runners creates separation early; Jack Tudor's experience in managing front-running horses adds tactical credibility. In this shape, a well-conserved prominent horse who tracks the leader without burning petrol could also land a blow late.",
           "winners": [
             "Illogical Logic",
             "Yes And Yes"
@@ -1201,55 +1203,55 @@
         },
         {
           "label": "C",
-          "title": "Pace Implodes Mid-Race",
-          "prob": 13,
-          "trigger": "If the three front-runners' early rivalry causes one or more to capitulate at halfway, dramatically collapsing the pace for the final circuit.",
-          "body": "A sudden slowdown mid-race would allow resting front-runners to recover briefly, complicating the closers' timing and potentially allowing a revived pace-setter or a horse tracking prominently to kick at a key moment. Yes And Yes, if having secured a forward position under the redistribution scenario, could be the horse most capable of exploiting a reshaped race.",
+          "title": "Midfield Stalker Pounces",
+          "prob": 14,
+          "trigger": "If the pace is hot but not chaotic and a horse travelling prominently off the leaders attacks the last two fences with energy to spare.",
+          "body": "Yes And Yes, though mapped to midfield due to redistribution, is a genuine hold-up type whose two recent wins over marathon Good ground mark it as a serious stayer; if it secures a closer position than expected and the pacemakers fold, it could be the one emerging late. The STYLE_FIT concern tempers confidence here — racing out of its natural role reduces the probability this shape delivers.",
           "winners": [
             "Yes And Yes",
-            "Illogical Logic"
-          ],
-          "others": [
-            "Flashy Boy",
-            "Winning Paddy"
-          ]
-        },
-        {
-          "label": "D",
-          "title": "Attrition Clears the Field",
-          "prob": 8,
-          "trigger": "If the combination of extreme trip, fast ground, and relentless pace causes multiple fallers or pulled-up horses, turning it into a survival event.",
-          "body": "With three front-runners setting a fierce standard over 3m3½f on good-to-firm, attrition through jumping errors or fatigue becomes a real factor, and whoever is still jumping cleanly and travelling at the final fence takes the race almost by default. The Kings Soldier, young at five and consistent in recent form, could benefit from rivals' misfortune, as could the proven stayer Winning Paddy if the field thins dramatically.",
-          "winners": [
-            "The Kings Soldier",
             "Winning Paddy"
           ],
           "others": [
             "Glenmalure Flyer",
             "Flashy Boy"
           ]
+        },
+        {
+          "label": "D",
+          "title": "Front Runner Survives",
+          "prob": 7,
+          "trigger": "If the pace is miscalculated and one front-runner gets an uncontested lead at a manageable gallop, conserving enough to hold on.",
+          "body": "With three horses wanting the front, an outright uncontested lead is unlikely, but if early jostling settles quickly and one horse — most plausibly Illogical Logic given OR advantage among the front-runners — steals a march unchallenged, stamina reserves could prove sufficient over the trip. This is the least likely shape given the confirmed three-way pace battle, but the possibility cannot be entirely dismissed in a six-runner field.",
+          "winners": [
+            "Illogical Logic",
+            "Flashy Boy"
+          ],
+          "others": [
+            "The Kings Soldier",
+            "Yes And Yes"
+          ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Flashy Boy has zero wins or places from nine good-ground starts — if the ground officially rides faster than advertised on this card, Flashy Boy's ability to even complete the trip at the pace it sets is a serious query."
-        },
-        {
-          "severity": "danger",
-          "text": "Three front-runners (Illogical Logic, Flashy Boy, The Kings Soldier) cannot all hold the lead — watch the first three fences for a brutal early speed battle that could cause a jumping error or early exit from one of them, reshaping the race entirely."
+          "text": "Watch whether Illogical Logic, Flashy Boy, and The Kings Soldier race aggressively into the first few fences — if all three fight for the lead immediately, the pace could become dangerously fast and set the race up exclusively for Glenmalure Flyer and Winning Paddy."
         },
         {
           "severity": "warn",
-          "text": "Yes And Yes is a proven hold-up horse forced into midfield by the race shape — if it fails to settle in an unnatural position early on, it risks using energy that is meant for the finish, undermining its strong recent winning form."
+          "text": "Flashy Boy has zero wins or places in nine runs on Good or Good to Firm ground — if going reports continue to drift towards the quicker end, his ability to contribute meaningfully to the pace without folding on the final circuit is questionable."
         },
         {
           "severity": "warn",
-          "text": "Glenmalure Flyer has not run for 51 days — Harry Skelton and Dan Skelton are adept at placing horses fresh, but watch the market move for any sign the stable believes an absence this length is a concern over such a demanding trip."
+          "text": "Yes And Yes has been mapped to midfield due to redistribution but is a natural hold-up type — watch at the start whether Lee Edwards can slot in closer to the rear as intended or is forced forward by the field dynamic, which would compromise its race shape entirely."
         },
         {
           "severity": "info",
-          "text": "The Kings Soldier's jockey Oscar Palmer claims 7lbs but is only five years old as a horse — monitor its jumping accuracy as the race develops, as inexperience in a prolonged stamina test under a big pace may expose it late in the race."
+          "text": "The Kings Soldier's five-year-old jumping profile over the longest trip in the race with an amateur claimer deserves monitoring at the early fences — any jumping error or loss of rhythm could create interference for horses travelling behind in the hold-up group."
+        },
+        {
+          "severity": "info",
+          "text": "Glenmalure Flyer's last three runs at 16f suggest Dan Skelton has been dropping him in trip — stepping sharply back up to 27f today returns him to the distance where his best form sits, and Harry Skelton's record of managing hold-up horses in staying chases is worth tracking as the field fans out from the home turn."
         }
       ],
       "skipped": false
@@ -1296,12 +1298,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Hold-up mare in consistent form with four placings from five on good ground over this trip; Marc Goldstein rides for the in-form Sheena West yard, and the 52-day break is not a concern given her fresh-horse record, but she needs a genuinely strong pace to deliver her late effort against a field that may not provide it.",
+          "note": "Hold-up type with solid sim-going record of 10/15 on good, placing four times in that sample; Marc Goldstein partners for Sheena West and the horse carries a hood, suggesting settling is key — needs a rough-and-tumble finish to find daylight from the rear.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Marc Goldstein",
           "trainer": "Sheena West",
-          "trainer_rtf": "",
+          "trainer_rtf": "51",
           "trainer_14": "",
           "last_run": "52",
           "age": "6",
@@ -1311,12 +1313,12 @@
           "headgear": "h",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Reteti arrives here winless in his last five starts but has been consistently competitive, finishing second last time out and third two starts back, and his profile — experience over today's trip and going, a solid official mark of 100, and a rating of 106 that tops this field — makes him the one to beat.",
           "spotlight": "",
           "_projected": 89.2,
-          "_model_price": "7/1",
-          "_mkt_price": "9/2",
-          "_win_pct": 12.9,
+          "_model_price": "9/1",
+          "_mkt_price": "6/1",
+          "_win_pct": 10.5,
           "_edge": -10.8,
           "_action": "AVOID",
           "_style_fit": 1.0
@@ -1328,12 +1330,12 @@
           "finish_type": "F",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Brendan Powell partners this hold-up type whose recent form shows worrying fade patterns at the finish — flagged for late weakening — and a run finishing 17th on good ground over 12f suggests sharp-track pace at Stratford may not suit; consistent place-level form at this trip but the finishing kick concern is a real caveat.",
+          "note": "Brendan Powell picks up the ride on a horse that fades in the finish — a flagged tendency that is a material concern in a steadily-run race where any weakness late will be ruthlessly exposed; 0W3P sim-going record reflects consistent placed effort but no winning punch.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Brendan Powell",
           "trainer": "Clare Ellam",
-          "trainer_rtf": "",
+          "trainer_rtf": "35",
           "trainer_14": "",
           "last_run": "22",
           "age": "6",
@@ -1343,10 +1345,10 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Eyeeye arrives here 22 days fresh and has run over today's trip, but he is winless in his last five starts, with only a second three starts back to encourage connections; carrying 168 lb against a field where our rating of 100 ranks him fifth of twelve suggests a midfield finish looks the likeliest outcome.",
           "spotlight": "",
           "_projected": 89.2,
-          "_model_price": "50/1",
+          "_model_price": "48/1",
           "_mkt_price": "35/1",
           "_win_pct": 2.0,
           "_edge": -10.8,
@@ -1360,12 +1362,12 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Jonathan Burke takes the ride for James Owen on this horse who has consistently placed at this trip and distance band; headgear note (p) suggests he needs to be organised early, and while his good-ground figures are acceptable (8 from 15 similar runs), he lacks a win from his recent attempts and may be vulnerable to more progressive rivals.",
+          "note": "Jonathan Burke partners the five-year-old who carries a hood and shows a consistent pattern of running in fourth-to-third positions; 8/15 sim-going record is modest, but the placed form on good ground keeps him relevant if the race produces traffic trouble.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Jonathan Burke",
           "trainer": "James Owen",
-          "trainer_rtf": "",
+          "trainer_rtf": "49",
           "trainer_14": "",
           "last_run": "27",
           "age": "5",
@@ -1375,12 +1377,12 @@
           "headgear": "p",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Rated 102 and ranked second of the twelve runners, Versatile arrives on the back of a third three starts back and is no stranger to today's trip and conditions, making him a live threat; the concern is that he has been winless in his last five starts, capped by a disappointing ninth last time out.",
           "spotlight": "",
           "_projected": 89.2,
-          "_model_price": "20/1",
-          "_mkt_price": "14/1",
-          "_win_pct": 4.8,
+          "_model_price": "22/1",
+          "_mkt_price": "16/1",
+          "_win_pct": 4.4,
           "_edge": -8.8,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1392,12 +1394,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Sean Bowen, one of the strongest jump jockeys in the field, partners this nine-year-old for James Owen — a pairing that landed a win over this exact trip on good ground in the recent history; two wins from ten similar-going runs is a solid record, the headgear (t) suggests he is primed, and tracking a controlled pace suits his style perfectly.",
+          "note": "Sean Bowen, a major jockey booking, rides a hold-up horse who has won twice on good going and finished in the frame ten times in fifteen similar-ground starts — the standout sim-going record among the hold-up brigade and a serious each-way proposition if he can find a clear run.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Sean Bowen",
           "trainer": "James Owen",
-          "trainer_rtf": "",
+          "trainer_rtf": "49",
           "trainer_14": "",
           "last_run": "27",
           "age": "9",
@@ -1407,11 +1409,11 @@
           "headgear": "t",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Jet Patrol landed a win five starts back but has posted a fifth, fourth and sixth in more recent outings, suggesting his form is patchy at best; he has experience over today's trip and going, and 27 days between runs leaves him fairly fresh.",
           "spotlight": "",
           "_projected": 89.2,
           "_model_price": "9/1",
-          "_mkt_price": "13/2",
+          "_mkt_price": "34/5",
           "_win_pct": 10.0,
           "_edge": -5.8,
           "_action": "WATCH",
@@ -1424,12 +1426,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "James Bowen rides this eight-year-old for the Pogson yard; his true racing style is hold-up from the rear but with multiple hold-up types in this field he will be compressed into a midfield berth that is not his natural home, reducing his effectiveness — the STYLE_FIT score of 0.93 reflects this positional squeeze and should temper expectations accordingly.",
+          "note": "James Bowen partners a true hold-up performer with two wins at this trip on good ground, but the horse is mapped to midfield because the rear of the field is overcrowded; racing out of its natural position tempers its chance materially, and a style-fit score of 0.93 reflects that discount.",
           "draw": null,
           "draw_adv": null,
           "jockey": "James Bowen",
           "trainer": "Charles & Adam Pogson",
-          "trainer_rtf": "",
+          "trainer_rtf": "23",
           "trainer_14": "",
           "last_run": "46",
           "age": "8",
@@ -1439,11 +1441,11 @@
           "headgear": "t",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Diesel Line has experience of today's trip and conditions, and our rating of 101 puts him ahead of his official mark — the case for an improved effort is real, though he is yet to win in his last five starts and a seventh last time out is the chief concern.",
           "spotlight": "",
           "_projected": 89.2,
           "_model_price": "16/1",
-          "_mkt_price": "12/1",
+          "_mkt_price": "25/2",
           "_win_pct": 5.9,
           "_edge": -3.8,
           "_action": "WATCH",
@@ -1456,12 +1458,12 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "The lone confirmed front-runner — Kielan Woods can simply slide to the front and set whatever tempo he chooses for Shaun Lycett; a recent Stratford win over this trip on good ground (going 1 from 7 on similar ground) is directly relevant, and uncontested lead makes him dangerous, though the class of closers behind him will test him from the third-last.",
+          "note": "The only confirmed front-runner in the field; Kielan Woods can dictate terms unchallenged, and a recent win on good ground confirms going suitability — the race shape is built around him, and his ability to control fractions makes him dangerous if he has the class to hold on.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Kielan Woods",
           "trainer": "Shaun Lycett",
-          "trainer_rtf": "",
+          "trainer_rtf": "23",
           "trainer_14": "",
           "last_run": "27",
           "age": "7",
@@ -1471,12 +1473,12 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Landed a win two starts back but has also fallen and posted an unplaced effort in recent starts, giving a mixed picture; he has run over today's trip and returns after 27 days off carrying 160 lb, with our rating of 93 suggesting he sits just in mid-division.",
           "spotlight": "",
           "_projected": 89.2,
-          "_model_price": "12/1",
-          "_mkt_price": "44/5",
-          "_win_pct": 8.0,
+          "_model_price": "10/1",
+          "_mkt_price": "38/5",
+          "_win_pct": 9.4,
           "_edge": -2.8,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1488,12 +1490,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Sean Houlihan's mount has placed in seven from seven starts on good going and won over 17f at this course type, making the step back to 2m½f workable for this prominent-style five-year-old; a 78-day absence is the one flag, but his consistent form profile and natural front-foot style means he will be in the firing line throughout.",
+          "note": "Sean Houlihan rides a five-year-old who has been consistently placed across seven good-ground runs (1W2P) and is suited by a prominent, tracking style; 78 days off the track is a stamina of freshness question, but the sim-going record is perfect and the position behind the leader suits this scenario best.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Sean Houlihan",
           "trainer": "Sheila Lewis",
-          "trainer_rtf": "",
+          "trainer_rtf": "35",
           "trainer_14": "",
           "last_run": "78",
           "age": "5",
@@ -1503,12 +1505,12 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Lord Cauvelliere has shown enough consistency in recent starts to make him a genuine threat here, and our rating of 102 suggests he is better than his official mark of 91 indicates — the main risk is that he arrives 78 days fresh and is yet to score in his last five starts.",
           "spotlight": "",
           "_projected": 89.2,
-          "_model_price": "13/1",
-          "_mkt_price": "10/1",
-          "_win_pct": 7.2,
+          "_model_price": "12/1",
+          "_mkt_price": "19/2",
+          "_win_pct": 7.8,
           "_edge": -1.8,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1520,7 +1522,7 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Jack Tudor takes over on this Christian Williams-trained six-year-old whose best form — a second on good ground over 16f — suggests ability when conditions align; his genuine style is hold-up from the back but the crowded rear means he is mapping to midfield, a position that is not his natural comfort zone, and only a small STYLE_FIT discount separates him from useful outsider territory.",
+          "note": "Jack Tudor takes the mount on a horse whose natural home is at the back of the field — placed into midfield here simply because the hold-up zone is oversubscribed; the recent second on good ground is the key piece of form, but a style-fit score of 0.92 means it needs a significant piece of luck to reproduce that effort from its mapped position.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Jack Tudor",
@@ -1535,12 +1537,12 @@
           "headgear": "t",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Winless in his last four starts, including a pull-up, and ranked last on our figures, Clever Relation faces a stiff task off 153 lb after 77 days away, though he has run over today's trip before and that recent second offers a crumb of comfort.",
           "spotlight": "",
           "_projected": 89.2,
-          "_model_price": "13/1",
-          "_mkt_price": "11/1",
-          "_win_pct": 7.2,
+          "_model_price": "12/1",
+          "_mkt_price": "10/1",
+          "_win_pct": 8.2,
           "_edge": 4.2,
           "_action": "WATCH",
           "_style_fit": 0.917
@@ -1552,12 +1554,12 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Harry Skelton partners Dan Skelton's eight-year-old who has five of his last five runs on soft ground — a significant flag on today's Good to Firm surface; he is a natural hold-up horse squeezed into midfield by the field's configuration, and the combination of going concerns (only 2 from 15 on similar conditions) and the positional compromise makes this a tough ask despite the quality of the Skelton operation.",
+          "note": "Harry Skelton — a top-level jockey booking — partners a horse returning from 156 days off the track with all five recent starts on soft ground and zero wins or places on good-to-firm; the going looks a genuine concern, and although Skelton's ability is undoubted, the horse's true hold-up style is further compromised by being pushed into midfield in a congested field.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Harry Skelton",
           "trainer": "Dan Skelton",
-          "trainer_rtf": "",
+          "trainer_rtf": "57",
           "trainer_14": "",
           "last_run": "156",
           "age": "8",
@@ -1567,12 +1569,12 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Berry Edge is a long way down the rankings on our figures, and a 156-day absence is a significant query; he does at least return on the back of a win two starts back and has run over today's trip.",
           "spotlight": "",
           "_projected": 89.2,
           "_model_price": "7/2",
           "_mkt_price": "3/1",
-          "_win_pct": 21.7,
+          "_win_pct": 22.4,
           "_edge": 4.2,
           "_action": "WATCH",
           "_style_fit": 0.913
@@ -1584,7 +1586,7 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Shane Quinlan (3lb claimer) takes the ride on this Andrew Martin-trained eight-year-old who has been off the track for a staggering 793 days — by far the longest absence in the field; headgear (ht) suggests he has needed management, and while his last run form includes a win and a second on good ground, the layoff renders almost any assessment of current fitness speculative.",
+          "note": "Shane Quinlan (3lb claimer) aboard a horse returning from 793 days off — a massive absence that demands caution; the 2W4P sim-going record on good ground is intriguing and headgear pointers (hg: ht) suggest connections have tried to sharpen him, but the layoff makes any confidence extremely difficult.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Shane Quinlan(3)",
@@ -1599,12 +1601,12 @@
           "headgear": "ht",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Two consecutive pulls-up are a major concern, and 793 days off the track demands a significant leap of faith; but she has run over today's trip and her sole win in recent starts came four starts back, suggesting ability when right.",
           "spotlight": "",
           "_projected": 89.2,
-          "_model_price": "37/1",
+          "_model_price": "36/1",
           "_mkt_price": "33/1",
-          "_win_pct": 2.6,
+          "_win_pct": 2.7,
           "_edge": 6.2,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1616,12 +1618,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "James Davies rides this Gary Hanmer-trained six-year-old who has the strongest going-matched profile in the race — 15 from 15 similar runs, a recent win, and four seconds in five starts on good ground at this trip; a natural prominent racer who will slot in close to Mayday Games and is ideally set up to pounce when the pace softens from the third-last.",
+          "note": "James Davies partners the most consistent horse in the field — 1W8P on good going across fifteen similar-ground starts, including a recent second and a win; a prominent style that can press the front-runner makes her ideally positioned in this race shape, and she is the one horse whose natural role fits the unfolding scenario perfectly.",
           "draw": null,
           "draw_adv": null,
           "jockey": "James Davies",
           "trainer": "Gary Hanmer",
-          "trainer_rtf": "",
+          "trainer_rtf": "43",
           "trainer_14": "",
           "last_run": "25",
           "age": "6",
@@ -1631,12 +1633,12 @@
           "headgear": "tp",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Ranked well below the field on our figures, Northern Rose carries a hefty 151 lb and faces a stiff ask, though her recent form reads well with a win last time out and placed efforts filling much of the rest of her last five starts; she has run over today's trip and going before.",
           "spotlight": "",
           "_projected": 89.2,
-          "_model_price": "7/1",
-          "_mkt_price": "6/1",
-          "_win_pct": 12.8,
+          "_model_price": "8/1",
+          "_mkt_price": "7/1",
+          "_win_pct": 11.6,
           "_edge": 6.2,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1648,12 +1650,12 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Nick Slatter (3lb claimer) partners this David Killahena & Graeme McPherson five-year-old on a workable each-way mark of OR 66; his instinct is to race from the rear but the hold-up congestion in this field forces him to midfield, a role he has not naturally filled, and the style penalty (STYLE_FIT 0.91) is a meaningful discount on a card that already favours more forward-travelling types.",
+          "note": "Nick Slatter (3lb claimer) takes over on a five-year-old whose true running style is hold-up — pushed into midfield here because the rear is congested; a style-fit score of 0.91 signals a meaningful discount, and while the recent third on good ground shows some ability, the combination of claim, redistribution, and OR of 66 limits expectations.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Nick Slatter(3)",
           "trainer": "David Killahena & Graeme McPherson",
-          "trainer_rtf": "",
+          "trainer_rtf": "38",
           "trainer_14": "",
           "last_run": "32",
           "age": "5",
@@ -1663,100 +1665,100 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Winless in her last five starts and ranked ninth of twelve on our figures, Angel Of My Dreams faces a stiff ask here, though she has run over today's trip and returns from a 32-day break showing a shade more form than her official mark of 66 suggests, with a third and second in recent starts offering faint encouragement.",
           "spotlight": "",
           "_projected": 89.2,
           "_model_price": "20/1",
           "_mkt_price": "25/1",
-          "_win_pct": 4.8,
+          "_win_pct": 4.9,
           "_edge": 23.2,
           "_action": "CONSIDER",
           "_style_fit": 0.913
         }
       ],
-      "paceDynamic": "Mayday Games is the sole confirmed front-runner and, with no genuine rival to press him, Kielan Woods can dictate a controlled, honest gallop on Good to Firm ground over 2m½f at Stratford. Lord Cauvelliere and Northern Rose will push forward from the prominent berths, ensuring the pace is respectable without becoming a war, and the race should unfold in a single-file, rhythm-driven manner that rewards horses travelling well through the race rather than those coming from far off the pace. The field nominally contains a cluster of hold-up horses — Diesel Line, Clever Relation, Berry Edge, and Angel Of My Dreams are all true come-from-behind types redistributed to midfield on the map because there is simply no rear slot available in this configuration, meaning their natural style will be compressed and they are unlikely to find the clear passage a genuine hold-up run requires. The race shape strongly favours horses racing prominently or tracking the pace comfortably — in a steadily-run but uncontested single-leader race on a fair surface, the prominent-to-midfield profile that can quicken from two out holds the clearest tactical edge.",
+      "paceDynamic": "Mayday Games is the sole confirmed front-runner and, with no genuine rival likely to contest the lead from the jump, Kielan Woods can dictate a controlled, sustainable gallop on good-to-firm ground over 2m½f at Stratford. Lord Cauvelliere and Northern Rose are the likeliest horses to press from prominent positions, but neither is a committed front-runner, so the pace should be steady rather than pressurised. This field holds more hold-up types than the map can accommodate at the rear — Diesel Line, Clever Relation, Berry Edge, and Angel Of My Dreams are all natural hold-up horses pushed into midfield slots, meaning the true back of the field is less congested than it appears and several of these horses will struggle to find their ideal wide, late run. With a single pace-setter controlling fractions on fast summer ground and a cluster of prominent-to-midfield types just behind, this race shape strongly favours horses who can travel prominently in behind the leader, quicken when the tempo lifts two out, and handle a genuinely decent surface — the prominent-to-midfield profile with tactical cruising speed holds the clearest edge.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Mayday Games Controls Cleanly",
+          "title": "Mayday Games Controls, Followers Strike",
           "prob": 54,
-          "trigger": "If Mayday Games leads unchallenged at a fair but unhurried tempo and the field strings out behind him.",
-          "body": "Kielan Woods settles Mayday Games into a rhythm from the front, the moderate pace suits those travelling well just off him, and as the race quickens from the third-last the prominent runners tracking him are best placed to pounce; Northern Rose and Lord Cauvelliere, both natural prominent types on going they handle, are ideally suited to close on a tiring leader.",
+          "trigger": "If Mayday Games sets a measured gallop and the race is won by a horse tracking within two lengths of the lead from the second flight.",
+          "body": "Mayday Games dictates at a fair but uncontested clip on the good-to-firm ground, and when he quickens jumping two out the horse closest to him in the prominent group inherits the advantage before hold-up types can mount a challenge from off the pace; Northern Rose's consistent second-and-first form and perfect sim-going record make her ideally placed, while Lord Cauvelliere's prominent style suits the pattern.",
           "winners": [
             "Northern Rose",
             "Lord Cauvelliere"
           ],
           "others": [
-            "Jet Patrol",
-            "Versatile"
+            "Mayday Games",
+            "Jet Patrol"
           ]
         },
         {
           "label": "B",
-          "title": "Prominent Pair Overhaul Leader",
-          "prob": 24,
-          "trigger": "If Lord Cauvelliere or Northern Rose apply genuine pressure from the second-last and Mayday Games is found wanting late.",
-          "body": "The front-running pace proves just enough to stretch the hold-up horses but not enough to hold off the two prominent types who have been travelling within themselves; Northern Rose's strong recent form (four placings in five on good ground) and Lord Cauvelliere's consistent course-distance profile make them the likeliest beneficiaries.",
+          "title": "Pace Collapses, Hold-Up Horse Swoops",
+          "prob": 20,
+          "trigger": "If the steady pace results in a falsely-run race and one of the redistributed true hold-up types finds enough daylight to close powerfully from the rear.",
+          "body": "Mayday Games's uncontested lead could turn into a crawl that compresses the field, and if the tempo only picks up sharply from the third-last a genuine closer that manages to work wide and build momentum could hit the line fastest; Clever Relation's recent second on good ground and Jet Patrol's two wins from similar conditions give them credibility if they find a clear passage.",
           "winners": [
-            "Northern Rose",
-            "Lord Cauvelliere"
+            "Clever Relation",
+            "Jet Patrol"
           ],
           "others": [
-            "Jet Patrol",
-            "Reteti"
+            "Reteti",
+            "Diesel Line"
           ]
         },
         {
           "label": "C",
-          "title": "Midfield Horse Stays On",
-          "prob": 14,
-          "trigger": "If the pace is genuinely honest and the leaders tire enough for a horse tracking mid-division to mow them down from the second-last.",
-          "body": "Jet Patrol, a course winner with strong good-ground credentials and the most experienced horse in the field over this trip, would be the prime candidate to pick up the pieces; Reteti's solid recent place record on good ground gives her each-way claims in this shape though her hold-up tag means she needs a strong gallop to bring her late run into play.",
+          "title": "Northern Rose Dictates From Front",
+          "prob": 16,
+          "trigger": "If Northern Rose's rider pushes forward to contest the lead with Mayday Games, injecting more pace and stretching the field into a true-run race.",
+          "body": "Should James Davies elect to commit early and test Mayday Games, the resulting stronger gallop suits hold-up horses more than usual but also risks pulling Northern Rose's stamina into play; if she handles the injection of pace and gets first run jumping the last, her proven course form on good and her 1W8P sim-going record make her a genuine threat to hold on.",
           "winners": [
-            "Jet Patrol",
-            "Reteti"
+            "Northern Rose",
+            "Jet Patrol"
           ],
           "others": [
-            "Versatile",
-            "Eyeeye"
+            "Reteti",
+            "Versatile"
           ]
         },
         {
           "label": "D",
-          "title": "Closers Deliver Late Surge",
-          "prob": 8,
-          "trigger": "If the pace collapses dramatically in the straight and the true hold-up horses find a clean run from the rear.",
-          "body": "This is the least likely shape because Diesel Line, Clever Relation, and Berry Edge are all redistributed out of their natural rear position and face a crowded midfield rather than the open ground a genuine late run demands; even if pace collapse occurs, their compressed starting position negates much of the tactical advantage they would ordinarily hold.",
+          "title": "Chaos And Crowding, Each-Way Outsider Benefits",
+          "prob": 10,
+          "trigger": "If traffic trouble in the pack — inevitable with several hold-up types fighting for the same ground — produces interference that scrambles the finishing order.",
+          "body": "With four redistributed hold-up horses all seeking wide runs from positions they did not naturally select, collisions and checking movements two out are a real risk, and a horse who manages to sidestep the trouble while sitting handy will benefit disproportionately; Versatile's consistent placed form and Glance At Me's each-way credentials at big odds could capitalise on the chaos.",
           "winners": [
-            "Diesel Line",
-            "Clever Relation"
+            "Versatile",
+            "Glance At Me"
           ],
           "others": [
-            "Berry Edge",
-            "Angel Of My Dreams"
+            "Angel Of My Dreams",
+            "Berry Edge"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Northern Rose's good-ground form (15/15 in similar conditions, recent win) makes her the standout pace-shape beneficiary if Mayday Games sets an honest but manageable tempo — watch for James Davies to place her just off the leader's quarters from the outset."
+          "text": "Mayday Games must be monitored from the start — if he is allowed to slip the field unchallenged at the top of the back straight, the prominent horses behind him may have already conceded an unassailable advantage before they realise the pace has been set."
         },
         {
           "severity": "danger",
-          "text": "Mayday Games is an uncontested front-runner who won at Stratford over this trip recently — if Kielan Woods controls the early pace and the field fails to apply pressure, a front-running steal is a live threat that the hold-up-heavy field is structurally poorly placed to counter."
+          "text": "Northern Rose jumping into a contested lead with Mayday Games would fundamentally alter the race shape; watch James Davies's early tactics — any move to press rather than track will trigger Scenario C and shift the advantage toward the hold-up horses."
         },
         {
           "severity": "warn",
-          "text": "Berry Edge's entire recent form base is on soft ground and today's Good to Firm surface is a significant step up in terms of firmness — despite Harry Skelton's claims, monitor the ground situation closely as conditions look quick enough to blunt his finishing effort."
+          "text": "The cluster of four redistributed hold-up types (Diesel Line, Clever Relation, Berry Edge, Angel Of My Dreams) all seeking wide runs from midfield creates a high-risk traffic situation two out — a horse checking or being carried wide could take others with it."
         },
         {
           "severity": "warn",
-          "text": "Glance At Me has been off the track for 793 days; even with headgear applied and a sharp yard in theory, this degree of absence means fitness is genuinely unknown and the market should be treated with caution if she shortens on course."
+          "text": "Berry Edge's going is a live concern on good-to-firm after five consecutive soft-ground runs; Harry Skelton will know quickly whether the surface is cutting into the horse's action, and a laboured jumping display should be taken as a significant negative signal."
         },
         {
           "severity": "info",
-          "text": "The cluster of redistributed hold-up types — Diesel Line, Clever Relation, Berry Edge, Angel Of My Dreams — will all be racing in unnatural midfield positions; watch the early stages to see if any attempt to drop back to their true style, as crowding through the body of the race could cause interference or positional chaos from the fourth-last hurdle onward."
+          "text": "Glance At Me's 793-day absence makes him almost impossible to assess on form — watch his paddock demeanour and early race behaviour as the primary indicators of whether connections genuinely believe he is ready to fire fresh."
         }
       ],
       "skipped": false
