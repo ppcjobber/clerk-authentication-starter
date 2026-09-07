@@ -33,12 +33,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Boasts a formidable OR-132 and has won four of his last five starts, all on Good ground at distances between 20f and 22f — the 2m4f trip here is squarely in his wheelhouse; Sean Quinlan retains the ride and the Candlish yard is 1/13 in the 14-day window, a minor flag but not alarming given this horse's own recent dominance.",
+          "note": "A high-class novice chaser rated OR 132 with five wins from seven starts, including four successive victories on Good ground — his sim-going record of 6W from 15 runs on similar surfaces is outstanding; Quinlan partners a horse in form (won last two), fresh off 18 days' rest under a yard (Candlish T14: 1/13) that has been quiet but firing selectively, and Dunkerque's prominent style means he will eyeball Follow Your Luck throughout in this match-race scenario.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Sean Quinlan",
           "trainer": "Jennie Candlish",
-          "trainer_rtf": "",
+          "trainer_rtf": "45",
           "trainer_14": "1/13",
           "last_run": "18",
           "age": "6",
@@ -48,12 +48,12 @@
           "headgear": "p",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Dunkerque arrives in career-best form, winning four of his last five starts with a second the only blemish, and he returns fit just 18 days after his latest victory; he has run over today's trip and going before, and 164 lb is the one thing to watch.",
           "spotlight": "",
           "_projected": 127.0,
-          "_model_price": "6/4",
-          "_mkt_price": "7/6",
-          "_win_pct": 41.1,
+          "_model_price": "evens",
+          "_mkt_price": "9/8",
+          "_win_pct": 47.1,
           "_edge": -5.0,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -65,12 +65,12 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Brian Hughes's mount naturally leads and will enjoy a completely uncontested break in front — his sole win on similar going (Good) and two previous wins on Soft suggest he handles the surface, but his OR-122 and status as a 5-year-old novice chaser represent a significant class gap versus Dunkerque; the Neville yard is 0/7 in 14 days.",
+          "note": "A five-year-old front-runner whose entire tactical identity depends on leading and controlling tempo — that is fully available to him here given no other pace rival; Hughes takes the ride for the Patrick Neville yard (T14: 0/7, subdued form), and while Follow Your Luck's sim-going record on Good is just 0W1P from three runs, he has won twice on Soft, suggesting faster conditions represent a slight question mark against a well-credentialled opponent.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Brian Hughes",
           "trainer": "Patrick Neville",
-          "trainer_rtf": "",
+          "trainer_rtf": "49",
           "trainer_14": "0/7",
           "last_run": "23",
           "age": "5",
@@ -80,67 +80,76 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Follow Your Luck arrives in flying form, a winner three of his last four starts with a third last time out the only blot, and he handles today's distance and going — the chief question is whether 154 lb blunts his finishing kick.",
           "spotlight": "",
           "_projected": 127.0,
-          "_model_price": "4/6",
-          "_mkt_price": "4/5",
-          "_win_pct": 58.9,
+          "_model_price": "4/5",
+          "_mkt_price": "5/4",
+          "_win_pct": 52.9,
           "_edge": 5.0,
           "_action": "WATCH",
           "_style_fit": 1.0
         }
       ],
-      "paceDynamic": "Follow Your Luck (Brian Hughes) is the sole confirmed front-runner in a two-horse field and will lead from the outset at a pace entirely of his own choosing — with no rival capable of, or likely to, dispute that lead, Hughes can set whatever tempo suits his mount. Dunkerque (Sean Quinlan) is a prominent racer who will track Follow Your Luck closely throughout, meaning this amounts to a procession-style contest with the shape set from the first fence. The decisive question is whether Follow Your Luck's stamina and jumping hold up over 2m4f under a penalty-free weight advantage, or whether Dunkerque's superior class, recent winning form, and big-race record eventually overwhelms him in the straight. This race shape — a lone, uncontested leader controlling tempo — most favours a genuine front-runner who can dictate and conserve energy, giving Follow Your Luck a structural advantage, though Dunkerque's class edge and consistent winning form on Good ground means he remains the primary threat throughout.",
+      "paceDynamic": "Follow Your Luck is the sole confirmed front-runner in this two-horse contest and will lead from the outset under Brian Hughes, setting a sustainable gallop over 2m4f on Good ground at Perth with zero pressure from behind. Dunkerque, ridden prominently by Sean Quinlan, will track Follow Your Luck closely throughout — in a field of two, this effectively means the pair will race in tandem for the vast majority of the trip, with the real contest beginning at the final fences. This race shape is unusually simple: a controlled, single-file procession that will develop into a two-horse jumping battle from the home turn, with the winner decided by class, jumping accuracy and stamina reserves in the closing stages. The shape marginally favours Dunkerque's prominent-chasing profile given his superior OR, form, and proven ability on Good ground, but Follow Your Luck's front-running comfort means the lead scenario carries genuine weight.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Leader Dictates, Holds On",
+          "title": "Controlled Lead, Held On",
           "prob": 72,
-          "trigger": "If Follow Your Luck controls tempo throughout and jumps cleanly, conserving enough reserves to repel Dunkerque's challenge.",
-          "body": "Hughes sets a measured gallop that drains Dunkerque's finishing kick, and Follow Your Luck's course-compatible profile on Good ground (1W from 3 on similar) enables him to see out the trip. The uncontested lead is the structural engine here — no pressure early means maximum stamina reserves late.",
+          "trigger": "If Follow Your Luck jumps cleanly and dictates an uncontested, measured gallop throughout.",
+          "body": "Follow Your Luck settles into his natural front-running rhythm with no rival to force the pace higher, conserving energy for the finish; Hughes can control the tempo entirely and build a decisive jump advantage if Dunkerque makes an error.",
           "winners": [
-            "Follow Your Luck"
+            "Follow Your Luck",
+            "Dunkerque"
           ],
           "others": [
+            "Follow Your Luck",
             "Dunkerque"
           ]
         },
         {
           "label": "B",
-          "title": "Dunkerque Class Prevails",
-          "prob": 20,
-          "trigger": "If Dunkerque's superior OR-132 rating and dominant recent form (four wins from last five) proves too much for Follow Your Luck to repel.",
-          "body": "Quinlan tracks patiently, waits for Follow Your Luck to weaken approaching the last, then powers clear — Dunkerque's 12/15 strike rate on Good going underscores how comfortable this surface is for him. Despite being in a tracking role, Dunkerque's class ceiling is markedly higher and he may simply have too much for a 5-year-old novice.",
+          "title": "Dunkerque Wears Down Leader",
+          "prob": 18,
+          "trigger": "If Dunkerque travels powerfully in behind and reels in Follow Your Luck from the second-last fence.",
+          "body": "Quinlan keeps Dunkerque within striking distance throughout and the superior OR (132 vs 122) tells from two out as the higher-class horse asserts; Dunkerque's six wins from 15 runs on Good ground underline his suitability to these conditions.",
           "winners": [
-            "Dunkerque"
+            "Dunkerque",
+            "Follow Your Luck"
           ],
           "others": [
+            "Dunkerque",
             "Follow Your Luck"
           ]
         },
         {
           "label": "C",
-          "title": "Jumping Error Decides",
-          "prob": 5,
-          "trigger": "If one runner makes a significant jumping mistake at a critical fence that fundamentally alters the outcome.",
-          "body": "In a two-horse field over fences, a fall or costly error by either runner in the final mile would be decisive — Follow Your Luck, less experienced over fences, carries slightly higher jumping risk. The beneficiary would simply be whichever horse is still standing and travelling, making the winner impossible to predict pre-race.",
+          "title": "Jumping Error Changes Race",
+          "prob": 7,
+          "trigger": "If either runner makes a significant blunder at a fence that materially disrupts their momentum or position.",
+          "body": "A loose jumper or costly mistake by either horse in a two-runner race immediately hands the advantage to the other; this scenario is entirely dependent on a specific jumping incident rather than any tactical shift.",
           "winners": [
             "Follow Your Luck",
             "Dunkerque"
           ],
-          "others": []
+          "others": [
+            "Dunkerque",
+            "Follow Your Luck"
+          ]
         },
         {
           "label": "D",
-          "title": "Pace Collapse — Both Struggle",
+          "title": "Dramatic Last-Fence Finish",
           "prob": 3,
-          "trigger": "If the Good ground rides faster than expected and an overly aggressive early tempo leaves Follow Your Luck emptied, with Dunkerque also flat.",
-          "body": "With only two runners, there is no third party to capitalise, making this scenario low-consequence in terms of result change but potentially producing a slow or scrambled finish. In practice, Hughes is too experienced to burn his mount early, making this outcome very unlikely.",
+          "trigger": "If both horses are inseparable entering the last and the race is decided by the final jump and flat sprint.",
+          "body": "With only two runners tracking each other throughout, this outcome is possible but unlikely given the class and fitness edge Dunkerque holds; a clean jump at the last from either horse would likely be sufficient to seal the result before a sprint develops.",
           "winners": [
-            "Dunkerque"
+            "Dunkerque",
+            "Follow Your Luck"
           ],
           "others": [
+            "Dunkerque",
             "Follow Your Luck"
           ]
         }
@@ -148,23 +157,19 @@
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Watch Follow Your Luck's jumping — as the less experienced chaser in the field, a fence error at a critical point (particularly the downhill fences at Perth) could compromise his lead-holding mission entirely."
+          "text": "Follow Your Luck's jumping must be monitored closely — as a front-runner in a two-horse field, any fence error will be immediately punishing with no cover and no room to recover position."
         },
         {
           "severity": "warn",
-          "text": "Dunkerque's 18-day turnaround is fresh but well within his pattern of winning off similar gaps — no fitness concern flagged, but monitor if he appears flat in the paddock given trainer's poor 14-day record."
+          "text": "Dunkerque is 18 days fresh; Jennie Candlish's yard is 1/13 over 14 days suggesting the stable is not in peak flow, and backers should watch the market move for confidence signals."
         },
         {
           "severity": "warn",
-          "text": "With only two runners, any early incident — a stumble, a mistake, a rider error — instantly becomes race-defining in a way it would not be in a full field; stewards' room drama is magnified accordingly."
+          "text": "Follow Your Luck's Good-ground record (0W1P from three comparable starts) is noticeably weaker than his Soft-ground form — watch whether the Going sticks at Good or eases before the off."
         },
         {
           "severity": "info",
-          "text": "Follow Your Luck's Going line shows his two wins came on Soft/Soft, not Good — his single Good-ground run was a third, meaning today's conditions are marginally less proven territory for him at this trip."
-        },
-        {
-          "severity": "info",
-          "text": "Brian Hughes's tactical decision on early pace is the fulcrum of this race — if he pings the first few fences and builds a healthy lead, Follow Your Luck's prospects improve significantly; a sluggish start would allow Dunkerque to dominate even before the finish."
+          "text": "With only two runners, there is no pace scenario involving pressure or tactical complexity — the entire race hinges on jumping fluency and which horse has most left from two fences out; watch the jumping of both horses at fences 3 and 4 for early indicators."
         }
       ],
       "skipped": false
@@ -200,7 +205,7 @@
           "draw_adv": null,
           "jockey": "Sean Bowen",
           "trainer": "Gordon Elliott",
-          "trainer_rtf": "",
+          "trainer_rtf": "37",
           "trainer_14": "2/35",
           "last_run": "59",
           "age": "6",
@@ -215,7 +220,7 @@
           "_projected": 112.0,
           "_model_price": "evens",
           "_mkt_price": "9/10",
-          "_win_pct": 44.5,
+          "_win_pct": 46.1,
           "_edge": -11.0,
           "_action": "AVOID"
         },
@@ -231,7 +236,7 @@
           "draw_adv": null,
           "jockey": "James Bowen",
           "trainer": "Ciaran Murphy",
-          "trainer_rtf": "",
+          "trainer_rtf": "47",
           "trainer_14": "1/13",
           "last_run": "17",
           "age": "4",
@@ -244,9 +249,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 112.0,
-          "_model_price": "5/2",
-          "_mkt_price": "13/6",
-          "_win_pct": 27.0,
+          "_model_price": "3/1",
+          "_mkt_price": "13/5",
+          "_win_pct": 24.6,
           "_edge": -10.0,
           "_action": "WATCH"
         },
@@ -262,7 +267,7 @@
           "draw_adv": null,
           "jockey": "Conor Rabbitt(3)",
           "trainer": "Andrew Hamilton",
-          "trainer_rtf": "",
+          "trainer_rtf": "52",
           "trainer_14": "0/0",
           "last_run": "794",
           "age": "6",
@@ -275,8 +280,8 @@
           "comment": "",
           "spotlight": "",
           "_projected": 112.0,
-          "_model_price": "79/1",
-          "_mkt_price": "69/1",
+          "_model_price": "82/1",
+          "_mkt_price": "74/1",
           "_win_pct": 1.2,
           "_edge": -8.0,
           "_action": "WATCH"
@@ -293,7 +298,7 @@
           "draw_adv": null,
           "jockey": "Brian Hughes",
           "trainer": "Patrick Neville",
-          "trainer_rtf": "",
+          "trainer_rtf": "49",
           "trainer_14": "0/7",
           "last_run": "10",
           "age": "5",
@@ -308,9 +313,9 @@
           "_projected": 112.0,
           "_model_price": "4/1",
           "_mkt_price": "5/1",
-          "_win_pct": 19.8,
+          "_win_pct": 20.5,
           "_edge": 13.0,
-          "_action": "WATCH"
+          "_action": "CONSIDER"
         },
         {
           "name": "Luna Grace",
@@ -324,7 +329,7 @@
           "draw_adv": null,
           "jockey": "Derek Fox",
           "trainer": "Lucinda Russell & Michael Scudamore",
-          "trainer_rtf": "",
+          "trainer_rtf": "33",
           "trainer_14": "0/3",
           "last_run": "106",
           "age": "4",
@@ -337,9 +342,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 112.0,
-          "_model_price": "13/1",
+          "_model_price": "12/1",
           "_mkt_price": "16/1",
-          "_win_pct": 7.4,
+          "_win_pct": 7.6,
           "_edge": 16.0,
           "_action": "CONSIDER"
         }
@@ -387,12 +392,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Top-rated runner (OR 119) handled by Sean Bowen and trained by Ciaran Murphy; 2W3P on similar going and a recent second over 2m Good suggest he is in form — a natural hold-up horse who will need the contested early pace to materialise for his finishing kick to matter.",
+          "note": "Hold-up horse trained by Ciaran Murphy and ridden by Sean Bowen, who brings strong Good-ground form (won on Good, placed twice from five similar-going runs); 36 days since last run is not a concern, and dropping from 16f+ trips to 2m looks a potential advantage if the pace is genuine and he gets a clear run from the second-last.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Sean Bowen",
           "trainer": "Ciaran Murphy",
-          "trainer_rtf": "",
+          "trainer_rtf": "47",
           "trainer_14": "1/13",
           "last_run": "36",
           "age": "5",
@@ -402,12 +407,12 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Castleheath shapes as the one to beat on our ratings, and his recent second reads well, while he has run over today's trip and going before; winless in his last four starts, but 168 lb is stiff and connections will need a clear run to get the best from him.",
           "spotlight": "",
           "_projected": 106.4,
           "_model_price": "7/2",
           "_mkt_price": "5/2",
-          "_win_pct": 21.3,
+          "_win_pct": 23.0,
           "_edge": -12.6,
           "_action": "AVOID",
           "_style_fit": 1.0
@@ -419,12 +424,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Course specialist with 1W and two seconds over this exact course and trip on Good, and one of two confirmed front-runners who will shape the entire race from flag to flag; Patrick Wadge will look to steal a march on Nobotheratall at the break and use the horse's proven track-record here.",
+          "note": "Confirmed front-runner who has won and been placed multiple times over this exact trip on Good ground at this venue; Patrick Wadge partners a horse who needs to hold off Nobotheratall early, and if he can dictate terms rather than brawl, his record of nine Good-ground runs with one win and five places makes him a live contender throughout.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Patrick Wadge",
           "trainer": "Lucinda Russell & Michael Scudamore",
-          "trainer_rtf": "",
+          "trainer_rtf": "33",
           "trainer_14": "0/3",
           "last_run": "23",
           "age": "6",
@@ -434,12 +439,12 @@
           "headgear": "t",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Scriabin won two starts back and was second three starts back, and he has run over this trip and going before, and his 113 rating marks him as a leading threat; the question is whether he can bounce back from an eighth last time out.",
           "spotlight": "",
           "_projected": 106.4,
           "_model_price": "12/1",
           "_mkt_price": "10/1",
-          "_win_pct": 7.5,
+          "_win_pct": 8.1,
           "_edge": -3.6,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -451,12 +456,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "The second confirmed pace-setter, in-form trainer (5/11 over 14 days), and fresh enough at 51 days since last run; won over this trip on Good going at Perth earlier in the season but faces a direct rival for the lead in Scriabin, which may compromise both horses' finishing reserves.",
+          "note": "The other confirmed pace-setter, returned five wins and two places from eight Good-ground starts and arrives in solid form with a 51-day break; Derek Fox will be keen to use his natural speed, but a head-to-head duel with Scriabin over only 2m risks draining both — his recent step up to 2m4f form suggests stamina is fine but he may be vulnerable late.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Derek Fox",
           "trainer": "Tristan Davidson",
-          "trainer_rtf": "",
+          "trainer_rtf": "42",
           "trainer_14": "5/11",
           "last_run": "51",
           "age": "6",
@@ -466,12 +471,12 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Nobotheratall landed a win three starts back and filled the runner-up spot two starts back, and has run over this trip and going before; the concern is a 51-day absence under 157 lb.",
           "spotlight": "",
           "_projected": 106.4,
           "_model_price": "7/1",
-          "_mkt_price": "27/5",
-          "_win_pct": 13.3,
+          "_mkt_price": "33/5",
+          "_win_pct": 12.1,
           "_edge": -1.6,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -483,12 +488,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Four-year-old who has won his last two over this trip on Good and comes in under Brian Hughes, who rides prominently; the youngest in the field but clearly thriving, and his natural tracking position puts him perfectly placed if the front two exhaust each other.",
+          "note": "Prominent racer who won over this course and distance on Good last time out; Brian Hughes will likely slot in just behind the front-runners and the 4yo's recent C&D win is the most obvious form reference in the race, though two successive 5ths prior suggest consistency can waver.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Brian Hughes",
           "trainer": "Patrick Neville",
-          "trainer_rtf": "",
+          "trainer_rtf": "49",
           "trainer_14": "0/7",
           "last_run": "23",
           "age": "4",
@@ -498,12 +503,12 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Try Them arrives in fair recent nick — a winner last time and second two starts back — but carrying 156 lb, our rating ranks him seventh of eight runners, making him hard to fancy despite the distance and going experience.",
           "spotlight": "",
           "_projected": 106.4,
           "_model_price": "5/1",
-          "_mkt_price": "4/1",
-          "_win_pct": 16.8,
+          "_mkt_price": "9/2",
+          "_win_pct": 16.4,
           "_edge": -2.6,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -515,12 +520,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Wears a tongue-tie and cheekpieces, ran 13 days ago (quick turnaround to note), and has a strong profile at this trip on Good ground with 1W4P from 15 similar-going runs; Sean Quinlan will likely settle him just off the pace and hope the contested front plays into his hands in the straight.",
+          "note": "Hold-up horse carrying tongue-tie and a strong recent profile — won over Good going, placed three more times from five similar-going starts — with Sean Quinlan retaining the ride; only 13 days since last run could be a minor energy flag, but the shorter 2m trip may suit this horse's late-running style better than the 2m4f+ trips he has contested.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Sean Quinlan",
           "trainer": "Ewan Whillans",
-          "trainer_rtf": "",
+          "trainer_rtf": "25",
           "trainer_14": "0/10",
           "last_run": "13",
           "age": "5",
@@ -530,12 +535,12 @@
           "headgear": "tp",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Inappropriate shaped with promise when second two starts back, has run over today's trip and going, and at 112 on our rating ranks as a leading threat in this field; the risk is that he has been winless in his last five starts.",
           "spotlight": "",
           "_projected": 106.4,
-          "_model_price": "10/1",
+          "_model_price": "9/1",
           "_mkt_price": "17/2",
-          "_win_pct": 9.2,
+          "_win_pct": 9.9,
           "_edge": 0.4,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -547,12 +552,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Consistent form figure who has finished in the top four in six of his last seven on Good going — his true racing style is at the back, but with so many hold-up types in this field he is unlikely to get the clear passage he needs, which tempers confidence in his finishing run despite the solid profile.",
+          "note": "A genuine hold-up performer whose last five runs show four fourths and a third, consistently failing to win but placing on Good ground; Lisa Harrison's runner is displaced to midfield on the pace map given the volume of hold-up types, meaning its natural style may be compromised and that positional disadvantage tempers its winning prospects here.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Peter Kavanagh",
           "trainer": "Lisa Harrison",
-          "trainer_rtf": "",
+          "trainer_rtf": "32",
           "trainer_14": "0/2",
           "last_run": "23",
           "age": "6",
@@ -562,12 +567,12 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Winless in her last five starts, Pure Gold has placed third two runs back but otherwise struggled to convert consistency into results; she has run over today's trip and going before, and 152 lb is a stiff ask for a mare yet to land a race in recent starts.",
           "spotlight": "",
           "_projected": 106.4,
-          "_model_price": "7/1",
-          "_mkt_price": "6/1",
-          "_win_pct": 13.0,
+          "_model_price": "6/1",
+          "_mkt_price": "31/5",
+          "_win_pct": 13.7,
           "_edge": 3.4,
           "_action": "WATCH",
           "_style_fit": 0.908
@@ -579,12 +584,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Veteran eight-year-old partnered by claiming rider Miss Becky Smith (7lb), which softens the weight burden and is worth noting; genuine hold-up racer by nature who has been placed at this trip on Good, but the overcrowded rear means she will need an unusually clean passage to land a blow.",
+          "note": "Veteran 8yo who carries a tongue-tie and hold-up profile, but with Miss Becky Smith claiming 7lbs the partnership has a useful weight advantage; her best form figures over this trip on Good ground are promising, but she too is a true rear-runner squeezed into a midfield slot by the shape of this race, making her role harder than her natural instincts prefer.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Miss Becky Smith(7)",
           "trainer": "R Mike Smith",
-          "trainer_rtf": "",
+          "trainer_rtf": "29",
           "trainer_14": "2/9",
           "last_run": "23",
           "age": "8",
@@ -594,12 +599,12 @@
           "headgear": "t",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Yet to win in her last five starts, Just Dottie nonetheless showed a third two runs back to suggest she retains ability, and she has run over today's trip and going before; a burden of 149 lb is the concern.",
           "spotlight": "",
           "_projected": 106.4,
-          "_model_price": "13/1",
-          "_mkt_price": "12/1",
-          "_win_pct": 7.3,
+          "_model_price": "14/1",
+          "_mkt_price": "14/1",
+          "_win_pct": 6.9,
           "_edge": 6.4,
           "_action": "WATCH",
           "_style_fit": 0.918
@@ -611,12 +616,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Freshest horse in the field at just 8 days since last run and coming off a decent sequence including a win and a place at this trip — Danny McMenamin trains with Iain Jardine who is 4/27 over 14 days, a modest strike rate; a natural back-marker whose last-to-first style is harder to execute when the hold-up zone is as congested as this race shape creates.",
+          "note": "Arrived on an 8-day turnaround for Iain Jardine who has a modest 14-day record (4/27); the 5yo has won and placed over Good going and shorter trips, and is a hold-up horse that the pace map places in midfield — among the three redistributed types, his recent 2m2f experience is closest to this trip and he retains modest upside if traffic allows a clean late run.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Danny McMenamin",
           "trainer": "Iain Jardine",
-          "trainer_rtf": "",
+          "trainer_rtf": "36",
           "trainer_14": "4/27",
           "last_run": "8",
           "age": "5",
@@ -626,70 +631,70 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Winless in his last three starts, with finishes of seventh, ninth and eighth, Elemental Eye has little recent form to recommend him, and our figures rank him last of the eight runners here; his experience over today's trip and a quick turnaround eight days ago are modest consolations at best.",
           "spotlight": "",
           "_projected": 106.4,
-          "_model_price": "8/1",
-          "_mkt_price": "39/5",
-          "_win_pct": 11.6,
+          "_model_price": "9/1",
+          "_mkt_price": "10/1",
+          "_win_pct": 10.0,
           "_edge": 10.4,
           "_action": "WATCH",
           "_style_fit": 0.92
         }
       ],
-      "paceDynamic": "Scriabin and Nobotheratall are both confirmed front-runners and will contest the lead from the outset over this 2m Perth trip, creating a genuinely contested early gallop on Good ground rather than a soft lead for either. Scriabin brings strong course form at this trip (1W, 2nd twice over 16f Good at Perth) and is unlikely to concede the front cheaply to Nobotheratall, whose trainer is in good recent form (5/11 over 14 days). The resulting honest, pressure-laden pace should see the lead group race into a headwind of their own making, leaving the closers with a genuine target to pick up — this race shape most clearly favours hold-up or late-running profiles who can track the carnage and pounce from the home turn. The field holds more hold-up types than the race map can accommodate at the rear — Pure Gold, Just Dottie, and Elemental Eye are genuine hold-up horses redistributed into the midfield zone because they are all unlikely to find their natural position with so many genuine back-markers; of these, Elemental Eye (8 days since last run, strong stamina profile) and Pure Gold (consistent course form) are most likely to at least land in mid-division, while Try Them and Castleheath are better placed to exploit the positions the map shows.",
+      "paceDynamic": "Scriabin and Nobotheratall are both confirmed front-runners and will contest the lead from the off over this 2m trip at Perth, creating a genuinely contested pace rather than a dawdle — on Good ground this should produce an honest, rhythmic gallop across the eight hurdles. Try Them will push forward to dispute or sit just off the pace, compressing the field early and ensuring no one gets an easy lead without a fight. This race shape — two legitimate front-runners duelling with a prominent type pressing — classically suits horses who can travel fluidly in behind and pick up with one run from the second-last, making midfield-to-hold-up horses the primary beneficiaries, provided they are genuine in that role. The field holds more hold-up types than the map can accommodate at the rear — Pure Gold, Just Dottie, and Elemental Eye are true hold-up horses redistributed to midfield on the map; of these, Elemental Eye's recent course-and-distance form gives it the best chance of actually being positioned where it needs to be, though all three may find themselves racing less than ideally placed given the pace scenario.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Contested pace, closers pounce",
+          "title": "Contested Pace, Closers Strike",
           "prob": 52,
-          "trigger": "If Scriabin and Nobotheratall fight for the lead and set a pressured honest gallop that softens them both from the third last.",
-          "body": "The two pacemakers race each other into the ground, leaving the field strung out and the final two hurdles to those with reserves; hold-up and prominent types who have settled off the pace arrive with momentum. Castleheath (OR 119, Sean Bowen, 2W3P on similar going) and Try Them (recent winner, Brian Hughes) are ideally positioned to exploit the vacuum.",
+          "trigger": "If Scriabin and Nobotheratall burn each other up through a genuine early gallop and the field races at an honest clip throughout.",
+          "body": "The duel between the two front-runners uses their reserves across 2m on Good ground, leaving the door open for a horse who has travelled sweetly in midfield to sweep past from the second-last flight; Castleheath and Inappropriate are both course-profiled hold-up horses with Good-ground form who can deliver a single telling run.",
           "winners": [
             "Castleheath",
-            "Try Them"
+            "Inappropriate"
           ],
           "others": [
-            "Inappropriate",
+            "Try Them",
             "Nobotheratall"
           ]
         },
         {
           "label": "B",
-          "title": "Scriabin controls and wins",
-          "prob": 26,
-          "trigger": "If Scriabin repels Nobotheratall early and settles into an uncontested lead at a regulated gallop, conserving enough for the finish.",
-          "body": "Scriabin has won and placed repeatedly over this course and trip on Good going (9/12 runners on similar going) and if Nobotheratall is checked or settles back, Scriabin can dictate his own rhythm and quicken clear from the last. Patrick Wadge, who knows this horse well, would look to exploit any daylight between the two front-runners early.",
+          "title": "Front-Runner Dominates Wire-to-Wire",
+          "prob": 27,
+          "trigger": "If one of the two front-runners — most likely Scriabin given stronger lead history at this trip — gains a clear early advantage and is allowed to dictate a controlled, measured pace.",
+          "body": "With a sustainable gallop rather than a true duel, the leader conserves energy and the hold-up horses never generate enough momentum to peg them back over just 2m; Scriabin's record of two wins and five places from nine Good-ground starts underlines this suitability.",
           "winners": [
             "Scriabin",
             "Nobotheratall"
           ],
           "others": [
             "Try Them",
-            "Castleheath"
+            "Pure Gold"
           ]
         },
         {
           "label": "C",
-          "title": "Prominent racer outstays all",
-          "prob": 14,
-          "trigger": "If the pace is fierce enough to break down both leaders but the closers overcook their finishing runs, leaving a prominent-tracking type to pick up the pieces.",
-          "body": "Try Them has finished 1st and 2nd in his last two over this course and trip on identical going, and tracking just off the pace with Brian Hughes in the saddle puts him in the best spot if the leaders tire but the hold-up horses leave it too late. Inappropriate has the form to fill the place positions in this shape, having placed 1st, 2nd, and 3rd in recent starts.",
+          "title": "Prominent Types Outstay Field",
+          "prob": 13,
+          "trigger": "If the pace proves genuine but the hold-up horses fail to close — being out of position — and a prominent racer saves ground from just off the lead.",
+          "body": "Try Them, who won over this C&D on Good going last time, sits a length or two off the duel and pounces at the second-last as the front-runners weaken; Nobotheratall, dropping from 2m4f where he won and ran well, may also find this trip sharp enough to sustain a late surge from just off the pace.",
           "winners": [
             "Try Them",
-            "Inappropriate"
+            "Nobotheratall"
           ],
           "others": [
-            "Castleheath",
-            "Scriabin"
+            "Scriabin",
+            "Inappropriate"
           ]
         },
         {
           "label": "D",
-          "title": "Closers land late",
+          "title": "Hold-Up Horses Land Late",
           "prob": 8,
-          "trigger": "If the pace is truly searching and every prominent horse is cooked, leaving the genuine back-markers to run through beaten rivals in the final flight.",
-          "body": "This scenario requires Pure Gold, Just Dottie, or Elemental Eye to find their natural hold-up positions and a longer-than-expected gallop to open the race up — with all three redistributed from the true rear, none is guaranteed to get the clear run they need. Elemental Eye is freshest (8 days, recent winner at 12f) and most likely to benefit if chaos unfolds late, but this remains the least probable shape given the overcrowded hold-up zone.",
+          "trigger": "If the pace is truly fierce and the entire front rank ties up simultaneously, creating a vacuum for true closers to come from well off the bridle.",
+          "body": "Pure Gold, Just Dottie, and Elemental Eye are all genuine hold-up types but each is likely displaced in the field map; with STYLE_FIT tags signalling they may not find their natural rear position, this scenario is structurally unlikely — Elemental Eye's two-mile wins give it the best claim if it does get a true rails run late.",
           "winners": [
             "Elemental Eye",
             "Pure Gold"
@@ -703,23 +708,23 @@
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Scriabin and Nobotheratall will lock horns for the lead from the off — watch the first two hurdles to see if either yields, because if neither does the pace could be fierce enough to compromise every runner drawn into racing prominently."
+          "text": "Scriabin and Nobotheratall will lock horns for the lead from flag to flag — if neither concedes, watch for both to empty approaching the final hurdle, leaving the race wide open for anything tracking them."
         },
         {
           "severity": "warn",
-          "text": "Elemental Eye runs just 8 days after his last start, which is a short turnaround for a jumper — monitor his movement in the pre-parade ring and watch for any sign of residual fatigue in the early stages."
+          "text": "Try Them won over this C&D last time and Brian Hughes will be intent on getting a prominent pitch — if he pushes to the front group early, a three-way pace battle develops and the race could become truly strong."
         },
         {
           "severity": "warn",
-          "text": "Pure Gold, Just Dottie, and Elemental Eye are all genuine hold-up horses crowded into a congested rear — watch for traffic problems turning for home if all three are seeking the same gap between tiring rivals at the same moment."
+          "text": "Inappropriate is only 13 days off his last run; watch his behaviour in the paddock and early jumping for any signs that the quick turnaround has left him short, as his hold-up profile requires him to travel well throughout."
         },
         {
           "severity": "info",
-          "text": "Try Them is the only four-year-old in the field taking on older, handicap-seasoned horses — Brian Hughes will need to position him off the pace quickly to avoid being trapped wide if the two front-runners immediately dictate a fierce tempo on the inner."
+          "text": "Pure Gold, Just Dottie, and Elemental Eye are all genuine hold-up types likely to find themselves further forward than ideal — watch where they actually settle in the first half-mile, as any who successfully drop to the rear may be better placed than the pace map implies."
         },
         {
           "severity": "info",
-          "text": "Castleheath is the top weight (168lbs) and top-rated (OR 119) — Sean Bowen will likely hunt cover early and commit his challenge no sooner than the second-last, so watch how cleanly he travels through the early stages as a guide to how the race shape is unfolding."
+          "text": "Castleheath has strong Good-ground form but ran in a 168f race last time — monitor how he handles the drop to a sharper 2m at Perth where getting a clear passage from the back is not guaranteed in an 8-runner field."
         }
       ],
       "skipped": false
@@ -758,12 +763,12 @@
           "finish_type": "S",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Proven front-runner with a stellar recent record (three wins from last four including back-to-back over similar trips on Good), Sean Bowen is a major asset, and similar-going form reads 3W7P — the unchallenged lead is his to lose over 3m here.",
+          "note": "Sole front-runner in the field who has won three of her last four on similar Good ground; Sean Bowen takes the ride for a trainer in decent 14-day form (2/16), and a 47-day break is worth monitoring at an age-8 mark, though her prominent style is perfectly aligned with this race shape.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Sean Bowen",
           "trainer": "Jack Jones",
-          "trainer_rtf": "",
+          "trainer_rtf": "44",
           "trainer_14": "2/16",
           "last_run": "47",
           "age": "8",
@@ -773,12 +778,12 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Regal Renaissance arrives here in fine heart, winning three of her last five starts with a victory two runs back, and she handles today's distance and going, making her the clear profile pick despite a 47-day absence and 168 lb to carry.",
           "spotlight": "",
           "_projected": 110.4,
           "_model_price": "2/1",
           "_mkt_price": "8/5",
-          "_win_pct": 31.8,
+          "_win_pct": 30.9,
           "_edge": -9.6,
           "_action": "WATCH",
           "_style_fit": 0.929
@@ -790,12 +795,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "An 11-year-old hold-up performer whose recent form reads 4-642P and who hasn't won in similar going across his last 15 attempts; Callum Bewley takes over but the age and declining form are concerns at this trip.",
+          "note": "An 11-year-old hold-up horse whose form reads 642P recently though he has finished placed on Good ground across similar trips; Callum Bewley takes over from the saddle for a trainer with just 0/2 in the 14-day window, and 57 days off adds a small fitness question to a horse already needing things to fall right from the rear.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Callum Bewley",
           "trainer": "Lisa Harrison",
-          "trainer_rtf": "",
+          "trainer_rtf": "32",
           "trainer_14": "0/2",
           "last_run": "57",
           "age": "11",
@@ -805,12 +810,12 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Rated highest in the field and has run over this trip before, Wasdell Dundalk catches the eye on the back of a runner-up finish one start ago and has experience of today's distance and going; the main concern is the pullup last time out after 57 days off, leaving his current fitness an open question.",
           "spotlight": "",
           "_projected": 110.4,
           "_model_price": "15/1",
           "_mkt_price": "14/1",
-          "_win_pct": 6.3,
+          "_win_pct": 6.2,
           "_edge": -1.6,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -822,12 +827,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Nicky Richards has a 1/2 T14 strike rate and this 12-year-old brings genuine 3m credentials — two of his last five starts came at 2m4f with the best runs on Good, and his last two finishes of 1 and 2 suggest he retains ability, though 93 days off is a flag worth monitoring.",
+          "note": "Nicky Richards' 12-year-old arrives on the back of two recent placed efforts including a win, and Danny McMenamin is a solid booking; his hold-up style suits a scenario where the front-runner is run down over the final stages, though a 93-day break is the most notable concern here and his best form has come on Soft rather than Good.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Danny McMenamin",
           "trainer": "Nicky Richards",
-          "trainer_rtf": "",
+          "trainer_rtf": "44",
           "trainer_14": "1/2",
           "last_run": "93",
           "age": "12",
@@ -837,12 +842,12 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "No Regrets shaped as a genuine threat when a close second last time out, and was a winner two starts back; he has experience of today's trip and conditions, and a rating of 114 underlines his claims — the main concern is whether 93 days off the track leaves him short of peak fitness.",
           "spotlight": "",
           "_projected": 110.4,
-          "_model_price": "3/1",
-          "_mkt_price": "11/4",
-          "_win_pct": 25.8,
+          "_model_price": "7/2",
+          "_mkt_price": "16/5",
+          "_win_pct": 22.4,
           "_edge": -0.6,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -854,12 +859,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Recent form of 91-223 suggests consistency without a win being imminent; this is a natural rear-runner who is mapped to midfield only because the field is stacked with hold-up types, so expect Gregor Walkingshaw (10) to race further back than shown — the style mismatch tempers his winning chance in a shape dominated by the leader.",
+          "note": "Strong recent form with three consecutive placed efforts including a win, and the Lucinda Russell & Michael Scudamore yard is well-respected for staying chasers; in truth this is a horse that races from the rear, and the 10lb claimer Gregor Walkingshaw taking off that weight is an interesting angle, though racing outside his natural position will blunt his effectiveness in this shape.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Gregor Walkingshaw(10)",
           "trainer": "Lucinda Russell & Michael Scudamore",
-          "trainer_rtf": "",
+          "trainer_rtf": "33",
           "trainer_14": "0/3",
           "last_run": "57",
           "age": "9",
@@ -869,12 +874,12 @@
           "headgear": "p",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Inis Oirr arrives here with a fine run of form — second two starts back and third last time out — and he has experience of today's distance and going, so conditions should hold no fears; the main concern is a 57-day absence.",
           "spotlight": "",
           "_projected": 110.4,
           "_model_price": "5/1",
           "_mkt_price": "5/1",
-          "_win_pct": 17.2,
+          "_win_pct": 16.7,
           "_edge": 2.4,
           "_action": "WATCH",
           "_style_fit": 0.93
@@ -886,12 +891,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Mickey Bowen's yard is firing at T14 6/23 and Brian Hughes is a key booking; the horse carries headgear (blinkers) and returns quickly on 16 days, but at OR 101 he is the lowest-rated runner and, despite two recent wins, his true hold-up style means he needs the race to fall apart in front of him to win.",
+          "note": "The youngest and lowest-rated in the field at OR 101, Brian Hughes is a high-quality pilot and Mickey Bowen's stable is firing well at 6/23 in 14-day form; genuinely a hold-up type who has shown he can win (twice from last five), the hood goes on for the first time which is worth noting, and only 16 days since last run suggests freshness is not a concern — but he is being shown in midfield away from his favoured rear-rank position.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Brian Hughes",
           "trainer": "Mickey Bowen",
-          "trainer_rtf": "",
+          "trainer_rtf": "57",
           "trainer_14": "6/23",
           "last_run": "16",
           "age": "6",
@@ -901,43 +906,28 @@
           "headgear": "b",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Back-to-back wins three and four starts back give Sir Carnegie some profile, but he has finished fifth and sixth in his last two outings and is ranked last of the five runners on our figures, making him difficult to recommend despite a trainer hitting 26% in the last 14 days.",
           "spotlight": "",
           "_projected": 110.4,
-          "_model_price": "9/2",
-          "_mkt_price": "11/2",
-          "_win_pct": 18.9,
+          "_model_price": "3/1",
+          "_mkt_price": "4/1",
+          "_win_pct": 23.8,
           "_edge": 9.4,
-          "_action": "CONSIDER",
+          "_action": "WATCH",
           "_style_fit": 0.922
         }
       ],
-      "paceDynamic": "Regal Renaissance is the sole confirmed front-runner in this five-horse field and, with no rival likely to genuinely contest the lead, Sean Bowen can dictate a controlled, sustainable gallop over the 3m trip on Good turf at Perth. The three genuine hold-up types — Wasdell Dundalk, No Regrets, and Sir Carnegie — will track from the rear, while Inis Oirr is also a true hold-up horse despite being mapped to midfield for visualisation purposes. With Regal Renaissance able to set his own fractions unchallenged, this race shape strongly favours the prominent-to-front runner who can control the tempo, conserve energy over the fences, and dictate the moment the race quickens from the front — chasers from off the pace will need a genuine stamina test or a jumping error from the leader to get involved. The field holds more hold-up types than can naturally be separated at the rear; of those, Sir Carnegie (Brian Hughes, in-form T14 strike rate) and No Regrets (proven 3m form) are best placed to mount a late challenge if the leader weakens.",
+      "paceDynamic": "Regal Renaissance is the sole confirmed front-runner in this five-runner field and, with no genuine pace rival to challenge her, she is set to dictate from the front at a controlled, sustainable gallop over the 3m trip on Good ground at Perth. The four remaining runners — Wasdell Dundalk, No Regrets, Inis Oirr, and Sir Carnegie — are all hold-up types by nature, meaning the pace Regal Renaissance sets will be uncontested and she can conserve energy through the early and middle stages before quickening from the front off a relatively honest tempo. This race shape overwhelmingly favours the patient hold-up horses who can track the leader from a distance and pounce off a strong staying finish in the closing stages, with Inis Oirr and Sir Carnegie the redistributed runners who in truth prefer to come from further back but have been mapped forward due to the surplus of rear-rank types this field generates. The tactical verdict is clear: uncontested front-running from Regal Renaissance creates a thorough-staying test, and the horse best able to sustain a long, relentless gallop from off the pace — rather than a sprint finish — will be best placed to capitalise.",
       "scenarios": [
         {
           "label": "A",
           "title": "Regal Renaissance Controls Unchallenged",
-          "prob": 68,
-          "trigger": "If Regal Renaissance bowls along at a comfortable clip and the hold-up brigade are unable to close the gap in the straight.",
-          "body": "Bowen settles Regal Renaissance into a rhythm from the front, jumping fluently and giving nothing away, making the race increasingly hard for hold-up horses to win from off a steady pace; the longer the gallop stays moderate, the more the advantage compounds for the leader.",
+          "prob": 69,
+          "trigger": "If Regal Renaissance bowls along at a measured, uncontested pace and her rivals fail to close the gap in time.",
+          "body": "She dictates every yard of the 3m trip, conserving energy through the middle section before extending at the business end off a comfortable lead; her recent win record at this trip on Good ground (three wins from four similar-going runs) underlines this is the most likely shape.",
           "winners": [
             "Regal Renaissance",
             "No Regrets"
-          ],
-          "others": [
-            "Inis Oirr",
-            "Sir Carnegie"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "Stayer Pounces Late",
-          "prob": 16,
-          "trigger": "If Regal Renaissance sets a genuinely taxing pace that causes attrition and a hold-up horse picks up the pieces in the closing stages.",
-          "body": "A strong early gallop combined with the 3m distance on Good ground tests the leader's stamina reserves; a horse like No Regrets — proven at 3m and with a recent win — or Sir Carnegie with Brian Hughes timing the challenge can get to the leader when he ties up.",
-          "winners": [
-            "No Regrets",
-            "Sir Carnegie"
           ],
           "others": [
             "Wasdell Dundalk",
@@ -945,56 +935,71 @@
           ]
         },
         {
-          "label": "C",
-          "title": "Hold-Up Flurry Overwhelms",
-          "prob": 10,
-          "trigger": "If Regal Renaissance makes a critical jumping error or fades sharply inside the final half-mile, leaving the race wide open.",
-          "body": "Without the front-runner controlling proceedings, the hold-up horses converge simultaneously and the outcome depends on which has kept the most in reserve; No Regrets' course-and-distance form and Wasdell Dundalk's consistency over good ground make them dangers in this chaos scenario.",
+          "label": "B",
+          "title": "Closers Grind Down Leader",
+          "prob": 16,
+          "trigger": "If the hold-up horses — particularly No Regrets or Wasdell Dundalk — reel in Regal Renaissance over the final two fences as the pace tells on her off a longer layoff.",
+          "body": "The genuine staying ability of the hold-up brigade becomes decisive as the 47-day absence from Regal Renaissance softens her edge late on; a strong gallop extracts maximum stamina from the field and the closers flourish.",
           "winners": [
             "No Regrets",
             "Wasdell Dundalk"
           ],
           "others": [
-            "Sir Carnegie",
-            "Inis Oirr"
+            "Inis Oirr",
+            "Sir Carnegie"
           ]
         },
         {
-          "label": "D",
-          "title": "Prominent Horse Asserts",
-          "prob": 6,
-          "trigger": "If Regal Renaissance loses the lead sooner than expected and a horse tracking closely moves through to win from a mid-pack position.",
-          "body": "Given that Inis Oirr and Sir Carnegie are true hold-up types redistributed forward on the map — racing out of their natural role — their ability to capitalise on this shape is genuinely discounted; this scenario is low probability precisely because no horse in the field naturally wants to sit second and quicken past the leader.",
+          "label": "C",
+          "title": "Midfield Types Capitalise",
+          "prob": 9,
+          "trigger": "If Inis Oirr or Sir Carnegie, both true hold-up horses shown in midfield due to redistribution, manage to find a race-saving position and unleash a sustained late run.",
+          "body": "Despite being mapped forward, their natural inclination to race from the rear means they could find momentum if the race develops into a true stamina test over the closing mile; Sir Carnegie's yard is in excellent 14-day form (6/23) which marginally keeps this live.",
           "winners": [
             "Sir Carnegie",
             "Inis Oirr"
           ],
           "others": [
+            "No Regrets",
+            "Wasdell Dundalk"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Disrupted Jumping Scramble",
+          "prob": 6,
+          "trigger": "If errors at fences destabilise the race shape — unseats, falls or jumping mistakes — creating a chaotic finish where the race order is reset.",
+          "body": "In a small field of five over fences, any significant jumping incident could hand the race to a rival who avoids trouble; at 3m on Perth's right-handed track, stamina and jumping soundness become the arbiter.",
+          "winners": [
+            "No Regrets",
+            "Wasdell Dundalk"
+          ],
+          "others": [
             "Regal Renaissance",
-            "No Regrets"
+            "Sir Carnegie"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Regal Renaissance's jumping must be monitored early — a fall or bad mistake at any of the first few fences is the single event most likely to completely overturn the dominant pace scenario."
+          "text": "Regal Renaissance's 47-day absence is the key risk — if she fails to see out the 3m trip on returning from a break, the hold-up horses will sweep past her from the final fence."
         },
         {
           "severity": "warn",
-          "text": "No Regrets has been off 93 days and, while Nicky Richards' runners return fit, a first-time-back run over 3m on Good should be kept in mind if he fades in the straight having briefly threatened."
+          "text": "Sir Carnegie's headgear change (hood) is significant to watch in the early stages — if it sharpens him into a more prominent position than expected, the race shape could shift meaningfully."
         },
         {
           "severity": "warn",
-          "text": "Sir Carnegie's blinkers are a speed-trigger that could push him forward unusually early, potentially creating brief but artificial pace pressure on Regal Renaissance in the first mile before he settles."
+          "text": "No Regrets has had a 93-day break and his best form is on Soft ground — if the Good surface blunts his finishing kick, the hold-up scenario collapses and Regal Renaissance benefits further."
         },
         {
           "severity": "info",
-          "text": "Wasdell Dundalk at age 11 with a P (pulled up) on his most recent run warrants monitoring for any signs of distress or jumping errors that could cause interference for runners tracking close behind."
+          "text": "Gregor Walkingshaw's 10lb claim on Inis Oirr makes the weight attractive, but in a race where his mount needs to race against its natural style, watch whether the pair can find a rhythm settling further back than the pace map shows."
         },
         {
           "severity": "info",
-          "text": "With four genuine hold-up types bunching at the rear, traffic and interference risks increase in the straight if Regal Renaissance tires — watch for horses being baulked as the group converges simultaneously."
+          "text": "With all four rivals being hold-up types, watch the early pace — if any of them break sharply and push up to challenge Regal Renaissance, the uncontested lead scenario is immediately undermined and a stronger pace test emerges."
         }
       ],
       "skipped": false
@@ -1039,12 +1044,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Sole confirmed front-runner here and likely to lead from the outset; trainer Russell/Scudamore yard 0/3 in past 14 days is a mild concern, and the STYLE_FIT flag (0.94) suggests this isn't her natural role — recent form U-3515 is patchy but the uncontested lead is a genuine tactical asset.",
+          "note": "The lone front-runner at OR 111, ridden by claimer Gregor Walkingshaw (10lb); racing prominently is its natural game but the STYLE_FIT flag notes it may be slightly out of its most comfortable role — uncontested pace-setting here should suit regardless, and Perth Good form reads positively from two prior runs.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Gregor Walkingshaw(10)",
           "trainer": "Lucinda Russell & Michael Scudamore",
-          "trainer_rtf": "",
+          "trainer_rtf": "33",
           "trainer_14": "0/3",
           "last_run": "23",
           "age": "6",
@@ -1054,12 +1059,12 @@
           "headgear": "p",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Won two starts back and has run over today's trip and going, Lets Mingle arrives here 23 days fresh, carrying 169 lb, and her rating of 113 marks her as the one to beat in this field of ten, though her fifth last time out is the one minor caution.",
           "spotlight": "",
           "_projected": 102.7,
-          "_model_price": "10/1",
-          "_mkt_price": "37/5",
-          "_win_pct": 9.3,
+          "_model_price": "9/1",
+          "_mkt_price": "39/5",
+          "_win_pct": 9.5,
           "_edge": -8.3,
           "_action": "WATCH",
           "_style_fit": 0.94
@@ -1071,12 +1076,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Two wins from last three runs including back-to-back victories on Good ground over 2m, and the return to a slightly shorter trip than 3m could sharpen him; 5lb claimer Murray Dodd is the query but trainer Smith 2/9 over 14 days gives quiet confidence.",
+          "note": "Top recent form (two wins in last five) with the trainer firing at 2/9 over 14 days; a genuine hold-up horse who needs a true pace to reel in the leaders, and Good ground suits based on a win at this track over 2m — trip slightly shorter than ideal but not disqualifying.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Murray Dodd(5)",
           "trainer": "R Mike Smith",
-          "trainer_rtf": "",
+          "trainer_rtf": "29",
           "trainer_14": "2/9",
           "last_run": "23",
           "age": "7",
@@ -1086,11 +1091,11 @@
           "headgear": "p",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Follow Charlie won his last two starts and arrives in decent nick 23 days on, with experience of today's trip and going in his favour; the 168 lb burden is a stiff ask, however, and his ranking sixth of ten on our rating suggests he faces better company than his recent wins came against.",
           "spotlight": "",
           "_projected": 102.7,
           "_model_price": "3/1",
-          "_mkt_price": "9/4",
+          "_mkt_price": "5/2",
           "_win_pct": 24.3,
           "_edge": -7.3,
           "_action": "WATCH",
@@ -1103,12 +1108,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent runner who has the tactical profile to track Lets Mingle closely; 57 days off is a flag, and recent hurdles form has been disappointing (F, P, 6, 7) but wears headgear and is trained by Russell/Scudamore — same 0/3 yard form concern applies.",
+          "note": "Prominent racer for the Russell/Scudamore yard (0/3 T14 — stable not in red-hot form); the tongue-strap is notable, and a 57-day absence requires monitoring — only one win from fifteen runs on Good, making the ground angle mildly concerning despite an OR of 109.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Jack Power(5)",
           "trainer": "Lucinda Russell & Michael Scudamore",
-          "trainer_rtf": "",
+          "trainer_rtf": "33",
           "trainer_14": "0/3",
           "last_run": "57",
           "age": "7",
@@ -1118,12 +1123,12 @@
           "headgear": "tp",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Winless in her last five starts and coming off a fall, Spit Spot nonetheless shapes as a leading threat here — she has experience over today's trip and going, our rating of 111 ranks her second in the field, and 57 days off may have freshened her up, though her recent jumping frailties are the obvious concern.",
           "spotlight": "",
           "_projected": 102.7,
-          "_model_price": "23/1",
+          "_model_price": "20/1",
           "_mkt_price": "18/1",
-          "_win_pct": 4.2,
+          "_win_pct": 4.5,
           "_edge": -6.3,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1135,12 +1140,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Danny McMenamin-ridden hold-up horse stepping back up beyond 2m where he won last time; Nicky Richards 1/2 in past 14 days is form worth noting, and the horse has placed three times in five similar-going runs — dependent on a strong-enough pace to bring hold-up style into play.",
+          "note": "Consistent hold-up performer for Nicky Richards (1/2 T14, stable in decent touch); won at 2m on Good and placed twice at 2m-plus, so the trip and surface suit well — Danny McMenamin is a reliable handler in this type of race and 23 days since last run is a fresh but not flat preparation.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Danny McMenamin",
           "trainer": "Nicky Richards",
-          "trainer_rtf": "",
+          "trainer_rtf": "44",
           "trainer_14": "1/2",
           "last_run": "23",
           "age": "7",
@@ -1153,9 +1158,9 @@
           "comment": "",
           "spotlight": "",
           "_projected": 102.7,
-          "_model_price": "6/1",
+          "_model_price": "5/1",
           "_mkt_price": "9/2",
-          "_win_pct": 15.0,
+          "_win_pct": 16.2,
           "_edge": -4.3,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1167,12 +1172,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Consistent hold-up mare with zero wins from seven Good-ground runs; five-year-old taking on older horses, 67 days off, and a form string that reads P334-4 — no win in this company at this trip, and reliant on a strong pace she may not get today.",
+          "note": "A five-year-old lightly raced for a young trainer (Lizzie Quinlan, 1/7 T14); all five career runs show place-form rather than wins and the Good ground is untested in this particular race context — 67 days since last run and no headgear worn, suggesting improvement on fitness is possible.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Sean Quinlan",
           "trainer": "Lizzie Quinlan",
-          "trainer_rtf": "",
+          "trainer_rtf": "18",
           "trainer_14": "1/7",
           "last_run": "67",
           "age": "5",
@@ -1182,12 +1187,12 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Bogha Baiste has shown consistency without a win in recent starts, posting back-to-back thirds before two fourths, though a pulled-up effort on the other side of that sequence gives pause; experience on today's going helps, but 67 days off and 164 lb are notable questions.",
           "spotlight": "",
           "_projected": 102.7,
-          "_model_price": "20/1",
+          "_model_price": "18/1",
           "_mkt_price": "16/1",
-          "_win_pct": 4.9,
+          "_win_pct": 5.3,
           "_edge": -3.3,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1199,12 +1204,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Prominent runner with a second in Good-going hurdles in her recent history; amateur rider Mr D McGill (5) is a risk at this level, and trainer Quinn 0/1 in past 14 days offers no encouragement — her handy style suits the race shape if she jumps cleanly.",
+          "note": "Prominent style in training from Gerald Quinn (0/1 T14); one win from ten on Good ground but a solid four-time placer on similar surfaces — the 5lb claimer Mr D McGill reduces the burden and a handy racing position should keep Annie Agnew involved into the straight.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Mr D McGill(5)",
           "trainer": "Gerald Stephen Quinn",
-          "trainer_rtf": "",
+          "trainer_rtf": "26",
           "trainer_14": "0/1",
           "last_run": "23",
           "age": "6",
@@ -1214,12 +1219,12 @@
           "headgear": "p",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Placed last time out and carrying 161 lb into this, Annie Agnew has run over today's trip and going and rates 6 lb above her official mark — a compelling case for a big run — though she remains winless in her last five starts, which is the key concern.",
           "spotlight": "",
           "_projected": 102.7,
-          "_model_price": "7/1",
-          "_mkt_price": "31/5",
-          "_win_pct": 12.2,
+          "_model_price": "6/1",
+          "_mkt_price": "6/1",
+          "_win_pct": 13.6,
           "_edge": -0.3,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1231,12 +1236,12 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Won at 16f on Good ground on most recent run (12 days ago, freshness a plus) but is naturally a hold-up horse positioned in midfield on the map because closing berths are filled — in this race shape he may not get far back enough to deliver his finishing effort cleanly; trainer Kelly 0/14 in 14 days is a damning form line.",
+          "note": "Won at 1m6f on Good ground for Noel Kelly (0/14 T14 — stable form is a significant concern) and returned just 12 days ago; in truth a natural hold-up type pushed into the midfield map position because the rear is crowded, and the STYLE_FIT flag means its chance is modestly discounted in a race dominated by front-rank runners.",
           "draw": null,
           "draw_adv": null,
           "jockey": "James Bowen",
           "trainer": "Noel C Kelly",
-          "trainer_rtf": "",
+          "trainer_rtf": "13",
           "trainer_14": "0/14",
           "last_run": "12",
           "age": "6",
@@ -1246,12 +1251,12 @@
           "headgear": "t",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Garrick Painter slipped up last time out and was sixth two starts back, making him hard to fancy ranked eighth of ten on our figures, though he does bring going experience and a win four starts back to the table.",
           "spotlight": "",
           "_projected": 102.7,
-          "_model_price": "5/1",
-          "_mkt_price": "9/2",
-          "_win_pct": 16.0,
+          "_model_price": "7/1",
+          "_mkt_price": "33/5",
+          "_win_pct": 12.5,
           "_edge": -0.3,
           "_action": "WATCH",
           "_style_fit": 0.912
@@ -1263,12 +1268,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Last-six form reads 574546 with no win from many attempts, and this genuine hold-up horse is mapped to midfield because the rear is oversubscribed; only nine days since last run (freshness slight plus) but the trajectory and 0/1 trainer form suggest limited upside.",
+          "note": "Nine-day turnaround is notably quick and the consistent mid-pack finishes (no win since entering the handicap) tell a story of a horse that finds the same level; a genuine hold-up performer by inclination, placed in the midfield map due to congestion at the rear, and the STYLE_FIT flag limits the realistic upside unless the pace genuinely collapses.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Derek Fox",
           "trainer": "Leonard Kerr",
-          "trainer_rtf": "",
+          "trainer_rtf": "30",
           "trainer_14": "0/1",
           "last_run": "9",
           "age": "7",
@@ -1278,12 +1283,12 @@
           "headgear": "t",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Winless in his last six starts, Kinbara Firstdraft has at least shown some consistency hitting fourth twice in that sequence, and he has experience over today's trip and going; however, 158 lb is a stiff ask for a horse yet to land a race.",
           "spotlight": "",
           "_projected": 102.7,
-          "_model_price": "43/1",
+          "_model_price": "40/1",
           "_mkt_price": "40/1",
-          "_win_pct": 2.3,
+          "_win_pct": 2.5,
           "_edge": 2.7,
           "_action": "WATCH",
           "_style_fit": 0.917
@@ -1295,12 +1300,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "149 days off is a significant absence flag; has won on Good ground over 2m before but hurdles form has been inconsistent and prominent style puts her in the mix early — lack of fitness after a long layoff makes this a come-on run rather than a winning one.",
+          "note": "Absent 149 days (no recent trackwork signals available) and the soft-ground wins raise a mild query about whether this Good Perth surface truly plays to strengths — Peter Kavanagh takes the ride for an OR-90 runner at a career-high relative mark, and any ring rust from the layoff would be a real disadvantage over the sharp Perth circuit.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Peter Kavanagh",
           "trainer": "Lisa Harrison",
-          "trainer_rtf": "",
+          "trainer_rtf": "32",
           "trainer_14": "0/2",
           "last_run": "149",
           "age": "7",
@@ -1310,14 +1315,14 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "A lengthy absence of 149 days and a run of one win in his last five starts, including a fall, make Hawkseye View hard to fancy here, ranked ninth of ten on our figures, though he has experience of today's distance and going and did score four starts back.",
           "spotlight": "",
           "_projected": 102.7,
           "_model_price": "12/1",
-          "_mkt_price": "14/1",
-          "_win_pct": 7.6,
+          "_mkt_price": "15/1",
+          "_win_pct": 7.7,
           "_edge": 12.7,
-          "_action": "WATCH",
+          "_action": "CONSIDER",
           "_style_fit": 1.0
         },
         {
@@ -1327,12 +1332,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Young five-year-old with form reading 00-665 — no wins and struggling for quality; a true hold-up horse pushed into midfield by the crowded rear, the STYLE_FIT flag (0.91) signals she won't get her preferred position, and all five career runs have been on shorter trips of 16f.",
+          "note": "A natural hold-up type for the busy Russell/Scudamore yard (0/3 T14); all five recent runs on Good ground show finishes of 5th or worse, and the STYLE_FIT flag reflects that being repositioned into midfield does not replicate the waiting role the horse actually wants — Patrick Wadge faces a stiff task to manufacture momentum from whatever position the race affords.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Patrick Wadge",
           "trainer": "Lucinda Russell & Michael Scudamore",
-          "trainer_rtf": "",
+          "trainer_rtf": "33",
           "trainer_14": "0/3",
           "last_run": "57",
           "age": "5",
@@ -1342,58 +1347,58 @@
           "headgear": "t",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Winless in her last five starts and ranked bottom of this field on our figures, Tigress Lilly faces a stiff task here; she has run over today's going before and returns after 57 days off, but consistency has been elusive and 146 lb is no help.",
           "spotlight": "",
           "_projected": 102.7,
-          "_model_price": "23/1",
-          "_mkt_price": "28/1",
-          "_win_pct": 4.1,
+          "_model_price": "25/1",
+          "_mkt_price": "33/1",
+          "_win_pct": 3.8,
           "_edge": 14.7,
           "_action": "CONSIDER",
           "_style_fit": 0.909
         }
       ],
-      "paceDynamic": "Lets Mingle is the one confirmed front-runner in this 10-runner 2m4f handicap hurdle and, with no natural rival willing to push up and press from the outset, is set to dictate a controlled, sustainable gallop on Good ground at Perth. That measured tempo plays directly into the hands of horses who can sit handy and travel within themselves, preserving energy for a genuine test over the final two hurdles — a prominent-to-midfield profile is the clear tactical beneficiary. Follow Charlie and Lowlands are the most credible late challengers from hold-up positions, but the field holds more genuine hold-up types than can all slot into the rear — Garrick Painter, Kinbara Firstdraft, and Tigress Lilly are true back-of-the-field horses redistributed to midfield on the map because the closing slots are oversubscribed, meaning their ability to produce a clean late run is compromised by their likely position being further forward than ideal. With one front-runner setting a honest but uncontested pace, this race shape most strongly favours runners with prominent or handy racing styles who can track the leader and pounce from the second-last.",
+      "paceDynamic": "Lets Mingle is the sole confirmed front-runner here and, with no natural rival to push the tempo, is expected to bowl along at a sustainable gallop from flag to finish over this 2m4f Perth trip on Good ground. Spit Spot, Annie Agnew, and Hawkseye View will press forward into prominent positions just off the leader, creating a compact early order but without the headlong speed that would seriously test Lets Mingle's stamina. The hold-up brigade — Follow Charlie, Lowlands, and Bogha Baiste — will need to close ground from further back, but with a controlled pace it is far from certain the race will be truly run to suit deep closers. This shape — an uncontested leader, measured tempo, and a tight early group — strongly favours horses who can race prominently or just off the pace and quicken from a handy position; true hold-up horses face the additional task of making up ground against a race that may never fully string out. The field holds more genuine hold-up types than can all be accommodated at the rear, with Garrick Painter, Kinbara Firstdraft, and Tigress Lilly redistributed to midfield on the map — of the three, Garrick Painter and Kinbara Firstdraft are most likely to actually find cover in the middle pack.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Lets Mingle Controls, Handy Types Pounce",
+          "title": "Lets Mingle Controls Throughout",
           "prob": 62,
-          "trigger": "If Lets Mingle leads at a fair but unforced pace and prominent runners track comfortably throughout.",
-          "body": "Lets Mingle sets the race up for those sitting just behind, and when the tempo increases from three out, handy horses like Spit Spot and Annie Agnew are ideally placed to challenge; the Good ground and moderate gallop suits horses who can quicken off a sound surface rather than grind. Follow Charlie, despite a hold-up tag, has the class (two recent wins) to pick up efficiently if ridden more positively than usual.",
+          "trigger": "If Lets Mingle is allowed to bowl along unchallenged and sets a gallop the field cannot disrupt.",
+          "body": "Lets Mingle dictates a measured pace throughout, stealing margins that a compressed field of prominent and hold-up types struggle to claw back on this flat Perth circuit. Horses racing handy — Spit Spot, Annie Agnew — are best placed to respond when the leader kicks, while back-markers face a straightforward winning distance.",
+          "winners": [
+            "Lets Mingle",
+            "Spit Spot"
+          ],
+          "others": [
+            "Annie Agnew",
+            "Follow Charlie"
+          ]
+        },
+        {
+          "label": "B",
+          "title": "Prominent Pair Land Blow",
+          "prob": 19,
+          "trigger": "If the pace-pressing horses — Spit Spot and Annie Agnew — press Lets Mingle harder than expected and the leader fades in the closing stages.",
+          "body": "A slightly faster-than-anticipated tempo drains Lets Mingle's reserves up the home straight, leaving the prominent challengers — Spit Spot, Annie Agnew — to inherit the lead and fight it out. Horses who travel just off the pace with a turn of foot stand to benefit most in this shape.",
           "winners": [
             "Spit Spot",
             "Annie Agnew"
           ],
           "others": [
             "Follow Charlie",
-            "Lets Mingle"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "Follow Charlie Swoops from Hold-Up",
-          "prob": 18,
-          "trigger": "If the pace is genuinely strong enough to string the field out and Follow Charlie's jockey (claim 5lb) gets a dream passage through.",
-          "body": "Follow Charlie has won twice recently on Good ground over 2m and drops back in trip slightly from 3m, giving him a fitness and freshness edge; if gaps appear in the straight he has the class to cut through late. His trainer is in form (2/9 over 14 days) and the 5lb claim from Murray Dodd is a meaningful booking.",
-          "winners": [
-            "Follow Charlie",
             "Lowlands"
-          ],
-          "others": [
-            "Annie Agnew",
-            "Spit Spot"
           ]
         },
         {
           "label": "C",
-          "title": "Lowlands Delivers Hold-Up Run",
-          "prob": 12,
-          "trigger": "If the pace is honest enough that the front rank tires and Lowlands, stepping back up in trip, finds a clean run.",
-          "body": "Lowlands won over 2m and has placed twice over further, and Nicky Richards is 1/2 in the past 14 days suggesting stable form; Danny McMenamin is an accomplished claimer who could produce him late with a good racing position. However, the likely controlled pace makes a deep hold-up challenge the least comfortable scenario, and the redistributed closers further crowd the back of the field.",
+          "title": "Hold-Up Closers Swoop Late",
+          "prob": 13,
+          "trigger": "If the pace is genuinely honest enough to string the field out and the leaders empty, allowing Follow Charlie or Lowlands to come through late.",
+          "body": "Follow Charlie's recent winning form and Lowlands' strong Good-ground record give these hold-up types a genuine chance if the race develops into a genuine test; both horses have won over similar trips on comparable going. However, the redistribution of several notional hold-up types to midfield positions reduces the likelihood of the race unfolding in a manner that truly rewards deep closers.",
           "winners": [
-            "Lowlands",
-            "Follow Charlie"
+            "Follow Charlie",
+            "Lowlands"
           ],
           "others": [
             "Bogha Baiste",
@@ -1402,40 +1407,40 @@
         },
         {
           "label": "D",
-          "title": "Front-Runner Steals It",
-          "prob": 8,
-          "trigger": "If Lets Mingle is left completely alone and the pace proves so slow that no one can reel her in from the last.",
-          "body": "In a race where hold-up horses are forced into unfamiliar prominent positions, Lets Mingle could exploit the resulting chaos and a flat pace by simply staying on the bridle and quickening clear from two out. Good ground suits her confirmed stamina base and she has placed at this track before, but a STYLE_FIT flag (0.94) and recent form (U-3515) tempers confidence sharply.",
+          "title": "Chaos Produces Surprise",
+          "prob": 6,
+          "trigger": "If fallers, jumping errors, or a badly-run race creates gaps that allow a lower-ranked or unexposed runner to emerge.",
+          "body": "Hawkseye View (returned from a 149-day break but has a win on Good ground) or Bogha Baiste (consistent place-form, improved fitness possible) could sneak into contention if the race shape collapses. Kinbara Firstdraft, despite modest recent form, is a true hold-up type out of its natural position and is unlikely to benefit from a chaotic shape.",
           "winners": [
-            "Lets Mingle",
-            "Hawkseye View"
+            "Hawkseye View",
+            "Bogha Baiste"
           ],
           "others": [
-            "Spit Spot",
-            "Annie Agnew"
+            "Kinbara Firstdraft",
+            "Tigress Lilly"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Lets Mingle leads entirely unchallenged — if no one goes with her from the front she could dictate a pace so slow that every hold-up horse is left with too much to do late."
+          "text": "Lets Mingle is uncontested up front — watch whether Gregor Walkingshaw (10lb claimer) sets a genuinely sustainable or dangerously slow tempo, as either extreme could dramatically reshape who benefits."
         },
         {
           "severity": "warn",
-          "text": "Garrick Painter, Kinbara Firstdraft, and Tigress Lilly are all natural hold-up horses compressed into midfield positions — watch for traffic congestion approaching the home turn as several riders seek the same ground simultaneously."
+          "text": "Follow Charlie and Lowlands are genuine hold-up horses whose chances hinge entirely on the pace being honest enough to close — if Lets Mingle crawls, both are likely to find themselves with too much ground to make up in the short Perth straight."
         },
         {
           "severity": "warn",
-          "text": "Follow Charlie's jockey Murray Dodd claims 5lb but has limited opportunities at this level — any hesitation in finding a gap between the last two hurdles could cost a hold-up horse with genuine class the winning chance."
+          "text": "Garrick Painter, Kinbara Firstdraft, and Tigress Lilly are all true hold-up types crowded out of their natural position; watch for any of them getting boxed in or lacking room on the final bend as they try to manoeuvre from a midfield slot that is not their instinctive starting point."
         },
         {
           "severity": "info",
-          "text": "Hawkseye View returns after 149 days off — monitor her market drift late to gauge stable confidence, as a forward move could signal fitness, while a big drift would confirm this is a race-fitness exercise."
+          "text": "Spit Spot and Hawkseye View both carry absence flags (57 and 149 days respectively) — watch the pre-race market for any meaningful support that might signal stable confidence after their breaks."
         },
         {
           "severity": "info",
-          "text": "Trainer Lucinda Russell & Michael Scudamore saddle three runners (Lets Mingle, Spit Spot, Tigress Lilly) but are 0/3 over the past 14 days — watch for any reported stable issues or whether the market separates one of their trio as a banker."
+          "text": "Trainer Noel Kelly's 14-day strike rate of 0/14 for Garrick Painter is a sharp negative — watch whether the market reflects inside knowledge to the contrary or simply confirms the stat."
         }
       ],
       "skipped": false
@@ -1478,12 +1483,12 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent racer with strong Good-ground credentials (2W5P in similar going, sim-going 13/15), won over 26f at Perth last time out and steps up to 3m from a 7-day turnaround under Sean Bowen for Gordon Elliott's powerful operation; blinkers on and the combination of elite trainer, top jockey, and ideal race position makes him the standout shape beneficiary.",
+          "note": "Gordon Elliott's 9-year-old has excellent Good-going credentials (2 wins and 5 places from 15 similar-surface runs) and races prominently, placing him perfectly to track Burgundy Man and strike in the closing stages; 7 days since his last run suggests he is fit and freshened, and the tongue-strap headgear is retained.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Sean Bowen",
           "trainer": "Gordon Elliott",
-          "trainer_rtf": "",
+          "trainer_rtf": "37",
           "trainer_14": "2/35",
           "last_run": "7",
           "age": "9",
@@ -1493,12 +1498,12 @@
           "headgear": "b",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Bounced back to win two starts back before a fourth last time out, and Down Around has experience of today's distance and going to call on; back within a week and carrying 168 lb, he arrives fit and ready to go.",
           "spotlight": "",
           "_projected": 93.0,
           "_model_price": "7/2",
-          "_mkt_price": "5/2",
-          "_win_pct": 21.2,
+          "_mkt_price": "16/7",
+          "_win_pct": 22.3,
           "_edge": -12.0,
           "_action": "AVOID",
           "_style_fit": 1.0
@@ -1510,12 +1515,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Genuine hold-up type whose recent form (0-9-0-5-6) gives little encouragement, though she handles Good ground and gets the trip; the amateur claimer (7lb) is a negative in a competitive handicap and she will need gaps to appear that this pace map is unlikely to create.",
+          "note": "A genuine hold-up type who has struggled for form lately (best effort a 5th), ridden by a 7lb claimer in Miss Becky Smith for trainer R Mike Smith, and returning from 34 days off; the combination of amateur jockey, modest recent figures, and a busy hold-up market makes this a tough assignment.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Miss Becky Smith(7)",
           "trainer": "R Mike Smith",
-          "trainer_rtf": "",
+          "trainer_rtf": "29",
           "trainer_14": "2/9",
           "last_run": "34",
           "age": "7",
@@ -1525,12 +1530,12 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Ranked top of the eight on our rating, Midnight Moonshine has run over today's trip and going before and returns after a 34-day break potentially freshened up, though his heavy burden of 168 lb is the chief concern given he is yet to score in recent starts.",
           "spotlight": "",
           "_projected": 93.0,
-          "_model_price": "25/1",
-          "_mkt_price": "18/1",
-          "_win_pct": 3.9,
+          "_model_price": "28/1",
+          "_mkt_price": "20/1",
+          "_win_pct": 3.5,
           "_edge": -12.0,
           "_action": "AVOID",
           "_style_fit": 1.0
@@ -1542,12 +1547,12 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Prominent racer fitted with a hood, trained by Nicky Richards whose yard is 1/2 in the 14-day window; the 86-day absence is a slight flag on an 11-year-old, but he won over 20f on Soft and his prominent style suits this solo-lead scenario well if fitness is intact.",
+          "note": "Prominent racer who brings a recent win over 20f at Southwell on Soft going, and while his similar-going record is moderate (1W1P from 10), Nicky Richards keeps him fresh with only 2 runners in 14 days; the hood is retained and at 3m he has the stamina to sit handy and challenge, though 86 days off is a slight concern.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Danny McMenamin",
           "trainer": "Nicky Richards",
-          "trainer_rtf": "",
+          "trainer_rtf": "44",
           "trainer_14": "1/2",
           "last_run": "86",
           "age": "11",
@@ -1557,12 +1562,12 @@
           "headgear": "p",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Sauce Of Life landed a win four starts back and has experience of today's trip and conditions, with our rating of 104 putting him narrowly ahead of most rivals; the main concern is a return from 86 days off following a pulled up effort two starts back.",
           "spotlight": "",
           "_projected": 93.0,
           "_model_price": "12/1",
           "_mkt_price": "44/5",
-          "_win_pct": 8.0,
+          "_win_pct": 7.9,
           "_edge": -8.0,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1574,12 +1579,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Back-to-back 24f wins on Good ground for this 11-year-old make him interesting on pure form, and he arrives just 23 days since last running; a true hold-up type by style, meaning he is reliant on the race developing a late-run scenario that the current pace structure is not strongly set up to provide.",
+          "note": "Back-to-back wins on Good ground over 24f give him strong credentials, and while he is a hold-up horse who drops back on the map, his class (OR 100) and proven finishing ability make him the most dangerous closer in the field if he gets a clean run; trainer Lisa Harrison sends him with low recent activity (0/2 in 14 days).",
           "draw": null,
           "draw_adv": null,
           "jockey": "Peter Kavanagh",
           "trainer": "Lisa Harrison",
-          "trainer_rtf": "",
+          "trainer_rtf": "32",
           "trainer_14": "0/2",
           "last_run": "23",
           "age": "11",
@@ -1589,12 +1594,12 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Dalileo won back-to-back in his last five starts but has since disappointed with a seventh, and 163 lb is a stiff ask; he has run over today's trip and going, though our rating of 96 leaves him with something to find on the figures.",
           "spotlight": "",
           "_projected": 93.0,
           "_model_price": "9/1",
-          "_mkt_price": "7/1",
-          "_win_pct": 10.0,
+          "_mkt_price": "36/5",
+          "_win_pct": 9.6,
           "_edge": -7.0,
           "_action": "WATCH",
           "_style_fit": 1.0
@@ -1606,12 +1611,12 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "Decent recent second at 24f on Good gives him a form profile worth noting, but he is a genuine hold-up horse displaced into a midfield map position — he is unlikely to get the true position his style demands here, which materially tempers his chance; the 54-day absence adds a further layer of uncertainty.",
+          "note": "A genuine hold-up operator by style — her two Good-going runs in this distance bracket show she can get involved late, but she carries a style-fit discount (0.92) as the hold-up market is crowded; 54 days since her last run and a 7lb-claiming jockey in Joshua Thompson add further caution.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Joshua Thompson(5)",
           "trainer": "Mrs A M Thomson",
-          "trainer_rtf": "",
+          "trainer_rtf": "52",
           "trainer_14": "0/0",
           "last_run": "54",
           "age": "9",
@@ -1621,12 +1626,12 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Winless in her last five starts and ranked sixth of eight here, Theirshegoes does at least bring distance and going experience to the table, and her second last time out shows she retains ability; 54 days off and a hefty 153 lb are the obstacles to overcome.",
           "spotlight": "",
           "_projected": 93.0,
           "_model_price": "6/1",
           "_mkt_price": "11/2",
-          "_win_pct": 15.0,
+          "_win_pct": 14.8,
           "_edge": 3.0,
           "_action": "WATCH",
           "_style_fit": 0.92
@@ -1638,12 +1643,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "Won at 25f and placed at 26f on Good, so the trip and surface are not concerns, and Sean Quinlan is a capable jockey; however, this is a true hold-up horse pushed forward on the map by field composition, and the 10-day turnaround following a recent run that produced a sixth suggests he is not in top form.",
+          "note": "Won over 25f on Good going and placed over 26f on Good, so the stamina is proven, and Sean Quinlan is an experienced pilot — but he is a true hold-up horse squeezed into the midfield map position; the tongue-plate and 10-day turnaround suggest he is cherry-ripe, though his recent form (P68) is modest, and being out of his natural rear-of-field role tempers expectations.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Sean Quinlan",
           "trainer": "Noel C Kelly",
-          "trainer_rtf": "",
+          "trainer_rtf": "13",
           "trainer_14": "0/14",
           "last_run": "10",
           "age": "10",
@@ -1653,12 +1658,12 @@
           "headgear": "tp",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Fresh from a run 10 days ago, Le Grand Vert brings distance and going experience to the table, and a rating of 100 gives him strong claims here; the concern is his recent sequence of an eighth and sixth in his last two starts.",
           "spotlight": "",
           "_projected": 93.0,
-          "_model_price": "9/2",
-          "_mkt_price": "5/1",
-          "_win_pct": 17.9,
+          "_model_price": "6/1",
+          "_mkt_price": "31/5",
+          "_win_pct": 14.7,
           "_edge": 7.0,
           "_action": "WATCH",
           "_style_fit": 0.927
@@ -1670,12 +1675,12 @@
           "finish_type": "E",
           "dist_code": "B",
           "going_flag": "OK",
-          "note": "The youngest in the field at five and a hold-up type by nature, C'Mon So has failed to trouble the judge in seven runs with no wins and no places on Good ground specifically; the 67-day absence and lowest OR in the field (79) compound a profile that does not suit this race shape.",
+          "note": "A 5-year-old hold-up type by trade, but his entire recent form reads 6s and 9s on Good ground and he has never won in seven similar-going runs; Derek Fox is a capable jockey for Lucinda Russell and Michael Scudamore, but 67 days off and a style-fit discount (0.91) leave this runner with the least compelling profile in the race.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Derek Fox",
           "trainer": "Lucinda Russell & Michael Scudamore",
-          "trainer_rtf": "",
+          "trainer_rtf": "33",
           "trainer_14": "0/3",
           "last_run": "67",
           "age": "5",
@@ -1685,12 +1690,12 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Winless in his last five starts and ranked seventh of eight on our figures, C'Mon So faces a stiff ask here; he hasn't troubled the judge in recent outings, though experience over today's trip and going, plus 67 days of freshening up, offer modest crumbs of comfort.",
           "spotlight": "",
           "_projected": 93.0,
-          "_model_price": "4/1",
-          "_mkt_price": "11/2",
-          "_win_pct": 20.0,
+          "_model_price": "7/2",
+          "_mkt_price": "9/2",
+          "_win_pct": 23.3,
           "_edge": 14.0,
           "_action": "CONSIDER",
           "_style_fit": 0.913
@@ -1702,12 +1707,12 @@
           "finish_type": "E",
           "dist_code": "B+",
           "going_flag": "OK",
-          "note": "The sole front-runner, he has not won in five visible starts but shapes the entire race by leading; Toby Wynne takes over for the R Mike Smith yard (2/9 in 14 days) and if he is allowed to dictate at a comfortable gallop, he could prove very difficult to catch, though his completion record has been patchy.",
+          "note": "The lone confirmed front-runner who will control the pace from flag to finish — his recent form (6-P9PP) and total absence of wins from five Good-going starts are serious flags, suggesting he is a reliable pace-setter but an unlikely winner; Toby Wynne for R Mike Smith must keep it sensible, as this horse is likely to be passed in the closing stages.",
           "draw": null,
           "draw_adv": null,
           "jockey": "Toby Wynne",
           "trainer": "R Mike Smith",
-          "trainer_rtf": "",
+          "trainer_rtf": "29",
           "trainer_14": "2/9",
           "last_run": "23",
           "age": "9",
@@ -1717,100 +1722,100 @@
           "headgear": "",
           "rpr": "",
           "ts": "",
-          "comment": "",
+          "comment": "Burgundy Man has pulled up three times in his last five starts and is winless in that spell, making him very difficult to fancy ranked last on our figures; he has run over today's trip and going before, and 23 days between runs at least suggests he arrives fresh.",
           "spotlight": "",
           "_projected": 93.0,
           "_model_price": "25/1",
           "_mkt_price": "33/1",
-          "_win_pct": 4.0,
+          "_win_pct": 3.9,
           "_edge": 15.0,
           "_action": "CONSIDER",
           "_style_fit": 1.0
         }
       ],
-      "paceDynamic": "Burgundy Man is the sole confirmed front-runner in this 3m Perth hurdle on Good ground, and with no rival likely to dispute his lead from flag to finish, he is set to control proceedings at a pace entirely of his own choosing — sustainable, unhurried, and potentially race-shaping. Down Around and Sauce Of Life are the two genuine prominent types who will track him, meaning the real race will be run out from second and third throughout rather than at the head of affairs. This field actually contains a heavy cluster of hold-up horses — Theirshegoes, Le Grand Vert, and C'Mon So are true hold-up types but have been mapped to midfield because there is nowhere else to place them, and none of them are likely to get the true position their style demands in this compressed shape. The race shape strongly favours prominent racers who can travel efficiently behind a solo leader and pounce before the hold-up horses get into the race, making Down Around and Sauce Of Life the primary beneficiaries of this configuration.",
+      "paceDynamic": "Burgundy Man is the sole confirmed front-runner and, with no serious challenger for the lead in a 3m Perth hurdle on Good ground, he will bowl along at a comfortable, self-regulated tempo from the outset. Down Around and Sauce Of Life will press forward into prominent positions directly behind him, creating a small, settled lead group rather than a contested gallop. This field contains more hold-up horses than the race shape can naturally accommodate — Theirshegoes, Le Grand Vert, and C'Mon So are genuine hold-up types but are mapped to midfield because the rear is overcrowded with closers; they are unlikely to get the wide, clean passage late that their style ideally requires, with Le Grand Vert and Theirshegoes the most experienced at this trip and the likeliest to find cover efficiently. A sustainable, front-runner-controlled pace over 3m on Good ground at Perth strongly favours horses racing prominently who can track the pace and strike from 2-3 out, before the back-markers can wind up their challenge.",
       "scenarios": [
         {
           "label": "A",
-          "title": "Burgundy Man Leads, Prominent Win",
+          "title": "Burgundy Man Controls, Prominent Pounce",
           "prob": 62,
-          "trigger": "If Burgundy Man sets a genuine but unhurried tempo and the prominent horses travel comfortably before the last",
-          "body": "Burgundy Man dictates on his own terms from the front, keeping the race honest enough to expose hold-up horses but controlled enough to reward those who track him; Down Around and Sauce Of Life, both prominent types with good Good-ground records, are ideally positioned to pounce at the third-last.",
+          "trigger": "If Burgundy Man sets a steady, uncontested pace and the race develops as a controlled test of stamina from the front.",
+          "body": "Burgundy Man dictates from the front on Good ground over 3m, with Down Around and Sauce Of Life sitting close enough to strike turning in; the steady pace means those racing prominently conserve energy and have first run on the closers. Down Around's record on Good going (2 wins, 5 places from 15 similar-going runs) and Gordon Elliott's in-form yard (2/35 in 14 days) make him the natural beneficiary of this shape, while Sauce Of Life's prominent style and recent win give him claims.",
           "winners": [
             "Down Around",
             "Sauce Of Life"
           ],
           "others": [
             "Dalileo",
-            "Burgundy Man"
-          ]
-        },
-        {
-          "label": "B",
-          "title": "Lone Leader Steals It",
-          "prob": 18,
-          "trigger": "If Burgundy Man is allowed to dictate at a truly modest pace and builds an unassailable lead before rivals can respond",
-          "body": "With no pace pressure whatsoever, Burgundy Man could bounce along in front and simply not be reeled in, particularly if the hold-up horses are bottled up in midfield traffic and can never get to him; his 0W5P record suggests he is competitive without winning but this configuration maximises his chance.",
-          "winners": [
-            "Burgundy Man",
-            "Down Around"
-          ],
-          "others": [
-            "Sauce Of Life",
-            "Dalileo"
-          ]
-        },
-        {
-          "label": "C",
-          "title": "Dalileo Late Surge",
-          "prob": 12,
-          "trigger": "If the pace collapses in the final mile and hold-up horses get a clear run for home",
-          "body": "Dalileo has won twice at 24f on Good and arrives on the back of back-to-back wins, and if the field strings out and gaps appear, Peter Kavanagh can produce him with a late challenge; however this depends on a race shape that does not strongly favour hold-up runners given the pace dynamic.",
-          "winners": [
-            "Dalileo",
-            "Midnight Moonshine"
-          ],
-          "others": [
-            "Le Grand Vert",
             "Theirshegoes"
           ]
         },
         {
-          "label": "D",
-          "title": "Hold-Up Runners Pounce",
-          "prob": 8,
-          "trigger": "If the pace collapses dramatically and the redistributed midfield horses find racing room to finish strongly",
-          "body": "Theirshegoes, Le Grand Vert, and C'Mon So are all true hold-up types racing out of role in this shape, making a scenario dependent on them genuinely unlikely; Midnight Moonshine, a genuine hold-up type, is best placed of this group but her form figures offer limited confidence.",
+          "label": "B",
+          "title": "Dalileo Makes Late Ground",
+          "prob": 20,
+          "trigger": "If the pace is genuinely steady enough to compress the finish and Dalileo, a proven winner over 24f on Good ground twice in succession, gets a clear run from the rear.",
+          "body": "Dalileo's hold-up style and proven finishing kick (back-to-back wins on Good ground) mean a genuinely slow early pace can suit him if the race develops into a sprint finish; he will need a clear passage but has the class rating to warrant respect. Peter Kavanagh must position him well early to avoid being caught flat-footed in a compressed finish, but his two recent wins at 24f suggest the extra 2f here is not certain to help.",
           "winners": [
-            "Midnight Moonshine",
+            "Dalileo",
             "Le Grand Vert"
           ],
           "others": [
             "Theirshegoes",
-            "C'Mon So"
+            "Down Around"
+          ]
+        },
+        {
+          "label": "C",
+          "title": "Attrition Test, Stamina Paramount",
+          "prob": 12,
+          "trigger": "If Burgundy Man gradually increases tempo from halfway, turning the race into a sustained stamina test that strings the field out.",
+          "body": "A stronger gallop set by Burgundy Man would ruthlessly expose any hold-up horses lacking the stamina for 3m on Good Perth ground, reducing the field to those with proven staying credentials; Down Around's 3m history and Dalileo's bold jumping record become critical. Midnight Moonshine, a genuine hold-up type with amateur jockey Miss Becky Smith, is likely to find this shape most damaging given his modest recent form and 34-day absence.",
+          "winners": [
+            "Down Around",
+            "Dalileo"
+          ],
+          "others": [
+            "Sauce Of Life",
+            "Burgundy Man"
+          ]
+        },
+        {
+          "label": "D",
+          "title": "Closers Swamp Tiring Leader",
+          "prob": 6,
+          "trigger": "If Burgundy Man's lack of a recent win (0 wins from 5 similar-going runs) sees him fade dramatically from 2 out, leaving the door open to hold-up horses.",
+          "body": "In this unlikely shape, Burgundy Man's poor record (6-P9PP recent form) catches up with him and he capitulates suddenly in the closing stages, briefly creating a gap for hold-up horses; however, Theirshegoes, Le Grand Vert, and C'Mon So are all racing somewhat out of their natural role and carry reduced style-fit scores, making this scenario the least likely to fully materialise. Le Grand Vert has the strongest hold-up credentials of the trio and the most course-relevant win in his history.",
+          "winners": [
+            "Le Grand Vert",
+            "Theirshegoes"
+          ],
+          "others": [
+            "C'Mon So",
+            "Dalileo"
           ]
         }
       ],
       "watchPoints": [
         {
           "severity": "danger",
-          "text": "Burgundy Man's gallop from the front is the race-shaping factor — if he quickens going away from the back straight, watch whether Down Around and Sauce Of Life have the pace reserves to close, because the hold-up horses behind them almost certainly will not."
+          "text": "Burgundy Man's stamina — watch whether he begins to shorten stride and capitulate between the second-last and last hurdle, as this is the moment Down Around and Sauce Of Life will make their winning moves."
         },
         {
           "severity": "warn",
-          "text": "Sauce Of Life's 86-day absence at age 11 is a fitness flag — if he travels poorly early under Danny McMenamin and drops away before the final mile, the prominent side of the race loses a key player and Dalileo's closing chance improves."
+          "text": "Le Grand Vert and Theirshegoes are genuine hold-up horses forced into midfield by a crowded rear; watch how Sean Quinlan and Joshua Thompson manage traffic from the halfway point, as a poor position could end their challenge before the home turn."
         },
         {
           "severity": "warn",
-          "text": "Theirshegoes, Le Grand Vert, and C'Mon So are all genuine hold-up horses squeezed into a midfield role by field composition — watch for traffic problems on the final bend if they are all tracking each other and none can find a clear passage."
+          "text": "Sauce Of Life is returning from 86 days off for Nicky Richards — watch his jumping fluency early, as a jumping error from a prominent position over 3m on Good ground could cost him any winning chance."
         },
         {
           "severity": "info",
-          "text": "Dalileo's back-to-back wins give him the best recent winning form in the race, but Peter Kavanagh will need a gap to appear from the three-out flight — watch whether the prominent horses clear enough space for him to thread through."
+          "text": "Down Around has Gordon Elliott's backing (2/35 in 14 days) and is fresh off a 7-day turnaround — watch whether Sean Bowen sends him into second immediately after the first hurdle to ensure he is on the heels of Burgundy Man throughout."
         },
         {
           "severity": "info",
-          "text": "Gordon Elliott's T14 strike rate (2/35) looks modest in raw terms but his runners are rarely non-triers; with Sean Bowen booked, Down Around arriving fresh off a Perth win and stepping up in trip, watch for him to be produced with purpose from the third-last."
+          "text": "Dalileo has won twice in a row on Good going and is the form horse in the field at OR 100 — watch whether Peter Kavanagh can get him to travel comfortably in the first half of the race, as a strong finish depends entirely on a trouble-free passage off the final bend."
         }
       ],
       "skipped": false
