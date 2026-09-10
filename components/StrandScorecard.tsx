@@ -6,6 +6,7 @@
  *
  * Usage, beside the pace map inside the same paywall gate:
  *   {race.strands && <StrandScorecard data={race.strands} />}
+ * Pass hideTitle when the page supplies its own section label.
  */
 
 import { useId, useState } from 'react';
@@ -55,7 +56,14 @@ function fmtTotal(t: number): string {
   return Number.isInteger(t) ? String(t) : t.toFixed(1);
 }
 
-export default function StrandScorecard({ data }: { data?: StrandBlock | null }) {
+export default function StrandScorecard({
+  data,
+  hideTitle = false,
+}: {
+  data?: StrandBlock | null;
+  /** Set when the page already provides a section label. */
+  hideTitle?: boolean;
+}) {
   const [open, setOpen] = useState<number | null>(null);
   const uid = useId();
   if (!data || !data.runners?.length) return null;
@@ -66,7 +74,7 @@ export default function StrandScorecard({ data }: { data?: StrandBlock | null })
 
   return (
     <section className={styles.card} aria-label="Strand scorecard">
-      <h3 className={styles.title}>Strand scorecard</h3>
+      {!hideTitle && <h3 className={styles.title}>Strand scorecard</h3>}
 
       <div className={styles.pick}>
         <span className={styles.pickName}>{data.pick}</span>
