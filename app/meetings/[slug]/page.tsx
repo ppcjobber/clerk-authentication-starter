@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import RacePositionMap from "@/components/RacePositionMap";
+import StrandScorecard, { type StrandBlock } from "@/components/StrandScorecard";
 import { useUser } from "@clerk/nextjs";
 import { useEffect, useState, useRef } from "react";
 
@@ -70,6 +71,7 @@ type Race = {
   scenarios: Scenario[];
   watchPoints: WatchPoint[];
   skipped?: boolean;
+  strands?: StrandBlock | null;
 };
 
 type MeetingData = {
@@ -662,6 +664,13 @@ function RaceCard({ race, hasAccess, meetingDate }: {
               scenarios={race.scenarios}
               paceDynamic={race.paceDynamic}
             />
+          </>
+        )}
+
+        {race.strands && (
+          <>
+            <SectionLabel>Strand scorecard</SectionLabel>
+            <StrandScorecard data={race.strands} hideTitle />
           </>
         )}
 
