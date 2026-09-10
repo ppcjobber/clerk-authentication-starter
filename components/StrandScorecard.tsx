@@ -60,12 +60,15 @@ function fmtTotal(t: number): string {
 export default function StrandScorecard({
   data,
   hideTitle = false,
+  defaultOpen = null,
 }: {
   data?: StrandBlock | null;
   /** Set when the page already provides a section label. */
   hideTitle?: boolean;
+  /** Index of a runner to show expanded on first render (null = all closed). */
+  defaultOpen?: number | null;
 }) {
-  const [open, setOpen] = useState<number | null>(null);
+  const [open, setOpen] = useState<number | null>(defaultOpen);
   const uid = useId();
   if (!data || !data.runners?.length) return null;
 
@@ -84,6 +87,7 @@ export default function StrandScorecard({
         </span>
       </div>
       <p className={styles.summary}>{data.summary}</p>
+      <p className={styles.hint}>Tap any runner to see the evidence behind each score</p>
 
       <div className={styles.head} style={cols} aria-hidden="true">
         {labels.map((l) => (
@@ -106,9 +110,15 @@ export default function StrandScorecard({
                 aria-controls={detId}
                 onClick={() => setOpen(isOpen ? null : i)}
               >
-                <span className={styles.name}>
-                  {r.name}
-                  {r.draw ? <span className={styles.draw}> ({r.draw})</span> : null}
+                <span className={styles.nameLine}>
+                  <span className={styles.name}>
+                    {r.name}
+                    {r.draw ? <span className={styles.draw}> ({r.draw})</span> : null}
+                  </span>
+                  <span className={styles.toggle} aria-hidden="true">
+                    {isOpen ? 'Hide' : 'Why'}
+                    <span className={`${styles.chev} ${isOpen ? styles.chevOpen : ''}`}>&#9662;</span>
+                  </span>
                 </span>
                 {r.scores.map((v, k) => (
                   <span
