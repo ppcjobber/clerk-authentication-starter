@@ -70,13 +70,15 @@ function MeetingCard({ m }: { m: Meeting }) {
   );
 }
 
-function MeetingSection({ title, meetings, emptyText }: {
+function MeetingSection({ id, title, meetings, emptyText }: {
+  id?: string;
   title: string;
   meetings: Meeting[];
   emptyText: string;
 }) {
   return (
-    <div style={{ marginBottom: "36px" }}>
+    // scrollMarginTop keeps the heading clear of the fixed 64px nav when jumped to
+    <div id={id} style={{ marginBottom: "36px", scrollMarginTop: "88px" }}>
       <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "14px" }}>
         <span style={{
           fontFamily: "'Bebas Neue',sans-serif", fontSize: "1.1rem",
@@ -245,7 +247,12 @@ export default async function Home() {
           evening before.
         </p>
         <div className="a4" style={{ display: "flex", gap: "16px", flexWrap: "wrap", alignItems: "center" }}>
-          <Link href="/archive" className="btn btn-gold">View All Meetings →</Link>
+          {/* Jumps to the Today list further down the page */}
+          <a href="#todays-meetings" className="btn btn-gold">View Today&rsquo;s Meetings →</a>
+          <Link href="/archive" className="btn" style={{
+            background: "transparent", color: "var(--gold)",
+            border: "1px solid rgba(201,168,76,0.5)",
+          }}>View Meetings Archive →</Link>
           <Link href="/method" style={{
             fontFamily: "'DM Mono',monospace", fontSize: "0.68rem",
             letterSpacing: "0.08em", textTransform: "uppercase",
@@ -382,6 +389,7 @@ export default async function Home() {
         }}>Published Daily From 6pm</h2>
 
         <MeetingSection
+          id="todays-meetings"
           title="Today"
           meetings={today}
           emptyText="No meetings published for today yet — check back later."
