@@ -3053,7 +3053,7 @@ def _narrative_prompt(meta, ev, runners, going_report, is_flat,
                 hist_str += ' sim-going:{}/{} {}W{}P'.format(len(going_runs), len(horse_obj.runs), gw, gp)
         spot_str = '\n    SP: {}'.format(spotlight[:160]) if spotlight else ''
         runner_lines.append('  {:<26} OR={:<4} style={} going={}{}{}{}{}{}{}{}'.format(
-            name, r.get('or','--'), s.get('style_code','U'), s.get('going_flag','?'),
+            name, r.get('or') or '--', s.get('style_code','U'), s.get('going_flag','?'),   # 'or' is None for unrated horses
             flag, redis_str, fit_str, draw_str, extras_str, hist_str, spot_str))
     runners_block = '\n'.join(runner_lines)
     draw_note = ''
