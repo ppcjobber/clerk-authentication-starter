@@ -2,7 +2,8 @@ name: PaceMap Daily Pipeline
 
 on:
   schedule:
-    # 6:30pm UK time (BST = UTC+1, so 17:30 UTC in summer)
+    # 17:30 UTC = 6:30pm BST in summer, 5:30pm GMT in winter.
+    # pipeline.py treats any run from 17:00 UK time as 'tomorrow'.
     - cron: '30 17 * * *'
     # 12:05am UK time (23:05 UTC in BST)
     - cron: '5 23 * * *'
@@ -28,6 +29,18 @@ jobs:
       - name: Install dependencies
         run: |
           pip install requests pytz openpyxl python-docx
+
+      # Horse form comes from a local results cache (the per-horse results
+      # endpoint is Pro-only). Restore the latest cache, top it up during the
+      # run, and save it back. The first run with no cache backfills 12 months
+      # of GB/IRE results (roughly 270 API calls, 3-5 minutes).
+      - name: Restore results cache
+        uses: actions/cache@v4
+        with:
+          path: results_cache
+          key: results-cache-${{ github.run_id }}
+          restore-keys: |
+            results-cache-
 
       - name: Run PaceMap pipeline
         env:
