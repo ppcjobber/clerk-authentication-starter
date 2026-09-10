@@ -2674,8 +2674,11 @@ def _build_runner_data(meta, ev, style_summary=None):
         name = r.horse_name; s = style_summary.get(name, {}) if style_summary else {}
         extra = extras_map.get(name, {})
         draw = extra.get('draw')   # stall number; saddlecloth is not the draw
+        # Unrated horses carry an internal stand-in rating; never publish it as an OR
+        _h = next((h for h in meta.get('horses', []) if h.name == name), None)
+        or_public = None if (_h is not None and getattr(_h, '_proxy_note', None)) else r.official_rating
         out.append({
-            'name':name,'or':r.official_rating,'style_code':s.get('style_code','U'),
+            'name':name,'or':or_public,'style_code':s.get('style_code','U'),
             'finish_type':s.get('finish_type','E'),'dist_code':s.get('dist_code','B'),
             'going_flag':s.get('going_flag','UNKNOWN'),'note':'','draw':draw,
             'draw_adv':_draw_adv(draw,ev.field_size,course,dist_f) if is_flat else None,
