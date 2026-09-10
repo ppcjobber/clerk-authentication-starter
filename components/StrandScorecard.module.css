@@ -42,7 +42,14 @@
   letter-spacing: 0.04em;
   color: var(--sc-muted);
 }
-.summary { margin: 10px 0 14px; font-size: 0.875rem; line-height: 1.55; color: rgba(245, 240, 232, 0.85); }
+.summary { margin: 10px 0 6px; font-size: 0.875rem; line-height: 1.55; color: rgba(245, 240, 232, 0.85); }
+.hint {
+  margin: 0 0 12px;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.06em;
+  color: rgba(201, 168, 76, 0.75);
+}
 
 .head, .row { display: grid; gap: 4px; align-items: center; }
 .head {
@@ -85,7 +92,39 @@
 }
 .row:hover { background: rgba(255, 255, 255, 0.025); }
 .row:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
-.name { grid-column: 1 / -1; font-size: 0.9rem; font-weight: 600; margin-bottom: 3px; }
+.nameLine {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 3px;
+}
+.name { font-size: 0.9rem; font-weight: 600; }
+.toggle {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 7px;
+  border: 1px solid rgba(201, 168, 76, 0.35);
+  border-radius: 2px;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.56rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  transition: background 0.15s, border-color 0.15s;
+}
+.row:hover .toggle, .row[aria-expanded='true'] .toggle {
+  background: rgba(201, 168, 76, 0.12);
+  border-color: rgba(201, 168, 76, 0.6);
+}
+.chev { display: inline-block; font-size: 0.7rem; line-height: 1; transition: transform 0.15s; }
+.chevOpen { transform: rotate(180deg); }
+@media (prefers-reduced-motion: reduce) {
+  .chev, .toggle { transition: none; }
+}
 .draw { font-family: 'DM Mono', monospace; font-size: 0.7rem; font-weight: 400; color: var(--sc-muted); }
 
 /* Cells follow the .ground-tag colours: green = in its favour, red = against, grey = neutral.
@@ -118,7 +157,14 @@
   color: var(--gold);
 }
 
-.detail { margin: 0; padding: 4px 0 12px; font-size: 0.8rem; line-height: 1.5; }
+.detail {
+  margin: 0 0 10px;
+  padding: 8px 10px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  background: rgba(201, 168, 76, 0.05);
+  border-left: 2px solid rgba(201, 168, 76, 0.5);
+}
 .detailRow { display: grid; grid-template-columns: 76px 1fr; gap: 10px; padding: 2px 0; }
 .detailRow dt {
   font-family: 'DM Mono', monospace;
