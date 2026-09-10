@@ -53,7 +53,8 @@ function fmt(v: StrandScore): string {
 }
 
 function fmtTotal(t: number): string {
-  return Number.isInteger(t) ? String(t) : t.toFixed(1);
+  const s = Number.isInteger(t) ? String(Math.abs(t)) : Math.abs(t).toFixed(1);
+  return t < 0 ? `\u2212${s}` : s;
 }
 
 export default function StrandScorecard({
