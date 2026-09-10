@@ -2,6 +2,12 @@
 """
 PaceMap Daily Pipeline
 Runs automatically via GitHub Actions at 6:30pm UK time.
+
+Revised 2026-09-10: horse form now comes from a local results cache built from
+/results (works on the Standard plan); running style read from the opening of
+each comment; draw adjustment uses the stall number; distance-scaled lbs per
+length; course codes for Chester / Chelmsford City no longer collide with
+Cheltenham; Chester added to DRAW_BIAS; hand-entered _FLAT_BIAS retired.
 Fetches racecards, runs ANCHOR engine, generates Claude narratives, publishes JSON to GitHub.
 
 Required environment variables (set as GitHub Secrets):
@@ -636,7 +642,18 @@ from datetime import date
 from typing import Optional
 import math
 
-LB_PER_LENGTH   = 1.0
+LB_PER_LENGTH   = 1.0   # jumps / fallback value
+
+def lbs_per_length(distance_f):
+    """Standard-style scale: ~3 lb/length at 5f down to 1 lb/length at 2m+.
+    Jumps distances (16f+) resolve to 1.0, so jumps ratings are unchanged."""
+    try:
+        d = float(distance_f)
+    except (TypeError, ValueError):
+        return LB_PER_LENGTH
+    if d <= 0:
+        return LB_PER_LENGTH
+    return max(1.0, min(3.0, 15.0 / d))
 MAX_CHAIN_DEPTH = 3
 
 RECENCY_TABLE = [
@@ -752,13 +769,13 @@ def raw_private_rating(run, horse_or):
     if run.position == 1 and run.margin_lengths is not None:
         anchor = run.second_or or run.race_or_anchor or run.chain_source_or
         if anchor is None: return None
-        pr = float(anchor) + (run.margin_lengths * LB_PER_LENGTH)
+        pr = float(anchor) + (run.margin_lengths * lbs_per_length(getattr(run, 'distance_f', None)))
         if run.chain_depth > 0: pr = (pr * cd) + (horse_or * (1.0 - cd))
         return pr
     if run.position and run.position > 1 and run.margin_lengths is not None:
         anchor = run.race_or_anchor or run.chain_source_or
         if anchor is None: return None
-        pr = float(anchor) - (run.margin_lengths * LB_PER_LENGTH)
+        pr = float(anchor) - (run.margin_lengths * lbs_per_length(getattr(run, 'distance_f', None)))
         if run.chain_depth > 0: pr = (pr * cd) + (horse_or * (1.0 - cd))
         return pr
     return None
@@ -857,6 +874,36 @@ COURSE_DATA = {
     "WOR": {"handed":"L","type":"SHARP","undulating":False,"hill":False},
     "CAR": {"handed":"R","type":"GALLOPING","undulating":True,"hill":True},
     "PER": {"handed":"R","type":"SHARP","undulating":False,"hill":False},
+    # Flat and all-weather tracks. Hand-classified: review and correct.
+    "CHS": {"handed":"L","type":"SHARP","undulating":False,"hill":False},   # Chester
+    "CAT": {"handed":"L","type":"SHARP","undulating":True, "hill":False},
+    "CHF": {"handed":"L","type":"SHARP","undulating":False,"hill":False},   # Chelmsford City
+    "LIN": {"handed":"L","type":"SHARP","undulating":False,"hill":False},
+    "WOL": {"handed":"L","type":"SHARP","undulating":False,"hill":False},
+    "SOW": {"handed":"L","type":"SHARP","undulating":False,"hill":False},
+    "BTN": {"handed":"L","type":"SHARP","undulating":True, "hill":True},
+    "EPS": {"handed":"L","type":"SHARP","undulating":True, "hill":True},
+    "DUN": {"handed":"L","type":"SHARP","undulating":False,"hill":False},
+    "BEV": {"handed":"R","type":"SHARP","undulating":True, "hill":True},
+    "MUS": {"handed":"R","type":"SHARP","undulating":False,"hill":False},
+    "RIP": {"handed":"R","type":"SHARP","undulating":True, "hill":False},
+    "HAM": {"handed":"R","type":"SHARP","undulating":True, "hill":True},
+    "THI": {"handed":"L","type":"SHARP","undulating":False,"hill":False},
+    "PON": {"handed":"L","type":"GALLOPING","undulating":True, "hill":True},
+    "BAT": {"handed":"L","type":"GALLOPING","undulating":True, "hill":True},
+    "CPW": {"handed":"L","type":"GALLOPING","undulating":True, "hill":False},
+    "FFS": {"handed":"L","type":"GALLOPING","undulating":False,"hill":False},
+    "NOT": {"handed":"L","type":"GALLOPING","undulating":False,"hill":False},
+    "NWB": {"handed":"L","type":"GALLOPING","undulating":False,"hill":False},
+    "AYR": {"handed":"L","type":"GALLOPING","undulating":False,"hill":False},
+    "RED": {"handed":"L","type":"GALLOPING","undulating":False,"hill":False},
+    "YAR": {"handed":"L","type":"GALLOPING","undulating":False,"hill":False},
+    "GOO": {"handed":"R","type":"SHARP","undulating":True, "hill":True},
+    "LEI": {"handed":"R","type":"GALLOPING","undulating":True, "hill":True},
+    "SAL": {"handed":"R","type":"GALLOPING","undulating":True, "hill":True},
+    "NMK": {"handed":"R","type":"GALLOPING","undulating":True, "hill":True},
+    "WIN": {"handed":"R","type":"SHARP","undulating":False,"hill":False},
+    "CUR": {"handed":"R","type":"GALLOPING","undulating":False,"hill":False},
 }
 
 def course_match_score(course_a, course_b):
@@ -870,6 +917,9 @@ def course_match_score(course_a, course_b):
     return score
 
 def distance_band(furlongs):
+    if furlongs <= 6.5:  return "SPRINT"
+    if furlongs <= 9.5:  return "MILE"
+    if furlongs <= 12.5: return "MIDDLE_FLAT"
     if furlongs < 16: return "SHORT"
     if furlongs < 20: return "MIDDLE"
     if furlongs < 24: return "EXTENDED"
@@ -1688,17 +1738,158 @@ class RacingAPIClient:
         if region_codes: params['region_codes'] = region_codes
         return self._get('/courses', params=params).get('courses', [])
 
-    def get_horse_results(self, horse_id, limit=15):
-        try:
+    def get_results(self, start_date, end_date, regions=('gb', 'ire'), skip=0, limit=50):
+        """One page of results. Available on the Standard plan (12-month lookback)."""
+        params = {'start_date': str(start_date), 'end_date': str(end_date),
+                  'region': list(regions), 'limit': limit, 'skip': skip}
+        for attempt in range(5):
             time.sleep(RATE_LIMIT_DELAY)
-            return self._get(f'/racecards/{horse_id}/results', params={'limit': limit}).get('results', [])
-        except requests.HTTPError as e:
-            code = e.response.status_code if e.response else '?'
-            if code != 404: print(f'    warning: results HTTP {code} [{horse_id}]')
-            return []
+            r = self.session.get(f'{BASE_URL}/results', params=params, timeout=30)
+            if r.status_code == 429:
+                time.sleep(2 ** attempt)
+                continue
+            r.raise_for_status()
+            return r.json().get('results', [])
+        r.raise_for_status()
+        return []
+
+    def get_horse_results(self, horse_id, limit=15):
+        """Horse form from the local results cache.
+        The per-horse endpoint (/horses/{id}/results) is Pro-only, and the old
+        path (/racecards/{id}/results) did not exist, so every horse was
+        previously loaded with no form and the error was swallowed."""
+        cache = getattr(self, 'results_cache', None)
+        if cache is None:
+            raise RuntimeError('results cache not attached to client')
+        return cache.horse_results(horse_id, limit=limit)
+
+
+import gzip, json as _json
+import datetime as _dtmod   # private alias: later cells rebind the name 'datetime' to the module
+from collections import defaultdict as _defaultdict
+
+RESULTS_CACHE_DIR     = os.environ.get('RESULTS_CACHE_DIR', 'results_cache')
+RESULTS_LOOKBACK_DAYS = 364      # Standard plan: start date must be within 12 months
+RESULTS_WINDOW_DAYS   = 30
+FORM_RUNS_LIMIT       = 15
+
+class ResultsCache:
+    """Local store of GB/IRE results built from /results.
+
+    results_cache/YYYY-MM.json.gz  trimmed races for that month
+    results_cache/meta.json        {"complete_to": "YYYY-MM-DD"}
+
+    First run backfills 12 months (~270 API calls). Later runs fetch only the
+    days since the last complete day, plus today's results (not persisted,
+    because today's card may be unfinished)."""
+
+    RACE_KEYS = ('race_id', 'date', 'region', 'course', 'course_id', 'race_name', 'type',
+                 'class', 'pattern', 'dist', 'dist_f', 'going', 'surface')
+    RUNNER_KEYS = ('horse_id', 'horse', 'position', 'btn', 'ovr_btn', 'draw', 'or', 'rpr',
+                   'performance_rating', 'sp_dec', 'comment', 'jockey', 'trainer',
+                   'trainer_id', 'weight_lbs', 'number')
+
+    def __init__(self, client, cache_dir=RESULTS_CACHE_DIR, regions=('gb', 'ire')):
+        self.client = client; self.dir = cache_dir; self.regions = regions
+        self.months = {}; self.today_races = []; self.index = None
+        os.makedirs(self.dir, exist_ok=True)
+
+    def _trim(self, race):
+        out = {k: race.get(k) for k in self.RACE_KEYS}
+        out['runners'] = [{k: rn.get(k) for k in self.RUNNER_KEYS} for rn in race.get('runners', [])]
+        return out
+
+    def _path(self, ym): return os.path.join(self.dir, f'{ym}.json.gz')
+
+    def _load_month(self, ym):
+        if ym not in self.months:
+            p = self._path(ym)
+            if os.path.exists(p):
+                with gzip.open(p, 'rt', encoding='utf-8') as fh:
+                    self.months[ym] = {r['race_id']: r for r in _json.load(fh)}
+            else:
+                self.months[ym] = {}
+        return self.months[ym]
+
+    def _save_month(self, ym):
+        with gzip.open(self._path(ym), 'wt', encoding='utf-8') as fh:
+            _json.dump(list(self.months[ym].values()), fh)
+
+    def _meta(self):
+        p = os.path.join(self.dir, 'meta.json')
+        if os.path.exists(p):
+            with open(p) as fh: return _json.load(fh)
+        return {}
+
+    def _fetch_range(self, start, end):
+        races, win = [], start
+        while win <= end:
+            win_end = min(win + _dtmod.timedelta(days=RESULTS_WINDOW_DAYS - 1), end)
+            skip = 0
+            while True:
+                batch = self.client.get_results(win, win_end, self.regions, skip=skip)
+                races.extend(batch)
+                if len(batch) < 50: break
+                skip += 50
+            print(f'    results {win} to {win_end}: {len(races)} races so far')
+            win = win_end + _dtmod.timedelta(days=1)
+        return races
+
+    def refresh(self, today):
+        """Bring the cache up to yesterday, then fetch today's results so far."""
+        earliest = today - _dtmod.timedelta(days=RESULTS_LOOKBACK_DAYS)
+        meta = self._meta()
+        complete_to = (_dtmod.datetime.strptime(meta['complete_to'], '%Y-%m-%d').date()
+                       if meta.get('complete_to') else earliest - _dtmod.timedelta(days=1))
+        start = max(complete_to + _dtmod.timedelta(days=1), earliest)
+        end = today - _dtmod.timedelta(days=1)
+        if start <= end:
+            print(f'  Results cache: fetching {start} to {end}')
+            fetched = self._fetch_range(start, end)
+            touched = set()
+            for race in fetched:
+                ym = str(race.get('date', ''))[:7]
+                if not ym: continue
+                self._load_month(ym)[race['race_id']] = self._trim(race)
+                touched.add(ym)
+            for ym in touched: self._save_month(ym)
+            with open(os.path.join(self.dir, 'meta.json'), 'w') as fh:
+                _json.dump({'complete_to': str(end)}, fh)
+        else:
+            print(f'  Results cache: complete to {complete_to}')
+        # prune months that have fallen outside the lookback window
+        for fn in os.listdir(self.dir):
+            if fn.endswith('.json.gz') and fn[:7] < str(earliest)[:7]:
+                os.remove(os.path.join(self.dir, fn))
+        try:
+            self.today_races = [self._trim(r) for r in self._fetch_range(today, today)]
         except Exception as e:
-            print(f'    warning: results error [{horse_id}]: {e}')
-            return []
+            print(f'  warning: today\'s results not fetched: {e}')
+            self.today_races = []
+        self.index = None
+
+    def _build_index(self):
+        idx = _defaultdict(list)
+        for fn in sorted(os.listdir(self.dir)):
+            if fn.endswith('.json.gz'): self._load_month(fn[:7])
+        seen = set()
+        for month in self.months.values():
+            for race in month.values():
+                seen.add(race['race_id'])
+                for rn in race['runners']:
+                    if rn.get('horse_id'): idx[rn['horse_id']].append(race)
+        for race in self.today_races:
+            if race['race_id'] in seen: continue
+            for rn in race['runners']:
+                if rn.get('horse_id'): idx[rn['horse_id']].append(race)
+        for hid in idx: idx[hid].sort(key=lambda r: r.get('date', ''), reverse=True)
+        self.index = idx
+        n_races = sum(len(m) for m in self.months.values())
+        print(f'  Results cache: {n_races} races, {len(idx)} horses indexed')
+
+    def horse_results(self, horse_id, limit=FORM_RUNS_LIMIT):
+        if self.index is None: self._build_index()
+        return self.index.get(horse_id, [])[:limit]
 
 def _clean_rating(val):
     if val is None: return None
@@ -1789,7 +1980,8 @@ def _course_code(name):
         'exeter':'EXE','taunton':'TAU','wincanton':'WNC','plumpton':'PLU',
         'fontwell':'FON','brighton':'BTN','uttoxeter':'UTT','cartmel':'CTM',
         'bangor':'BAN','ffos las':'FFS','chepstow':'CPW',
-        'chelmsford':'CHF','chelmsford (aw)':'CHF',
+        'chelmsford':'CHF','chelmsford (aw)':'CHF','chelmsford city':'CHF',
+        'chester':'CHS','newton abbot':'NAB','kilbeggan':'KBG',
         'southwell (aw)':'SOW','wolverhampton (aw)':'WOL',
         'lingfield (aw)':'LIN','kempton (aw)':'KEM',
         'leopardstown':'LEO','fairyhouse':'FAI','punchestown':'PUN',
@@ -1804,36 +1996,59 @@ def _course_code(name):
     key = name.lower().split('(')[0].strip()
     return TABLE.get(key, key[:3].upper())
 
+_STYLE_PATTERNS = [
+    ('FRONT_RUNNER', [r'made (all|virtually all|every yard|the running|most)', r'set (the |a )?(strong |fierce |good |steady |modest |brisk )?(pace|tempo)',
+                      r'\bled\b', r'went (straight )?to (the )?front', r'straight to (the )?front', r'took (the )?(lead|early lead)',
+                      r'disputed (the )?(lead|pace)', r'contested the (lead|pace)', r'shared (the )?(front|lead|early advantage)',
+                      r'fought for control', r'fighting for control', r'front[- ]runn', r'soon led', r'jumped (well )?(and )?(led|in front)',
+                      r'sent (forward )?to (the )?front', r'early advantage', r'hit(ting)? (the )?front early', r'in front early']),
+    ('PROMINENT',    [r'prominent', r'tracked', r'chased (the )?(lead|pace|winner)', r'pressed', r'close (up|to the (pace|front|lead))',
+                      r'up with the (pace|leaders?)', r'handy', r'forward (position|spot)', r'with the (front|leading) group',
+                      r'behind the (front|pace|leaders?|leading)', r'just off the pace', r'sat (close|second|third|in second|in third)',
+                      r'\b(second|third|2nd|3rd)\b', r'raced close', r'went forward', r'in touch with (the )?lead', r'matched strides']),
+    ('HOLD_UP',      [r'held up', r'held-up', r'towards (the )?(back|rear)', r'at the back', r'\brear\b', r'in rear', r'\blast\b',
+                      r'back of (the )?(field|pack)', r'\btail\b', r'trailed', r'detached', r'patiently ridden', r'waited with',
+                      r'slowly away', r'dwelt', r'missed the break', r'conceded']),
+    ('MIDFIELD',     [r'mid[- ]?(division|field|pack)', r'midpack', r'in (the )?pack', r'among the pack', r'in touch', r'off the pace',
+                      r'middle of (the )?(field|pack)', r'\b(fourth|fifth|sixth)\b', r'off the leading group']),
+]
+_STYLE_RE = [(label, [re.compile(p) for p in pats]) for label, pats in _STYLE_PATTERNS]
+
 def _irc_from_comment(comment):
+    """Early running position from the OPENING of an in-running comment.
+    Only the first three clauses are read (split on ' - ' / ';' / ','), so late
+    phrases such as 'hit the front close home' cannot relabel a held-up horse."""
     if not comment: return 'UNKNOWN'
-    c = comment.lower()
-    # FRONT_RUNNER — early-position phrases only
-    if any(w in c for w in ['made all','led all','led from','led throughout','set the pace',
-            'led 2f','led 3f','led 4f','in front','led early','jumped well in front','went clear']):
-        return 'FRONT_RUNNER'
-    if c.startswith('led') or ', led' in c[:30]: return 'FRONT_RUNNER'
-    # PROMINENT — only with an explicit leader/pace reference
-    if any(w in c for w in ['prominent','chased leader','chased leaders','close up',
-            'tracked leader','tracked leaders','pressed leader','disputed lead',
-            'disputed','handy']): return 'PROMINENT'
-    # HOLD_UP — rear/held-up EARLY-POSITION phrases only.
-    # NOTE: 'headway','progress','stayed on','late headway' REMOVED —
-    # these describe finishing effort, not early position. A front-runner
-    # that "made all, stayed on well" must NOT be pulled into HOLD_UP.
-    if any(w in c for w in ['held up','held-up','towards rear','rear of field','back of field',
-            'towards back','in rear','rearward','settled last','settled towards rear',
-            'patiently ridden','waited with']):
-        return 'HOLD_UP'
-    if any(w in c for w in ['midfield','mid-field','in touch','middle of field']): return 'MIDFIELD'
+    parts = [p.strip() for p in re.split(r' - |;|, ', comment.lower()) if p.strip()]
+    for part in parts[:3]:
+        for label, pats in _STYLE_RE:
+            if any(p.search(part) for p in pats):
+                return label
     return 'UNKNOWN'
 
+_FINISH_POS = [r'stayed on', r'ran on', r'kept on', r'finished (well|strongly|best)', r'closed', r'picked up', r'gained', r'rallied',
+               r'got up', r'close home', r'forged', r'quickened', r'found (more|extra)', r'(went|drew|pulled) (clear|away)', r'kept finding',
+               r'going away', r'surged', r'powered', r'held on', r'hit (the )?front', r'edged (in front|ahead)', r'responded']
+_FINISH_NEG = [r'weakened', r'faded', r'tired', r'no extra', r'dropped (away|back|out)', r'folded', r'emptied', r'one pace', r'plugged',
+               r'(little|no) response', r'found little', r'nothing more', r'eased', r'labou?red', r'lost (its|his|her)? ?(place|position|pitch)']
+
+def _finish_signal(comment):
+    """+1 finished strongly, -1 finished weakly, 0 neither/mixed, None no comment.
+    Reads the last two clauses only."""
+    if not comment: return None
+    parts = [p.strip() for p in re.split(r' - |;', comment.lower()) if p.strip()]
+    tail = ' '.join(parts[-2:])
+    pos = any(re.search(p, tail) for p in _FINISH_POS)
+    neg = any(re.search(p, tail) for p in _FINISH_NEG)
+    if pos and not neg: return 1
+    if neg and not pos: return -1
+    return 0
+
 def _infer_running_style(position, margin, field_size):
-    if position is None: return 'UNKNOWN'
-    fs = max(field_size or 8, 4); pct = position / fs
-    if position == 1 and margin is not None and margin >= 4.0: return 'FRONT_RUNNER'
-    if pct <= 0.20: return 'PROMINENT'
-    if pct >= 0.70: return 'HOLD_UP'
-    return 'MIDFIELD'
+    """Retained for compatibility. Finishing position is not evidence of early
+    position (it agreed with the comment only 30% of the time), so this now
+    returns UNKNOWN rather than guessing."""
+    return 'UNKNOWN'
 
 def _decimal_to_fractional(dec):
     COMMON = {
@@ -1857,47 +2072,96 @@ _GW = {'G1':1.0,'G2':0.92,'G3':0.85,'LST':0.80,'CLS1':0.78,'CLS2':0.72,'CLS3':0.
 # ── AW course set ─────────────────────────────────────────────
 # PATCH 2: Forces going='STANDARD' on all-weather tracks regardless
 # of what the Racing API returns.
+# The API marks all-weather meetings with '(AW)'. Bare 'Lingfield', 'Kempton',
+# 'Newcastle' and 'Southwell' are turf (or jumps) meetings and were being
+# forced to STANDARD going.
 AW_COURSES = {
-    'Chelmsford', 'Chelmsford (AW)', 'Chelmsford City',
-    'Lingfield',  'Lingfield (AW)',  'Lingfield Park',
-    'Kempton',    'Kempton (AW)',    'Kempton Park',
-    'Wolverhampton', 'Wolverhampton (AW)',
-    'Newcastle',  'Newcastle (AW)',
-    'Southwell',  'Southwell (AW)',
-    'Dundalk',
+    'Chelmsford', 'Chelmsford (AW)', 'Chelmsford City', 'Chelmsford City (AW)',
+    'Lingfield (AW)', 'Kempton (AW)', 'Wolverhampton', 'Wolverhampton (AW)',
+    'Newcastle (AW)', 'Southwell (AW)', 'Dundalk', 'Dundalk (AW)', 'Dundalk (AW) (IRE)',
 }
+
+def _api_anchors(result_race, our_runner, position, margin):
+    """Anchors for raw_private_rating() from API results.
+
+    Winner:        runner-up's OR, plus the winning margin.
+    Beaten horse:  winner's OR, minus lengths beaten.
+    Both are adjusted for weight carried relative to the anchor horse.
+    Where the needed OR is missing (maidens, novices), fall back to the API's
+    performance_rating, which is on the OR scale. Returns
+    (second_or, race_or_anchor, margin_to_use)."""
+    by_pos = {}
+    for r in result_race.get('runners', []):
+        p, _ = _parse_position(r.get('position'))
+        if p and p not in by_pos: by_pos[p] = r
+    perf = _clean_rating(our_runner.get('performance_rating'))
+    if perf is None:
+        rpr = _clean_rating(our_runner.get('rpr'))
+        if rpr: perf = int(rpr * RPR_PROXY_DISCOUNT)
+    def _wt(r):
+        try: return float(r.get('weight_lbs'))
+        except (TypeError, ValueError, AttributeError): return None
+    our_wt = _wt(our_runner)
+    if position == 1:
+        second = by_pos.get(2)
+        win_margin = _parse_btn(second.get('btn'), 2) if second else None
+        second_or = _clean_rating(second.get('or')) if second else None
+        if second_or and win_margin is not None:
+            # weight carried: giving the runner-up weight is worth credit
+            s_wt = _wt(second)
+            if our_wt is not None and s_wt is not None:
+                second_or = int(round(second_or + (our_wt - s_wt)))
+            return second_or, None, win_margin
+        if perf:
+            return perf, None, 0.0
+        return None, None, win_margin
+    winner = by_pos.get(1)
+    winner_or = _clean_rating(winner.get('or')) if winner else None
+    if winner_or and margin is not None:
+        # weight carried: a horse receiving weight from the winner needed it
+        w_wt = _wt(winner)
+        if our_wt is not None and w_wt is not None:
+            winner_or = int(round(winner_or - (w_wt - our_wt)))
+        return None, winner_or, margin
+    if perf and margin is not None:
+        return None, perf + margin * lbs_per_length(_clean_dist_f(result_race.get('dist_f'))), margin
+    return None, None, margin
 
 def _build_form_run(result_race, our_horse_id):
     our_runner = next((r for r in result_race.get('runners', []) if r.get('horse_id') == our_horse_id), None)
     if not our_runner: return None
-    try: run_date = datetime.strptime(result_race['date'][:10], '%Y-%m-%d').date()
-    except: run_date = date.today()
+    # 'datetime' is rebound to the module by a later cell, so the old
+    # datetime.strptime call always failed and every run was dated today.
+    try: run_date = _dtmod.datetime.strptime(str(result_race['date'])[:10], '%Y-%m-%d').date()
+    except (KeyError, ValueError, TypeError): return None
     position, comp_code = _parse_position(our_runner.get('position'))
     margin = _parse_btn(our_runner.get('ovr_btn', our_runner.get('btn')), position)
-    rpr_int = _clean_rating(our_runner.get('rpr'))
     grade = _extract_grade(result_race)
     going_cat = _norm_going(result_race.get('going', ''))
-    crs_code = _course_code(result_race.get('course', ''))
+    course_name = result_race.get('course', '')
+    crs_code = _course_code(course_name)
     distance_f = _clean_dist_f(result_race.get('dist_f', result_race.get('distance_f', result_race.get('dist', ''))))
     field_size = len(result_race.get('runners', []))
-    local_or_map = {}
-    for r in result_race.get('runners', []):
-        h = r.get('horse', '')
-        val = _clean_rating(r.get('or')) or (int(_clean_rating(r.get('rpr')) * 0.95) if _clean_rating(r.get('rpr')) else None)
-        if h and val: local_or_map[h] = val
     comment = our_runner.get('comment', '') or ''
     style_str = _irc_from_comment(comment)
-    if style_str == 'UNKNOWN': style_str = _infer_running_style(position, margin, field_size)
-    style_to_irc = {'FRONT_RUNNER':'made all','PROMINENT':'tracked leader','MIDFIELD':'midfield','HOLD_UP':'held up','UNKNOWN':''}
+    # Synthetic phrases must match RUNNING_STYLE_PHRASES; 'midfield' did not, so
+    # MIDFIELD runs were previously lost as UNKNOWN.
+    style_to_irc = {'FRONT_RUNNER':'made all','PROMINENT':'tracked leader','MIDFIELD':'raced in mid-division',
+                    'HOLD_UP':'held up','UNKNOWN':''}
     irc = style_to_irc.get(style_str, ''); gw = _GW.get(grade, 0.55)
     try: signal = _build_signal_from_irc(irc, gw)
     except: signal = None
-    try: second_or, race_or_anchor = _build_anchors(position, margin, rpr_int, None, None, local_or_map)
-    except: second_or = None; race_or_anchor = rpr_int
+    second_or, race_or_anchor, margin = _api_anchors(result_race, our_runner, position, margin)
     fr = FormRun(run_date=run_date, position=position, completion_code=comp_code,
                  margin_lengths=margin, second_or=second_or, race_or_anchor=race_or_anchor,
                  grade_code=grade, signal=signal, chain_depth=0, chain_source_or=None)
     fr.going_category = going_cat; fr.course_code = crs_code; fr.distance_f = distance_f
+    fr.field_size = field_size; fr.comment = comment; fr.finish_signal = _finish_signal(comment)
+    fr.course_name = course_name
+    surface = str(result_race.get('surface') or '')
+    fr.surface = 'AW' if ('(AW)' in course_name or (surface and surface.lower() != 'turf')) else 'Turf'
+    try: fr.draw = int(our_runner.get('draw')) if our_runner.get('draw') not in (None, '') else None
+    except (TypeError, ValueError): fr.draw = None
     return fr
 
 def _build_field(racecard, client):
@@ -1909,11 +2173,15 @@ def _build_field(racecard, client):
         try: cloth_int = int(str(cloth))
         except: cloth_int = i + 1
         or_int = _clean_rating(runner.get('ofr')); proxy_note = None
+        raw_results = client.get_horse_results(horse_id, limit=15) if horse_id else []
         if not or_int:
             rpr = _clean_rating(runner.get('rpr'))
+            perfs = [_clean_rating(rn.get('performance_rating')) for rr in raw_results[:4]
+                     for rn in rr.get('runners', []) if rn.get('horse_id') == horse_id]
+            perfs = sorted([p for p in perfs if p], reverse=True)[:2]
             if rpr: or_int = int(rpr * 0.95); proxy_note = f'RPR {rpr}x0.95->{or_int}'
-            else: or_int = 120; proxy_note = 'fallback OR 120'
-        raw_results = client.get_horse_results(horse_id, limit=15) if horse_id else []
+            elif perfs: or_int = int(round(sum(perfs) / len(perfs))); proxy_note = f'best recent perf ratings -> {or_int}'
+            else: or_int = None; proxy_note = 'unraced/unrated: set from field below'
         runs = []
         for res_race in raw_results:
             try:
@@ -1922,6 +2190,8 @@ def _build_field(racecard, client):
             except: pass
         runs.sort(key=lambda r: r.run_date, reverse=True)
         h = Horse(name=name, official_rating=or_int, cloth_number=cloth_int, runs=runs)
+        try: h.draw = int(runner.get('draw')) if runner.get('draw') not in (None, '') else None
+        except (TypeError, ValueError): h.draw = None
         h._proxy_note = proxy_note; horses.append(h)
         best_decimal = None
         for bk in runner.get('odds', []):
@@ -1931,10 +2201,28 @@ def _build_field(racecard, client):
                 d = float(dec)
                 if d > 1.0 and (best_decimal is None or d > best_decimal): best_decimal = d
             except (ValueError, TypeError): pass
-        if best_decimal and best_decimal > 1.0: odds_map[name] = _decimal_to_fractional(best_decimal)
+        if best_decimal and best_decimal > 1.0: odds_map[name] = best_decimal
         flag = f'  [{proxy_note}]' if proxy_note else ''
-        odds_flag = f'  {odds_map.get(name,"--")}'
-        print(f'    {cloth_int:>2}. {name:<32} OR={or_int:<4} {len(runs)} run(s){flag}{odds_flag}')
+        odds_flag = ''
+        draw_txt = f'dr{h.draw}' if h.draw else '   '
+        print(f'    {cloth_int:>2}. {draw_txt:<5} {name:<32} OR={str(or_int):<4} {len(runs)} run(s){flag}')
+    # Unrated runners with no form: 5 lb below the lowest rated/figured runner.
+    # (Jumps default 120 was being applied to flat debutants.)
+    known = [h.official_rating for h in horses if h.official_rating]
+    for h in horses:
+        if not h.official_rating:
+            h.official_rating = (min(known) - 5) if known else 60
+            h._proxy_note = f'unraced: set to {h.official_rating} (lowest in field - 5)'
+            print(f'        {h.name}: {h._proxy_note}')
+    # Pre-market placeholders: exchanges show 1.1 for every runner before a market
+    # forms. If most runners share one price, treat the race as unpriced.
+    if odds_map:
+        from collections import Counter as _Counter
+        common, cnt = _Counter(odds_map.values()).most_common(1)[0]
+        if cnt >= max(3, 0.5 * len(runners)):
+            print(f'    odds ignored: {cnt}/{len(runners)} runners at {common} (placeholder, no market yet)')
+            odds_map = {}
+    odds_map = {k: _decimal_to_fractional(v) for k, v in odds_map.items()}
     return horses, odds_map
 
 
@@ -1945,7 +2233,7 @@ def _build_field(racecard, client):
 import datetime, pytz
 _uk  = pytz.timezone('Europe/London')
 _now = datetime.datetime.now(_uk)
-RACE_DATE = 'tomorrow' if _now.hour >= 18 else 'today'
+RACE_DATE = 'tomorrow' if _now.hour >= 17 else 'today'   # 17: cron is 17:30 UTC, i.e. 17:30 UK in winter
 REGION    = ['gb', 'ire']
 COURSES   = []
 ODDS      = {}
@@ -1974,6 +2262,12 @@ def _course_slug(course):
 # Generated from 12 months of handicap data, controlled for horse quality.
 # Generated: 2026-05-20  — RE-RUN THE NOTEBOOK QUARTERLY TO REFRESH
 DRAW_BIAS = {
+    'chester': {   # added 2026-09-10 from 12 months of Chester results (performance_rating in place of RPR)
+        'sprint':  {'L': +1.36, 'M': +0.34, 'H': -1.42, 'n': 28, 'sig': False},
+        'mile':    {'L': +0.36, 'M': -0.09, 'H': -0.20, 'n': 32, 'sig': False},
+        'middle':  {'L': +1.16, 'M': +0.99, 'H': -1.87, 'n': 28, 'sig': True},
+        'staying': {'L': +1.39, 'M': +1.07, 'H': -2.04, 'n': 13, 'sig': False},
+    },
     'ayr': {
         'mile': {'L': -0.87, 'M': +0.27, 'H': +0.38, 'n': 42, 'sig': False},
     },
@@ -2128,6 +2422,10 @@ if not getattr(calculate_ev, '_patched', False):
     calculate_ev._patched = True
 
 client = RacingAPIClient(API_USER, API_PASS)
+print('\n📚 Loading results cache (horse form)')
+client.results_cache = ResultsCache(client, regions=tuple(REGION))
+client.results_cache.refresh(datetime.datetime.now(_uk).date())
+client.results_cache._build_index()
 all_races = client.get_racecards(day=RACE_DATE, region_codes=REGION)
 all_courses = sorted(set(r.get('course', '') for r in all_races))
 print(f'📡 {len(all_races)} races across {len(all_courses)} meetings:')
@@ -2145,7 +2443,7 @@ print(f'\n🏇 Running ANCHOR on: {", ".join(target_courses)}\n')
 ALL_RESULTS = {}
 import pytz
 _uk_now = datetime.datetime.now(pytz.timezone('Europe/London'))
-today_dt = (_uk_now + datetime.timedelta(days=1)).date() if _uk_now.hour >= 18 else _uk_now.date()
+today_dt = (_uk_now + datetime.timedelta(days=1)).date() if _uk_now.hour >= 17 else _uk_now.date()
 date_display = today_dt.strftime('%-d %B %Y')
 
 for course in target_courses:
@@ -2178,6 +2476,7 @@ for course in target_courses:
             t14_runs = t14.get('runs', 0) or 0; t14_wins = t14.get('wins', 0) or 0
             t14_str = '{}/{}'.format(t14_wins, t14_runs) if t14_runs else ''
             runner_extras[name] = {
+                'draw':runner.get('draw') or None,
                 'jockey':runner.get('jockey',''),'trainer':runner.get('trainer',''),
                 'trainer_rtf':runner.get('trainer_rtf',''),'trainer_14':t14_str,
                 'last_run':runner.get('last_run',None),'age':runner.get('age',''),
@@ -2217,13 +2516,13 @@ for course in target_courses:
             for _h in horses:
                 if _h.name not in damp_map:
                     continue
-                _adj = _draw_adjustment(course, dist_f, _h.cloth_number, _field_size)
+                _adj = _draw_adjustment(course, dist_f, getattr(_h, 'draw', None), _field_size)
                 if _adj != 0.0:
                     _dr = damp_map[_h.name]
                     _dr.projected_rating = round(_dr.projected_rating + _adj, 2)
                     _dr.band_low  = round(_dr.band_low  + _adj, 2)
                     _dr.band_high = round(_dr.band_high + _adj, 2)
-                    print(f'    draw-adj: {_h.name[:24]:<24} draw={_h.cloth_number} {_adj:+.2f}lb')
+                    print(f'    draw-adj: {_h.name[:24]:<24} draw={_h.draw} {_adj:+.2f}lb')
             # ──────────────────────────────────────────────────────
  
             ev_summary = calculate_ev(dampening_results=damp_map, odds_map=race_odds, race_name=race_name,
@@ -2244,6 +2543,7 @@ for course in target_courses:
             'going':today_going, 'course':crs_code, 'date':date_display,
             'pace_result':pace, 'horses':horses, 'runner_extras':runner_extras,
             'going_report':course_going_report,
+            'course_name':course,
         }
         course_results.append((meta, ev_summary))
 
@@ -2259,6 +2559,13 @@ for course in target_courses:
     ALL_RESULTS[course] = course_results
     print(f'\n  {len(course_results)}/{len(course_races)} races processed')
     time.sleep(0.3)
+
+_n_h = sum(len(m['horses']) for cr in ALL_RESULTS.values() for m, _ in cr)
+_n_f = sum(1 for cr in ALL_RESULTS.values() for m, _ in cr for h in m['horses'] if h.runs)
+print(f'\n📊 Form coverage: {_n_f}/{_n_h} runners have at least one previous run')
+if _n_h and _n_f == 0:
+    print('❌ FATAL: no runner has any form loaded. Not publishing. Check the results cache step.')
+    sys.exit(1)
 
 RESULTS = []
 for course_results in ALL_RESULTS.values(): RESULTS.extend(course_results)
@@ -2276,40 +2583,51 @@ GITHUB_REPO = 'ppcjobber/clerk-authentication-starter'
 
 
 
-_FLAT_BIAS = {
-    'Chester':   {'sprint':('STRONG',['L'],72,8),'mile':('STRONG',['L'],58,14),'middle':('MODERATE',['L','M'],42,22),'staying':('MINIMAL',['M'],35,28)},
-    'Ascot':     {'sprint':('MODERATE',['H'],28,48),'mile':('SLIGHT',['M'],34,32),'middle':('MINIMAL',['M'],33,33),'staying':('MINIMAL',['M'],33,33)},
-    'Newmarket': {'sprint':('SLIGHT',['H'],32,42),'mile':('SLIGHT',['H','M'],34,38),'middle':('MINIMAL',['M'],33,33),'staying':('MINIMAL',['M'],33,33)},
-    'Goodwood':  {'sprint':('MODERATE',['L'],52,22),'mile':('SLIGHT',['L','M'],42,28),'middle':('MINIMAL',['M'],35,30),'staying':('MINIMAL',['M'],33,33)},
-    'Epsom':     {'sprint':('MODERATE',['L','M'],48,18),'mile':('SLIGHT',['L','M'],40,26),'middle':('MINIMAL',['M'],35,28),'staying':('MINIMAL',['M'],33,33)},
-    'York':      {'sprint':('SLIGHT',['H','M'],30,40),'mile':('MINIMAL',['M'],33,36),'middle':('MINIMAL',['M'],33,33),'staying':('MINIMAL',['M'],33,33)},
-    'Haydock':   {'sprint':('MODERATE',['L'],50,20),'mile':('SLIGHT',['L','M'],40,28),'middle':('MINIMAL',['M'],35,30),'staying':('MINIMAL',['M'],33,33)},
-    'Doncaster': {'sprint':('SLIGHT',['L','M'],40,32),'mile':('MINIMAL',['M'],34,34),'middle':('MINIMAL',['M'],33,33),'staying':('MINIMAL',['M'],33,33)},
-    'Sandown':   {'sprint':('MODERATE',['L'],50,22),'mile':('SLIGHT',['L','M'],40,28),'middle':('MINIMAL',['M'],35,30),'staying':('MINIMAL',['M'],33,33)},
-}
-
 def _dist_band(f):
     if f<=6.5: return 'sprint'
     if f<=9.5: return 'mile'
     if f<=12.5: return 'middle'
     return 'staying'
 
+def _bias_cell(course, dist_f):
+    """DRAW_BIAS cell for a course name (not the 3-letter code)."""
+    if not course: return None
+    slug = _course_slug(course).replace('-ire', '')
+    return DRAW_BIAS.get(slug, {}).get(_dist_band(dist_f))
+
+def _bias_magnitude(cell):
+    spread = cell['L'] - cell['H']
+    if cell['sig'] and abs(spread) >= 4.0: return 'STRONG'
+    if cell['sig']: return 'MODERATE'
+    if abs(spread) >= 2.0: return 'SLIGHT'
+    return 'MINIMAL'
+
 def _draw_adv(draw, field_size, course, dist_f):
-    if not draw or not field_size: return 'NEUTRAL'
-    bias = _FLAT_BIAS.get(course,{}).get(_dist_band(dist_f))
-    if not bias: return 'NEUTRAL'
-    mag, fav, _, _ = bias
-    pos = 'L' if draw<=field_size/3 else ('H' if draw>2*field_size/3 else 'M')
-    if mag in ('MINIMAL','SLIGHT','UNKNOWN'): return 'NEUTRAL'
-    if pos in fav: return 'FAVOURED'
-    if ('L' in fav and pos=='H') or ('H' in fav and pos=='L'): return 'AGAINST'
+    """FAVOURED / AGAINST / NEUTRAL from the quantified DRAW_BIAS table.
+    Replaces the hand-entered _FLAT_BIAS table, which disagreed with the data
+    (Chester 7-9.5f was labelled STRONG; measured effect was nil) and was keyed
+    by course name while being called with the course code, so it never matched."""
+    try: draw = int(draw)
+    except (TypeError, ValueError): return 'NEUTRAL'
+    if not field_size or draw < 1: return 'NEUTRAL'
+    cell = _bias_cell(course, dist_f)
+    if not cell or _bias_magnitude(cell) in ('MINIMAL', 'SLIGHT'): return 'NEUTRAL'
+    pos = 'L' if draw <= field_size/3 else ('H' if draw > 2*field_size/3 else 'M')
+    best = max(('L','M','H'), key=lambda k: cell[k]); worst = min(('L','M','H'), key=lambda k: cell[k])
+    if pos == best: return 'FAVOURED'
+    if pos == worst: return 'AGAINST'
     return 'NEUTRAL'
 
 def _draw_bias_summary(course, dist_f):
-    bias = _FLAT_BIAS.get(course,{}).get(_dist_band(dist_f))
-    if not bias: return None
-    mag, fav, lo, hi = bias
-    return {'magnitude':mag,'favoured':'+'.join(fav),'low_pct':lo,'high_pct':hi}
+    """Same keys as before. low_pct / high_pct came from the retired hand-entered
+    table and have no data source, so they are now None; low_lbs / high_lbs
+    carry the measured values instead. Check the frontend handles None."""
+    cell = _bias_cell(course, dist_f)
+    if not cell: return None
+    mag = _bias_magnitude(cell)
+    fav = [k for k in ('L','M','H') if cell[k] >= 0.5] or ['M']
+    return {'magnitude': mag, 'favoured': '+'.join(fav), 'low_pct': None, 'high_pct': None,
+            'low_lbs': cell['L'], 'high_lbs': cell['H'], 'n': cell['n'], 'sig': cell['sig']}
 
 def _is_flat(meta):
     name = meta.get('name','').lower()
@@ -2320,13 +2638,13 @@ def _is_flat(meta):
     return False
 
 def _build_runner_data(meta, ev, style_summary=None):
-    is_flat = _is_flat(meta); course = meta.get('course',''); dist_f = meta.get('dist_f',10.0)
+    is_flat = _is_flat(meta); course = meta.get('course_name', meta.get('course','')); dist_f = meta.get('dist_f',10.0)
     ranked = sorted(ev.results, key=lambda r: r.projected_rating or 0, reverse=True)
     extras_map = meta.get('runner_extras', {}); out = []
     for r in ranked:
-        draw = getattr(r,'draw',None) or getattr(r,'cloth_number',None)
         name = r.horse_name; s = style_summary.get(name, {}) if style_summary else {}
         extra = extras_map.get(name, {})
+        draw = extra.get('draw')   # stall number; saddlecloth is not the draw
         out.append({
             'name':name,'or':r.official_rating,'style_code':s.get('style_code','U'),
             'finish_type':s.get('finish_type','E'),'dist_code':s.get('dist_code','B'),
@@ -2383,12 +2701,17 @@ def _build_style_summary(horses, today_going, today_dist_f=None, is_aw=False):
             top2 = [STYLE_LABELS[k] for k,v in sorted_styles[:2] if v > 0]
             style_label = 'versatile ({})'.format('/'.join(top2)) if top2 else 'versatile'
         fq = {'S':0,'E':0,'F':0}
-        completed = [r for r in runs if r.position is not None and r.position > 0]
-        for run in completed:
-            field = getattr(run, 'field_size', None) or 10; pos = run.position
-            if pos == 1 or pos <= max(2, field * 0.25): fq['S'] += 1
-            elif pos >= field * 0.75: fq['F'] += 1
-            else: fq['E'] += 1
+        fin_sigs = [getattr(r, 'finish_signal', None) for r in runs[:6]]
+        fin_sigs = [f for f in fin_sigs if f is not None]
+        if len(fin_sigs) >= 2:
+            for f in fin_sigs: fq['S' if f > 0 else ('F' if f < 0 else 'E')] += 1
+        else:
+            completed = [r for r in runs if r.position is not None and r.position > 0]
+            for run in completed:
+                field = getattr(run, 'field_size', None) or 10; pos = run.position
+                if pos == 1 or pos <= max(2, field * 0.25): fq['S'] += 1
+                elif pos >= field * 0.75: fq['F'] += 1
+                else: fq['E'] += 1
         total_fq = sum(fq.values())
         if total_fq == 0: finish_type = 'E'; finish_label = 'no completions'
         elif fq['S'] >= total_fq * 0.55: finish_type = 'S'; finish_label = 'strong finisher'
@@ -2703,11 +3026,11 @@ def _narrative_prompt(meta, ev, runners, going_report, is_flat,
     runners_block = '\n'.join(runner_lines)
     draw_note = ''
     if is_flat:
-        bias = _draw_bias_summary(meta.get('course',''), meta.get('dist_f',10.0))
+        bias = _draw_bias_summary(meta.get('course_name', meta.get('course','')), meta.get('dist_f',10.0))
         if bias: draw_note = '\nDRAW: {} — {} draws favoured.'.format(bias['magnitude'], bias['favoured'])
     going_display = meta.get('going','').replace('_',' ')
     race_type = 'FLAT' if is_flat else 'JUMPS'
-    course_name = meta.get('course','')
+    course_name = meta.get('course_name', meta.get('course',''))
     is_aw = any(x in course_name.upper() for x in ['(AW)','ALL WEATHER','ALL-WEATHER','DUNDALK','LINGFIELD','KEMPTON','WOLVERHAMPTON','CHELMSFORD','NEWCASTLE'])
     surface = 'ALL-WEATHER (Polytrack/Tapeta)' if is_aw else 'TURF'
     return (
@@ -3009,8 +3332,9 @@ def publish_meeting(meeting_results, course, race_date_str, going_report=None, g
     for i, (meta, ev) in enumerate(meeting_results):
         is_flat = _is_flat(meta); dist_f = meta.get('dist_f',10.0)
         horses_list = meta.get('horses',[]); today_going = meta.get('going','GOOD')
-        course_name = meta.get('course','')
-        is_aw = any(x in course_name.upper() for x in ['(AW)','ALL WEATHER','ALL-WEATHER','DUNDALK','LINGFIELD','KEMPTON','WOLVERHAMPTON','CHELMSFORD','NEWCASTLE'])
+        course_name = meta.get('course_name', meta.get('course',''))
+        # course_name was the 3-letter code here, so this never matched and is_aw was always False
+        is_aw = course_name in AW_COURSES or '(AW)' in course_name.upper()
         style_summary = _build_style_summary(horses_list, today_going, dist_f, is_aw=is_aw) if horses_list else {}
         runners = _build_runner_data(meta, ev, style_summary)
         unknown_count = sum(1 for r in runners if r.get('style_code') == 'U')
@@ -3075,7 +3399,7 @@ def publish_meeting(meeting_results, course, race_date_str, going_report=None, g
             'runners':ev.field_size,'free':False,'type':'flat' if is_flat else 'jumps',
             'pace':ev.pace_scenario or 'UNKNOWN','paceConf':round((ev.pace_prob or 0.5)*100),
             'leads':leads,'prominent':prominent,'midfield':midfield,'holdup':holdup,
-            'drawBias':_draw_bias_summary(meta.get('course',''),dist_f) if is_flat else None,
+            'drawBias':_draw_bias_summary(meta.get('course_name', meta.get('course','')),dist_f) if is_flat else None,
             'runners_data':runners,'paceDynamic':pace_dynamic_str,'scenarios':scenarios,
             'watchPoints':watch_points,'skipped':False})
       
@@ -3138,7 +3462,7 @@ def publish_all(all_results=None, race_date_str=None, going_report=None, generat
             import pytz; uk_now = datetime.datetime.now(pytz.timezone('Europe/London'))
         except ImportError:
             uk_now = datetime.datetime.utcnow() + datetime.timedelta(hours=1)
-        if uk_now.hour >= 18:
+        if uk_now.hour >= 17:
             target = uk_now.date() + datetime.timedelta(days=1)
             print('  Running after 6pm UK time — publishing for tomorrow ({})'.format(target.strftime('%-d %B %Y')))
         else:
