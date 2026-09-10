@@ -1786,7 +1786,7 @@ class ResultsCache:
     RACE_KEYS = ('race_id', 'date', 'region', 'course', 'course_id', 'race_name', 'type',
                  'class', 'pattern', 'dist', 'dist_f', 'going', 'surface')
     RUNNER_KEYS = ('horse_id', 'horse', 'position', 'btn', 'ovr_btn', 'draw', 'or', 'rpr',
-                   'performance_rating', 'sp_dec', 'comment', 'jockey', 'trainer',
+                   'performance_rating', 'sp_dec', 'comment', 'jockey', 'jockey_id', 'trainer',
                    'trainer_id', 'weight_lbs', 'number')
 
     def __init__(self, client, cache_dir=RESULTS_CACHE_DIR, regions=('gb', 'ire')):
@@ -2426,6 +2426,14 @@ print('\n📚 Loading results cache (horse form)')
 client.results_cache = ResultsCache(client, regions=tuple(REGION))
 client.results_cache.refresh(datetime.datetime.now(_uk).date())
 client.results_cache._build_index()
+
+# Strand scorecard (strands.py, alongside this file). Published with the pace map.
+import strands as _strands
+_STRAND_HELPERS = {'irc': _irc_from_comment, 'finish': _finish_signal, 'course_code': _course_code,
+                   'course_match': course_match_score, 'course_data': COURSE_DATA,
+                   'draw_bias': DRAW_BIAS, 'course_slug': _course_slug}
+_strand_failures = []
+
 all_races = client.get_racecards(day=RACE_DATE, region_codes=REGION)
 all_courses = sorted(set(r.get('course', '') for r in all_races))
 print(f'📡 {len(all_races)} races across {len(all_courses)} meetings:')
@@ -2452,6 +2460,12 @@ for course in target_courses:
     course_odds = ODDS.get(course, {})
     print(f'\n{"═"*60}\n  {course}  ({len(course_races)} races)\n{"═"*60}')
     course_results = []
+    try:
+        strand_ctx = _strands.StrandContext(client.results_cache, today_dt, course, _STRAND_HELPERS)
+    except Exception as e:
+        strand_ctx = None
+        _strand_failures.append(f'{course}: context: {e}')
+        print(f'  ⚠ strands unavailable for {course}: {e}')
 
     for racecard in course_races:
         race_time = racecard.get('off_time', '??:??')
@@ -2537,7 +2551,19 @@ for course in target_courses:
             if r.projected_rating is not None and r.projected_rating < 0:
                 r.projected_rating = 0.0; r.band_low = 0.0; r.band_high = max(r.band_high, 0.0)
 
+        strand_block = None
+        if strand_ctx is not None:
+            try:
+                strand_block = _strands.score_race(strand_ctx, racecard, dist_f,
+                                                   str(racecard.get('type', '')).lower() == 'flat')
+                if strand_block:
+                    print(f"  🧵 strands: {strand_block['pick']} ({strand_block['confidence']})")
+            except Exception as e:
+                _strand_failures.append(f'{course} {race_time}: {e}')
+                print(f'  ⚠ strands failed for {race_time}: {e}')
+
         meta = {
+            'strands':strand_block,
             'time':race_time, 'name':race_name, 'grade':race_grade,
             'dist':racecard.get('distance_round', f'{dist_f}f'), 'dist_f':dist_f,
             'going':today_going, 'course':crs_code, 'date':date_display,
@@ -2563,6 +2589,9 @@ for course in target_courses:
 _n_h = sum(len(m['horses']) for cr in ALL_RESULTS.values() for m, _ in cr)
 _n_f = sum(1 for cr in ALL_RESULTS.values() for m, _ in cr for h in m['horses'] if h.runs)
 print(f'\n📊 Form coverage: {_n_f}/{_n_h} runners have at least one previous run')
+if _strand_failures:
+    print(f'⚠ Strand scorecard failed in {len(_strand_failures)} place(s) (publishing continues without it):')
+    for _f in _strand_failures: print('   ', _f)
 if _n_h and _n_f == 0:
     print('❌ FATAL: no runner has any form loaded. Not publishing. Check the results cache step.')
     sys.exit(1)
@@ -3028,6 +3057,10 @@ def _narrative_prompt(meta, ev, runners, going_report, is_flat,
     if is_flat:
         bias = _draw_bias_summary(meta.get('course_name', meta.get('course','')), meta.get('dist_f',10.0))
         if bias: draw_note = '\nDRAW: {} — {} draws favoured.'.format(bias['magnitude'], bias['favoured'])
+    _sb = meta.get('strands')
+    if _sb:
+        draw_note += '\nSTRAND SCORECARD (shown beside this narrative): top {} ({} confidence); dangers {}. Do not contradict it; if the pace view differs, say why.'.format(
+            _sb['pick'], _sb['confidence'].lower(), ', '.join(_sb['dangers']) or 'none')
     going_display = meta.get('going','').replace('_',' ')
     race_type = 'FLAT' if is_flat else 'JUMPS'
     course_name = meta.get('course_name', meta.get('course',''))
@@ -3401,7 +3434,8 @@ def publish_meeting(meeting_results, course, race_date_str, going_report=None, g
             'leads':leads,'prominent':prominent,'midfield':midfield,'holdup':holdup,
             'drawBias':_draw_bias_summary(meta.get('course_name', meta.get('course','')),dist_f) if is_flat else None,
             'runners_data':runners,'paceDynamic':pace_dynamic_str,'scenarios':scenarios,
-            'watchPoints':watch_points,'skipped':False})
+            'watchPoints':watch_points,'skipped':False,
+            'strands':meta.get('strands')})
       
     conflicts = _consistency_check(races_data)
     if conflicts:
