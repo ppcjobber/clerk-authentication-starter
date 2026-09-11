@@ -1,5 +1,9 @@
 import Link from "next/link";
 
+// Stripe customer portal: customers sign in with their email to cancel,
+// change card or download invoices.
+const STRIPE_PORTAL_URL = "https://billing.stripe.com/p/login/cNi3cv2lx38waAu00K0kE00";
+
 export default function Footer() {
   return (
     <footer style={{
@@ -54,6 +58,13 @@ export default function Footer() {
                 {l.label}
               </Link>
             ))}
+            <a href={STRIPE_PORTAL_URL} target="_blank" rel="noopener noreferrer"
+              style={{
+                fontSize: "0.8rem", color: "rgba(245,240,232,0.55)",
+                textDecoration: "none",
+              }}>
+              Manage or Cancel Subscription ↗
+            </a>
           </div>
         </div>
 
